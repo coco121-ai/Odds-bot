@@ -9,7 +9,7 @@ on:
         description: "Τι να τρέξει"
         type: choice
         default: run
-        options: [run, test-telegram, quota, leagues, markets, dry-run]
+        options: [run, test-telegram, quota, leagues, markets, debug, dry-run]
 
 permissions:
   contents: write
@@ -44,6 +44,7 @@ jobs:
             quota)         python bot.py --quota ;;
             leagues)       python bot.py --leagues ;;
             markets)       python bot.py --markets ;;
+            debug)         python bot.py --debug ;;
             dry-run)       python bot.py --dry-run ;;
             *)             python bot.py ;;
           esac
