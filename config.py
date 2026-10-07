@@ -12,17 +12,20 @@ TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 # ---------- Bookmakers ----------
 # "Sharp" = εκεί που κινούνται πρώτα τα μεγάλα/έξυπνα λεφτά.
 SHARP_BOOK = "pinnacle"
-USE_BETFAIR = True            # Betfair Exchange (έξτρα κλήση ανά αγώνα)
+# Betfair Exchange: στο δωρεάν πλάνο θέλει 1 αίτημα ανά αποτέλεσμα (πολύ αργό) → κλειστό.
+USE_BETFAIR = False
 
 # Ελληνικοί bookmakers που συγκρίνουμε (ΜΕΧΡΙ 2 — όριο του API).
-# Διαθέσιμοι: stoiximan, pamestoixima-gr, bet365-gr, vistabet, interwetten, bwin, netbet
-GREEK_BOOKS = ["stoiximan", "pamestoixima-gr"]
+# Αν ένα όνομα είναι λάθος, το bot βρίσκει μόνο του το σωστό από τη λίστα του API.
+GREEK_BOOKS = ["stoiximan"]
 
 BOOK_NAMES = {
     "pinnacle": "Pinnacle",
     "betfair-ex": "Betfair",
     "stoiximan": "Stoiximan",
     "pamestoixima-gr": "Pamestoixima",
+    "pamestoixima.gr": "Pamestoixima",
+    "pamestoixima": "Pamestoixima",
     "bet365-gr": "Bet365",
     "vistabet": "Vistabet",
     "interwetten": "Interwetten",

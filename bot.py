@@ -251,9 +251,47 @@ def select_fixtures(state: dict, now: dt.datetime) -> list[dict]:
     return out[: C.MAX_FIXTURES]
 
 
-def fetch_history(fixture_id: str) -> dict:
+def fix_slugs(books: list[str], error_text: str) -> dict[str, str]:
+    """Από το μήνυμα λάθους του API ('Invalid bookmakers: X. Valid bookmakers are: a, b, ...')
+    βρίσκει το σωστό όνομα για κάθε λάθος bookmaker."""
+    m = re.search(r"Invalid bookmakers?:\s*([^.]+?)\.\s*Valid bookmakers are:\s*(.+?)[\"}]", error_text)
+    if not m:
+        return {}
+    bad = [b.strip() for b in m.group(1).split(",")]
+    valid = [v.strip() for v in m.group(2).split(",") if v.strip()]
+    fixes = {}
+    for b in bad:
+        if b not in books:
+            continue
+        root = norm(re.split(r"[-.]", b)[0])
+        cands = [v for v in valid if norm(v).startswith(root)] or [v for v in valid if root in norm(v)]
+        cands.sort(key=lambda v: (".gr" not in v and "-gr" not in v, len(v)))
+        if cands:
+            fixes[b] = cands[0]
+    return fixes
+
+
+def apply_slug_fixes(fixes: dict[str, str]) -> None:
+    for old, new in fixes.items():
+        C.GREEK_BOOKS[:] = [new if b == old else b for b in C.GREEK_BOOKS]
+        C.BOOK_NAMES.setdefault(new, C.BOOK_NAMES.get(old, new))
+
+
+def fetch_history(fixture_id: str, state: dict | None = None) -> dict:
     books = [C.SHARP_BOOK] + C.GREEK_BOOKS[:2]
-    data = api_get("historical-odds", fixtureId=fixture_id, bookmakers=",".join(books))
+    try:
+        data = api_get("historical-odds", fixtureId=fixture_id, bookmakers=",".join(books))
+    except requests.HTTPError as e:
+        text = e.response.text if e.response is not None else str(e)
+        fixes = fix_slugs(books, text)
+        if not fixes:
+            raise
+        log.warning("Διόρθωση ονομάτων bookmaker: %s (άλλαξέ τα και στο config.py)", fixes)
+        apply_slug_fixes(fixes)
+        if state is not None:
+            state.setdefault("slug_fix", {}).update(fixes)
+        books = [C.SHARP_BOOK] + C.GREEK_BOOKS[:2]
+        data = api_get("historical-odds", fixtureId=fixture_id, bookmakers=",".join(books))
     merged = dict(data.get("bookmakers") or {})
     if C.USE_BETFAIR:
         try:
@@ -310,16 +348,18 @@ def price_at(pts: list[dict], t: dt.datetime) -> dict | None:
 
 def fair_odds(hist, market, outcome, outcomes, now=None, max_age=None):
     """Δίκαιη απόδοση: Pinnacle χωρίς γκανιότα (de-vig). Αν λείπει, η απόδοση του Betfair."""
+    many = len(outcomes) > 4  # π.χ. ακριβές σκορ: το Pinnacle δεν έχει πάντα όλα τα σκορ
     prices = {}
     for o in outcomes:
         cur = current(series(hist, C.SHARP_BOOK, market, o), now, max_age)
-        if not cur:
+        if cur:
+            prices[o] = cur["price"]
+        elif not many:
             prices = None
             break
-        prices[o] = cur["price"]
-    if prices:
+    if prices and outcome in prices and (not many or len(prices) >= 8):
         total = sum(1 / p for p in prices.values())
-        if 0.9 < total < 1.25:  # λογικό περιθώριο → πλήρης αγορά
+        if 0.97 < total < (1.45 if many else 1.25):  # λογικό περιθώριο → σχεδόν πλήρης αγορά
             return round(prices[outcome] * total, 3), "Pinnacle"
     if C.USE_BETFAIR:
         bf = current(series(hist, BETFAIR, market, outcome), now, max_age)
@@ -499,6 +539,7 @@ def run(dry: bool = False) -> None:
     if not dry and not (C.TELEGRAM_TOKEN and C.TELEGRAM_CHAT_ID):
         sys.exit("Λείπουν TELEGRAM_TOKEN / TELEGRAM_CHAT_ID")
     state = load_state()
+    apply_slug_fixes(state.get("slug_fix", {}))
     now = dt.datetime.now(dt.timezone.utc)
     try:
         refresh_markets(state, now)
@@ -519,7 +560,7 @@ def run(dry: bool = False) -> None:
             log.warning("Όριο χρόνου — συνέχεια στον επόμενο γύρο")
             break
         try:
-            hist = fetch_history(fx["fixtureId"])
+            hist = fetch_history(fx["fixtureId"], state)
         except QuotaExceeded:
             log.error("Τελείωσαν τα μηνιαία αιτήματα του OddsPapi.")
             break
@@ -615,10 +656,10 @@ def debug() -> None:
     tries = [
         {"bookmakers": "pinnacle"},
         {"bookmakers": "stoiximan"},
-        {"bookmakers": "pamestoixima-gr"},
+        {"bookmakers": C.GREEK_BOOKS[1] if len(C.GREEK_BOOKS) > 1 else "pamestoixima.gr"},
         {"bookmakers": "betfair-ex"},
         {"bookmakers": "pinnacle,stoiximan"},
-        {"bookmakers": "pinnacle,stoiximan,pamestoixima-gr"},
+        {"bookmakers": ",".join([C.SHARP_BOOK] + C.GREEK_BOOKS[:2])},
         {"bookmakers": "pinnacle", "outcomeId": 101},
     ]
     for extra in tries:
@@ -633,19 +674,13 @@ def debug() -> None:
                     f"{b} ({len((v or {}).get('markets') or {})} αγορές)" for b, v in bms.items())
             except Exception:
                 pass
-        print(f"historical-odds {extra} → {r.status_code}\n    {body[:400]}\n")
-    # 1 χρεώσιμο αίτημα: ποιοι bookmakers έχουν αποδόσεις για τον αγώνα
-    r = requests.get(f"{API}/odds", params={"fixtureId": fid, "apiKey": C.ODDSPAPI_KEY}, timeout=40)
-    print(f"odds (τρέχουσες) → {r.status_code}")
-    try:
-        bms = r.json().get("bookmakerOdds") or {}
-        slugs = sorted(bms)
-        print(f"    {len(slugs)} bookmakers. Δικοί μας: "
-              + ", ".join(f"{b}={'ΝΑΙ' if b in bms else 'όχι'}"
-                          for b in [C.SHARP_BOOK, BETFAIR] + C.GREEK_BOOKS))
-        print("    Όλοι:", ", ".join(slugs)[:1500])
-    except Exception:
-        print("   ", r.text[:400])
+        if not r.ok:
+            fx_ = fix_slugs([b for b in extra.get("bookmakers", "").split(",")], r.text)
+            greek = [v for v in re.findall(r"[\w.+-]+", r.text)
+                     if any(k in v.lower() for k in ("pame", "opap", "stoix", ".gr", "-gr", "novi", "vista"))]
+            body = body[:200] + (f" · ΠΡΟΤΑΣΗ: {fx_}" if fx_ else "") + \
+                (f" · Ελληνικά: {sorted(set(greek))}" if greek else "")
+        print(f"historical-odds {extra} → {r.status_code}\n    {body[:600]}\n")
 
 
 def main() -> None:
