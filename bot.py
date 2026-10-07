@@ -155,7 +155,8 @@ def resolve_markets(catalog: list[dict]) -> dict:
                     line = None
                 ok = is_ou and not _excluded(m) and line in cfg.get("lines", [])
             elif kind == "correct_score":
-                ok = ("correct score" in name or "exact score" in name) and "team" not in name
+                ok = ("correct score" in name or "exact score" in name) and "team" not in name \
+                    and sum(":" in n for n in outs.values()) >= 0.6 * len(outs)
             else:
                 ok = False
             if ok and mid not in resolved:

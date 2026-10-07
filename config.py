@@ -101,7 +101,7 @@ COUNTRY_LEAGUES = {
     ("saudi-arabia", "saudi arabia"): [r"pro league", r"first division|division 1"],
     ("usa",):                      [r"^mls$|major league soccer", r"usl championship", r"usl league one"],
     ("brazil",):                   [r"serie a$", r"serie b$", r"serie c$"],
-    ("argentina",):                [r"liga profesional", r"primera nacional", r"primera b metropolitana"],
+    ("argentina",):                [r"liga profesional|primera lpf", r"primera nacional", r"primera b metropolitana"],
 }
 
 # Ευρωπαϊκά κύπελλα (ψάχνεται στο όνομα, σε οποιαδήποτε χώρα/κατηγορία)
