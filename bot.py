@@ -64,7 +64,8 @@ def api_get(endpoint: str, **params):
         if r.status_code >= 500:
             time.sleep(5 * (attempt + 1))
             continue
-        r.raise_for_status()
+        if r.status_code >= 400:
+            raise requests.HTTPError(f"{r.status_code} από {endpoint}: {r.text[:300]}", response=r)
         return r.json()
     r.raise_for_status()
     raise RuntimeError(f"{endpoint}: απέτυχε μετά από επαναλήψεις ({r.status_code})")
@@ -597,6 +598,56 @@ def list_markets() -> None:
                   f" · line={m.get('handicap')} · type={m.get('marketType')}")
 
 
+def debug() -> None:
+    """Δοκιμάζει το ιστορικό αποδόσεων με διάφορους συνδυασμούς και τυπώνει την απάντηση του API."""
+    if not C.ODDSPAPI_KEY:
+        sys.exit("Λείπει το ODDSPAPI_KEY")
+    state = load_state()
+    now = dt.datetime.now(dt.timezone.utc)
+    refresh_fixtures(state, now)
+    save_state(state)
+    fx = (select_fixtures(state, now) or state.get("fixtures") or [None])[0]
+    if not fx:
+        sys.exit("Δεν βρέθηκαν αγώνες")
+    fid = fx["fixtureId"]
+    print(f"Αγώνας: {fx.get('participant1Name')} – {fx.get('participant2Name')} "
+          f"({fx.get('tournamentName')}) · {fid} · {fx.get('startTime')}\n")
+    tries = [
+        {"bookmakers": "pinnacle"},
+        {"bookmakers": "stoiximan"},
+        {"bookmakers": "pamestoixima-gr"},
+        {"bookmakers": "betfair-ex"},
+        {"bookmakers": "pinnacle,stoiximan"},
+        {"bookmakers": "pinnacle,stoiximan,pamestoixima-gr"},
+        {"bookmakers": "pinnacle", "outcomeId": 101},
+    ]
+    for extra in tries:
+        time.sleep(COOLDOWN["historical-odds"])
+        r = requests.get(f"{API}/historical-odds",
+                         params={"fixtureId": fid, "apiKey": C.ODDSPAPI_KEY, **extra}, timeout=40)
+        body = r.text.replace("\n", " ")
+        if r.ok:
+            try:
+                bms = r.json().get("bookmakers") or {}
+                body = "OK · bookmakers: " + ", ".join(
+                    f"{b} ({len((v or {}).get('markets') or {})} αγορές)" for b, v in bms.items())
+            except Exception:
+                pass
+        print(f"historical-odds {extra} → {r.status_code}\n    {body[:400]}\n")
+    # 1 χρεώσιμο αίτημα: ποιοι bookmakers έχουν αποδόσεις για τον αγώνα
+    r = requests.get(f"{API}/odds", params={"fixtureId": fid, "apiKey": C.ODDSPAPI_KEY}, timeout=40)
+    print(f"odds (τρέχουσες) → {r.status_code}")
+    try:
+        bms = r.json().get("bookmakerOdds") or {}
+        slugs = sorted(bms)
+        print(f"    {len(slugs)} bookmakers. Δικοί μας: "
+              + ", ".join(f"{b}={'ΝΑΙ' if b in bms else 'όχι'}"
+                          for b in [C.SHARP_BOOK, BETFAIR] + C.GREEK_BOOKS))
+        print("    Όλοι:", ", ".join(slugs)[:1500])
+    except Exception:
+        print("   ", r.text[:400])
+
+
 def main() -> None:
     args = set(sys.argv[1:])
     if "--test-telegram" in args:
@@ -606,6 +657,8 @@ def main() -> None:
         list_leagues()
     elif "--markets" in args:
         list_markets()
+    elif "--debug" in args:
+        debug()
     elif "--quota" in args:
         print(json.dumps(api_get("account"), indent=2, ensure_ascii=False))
     else:
