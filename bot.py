@@ -407,7 +407,7 @@ def analyze(fx: dict, hist: dict, now: dt.datetime, markets: dict) -> list[dict]
                     greek.append({"book": b, "price": cur["price"], "edge": edge})
             values = [g for g in greek if g["edge"] is not None and g["edge"] >= edge_min
                       and C.MIN_ODDS <= g["price"] <= hi]
-            if drops or values:
+            if values or (drops and C.SEND_DROPS_WITHOUT_VALUE):
                 signals.append({"fixture": fx, "market": m, "outcome": o, "label": label,
                                 "live": live, "minute": minute, "drops": drops, "values": values, "greek": greek,
                                 "fair": fair, "fair_src": fair_src, "mk": mk})
@@ -447,8 +447,21 @@ def in_quiet_hours(now: dt.datetime) -> bool:
 def is_serious(sig: dict) -> bool:
     drop = max([max(d["d_win"], d["d_open"]) for d in sig["drops"]], default=0.0)
     edge = max([v["edge"] for v in sig["values"]], default=0.0)
-    return bool(sig["drops"] and sig["values"]) or drop >= C.SERIOUS_DROP_PCT \
-        or edge >= C.SERIOUS_EDGE_PCT
+    if not sig["values"]:
+        return False  # χωρίς αξία στη Stoiximan δεν είναι ποτέ "σοβαρό"
+    return bool(sig["drops"]) or drop >= C.SERIOUS_DROP_PCT or edge >= C.SERIOUS_EDGE_PCT
+
+
+def stars(sig: dict) -> int:
+    """Δύναμη σήματος 1–3: αξία (1) + μεγάλα λεφτά/πτώση (+1) + πολύ δυνατό (+1)."""
+    drop = max([max(d["d_win"], d["d_open"]) for d in sig["drops"]], default=0.0)
+    edge = max([v["edge"] for v in sig["values"]], default=0.0)
+    n = 1 if sig["values"] else 0
+    if sig["drops"]:
+        n += 1
+    if edge >= C.SERIOUS_EDGE_PCT or drop >= C.SERIOUS_DROP_PCT:
+        n += 1
+    return max(1, min(n, 3))
 
 
 # ------------------------------------------------------------ Μηνύματα ---------
@@ -485,31 +498,36 @@ def format_signal(sig: dict) -> str:
     h = f.get("participant1ShortName") or f.get("participant1Name") or "?"
     a = f.get("participant2ShortName") or f.get("participant2Name") or "?"
     start = parse_ts(f["startTime"]).astimezone(ATHENS)
-    when = f"{GR_DAYS[start.weekday()]} {start:%d/%m %H:%M}"
     if sig["live"]:
         when = f"🔴 LIVE (~{max(sig.get('minute') or 0, 0)}′ από την έναρξη)"
     else:
-        when = f"🕒 {when}"
+        when = f"🕒 {GR_DAYS[start.weekday()]} {start:%d/%m %H:%M}"
 
-    fire = sig["drops"] and sig["values"]
-    head = "🔥 ΠΤΩΣΗ + ΑΞΙΑ" if fire else ("📉 ΠΤΩΣΗ ΑΠΟΔΟΣΗΣ" if sig["drops"] else "💰 ΕΥΚΑΙΡΙΑ ΑΞΙΑΣ")
+    st = stars(sig)
+    if sig["values"] and sig["drops"]:
+        head = "🔥 ΑΞΙΖΕΙ · ΜΠΑΙΝΟΥΝ ΜΕΓΑΛΑ ΛΕΦΤΑ"
+    elif sig["values"]:
+        head = "💰 ΑΞΙΖΕΙ"
+    else:
+        head = "📉 ΜΕΓΑΛΗ ΠΤΩΣΗ (χωρίς αξία στη Stoiximan)"
     if sig.get("quiet"):
-        head = "🚨 ΣΟΒΑΡΟ · " + head
-    lines = [f"<b>{head}</b>",
+        head = "🚨 " + head
+    lines = [f"<b>{head}</b>  {'⭐' * st}",
              f"⚽ <b>{html.escape(h)} – {html.escape(a)}</b>",
              f"🏆 {html.escape(f.get('tournamentName') or '')} · {when}",
              f"🎯 {html.escape(sig['mk']['name'])}: <b>{html.escape(pick_text(sig, h, a))}</b>", ""]
+    for v in sig["values"]:
+        lines.append(f"✅ <b>{name(v['book'])}: {v['price']:.2f}</b> → "
+                     f"<b>{v['edge']:+.1f}%</b> σε σχέση με τη δίκαιη ({sig['fair']:.2f})")
     for d in sig["drops"]:
-        lines.append(f"📉 {name(d['book'])}: {d['past']:.2f} → <b>{d['now']:.2f}</b> "
-                     f"(−{d['d_win']:.1f}% σε {C.DROP_WINDOW_MIN}′, −{d['d_open']:.1f}% από αρχή "
+        lines.append(f"💸 Μπαίνουν λεφτά στο {name(d['book'])}: {d['past']:.2f} → <b>{d['now']:.2f}</b> "
+                     f"(−{d['d_win']:.0f}% σε {C.DROP_WINDOW_MIN}′, −{d['d_open']:.0f}% από αρχή "
                      f"{d['open']:.2f}){meta_text(d['meta'])}")
-    if sig["fair"]:
-        src = "Pinnacle χωρίς γκανιότα" if sig["fair_src"] == "Pinnacle" else "Betfair"
-        lines.append(f"⚖️ Δίκαιη απόδοση ({src}): {sig['fair']:.2f}")
-    for g in sig["greek"]:
-        mark = "✅" if g in sig["values"] else "▫️"
-        edge = f" ({g['edge']:+.1f}%)" if g["edge"] is not None else ""
-        lines.append(f"{mark} {name(g['book'])}: <b>{g['price']:.2f}</b>{edge}")
+    if sig["values"] and sig["drops"]:
+        lines.append("👉 Οι επαγγελματίες ποντάρουν εδώ και η Stoiximan δεν έχει ρίξει ακόμα την απόδοση.")
+    elif sig["values"]:
+        lines.append("👉 Η Stoiximan δίνει πάνω από την πραγματική πιθανότητα.")
+    lines.append("<i>⏱ Έλεγξε την απόδοση πριν παίξεις — μπορεί να αλλάξει γρήγορα.</i>")
     return "\n".join(lines)
 
 
@@ -640,96 +658,60 @@ def list_markets() -> None:
 
 
 def debug() -> None:
-    """Δοκιμάζει το ιστορικό αποδόσεων με διάφορους συνδυασμούς και τυπώνει την απάντηση του API."""
+    """Δοκιμή exchange (Betfair/Matchbook): τυπώνει τι πληροφορίες δίνει το API (απόδοση, ποσά, ρευστότητα)."""
     if not C.ODDSPAPI_KEY:
         sys.exit("Λείπει το ODDSPAPI_KEY")
     state = load_state()
     now = dt.datetime.now(dt.timezone.utc)
     refresh_fixtures(state, now)
     save_state(state)
-    fx = (select_fixtures(state, now) or state.get("fixtures") or [None])[0]
-    if not fx:
+    cands = sorted([f for f in state.get("fixtures", [])
+                    if league_ok(f) and now - dt.timedelta(minutes=100) < parse_ts(f["startTime"])
+                    <= now + dt.timedelta(hours=30)], key=lambda f: f["startTime"])
+    if not cands:
         sys.exit("Δεν βρέθηκαν αγώνες")
-    fid = fx["fixtureId"]
-    print(f"Αγώνας: {fx.get('participant1Name')} – {fx.get('participant2Name')} "
-          f"({fx.get('tournamentName')}) · {fid} · {fx.get('startTime')}\n")
-    tries = [
-        {"bookmakers": "pinnacle"},
-        {"bookmakers": "stoiximan"},
-        {"bookmakers": C.GREEK_BOOKS[1] if len(C.GREEK_BOOKS) > 1 else "pamestoixima.gr"},
-        {"bookmakers": "betfair-ex"},
-        {"bookmakers": "pinnacle,stoiximan"},
-        {"bookmakers": ",".join([C.SHARP_BOOK] + C.GREEK_BOOKS[:2])},
-        {"bookmakers": "pinnacle", "outcomeId": 101},
-    ]
-    for extra in tries:
+    labels = {101: "1", 102: "X", 103: "2", 1010: "Over 2.5", 1011: "Under 2.5"}
+
+    def get(fid, book, oid):
         time.sleep(COOLDOWN["historical-odds"])
-        r = requests.get(f"{API}/historical-odds",
-                         params={"fixtureId": fid, "apiKey": C.ODDSPAPI_KEY, **extra}, timeout=40)
-        body = r.text.replace("\n", " ")
-        if r.ok:
-            try:
-                bms = r.json().get("bookmakers") or {}
-                body = "OK · bookmakers: " + ", ".join(
-                    f"{b} ({len((v or {}).get('markets') or {})} αγορές)" for b, v in bms.items())
-            except Exception:
-                pass
-        if not r.ok:
-            fx_ = fix_slugs([b for b in extra.get("bookmakers", "").split(",")], r.text)
-            greek = [v for v in re.findall(r"[\w.+-]+", r.text)
-                     if any(k in v.lower() for k in ("pame", "opap", "stoix", ".gr", "-gr", "novi", "vista"))]
-            body = body[:200] + (f" · ΠΡΟΤΑΣΗ: {fx_}" if fx_ else "") + \
-                (f" · Ελληνικά: {sorted(set(greek))}" if greek else "")
-        print(f"historical-odds {extra} → {r.status_code}\n    {body[:600]}\n")
+        return requests.get(f"{API}/historical-odds", timeout=40, params={
+            "fixtureId": fid, "bookmakers": book, "outcomeId": oid, "apiKey": C.ODDSPAPI_KEY})
 
-
-def test_alert() -> None:
-    """Στέλνει μια δοκιμαστική ειδοποίηση με ΠΡΑΓΜΑΤΙΚΕΣ τρέχουσες αποδόσεις,
-    χωρίς όρια (δείχνει την καλύτερη σύγκριση Stoiximan vs δίκαιη απόδοση). Δεν αλλάζει το state."""
-    if not C.ODDSPAPI_KEY:
-        print("Λείπει το ODDSPAPI_KEY — παράλειψη δοκιμαστικής ειδοποίησης")
-        return
-    state = load_state()
-    apply_slug_fixes(state.get("slug_fix", {}))
-    now = dt.datetime.now(dt.timezone.utc)
-    refresh_markets(state, now)
-    refresh_fixtures(state, now)
-    save_state(state)
-    markets = resolve_markets(state.get("market_catalog", []))
-    fixtures = select_fixtures(state, now)
-    if not fixtures:  # αν δεν υπάρχει αγώνας στο παράθυρο, πάρε τους επόμενους που περνάνε τα φίλτρα
-        fixtures = sorted([f for f in state.get("fixtures", [])
-                           if league_ok(f) and parse_ts(f["startTime"]) > now],
-                          key=lambda f: f["startTime"])
-    saved = (C.VALUE_EDGE_PCT, C.LIVE_VALUE_EDGE_PCT)
-    C.VALUE_EDGE_PCT = C.LIVE_VALUE_EDGE_PCT = -100.0  # κάθε τιμή Stoiximan "περνάει"
-    best = None
-    try:
-        for fx in fixtures[:5]:
-            try:
-                hist = fetch_history(fx["fixtureId"], state)
-            except Exception as e:
-                log.warning("%s: %s", fx["fixtureId"], e)
-                continue
-            for sig in analyze(fx, hist, now, markets):
-                if not sig["values"] or not sig["fair"]:
+    for fx in cands[:3]:
+        fid = fx["fixtureId"]
+        start = parse_ts(fx["startTime"]).astimezone(ATHENS)
+        print("=" * 90)
+        print(f"Αγώνας: {fx.get('participant1Name')} – {fx.get('participant2Name')} "
+              f"({fx.get('categoryName')} · {fx.get('tournamentName')}) · {start:%d/%m %H:%M}")
+        found = False
+        for book in ("betfair-ex", "matchbook"):
+            for oid, lab in labels.items():
+                if book == "matchbook" and oid not in (101, 1010):
                     continue
-                score = (sig["mk"]["kind"] == "1x2", sig["values"][0]["edge"])
-                if best is None or score > best[0]:
-                    best = (score, sig)
-            if best and best[0][0]:
-                break
-    finally:
-        C.VALUE_EDGE_PCT, C.LIVE_VALUE_EDGE_PCT = saved
-    if not best:
-        send_telegram("🧪 <b>ΔΟΚΙΜΗ</b>\nΔεν βρέθηκαν αποδόσεις Stoiximan για δοκιμαστική σύγκριση αυτή τη στιγμή.")
-        print("Δεν βρέθηκε σήμα για δοκιμή.")
-        return
-    msg = format_signal(best[1])
-    msg = ("🧪 <b>ΔΟΚΙΜΗ — όχι πραγματική ευκαιρία</b>\n"
-           "<i>Έτσι θα μοιάζουν οι ειδοποιήσεις. Τιμές πραγματικές, χωρίς όρια.</i>\n\n") + msg
-    send_telegram(msg)
-    print("Στάλθηκε δοκιμαστική ειδοποίηση:\n" + msg)
+                r = get(fid, book, oid)
+                if not r.ok:
+                    print(f"  {book} {lab}: {r.status_code} {r.text[:200]}")
+                    continue
+                rows = []
+                try:
+                    for bm in (r.json().get("bookmakers") or {}).values():
+                        for mk in (bm.get("markets") or {}).values():
+                            for oc in (mk.get("outcomes") or {}).values():
+                                for pl in (oc.get("players") or {}).values():
+                                    rows += pl or []
+                except Exception as e:
+                    print(f"  {book} {lab}: λάθος ανάγνωσης {e}: {r.text[:200]}")
+                    continue
+                rows.sort(key=lambda x: x.get("createdAt") or "")
+                keys = sorted({k for x in rows for k in (x.get("exchangeMeta") or {})})
+                print(f"  {book} {lab}: {len(rows)} εγγραφές · πεδία exchangeMeta: {keys or '—'}")
+                for x in rows[-2:]:
+                    print("     ", json.dumps({k: x.get(k) for k in ("createdAt", "price", "limit", "exchangeMeta")},
+                                               ensure_ascii=False)[:500])
+                found = found or bool(rows)
+        if found:
+            break
+    print("\nΤΕΛΟΣ ΔΟΚΙΜΗΣ")
 
 
 def main() -> None:
