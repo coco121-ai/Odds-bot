@@ -683,11 +683,61 @@ def debug() -> None:
         print(f"historical-odds {extra} → {r.status_code}\n    {body[:600]}\n")
 
 
+def test_alert() -> None:
+    """Στέλνει μια δοκιμαστική ειδοποίηση με ΠΡΑΓΜΑΤΙΚΕΣ τρέχουσες αποδόσεις,
+    χωρίς όρια (δείχνει την καλύτερη σύγκριση Stoiximan vs δίκαιη απόδοση). Δεν αλλάζει το state."""
+    if not C.ODDSPAPI_KEY:
+        print("Λείπει το ODDSPAPI_KEY — παράλειψη δοκιμαστικής ειδοποίησης")
+        return
+    state = load_state()
+    apply_slug_fixes(state.get("slug_fix", {}))
+    now = dt.datetime.now(dt.timezone.utc)
+    refresh_markets(state, now)
+    refresh_fixtures(state, now)
+    save_state(state)
+    markets = resolve_markets(state.get("market_catalog", []))
+    fixtures = select_fixtures(state, now)
+    if not fixtures:  # αν δεν υπάρχει αγώνας στο παράθυρο, πάρε τους επόμενους που περνάνε τα φίλτρα
+        fixtures = sorted([f for f in state.get("fixtures", [])
+                           if league_ok(f) and parse_ts(f["startTime"]) > now],
+                          key=lambda f: f["startTime"])
+    saved = (C.VALUE_EDGE_PCT, C.LIVE_VALUE_EDGE_PCT)
+    C.VALUE_EDGE_PCT = C.LIVE_VALUE_EDGE_PCT = -100.0  # κάθε τιμή Stoiximan "περνάει"
+    best = None
+    try:
+        for fx in fixtures[:5]:
+            try:
+                hist = fetch_history(fx["fixtureId"], state)
+            except Exception as e:
+                log.warning("%s: %s", fx["fixtureId"], e)
+                continue
+            for sig in analyze(fx, hist, now, markets):
+                if not sig["values"] or not sig["fair"]:
+                    continue
+                score = (sig["mk"]["kind"] == "1x2", sig["values"][0]["edge"])
+                if best is None or score > best[0]:
+                    best = (score, sig)
+            if best and best[0][0]:
+                break
+    finally:
+        C.VALUE_EDGE_PCT, C.LIVE_VALUE_EDGE_PCT = saved
+    if not best:
+        send_telegram("🧪 <b>ΔΟΚΙΜΗ</b>\nΔεν βρέθηκαν αποδόσεις Stoiximan για δοκιμαστική σύγκριση αυτή τη στιγμή.")
+        print("Δεν βρέθηκε σήμα για δοκιμή.")
+        return
+    msg = format_signal(best[1])
+    msg = ("🧪 <b>ΔΟΚΙΜΗ — όχι πραγματική ευκαιρία</b>\n"
+           "<i>Έτσι θα μοιάζουν οι ειδοποιήσεις. Τιμές πραγματικές, χωρίς όρια.</i>\n\n") + msg
+    send_telegram(msg)
+    print("Στάλθηκε δοκιμαστική ειδοποίηση:\n" + msg)
+
+
 def main() -> None:
     args = set(sys.argv[1:])
     if "--test-telegram" in args:
         send_telegram("✅ Το Odds Bot συνδέθηκε σωστά! Θα λαμβάνεις εδώ τις ειδοποιήσεις.")
         print("Στάλθηκε.")
+        test_alert()
     elif "--leagues" in args:
         list_leagues()
     elif "--markets" in args:
