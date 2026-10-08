@@ -304,6 +304,53 @@ def fetch_history(fixture_id: str, state: dict | None = None) -> dict:
     return merged
 
 
+def merge_betfair(hist: dict, data: dict) -> int:
+    """Προσθέτει στο hist τα δεδομένα Betfair ενός αποτελέσματος, αγνοώντας τιμές με λίγα λεφτά
+    (κάτω από BETFAIR_MIN_LIQUIDITY), που κινούνται χωρίς λόγο. Επιστρέφει πόσες εγγραφές κράτησε."""
+    kept = 0
+    for bm in (data.get("bookmakers") or {}).values():
+        for mid, mk in (bm.get("markets") or {}).items():
+            for oid, oc in (mk.get("outcomes") or {}).items():
+                rows = [r for r in ((oc.get("players") or {}).get("0") or [])
+                        if (r.get("limit") or 0) >= C.BETFAIR_MIN_LIQUIDITY]
+                if not rows:
+                    continue
+                dst = hist.setdefault(BETFAIR, {}).setdefault("markets", {}) \
+                    .setdefault(mid, {}).setdefault("outcomes", {})
+                dst[oid] = {"players": {"0": rows}}
+                kept += len(rows)
+    return kept
+
+
+def fetch_betfair(fixture_id: str, hist: dict) -> int:
+    """1 αίτημα ανά αποτέλεσμα (όριο δωρεάν πλάνου). Μόνο 1Χ2 και Over/Under 2.5."""
+    kept = 0
+    for oids in C.BETFAIR_OUTCOMES.values():
+        for oid in oids:
+            try:
+                data = api_get("historical-odds", fixtureId=fixture_id,
+                               bookmakers=BETFAIR, outcomeId=oid)
+            except QuotaExceeded:
+                raise
+            except Exception as e:
+                log.info("Betfair %s/%s: %s", fixture_id, oid, str(e)[:120])
+                continue
+            kept += merge_betfair(hist, data)
+    return kept
+
+
+def pick_betfair(fixtures: list[dict], state: dict, now: dt.datetime) -> set[str]:
+    """Ποιοι αγώνες παίρνουν έλεγχο Betfair αυτόν τον γύρο: προαγωνιστικοί που ξεκινούν μέσα σε
+    BETFAIR_WINDOW_HOURS, εκ περιτροπής (όποιος ελέγχθηκε παλιότερα), έως BETFAIR_MAX_FIXTURES."""
+    if not C.BETFAIR_CONFIRM:
+        return set()
+    win = now + dt.timedelta(hours=C.BETFAIR_WINDOW_HOURS)
+    last = state.get("bf_checked", {})
+    elig = [f for f in fixtures if now < parse_ts(f["startTime"]) <= win]
+    elig.sort(key=lambda f: (last.get(f["fixtureId"], ""), f["startTime"]))
+    return {f["fixtureId"] for f in elig[: C.BETFAIR_MAX_FIXTURES]}
+
+
 def has_all_books(hist: dict, markets: dict) -> bool:
     """True αν ο αγώνας έχει αποδόσεις στις αγορές μας σε Pinnacle και σε όλους τους ελληνικούς."""
     for b in [C.SHARP_BOOK] + C.GREEK_BOOKS:
@@ -361,7 +408,7 @@ def fair_odds(hist, market, outcome, outcomes, now=None, max_age=None):
         total = sum(1 / p for p in prices.values())
         if 0.97 < total < (1.45 if many else 1.25):  # λογικό περιθώριο → σχεδόν πλήρης αγορά
             return round(prices[outcome] * total, 3), "Pinnacle"
-    if C.USE_BETFAIR:
+    if BETFAIR in hist:
         bf = current(series(hist, BETFAIR, market, outcome), now, max_age)
         if bf:
             return bf["price"], "Betfair"
@@ -379,7 +426,7 @@ def analyze(fx: dict, hist: dict, now: dt.datetime, markets: dict) -> list[dict]
     check_drops = (not live) or C.LIVE_DROPS
     minute = int((now - parse_ts(fx["startTime"])).total_seconds() // 60) if live else None
     signals = []
-    sharp_books = [C.SHARP_BOOK] + ([BETFAIR] if C.USE_BETFAIR else [])
+    sharp_books = [C.SHARP_BOOK] + ([BETFAIR] if BETFAIR in hist else [])
     for m, mk in markets.items():
         hi = mk.get("max_odds", C.MAX_ODDS)
         for o, label in mk["outcomes"].items():
@@ -459,9 +506,14 @@ def stars(sig: dict) -> int:
     n = 1 if sig["values"] else 0
     if sig["drops"]:
         n += 1
-    if edge >= C.SERIOUS_EDGE_PCT or drop >= C.SERIOUS_DROP_PCT:
+    if edge >= C.SERIOUS_EDGE_PCT or drop >= C.SERIOUS_DROP_PCT or confirmed(sig):
         n += 1
     return max(1, min(n, 3))
+
+
+def confirmed(sig: dict) -> bool:
+    """Η απόδοση πέφτει ΚΑΙ στο Pinnacle ΚΑΙ στο Betfair → σίγουρα μπαίνουν μεγάλα λεφτά."""
+    return {C.SHARP_BOOK, BETFAIR} <= {d["book"] for d in sig["drops"]}
 
 
 # ------------------------------------------------------------ Μηνύματα ---------
@@ -504,7 +556,9 @@ def format_signal(sig: dict) -> str:
         when = f"🕒 {GR_DAYS[start.weekday()]} {start:%d/%m %H:%M}"
 
     st = stars(sig)
-    if sig["values"] and sig["drops"]:
+    if sig["values"] and confirmed(sig):
+        head = "🔥🔥 ΑΞΙΖΕΙ · ΜΕΓΑΛΑ ΛΕΦΤΑ (Pinnacle + Betfair)"
+    elif sig["values"] and sig["drops"]:
         head = "🔥 ΑΞΙΖΕΙ · ΜΠΑΙΝΟΥΝ ΜΕΓΑΛΑ ΛΕΦΤΑ"
     elif sig["values"]:
         head = "💰 ΑΞΙΖΕΙ"
@@ -523,6 +577,10 @@ def format_signal(sig: dict) -> str:
         lines.append(f"💸 Μπαίνουν λεφτά στο {name(d['book'])}: {d['past']:.2f} → <b>{d['now']:.2f}</b> "
                      f"(−{d['d_win']:.0f}% σε {C.DROP_WINDOW_MIN}′, −{d['d_open']:.0f}% από αρχή "
                      f"{d['open']:.2f}){meta_text(d['meta'])}")
+    if sig.get("bf_checked") and BETFAIR not in {d["book"] for d in sig["drops"]} and sig["drops"]:
+        lines.append("▫️ Betfair: χωρίς ανάλογη πτώση (δεν επιβεβαιώνει)")
+    if sig["values"] and confirmed(sig):
+        lines.append("💪 Επιβεβαίωση: η απόδοση πέφτει και στους δύο μεγάλους μαζί.")
     if sig["values"] and sig["drops"]:
         lines.append("👉 Οι επαγγελματίες ποντάρουν εδώ και η Stoiximan δεν έχει ρίξει ακόμα την απόδοση.")
     elif sig["values"]:
@@ -548,6 +606,7 @@ def prune(state: dict, now: dt.datetime) -> None:
                        if parse_ts(v["start"]) > cutoff}
     alive = {f["fixtureId"] for f in state.get("fixtures", [])}
     state["checked"] = {k: v for k, v in state.get("checked", {}).items() if k in alive}
+    state["bf_checked"] = {k: v for k, v in state.get("bf_checked", {}).items() if k in alive}
 
 
 def run(dry: bool = False) -> None:
@@ -569,7 +628,8 @@ def run(dry: bool = False) -> None:
     markets = resolve_markets(state.get("market_catalog", []))
     log.info("Αγορές: %s", ", ".join(f"{v['name']} [{k}]" for k, v in markets.items()))
     fixtures = select_fixtures(state, now)
-    sent = skipped = held = 0
+    sent = skipped = held = bf_done = 0
+    bf_ids = pick_betfair(fixtures, state, now)
     quiet = in_quiet_hours(now)
     if quiet:
         log.info("Ήσυχες ώρες: στέλνονται μόνο σοβαρές περιπτώσεις")
@@ -589,7 +649,18 @@ def run(dry: bool = False) -> None:
         if C.REQUIRE_ALL_BOOKS and not has_all_books(hist, markets):
             skipped += 1
             continue
+        bf_checked = False
+        if fx["fixtureId"] in bf_ids:
+            try:
+                fetch_betfair(fx["fixtureId"], hist)
+                bf_checked = True
+                bf_done += 1
+                state.setdefault("bf_checked", {})[fx["fixtureId"]] = iso(now)
+            except QuotaExceeded:
+                log.error("Τελείωσαν τα μηνιαία αιτήματα του OddsPapi.")
+                break
         for sig in analyze(fx, hist, dt.datetime.now(dt.timezone.utc), markets):
+            sig["bf_checked"] = bf_checked
             if quiet:
                 if not is_serious(sig):
                     held += 1  # δεν καταγράφεται → θα σταλεί μετά τις ήσυχες ώρες αν ισχύει ακόμα
@@ -609,7 +680,7 @@ def run(dry: bool = False) -> None:
     prune(state, now)
     save_state(state)
     log.info("Τέλος γύρου: %d ειδοποιήσεις, %d σε αναμονή (ήσυχες ώρες), "
-             "%d αγώνες χωρίς αποδόσεις σε όλα τα site", sent, held, skipped)
+             "%d αγώνες χωρίς αποδόσεις σε όλα τα site, %d με έλεγχο Betfair", sent, held, skipped, bf_done)
 
 
 def list_leagues() -> None:
