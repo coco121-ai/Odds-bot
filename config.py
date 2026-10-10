@@ -29,6 +29,13 @@ CONFIRM_DROP_FROM_OPEN_PCT = 10.0
 # (σε μικρές λίγκες λίγα λεφτά αρκούν για να κινηθεί η απόδοση).
 MIN_PINNACLE_LIMIT = 1000
 
+# Αγορές γκολ (Over/Under): οι αποδόσεις κινούνται λιγότερο → χαλαρότερα όρια
+TOTALS_DROP_PCT = 8.0                 # (1Χ2: 12%)
+TOTALS_DROP_FROM_OPEN_PCT = 13.0      # (1Χ2: 20%)
+TOTALS_CONFIRM_DROP_PCT = 5.0         # (1Χ2: 6%)
+TOTALS_CONFIRM_DROP_FROM_OPEN_PCT = 8.0   # (1Χ2: 10%)
+TOTALS_MIN_PINNACLE_LIMIT = 500       # (1Χ2: €1.000) — το Pinnacle δέχεται μικρότερα ποσά στα γκολ
+
 # ---------- Ποιες ειδοποιήσεις στέλνονται ----------
 # ⭐ = μόνο αξία · ⭐⭐ = αξία + μεγάλη πτώση σε 1 πηγή · ⭐⭐⭐ = αξία + πτώση σε 2+ πηγές
 MIN_STARS = 2

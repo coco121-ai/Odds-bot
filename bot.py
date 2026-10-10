@@ -437,6 +437,23 @@ def pct_drop(old: float, new: float) -> float:
     return (old - new) / old * 100 if old else 0.0
 
 
+DIAG: dict[str, set] = {}   # διαγνωστικά γύρου: τι βρέθηκε / τι κόπηκε και γιατί
+
+
+def _diag(cat: str, key: str) -> None:
+    DIAG.setdefault(cat, set()).add(key)
+
+
+def thresholds(mk: dict) -> tuple[float, float, float, float, float]:
+    """(πτώση 60′, πτώση από αρχή, επιβεβαίωση 60′, επιβεβαίωση από αρχή, ελάχιστο όριο Pinnacle).
+    Στις αγορές γκολ οι αποδόσεις κινούνται λιγότερο (το Pinnacle μετακινεί τη γραμμή) → χαμηλότερα όρια."""
+    if mk.get("kind") == "totals":
+        return (C.TOTALS_DROP_PCT, C.TOTALS_DROP_FROM_OPEN_PCT, C.TOTALS_CONFIRM_DROP_PCT,
+                C.TOTALS_CONFIRM_DROP_FROM_OPEN_PCT, C.TOTALS_MIN_PINNACLE_LIMIT)
+    return (C.DROP_PCT, C.DROP_FROM_OPEN_PCT, C.CONFIRM_DROP_PCT,
+            C.CONFIRM_DROP_FROM_OPEN_PCT, C.MIN_PINNACLE_LIMIT)
+
+
 def analyze(fx: dict, hist: dict, now: dt.datetime, markets: dict) -> list[dict]:
     live = is_live(fx, now)
     max_age = C.LIVE_MAX_PRICE_AGE_MIN if live else None
@@ -447,7 +464,10 @@ def analyze(fx: dict, hist: dict, now: dt.datetime, markets: dict) -> list[dict]
     sharp_books = [b for b in sharp_sources() if b in hist]
     for m, mk in markets.items():
         hi = mk.get("max_odds", C.MAX_ODDS)
+        t_drop, t_open, t_cdrop, t_copen, t_lim = thresholds(mk)
+        kind = "goals" if mk.get("kind") == "totals" else "1x2"
         for o, label in mk["outcomes"].items():
+            dkey = f"{fx['fixtureId']}|{m}|{o}|{kind}"
             drops = []
             checked = []
             if check_drops:
@@ -461,11 +481,14 @@ def analyze(fx: dict, hist: dict, now: dt.datetime, markets: dict) -> list[dict]
                     opening = pts[0]
                     d_win = pct_drop(past["price"], cur["price"])
                     d_open = pct_drop(opening["price"], cur["price"])
-                    strong = d_win >= C.DROP_PCT or d_open >= C.DROP_FROM_OPEN_PCT
+                    strong = d_win >= t_drop or d_open >= t_open
                     lim = cur.get("limit")
-                    if b == C.SHARP_BOOK and lim is not None and lim < C.MIN_PINNACLE_LIMIT:
+                    if strong and b == C.SHARP_BOOK and lim is not None and lim < t_lim:
                         strong = False  # μικρή αγορά: λίγα λεφτά αρκούν για να κινηθεί → μόνο επιβεβαίωση
-                    if strong or d_win >= C.CONFIRM_DROP_PCT or d_open >= C.CONFIRM_DROP_FROM_OPEN_PCT:
+                        _diag("small_market", dkey)
+                    if strong:
+                        _diag("drop", dkey)
+                    if strong or d_win >= t_cdrop or d_open >= t_copen:
                         drops.append({"book": b, "now": cur["price"], "past": past["price"],
                                       "open": opening["price"], "d_win": d_win, "d_open": d_open,
                                       "meta": cur["meta"], "strong": strong, "limit": lim})
@@ -478,6 +501,10 @@ def analyze(fx: dict, hist: dict, now: dt.datetime, markets: dict) -> list[dict]
                     greek.append({"book": b, "price": cur["price"], "edge": edge})
             values = [g for g in greek if g["edge"] is not None and g["edge"] >= edge_min
                       and C.MIN_ODDS <= g["price"] <= hi]
+            if values:
+                _diag("value", dkey)
+            elif any(g["edge"] is not None and g["edge"] >= edge_min and g["price"] > hi for g in greek):
+                _diag("odds_high", dkey)
             if values or (any(d["strong"] for d in drops) and C.SEND_DROPS_WITHOUT_VALUE):
                 signals.append({"fixture": fx, "market": m, "outcome": o, "label": label,
                                 "live": live, "minute": minute, "drops": drops, "values": values, "greek": greek,
@@ -924,6 +951,30 @@ def _clv_summary(bets: list[dict]) -> str | None:
     return f"🎯 CLV: μέσος όρος <b>{avg:+.1f}%</b> · κερδίσαμε την τελική απόδοση σε {beat}/{len(c)} ({verdict})"
 
 
+def save_diag(state: dict, now: dt.datetime) -> None:
+    """Κρατάει ανά ημέρα (ώρα Ελλάδας) τι βρέθηκε και τι κόπηκε, χωρίς διπλομετρήματα."""
+    today = now.astimezone(ATHENS).strftime("%Y-%m-%d")
+    diag = {d: v for d, v in state.get("diag", {}).items() if d >= (now - dt.timedelta(days=2))
+            .astimezone(ATHENS).strftime("%Y-%m-%d")}
+    day = diag.setdefault(today, {})
+    for cat, keys in DIAG.items():
+        day[cat] = sorted(set(day.get(cat, [])) | keys)
+    state["diag"] = diag
+
+
+def diag_line(state: dict, now: dt.datetime) -> str | None:
+    day = state.get("diag", {}).get(now.astimezone(ATHENS).strftime("%Y-%m-%d"))
+    if not day:
+        return None
+    def n(cat, kind=None):
+        return sum(1 for k in day.get(cat, []) if kind is None or k.endswith("|" + kind))
+    return (f"🔍 <b>Σήμερα:</b> {n('fixtures')} αγώνες · ευκαιρίες αξίας {n('value')} "
+            f"(1Χ2 {n('value', '1x2')} · γκολ {n('value', 'goals')}) · μεγάλες πτώσεις {n('drop')} "
+            f"(1Χ2 {n('drop', '1x2')} · γκολ {n('drop', 'goals')}) · ειδοποιήσεις {n('alert')}\n"
+            f"✂️ Κόπηκαν: {n('odds_high')} λόγω απόδοσης &gt;{C.MAX_ODDS:g} · "
+            f"{n('small_market')} λόγω μικρής αγοράς")
+
+
 def build_report(state: dict, now: dt.datetime) -> str:
     bets = state.get("bets", {})
     fresh = [b for b in bets.values() if b["status"] in ("settled", "unknown") and not b.get("reported")]
@@ -960,6 +1011,9 @@ def build_report(state: dict, now: dt.datetime) -> str:
         sub = [b for b in settled_all if b.get("stars") == st]
         if sub:
             lines.append(f"   {'⭐' * st}: {_summary(sub)}")
+    dl = diag_line(state, now)
+    if dl:
+        lines += ["", dl]
     clv = _clv_summary(list(bets.values()))
     if clv:
         lines += ["", clv,
@@ -1042,6 +1096,7 @@ def run(dry: bool = False) -> None:
         log.warning("Αποτελέσματα: %s", e)
     fixtures = select_fixtures(state, now)
     sent = skipped = held = confirmed_n = below = 0
+    DIAG.clear()
     quiet = in_quiet_hours(now)
     if quiet:
         log.info("Ήσυχες ώρες: στέλνονται μόνο σοβαρές περιπτώσεις")
@@ -1058,6 +1113,7 @@ def run(dry: bool = False) -> None:
             log.warning("%s: %s", fx["fixtureId"], e)
             continue
         state.setdefault("checked", {})[fx["fixtureId"]] = iso(now)
+        _diag("fixtures", fx["fixtureId"])
         if C.REQUIRE_ALL_BOOKS and not has_all_books(hist, markets):
             skipped += 1
             continue
@@ -1075,6 +1131,7 @@ def run(dry: bool = False) -> None:
             if stars(sig) < C.MIN_STARS:
                 below += 1
                 continue
+            _diag("alert", f"{fx['fixtureId']}|{sig['market']}|{sig['outcome']}")
             if quiet:
                 if not is_serious(sig):
                     held += 1  # δεν καταγράφεται → θα σταλεί μετά τις ήσυχες ώρες αν ισχύει ακόμα
@@ -1094,6 +1151,7 @@ def run(dry: bool = False) -> None:
                         continue
                     record_bet(state, sig, mid)
                 sent += 1
+    save_diag(state, now)
     if not dry:
         try:
             maybe_report(state, now)
