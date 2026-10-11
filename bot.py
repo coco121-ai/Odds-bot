@@ -937,7 +937,7 @@ def settle_bets(state: dict, now: dt.datetime) -> int:
     for k, b in bets.items():
         if b["status"] != "open":
             continue
-        wait_h = C.SETTLE_AFTER_HOURS * (1 + 2 * b.get("tries", 0))  # 2.5ω, 7.5ω, 12.5ω…
+        wait_h = C.SETTLE_AFTER_HOURS + C.SETTLE_RETRY_HOURS * b.get("tries", 0)  # 3ω, 5ω, 7ω…
         if now >= parse_ts(b["start"]) + dt.timedelta(hours=wait_h):
             due.setdefault(b["fixtureId"], []).append(k)
     if not due:
@@ -952,7 +952,10 @@ def settle_bets(state: dict, now: dt.datetime) -> int:
     if left is not None:
         budget = min(budget, max(0, left - C.QUOTA_RESERVE))
     done = 0
-    for fid, keys in sorted(due.items(), key=lambda kv: min(bets[k]["start"] for k in kv[1])):
+    def order(kv):  # πρώτα όσα παίχτηκαν πραγματικά (ποσό > 0), μετά τα παλιότερα
+        played = any(bets[k].get("stake", C.STAKE) > 0 for k in kv[1])
+        return (not played, min(bets[k]["start"] for k in kv[1]))
+    for fid, keys in sorted(due.items(), key=order):
         if done >= budget:
             break
         try:
@@ -1030,51 +1033,59 @@ def diag_line(state: dict, now: dt.datetime) -> str | None:
             f"κάτω από τη δίκαιη: {n('drop_edge_neg')} · χωρίς απόδοση: {n('drop_edge_none')}")
 
 
+def report_day(now: dt.datetime) -> dt.date:
+    """Ο πρωινός απολογισμός αφορά την προηγούμενη μέρα· μετά τις 15:00 αφορά τη σημερινή."""
+    d = now.astimezone(ATHENS)
+    return (d - dt.timedelta(days=1)).date() if d.hour < 15 else d.date()
+
+
 def build_report(state: dict, now: dt.datetime) -> str:
     bets = state.get("bets", {})
-    fresh = [b for b in bets.values() if b["status"] in ("settled", "unknown") and not b.get("reported")]
+    day = report_day(now)
+    day_bets = sorted([b for b in bets.values() if parse_ts(b["start"]).astimezone(ATHENS).date() == day],
+                      key=lambda b: b["start"])
     settled_all = [b for b in bets.values() if b["status"] == "settled"]
-    open_n = sum(1 for b in bets.values() if b["status"] == "open")
-    d = now.astimezone(ATHENS)
     since = state.get("stats_since")
     since_txt = f" (από {parse_ts(since).astimezone(ATHENS):%d/%m})" if since else ""
-    lines = [f"📊 <b>ΑΠΟΛΟΓΙΣΜΟΣ · {GR_DAYS[d.weekday()]} {d:%d/%m}</b>",
-             f"<i>Ποντάρισμα = το προτεινόμενο κάθε ειδοποίησης (ή όσα έγραψες με απάντηση "
-             f"στο Telegram), στην απόδοση της Stoiximan</i>", ""]
+    lines = [f"📊 <b>ΑΠΟΛΟΓΙΣΜΟΣ · {GR_DAYS[day.weekday()]} {day:%d/%m}</b>",
+             "<i>Ποσό = όσα έγραψες με απάντηση στο Telegram (αλλιώς το προτεινόμενο), "
+             "στην απόδοση της Stoiximan</i>", ""]
     icons = {"WIN": "✅", "HALFWIN": "✅½", "LOSE": "❌", "HALFLOSS": "❌½", "PUSH": "↩️", "CANCELLED": "↩️"}
-    if fresh:
-        for b in sorted(fresh, key=lambda b: b["start"]):
+    if day_bets:
+        for b in day_bets:
             clv = f" · CLV {b['clv']:+.1f}%" if "clv" in b else ""
             kind_icon = "📢 " if b.get("kind") == "steam" else ""
             stake = b.get("stake", C.STAKE)
             st_txt = " · δεν παίχτηκε" if stake == 0 else f" · {stake:g}€"
-            if b["status"] == "unknown":
-                lines.append(f"❔ {html.escape(b['match'])} · {html.escape(b['pick'])} @{b['price']:.2f} "
-                             f"{'⭐' * b['stars']} → χωρίς αποτέλεσμα{clv}")
+            head = f"{kind_icon}{html.escape(b['match'])} · {html.escape(b['pick'])} @{b['price']:.2f}{st_txt}"
+            if b["status"] == "settled":
+                lines.append(f"{icons.get(b['result'], '•')} {head} → <b>{bet_pnl(b):+.2f}€</b>{clv}")
+            elif b["status"] == "unknown":
+                lines.append(f"❔ {head} → δεν βρέθηκε αποτέλεσμα{clv}")
             else:
-                lines.append(f"{icons.get(b['result'], '•')} {kind_icon}{html.escape(b['match'])} · "
-                             f"{html.escape(b['pick'])} @{b['price']:.2f} {'⭐' * b['stars']}{st_txt} → "
-                             f"<b>{bet_pnl(b):+.2f}€</b>{clv}")
-        lines += ["", f"📅 Σήμερα: {_summary([b for b in fresh if b['status'] == 'settled'])}"]
+                lines.append(f"⏳ {head} → εκκρεμεί{clv}")
+        done = [b for b in day_bets if b["status"] == "settled"]
+        staked = sum(b.get("stake", C.STAKE) for b in done)
+        lines += ["", f"📅 Ημέρα: {_summary(done)} · ποντάρισες {staked:g}€"]
+        pend = sum(1 for b in day_bets if b["status"] == "open")
+        if pend:
+            lines.append(f"⏳ Εκκρεμούν {pend} — θα μετρηθούν μόλις βγει το αποτέλεσμα")
     else:
-        lines.append("Δεν κλείσανε στοιχήματα από τον τελευταίο απολογισμό.")
-    if open_n:
-        lines.append(f"⏳ Ανοιχτά (περιμένουν αποτέλεσμα): {open_n}")
+        lines.append("Δεν βγήκαν ειδοποιήσεις αυτή τη μέρα.")
     bank = bankroll(state)
     lines += ["", f"💼 Κάσα: {C.BANKROLL:g}€ → <b>{bank:.2f}€</b> ({bank - C.BANKROLL:+.2f}€)",
               f"📈 <b>Από την αρχή{since_txt}:</b> {_summary(settled_all)}"]
+    for kind, lab in (("value", "🔥 Αξία"), ("steam", "📢 Λεφτά")):
+        sub = [b for b in settled_all if b.get("kind", "value") == kind]
+        if sub:
+            lines.append(f"   {lab}: {_summary(sub)}")
     for st in (2, 3):
         sub = [b for b in settled_all if b.get("stars") == st]
         if sub:
             lines.append(f"   {'⭐' * st}: {_summary(sub)}")
-    for kind, lab in (("value", "🔥 Αξία"), ("steam", "📢 Λεφτά")):
-        sub = [b for b in settled_all if b.get("kind", "value") == kind]
-        if sub:
-            clv = _clv_summary(sub)
-            lines.append(f"   {lab}: {_summary(sub)}")
-    dl = diag_line(state, now)
+    dl = diag_line(state, dt.datetime.combine(day, dt.time(12), tzinfo=ATHENS))
     if dl:
-        lines += ["", dl]
+        lines += ["", dl.replace("Σήμερα:", "Η μέρα:")]
     clv = _clv_summary(list(bets.values()))
     if clv:
         lines += ["", clv,
@@ -1088,6 +1099,12 @@ def maybe_report(state: dict, now: dt.datetime, force: bool = False) -> bool:
     today = d.strftime("%Y-%m-%d")
     hh, mm = (int(x) for x in C.REPORT_TIME.split(":"))
     if not force and (state.get("last_report") == today or (d.hour, d.minute) < (hh, mm)):
+        return False
+    # περιμένει (έως 2 ώρες) να κλείσουν όσα στοιχήματα της μέρας δεν έχουν αποτέλεσμα ακόμα
+    day = report_day(now)
+    pending = [b for b in state.get("bets", {}).values() if b["status"] == "open"
+               and parse_ts(b["start"]).astimezone(ATHENS).date() == day]
+    if not force and pending and (d.hour, d.minute) < (hh + 2, mm):
         return False
     send_telegram(build_report(state, now))
     for b in state.get("bets", {}).values():
