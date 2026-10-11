@@ -30,7 +30,7 @@ import config as C
 API = "https://api.oddspapi.io/v4"
 STATE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "state.json")
 ATHENS = ZoneInfo("Europe/Athens")
-COOLDOWN = {"historical-odds": 5.3, "fixtures": 2.3, "markets": 1.2, "account": 1.2}
+COOLDOWN = {"historical-odds": 5.1, "fixtures": 2.3, "markets": 1.2, "account": 1.2}
 GR_DAYS = ["Δευ", "Τρί", "Τετ", "Πέμ", "Παρ", "Σάβ", "Κυρ"]
 BETFAIR = "betfair-ex"
 
@@ -227,23 +227,31 @@ def is_live(f: dict, now: dt.datetime) -> bool:
     return start <= now < start + dt.timedelta(minutes=C.LIVE_MAX_MINUTES)
 
 
+def live_can_alert() -> bool:
+    """Στα live δεν μετράμε πτώσεις → βγάζουν το πολύ ⭐. Αν θέλουμε ⭐⭐+, ο έλεγχός τους είναι χαμένος χρόνος."""
+    return C.LIVE_ENABLED and (C.LIVE_DROPS or C.MIN_STARS <= 1)
+
+
 def select_fixtures(state: dict, now: dt.datetime) -> list[dict]:
-    """Σειρά: live → ξεκινούν σύντομα → υπόλοιποι εκ περιτροπής (όποιος ελέγχθηκε παλιότερα)."""
+    """Σειρά: (live, μόνο αν μπορούν να βγάλουν ειδοποίηση) → ξεκινούν μέσα σε PRIORITY_HOURS →
+    υπόλοιποι. Μέσα σε κάθε ομάδα εκ περιτροπής: πρώτα όσοι δεν έχουν ελεγχθεί ή ελέγχθηκαν παλιότερα,
+    ώστε σε μέρες με πολλούς αγώνες να ελέγχονται ΟΛΟΙ, όχι πάντα οι ίδιοι."""
     horizon = now + dt.timedelta(hours=C.LOOKAHEAD_HOURS)
     soon = now + dt.timedelta(hours=C.PRIORITY_HOURS)
     checked = state.get("checked", {})
+    use_live = live_can_alert()
     out = []
     for f in state.get("fixtures", []):
         if not f.get("startTime") or not league_ok(f):
             continue
         start = parse_ts(f["startTime"])
-        if (C.LIVE_ENABLED and is_live(f, now)) or now < start <= horizon:
+        if (use_live and is_live(f, now)) or now < start <= horizon:
             out.append(f)
 
     def prio(f):
         start = parse_ts(f["startTime"])
         group = 0 if start <= now else (1 if start <= soon else 2)
-        return (group, checked.get(f["fixtureId"], "") if group == 2 else "", f["startTime"])
+        return (group, checked.get(f["fixtureId"], ""), f["startTime"])
 
     out.sort(key=prio)
     n_live = sum(1 for f in out if parse_ts(f["startTime"]) <= now)
@@ -468,6 +476,7 @@ def analyze(fx: dict, hist: dict, now: dt.datetime, markets: dict) -> list[dict]
         kind = "goals" if mk.get("kind") == "totals" else "1x2"
         for o, label in mk["outcomes"].items():
             dkey = f"{fx['fixtureId']}|{m}|{o}|{kind}"
+            big_move = False
             drops = []
             checked = []
             if check_drops:
@@ -486,8 +495,10 @@ def analyze(fx: dict, hist: dict, now: dt.datetime, markets: dict) -> list[dict]
                     if strong and b == C.SHARP_BOOK and lim is not None and lim < t_lim:
                         strong = False  # μικρή αγορά: λίγα λεφτά αρκούν για να κινηθεί → μόνο επιβεβαίωση
                         _diag("small_market", dkey)
+                        big_move = True
                     if strong:
                         _diag("drop", dkey)
+                        big_move = True
                     if strong or d_win >= t_cdrop or d_open >= t_copen:
                         drops.append({"book": b, "now": cur["price"], "past": past["price"],
                                       "open": opening["price"], "d_win": d_win, "d_open": d_open,
@@ -501,6 +512,12 @@ def analyze(fx: dict, hist: dict, now: dt.datetime, markets: dict) -> list[dict]
                     greek.append({"book": b, "price": cur["price"], "edge": edge})
             values = [g for g in greek if g["edge"] is not None and g["edge"] >= edge_min
                       and C.MIN_ODDS <= g["price"] <= hi]
+            if big_move and not live:
+                edges = [g["edge"] for g in greek if g["edge"] is not None]
+                e = max(edges) if edges else None
+                bucket = ("none" if e is None else "e5" if e >= 5 else "e2" if e >= 2.5
+                          else "e0" if e >= 0 else "neg")
+                _diag("drop_edge_" + bucket, dkey)
             if values:
                 _diag("value", dkey)
             elif any(g["edge"] is not None and g["edge"] >= edge_min and g["price"] > hi for g in greek):
@@ -972,7 +989,10 @@ def diag_line(state: dict, now: dt.datetime) -> str | None:
             f"(1Χ2 {n('value', '1x2')} · γκολ {n('value', 'goals')}) · μεγάλες πτώσεις {n('drop')} "
             f"(1Χ2 {n('drop', '1x2')} · γκολ {n('drop', 'goals')}) · ειδοποιήσεις {n('alert')}\n"
             f"✂️ Κόπηκαν: {n('odds_high')} λόγω απόδοσης &gt;{C.MAX_ODDS:g} · "
-            f"{n('small_market')} λόγω μικρής αγοράς")
+            f"{n('small_market')} λόγω μικρής αγοράς\n"
+            f"📐 Στις μεγάλες πτώσεις η Stoiximan έδινε: ≥5%: {n('drop_edge_e5')} · "
+            f"2.5–5%: {n('drop_edge_e2')} · 0–2.5%: {n('drop_edge_e0')} · "
+            f"κάτω από τη δίκαιη: {n('drop_edge_neg')} · χωρίς απόδοση: {n('drop_edge_none')}")
 
 
 def build_report(state: dict, now: dt.datetime) -> str:
