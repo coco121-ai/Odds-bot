@@ -535,10 +535,17 @@ def analyze(fx: dict, hist: dict, now: dt.datetime, markets: dict) -> list[dict]
                 _diag("value", dkey)
             elif any(g["edge"] is not None and g["edge"] >= edge_min and g["price"] > hi for g in greek):
                 _diag("odds_high", dkey)
-            if values or (any(d["strong"] for d in drops) and C.SEND_DROPS_WITHOUT_VALUE):
+            steam = None
+            if (C.STEAM_ALERTS and not values and not live and fair
+                    and any(d["strong"] for d in drops)):
+                ok = [g for g in greek if g["edge"] is not None and g["edge"] >= C.STEAM_MIN_EDGE_PCT
+                      and C.MIN_ODDS <= g["price"] <= hi]
+                if ok:
+                    steam = max(ok, key=lambda g: g["price"])
+            if values or steam or (any(d["strong"] for d in drops) and C.SEND_DROPS_WITHOUT_VALUE):
                 signals.append({"fixture": fx, "market": m, "outcome": o, "label": label,
                                 "live": live, "minute": minute, "drops": drops, "values": values, "greek": greek,
-                                "checked": checked,
+                                "checked": checked, "steam": steam,
                                 "fair": fair, "fair_src": fair_src, "mk": mk})
     return signals
 
@@ -585,7 +592,7 @@ def stars(sig: dict) -> int:
     """⭐ = μόνο αξία στη Stoiximan
     ⭐⭐ = αξία + μεγάλη πτώση σε 1 έξυπνη πηγή (Pinnacle/Betfair/SBOBet/Singbet)
     ⭐⭐⭐ = αξία + μεγάλη πτώση που επιβεβαιώνεται από 2+ πηγές"""
-    if not sig["values"]:
+    if not sig["values"] and not sig.get("steam"):
         return 0
     if not any(d.get("strong", True) for d in sig["drops"]):
         return 1
@@ -663,7 +670,10 @@ def format_signal(sig: dict) -> str:
 
     st = stars(sig)
     n_src = len({d["book"] for d in sig["drops"]})
-    if st >= 3:
+    steam = sig.get("steam") if not sig["values"] else None
+    if steam:
+        head = f"📢 ΜΠΑΙΝΟΥΝ ΜΕΓΑΛΑ ΛΕΦΤΑ ({n_src} {'πηγές' if n_src > 1 else 'πηγή'})"
+    elif st >= 3:
         head = f"🔥🔥 ΑΞΙΖΕΙ · ΜΕΓΑΛΑ ΛΕΦΤΑ ({n_src} πηγές)"
     elif st == 2:
         head = "🔥 ΑΞΙΖΕΙ · ΜΠΑΙΝΟΥΝ ΛΕΦΤΑ"
@@ -681,6 +691,9 @@ def format_signal(sig: dict) -> str:
     for v in sig["values"]:
         lines.append(f"✅ <b>{name(v['book'])}: {v['price']:.2f}</b> → "
                      f"<b>{v['edge']:+.1f}%</b> σε σχέση με τη δίκαιη ({sig['fair']:.2f})")
+    if steam:
+        lines.append(f"🔵 <b>{name(steam['book'])}: {steam['price']:.2f}</b> → {steam['edge']:+.1f}% σε σχέση "
+                     f"με τη δίκαιη ({sig['fair']:.2f}) · έχει ήδη προσαρμοστεί, χωρίς έξτρα αξία")
     if sig.get("stake"):
         lines.append(f"💰 Προτεινόμενο ποντάρισμα: <b>{sig['stake']:g}€</b> "
                      f"(κάσα {sig.get('bank', C.BANKROLL):g}€)")
@@ -705,7 +718,9 @@ def format_signal(sig: dict) -> str:
         lines.append(f"🔎 Πηγές: {marks}")
     if st >= 3:
         lines.append(f"💪 Η πτώση επιβεβαιώνεται από {n_src} ανεξάρτητες πηγές — μπαίνουν μεγάλα λεφτά.")
-    if st >= 2:
+    if steam:
+        lines.append("👉 Ακολουθείς τα έξυπνα λεφτά. Μικρότερο ποντάρισμα — μετράμε χωριστά αν αξίζουν.")
+    elif st >= 2:
         lines.append("👉 Οι επαγγελματίες ποντάρουν εδώ και η Stoiximan δεν έχει ρίξει ακόμα την απόδοση.")
     elif sig["values"]:
         lines.append("👉 Η Stoiximan δίνει πάνω από την πραγματική πιθανότητα.")
@@ -738,13 +753,13 @@ def record_bet(state: dict, sig: dict, msg_id: int | None = None) -> None:
     f = sig["fixture"]
     key = f"{f['fixtureId']}|{sig['market']}|{sig['outcome']}"
     bets = state.setdefault("bets", {})
-    if key in bets or not sig["values"]:
+    if key in bets or not (sig["values"] or sig.get("steam")):
         if key in bets:  # αναβάθμιση αστεριών → κρατάμε το καλύτερο
             bets[key]["stars"] = max(bets[key].get("stars", 0), stars(sig))
             if msg_id:
                 bets[key].setdefault("msg_ids", []).append(msg_id)
         return
-    v = max(sig["values"], key=lambda x: x["price"])
+    v = max(sig["values"], key=lambda x: x["price"]) if sig["values"] else sig["steam"]
     h = f.get("participant1ShortName") or f.get("participant1Name") or "?"
     a = f.get("participant2ShortName") or f.get("participant2Name") or "?"
     pin = next((d for d in sig["drops"] if d["book"] == C.SHARP_BOOK), None)
@@ -754,6 +769,7 @@ def record_bet(state: dict, sig: dict, msg_id: int | None = None) -> None:
         "pick": f"{sig['mk']['name']}: {pick_text(sig, h, a)}",
         "book": v["book"], "price": round(v["price"], 3), "edge": round(v["edge"], 1),
         "fair": sig["fair"], "stars": stars(sig), "start": f["startTime"],
+        "kind": "value" if sig["values"] else "steam",
         "pin_limit": pin.get("limit") if pin else None,
         "sent_at": iso(dt.datetime.now(dt.timezone.utc)),
         "status": "open", "tries": 0, "stake": sig.get("stake", C.STAKE),
@@ -779,6 +795,12 @@ def suggest_stake(sig: dict, state: dict) -> float:
     stake = min(stake, bank * C.MAX_STAKE_PCT / 100)
     stake = round(stake * 2) / 2  # στρογγύλεμα στα 0,50€
     return max(C.MIN_STAKE, stake) if bank >= C.MIN_STAKE else 0.0
+
+
+def steam_stake(state: dict) -> float:
+    """📢 ειδοποιήσεις (χωρίς έξτρα αξία): μικρό σταθερό ποσό, STEAM_STAKE_PCT% της κάσας."""
+    bank = max(bankroll(state), 0)
+    return max(C.MIN_STAKE, round(bank * C.STEAM_STAKE_PCT / 100 * 2) / 2) if bank >= C.MIN_STAKE else 0.0
 
 
 def bet_pnl(b: dict) -> float:
@@ -1023,13 +1045,14 @@ def build_report(state: dict, now: dt.datetime) -> str:
     if fresh:
         for b in sorted(fresh, key=lambda b: b["start"]):
             clv = f" · CLV {b['clv']:+.1f}%" if "clv" in b else ""
+            kind_icon = "📢 " if b.get("kind") == "steam" else ""
             stake = b.get("stake", C.STAKE)
             st_txt = " · δεν παίχτηκε" if stake == 0 else f" · {stake:g}€"
             if b["status"] == "unknown":
                 lines.append(f"❔ {html.escape(b['match'])} · {html.escape(b['pick'])} @{b['price']:.2f} "
                              f"{'⭐' * b['stars']} → χωρίς αποτέλεσμα{clv}")
             else:
-                lines.append(f"{icons.get(b['result'], '•')} {html.escape(b['match'])} · "
+                lines.append(f"{icons.get(b['result'], '•')} {kind_icon}{html.escape(b['match'])} · "
                              f"{html.escape(b['pick'])} @{b['price']:.2f} {'⭐' * b['stars']}{st_txt} → "
                              f"<b>{bet_pnl(b):+.2f}€</b>{clv}")
         lines += ["", f"📅 Σήμερα: {_summary([b for b in fresh if b['status'] == 'settled'])}"]
@@ -1044,6 +1067,11 @@ def build_report(state: dict, now: dt.datetime) -> str:
         sub = [b for b in settled_all if b.get("stars") == st]
         if sub:
             lines.append(f"   {'⭐' * st}: {_summary(sub)}")
+    for kind, lab in (("value", "🔥 Αξία"), ("steam", "📢 Λεφτά")):
+        sub = [b for b in settled_all if b.get("kind", "value") == kind]
+        if sub:
+            clv = _clv_summary(sub)
+            lines.append(f"   {lab}: {_summary(sub)}")
     dl = diag_line(state, now)
     if dl:
         lines += ["", dl]
@@ -1152,9 +1180,9 @@ def run(dry: bool = False) -> None:
             continue
         t = dt.datetime.now(dt.timezone.utc)
         sigs = analyze(fx, hist, t, markets)
-        if any(sg["values"] and not sg["live"] for sg in sigs):
+        if any((sg["values"] or sg.get("steam")) and not sg["live"] for sg in sigs):
             try:
-                fetch_confirmations(fx, hist, [sg for sg in sigs if sg["values"]], state)
+                fetch_confirmations(fx, hist, [sg for sg in sigs if sg["values"] or sg.get("steam")], state)
                 confirmed_n += 1
             except QuotaExceeded:
                 log.error("Τελείωσαν τα μηνιαία αιτήματα του OddsPapi.")
@@ -1171,7 +1199,7 @@ def run(dry: bool = False) -> None:
                     continue
                 sig["quiet"] = True
             if should_alert(state, sig):
-                sig["stake"] = suggest_stake(sig, state)
+                sig["stake"] = suggest_stake(sig, state) if sig["values"] else steam_stake(state)
                 sig["bank"] = bankroll(state)
                 msg = format_signal(sig)
                 if dry:
