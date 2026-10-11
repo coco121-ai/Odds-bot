@@ -232,30 +232,43 @@ def live_can_alert() -> bool:
     return C.LIVE_ENABLED and (C.LIVE_DROPS or C.MIN_STARS <= 1)
 
 
+def check_interval_min(start: dt.datetime, now: dt.datetime) -> float:
+    """Κάθε πόσα λεπτά ελέγχεται ένας αγώνας, ανάλογα με το πόσο κοντά είναι η σέντρα.
+    Οι περισσότερες κινήσεις γίνονται τις τελευταίες ώρες → εκεί ελέγχουμε πιο συχνά."""
+    hours = (start - now).total_seconds() / 3600
+    for limit_h, every in C.CHECK_TIERS:
+        if hours <= limit_h:
+            return every
+    return C.CHECK_TIERS[-1][1]
+
+
 def select_fixtures(state: dict, now: dt.datetime) -> list[dict]:
-    """Σειρά: (live, μόνο αν μπορούν να βγάλουν ειδοποίηση) → ξεκινούν μέσα σε PRIORITY_HOURS →
-    υπόλοιποι. Μέσα σε κάθε ομάδα εκ περιτροπής: πρώτα όσοι δεν έχουν ελεγχθεί ή ελέγχθηκαν παλιότερα,
-    ώστε σε μέρες με πολλούς αγώνες να ελέγχονται ΟΛΟΙ, όχι πάντα οι ίδιοι."""
+    """1) Όσοι αγώνες "χρωστάνε" έλεγχο (ανάλογα με το πόσο κοντά είναι η σέντρα), με προτεραιότητα
+    στους πιο κοντινούς και σε όσους ελέγχθηκαν παλιότερα. 2) Αν περισσεύει χρόνος, οι υπόλοιποι
+    εκ περιτροπής. Οι live μόνο αν μπορούν να βγάλουν ειδοποίηση."""
     horizon = now + dt.timedelta(hours=C.LOOKAHEAD_HOURS)
-    soon = now + dt.timedelta(hours=C.PRIORITY_HOURS)
     checked = state.get("checked", {})
     use_live = live_can_alert()
-    out = []
+    due, rest, live = [], [], []
     for f in state.get("fixtures", []):
         if not f.get("startTime") or not league_ok(f):
             continue
         start = parse_ts(f["startTime"])
-        if (use_live and is_live(f, now)) or now < start <= horizon:
-            out.append(f)
-
-    def prio(f):
-        start = parse_ts(f["startTime"])
-        group = 0 if start <= now else (1 if start <= soon else 2)
-        return (group, checked.get(f["fixtureId"], ""), f["startTime"])
-
-    out.sort(key=prio)
-    n_live = sum(1 for f in out if parse_ts(f["startTime"]) <= now)
-    log.info("%d αγώνες ταιριάζουν στα φίλτρα (%d live)", len(out), n_live)
+        if use_live and is_live(f, now):
+            live.append(f)
+            continue
+        if not now < start <= horizon:
+            continue
+        last = checked.get(f["fixtureId"])
+        age = (now - parse_ts(last)).total_seconds() / 60 if last else 1e9
+        (due if age >= check_interval_min(start, now) - 1 else rest).append(f)
+    key = lambda f: (checked.get(f["fixtureId"], ""), f["startTime"])
+    due.sort(key=lambda f: (check_interval_min(parse_ts(f["startTime"]), now), key(f)))
+    rest.sort(key=key)
+    live.sort(key=key)
+    out = live + due + rest
+    log.info("%d αγώνες στο παράθυρο · %d χρειάζονται έλεγχο τώρα (%d live)",
+             len(due) + len(rest) + len(live), len(due), len(live))
     return out[: C.MAX_FIXTURES]
 
 
