@@ -571,7 +571,7 @@ def test_tickets_candidates_build_and_replies():
         assert bot.maybe_send_tickets(st2, noon + dt.timedelta(minutes=5)) == 0   # μία φορά τη μέρα
     finally:
         bot.send_telegram = orig
-    assert "ΔΕΛΤΙΑ ΗΜΕΡΑΣ" in sent[0] and "Πιθανότητα να βγει" in sent[1]
+    assert "ΔΕΛΤΙΑ ΗΜΕΡΑΣ" in sent[0] and "Πιθανότητα <b>" in sent[1]
     print(sent[2], "\n")
     tk = list(st2["tickets"].values())[1]
     mid = tk["msg_ids"][0]

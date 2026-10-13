@@ -658,23 +658,24 @@ def pick_text(sig: dict, home: str, away: str) -> str:
 
 
 def format_signal(sig: dict) -> str:
+    """Μήνυμα ειδοποίησης: πάνω τα βασικά (τι, πού, πόσο), κάτω οι λεπτομέρειες σε πτυσσόμενο πλαίσιο."""
     f = sig["fixture"]
     h = f.get("participant1ShortName") or f.get("participant1Name") or "?"
     a = f.get("participant2ShortName") or f.get("participant2Name") or "?"
     flag, country = country_flag(f)
     start = parse_ts(f["startTime"]).astimezone(ATHENS)
     if sig["live"]:
-        when = f"🔴 LIVE (~{max(sig.get('minute') or 0, 0)}′ από την έναρξη)"
+        when = f"🔴 LIVE ~{max(sig.get('minute') or 0, 0)}′"
     else:
-        when = f"🕒 {GR_DAYS[start.weekday()]} {start:%d/%m %H:%M}"
+        when = f"{GR_DAYS[start.weekday()]} {start:%d/%m} · <b>{start:%H:%M}</b>"
 
     st = stars(sig)
     n_src = len({d["book"] for d in sig["drops"]})
     steam = sig.get("steam") if not sig["values"] else None
     if steam:
-        head = f"📢 ΜΠΑΙΝΟΥΝ ΜΕΓΑΛΑ ΛΕΦΤΑ ({n_src} {'πηγές' if n_src > 1 else 'πηγή'})"
+        head = "📢 ΜΠΑΙΝΟΥΝ ΜΕΓΑΛΑ ΛΕΦΤΑ"
     elif st >= 3:
-        head = f"🔥🔥 ΑΞΙΖΕΙ · ΜΕΓΑΛΑ ΛΕΦΤΑ ({n_src} πηγές)"
+        head = "🔥🔥 ΑΞΙΖΕΙ · ΜΕΓΑΛΑ ΛΕΦΤΑ"
     elif st == 2:
         head = "🔥 ΑΞΙΖΕΙ · ΜΠΑΙΝΟΥΝ ΛΕΦΤΑ"
     elif sig["values"]:
@@ -683,49 +684,64 @@ def format_signal(sig: dict) -> str:
         head = "📉 ΜΕΓΑΛΗ ΠΤΩΣΗ (χωρίς αξία στη Stoiximan)"
     if sig.get("quiet"):
         head = "🚨 " + head
+
+    best = max(sig["values"], key=lambda v: v["edge"]) if sig["values"] else steam
+    pick = html.escape(pick_text(sig, h, a))
     lines = [f"<b>{head}</b>  {'⭐' * max(st, 1)}",
+             "",
              f"{flag} <b>{html.escape(h)} – {html.escape(a)}</b>",
              f"🏆 {html.escape(country)} · {html.escape(f.get('tournamentName') or '')}",
-             when,
-             f"🎯 {html.escape(sig['mk']['name'])}: <b>{html.escape(pick_text(sig, h, a))}</b>", ""]
+             f"🕒 {when}",
+             "",
+             f"🎯 {html.escape(sig['mk']['name'])}",
+             f"👉 <b>{pick}" + (f"  @{best['price']:.2f}</b> στη {name(best['book'])}" if best else "</b>"),
+             ""]
     for v in sig["values"]:
-        lines.append(f"✅ <b>{name(v['book'])}: {v['price']:.2f}</b> → "
-                     f"<b>{v['edge']:+.1f}%</b> σε σχέση με τη δίκαιη ({sig['fair']:.2f})")
+        lines.append(f"✅ Αξία <b>{v['edge']:+.1f}%</b> (δίκαιη απόδοση {sig['fair']:.2f})"
+                     if v is best else f"✅ Και {name(v['book'])} {v['price']:.2f} ({v['edge']:+.1f}%)")
     if steam:
-        lines.append(f"🔵 <b>{name(steam['book'])}: {steam['price']:.2f}</b> → {steam['edge']:+.1f}% σε σχέση "
-                     f"με τη δίκαιη ({sig['fair']:.2f}) · έχει ήδη προσαρμοστεί, χωρίς έξτρα αξία")
+        lines.append(f"🔵 {steam['edge']:+.1f}% από τη δίκαιη ({sig['fair']:.2f}) · "
+                     "έχει ήδη προσαρμοστεί, χωρίς έξτρα αξία")
+    row = []
     if sig.get("stake"):
-        lines.append(f"💰 Προτεινόμενο ποντάρισμα: <b>{sig['stake']:g}€</b> "
-                     f"(κάσα {sig.get('bank', C.BANKROLL):g}€)")
+        row.append(f"💰 Πόνταρε <b>{sig['stake']:g}€</b>")
     if sig["fair"]:
         prob = 100 / sig["fair"]
         lvl = "🟢" if prob >= 50 else ("🟡" if prob >= 40 else "🔴")
-        lines.append(f"📊 Πιθανότητα να βγει ≈ <b>{prob:.0f}%</b> {lvl}")
+        row.append(f"📊 Πιθανότητα <b>{prob:.0f}%</b> {lvl}")
+    if row:
+        lines.append(" · ".join(row))
+
+    det = []
     for d in sorted(sig["drops"], key=lambda d: not d.get("strong", True)):
-        lines.append(f"💸 {name(d['book'])}: {d['past']:.2f} → <b>{d['now']:.2f}</b> "
-                     f"(−{d['d_win']:.0f}% σε {C.DROP_WINDOW_MIN}′, −{d['d_open']:.0f}% από αρχή "
-                     f"{d['open']:.2f}){meta_text(d['meta'])}")
+        det.append(f"💸 {name(d['book'])}: {d['past']:.2f} → <b>{d['now']:.2f}</b> "
+                   f"(−{d['d_win']:.0f}% σε {C.DROP_WINDOW_MIN}′ · −{d['d_open']:.0f}% από {d['open']:.2f})"
+                   f"{meta_text(d['meta'])}")
     pin = next((d for d in sig["drops"] if d["book"] == C.SHARP_BOOK and d.get("limit")), None)
     if pin:
         lim = pin["limit"]
         tag = "🟢 μεγάλη αγορά" if lim >= 3 * C.MIN_PINNACLE_LIMIT else (
             "🟡" if lim >= C.MIN_PINNACLE_LIMIT else "🔴 μικρή αγορά")
-        lines.append(f"💶 Το Pinnacle δέχεται έως €{lim:,.0f} εδώ {tag}".replace(",", "."))
+        det.append(f"💶 Το Pinnacle δέχεται έως €{lim:,.0f} {tag}".replace(",", "."))
     checked = sig.get("checked") or []
     if checked and not sig["live"]:
         dropped = {d["book"] for d in sig["drops"]}
-        marks = " · ".join(f"{name(b)} {'✅' if b in dropped else '▫️'}" for b in checked)
-        lines.append(f"🔎 Πηγές: {marks}")
+        det.append("🔎 " + " · ".join(f"{name(b)} {'✅' if b in dropped else '▫️'}" for b in checked))
+    if sig.get("stake"):
+        det.append(f"💼 Κάσα {sig.get('bank', C.BANKROLL):g}€")
     if st >= 3:
-        lines.append(f"💪 Η πτώση επιβεβαιώνεται από {n_src} ανεξάρτητες πηγές — μπαίνουν μεγάλα λεφτά.")
+        det.append(f"💪 Επιβεβαιώνεται από {n_src} πηγές — μπαίνουν μεγάλα λεφτά.")
     if steam:
-        lines.append("👉 Ακολουθείς τα έξυπνα λεφτά. Μικρότερο ποντάρισμα — μετράμε χωριστά αν αξίζουν.")
+        det.append(f"ℹ️ Ακολουθείς τα έξυπνα λεφτά ({n_src} {'πηγές' if n_src > 1 else 'πηγή'}). "
+                   "Μικρότερο ποντάρισμα — μετράμε χωριστά αν αξίζουν.")
     elif st >= 2:
-        lines.append("👉 Οι επαγγελματίες ποντάρουν εδώ και η Stoiximan δεν έχει ρίξει ακόμα την απόδοση.")
+        det.append("ℹ️ Οι επαγγελματίες ποντάρουν εδώ και η Stoiximan δεν έχει ρίξει ακόμα την απόδοση.")
     elif sig["values"]:
-        lines.append("👉 Η Stoiximan δίνει πάνω από την πραγματική πιθανότητα.")
-    lines.append("<i>⏱ Έλεγξε την απόδοση πριν παίξεις — μπορεί να αλλάξει γρήγορα.</i>")
-    lines.append("<i>✍️ Αν το παίξεις, απάντησε με το ποσό (π.χ. 10). Χωρίς απάντηση = δεν παίχτηκε.</i>")
+        det.append("ℹ️ Η Stoiximan δίνει πάνω από την πραγματική πιθανότητα.")
+    if det:
+        lines += ["", "<blockquote expandable>📋 <b>Λεπτομέρειες</b>\n" + "\n".join(det) + "</blockquote>"]
+    lines.append("<i>✍️ Το έπαιξες; Απάντησε με το ποσό (π.χ. 10). Χωρίς απάντηση = δεν παίχτηκε. "
+                 "Έλεγξε την απόδοση πριν παίξεις.</i>")
     return "\n".join(lines)
 
 
@@ -897,15 +913,15 @@ def format_ticket(spec: dict, legs: list[dict], test: bool = False) -> str:
     for c in legs:
         odds *= c["price"]
         prob *= c["prob"]
-    lines = [f"{'🧪 ' if test else ''}🎟️ <b>{html.escape(spec['name'])}</b> · απόδοση <b>{odds:.2f}</b>", ""]
-    for i, c in enumerate(sorted(legs, key=lambda c: c["start"]), 1):
+    lines = [f"{'🧪 ' if test else ''}🎟️ <b>{html.escape(spec['name'])}</b>",
+             f"Απόδοση <b>{odds:.2f}</b> · Πιθανότητα <b>{prob * 100:.1f}%</b> "
+             f"(1 στις {max(1, round(1 / prob))})", ""]
+    for c in sorted(legs, key=lambda c: c["start"]):
         t = parse_ts(c["start"]).astimezone(ATHENS)
         money = " 💸" if c["drop"] >= C.TICKET_MONEY_DROP_PCT else ""
-        lines.append(f"{i}. {html.escape(c['match'])} · {t:%H:%M}\n"
-                     f"     ➜ <b>{html.escape(c['label'])}</b> @{c['price']:.2f}{money}")
-    lines += ["", f"📊 Πιθανότητα να βγει ≈ <b>{prob * 100:.1f}%</b> (περίπου 1 στις {max(1, round(1 / prob))})",
-              "💸 = μπαίνουν λεφτά σε αυτή την επιλογή (πτώση στο Pinnacle)",
-              "<i>Απάντησε με το ποσό που έπαιξες (π.χ. 5) και, όταν κριθεί, με ✅ ή ❌.</i>"]
+        lines.append(f"<b>{t:%H:%M}</b>  {html.escape(c['match'])}\n"
+                     f"      👉 <b>{html.escape(c['label'])}</b>  @{c['price']:.2f}{money}")
+    lines += ["", "<i>💸 = μπαίνουν λεφτά · ✍️ Απάντησε με το ποσό (π.χ. 5) και μετά με ✅ ή ❌.</i>"]
     return "\n".join(lines)
 
 
