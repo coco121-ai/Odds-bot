@@ -725,6 +725,7 @@ def format_signal(sig: dict) -> str:
     elif sig["values"]:
         lines.append("👉 Η Stoiximan δίνει πάνω από την πραγματική πιθανότητα.")
     lines.append("<i>⏱ Έλεγξε την απόδοση πριν παίξεις — μπορεί να αλλάξει γρήγορα.</i>")
+    lines.append("<i>✍️ Αν το παίξεις, απάντησε με το ποσό (π.χ. 10). Χωρίς απάντηση = δεν παίχτηκε.</i>")
     return "\n".join(lines)
 
 
@@ -741,6 +742,236 @@ def send_telegram(text: str, reply_to: int | None = None) -> int | None:
         return r.json()["result"]["message_id"]
     except Exception:
         return None
+
+
+# ---------------------------------------------------------- Δελτία ημέρας ---------
+TICKET_GROUP_NAMES = {"1x2": "1Χ2", "goals": "Γκολ", "btts": "Goal/No Goal", "corners": "Κόρνερ", "cards": "Κάρτες"}
+
+
+def ticket_group(mid: str, m: dict, markets: dict) -> str | None:
+    """Σε ποια κατηγορία ανήκει μια αγορά (για τα δελτία). None = δεν τη χρησιμοποιούμε."""
+    name = norm(m.get("marketName"))
+    try:
+        line = float(m.get("handicap") or 0)
+    except (TypeError, ValueError):
+        line = 0.0
+    if mid == "101":
+        return "1x2"
+    if mid in markets and markets[mid]["kind"] == "totals":
+        return "goals"
+    if name == "over under full time" and line in (1.5, 2.5, 3.5):
+        return "goals"
+    if name == "both teams to score":
+        return "btts"
+    if name.startswith("corners over under full time") and line % 1 == 0.5:
+        return "corners"
+    if name.startswith("bookings over under full time") and line % 1 == 0.5:
+        return "cards"
+    return None
+
+
+def ticket_label(group: str, m: dict, oname: str, fx: dict, mk_name: str) -> str:
+    on = norm(oname)
+    try:
+        line = f"{float(m.get('handicap')):g}"
+    except (TypeError, ValueError):
+        line = ""
+    ou = {"over": "Over", "under": "Under"}.get(on, oname)
+    if group == "1x2":
+        h = fx.get("participant1ShortName") or fx.get("participant1Name") or ""
+        a = fx.get("participant2ShortName") or fx.get("participant2Name") or ""
+        return {"1": f"1 ({h})", "x": "Χ", "2": f"2 ({a})"}.get(on, oname)
+    if group == "goals":
+        pre = "Ημίχρονο " if "μιχρ" in mk_name or norm(m.get("period")) in ("p1", "1sthalf", "first half") else ""
+        return f"{pre}{ou} {line} γκολ"
+    if group == "btts":
+        return "Goal/Goal: " + {"yes": "Ναι", "no": "Όχι"}.get(on, oname)
+    if group == "corners":
+        return f"Κόρνερ {ou} {line}"
+    if group == "cards":
+        return f"Κάρτες {ou} {line}"
+    return oname
+
+
+def collect_candidates(state: dict, fx: dict, hist: dict, now: dt.datetime, cat: dict, markets: dict) -> int:
+    """Από τα δεδομένα που ήδη κατεβάσαμε (χωρίς έξτρα αιτήματα): οι καλύτερες επιλογές του αγώνα
+    για τα δελτία = όσο πιο κοντά/πάνω από τη δίκαιη απόδοση η Stoiximan + αν μπαίνουν λεφτά."""
+    pin = (hist.get(C.SHARP_BOOK) or {}).get("markets") or {}
+    out = []
+    flag, _country = country_flag(fx)
+    h = fx.get("participant1ShortName") or fx.get("participant1Name") or "?"
+    a = fx.get("participant2ShortName") or fx.get("participant2Name") or "?"
+    for mid in pin:
+        m = cat.get(str(mid))
+        if not m:
+            continue
+        group = ticket_group(str(mid), m, markets)
+        if not group:
+            continue
+        outs = {str(o.get("outcomeId")): str(o.get("outcomeName") or "") for o in (m.get("outcomes") or [])}
+        if len(outs) < 2:
+            continue
+        mk_name = markets.get(str(mid), {}).get("name", "")
+        for o, oname in outs.items():
+            fair, src = fair_odds(hist, str(mid), o, outs, None, None)
+            if not fair or src != "Pinnacle":
+                continue
+            best = None
+            for b in C.GREEK_BOOKS:
+                cur = current(series(hist, b, str(mid), o))
+                if cur and (best is None or cur["price"] > best["price"]):
+                    best = {"book": b, "price": cur["price"]}
+            if not best or not (C.TICKET_LEG_MIN_ODDS <= best["price"] <= C.TICKET_LEG_MAX_ODDS):
+                continue
+            edge = (best["price"] / fair - 1) * 100
+            if edge < C.TICKET_MIN_EDGE_PCT:
+                continue
+            pts = series(hist, C.SHARP_BOOK, str(mid), o)
+            drop = pct_drop(pts[0]["price"], pts[-1]["price"]) if len(pts) > 1 else 0.0
+            score = edge + C.TICKET_DROP_WEIGHT * min(max(drop, 0.0), 20.0)
+            out.append({"fid": fx["fixtureId"], "start": fx["startTime"], "match": f"{flag} {h} – {a}",
+                        "group": group, "market": str(mid), "outcome": o,
+                        "label": ticket_label(group, m, oname, fx, mk_name),
+                        "book": best["book"], "price": round(best["price"], 3), "fair": fair,
+                        "edge": round(edge, 1), "drop": round(drop, 1), "prob": round(1 / fair, 4),
+                        "score": round(score, 2)})
+    out.sort(key=lambda c: -c["score"])
+    keep, seen = [], set()
+    for c in out:  # έως 6 ανά αγώνα, το πολύ 2 από την ίδια κατηγορία
+        if sum(1 for k in keep if k["group"] == c["group"]) >= 2 or (c["market"], c["outcome"]) in seen:
+            continue
+        keep.append(c)
+        seen.add((c["market"], c["outcome"]))
+        if len(keep) >= 6:
+            break
+    cands = state.setdefault("cands", {})
+    if keep:
+        cands[fx["fixtureId"]] = keep
+    else:
+        cands.pop(fx["fixtureId"], None)
+    return len(keep)
+
+
+def build_ticket(pool: list[dict], spec: dict, avoid: set) -> list[dict] | None:
+    """Αναζήτηση (beam search) στις καλύτερες επιλογές: ένα σημείο ανά αγώνα, συνολική απόδοση μέσα
+    στο [min, max], με το μεγαλύτερο άθροισμα "ποιότητας" (αξία + μπαίνουν λεφτά)."""
+    lo = spec.get("min", spec["target"] * 0.8)
+    hi = spec.get("max", spec["target"] * 1.5)
+    groups = set(spec.get("groups") or TICKET_GROUP_NAMES)
+    for allow_reuse in (False, True):
+        cands = [c for c in pool if c["group"] in groups
+                 and (allow_reuse or (c["fid"], c["market"], c["outcome"]) not in avoid)][:C.TICKET_POOL_SIZE]
+        beam = [((), 1.0, 0.0, frozenset())]   # (δείκτες, απόδοση, βαθμός, αγώνες)
+        best = None
+        for _depth in range(C.TICKET_MAX_LEGS):
+            nxt = []
+            for idx, odds, score, fids in beam:
+                start = idx[-1] + 1 if idx else 0
+                for j in range(start, len(cands)):
+                    c = cands[j]
+                    if c["fid"] in fids:
+                        continue
+                    o2 = odds * c["price"]
+                    if o2 > hi:
+                        continue
+                    st = (idx + (j,), o2, score + c["score"], fids | {c["fid"]})
+                    if o2 >= lo:
+                        # προτιμάμε υψηλότερο μέσο βαθμό και λιγότερα σημεία (λιγότερο ρίσκο)
+                        key = (st[2] / len(st[0]), -len(st[0]))
+                        if best is None or key > best[0]:
+                            best = (key, st)
+                    else:
+                        nxt.append(st)
+            nxt.sort(key=lambda st: -(st[2] / len(st[0])))
+            beam = nxt[: C.TICKET_BEAM]
+            if not beam:
+                break
+        if best:
+            return [cands[j] for j in best[1][0]]
+    return None
+
+
+def format_ticket(spec: dict, legs: list[dict], test: bool = False) -> str:
+    odds = 1.0
+    prob = 1.0
+    for c in legs:
+        odds *= c["price"]
+        prob *= c["prob"]
+    lines = [f"{'🧪 ' if test else ''}🎟️ <b>{html.escape(spec['name'])}</b> · απόδοση <b>{odds:.2f}</b>", ""]
+    for i, c in enumerate(sorted(legs, key=lambda c: c["start"]), 1):
+        t = parse_ts(c["start"]).astimezone(ATHENS)
+        money = " 💸" if c["drop"] >= C.TICKET_MONEY_DROP_PCT else ""
+        lines.append(f"{i}. {html.escape(c['match'])} · {t:%H:%M}\n"
+                     f"     ➜ <b>{html.escape(c['label'])}</b> @{c['price']:.2f}{money}")
+    lines += ["", f"📊 Πιθανότητα να βγει ≈ <b>{prob * 100:.1f}%</b> (περίπου 1 στις {max(1, round(1 / prob))})",
+              "💸 = μπαίνουν λεφτά σε αυτή την επιλογή (πτώση στο Pinnacle)",
+              "<i>Απάντησε με το ποσό που έπαιξες (π.χ. 5) και, όταν κριθεί, με ✅ ή ❌.</i>"]
+    return "\n".join(lines)
+
+
+def maybe_send_tickets(state: dict, now: dt.datetime, force: bool = False, test: bool = False) -> int:
+    """Μία φορά τη μέρα (TICKETS_TIME): στέλνει τα δελτία της ημέρας."""
+    if not C.TICKETS_ENABLED:
+        return 0
+    d = now.astimezone(ATHENS)
+    today = d.strftime("%Y-%m-%d")
+    hh, mm = (int(x) for x in C.TICKETS_TIME.split(":"))
+    if not force and (state.get("tickets_sent") == today or (d.hour, d.minute) < (hh, mm)):
+        return 0
+    earliest = now + dt.timedelta(minutes=C.TICKET_MIN_MINUTES_BEFORE)
+    latest = now + dt.timedelta(hours=C.TICKET_WINDOW_HOURS)
+    pool = [c for lst in state.get("cands", {}).values() for c in lst
+            if earliest <= parse_ts(c["start"]) <= latest]
+    pool.sort(key=lambda c: -c["score"])
+    sent, avoid = 0, set()
+    header = (f"{'🧪 ' if test else ''}🎟️ <b>ΔΕΛΤΙΑ ΗΜΕΡΑΣ · {GR_DAYS[d.weekday()]} {d:%d/%m}</b>\n"
+              f"<i>Από {len({c['fid'] for c in pool})} αγώνες έως τις {latest.astimezone(ATHENS):%H:%M}, "
+              "οι επιλογές όπου η Stoiximan είναι κοντά ή πάνω από τη δίκαιη απόδοση και μπαίνουν λεφτά. "
+              "Όσο μεγαλύτερη η απόδοση, τόσο μεγαλύτερο το ρίσκο — μικρά ποσά.</i>")
+    try:
+        send_telegram(header)
+    except Exception as e:
+        log.warning("Δελτία: %s", e)
+        return 0
+    tickets = state.setdefault("tickets", {})
+    for i, spec in enumerate(C.TICKETS):
+        legs = build_ticket(pool, spec, avoid)
+        if not legs:
+            try:
+                send_telegram(f"🎟️ <b>{html.escape(spec['name'])}</b>: δεν βρέθηκαν αρκετές καλές επιλογές σήμερα.")
+            except Exception:
+                pass
+            continue
+        avoid |= {(c["fid"], c["market"], c["outcome"]) for c in legs}
+        try:
+            mid = send_telegram(format_ticket(spec, legs, test))
+        except Exception as e:
+            log.warning("Δελτίο: %s", e)
+            continue
+        sent += 1
+        if test:
+            continue
+        odds = 1.0
+        prob = 1.0
+        for c in legs:
+            odds *= c["price"]
+            prob *= c["prob"]
+        tickets[f"{today}|{i}"] = {"date": today, "name": spec["name"], "odds": round(odds, 2),
+                                   "prob": round(prob, 5), "msg_ids": [mid] if mid else [],
+                                   "legs": [f"{c['match']} · {c['label']} @{c['price']:.2f}" for c in legs],
+                                   "last_start": max(c["start"] for c in legs), "stake": None, "result": None}
+    if not force:
+        state["tickets_sent"] = today
+    return sent
+
+
+def ticket_pnl(t: dict) -> float:
+    st = t.get("stake") or 0
+    if t.get("result") == "WIN":
+        return round(st * (t["odds"] - 1), 2)
+    if t.get("result") == "LOSE":
+        return round(-st, 2)
+    return 0.0
 
 
 # ---------------------------------------------------- Στατιστικά / PnL ---------
@@ -772,14 +1003,16 @@ def record_bet(state: dict, sig: dict, msg_id: int | None = None) -> None:
         "kind": "value" if sig["values"] else "steam",
         "pin_limit": pin.get("limit") if pin else None,
         "sent_at": iso(dt.datetime.now(dt.timezone.utc)),
-        "status": "open", "tries": 0, "stake": sig.get("stake", C.STAKE),
+        "status": "open", "tries": 0,
+        "stake": 0.0, "suggested": sig.get("stake", C.STAKE), "replied": False,  # 0 μέχρι να απαντήσεις
         "msg_ids": [msg_id] if msg_id else [],
     }
 
 
 def bankroll(state: dict) -> float:
     """Τρέχουσα κάσα = αρχική + κέρδη/ζημιές των κλεισμένων στοιχημάτων."""
-    return round(C.BANKROLL + sum(bet_pnl(b) for b in state.get("bets", {}).values()), 2)
+    return round(C.BANKROLL + sum(bet_pnl(b) for b in state.get("bets", {}).values())
+                 + sum(ticket_pnl(t) for t in state.get("tickets", {}).values()), 2)
 
 
 def suggest_stake(sig: dict, state: dict) -> float:
@@ -824,6 +1057,7 @@ def process_replies(state: dict) -> int:
         log.info("Telegram replies: %s", e)
         return 0
     by_msg = {mid: k for k, b in state.get("bets", {}).items() for mid in b.get("msg_ids", [])}
+    by_ticket = {mid: k for k, t in state.get("tickets", {}).items() for mid in t.get("msg_ids", [])}
     changed = 0
     for u in updates:
         state["tg_offset"] = u["update_id"] + 1
@@ -832,6 +1066,29 @@ def process_replies(state: dict) -> int:
             continue
         rep_id = (m.get("reply_to_message") or {}).get("message_id")
         txt = (m.get("text") or "").strip().replace("€", "").replace(",", ".")
+        if rep_id in by_ticket:
+            t = state["tickets"][by_ticket[rep_id]]
+            low = norm(txt)
+            if txt.startswith("✅") or low in ("win", "κερδισε", "κερδισα", "μπηκε", "βγηκε", "ok"):
+                t["result"], note = "WIN", f"✅ Κέρδισε! +{(t.get('stake') or 0) * (t['odds'] - 1):.2f}€"
+            elif txt.startswith("❌") or low in ("lose", "εχασε", "εχασα", "καηκε", "χαθηκε"):
+                t["result"], note = "LOSE", f"❌ Χάθηκε ({-(t.get('stake') or 0):.2f}€)"
+            else:
+                try:
+                    amount = float(txt)
+                except ValueError:
+                    continue
+                if not 0 <= amount <= 100000:
+                    continue
+                t["stake"] = amount
+                note = f"✅ Ποσό δελτίου: {amount:g}€" if amount else "Το δελτίο δεν παίχτηκε."
+            changed += 1
+            try:
+                send_telegram(f"{note}\n<i>{html.escape(t['name'])} @{t['odds']:.2f}</i>",
+                              reply_to=m.get("message_id"))
+            except Exception:
+                pass
+            continue
         if rep_id not in by_msg:
             continue
         try:
@@ -842,6 +1099,7 @@ def process_replies(state: dict) -> int:
             continue
         b = state["bets"][by_msg[rep_id]]
         b["stake"] = amount
+        b["replied"] = True
         changed += 1
         note = "❌ Δεν μετράει στο PnL (δεν το έπαιξες)." if amount == 0 else f"✅ Ποντάρισμα: {amount:g}€"
         try:
@@ -984,6 +1242,23 @@ def settle_bets(state: dict, now: dt.datetime) -> int:
     return done
 
 
+def virtual_pnl(b: dict) -> float:
+    """Κέρδος/ζημιά αν είχε παιχτεί με το προτεινόμενο ποσό (για να κρίνουμε το σύστημα)."""
+    return bet_pnl({**b, "stake": b.get("suggested", b.get("stake", C.STAKE))})
+
+
+def _virtual_summary(bets: list[dict]) -> str:
+    done = [b for b in bets if b.get("status") == "settled"]
+    if not done:
+        return "—"
+    w = sum(1 for b in done if b.get("result") in ("WIN", "HALFWIN"))
+    l = sum(1 for b in done if b.get("result") in ("LOSE", "HALFLOSS"))
+    pnl = sum(virtual_pnl(b) for b in done)
+    staked = sum(b.get("suggested", b.get("stake", C.STAKE)) for b in done)
+    roi = pnl / staked * 100 if staked else 0
+    return f"{len(done)} στοιχ. · {w}✅ {l}❌ · PnL <b>{pnl:+.2f}€</b> · ROI {roi:+.1f}%"
+
+
 def _summary(bets: list[dict]) -> str:
     played = [b for b in bets if b.get("stake", C.STAKE) > 0]
     if not played:
@@ -1048,8 +1323,7 @@ def build_report(state: dict, now: dt.datetime) -> str:
     since = state.get("stats_since")
     since_txt = f" (από {parse_ts(since).astimezone(ATHENS):%d/%m})" if since else ""
     lines = [f"📊 <b>ΑΠΟΛΟΓΙΣΜΟΣ · {GR_DAYS[day.weekday()]} {day:%d/%m}</b>",
-             "<i>Ποσό = όσα έγραψες με απάντηση στο Telegram (αλλιώς το προτεινόμενο), "
-             "στην απόδοση της Stoiximan</i>", ""]
+             "<i>Ποσό = όσα έγραψες με απάντηση στο Telegram · χωρίς απάντηση = δεν παίχτηκε (▫️)</i>", ""]
     icons = {"WIN": "✅", "HALFWIN": "✅½", "LOSE": "❌", "HALFLOSS": "❌½", "PUSH": "↩️", "CANCELLED": "↩️"}
     if day_bets:
         for b in day_bets:
@@ -1058,7 +1332,12 @@ def build_report(state: dict, now: dt.datetime) -> str:
             stake = b.get("stake", C.STAKE)
             st_txt = " · δεν παίχτηκε" if stake == 0 else f" · {stake:g}€"
             head = f"{kind_icon}{html.escape(b['match'])} · {html.escape(b['pick'])} @{b['price']:.2f}{st_txt}"
-            if b["status"] == "settled":
+            if b["status"] == "settled" and stake == 0 and not b.get("suggested"):
+                lines.append(f"▫️{icons.get(b['result'], '•')} {head}{clv}")
+            elif b["status"] == "settled" and stake == 0:
+                lines.append(f"▫️{icons.get(b['result'], '•')} {head} (με το προτεινόμενο "
+                             f"{b.get('suggested', 0):g}€ θα ήταν {virtual_pnl(b):+.2f}€){clv}")
+            elif b["status"] == "settled":
                 lines.append(f"{icons.get(b['result'], '•')} {head} → <b>{bet_pnl(b):+.2f}€</b>{clv}")
             elif b["status"] == "unknown":
                 lines.append(f"❔ {head} → δεν βρέθηκε αποτέλεσμα{clv}")
@@ -1066,23 +1345,39 @@ def build_report(state: dict, now: dt.datetime) -> str:
                 lines.append(f"⏳ {head} → εκκρεμεί{clv}")
         done = [b for b in day_bets if b["status"] == "settled"]
         staked = sum(b.get("stake", C.STAKE) for b in done)
-        lines += ["", f"📅 Ημέρα: {_summary(done)} · ποντάρισες {staked:g}€"]
+        lines += ["", f"📅 Έπαιξες: {_summary(done)} · ποντάρισες {staked:g}€",
+                  f"📐 Αν έπαιζες όλες τις ειδοποιήσεις: {_virtual_summary(done)}"]
         pend = sum(1 for b in day_bets if b["status"] == "open")
         if pend:
             lines.append(f"⏳ Εκκρεμούν {pend} — θα μετρηθούν μόλις βγει το αποτέλεσμα")
     else:
         lines.append("Δεν βγήκαν ειδοποιήσεις αυτή τη μέρα.")
+    day_t = [t for t in state.get("tickets", {}).values() if t["date"] == day.strftime("%Y-%m-%d")]
+    if day_t:
+        lines += ["", "🎟️ <b>Δελτία</b>"]
+        for t in day_t:
+            st = t.get("stake")
+            res = {"WIN": "✅", "LOSE": "❌"}.get(t.get("result"), "⏳")
+            stake_txt = "δεν παίχτηκε" if not st else f"{st:g}€"
+            pnl = f" → <b>{ticket_pnl(t):+.2f}€</b>" if t.get("result") and st else ""
+            lines.append(f"{res} {html.escape(t['name'])} @{t['odds']:.2f} · {stake_txt}{pnl}")
+    all_t = [t for t in state.get("tickets", {}).values() if t.get("result") and t.get("stake")]
     bank = bankroll(state)
     lines += ["", f"💼 Κάσα: {C.BANKROLL:g}€ → <b>{bank:.2f}€</b> ({bank - C.BANKROLL:+.2f}€)",
-              f"📈 <b>Από την αρχή{since_txt}:</b> {_summary(settled_all)}"]
+              f"📈 <b>Από την αρχή{since_txt} — όσα έπαιξες:</b> {_summary(settled_all)}",
+              f"📐 <b>Όλες οι ειδοποιήσεις (προτεινόμενα ποσά):</b> {_virtual_summary(settled_all)}"]
     for kind, lab in (("value", "🔥 Αξία"), ("steam", "📢 Λεφτά")):
         sub = [b for b in settled_all if b.get("kind", "value") == kind]
         if sub:
-            lines.append(f"   {lab}: {_summary(sub)}")
+            lines.append(f"   {lab}: {_virtual_summary(sub)}")
+    if all_t:
+        w = sum(1 for t in all_t if t["result"] == "WIN")
+        tp = sum(ticket_pnl(t) for t in all_t)
+        lines.append(f"   🎟️ Δελτία: {len(all_t)} · {w}✅ {len(all_t) - w}❌ · PnL <b>{tp:+.2f}€</b>")
     for st in (2, 3):
         sub = [b for b in settled_all if b.get("stars") == st]
         if sub:
-            lines.append(f"   {'⭐' * st}: {_summary(sub)}")
+            lines.append(f"   {'⭐' * st}: {_virtual_summary(sub)}")
     dl = diag_line(state, dt.datetime.combine(day, dt.time(12), tzinfo=ATHENS))
     if dl:
         lines += ["", dl.replace("Σήμερα:", "Η μέρα:")]
@@ -1118,6 +1413,9 @@ def maybe_report(state: dict, now: dt.datetime, force: bool = False) -> bool:
 def prune_bets(state: dict, now: dt.datetime) -> None:
     cutoff = iso(now - dt.timedelta(days=C.KEEP_BETS_DAYS))
     state["bets"] = {k: b for k, b in state.get("bets", {}).items() if b["start"] >= cutoff}
+    state["tickets"] = {k: t for k, t in state.get("tickets", {}).items() if t["last_start"] >= cutoff}
+    state["cands"] = {k: v for k, v in state.get("cands", {}).items()
+                      if v and parse_ts(v[0]["start"]) > now - dt.timedelta(hours=3)}
 
 
 # ---------------------------------------------------------------- Main ---------
@@ -1175,6 +1473,7 @@ def run(dry: bool = False) -> None:
     fixtures = select_fixtures(state, now)
     sent = skipped = held = confirmed_n = below = 0
     DIAG.clear()
+    cat = {str(m.get("marketId")): m for m in state.get("market_catalog", [])}
     quiet = in_quiet_hours(now)
     if quiet:
         log.info("Ήσυχες ώρες: στέλνονται μόνο σοβαρές περιπτώσεις")
@@ -1197,6 +1496,11 @@ def run(dry: bool = False) -> None:
             continue
         t = dt.datetime.now(dt.timezone.utc)
         sigs = analyze(fx, hist, t, markets)
+        if C.TICKETS_ENABLED:
+            try:
+                collect_candidates(state, fx, hist, t, cat, markets)
+            except Exception as e:
+                log.info("Υποψήφια δελτίων %s: %s", fx["fixtureId"], e)
         if any((sg["values"] or sg.get("steam")) and not sg["live"] for sg in sigs):
             try:
                 fetch_confirmations(fx, hist, [sg for sg in sigs if sg["values"] or sg.get("steam")], state)
@@ -1231,6 +1535,10 @@ def run(dry: bool = False) -> None:
                 sent += 1
     save_diag(state, now)
     if not dry:
+        try:
+            maybe_send_tickets(state, now)
+        except Exception as e:
+            log.warning("Δελτία: %s", e)
         try:
             maybe_report(state, now)
         except Exception as e:
@@ -1361,6 +1669,10 @@ def main() -> None:
         print("Στάλθηκε.")
         test_alert()
         st = load_state()
+        try:
+            maybe_send_tickets(st, dt.datetime.now(dt.timezone.utc), force=True, test=True)
+        except Exception as e:
+            log.warning("Δοκιμή δελτίων: %s", e)
         send_telegram("🧪 <b>ΔΟΚΙΜΗ απολογισμού</b> (έτσι θα έρχεται κάθε βράδυ)\n\n"
                       + build_report(st, dt.datetime.now(dt.timezone.utc)))
     elif "--leagues" in args:
