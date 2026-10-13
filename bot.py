@@ -1662,6 +1662,30 @@ def debug() -> None:
     print("\nΤΕΛΟΣ ΔΟΚΙΜΗΣ")
 
 
+def test_alert() -> None:
+    """Στέλνει μια δοκιμαστική ειδοποίηση (ψεύτικος αγώνας, δεν καταγράφεται)."""
+    start = (dt.datetime.now(dt.timezone.utc) + dt.timedelta(hours=2)).strftime("%Y-%m-%dT%H:%M:%S.000Z")
+    sig = {
+        "fixture": {"participant1Name": "Ομάδα Α", "participant2Name": "Ομάδα Β", "startTime": start,
+                    "categoryName": "Scotland", "tournamentName": "Premiership"},
+        "live": False, "minute": None,
+        "mk": {"name": "Over/Under 2.5", "kind": "totals", "line": 2.5}, "label": "Over",
+        "fair": 1.80, "stake": 12, "bank": C.BANKROLL,
+        "values": [{"book": "stoiximan", "price": 1.88, "edge": 4.4}],
+        "drops": [{"book": C.SHARP_BOOK, "past": 2.05, "now": 1.85, "open": 2.10, "d_win": 9.8,
+                   "d_open": 11.9, "meta": None, "strong": True, "limit": 2500},
+                  {"book": "sbobet", "past": 2.02, "now": 1.86, "open": 2.06, "d_win": 7.9,
+                   "d_open": 9.7, "meta": None, "strong": True}],
+        "checked": [C.SHARP_BOOK, "sbobet", "singbet"],
+    }
+    try:
+        text = format_signal(sig)
+    except Exception as e:
+        log.warning("Δοκιμαστική ειδοποίηση: %s", e)
+        return
+    send_telegram("🧪 <b>ΔΟΚΙΜΗ</b> (ψεύτικος αγώνας, έτσι θα μοιάζουν οι ειδοποιήσεις)\n\n" + text)
+
+
 def main() -> None:
     args = set(sys.argv[1:])
     if "--test-telegram" in args:
@@ -1673,8 +1697,11 @@ def main() -> None:
             maybe_send_tickets(st, dt.datetime.now(dt.timezone.utc), force=True, test=True)
         except Exception as e:
             log.warning("Δοκιμή δελτίων: %s", e)
-        send_telegram("🧪 <b>ΔΟΚΙΜΗ απολογισμού</b> (έτσι θα έρχεται κάθε βράδυ)\n\n"
-                      + build_report(st, dt.datetime.now(dt.timezone.utc)))
+        try:
+            send_telegram("🧪 <b>ΔΟΚΙΜΗ απολογισμού</b> (έτσι θα έρχεται κάθε πρωί)\n\n"
+                          + build_report(st, dt.datetime.now(dt.timezone.utc)))
+        except Exception as e:
+            log.warning("Δοκιμή απολογισμού: %s", e)
     elif "--leagues" in args:
         list_leagues()
     elif "--markets" in args:
