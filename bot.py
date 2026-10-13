@@ -1009,10 +1009,23 @@ def record_bet(state: dict, sig: dict, msg_id: int | None = None) -> None:
     }
 
 
+def open_stakes(state: dict) -> float:
+    """Λεφτά που έχεις ποντάρει και δεν έχουν κριθεί ακόμα (έχουν φύγει από την κάσα)."""
+    return round(sum(b.get("stake") or 0 for b in state.get("bets", {}).values() if b.get("status") == "open")
+                 + sum(t.get("stake") or 0 for t in state.get("tickets", {}).values() if not t.get("result")), 2)
+
+
 def bankroll(state: dict) -> float:
-    """Τρέχουσα κάσα = αρχική + κέρδη/ζημιές των κλεισμένων στοιχημάτων."""
-    return round(C.BANKROLL + sum(bet_pnl(b) for b in state.get("bets", {}).values())
-                 + sum(ticket_pnl(t) for t in state.get("tickets", {}).values()), 2)
+    """Διαθέσιμη κάσα = αρχική + κέρδη/ζημιές όσων κρίθηκαν − ποσά που παίζονται τώρα.
+    Μόλις παίξεις, το ποσό βγαίνει από την κάσα· αν κερδίσει επιστρέφει μαζί με το κέρδος."""
+    settled = (sum(bet_pnl(b) for b in state.get("bets", {}).values())
+               + sum(ticket_pnl(t) for t in state.get("tickets", {}).values()))
+    return round(C.BANKROLL + state.get("bank_carry", 0) + settled - open_stakes(state), 2)
+
+
+def bank_line(state: dict) -> str:
+    op = open_stakes(state)
+    return f"💼 Κάσα τώρα: <b>{bankroll(state):.2f}€</b>" + (f" (+{op:g}€ σε εξέλιξη)" if op else "")
 
 
 def suggest_stake(sig: dict, state: dict) -> float:
@@ -1084,7 +1097,7 @@ def process_replies(state: dict) -> int:
                 note = f"✅ Ποσό δελτίου: {amount:g}€" if amount else "Το δελτίο δεν παίχτηκε."
             changed += 1
             try:
-                send_telegram(f"{note}\n<i>{html.escape(t['name'])} @{t['odds']:.2f}</i>",
+                send_telegram(f"{note}\n<i>{html.escape(t['name'])} @{t['odds']:.2f}</i>\n{bank_line(state)}",
                               reply_to=m.get("message_id"))
             except Exception:
                 pass
@@ -1103,7 +1116,8 @@ def process_replies(state: dict) -> int:
         changed += 1
         note = "❌ Δεν μετράει στο PnL (δεν το έπαιξες)." if amount == 0 else f"✅ Ποντάρισμα: {amount:g}€"
         try:
-            send_telegram(f"{note}\n<i>{html.escape(b['match'])} · {html.escape(b['pick'])} @{b['price']:.2f}</i>",
+            send_telegram(f"{note}\n<i>{html.escape(b['match'])} · {html.escape(b['pick'])} @{b['price']:.2f}</i>"
+                          f"\n{bank_line(state)}",
                           reply_to=m.get("message_id"))
         except Exception:
             pass
@@ -1363,7 +1377,9 @@ def build_report(state: dict, now: dt.datetime) -> str:
             lines.append(f"{res} {html.escape(t['name'])} @{t['odds']:.2f} · {stake_txt}{pnl}")
     all_t = [t for t in state.get("tickets", {}).values() if t.get("result") and t.get("stake")]
     bank = bankroll(state)
-    lines += ["", f"💼 Κάσα: {C.BANKROLL:g}€ → <b>{bank:.2f}€</b> ({bank - C.BANKROLL:+.2f}€)",
+    op = open_stakes(state)
+    lines += ["", f"💼 Κάσα: {C.BANKROLL:g}€ → <b>{bank:.2f}€</b> διαθέσιμα"
+              + (f" + {op:g}€ σε εξέλιξη" if op else "") + f" ({bank + op - C.BANKROLL:+.2f}€)",
               f"📈 <b>Από την αρχή{since_txt} — όσα έπαιξες:</b> {_summary(settled_all)}",
               f"📐 <b>Όλες οι ειδοποιήσεις (προτεινόμενα ποσά):</b> {_virtual_summary(settled_all)}"]
     for kind, lab in (("value", "🔥 Αξία"), ("steam", "📢 Λεφτά")):
@@ -1412,6 +1428,10 @@ def maybe_report(state: dict, now: dt.datetime, force: bool = False) -> bool:
 
 def prune_bets(state: dict, now: dt.datetime) -> None:
     cutoff = iso(now - dt.timedelta(days=C.KEEP_BETS_DAYS))
+    gone = (sum(bet_pnl(b) for b in state.get("bets", {}).values() if b["start"] < cutoff)
+            + sum(ticket_pnl(t) for t in state.get("tickets", {}).values() if t["last_start"] < cutoff))
+    if gone:
+        state["bank_carry"] = round(state.get("bank_carry", 0) + gone, 2)
     state["bets"] = {k: b for k, b in state.get("bets", {}).items() if b["start"] >= cutoff}
     state["tickets"] = {k: t for k, t in state.get("tickets", {}).items() if t["last_start"] >= cutoff}
     state["cands"] = {k: v for k, v in state.get("cands", {}).items()

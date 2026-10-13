@@ -430,6 +430,26 @@ def test_no_duplicate_functions_and_message_id():
         bot.requests.post = orig
 
 
+def test_bankroll_moves_with_stakes():
+    b = {"status": "open", "price": 2.0, "stake": 0.0, "start": "2099-01-01T00:00:00Z"}
+    state = {"bets": {"a": b}, "tickets": {}}
+    assert bot.bankroll(state) == C.BANKROLL
+    b["stake"] = 20                                   # το έπαιξα → φεύγει από την κάσα
+    assert bot.bankroll(state) == C.BANKROLL - 20
+    state["tickets"]["t"] = {"stake": 5, "result": None, "odds": 10, "last_start": "2099-01-01T00:00:00Z"}
+    assert bot.bankroll(state) == C.BANKROLL - 25
+    b.update(status="settled", result="WIN")          # κέρδισε → γυρνάει 40
+    assert bot.bankroll(state) == C.BANKROLL + 20 - 5
+    state["tickets"]["t"]["result"] = "LOSE"
+    assert bot.bankroll(state) == C.BANKROLL + 20 - 5
+    assert "σε εξέλιξη" not in bot.bank_line(state)
+    # το κλάδεμα παλιών στοιχημάτων δεν αλλάζει την κάσα
+    before = bot.bankroll(state)
+    b["start"] = "2000-01-01T00:00:00Z"
+    bot.prune_bets(state, NOW)
+    assert "a" not in state["bets"] and bot.bankroll(state) == before
+
+
 def test_test_telegram_mode_runs():
     sent = []
     orig_send, orig_load, orig_argv = bot.send_telegram, bot.load_state, sys.argv
