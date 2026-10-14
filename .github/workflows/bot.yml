@@ -23,9 +23,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
@@ -53,10 +53,18 @@ jobs:
         if: always()
         run: |
           [ -f state.json ] || exit 0
+          python -c "import json; json.load(open('state.json'))" || { echo "::warning::state.json χαλασμένο, δεν αποθηκεύτηκε"; exit 0; }
+          cp state.json "$RUNNER_TEMP/state.json"
           git config user.name "odds-bot"
           git config user.email "odds-bot@users.noreply.github.com"
-          git add state.json
-          git diff --cached --quiet && exit 0
-          git commit -m "update state [skip ci]"
-          git pull --rebase -X ours || true
-          git push
+          # Το νέο state κερδίζει πάντα· αν το push αποτύχει (π.χ. ανέβασες αρχεία την ίδια ώρα), ξαναδοκιμάζει.
+          for i in 1 2 3 4 5; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            cp "$RUNNER_TEMP/state.json" state.json
+            git add state.json
+            git diff --cached --quiet && exit 0
+            git commit -q -m "update state [skip ci]"
+            git push -q origin HEAD:main && exit 0
+            sleep $((i * 4))
+          done
+          echo "::warning::Δεν αποθηκεύτηκε το state σε αυτόν τον γύρο (θα αποθηκευτεί στον επόμενο)"
