@@ -876,6 +876,7 @@ def build_ticket(pool: list[dict], spec: dict, avoid: set) -> list[dict] | None:
     groups = set(spec.get("groups") or TICKET_GROUP_NAMES)
     for allow_reuse in (False, True):
         cands = [c for c in pool if c["group"] in groups
+                 and spec.get("leg_min", 0) <= c["price"] <= spec.get("leg_max", 99)
                  and (allow_reuse or (c["fid"], c["market"], c["outcome"]) not in avoid)][:C.TICKET_POOL_SIZE]
         beam = [((), 1.0, 0.0, frozenset())]   # (δείκτες, απόδοση, βαθμός, αγώνες)
         best = None

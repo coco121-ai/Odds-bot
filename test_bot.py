@@ -537,7 +537,7 @@ def test_tickets_candidates_build_and_replies():
         fx = {**FX, "fixtureId": f"T{i}", "startTime": (NOW + dt.timedelta(hours=2 + i % 5)).isoformat(),
               "participant1ShortName": f"Home{i}", "participant2ShortName": f"Away{i}"}
         fixtures.append(fx)
-        p1 = 1.45 + 0.1 * i   # ποικιλία αποδόσεων ανά αγώνα
+        p1 = 1.40 + 0.03 * i   # ποικιλία αποδόσεων ανά αγώνα
         p2 = round(1 / (1.04 - 1 / p1 - 1 / 3.6), 2)   # ρεαλιστικό περιθώριο ~4%
         hist = {"pinnacle": book({"101": {"101": [(300, p1 + 0.15), (10, p1)], "102": [(300, 3.6)], "103": [(300, p2)]},
                                   "1010": {"1010": [(300, 1.95), (20, 1.80)], "1011": [(300, 1.95)]},
@@ -559,6 +559,7 @@ def test_tickets_candidates_build_and_replies():
         assert spec["min"] <= odds <= spec["max"], (spec["name"], odds)
         assert len({c["fid"] for c in legs}) == len(legs)          # ένα σημείο ανά αγώνα
         assert {c["group"] for c in legs} <= set(spec["groups"])
+        assert all(c["price"] <= spec.get("leg_max", 99) for c in legs), spec["name"]
     sent = []
     orig = bot.send_telegram
     ids = iter(range(500, 600))
@@ -567,7 +568,7 @@ def test_tickets_candidates_build_and_replies():
         noon = dt.datetime(2026, 10, 10, 9, 5, tzinfo=dt.timezone.utc)   # 12:05 Ελλάδας
         st2 = {"cands": {k: [{**c, "start": (noon + dt.timedelta(hours=3)).isoformat()} for c in v]
                          for k, v in state["cands"].items()}}
-        assert bot.maybe_send_tickets(st2, noon) == 4
+        assert bot.maybe_send_tickets(st2, noon) == len(C.TICKETS)
         assert bot.maybe_send_tickets(st2, noon + dt.timedelta(minutes=5)) == 0   # μία φορά τη μέρα
     finally:
         bot.send_telegram = orig
