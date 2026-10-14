@@ -874,10 +874,27 @@ def build_ticket(pool: list[dict], spec: dict, avoid: set) -> list[dict] | None:
     lo = spec.get("min", spec["target"] * 0.8)
     hi = spec.get("max", spec["target"] * 1.5)
     groups = set(spec.get("groups") or TICKET_GROUP_NAMES)
+    bonus = spec.get("bonus", {})       # π.χ. {"over": 2.5} → προτιμά τα Over
+    caps = spec.get("max_kind", {})     # π.χ. {"corners": 1} → το πολύ 1 κόρνερ στο δελτίο
+
+    def kinds(c: dict) -> set:
+        lab = norm(c["label"])
+        return {c["group"]} | ({"over"} if "over" in lab else set()) | ({"under"} if "under" in lab else set())
+
+    def val(c: dict) -> float:
+        return c["score"] + sum(v for k, v in bonus.items() if k in kinds(c))
+
+    def fits(idx: tuple, c: dict) -> bool:
+        for k in kinds(c) & caps.keys():
+            if sum(1 for j in idx if k in kinds(cands[j])) >= caps[k]:
+                return False
+        return True
+
     for allow_reuse in (False, True):
         cands = [c for c in pool if c["group"] in groups
                  and spec.get("leg_min", 0) <= c["price"] <= spec.get("leg_max", 99)
-                 and (allow_reuse or (c["fid"], c["market"], c["outcome"]) not in avoid)][:C.TICKET_POOL_SIZE]
+                 and (allow_reuse or (c["fid"], c["market"], c["outcome"]) not in avoid)]
+        cands = sorted(cands, key=lambda c: -val(c))[:C.TICKET_POOL_SIZE]
         beam = [((), 1.0, 0.0, frozenset())]   # (δείκτες, απόδοση, βαθμός, αγώνες)
         best = None
         for _depth in range(C.TICKET_MAX_LEGS):
@@ -886,12 +903,12 @@ def build_ticket(pool: list[dict], spec: dict, avoid: set) -> list[dict] | None:
                 start = idx[-1] + 1 if idx else 0
                 for j in range(start, len(cands)):
                     c = cands[j]
-                    if c["fid"] in fids:
+                    if c["fid"] in fids or not fits(idx, c):
                         continue
                     o2 = odds * c["price"]
                     if o2 > hi:
                         continue
-                    st = (idx + (j,), o2, score + c["score"], fids | {c["fid"]})
+                    st = (idx + (j,), o2, score + val(c), fids | {c["fid"]})
                     if o2 >= lo:
                         # προτιμάμε υψηλότερο μέσο βαθμό και λιγότερα σημεία (λιγότερο ρίσκο)
                         key = (st[2] / len(st[0]), -len(st[0]))

@@ -217,9 +217,11 @@ TICKET_DROP_WEIGHT = 0.3          # πόσο μετράει το "μπαίνου
 TICKET_MONEY_DROP_PCT = 5.0       # 💸 όταν η απόδοση στο Pinnacle έχει πέσει ≥ Χ% από την αρχή
 ALL_GROUPS = ["1x2", "goals", "btts", "corners", "cards"]
 TICKETS = [
-    # 1) x10–30: μόνο «σίγουρα» σημεία έως 1.70 (Over/Under και 1Χ2) → περισσότερα σημεία, μικρές αποδόσεις
-    {"name": "Δελτίο x10–30 · σίγουρα (έως 1.70)", "target": 15, "min": 10, "max": 30,
-     "groups": ["1x2", "goals"], "leg_max": 1.70},
-    # 2) x80–100: ελεύθερο — γκολ, 1Χ2, γκολ-γκολ, κόρνερ, κάρτες, αποδόσεις έως TICKET_LEG_MAX_ODDS
-    {"name": "Δελτίο x80–100", "target": 90, "min": 80, "max": 100, "groups": ALL_GROUPS},
+    # 1) x10–30: «σίγουρα» σημεία έως 1.70, κυρίως Over (γκολ / ημίχρονο), έως 2 σημεία 1Χ2, έως 1 Under
+    {"name": "Δελτίο x10–30 · Over (έως 1.70)", "target": 15, "min": 10, "max": 30,
+     "groups": ["goals", "1x2"], "leg_max": 1.70,
+     "bonus": {"over": 3.0}, "max_kind": {"1x2": 2, "under": 1}},
+    # 2) x80–100: από όλα — 1Χ2, γκολ, γκολ-γκολ, και το πολύ 1 κόρνερ και 1 κάρτες
+    {"name": "Δελτίο x80–100 · από όλα", "target": 90, "min": 80, "max": 100, "groups": ALL_GROUPS,
+     "max_kind": {"corners": 1, "cards": 1}},
 ]

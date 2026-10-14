@@ -540,10 +540,10 @@ def test_tickets_candidates_build_and_replies():
         p1 = 1.40 + 0.03 * i   # ποικιλία αποδόσεων ανά αγώνα
         p2 = round(1 / (1.04 - 1 / p1 - 1 / 3.6), 2)   # ρεαλιστικό περιθώριο ~4%
         hist = {"pinnacle": book({"101": {"101": [(300, p1 + 0.15), (10, p1)], "102": [(300, 3.6)], "103": [(300, p2)]},
-                                  "1010": {"1010": [(300, 1.95), (20, 1.80)], "1011": [(300, 1.95)]},
+                                  "1010": {"1010": [(300, 1.75), (20, 1.60)], "1011": [(300, 2.25)]},
                                   "10783": {"10783": [(300, 1.90)], "10784": [(300, 1.90)]}}),
                 "stoiximan": book({"101": {"101": [(300, round(p1 * 1.03, 2))], "102": [(300, 3.4)], "103": [(300, p2)]},
-                                   "1010": {"1010": [(300, 1.88)], "1011": [(300, 1.90)]},
+                                   "1010": {"1010": [(300, 1.66)], "1011": [(300, 2.20)]},
                                    "10783": {"10783": [(300, 1.97)], "10784": [(300, 1.92)]}})}
         n = bot.collect_candidates(state, fx, hist, NOW, cat, MARKETS)
         assert n >= 2, (i, n)
@@ -560,6 +560,8 @@ def test_tickets_candidates_build_and_replies():
         assert len({c["fid"] for c in legs}) == len(legs)          # ένα σημείο ανά αγώνα
         assert {c["group"] for c in legs} <= set(spec["groups"])
         assert all(c["price"] <= spec.get("leg_max", 99) for c in legs), spec["name"]
+        for k, cap in spec.get("max_kind", {}).items():
+            assert sum(1 for c in legs if k == c["group"] or k in bot.norm(c["label"])) <= cap, (spec["name"], k)
     sent = []
     orig = bot.send_telegram
     ids = iter(range(500, 600))
