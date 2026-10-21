@@ -7,6 +7,7 @@ import config as C
 
 C.MAX_ODDS = 8.0  # τα τεστ χρησιμοποιούν και μεγαλύτερες αποδόσεις
 C.BANKROLL = 100  # τα τεστ υπολογίζουν ποντάρισμα με κάσα 100€
+C.MIN_PROB_PCT = 0  # τα τεστ ελέγχουν και χαμηλές πιθανότητες (ξεχωριστό τεστ για το όριο)
 
 C.USE_BETFAIR = True  # τα τεστ ελέγχουν και τη λογική του Betfair
 C.GREEK_BOOKS[:] = ["stoiximan", "pamestoixima-gr"]
@@ -322,15 +323,20 @@ def test_settle_respects_daily_cap_and_quota():
     n = {"s": 0}
     def fake(endpoint, **p):
         if endpoint == "account":
-            return {"request_limit": 250, "request_count": 222}  # μένουν 28, κρατάμε 25 → 3
+            # μένουν 250-150-n · 22 μέρες ως το τέλος του μήνα · 47 για λίστα αγώνων → (100-47)/22 ≈ 3 τη μέρα
+            return {"request_limit": 250, "request_count": 150 + n["s"]}
         n["s"] += 1
         return {"markets": {}}
     bot.api_get = fake
     try:
         bot.settle_bets(state, NOW + dt.timedelta(hours=5))
+        assert n["s"] == 3, n
+        for b in state["bets"].values():   # να ξαναγίνουν "due" αμέσως
+            b["tries"] = 0
+        bot.settle_bets(state, NOW + dt.timedelta(hours=6))   # ίδια μέρα: δεν ξοδεύει παραπάνω
+        assert n["s"] == 3, n
     finally:
         bot.api_get = orig
-    assert n["s"] == 3, n
 
 
 def test_pinnacle_limit_filter():
@@ -448,6 +454,69 @@ def test_bankroll_moves_with_stakes():
     b["start"] = "2000-01-01T00:00:00Z"
     bot.prune_bets(state, NOW)
     assert "a" not in state["bets"] and bot.bankroll(state) == before
+
+
+def test_min_probability_filter():
+    old = C.MIN_PROB_PCT
+    try:
+        C.MIN_PROB_PCT = 0
+        sigs = bot.analyze(FX, HIST, NOW, MARKETS)
+        low = [x for x in sigs if x["fair"] and 100 / x["fair"] < 52]
+        assert low, "χρειάζεται σήμα με πιθανότητα < 52% για το τεστ"
+        C.MIN_PROB_PCT = 52
+        sigs2 = bot.analyze(FX, HIST, NOW, MARKETS)
+        assert all(not (x["values"] or x["steam"]) or 100 / x["fair"] >= 52 for x in sigs2)
+        assert len([x for x in sigs2 if x["values"] or x["steam"]]) < len([x for x in sigs if x["values"] or x["steam"]])
+    finally:
+        C.MIN_PROB_PCT = old
+
+
+def test_evening_ticket_slot_and_auto_settle():
+    night = dt.datetime(2026, 10, 10, 20, 50, tzinfo=dt.timezone.utc)   # 23:50 Ελλάδας
+    cands = {}
+    for i in range(12):
+        fid = f"N{i}"
+        start = (night + dt.timedelta(hours=14 + i % 6)).isoformat()   # αύριο απόγευμα
+        cands[fid] = [{"fid": fid, "market": "1010", "outcome": "1010", "group": "goals",
+                       "label": "Over 2.5 γκολ", "price": 1.75 + 0.02 * i, "prob": 0.55, "score": 1.0,
+                       "drop": 6, "edge": 1.0, "match": f"H{i} – A{i}", "start": start}]
+    state = {"cands": cands, "tickets_sent": "2026-10-10"}   # παλιά μορφή: τα ημέρας είχαν σταλεί
+    sent = []
+    ids = iter(range(900, 999))
+    orig_send, orig_api = bot.send_telegram, bot.api_get
+    bot.send_telegram = lambda m, reply_to=None: (sent.append((m, reply_to)), next(ids))[1]
+    try:
+        assert bot.maybe_send_tickets(state, night) == 1          # μόνο το βραδινό
+        assert "ΒΡΑΔΙΝΟ" in sent[0][0]
+        assert bot.maybe_send_tickets(state, night + dt.timedelta(minutes=10)) == 0
+        tk = next(iter(state["tickets"].values()))
+        assert 20 <= tk["odds"] <= 30 and tk["name"].startswith("Βραδινό")
+        # αποτελέσματα: όλα WIN εκτός από ένα → κάηκε, και ενημέρωση στο Telegram ως απάντηση
+        lose_fid = tk["leg_data"][-1]["fid"]
+        calls = []
+        def fake(endpoint, **p):
+            if endpoint == "account":
+                return {}   # άγνωστο όριο → μόνο το ημερήσιο ανώτατο
+            calls.append(p["fixtureId"])
+            res = "LOSE" if p["fixtureId"] == lose_fid else "WIN"
+            return {"markets": {"1010": {"outcomes": {"1010": {"players": {"0": {"result": res}}}}}}}
+        bot.api_get = fake
+        later = night + dt.timedelta(days=1, hours=2)
+        sent.clear()
+        bot.settle_bets(state, later)
+        assert tk["result"] == "LOSE" and tk.get("auto")
+        assert len(calls) < len(tk["leg_data"]) or calls[-1] == lose_fid   # σταματάει στο πρώτο χαμένο
+        assert "κάηκε" in sent[-1][0] and sent[-1][1] == tk["msg_ids"][0]
+        # δεύτερο δελτίο που βγαίνει
+        tk2 = {**tk, "result": None, "auto": False, "msg_ids": [777],
+               "leg_data": [{**l, "res": None, "tries": 0} for l in tk["leg_data"]]}
+        state["tickets"]["x"] = tk2
+        lose_fid = "none"
+        sent.clear()
+        bot.settle_bets(state, later + dt.timedelta(hours=1))
+        assert tk2["result"] == "WIN" and "ΒΓΗΚΕ" in sent[-1][0] and sent[-1][1] == 777
+    finally:
+        bot.send_telegram, bot.api_get = orig_send, orig_api
 
 
 def test_test_telegram_mode_runs():
@@ -570,13 +639,15 @@ def test_tickets_candidates_build_and_replies():
         noon = dt.datetime(2026, 10, 10, 9, 5, tzinfo=dt.timezone.utc)   # 12:05 Ελλάδας
         st2 = {"cands": {k: [{**c, "start": (noon + dt.timedelta(hours=3)).isoformat()} for c in v]
                          for k, v in state["cands"].items()}}
-        assert bot.maybe_send_tickets(st2, noon) == len(C.TICKETS)
+        day_n = sum(1 for t in C.TICKETS if t.get("time", C.TICKETS_TIME) == C.TICKETS_TIME)
+        assert bot.maybe_send_tickets(st2, noon) == day_n
         assert bot.maybe_send_tickets(st2, noon + dt.timedelta(minutes=5)) == 0   # μία φορά τη μέρα
     finally:
         bot.send_telegram = orig
     assert "ΔΕΛΤΙΑ ΗΜΕΡΑΣ" in sent[0] and "Πιθανότητα <b>" in sent[1]
     print(sent[2], "\n")
     tk = list(st2["tickets"].values())[1]
+    assert tk["leg_data"] and {"fid", "market", "outcome"} <= tk["leg_data"][0].keys()
     mid = tk["msg_ids"][0]
     upd = {"ok": True, "result": [
         {"update_id": 1, "message": {"message_id": 1, "chat": {"id": C.TELEGRAM_CHAT_ID or "123"}, "text": "5",
