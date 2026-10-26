@@ -26,6 +26,7 @@ import requests
 from zoneinfo import ZoneInfo
 
 import config as C
+import stats as ST
 
 API = "https://api.oddspapi.io/v4"
 STATE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "state.json")
@@ -165,7 +166,7 @@ def resolve_markets(catalog: list[dict]) -> dict:
                 if kind == "totals" and len(cfg.get("lines", [])) > 1:
                     title += f" ({float(m['handicap']):g})"
                 resolved[mid] = {"name": title, "kind": kind, "outcomes": outs,
-                                 "line": m.get("handicap"),
+                                 "line": m.get("handicap"), "period": cfg.get("period"),
                                  "max_odds": cfg.get("max_odds", C.MAX_ODDS)}
     if not resolved:  # ασφάλεια: τουλάχιστον το 1Χ2 που ξέρουμε από τα docs
         resolved["101"] = {"name": "Τελικό αποτέλεσμα 1Χ2", "kind": "1x2", "line": 0,
@@ -458,6 +459,7 @@ def pct_drop(old: float, new: float) -> float:
     return (old - new) / old * 100 if old else 0.0
 
 
+STATS_STATE: dict = {}     # το state του γύρου, για τις προβλέψεις από στατιστικά
 DIAG: dict[str, set] = {}   # διαγνωστικά γύρου: τι βρέθηκε / τι κόπηκε και γιατί
 
 
@@ -524,9 +526,37 @@ def analyze(fx: dict, hist: dict, now: dt.datetime, markets: dict) -> list[dict]
                     edge = (cur["price"] / fair - 1) * 100 if fair else None
                     greek.append({"book": b, "price": cur["price"], "edge": edge})
             prob_ok = bool(fair) and 100 / fair >= C.MIN_PROB_PCT
+            model = None
+            if C.STATS_ENABLED and mk.get("kind") == "totals" and STATS_STATE:
+                pred = STATS_STATE.setdefault("_pred", {}).get(fx["fixtureId"])
+                if pred is None:
+                    pred = ST.predict(STATS_STATE, fx) or {}
+                    STATS_STATE["_pred"][fx["fixtureId"]] = pred
+                stat = "ht" if mk.get("period") == "half1" else "goals"
+                side = norm(label)
+                try:
+                    p_m = ST.prob(pred, stat, float(mk.get("line")), side)
+                except (TypeError, ValueError):
+                    p_m = None
+                if p_m is not None:
+                    model = {"p": round(p_m, 3), "exp": pred[stat], "n": pred.get(stat + "_n", 0), "stat": stat}
+                    if C.STATS_FILTER_OVERS and p_m * 100 < C.STATS_MIN_MODEL_PROB:
+                        prob_ok = False
+                        _diag("stats_no", dkey)
+            # Φίλτρα ποιότητας (από τα αποτελέσματά μας): μεγάλη αγορά στο Pinnacle και όχι πολύ νωρίς
+            pin_cur = current(series(hist, C.SHARP_BOOK, m, o), now, max_age)
+            pin_lim = pin_cur.get("limit") if pin_cur else None
+            hours_to = (parse_ts(fx["startTime"]) - now).total_seconds() / 3600
+            if pin_lim is not None and pin_lim < C.ALERT_MIN_PIN_LIMIT:
+                prob_ok = False
+                _diag("low_limit", dkey)
+            elif not live and hours_to > C.ALERT_MAX_HOURS_BEFORE:
+                prob_ok = False
+                _diag("too_early", dkey)
             values = [g for g in greek if g["edge"] is not None and g["edge"] >= edge_min
                       and C.MIN_ODDS <= g["price"] <= hi and prob_ok]
-            if not prob_ok and fair and any(g["edge"] is not None and g["edge"] >= edge_min for g in greek):
+            if (fair and 100 / fair < C.MIN_PROB_PCT
+                    and any(g["edge"] is not None and g["edge"] >= edge_min for g in greek)):
                 _diag("prob_low", dkey)
             if big_move and not live:
                 edges = [g["edge"] for g in greek if g["edge"] is not None]
@@ -546,11 +576,98 @@ def analyze(fx: dict, hist: dict, now: dt.datetime, markets: dict) -> list[dict]
                 if ok:
                     steam = max(ok, key=lambda g: g["price"])
             if values or steam or (any(d["strong"] for d in drops) and C.SEND_DROPS_WITHOUT_VALUE):
-                signals.append({"fixture": fx, "market": m, "outcome": o, "label": label,
+                signals.append({"fixture": fx, "market": m, "outcome": o, "label": label, "pin_limit": pin_lim,
+                                "model": model,
                                 "live": live, "minute": minute, "drops": drops, "values": values, "greek": greek,
                                 "checked": checked, "steam": steam,
                                 "fair": fair, "fair_src": fair_src, "mk": mk})
     return signals
+
+
+def corner_signals(state: dict, fx: dict, hist: dict, now: dt.datetime, cat: dict, markets: dict) -> list[dict]:
+    """🚩 Κόρνερ: ειδοποίηση μόνο όταν συμφωνούν ΚΑΙ τα στατιστικά ΚΑΙ η αγορά:
+    το μοντέλο δίνει ≥ CORNERS_MIN_MODEL_PROB και αξία στη Stoiximan, και η Stoiximan δεν είναι κάτω από
+    τη δίκαιη απόδοση του Pinnacle."""
+    if not (C.STATS_ENABLED and C.CORNERS_ALERTS) or is_live(fx, now):
+        return []
+    hours_to = (parse_ts(fx["startTime"]) - now).total_seconds() / 3600
+    if hours_to > C.ALERT_MAX_HOURS_BEFORE:
+        return []
+    pred = ST.predict(state, fx)
+    if not pred or "corners" not in pred:
+        return []
+    pin = (hist.get(C.SHARP_BOOK) or {}).get("markets") or {}
+    out = []
+    for mid in pin:
+        m = cat.get(str(mid))
+        if not m or ticket_group(str(mid), m, markets) != "corners":
+            continue
+        outs = {str(o.get("outcomeId")): str(o.get("outcomeName") or "") for o in (m.get("outcomes") or [])}
+        for o, oname in outs.items():
+            spec = spec_of(str(mid), o, cat, markets)
+            if not spec:
+                continue
+            fair, src = fair_odds(hist, str(mid), o, outs, now, None)
+            if not fair or src != "Pinnacle":
+                continue
+            cur = current(series(hist, C.GREEK_BOOKS[0], str(mid), o), now)
+            if not cur or not (C.MIN_ODDS <= cur["price"] <= C.MAX_ODDS):
+                continue
+            pin_cur = current(series(hist, C.SHARP_BOOK, str(mid), o), now)
+            lim = pin_cur.get("limit") if pin_cur else None
+            p_m = ST.prob(pred, "corners", spec["line"], spec["side"])
+            edge_pin = (cur["price"] / fair - 1) * 100
+            edge_model = (p_m * cur["price"] - 1) * 100
+            dkey = f"{fx['fixtureId']}|{mid}|{o}|corners"
+            if p_m * 100 < C.CORNERS_MIN_MODEL_PROB or edge_model < C.CORNERS_MIN_MODEL_EDGE_PCT:
+                continue
+            if edge_pin < C.CORNERS_MIN_PIN_EDGE_PCT or 100 / fair < C.CORNERS_MIN_MARKET_PROB:
+                _diag("corners_market_no", dkey)
+                continue
+            if lim is not None and lim < C.CORNERS_MIN_PIN_LIMIT:
+                _diag("corners_small", dkey)
+                continue
+            _diag("corners", dkey)
+            out.append({"fixture": fx, "market": str(mid), "outcome": o, "label": oname, "live": False,
+                        "minute": None, "drops": [], "greek": [], "checked": [], "steam": None,
+                        "values": [{"book": C.GREEK_BOOKS[0], "price": cur["price"], "edge": round(edge_pin, 1)}],
+                        "fair": fair, "fair_src": "Pinnacle", "pin_limit": lim, "kind": "corners", "spec": spec,
+                        "mk": {"name": f"Κόρνερ Over/Under {spec['line']:g}", "kind": "corners", "line": spec["line"]},
+                        "model": {"p": round(p_m, 3), "exp": pred["corners"], "n": pred.get("corners_n", 0),
+                                  "stat": "corners"},
+                        "model_edge": round(edge_model, 1)})
+    out.sort(key=lambda sg: -(sg["model_edge"] + sg["values"][0]["edge"]))
+    return out[:1]   # η καλύτερη ανά αγώνα
+
+
+def format_corner(sig: dict) -> str:
+    f = sig["fixture"]
+    h = f.get("participant1ShortName") or f.get("participant1Name") or "?"
+    a = f.get("participant2ShortName") or f.get("participant2Name") or "?"
+    flag, country = country_flag(f)
+    start = parse_ts(f["startTime"]).astimezone(ATHENS)
+    v, md = sig["values"][0], sig["model"]
+    side = {"over": "Over", "under": "Under"}.get(sig["spec"]["side"], sig["label"])
+    lines = [f"<b>🚩 ΚΟΡΝΕΡ · στατιστικά + αγορά</b>",
+             "",
+             f"{flag} <b>{html.escape(h)} – {html.escape(a)}</b>",
+             f"🏆 {html.escape(country)} · {html.escape(f.get('tournamentName') or '')}",
+             f"🕒 {GR_DAYS[start.weekday()]} {start:%d/%m} · <b>{start:%H:%M}</b>",
+             "",
+             f"👉 <b>{side} {sig['spec']['line']:g} κόρνερ  @{v['price']:.2f}</b> στη {name(v['book'])}",
+             "",
+             f"📈 Στατιστικά: <b>{md['p'] * 100:.0f}%</b> · αναμενόμενα ~{md['exp']:.1f} κόρνερ",
+             f"✅ Αξία: <b>{sig['model_edge']:+.1f}%</b> κατά τα στατιστικά · {v['edge']:+.1f}% κατά το Pinnacle "
+             f"(δίκαιη {sig['fair']:.2f})"]
+    if sig.get("stake"):
+        lines.append(f"💰 Πόνταρε <b>{sig['stake']:g}€</b> (μικρό — νέο σύστημα, το μετράμε χωριστά)")
+    det = [f"📊 Πιθανότητα κατά το Pinnacle: {100 / sig['fair']:.0f}%",
+           f"🗂 Από τα τελευταία ~{md['n']} ματς κάθε ομάδας (εντός/εκτός), football-data.co.uk"]
+    if sig.get("pin_limit"):
+        det.append(f"💶 Το Pinnacle δέχεται έως €{sig['pin_limit']:,.0f} στα κόρνερ".replace(",", "."))
+    lines += ["", "<blockquote expandable>📋 <b>Λεπτομέρειες</b>\n" + "\n".join(det) + "</blockquote>",
+              "<i>✍️ Το έπαιξες; Απάντησε με το ποσό (π.χ. 5). Χωρίς απάντηση = δεν παίχτηκε.</i>"]
+    return "\n".join(lines)
 
 
 def should_alert(state: dict, sig: dict) -> bool:
@@ -714,6 +831,8 @@ def format_signal(sig: dict) -> str:
         row.append(f"📊 Πιθανότητα <b>{prob:.0f}%</b> {lvl}")
     if row:
         lines.append(" · ".join(row))
+    if model_text(sig):
+        lines.append(model_text(sig))
 
     det = []
     for d in sorted(sig["drops"], key=lambda d: not d.get("strong", True)):
@@ -812,6 +931,45 @@ def ticket_label(group: str, m: dict, oname: str, fx: dict, mk_name: str) -> str
     return oname
 
 
+def spec_of(mid: str, outcome: str, cat: dict, markets: dict) -> dict | None:
+    """Τι ακριβώς είναι μια επιλογή (για στατιστικά/αποτελέσματα): stat, line, side."""
+    m = cat.get(str(mid)) or {}
+    on = norm(next((o.get("outcomeName") for o in (m.get("outcomes") or [])
+                    if str(o.get("outcomeId")) == str(outcome)), "")) or \
+        norm((markets.get(str(mid)) or {}).get("outcomes", {}).get(str(outcome)))
+    try:
+        line = float(m.get("handicap") if m.get("handicap") is not None else (markets.get(str(mid)) or {}).get("line"))
+    except (TypeError, ValueError):
+        line = None
+    if str(mid) == "101":
+        return {"stat": "1x2", "side": on} if on in ("1", "x", "2") else None
+    group = ticket_group(str(mid), m, markets) if m else ("goals" if str(mid) in markets else None)
+    if group == "btts" and on in ("yes", "no"):
+        return {"stat": "btts", "side": on}
+    if group in ("goals", "corners") and on in ("over", "under") and line is not None:
+        if group == "goals":
+            half = (markets.get(str(mid)) or {}).get("period") == "half1" or (bool(m) and _period_ok(m, "half1"))
+            return {"stat": "ht" if half else "goals", "line": line, "side": on}
+        return {"stat": "corners", "line": line, "side": on}
+    return None
+
+
+def fx_info(fx: dict) -> dict:
+    """Τα στοιχεία του αγώνα που χρειάζονται για να βρεθεί το αποτέλεσμα στα στατιστικά."""
+    keep = ("participant1Name", "participant1ShortName", "participant2Name", "participant2ShortName",
+            "categoryName", "categorySlug", "tournamentName", "startTime")
+    return {k: fx.get(k) for k in keep}
+
+
+def model_text(sig: dict) -> str | None:
+    md = sig.get("model")
+    if not md:
+        return None
+    unit = {"goals": "γκολ", "ht": "γκολ ημιχρόνου", "corners": "κόρνερ"}.get(md["stat"], "")
+    return (f"📈 Στατιστικά: <b>{md['p'] * 100:.0f}%</b> · αναμενόμενα ~{md['exp']:.1f} {unit} "
+            f"(τελευταία ~{md['n']} ματς κάθε ομάδας)")
+
+
 def collect_candidates(state: dict, fx: dict, hist: dict, now: dt.datetime, cat: dict, markets: dict) -> int:
     """Από τα δεδομένα που ήδη κατεβάσαμε (χωρίς έξτρα αιτήματα): οι καλύτερες επιλογές του αγώνα
     για τα δελτία = όσο πιο κοντά/πάνω από τη δίκαιη απόδοση η Stoiximan + αν μπαίνουν λεφτά."""
@@ -853,7 +1011,7 @@ def collect_candidates(state: dict, fx: dict, hist: dict, now: dt.datetime, cat:
                         "label": ticket_label(group, m, oname, fx, mk_name),
                         "book": best["book"], "price": round(best["price"], 3), "fair": fair,
                         "edge": round(edge, 1), "drop": round(drop, 1), "prob": round(1 / fair, 4),
-                        "score": round(score, 2)})
+                        "score": round(score, 2), "spec": spec_of(str(mid), o, cat, markets)})
     out.sort(key=lambda c: -c["score"])
     keep, seen = [], set()
     for c in out:  # έως 6 ανά αγώνα, το πολύ 2 από την ίδια κατηγορία
@@ -865,6 +1023,7 @@ def collect_candidates(state: dict, fx: dict, hist: dict, now: dt.datetime, cat:
             break
     cands = state.setdefault("cands", {})
     if keep:
+        keep[0]["fxi"] = fx_info(fx)
         cands[fx["fixtureId"]] = keep
     else:
         cands.pop(fx["fixtureId"], None)
@@ -1020,7 +1179,9 @@ def _send_ticket_batch(state: dict, now: dt.datetime, idxs: list[int], today: st
             "date": today, "name": spec["name"], "odds": round(odds, 2),
             "prob": round(prob, 5), "msg_ids": [mid] if mid else [],
             "legs": [f"{c['match']} · {c['label']} @{c['price']:.2f}" for c in legs],
-            "leg_data": [{k: c[k] for k in ("fid", "market", "outcome", "price", "prob", "start", "match", "label")}
+            "leg_data": [{**{k: c[k] for k in ("fid", "market", "outcome", "price", "prob", "start", "match", "label")},
+                          "spec": c.get("spec"),
+                          "fxi": next((x.get("fxi") for x in state.get("cands", {}).get(c["fid"], []) if x.get("fxi")), None)}
                          for c in legs],
             "last_start": max(c["start"] for c in legs), "stake": None, "result": None}
     return sent
@@ -1061,8 +1222,10 @@ def record_bet(state: dict, sig: dict, msg_id: int | None = None) -> None:
         "pick": f"{sig['mk']['name']}: {pick_text(sig, h, a)}",
         "book": v["book"], "price": round(v["price"], 3), "edge": round(v["edge"], 1),
         "fair": sig["fair"], "stars": stars(sig), "start": f["startTime"],
-        "kind": "value" if sig["values"] else "steam",
-        "pin_limit": pin.get("limit") if pin else None,
+        "kind": sig.get("kind") or ("value" if sig["values"] else "steam"),
+        "spec": sig.get("spec"), "fxi": fx_info(f), "lg": ST.league_code(f),
+        "model_p": (sig.get("model") or {}).get("p"),
+        "pin_limit": sig.get("pin_limit") or (pin.get("limit") if pin else None),
         "sent_at": iso(dt.datetime.now(dt.timezone.utc)),
         "status": "open", "tries": 0,
         "stake": 0.0, "suggested": sig.get("stake", C.STAKE), "replied": False,  # 0 μέχρι να απαντήσεις
@@ -1340,9 +1503,46 @@ def notify_ticket(state: dict, t: dict) -> None:
         log.info("Αποτέλεσμα δελτίου: %s", e)
 
 
+def settle_from_stats(state: dict, now: dt.datetime) -> int:
+    """Αποτελέσματα από το football-data.co.uk (δωρεάν) για όσες λίγκες καλύπτει."""
+    if not C.STATS_ENABLED or not state.get("stats"):
+        return 0
+    n = 0
+    for b in state.get("bets", {}).values():
+        if b["status"] != "open" or not b.get("fxi") or not b.get("spec") or not _due(b["start"], 0, now):
+            continue
+        row = ST.find_result(state, b["fxi"])
+        res = ST.settle(row, b["spec"]) if row else None
+        if res in SETTLE_PNL:
+            b.update(status="settled", result=res, settled_at=iso(now), src="stats")
+            b["pnl"] = bet_pnl(b)
+            n += 1
+    for t in state.get("tickets", {}).values():
+        if t.get("result") or not t.get("leg_data"):
+            continue
+        for l in t["leg_data"]:
+            if l.get("res") is None and l.get("fxi") and l.get("spec") and _due(l["start"], 0, now):
+                row = ST.find_result(state, l["fxi"])
+                res = ST.settle(row, l["spec"]) if row else None
+                if res in SETTLE_PNL:
+                    l["res"] = res
+                    n += 1
+        res, odds = ticket_status(t)
+        if res:
+            t["result"], t["odds"], t["auto"] = res, odds, True
+            notify_ticket(state, t)
+    if n:
+        log.info("Αποτελέσματα από στατιστικά: %d", n)
+    return n
+
+
 def settle_bets(state: dict, now: dt.datetime) -> int:
     """Βρίσκει αποτελέσματα (1 χρεώσιμο αίτημα ανά αγώνα, για όλες τις αγορές του).
     Σειρά: 1) στοιχήματα που έπαιξες 2) δελτία 3) ειδοποιήσεις που δεν έπαιξες."""
+    try:
+        settle_from_stats(state, now)
+    except Exception as e:
+        log.info("Αποτελέσματα από στατιστικά: %s", e)
     bets = state.get("bets", {})
     tickets = state.get("tickets", {})
     played, unplayed = {}, {}
@@ -1484,7 +1684,10 @@ def diag_line(state: dict, now: dt.datetime) -> str | None:
             f"(1Χ2 {n('value', '1x2')} · γκολ {n('value', 'goals')}) · μεγάλες πτώσεις {n('drop')} "
             f"(1Χ2 {n('drop', '1x2')} · γκολ {n('drop', 'goals')}) · ειδοποιήσεις {n('alert')}\n"
             f"✂️ Κόπηκαν: {n('odds_high')} λόγω απόδοσης &gt;{C.MAX_ODDS:g} · "
-            f"{n('prob_low')} λόγω πιθανότητας &lt;{C.MIN_PROB_PCT:g}% · {n('small_market')} λόγω μικρής αγοράς\n"
+            f"📈 Στατιστικά: {n('stats_no')} Over/Under κόπηκαν επειδή δεν τα στήριζαν · κόρνερ: {n('corners')} "
+            f"ευκαιρίες ({n('corners_market_no')} χωρίς στήριξη από την αγορά)\n"
+            f"{n('prob_low')} λόγω πιθανότητας &lt;{C.MIN_PROB_PCT:g}% · {n('low_limit')} λόγω ορίου Pinnacle "
+            f"&lt;€{C.ALERT_MIN_PIN_LIMIT:g} · {n('too_early')} επειδή ήταν &gt;{C.ALERT_MAX_HOURS_BEFORE:g}ω πριν\n"
             f"📐 Στις μεγάλες πτώσεις η Stoiximan έδινε: ≥5%: {n('drop_edge_e5')} · "
             f"2.5–5%: {n('drop_edge_e2')} · 0–2.5%: {n('drop_edge_e0')} · "
             f"κάτω από τη δίκαιη: {n('drop_edge_neg')} · χωρίς απόδοση: {n('drop_edge_none')}")
@@ -1551,7 +1754,7 @@ def build_report(state: dict, now: dt.datetime) -> str:
               + (f" + {op:g}€ σε εξέλιξη" if op else "") + f" ({bank + op - C.BANKROLL:+.2f}€)",
               f"📈 <b>Από την αρχή{since_txt} — όσα έπαιξες:</b> {_summary(settled_all)}",
               f"📐 <b>Όλες οι ειδοποιήσεις (προτεινόμενα ποσά):</b> {_virtual_summary(settled_all)}"]
-    for kind, lab in (("value", "🔥 Αξία"), ("steam", "📢 Λεφτά")):
+    for kind, lab in (("value", "🔥 Αξία"), ("steam", "📢 Λεφτά"), ("corners", "🚩 Κόρνερ")):
         sub = [b for b in settled_all if b.get("kind", "value") == kind]
         if sub:
             lines.append(f"   {lab}: {_virtual_summary(sub)}")
@@ -1644,6 +1847,17 @@ def run(dry: bool = False) -> None:
         log.error("Τελείωσαν τα μηνιαία αιτήματα του OddsPapi.")
         save_state(state)
         return
+    STATS_STATE.clear()
+    if C.STATS_ENABLED:
+        try:
+            soon = [f for f in state.get("fixtures", []) if f.get("startTime")
+                    and parse_ts(f["startTime"]) <= now + dt.timedelta(hours=C.LOOKAHEAD_HOURS) and league_ok(f)]
+            n = ST.refresh(state, now, soon)
+            if n:
+                log.info("Στατιστικά: ανανεώθηκαν %d λίγκες", n)
+        except Exception as e:
+            log.warning("Στατιστικά: %s", e)
+        STATS_STATE.update({"stats": state.get("stats", {})})
     markets = resolve_markets(state.get("market_catalog", []))
     log.info("Αγορές: %s", ", ".join(f"{v['name']} [{k}]" for k, v in markets.items()))
     if not dry:
@@ -1698,7 +1912,29 @@ def run(dry: bool = False) -> None:
                 log.error("Τελείωσαν τα μηνιαία αιτήματα του OddsPapi.")
                 break
             sigs = analyze(fx, hist, t, markets)
+        try:
+            corners = corner_signals(state, fx, hist, t, cat, markets)
+        except Exception as e:
+            log.info("Κόρνερ %s: %s", fx["fixtureId"], e)
+            corners = []
+        today = now.astimezone(ATHENS).strftime("%Y-%m-%d")
+        for sig in corners:
+            n_today = sum(1 for b in state.get("bets", {}).values()
+                          if b.get("kind") == "corners" and parse_ts(b["sent_at"]).astimezone(ATHENS).strftime("%Y-%m-%d") == today)
+            if quiet or n_today >= C.CORNERS_MAX_PER_DAY or not should_alert(state, sig):
+                continue
+            sig["stake"] = steam_stake(state)
+            msg = format_corner(sig)
+            if dry:
+                print("\n" + msg + "\n" + "-" * 40)
+                continue
+            try:
+                record_bet(state, sig, send_telegram(msg))
+                sent += 1
+            except Exception as e:
+                log.error("Αποστολή κόρνερ απέτυχε: %s", e)
         for sig in sigs:
+            sig["spec"] = spec_of(sig["market"], sig["outcome"], cat, markets)
             if stars(sig) < C.MIN_STARS:
                 below += 1
                 continue
@@ -1875,6 +2111,46 @@ def test_alert() -> None:
     send_telegram("🧪 <b>ΔΟΚΙΜΗ</b> (ψεύτικος αγώνας, έτσι θα μοιάζουν οι ειδοποιήσεις)\n\n" + text)
 
 
+def stats_test() -> None:
+    """Κατεβάζει τα στατιστικά και δείχνει προβλέψεις για τους αγώνες των επόμενων 24 ωρών."""
+    state = load_state()
+    now = dt.datetime.now(dt.timezone.utc)
+    fx = [f for f in state.get("fixtures", []) if f.get("startTime") and league_ok(f)
+          and now - dt.timedelta(hours=2) <= parse_ts(f["startTime"]) <= now + dt.timedelta(hours=30)]
+    n = ST.refresh(state, now, fx, force=True)
+    print(f"Λίγκες που κατέβηκαν: {n}")
+    for code, ent in sorted((state.get("stats") or {}).items()):
+        print(f"  {code}: {len(ent.get('rows') or [])} αγώνες, τελευταίος {(ent.get('rows') or [['-']])[-1][0]}")
+    lines, missing = [], []
+    for f in sorted(fx, key=lambda f: f["startTime"]):
+        code = ST.league_code(f)
+        if not code:
+            continue
+        nm = f"{f.get('participant1Name')} – {f.get('participant2Name')}"
+        pr = ST.predict(state, f)
+        if not pr:
+            missing.append(f"{code}: {nm}")
+            continue
+        t = parse_ts(f["startTime"]).astimezone(ATHENS)
+        parts = [f"<b>{t:%d/%m %H:%M}</b> {html.escape(nm)} <i>({code}: {html.escape(pr['home'])} – {html.escape(pr['away'])})</i>"]
+        if "goals" in pr:
+            parts.append(f"   ⚽ ~{pr['goals']:.1f} γκολ · Over 2.5: {ST.prob(pr, 'goals', 2.5, 'over') * 100:.0f}%")
+        if "ht" in pr:
+            parts.append(f"   ⏱ ημίχρονο ~{pr['ht']:.1f} · Over 0.5: {ST.prob(pr, 'ht', 0.5, 'over') * 100:.0f}%")
+        if "corners" in pr:
+            parts.append(f"   🚩 ~{pr['corners']:.1f} κόρνερ · Over 9.5: {ST.prob(pr, 'corners', 9.5, 'over') * 100:.0f}%"
+                         f" · Over 10.5: {ST.prob(pr, 'corners', 10.5, 'over') * 100:.0f}%")
+        lines.append("\n".join(parts))
+    text = (f"🧪 <b>ΔΟΚΙΜΗ ΣΤΑΤΙΣΤΙΚΩΝ</b> · {len(lines)} αγώνες με πρόβλεψη\n\n" + "\n\n".join(lines[:25])
+            + (f"\n\n⚠️ Χωρίς αντιστοίχιση ομάδων ({len(missing)}):\n" + "\n".join(html.escape(m) for m in missing[:15])
+               if missing else ""))
+    print(re.sub(r"<[^>]+>", "", text))
+    save_state(state)
+    if C.TELEGRAM_TOKEN and C.TELEGRAM_CHAT_ID:
+        for i in range(0, len(text), 3800):
+            send_telegram(text[i:i + 3800])
+
+
 def main() -> None:
     args = set(sys.argv[1:])
     if "--test-telegram" in args:
@@ -1891,6 +2167,8 @@ def main() -> None:
                           + build_report(st, dt.datetime.now(dt.timezone.utc)))
         except Exception as e:
             log.warning("Δοκιμή απολογισμού: %s", e)
+    elif "--stats-test" in args:
+        stats_test()
     elif "--leagues" in args:
         list_leagues()
     elif "--markets" in args:

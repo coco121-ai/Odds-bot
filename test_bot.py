@@ -8,6 +8,8 @@ import config as C
 C.MAX_ODDS = 8.0  # τα τεστ χρησιμοποιούν και μεγαλύτερες αποδόσεις
 C.BANKROLL = 100  # τα τεστ υπολογίζουν ποντάρισμα με κάσα 100€
 C.MIN_PROB_PCT = 0  # τα τεστ ελέγχουν και χαμηλές πιθανότητες (ξεχωριστό τεστ για το όριο)
+C.ALERT_MIN_PIN_LIMIT = 0  # ξεχωριστό τεστ για τα φίλτρα ποιότητας
+C.ALERT_MAX_HOURS_BEFORE = 99
 
 C.USE_BETFAIR = True  # τα τεστ ελέγχουν και τη λογική του Betfair
 C.GREEK_BOOKS[:] = ["stoiximan", "pamestoixima-gr"]
@@ -471,6 +473,22 @@ def test_min_probability_filter():
         C.MIN_PROB_PCT = old
 
 
+def test_quality_filters_limit_and_timing():
+    base = [x for x in bot.analyze(FX, HIST, NOW, MARKETS) if x["values"] or x["steam"]]
+    assert base
+    old = (C.ALERT_MIN_PIN_LIMIT, C.ALERT_MAX_HOURS_BEFORE)
+    try:
+        C.ALERT_MIN_PIN_LIMIT = 10 ** 9      # καμία αγορά δεν είναι τόσο μεγάλη
+        lims = [x["pin_limit"] for x in base]
+        got = [x for x in bot.analyze(FX, HIST, NOW, MARKETS) if x["values"] or x["steam"]]
+        assert len(got) <= sum(1 for l in lims if l is None)   # περνάνε μόνο όσα δεν έχουν όριο
+        C.ALERT_MIN_PIN_LIMIT = 0
+        C.ALERT_MAX_HOURS_BEFORE = 0.01     # ο αγώνας είναι πιο μακριά → τίποτα
+        assert not [x for x in bot.analyze(FX, HIST, NOW, MARKETS) if x["values"] or x["steam"]]
+    finally:
+        C.ALERT_MIN_PIN_LIMIT, C.ALERT_MAX_HOURS_BEFORE = old
+
+
 def test_evening_ticket_slot_and_auto_settle():
     night = dt.datetime(2026, 10, 10, 20, 50, tzinfo=dt.timezone.utc)   # 23:50 Ελλάδας
     cands = {}
@@ -517,6 +535,108 @@ def test_evening_ticket_slot_and_auto_settle():
         assert tk2["result"] == "WIN" and "ΒΓΗΚΕ" in sent[-1][0] and sent[-1][1] == 777
     finally:
         bot.send_telegram, bot.api_get = orig_send, orig_api
+
+
+def _stats_csv():
+    """Μικρή λίγκα 6 ομάδων: η Alpha έχει πολλά κόρνερ και γκολ εντός."""
+    import random
+    random.seed(1)
+    teams = ["Alpha", "Beta", "Gamma", "Delta", "Epsilon", "Zeta"]
+    lines = ["Div,Date,HomeTeam,AwayTeam,FTHG,FTAG,HTHG,HTAG,HC,AC"]
+    d = dt.date(2026, 8, 1)
+    for rnd in range(4):
+        for h in teams:
+            for a in teams:
+                if h == a:
+                    continue
+                d += dt.timedelta(days=1)
+                hc = 9 if h == "Alpha" else random.randint(3, 6)
+                ac = 6 if a == "Beta" else random.randint(2, 5)
+                hg = 3 if h == "Alpha" else random.randint(0, 2)
+                ag = random.randint(0, 2)
+                lines.append(f"E0,{d:%d/%m/%Y},{h},{a},{hg},{ag},{min(hg, 1)},{min(ag, 1)},{hc},{ac}")
+    return "\n".join(lines)
+
+
+def test_stats_model_corners_and_free_settlement():
+    import stats as ST
+    rows_ = ST.parse_csv(_stats_csv())
+    assert len(rows_) == 120 and rows_[0][7] is not None
+    state = {"stats": {"E0": {"at": "2026-10-10T00:00:00Z", "rows": rows_}}, "bets": {}, "tickets": {}}
+    fx = {"fixtureId": "S1", "startTime": (NOW + dt.timedelta(hours=2)).isoformat().replace("+00:00", "Z"),
+          "participant1Name": "Alpha FC", "participant2Name": "Beta United",
+          "categoryName": "England", "tournamentName": "Premier League"}
+    assert ST.league_code(fx) == "E0"
+    pr = ST.predict(state, fx)
+    assert pr and pr["home"] == "Alpha" and pr["away"] == "Beta", pr
+    assert pr["corners"] > 12 and ST.prob(pr, "corners", 10.5, "over") > 0.6, pr
+    assert abs(ST.prob(pr, "goals", 2.5, "over") + ST.prob(pr, "goals", 2.5, "under") - 1) < 1e-9
+    # αγορά κόρνερ: Pinnacle 1.85/2.00 (δίκαιη Over ≈1.93), Stoiximan Over 1.97
+    cat = {str(m["marketId"]): m for m in CATALOG}
+    cat["10783"] = {"marketId": 10783, "marketName": "Corners - Over Under Full Time", "handicap": 10.5,
+                    "period": "fulltime", "outcomes": [{"outcomeId": 10783, "outcomeName": "Over"},
+                                                       {"outcomeId": 10784, "outcomeName": "Under"}]}
+    hist = {"pinnacle": book({"10783": {"10783": [(60, 1.85)], "10784": [(60, 2.00)]}}),
+            "stoiximan": book({"10783": {"10783": [(60, 1.97)], "10784": [(60, 1.85)]}})}
+    sigs = bot.corner_signals(state, fx, hist, NOW, cat, MARKETS)
+    assert len(sigs) == 1 and sigs[0]["spec"] == {"stat": "corners", "line": 10.5, "side": "over"}, sigs
+    sig = sigs[0]
+    sig["stake"] = 5
+    msg = bot.format_corner(sig)
+    assert "ΚΟΡΝΕΡ" in msg and "Over 10.5" in msg and "Στατιστικά" in msg
+    bot.record_bet(state, sig, 1)
+    b = state["bets"]["S1|10783|10783"]
+    assert b["kind"] == "corners" and b["lg"] == "E0" and b["spec"]["stat"] == "corners"
+    # η Stoiximan κάτω από τη δίκαιη → καμία ειδοποίηση (θέλουμε να συμφωνούν και τα δύο)
+    hist2 = {"pinnacle": hist["pinnacle"], "stoiximan": book({"10783": {"10783": [(60, 1.80)], "10784": [(60, 1.95)]}})}
+    assert not bot.corner_signals(state, fx, hist2, NOW, cat, MARKETS)
+    # αποτέλεσμα από τα στατιστικά, χωρίς αίτημα στο OddsPapi
+    day = (NOW + dt.timedelta(hours=2)).date().isoformat()
+    state["stats"]["E0"]["rows"].append([day, "Alpha", "Beta", 2, 1, 1, 0, 8, 6])   # 14 κόρνερ
+    state["tickets"]["t"] = {"name": "Τ", "odds": 3.0, "stake": None, "result": None, "msg_ids": [5],
+                             "last_start": fx["startTime"], "date": day,
+                             "leg_data": [{"fid": "S1", "market": "1010", "outcome": "1010", "price": 1.8,
+                                           "prob": 0.5, "start": fx["startTime"], "match": "A – B",
+                                           "label": "Over 2.5 γκολ", "fxi": bot.fx_info(fx),
+                                           "spec": {"stat": "goals", "line": 2.5, "side": "over"}}]}
+    sent = []
+    orig = bot.send_telegram
+    bot.send_telegram = lambda m, reply_to=None: sent.append((m, reply_to))
+    try:
+        assert bot.settle_from_stats(state, NOW + dt.timedelta(hours=6)) == 2
+    finally:
+        bot.send_telegram = orig
+    assert b["status"] == "settled" and b["result"] == "WIN" and b["src"] == "stats"
+    assert state["tickets"]["t"]["result"] == "WIN" and "ΒΓΗΚΕ" in sent[-1][0]
+    assert ST.settle([day, "A", "B", 1, 1, 0, 0, 5, 5], {"stat": "corners", "line": 10, "side": "over"}) == "PUSH"
+    assert ST.settle([day, "A", "B", 1, 1, 0, 0, 5, 5], {"stat": "1x2", "side": "x"}) == "WIN"
+    assert ST.settle([day, "A", "B", 1, 0, 0, 0, 5, 5], {"stat": "btts", "side": "no"}) == "WIN"
+
+
+def test_stats_filter_blocks_unsupported_over():
+    import stats as ST
+    rows_ = ST.parse_csv(_stats_csv())
+    old = dict(bot.STATS_STATE)
+    fx = {**FX}
+    try:
+        bot.STATS_STATE.clear()
+        bot.STATS_STATE.update({"stats": {"G1": {"rows": rows_}}, "_pred": {
+            FX["fixtureId"]: {"goals": 1.2, "goals_n": 8, "ht": 0.4, "ht_n": 8, "code": "G1", "home": "a", "away": "b"}}})
+        hist = {
+            "pinnacle": book({"1010": {"1010": [(200, 2.10), (90, 2.10), (10, 1.80)],
+                                       "1011": [(200, 1.80), (10, 2.02)]}}),
+            "stoiximan": book({"1010": {"1010": [(200, 2.00)], "1011": [(200, 1.75)]}}),
+            "pamestoixima-gr": book({"1010": {"1010": [(200, 1.95)], "1011": [(200, 1.80)]}}),
+        }
+        blocked = [x for x in bot.analyze(fx, hist, NOW, MARKETS) if x["outcome"] == "1010"]
+        assert not any(x["values"] or x["steam"] for x in blocked), "με ~1.2 αναμενόμενα γκολ το Over κόβεται"
+        bot.STATS_STATE["_pred"][FX["fixtureId"]]["goals"] = 3.4      # τα στατιστικά το στηρίζουν
+        over = [x for x in bot.analyze(fx, hist, NOW, MARKETS) if x["outcome"] == "1010"][0]
+        assert over["values"] and over["model"]["p"] > 0.6
+        assert "📈 Στατιστικά" in bot.format_signal(over)
+    finally:
+        bot.STATS_STATE.clear()
+        bot.STATS_STATE.update(old)
 
 
 def test_test_telegram_mode_runs():
