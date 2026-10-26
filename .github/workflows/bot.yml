@@ -9,7 +9,7 @@ on:
         description: "Τι να τρέξει"
         type: choice
         default: run
-        options: [run, test-telegram, quota, leagues, markets, debug, dry-run]
+        options: [run, test-telegram, stats-test, quota, leagues, markets, debug, dry-run]
 
 permissions:
   contents: write
@@ -41,6 +41,7 @@ jobs:
           MODE="${{ github.event.inputs.mode || 'run' }}"
           case "$MODE" in
             test-telegram) python bot.py --test-telegram ;;
+            stats-test)    python bot.py --stats-test ;;
             quota)         python bot.py --quota ;;
             leagues)       python bot.py --leagues ;;
             markets)       python bot.py --markets ;;
