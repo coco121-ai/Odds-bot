@@ -5988,9 +5988,9 @@
   "id1000002371945358": [
    {
     "book": "stoiximan",
-    "drop": 20.3,
-    "edge": -0.1,
-    "fair": 1.621,
+    "drop": 20.0,
+    "edge": -0.6,
+    "fair": 1.629,
     "fid": "id1000002371945358",
     "fxi": {
      "categoryName": "Italy",
@@ -6008,16 +6008,16 @@
     "match": "🇮🇹 Roma – Cagliari",
     "outcome": "10927",
     "price": 1.62,
-    "prob": 0.6169,
-    "score": 5.94,
+    "prob": 0.6139,
+    "score": 5.45,
     "spec": null,
     "start": "2026-10-27T19:45:00.000Z"
    },
    {
     "book": "stoiximan",
-    "drop": 23.3,
-    "edge": -3.3,
-    "fair": 2.429,
+    "drop": 23.0,
+    "edge": -3.8,
+    "fair": 2.442,
     "fid": "id1000002371945358",
     "group": "cards",
     "label": "Κάρτες Under 2.5",
@@ -6025,8 +6025,8 @@
     "match": "🇮🇹 Roma – Cagliari",
     "outcome": "10923",
     "price": 2.35,
-    "prob": 0.4117,
-    "score": 2.75,
+    "prob": 0.4095,
+    "score": 2.23,
     "spec": null,
     "start": "2026-10-27T19:45:00.000Z"
    },
@@ -6095,21 +6095,22 @@
    },
    {
     "book": "stoiximan",
-    "drop": 0.1,
-    "edge": -2.8,
-    "fair": 1.378,
+    "drop": -1.5,
+    "edge": -3.4,
+    "fair": 2.091,
     "fid": "id1000002371945358",
-    "group": "1x2",
-    "label": "1 (Roma)",
-    "market": "101",
+    "group": "corners",
+    "label": "Κόρνερ Over 9.5",
+    "market": "10803",
     "match": "🇮🇹 Roma – Cagliari",
-    "outcome": "101",
-    "price": 1.34,
-    "prob": 0.7257,
-    "score": -2.74,
+    "outcome": "10803",
+    "price": 2.02,
+    "prob": 0.4782,
+    "score": -3.4,
     "spec": {
-     "side": "1",
-     "stat": "1x2"
+     "line": 9.5,
+     "side": "over",
+     "stat": "corners"
     },
     "start": "2026-10-27T19:45:00.000Z"
    }
@@ -6117,9 +6118,9 @@
   "id1000002371945360": [
    {
     "book": "stoiximan",
-    "drop": -8.9,
-    "edge": -3.4,
-    "fair": 1.656,
+    "drop": 8.9,
+    "edge": -3.7,
+    "fair": 1.578,
     "fid": "id1000002371945360",
     "fxi": {
      "categoryName": "Italy",
@@ -6131,6 +6132,40 @@
      "startTime": "2026-10-27T17:30:00.000Z",
      "tournamentName": "Serie A"
     },
+    "group": "cards",
+    "label": "Κάρτες Under 4.5",
+    "market": "10930",
+    "match": "🇮🇹 Sassuolo – Lazio",
+    "outcome": "10931",
+    "price": 1.52,
+    "prob": 0.6337,
+    "score": -1.0,
+    "spec": null,
+    "start": "2026-10-27T17:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.0,
+    "edge": -2.8,
+    "fair": 1.369,
+    "fid": "id1000002371945360",
+    "group": "cards",
+    "label": "Κάρτες Over 2.5",
+    "market": "10922",
+    "match": "🇮🇹 Sassuolo – Lazio",
+    "outcome": "10922",
+    "price": 1.33,
+    "prob": 0.7305,
+    "score": -2.85,
+    "spec": null,
+    "start": "2026-10-27T17:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -8.9,
+    "edge": -3.4,
+    "fair": 1.656,
+    "fid": "id1000002371945360",
     "group": "goals",
     "label": "Ημίχρονο Under 1.5 γκολ",
     "market": "10258",
@@ -6257,14 +6292,35 @@
      "stat": "1x2"
     },
     "start": "2026-10-27T19:45:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -7.2,
+    "edge": -3.4,
+    "fair": 2.297,
+    "fid": "id1000002371945362",
+    "group": "goals",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
+    "match": "🇮🇹 Torino – Como",
+    "outcome": "1011",
+    "price": 2.22,
+    "prob": 0.4354,
+    "score": -3.35,
+    "spec": {
+     "line": 2.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-10-27T19:45:00.000Z"
    }
   ],
   "id1000002474557818": [
    {
     "book": "stoiximan",
-    "drop": 0.0,
+    "drop": 0.2,
     "edge": 0.2,
-    "fair": 1.697,
+    "fair": 1.696,
     "fid": "id1000002474557818",
     "fxi": {
      "categoryName": "England",
@@ -6282,8 +6338,8 @@
     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Oxford United – Stockport",
     "outcome": "1010",
     "price": 1.7,
-    "prob": 0.5893,
-    "score": 0.18,
+    "prob": 0.5896,
+    "score": 0.31,
     "spec": {
      "line": 2.5,
      "side": "over",
@@ -6315,8 +6371,8 @@
    {
     "book": "stoiximan",
     "drop": -28.3,
-    "edge": -3.0,
-    "fair": 2.113,
+    "edge": -2.9,
+    "fair": 2.112,
     "fid": "id1000002474557818",
     "group": "1x2",
     "label": "2 (Stockport)",
@@ -6324,8 +6380,8 @@
     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Oxford United – Stockport",
     "outcome": "103",
     "price": 2.05,
-    "prob": 0.4733,
-    "score": -2.98,
+    "prob": 0.4735,
+    "score": -2.94,
     "spec": {
      "side": "2",
      "stat": "1x2"
@@ -6357,9 +6413,9 @@
   "id1000002474838878": [
    {
     "book": "stoiximan",
-    "drop": 12.4,
-    "edge": -0.4,
-    "fair": 2.23,
+    "drop": 12.6,
+    "edge": -3.5,
+    "fair": 1.472,
     "fid": "id1000002474838878",
     "fxi": {
      "categoryName": "England",
@@ -6371,59 +6427,17 @@
      "startTime": "2026-10-27T19:45:00.000Z",
      "tournamentName": "League One"
     },
-    "group": "goals",
-    "label": "Ημίχρονο Over 1.5 γκολ",
-    "market": "10258",
-    "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Leicester – Wigan",
-    "outcome": "10258",
-    "price": 2.22,
-    "prob": 0.4484,
-    "score": 3.27,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "ht"
-    },
-    "start": "2026-10-27T19:45:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 13.6,
-    "edge": -2.5,
-    "fair": 1.456,
-    "fid": "id1000002474838878",
     "group": "1x2",
     "label": "1 (Leicester)",
     "market": "101",
     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Leicester – Wigan",
     "outcome": "101",
     "price": 1.42,
-    "prob": 0.6868,
-    "score": 1.62,
+    "prob": 0.6793,
+    "score": 0.26,
     "spec": {
      "side": "1",
      "stat": "1x2"
-    },
-    "start": "2026-10-27T19:45:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 12.2,
-    "edge": -2.1,
-    "fair": 1.502,
-    "fid": "id1000002474838878",
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
-    "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Leicester – Wigan",
-    "outcome": "1010",
-    "price": 1.47,
-    "prob": 0.6658,
-    "score": 1.54,
-    "spec": {
-     "line": 2.5,
-     "side": "over",
-     "stat": "goals"
     },
     "start": "2026-10-27T19:45:00.000Z"
    },
@@ -6719,9 +6733,9 @@
   "id1000004067126838": [
    {
     "book": "stoiximan",
-    "drop": 14.3,
-    "edge": -1.6,
-    "fair": 2.052,
+    "drop": 10.4,
+    "edge": -3.6,
+    "fair": 1.659,
     "fid": "id1000004067126838",
     "fxi": {
      "categoryName": "Sweden",
@@ -6733,34 +6747,14 @@
      "startTime": "2026-10-27T18:00:00.000Z",
      "tournamentName": "Allsvenskan"
     },
-    "group": "1x2",
-    "label": "2 (Elfsborg)",
-    "market": "101",
-    "match": "🇸🇪 AIK – Elfsborg",
-    "outcome": "103",
-    "price": 2.02,
-    "prob": 0.4873,
-    "score": 2.74,
-    "spec": {
-     "side": "2",
-     "stat": "1x2"
-    },
-    "start": "2026-10-27T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 10.7,
-    "edge": -3.3,
-    "fair": 1.655,
-    "fid": "id1000004067126838",
     "group": "goals",
     "label": "Over 2.5 γκολ",
     "market": "1010",
     "match": "🇸🇪 AIK – Elfsborg",
     "outcome": "1010",
     "price": 1.6,
-    "prob": 0.6042,
-    "score": -0.12,
+    "prob": 0.6028,
+    "score": -0.42,
     "spec": {
      "line": 2.5,
      "side": "over",
@@ -7056,9 +7050,9 @@
   "id1000005373093018": [
    {
     "book": "stoiximan",
-    "drop": -2.7,
-    "edge": -0.2,
-    "fair": 2.455,
+    "drop": 1.4,
+    "edge": 1.8,
+    "fair": 2.113,
     "fid": "id1000005373093018",
     "fxi": {
      "categoryName": "Italy",
@@ -7070,6 +7064,26 @@
      "startTime": "2026-10-27T19:00:00.000Z",
      "tournamentName": "Serie B"
     },
+    "group": "1x2",
+    "label": "1 (Cesena)",
+    "market": "101",
+    "match": "🇮🇹 Cesena – Empoli",
+    "outcome": "101",
+    "price": 2.15,
+    "prob": 0.4733,
+    "score": 2.19,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-10-27T19:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -2.7,
+    "edge": -0.2,
+    "fair": 2.455,
+    "fid": "id1000005373093018",
     "group": "corners",
     "label": "Κόρνερ Over 10.5",
     "market": "10807",
@@ -7087,29 +7101,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -1.0,
-    "edge": -0.5,
-    "fair": 2.161,
-    "fid": "id1000005373093018",
-    "group": "1x2",
-    "label": "1 (Cesena)",
-    "market": "101",
-    "match": "🇮🇹 Cesena – Empoli",
-    "outcome": "101",
-    "price": 2.15,
-    "prob": 0.4627,
-    "score": -0.51,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
-    },
-    "start": "2026-10-27T19:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -2.6,
-    "edge": -0.7,
-    "fair": 1.481,
+    "drop": -2.5,
+    "edge": -0.6,
+    "fair": 1.479,
     "fid": "id1000005373093018",
     "group": "goals",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -7117,8 +7111,8 @@
     "match": "🇮🇹 Cesena – Empoli",
     "outcome": "10256",
     "price": 1.47,
-    "prob": 0.6752,
-    "score": -0.74,
+    "prob": 0.6761,
+    "score": -0.61,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -7128,9 +7122,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -4.5,
-    "edge": -2.5,
-    "fair": 1.384,
+    "drop": -4.3,
+    "edge": -2.4,
+    "fair": 1.383,
     "fid": "id1000005373093018",
     "group": "goals",
     "label": "Over 1.5 γκολ",
@@ -7138,8 +7132,8 @@
     "match": "🇮🇹 Cesena – Empoli",
     "outcome": "108",
     "price": 1.35,
-    "prob": 0.7225,
-    "score": -2.46,
+    "prob": 0.7231,
+    "score": -2.39,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -7595,9 +7589,9 @@
   "id1000015573265452": [
    {
     "book": "stoiximan",
-    "drop": 8.2,
-    "edge": 1.7,
-    "fair": 3.145,
+    "drop": 7.9,
+    "edge": 1.8,
+    "fair": 3.142,
     "fid": "id1000015573265452",
     "fxi": {
      "categoryName": "Argentina",
@@ -7615,8 +7609,8 @@
     "match": "🇦🇷 Argentinos Juniors – Rivadavia",
     "outcome": "102",
     "price": 3.2,
-    "prob": 0.318,
-    "score": 4.2,
+    "prob": 0.3183,
+    "score": 4.21,
     "spec": {
      "side": "x",
      "stat": "1x2"
@@ -7625,7 +7619,7 @@
    },
    {
     "book": "stoiximan",
-    "drop": 2.6,
+    "drop": 2.2,
     "edge": -1.7,
     "fair": 1.628,
     "fid": "id1000015573265452",
@@ -7636,7 +7630,7 @@
     "outcome": "1011",
     "price": 1.6,
     "prob": 0.6143,
-    "score": -0.94,
+    "score": -1.07,
     "spec": {
      "line": 2.5,
      "side": "under",
@@ -7667,22 +7661,22 @@
    },
    {
     "book": "stoiximan",
-    "drop": 4.2,
-    "edge": -4.0,
-    "fair": 2.677,
+    "drop": -4.5,
+    "edge": -3.7,
+    "fair": 1.526,
     "fid": "id1000015573265452",
     "group": "goals",
-    "label": "Ημίχρονο Under 0.5 γκολ",
-    "market": "10256",
+    "label": "Over 1.5 γκολ",
+    "market": "108",
     "match": "🇦🇷 Argentinos Juniors – Rivadavia",
-    "outcome": "10257",
-    "price": 2.57,
-    "prob": 0.3736,
-    "score": -2.75,
+    "outcome": "108",
+    "price": 1.47,
+    "prob": 0.6553,
+    "score": -3.67,
     "spec": {
-     "line": 0.5,
-     "side": "under",
-     "stat": "ht"
+     "line": 1.5,
+     "side": "over",
+     "stat": "goals"
     },
     "start": "2026-10-27T22:00:00.000Z"
    }
@@ -8243,9 +8237,9 @@
   "id1000046373835688": [
    {
     "book": "stoiximan",
-    "drop": 14.3,
-    "edge": -1.9,
-    "fair": 2.772,
+    "drop": 14.6,
+    "edge": -1.6,
+    "fair": 2.764,
     "fid": "id1000046373835688",
     "fxi": {
      "categoryName": "International Clubs",
@@ -8263,8 +8257,8 @@
     "match": "🇪🇺 Beijing Guoan – Jeonbuk",
     "outcome": "103",
     "price": 2.72,
-    "prob": 0.3608,
-    "score": 2.41,
+    "prob": 0.3618,
+    "score": 2.79,
     "spec": {
      "side": "2",
      "stat": "1x2"
@@ -8347,6 +8341,132 @@
     "start": "2026-10-27T12:15:00.000Z"
    }
   ],
+  "id1000046373835692": [
+   {
+    "book": "stoiximan",
+    "drop": 1.2,
+    "edge": -1.7,
+    "fair": 1.984,
+    "fid": "id1000046373835692",
+    "fxi": {
+     "categoryName": "International Clubs",
+     "categorySlug": "international-clubs",
+     "participant1Name": "Kashima Antlers",
+     "participant1ShortName": "Kashima",
+     "participant2Name": "FC Pohang Steelers",
+     "participant2ShortName": "Pohang Steelers",
+     "startTime": "2026-10-28T10:00:00.000Z",
+     "tournamentName": "AFC Champions League Elite"
+    },
+    "group": "btts",
+    "label": "Goal/Goal: Ναι",
+    "market": "104",
+    "match": "🇪🇺 Kashima – Pohang Steelers",
+    "outcome": "104",
+    "price": 1.95,
+    "prob": 0.504,
+    "score": -1.35,
+    "spec": {
+     "side": "yes",
+     "stat": "btts"
+    },
+    "start": "2026-10-28T10:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -2.9,
+    "edge": -2.1,
+    "fair": 2.298,
+    "fid": "id1000046373835692",
+    "group": "goals",
+    "label": "Ημίχρονο Over 1.5 γκολ",
+    "market": "10258",
+    "match": "🇪🇺 Kashima – Pohang Steelers",
+    "outcome": "10258",
+    "price": 2.25,
+    "prob": 0.4352,
+    "score": -2.09,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-10-28T10:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -2.4,
+    "edge": -3.7,
+    "fair": 1.558,
+    "fid": "id1000046373835692",
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇪🇺 Kashima – Pohang Steelers",
+    "outcome": "1010",
+    "price": 1.5,
+    "prob": 0.6418,
+    "score": -3.72,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-10-28T10:00:00.000Z"
+   }
+  ],
+  "id1000046373835696": [
+   {
+    "book": "stoiximan",
+    "drop": -0.9,
+    "edge": -3.6,
+    "fair": 2.281,
+    "fid": "id1000046373835696",
+    "fxi": {
+     "categoryName": "International Clubs",
+     "categorySlug": "international-clubs",
+     "participant1Name": "Gamba Osaka",
+     "participant1ShortName": "Gamba",
+     "participant2Name": "Buriram United",
+     "participant2ShortName": "Buriram",
+     "startTime": "2026-10-28T10:00:00.000Z",
+     "tournamentName": "AFC Champions League Elite"
+    },
+    "group": "btts",
+    "label": "Goal/Goal: Όχι",
+    "market": "104",
+    "match": "🇪🇺 Gamba – Buriram",
+    "outcome": "105",
+    "price": 2.2,
+    "prob": 0.4384,
+    "score": -3.55,
+    "spec": {
+     "side": "no",
+     "stat": "btts"
+    },
+    "start": "2026-10-28T10:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -5.7,
+    "edge": -4.0,
+    "fair": 1.791,
+    "fid": "id1000046373835696",
+    "group": "1x2",
+    "label": "1 (Gamba)",
+    "market": "101",
+    "match": "🇪🇺 Gamba – Buriram",
+    "outcome": "101",
+    "price": 1.72,
+    "prob": 0.5583,
+    "score": -3.96,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-10-28T10:00:00.000Z"
+   }
+  ],
   "id1000095575508966": [
    {
     "book": "stoiximan",
@@ -8376,26 +8496,6 @@
      "line": 9.5,
      "side": "over",
      "stat": "corners"
-    },
-    "start": "2026-10-27T12:40:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 3.9,
-    "edge": 0.7,
-    "fair": 2.334,
-    "fid": "id1000095575508966",
-    "group": "1x2",
-    "label": "1 (Abha)",
-    "market": "101",
-    "match": "🇸🇦 Abha – Al-Faisaly",
-    "outcome": "101",
-    "price": 2.35,
-    "prob": 0.4284,
-    "score": 1.85,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
     },
     "start": "2026-10-27T12:40:00.000Z"
    },
@@ -8443,9 +8543,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 3.7,
-    "edge": -3.7,
-    "fair": 1.495,
+    "drop": 3.8,
+    "edge": -3.6,
+    "fair": 1.494,
     "fid": "id1000095575508966",
     "group": "goals",
     "label": "Ημίχρονο Under 1.5 γκολ",
@@ -8453,12 +8553,32 @@
     "match": "🇸🇦 Abha – Al-Faisaly",
     "outcome": "10259",
     "price": 1.44,
-    "prob": 0.6689,
-    "score": -2.57,
+    "prob": 0.6693,
+    "score": -2.46,
     "spec": {
      "line": 1.5,
      "side": "under",
      "stat": "ht"
+    },
+    "start": "2026-10-27T12:40:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.4,
+    "edge": -2.7,
+    "fair": 2.414,
+    "fid": "id1000095575508966",
+    "group": "1x2",
+    "label": "1 (Abha)",
+    "market": "101",
+    "match": "🇸🇦 Abha – Al-Faisaly",
+    "outcome": "101",
+    "price": 2.35,
+    "prob": 0.4143,
+    "score": -2.52,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
     },
     "start": "2026-10-27T12:40:00.000Z"
    },
@@ -8581,42 +8701,44 @@
   ]
  },
  "checked": {
-  "id1000002371945358": "2026-10-27T09:55:24Z",
-  "id1000002371945360": "2026-10-27T09:55:24Z",
-  "id1000002371945362": "2026-10-27T09:55:24Z",
-  "id1000002474557818": "2026-10-27T09:55:24Z",
-  "id1000002474838878": "2026-10-27T09:55:24Z",
-  "id1000002475078276": "2026-10-27T09:55:24Z",
-  "id1000002475365068": "2026-10-27T09:55:24Z",
-  "id1000002475768806": "2026-10-27T09:55:24Z",
-  "id1000004067126838": "2026-10-27T09:55:24Z",
-  "id1000004667126420": "2026-10-27T09:55:24Z",
-  "id1000005373093012": "2026-10-27T09:55:24Z",
-  "id1000005373093014": "2026-10-27T09:55:24Z",
-  "id1000005373093018": "2026-10-27T09:55:24Z",
-  "id1000005373093020": "2026-10-27T09:55:24Z",
-  "id1000005373093024": "2026-10-27T09:55:24Z",
-  "id1000005373093026": "2026-10-27T09:55:24Z",
-  "id1000005373093028": "2026-10-27T09:55:24Z",
-  "id1000015573265452": "2026-10-27T09:55:24Z",
-  "id1000017071913110": "2026-10-27T09:55:24Z",
-  "id1000020674817548": "2026-10-27T09:55:24Z",
-  "id1000039068823414": "2026-10-27T09:55:24Z",
-  "id1000046373835628": "2026-10-27T09:55:24Z",
-  "id1000046373835634": "2026-10-27T09:55:24Z",
+  "id1000002371945358": "2026-10-27T10:00:52Z",
+  "id1000002371945360": "2026-10-27T10:00:52Z",
+  "id1000002371945362": "2026-10-27T10:00:52Z",
+  "id1000002474557818": "2026-10-27T10:00:52Z",
+  "id1000002474838878": "2026-10-27T10:00:52Z",
+  "id1000002475078276": "2026-10-27T10:00:52Z",
+  "id1000002475365068": "2026-10-27T10:00:52Z",
+  "id1000002475768806": "2026-10-27T10:00:52Z",
+  "id1000004067126838": "2026-10-27T10:00:52Z",
+  "id1000004667126420": "2026-10-27T10:00:52Z",
+  "id1000005373093012": "2026-10-27T10:00:52Z",
+  "id1000005373093014": "2026-10-27T10:00:52Z",
+  "id1000005373093018": "2026-10-27T10:00:52Z",
+  "id1000005373093020": "2026-10-27T10:00:52Z",
+  "id1000005373093024": "2026-10-27T10:00:52Z",
+  "id1000005373093026": "2026-10-27T10:00:52Z",
+  "id1000005373093028": "2026-10-27T10:00:52Z",
+  "id1000015573265452": "2026-10-27T10:00:52Z",
+  "id1000017071913110": "2026-10-27T10:00:52Z",
+  "id1000020674817548": "2026-10-27T10:00:52Z",
+  "id1000039068823414": "2026-10-27T10:00:52Z",
+  "id1000046373835628": "2026-10-27T10:00:52Z",
+  "id1000046373835634": "2026-10-27T10:00:52Z",
   "id1000046373835680": "2026-10-27T09:55:24Z",
   "id1000046373835682": "2026-10-27T09:55:24Z",
   "id1000046373835684": "2026-10-27T09:55:24Z",
   "id1000046373835686": "2026-10-27T09:55:24Z",
-  "id1000046373835688": "2026-10-27T09:55:24Z",
-  "id1000046373835690": "2026-10-27T09:55:24Z",
-  "id1000066873835244": "2026-10-27T09:55:24Z",
-  "id1000066873835246": "2026-10-27T09:55:24Z",
-  "id1000095575508966": "2026-10-27T09:55:24Z",
-  "id1000229873206540": "2026-10-27T09:55:24Z",
-  "id1000229873206542": "2026-10-27T09:55:24Z",
-  "id1000229873206544": "2026-10-27T09:55:24Z",
-  "id1002655874931346": "2026-10-27T09:55:24Z"
+  "id1000046373835688": "2026-10-27T10:00:52Z",
+  "id1000046373835690": "2026-10-27T10:00:52Z",
+  "id1000046373835692": "2026-10-27T10:00:52Z",
+  "id1000046373835696": "2026-10-27T10:00:52Z",
+  "id1000066873835244": "2026-10-27T10:00:52Z",
+  "id1000066873835246": "2026-10-27T10:00:52Z",
+  "id1000095575508966": "2026-10-27T10:00:52Z",
+  "id1000229873206540": "2026-10-27T10:00:52Z",
+  "id1000229873206542": "2026-10-27T10:00:52Z",
+  "id1000229873206544": "2026-10-27T10:00:52Z",
+  "id1002655874931346": "2026-10-27T10:00:52Z"
  },
  "diag": {
   "2026-10-25": {
@@ -10061,6 +10183,8 @@
     "id1000046373835686",
     "id1000046373835688",
     "id1000046373835690",
+    "id1000046373835692",
+    "id1000046373835696",
     "id1000066873835244",
     "id1000066873835246",
     "id1000095575508966",
@@ -10313,6 +10437,20 @@
     "id1000046373835690|101|103|1x2",
     "id1000046373835690|10258|10258|goals",
     "id1000046373835690|10258|10259|goals",
+    "id1000046373835692|1010|1010|goals",
+    "id1000046373835692|1010|1011|goals",
+    "id1000046373835692|101|101|1x2",
+    "id1000046373835692|101|102|1x2",
+    "id1000046373835692|101|103|1x2",
+    "id1000046373835692|10258|10258|goals",
+    "id1000046373835692|10258|10259|goals",
+    "id1000046373835696|1010|1010|goals",
+    "id1000046373835696|1010|1011|goals",
+    "id1000046373835696|101|101|1x2",
+    "id1000046373835696|101|102|1x2",
+    "id1000046373835696|101|103|1x2",
+    "id1000046373835696|10258|10258|goals",
+    "id1000046373835696|10258|10259|goals",
     "id1000066873835244|1010|1010|goals",
     "id1000066873835244|1010|1011|goals",
     "id1000066873835244|101|101|1x2",
@@ -10381,7 +10519,8 @@
     "id1000046373835680|101|103|1x2",
     "id1000046373835684|101|101|1x2",
     "id1000046373835686|101|103|1x2",
-    "id1000046373835690|101|101|1x2"
+    "id1000046373835690|101|101|1x2",
+    "id1000046373835692|101|103|1x2"
    ],
    "prob_low": [
     "id1000039068823414|1010|1010|goals",
@@ -10391,6 +10530,7 @@
     "id1000046373835684|101|101|1x2",
     "id1000046373835686|101|103|1x2",
     "id1000046373835690|101|101|1x2",
+    "id1000046373835692|101|103|1x2",
     "id1000066873835246|101|101|1x2"
    ],
    "small_market": [
@@ -10517,6 +10657,10 @@
     "id1000046373835688|10256|10257|goals",
     "id1000046373835690|10256|10256|goals",
     "id1000046373835690|10256|10257|goals",
+    "id1000046373835692|10256|10256|goals",
+    "id1000046373835692|10256|10257|goals",
+    "id1000046373835696|10256|10256|goals",
+    "id1000046373835696|10256|10257|goals",
     "id1000229873206542|10256|10256|goals",
     "id1000229873206542|10256|10257|goals"
    ]
@@ -60752,10 +60896,295 @@
    "prob": 0.04765,
    "result": null,
    "stake": null
+  },
+  "2026-10-27|0": {
+   "date": "2026-10-27",
+   "last_start": "2026-10-27T19:45:00.000Z",
+   "leg_data": [
+    {
+     "fid": "id1000005373093012",
+     "fxi": {
+      "categoryName": "Italy",
+      "categorySlug": "italy",
+      "participant1Name": "Ascoli Calcio 1898",
+      "participant1ShortName": "Ascoli",
+      "participant2Name": "Sampdoria Genoa",
+      "participant2ShortName": "Sampdoria",
+      "startTime": "2026-10-27T19:00:00.000Z",
+      "tournamentName": "Serie B"
+     },
+     "label": "Ημίχρονο Over 0.5 γκολ",
+     "market": "10256",
+     "match": "🇮🇹 Ascoli – Sampdoria",
+     "outcome": "10256",
+     "price": 1.45,
+     "prob": 0.6959,
+     "spec": {
+      "line": 0.5,
+      "side": "over",
+      "stat": "ht"
+     },
+     "start": "2026-10-27T19:00:00.000Z"
+    },
+    {
+     "fid": "id1000005373093014",
+     "fxi": {
+      "categoryName": "Italy",
+      "categorySlug": "italy",
+      "participant1Name": "Benevento Calcio",
+      "participant1ShortName": "Benevento",
+      "participant2Name": "US Catanzaro",
+      "participant2ShortName": "Catanzaro",
+      "startTime": "2026-10-27T18:00:00.000Z",
+      "tournamentName": "Serie B"
+     },
+     "label": "Over 2.5 γκολ",
+     "market": "1010",
+     "match": "🇮🇹 Benevento – Catanzaro",
+     "outcome": "1010",
+     "price": 1.67,
+     "prob": 0.5828,
+     "spec": {
+      "line": 2.5,
+      "side": "over",
+      "stat": "goals"
+     },
+     "start": "2026-10-27T18:00:00.000Z"
+    },
+    {
+     "fid": "id1000002474557818",
+     "fxi": {
+      "categoryName": "England",
+      "categorySlug": "england",
+      "participant1Name": "Oxford United",
+      "participant1ShortName": "Oxford United",
+      "participant2Name": "Stockport County FC",
+      "participant2ShortName": "Stockport",
+      "startTime": "2026-10-27T19:45:00.000Z",
+      "tournamentName": "League One"
+     },
+     "label": "Over 2.5 γκολ",
+     "market": "1010",
+     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Oxford United – Stockport",
+     "outcome": "1010",
+     "price": 1.7,
+     "prob": 0.5896,
+     "spec": {
+      "line": 2.5,
+      "side": "over",
+      "stat": "goals"
+     },
+     "start": "2026-10-27T19:45:00.000Z"
+    },
+    {
+     "fid": "id1000004067126838",
+     "fxi": {
+      "categoryName": "Sweden",
+      "categorySlug": "sweden",
+      "participant1Name": "AIK",
+      "participant1ShortName": "AIK",
+      "participant2Name": "IF Elfsborg",
+      "participant2ShortName": "Elfsborg",
+      "startTime": "2026-10-27T18:00:00.000Z",
+      "tournamentName": "Allsvenskan"
+     },
+     "label": "Over 2.5 γκολ",
+     "market": "1010",
+     "match": "🇸🇪 AIK – Elfsborg",
+     "outcome": "1010",
+     "price": 1.6,
+     "prob": 0.6028,
+     "spec": {
+      "line": 2.5,
+      "side": "over",
+      "stat": "goals"
+     },
+     "start": "2026-10-27T18:00:00.000Z"
+    },
+    {
+     "fid": "id1000005373093020",
+     "fxi": {
+      "categoryName": "Italy",
+      "categorySlug": "italy",
+      "participant1Name": "Virtus Entella",
+      "participant1ShortName": "Entella",
+      "participant2Name": "US Avellino",
+      "participant2ShortName": "Avellino",
+      "startTime": "2026-10-27T19:00:00.000Z",
+      "tournamentName": "Serie B"
+     },
+     "label": "Ημίχρονο Over 0.5 γκολ",
+     "market": "10256",
+     "match": "🇮🇹 Entella – Avellino",
+     "outcome": "10256",
+     "price": 1.52,
+     "prob": 0.6549,
+     "spec": {
+      "line": 0.5,
+      "side": "over",
+      "stat": "ht"
+     },
+     "start": "2026-10-27T19:00:00.000Z"
+    }
+   ],
+   "legs": [
+    "🇮🇹 Ascoli – Sampdoria · Ημίχρονο Over 0.5 γκολ @1.45",
+    "🇮🇹 Benevento – Catanzaro · Over 2.5 γκολ @1.67",
+    "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Oxford United – Stockport · Over 2.5 γκολ @1.70",
+    "🇸🇪 AIK – Elfsborg · Over 2.5 γκολ @1.60",
+    "🇮🇹 Entella – Avellino · Ημίχρονο Over 0.5 γκολ @1.52"
+   ],
+   "msg_ids": [
+    483
+   ],
+   "name": "Δελτίο x10–30 · Over (έως 1.70)",
+   "odds": 10.01,
+   "prob": 0.0944,
+   "result": null,
+   "stake": null
+  },
+  "2026-10-27|1": {
+   "date": "2026-10-27",
+   "last_start": "2026-10-27T22:00:00.000Z",
+   "leg_data": [
+    {
+     "fid": "id1000002371945362",
+     "fxi": {
+      "categoryName": "Italy",
+      "categorySlug": "italy",
+      "participant1Name": "Torino FC",
+      "participant1ShortName": "Torino",
+      "participant2Name": "Como 1907",
+      "participant2ShortName": "Como",
+      "startTime": "2026-10-27T19:45:00.000Z",
+      "tournamentName": "Serie A"
+     },
+     "label": "Κόρνερ Over 9.5",
+     "market": "10803",
+     "match": "🇮🇹 Torino – Como",
+     "outcome": "10803",
+     "price": 2.45,
+     "prob": 0.4363,
+     "spec": {
+      "line": 9.5,
+      "side": "over",
+      "stat": "corners"
+     },
+     "start": "2026-10-27T19:45:00.000Z"
+    },
+    {
+     "fid": "id1000002371945358",
+     "fxi": {
+      "categoryName": "Italy",
+      "categorySlug": "italy",
+      "participant1Name": "AS Roma",
+      "participant1ShortName": "Roma",
+      "participant2Name": "Cagliari Calcio",
+      "participant2ShortName": "Cagliari",
+      "startTime": "2026-10-27T19:45:00.000Z",
+      "tournamentName": "Serie A"
+     },
+     "label": "Κάρτες Under 3.5",
+     "market": "10926",
+     "match": "🇮🇹 Roma – Cagliari",
+     "outcome": "10927",
+     "price": 1.62,
+     "prob": 0.6139,
+     "spec": null,
+     "start": "2026-10-27T19:45:00.000Z"
+    },
+    {
+     "fid": "id1000015573265452",
+     "fxi": {
+      "categoryName": "Argentina",
+      "categorySlug": "argentina",
+      "participant1Name": "Argentinos Juniors",
+      "participant1ShortName": "Argentinos Juniors",
+      "participant2Name": "Independiente Rivadavia",
+      "participant2ShortName": "Rivadavia",
+      "startTime": "2026-10-27T22:00:00.000Z",
+      "tournamentName": "Primera LPF"
+     },
+     "label": "Χ",
+     "market": "101",
+     "match": "🇦🇷 Argentinos Juniors – Rivadavia",
+     "outcome": "102",
+     "price": 3.2,
+     "prob": 0.3183,
+     "spec": {
+      "side": "x",
+      "stat": "1x2"
+     },
+     "start": "2026-10-27T22:00:00.000Z"
+    },
+    {
+     "fid": "id1000005373093018",
+     "fxi": {
+      "categoryName": "Italy",
+      "categorySlug": "italy",
+      "participant1Name": "Cesena FC",
+      "participant1ShortName": "Cesena",
+      "participant2Name": "Empoli FC",
+      "participant2ShortName": "Empoli",
+      "startTime": "2026-10-27T19:00:00.000Z",
+      "tournamentName": "Serie B"
+     },
+     "label": "1 (Cesena)",
+     "market": "101",
+     "match": "🇮🇹 Cesena – Empoli",
+     "outcome": "101",
+     "price": 2.15,
+     "prob": 0.4733,
+     "spec": {
+      "side": "1",
+      "stat": "1x2"
+     },
+     "start": "2026-10-27T19:00:00.000Z"
+    },
+    {
+     "fid": "id1000005373093028",
+     "fxi": {
+      "categoryName": "Italy",
+      "categorySlug": "italy",
+      "participant1Name": "Calcio Padova",
+      "participant1ShortName": "Padova",
+      "participant2Name": "FC Sudtirol Bolzano",
+      "participant2ShortName": "Sudtirol Bolzano",
+      "startTime": "2026-10-27T19:00:00.000Z",
+      "tournamentName": "Serie B"
+     },
+     "label": "Χ",
+     "market": "101",
+     "match": "🇮🇹 Padova – Sudtirol Bolzano",
+     "outcome": "102",
+     "price": 3.2,
+     "prob": 0.3125,
+     "spec": {
+      "side": "x",
+      "stat": "1x2"
+     },
+     "start": "2026-10-27T19:00:00.000Z"
+    }
+   ],
+   "legs": [
+    "🇮🇹 Torino – Como · Κόρνερ Over 9.5 @2.45",
+    "🇮🇹 Roma – Cagliari · Κάρτες Under 3.5 @1.62",
+    "🇦🇷 Argentinos Juniors – Rivadavia · Χ @3.20",
+    "🇮🇹 Cesena – Empoli · 1 (Cesena) @2.15",
+    "🇮🇹 Padova – Sudtirol Bolzano · Χ @3.20"
+   ],
+   "msg_ids": [
+    484
+   ],
+   "name": "Δελτίο x80–100 · από όλα",
+   "odds": 87.38,
+   "prob": 0.01261,
+   "result": null,
+   "stake": null
   }
  },
  "tickets_sent": {
-  "12:00": "2026-10-26",
+  "12:00": "2026-10-27",
   "23:45": "2026-10-26"
  }
 }
