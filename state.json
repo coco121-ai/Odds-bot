@@ -6363,9 +6363,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 6.9,
-    "edge": -2.8,
-    "fair": 2.674,
+    "drop": 6.6,
+    "edge": -3.1,
+    "fair": 2.684,
     "fid": "id1000002371945354",
     "group": "goals",
     "label": "Ημίχρονο Over 1.5 γκολ",
@@ -6373,8 +6373,8 @@
     "match": "🇮🇹 Monza – Napoli",
     "outcome": "10258",
     "price": 2.6,
-    "prob": 0.374,
-    "score": -0.69,
+    "prob": 0.3726,
+    "score": -1.16,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -6385,8 +6385,8 @@
    {
     "book": "stoiximan",
     "drop": -2.3,
-    "edge": -1.4,
-    "fair": 1.826,
+    "edge": -1.5,
+    "fair": 1.827,
     "fid": "id1000002371945354",
     "group": "1x2",
     "label": "2 (Napoli)",
@@ -6394,8 +6394,8 @@
     "match": "🇮🇹 Monza – Napoli",
     "outcome": "103",
     "price": 1.8,
-    "prob": 0.5476,
-    "score": -1.42,
+    "prob": 0.5473,
+    "score": -1.48,
     "spec": {
      "side": "2",
      "stat": "1x2"
@@ -6471,27 +6471,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": -2.8,
-    "edge": -0.6,
-    "fair": 1.539,
-    "fid": "id1000002371945356",
-    "group": "goals",
-    "label": "Ημίχρονο Over 0.5 γκολ",
-    "market": "10256",
-    "match": "🇮🇹 Parma Calcio – Udinese",
-    "outcome": "10256",
-    "price": 1.53,
-    "prob": 0.6498,
-    "score": -0.58,
-    "spec": {
-     "line": 0.5,
-     "side": "over",
-     "stat": "ht"
-    },
-    "start": "2026-10-28T17:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 4.9,
     "edge": -2.1,
     "fair": 1.788,
@@ -6513,21 +6492,43 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.6,
-    "edge": -0.7,
-    "fair": 3.222,
+    "drop": -1.1,
+    "edge": -0.8,
+    "fair": 1.401,
     "fid": "id1000002371945356",
-    "group": "1x2",
-    "label": "Χ",
-    "market": "101",
+    "group": "goals",
+    "label": "Ημίχρονο Under 1.5 γκολ",
+    "market": "10258",
     "match": "🇮🇹 Parma Calcio – Udinese",
-    "outcome": "102",
-    "price": 3.2,
-    "prob": 0.3104,
-    "score": -0.68,
+    "outcome": "10259",
+    "price": 1.39,
+    "prob": 0.7138,
+    "score": -0.79,
     "spec": {
-     "side": "x",
-     "stat": "1x2"
+     "line": 1.5,
+     "side": "under",
+     "stat": "ht"
+    },
+    "start": "2026-10-28T17:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.3,
+    "edge": -1.4,
+    "fair": 1.724,
+    "fid": "id1000002371945356",
+    "group": "goals",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
+    "match": "🇮🇹 Parma Calcio – Udinese",
+    "outcome": "1011",
+    "price": 1.7,
+    "prob": 0.58,
+    "score": -1.3,
+    "spec": {
+     "line": 2.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-10-28T17:30:00.000Z"
    }
@@ -9247,7 +9248,7 @@
    {
     "book": "stoiximan",
     "drop": 8.8,
-    "edge": -3.1,
+    "edge": 0.8,
     "fair": 2.084,
     "fid": "id1000015573265452",
     "fxi": {
@@ -9265,9 +9266,9 @@
     "market": "10799",
     "match": "🇦🇷 Argentinos Juniors – Rivadavia",
     "outcome": "10800",
-    "price": 2.02,
+    "price": 2.1,
     "prob": 0.4798,
-    "score": -0.44,
+    "score": 3.39,
     "spec": {
      "line": 8.5,
      "side": "under",
@@ -9277,28 +9278,8 @@
    },
    {
     "book": "stoiximan",
-    "drop": 3.9,
-    "edge": -2.4,
-    "fair": 3.278,
-    "fid": "id1000015573265452",
-    "group": "1x2",
-    "label": "Χ",
-    "market": "101",
-    "match": "🇦🇷 Argentinos Juniors – Rivadavia",
-    "outcome": "102",
-    "price": 3.2,
-    "prob": 0.3051,
-    "score": -1.2,
-    "spec": {
-     "side": "x",
-     "stat": "1x2"
-    },
-    "start": "2026-10-27T22:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 1.5,
-    "edge": -1.7,
+    "edge": 2.6,
     "fair": 2.797,
     "fid": "id1000015573265452",
     "group": "corners",
@@ -9306,9 +9287,9 @@
     "market": "10795",
     "match": "🇦🇷 Argentinos Juniors – Rivadavia",
     "outcome": "10796",
-    "price": 2.75,
+    "price": 2.87,
     "prob": 0.3575,
-    "score": -1.23,
+    "score": 3.06,
     "spec": {
      "line": 7.5,
      "side": "under",
@@ -9318,9 +9299,29 @@
    },
    {
     "book": "stoiximan",
+    "drop": 3.9,
+    "edge": -3.8,
+    "fair": 3.276,
+    "fid": "id1000015573265452",
+    "group": "1x2",
+    "label": "Χ",
+    "market": "101",
+    "match": "🇦🇷 Argentinos Juniors – Rivadavia",
+    "outcome": "102",
+    "price": 3.15,
+    "prob": 0.3053,
+    "score": -2.66,
+    "spec": {
+     "side": "x",
+     "stat": "1x2"
+    },
+    "start": "2026-10-27T22:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": -3.6,
-    "edge": -2.8,
-    "fair": 1.512,
+    "edge": -2.9,
+    "fair": 1.514,
     "fid": "id1000015573265452",
     "group": "goals",
     "label": "Over 1.5 γκολ",
@@ -9328,8 +9329,8 @@
     "match": "🇦🇷 Argentinos Juniors – Rivadavia",
     "outcome": "108",
     "price": 1.47,
-    "prob": 0.6614,
-    "score": -2.78,
+    "prob": 0.6605,
+    "score": -2.91,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -9339,22 +9340,22 @@
    },
    {
     "book": "stoiximan",
-    "drop": -1.9,
-    "edge": -3.8,
-    "fair": 1.591,
+    "drop": 1.7,
+    "edge": -3.9,
+    "fair": 1.634,
     "fid": "id1000015573265452",
     "group": "goals",
-    "label": "Ημίχρονο Over 0.5 γκολ",
-    "market": "10256",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
     "match": "🇦🇷 Argentinos Juniors – Rivadavia",
-    "outcome": "10256",
-    "price": 1.53,
-    "prob": 0.6285,
-    "score": -3.83,
+    "outcome": "1011",
+    "price": 1.57,
+    "prob": 0.612,
+    "score": -3.39,
     "spec": {
-     "line": 0.5,
-     "side": "over",
-     "stat": "ht"
+     "line": 2.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-10-27T22:00:00.000Z"
    }
@@ -9778,65 +9779,65 @@
   ]
  },
  "checked": {
-  "id1000002371945350": "2026-10-27T21:40:33Z",
-  "id1000002371945352": "2026-10-27T21:40:33Z",
-  "id1000002371945354": "2026-10-27T21:40:33Z",
-  "id1000002371945356": "2026-10-27T21:40:33Z",
+  "id1000002371945350": "2026-10-27T21:45:31Z",
+  "id1000002371945352": "2026-10-27T21:45:31Z",
+  "id1000002371945354": "2026-10-27T21:45:31Z",
+  "id1000002371945356": "2026-10-27T21:45:31Z",
   "id1000002371945358": "2026-10-27T19:40:33Z",
   "id1000002371945360": "2026-10-27T17:25:28Z",
   "id1000002371945362": "2026-10-27T19:40:33Z",
-  "id1000002371945364": "2026-10-27T21:40:33Z",
+  "id1000002371945364": "2026-10-27T21:45:31Z",
   "id1000002474557818": "2026-10-27T19:40:33Z",
   "id1000002474838878": "2026-10-27T19:40:33Z",
   "id1000002475078276": "2026-10-27T19:40:33Z",
   "id1000002475365068": "2026-10-27T19:40:33Z",
   "id1000002475768806": "2026-10-27T19:40:33Z",
-  "id1000003672201682": "2026-10-27T21:40:33Z",
-  "id1000003672201684": "2026-10-27T21:40:33Z",
-  "id1000003672201686": "2026-10-27T21:40:33Z",
-  "id1000003672201688": "2026-10-27T21:40:33Z",
-  "id1000003672201690": "2026-10-27T21:40:33Z",
-  "id1000003672201692": "2026-10-27T21:40:33Z",
+  "id1000003672201682": "2026-10-27T21:45:31Z",
+  "id1000003672201684": "2026-10-27T21:45:31Z",
+  "id1000003672201686": "2026-10-27T21:45:31Z",
+  "id1000003672201688": "2026-10-27T21:45:31Z",
+  "id1000003672201690": "2026-10-27T21:45:31Z",
+  "id1000003672201692": "2026-10-27T21:45:31Z",
   "id1000004067126838": "2026-10-27T17:55:27Z",
-  "id1000004067126842": "2026-10-27T21:40:33Z",
-  "id1000004067126846": "2026-10-27T21:40:33Z",
-  "id1000004067126848": "2026-10-27T21:40:33Z",
-  "id1000004067126852": "2026-10-27T21:40:33Z",
+  "id1000004067126842": "2026-10-27T21:45:31Z",
+  "id1000004067126846": "2026-10-27T21:45:31Z",
+  "id1000004067126848": "2026-10-27T21:45:31Z",
+  "id1000004067126852": "2026-10-27T21:45:31Z",
   "id1000004667126420": "2026-10-27T17:55:27Z",
   "id1000005373093012": "2026-10-27T18:54:25Z",
   "id1000005373093014": "2026-10-27T17:55:27Z",
-  "id1000005373093016": "2026-10-27T21:40:33Z",
+  "id1000005373093016": "2026-10-27T21:45:31Z",
   "id1000005373093018": "2026-10-27T18:54:25Z",
   "id1000005373093020": "2026-10-27T18:54:25Z",
-  "id1000005373093022": "2026-10-27T21:40:33Z",
+  "id1000005373093022": "2026-10-27T21:45:31Z",
   "id1000005373093024": "2026-10-27T18:54:25Z",
   "id1000005373093026": "2026-10-27T18:54:25Z",
   "id1000005373093028": "2026-10-27T18:54:25Z",
-  "id1000005373093030": "2026-10-27T21:40:33Z",
-  "id1000015573265452": "2026-10-27T21:40:33Z",
+  "id1000005373093030": "2026-10-27T21:45:31Z",
+  "id1000015573265452": "2026-10-27T21:45:31Z",
   "id1000017071913110": "2026-10-27T16:55:26Z",
   "id1000020674817548": "2026-10-27T19:40:33Z",
-  "id1000021075804676": "2026-10-27T21:40:33Z",
-  "id1000021075812222": "2026-10-27T21:40:33Z",
-  "id1000039068823414": "2026-10-27T21:40:33Z",
+  "id1000021075804676": "2026-10-27T21:45:31Z",
+  "id1000021075812222": "2026-10-27T21:45:31Z",
+  "id1000039068823414": "2026-10-27T21:45:31Z",
   "id1000046373835628": "2026-10-27T15:55:27Z",
   "id1000046373835634": "2026-10-27T18:10:33Z",
-  "id1000046373835692": "2026-10-27T21:40:33Z",
-  "id1000046373835696": "2026-10-27T21:40:33Z",
-  "id1000066873835160": "2026-10-27T21:40:33Z",
-  "id1000066873835162": "2026-10-27T21:40:33Z",
-  "id1000066873835188": "2026-10-27T21:40:33Z",
-  "id1000066873835216": "2026-10-27T21:40:33Z",
+  "id1000046373835692": "2026-10-27T21:45:31Z",
+  "id1000046373835696": "2026-10-27T21:45:31Z",
+  "id1000066873835160": "2026-10-27T21:45:31Z",
+  "id1000066873835162": "2026-10-27T21:45:31Z",
+  "id1000066873835188": "2026-10-27T21:45:31Z",
+  "id1000066873835216": "2026-10-27T21:45:31Z",
   "id1000066873835244": "2026-10-27T15:55:27Z",
   "id1000066873835246": "2026-10-27T18:10:33Z",
-  "id1000066873835278": "2026-10-27T21:40:33Z",
-  "id1000066873878826": "2026-10-27T21:40:33Z",
+  "id1000066873835278": "2026-10-27T21:45:31Z",
+  "id1000066873878826": "2026-10-27T21:45:31Z",
   "id1000229873206542": "2026-10-27T15:15:33Z",
   "id1000229873206544": "2026-10-27T16:25:25Z",
-  "id1000229873206546": "2026-10-27T21:40:33Z",
-  "id1000229873206548": "2026-10-27T21:40:33Z",
-  "id1000229873206550": "2026-10-27T21:40:33Z",
-  "id1002655674931492": "2026-10-27T21:40:33Z"
+  "id1000229873206546": "2026-10-27T21:45:31Z",
+  "id1000229873206548": "2026-10-27T21:45:31Z",
+  "id1000229873206550": "2026-10-27T21:45:31Z",
+  "id1002655674931492": "2026-10-27T21:45:31Z"
  },
  "diag": {
   "2026-10-25": {
@@ -64964,10 +64965,234 @@
    "prob": 0.01261,
    "result": null,
    "stake": null
+  },
+  "2026-10-27|2": {
+   "date": "2026-10-27",
+   "last_start": "2026-10-28T19:45:00.000Z",
+   "leg_data": [
+    {
+     "fid": "id1000002371945354",
+     "fxi": {
+      "categoryName": "Italy",
+      "categorySlug": "italy",
+      "participant1Name": "AC Monza",
+      "participant1ShortName": "Monza",
+      "participant2Name": "SSC Napoli",
+      "participant2ShortName": "Napoli",
+      "startTime": "2026-10-28T19:45:00.000Z",
+      "tournamentName": "Serie A"
+     },
+     "label": "Over 2.5 γκολ",
+     "market": "1010",
+     "match": "🇮🇹 Monza – Napoli",
+     "outcome": "1010",
+     "price": 1.72,
+     "prob": 0.5757,
+     "spec": {
+      "line": 2.5,
+      "side": "over",
+      "stat": "goals"
+     },
+     "start": "2026-10-28T19:45:00.000Z"
+    },
+    {
+     "fid": "id1000003672201690",
+     "fxi": {
+      "categoryName": "Scotland",
+      "categorySlug": "scotland",
+      "participant1Name": "St. Johnstone FC",
+      "participant1ShortName": "St. Johnstone",
+      "participant2Name": "Motherwell FC",
+      "participant2ShortName": "Motherwell",
+      "startTime": "2026-10-28T19:45:00.000Z",
+      "tournamentName": "Premiership"
+     },
+     "label": "Ημίχρονο Over 0.5 γκολ",
+     "market": "10256",
+     "match": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 St. Johnstone – Motherwell",
+     "outcome": "10256",
+     "price": 1.42,
+     "prob": 0.7082,
+     "spec": {
+      "line": 0.5,
+      "side": "over",
+      "stat": "ht"
+     },
+     "start": "2026-10-28T19:45:00.000Z"
+    },
+    {
+     "fid": "id1000002371945352",
+     "fxi": {
+      "categoryName": "Italy",
+      "categorySlug": "italy",
+      "participant1Name": "AC Milan",
+      "participant1ShortName": "Milan",
+      "participant2Name": "Bologna FC",
+      "participant2ShortName": "Bologna",
+      "startTime": "2026-10-28T17:30:00.000Z",
+      "tournamentName": "Serie A"
+     },
+     "label": "Ημίχρονο Over 0.5 γκολ",
+     "market": "10256",
+     "match": "🇮🇹 Milan – Bologna",
+     "outcome": "10256",
+     "price": 1.42,
+     "prob": 0.7077,
+     "spec": {
+      "line": 0.5,
+      "side": "over",
+      "stat": "ht"
+     },
+     "start": "2026-10-28T17:30:00.000Z"
+    },
+    {
+     "fid": "id1000003672201682",
+     "fxi": {
+      "categoryName": "Scotland",
+      "categorySlug": "scotland",
+      "participant1Name": "Aberdeen FC",
+      "participant1ShortName": "Aberdeen",
+      "participant2Name": "Falkirk FC",
+      "participant2ShortName": "Falkirk",
+      "startTime": "2026-10-28T19:45:00.000Z",
+      "tournamentName": "Premiership"
+     },
+     "label": "Ημίχρονο Over 0.5 γκολ",
+     "market": "10256",
+     "match": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Aberdeen – Falkirk",
+     "outcome": "10256",
+     "price": 1.42,
+     "prob": 0.7072,
+     "spec": {
+      "line": 0.5,
+      "side": "over",
+      "stat": "ht"
+     },
+     "start": "2026-10-28T19:45:00.000Z"
+    },
+    {
+     "fid": "id1000004067126848",
+     "fxi": {
+      "categoryName": "Sweden",
+      "categorySlug": "sweden",
+      "participant1Name": "Degerfors IF",
+      "participant1ShortName": "Degerfors",
+      "participant2Name": "Vasteraas SK",
+      "participant2ShortName": "Vasteraas",
+      "startTime": "2026-10-28T18:00:00.000Z",
+      "tournamentName": "Allsvenskan"
+     },
+     "label": "Ημίχρονο Over 0.5 γκολ",
+     "market": "10256",
+     "match": "🇸🇪 Degerfors – Vasteraas",
+     "outcome": "10256",
+     "price": 1.44,
+     "prob": 0.6954,
+     "spec": {
+      "line": 0.5,
+      "side": "over",
+      "stat": "ht"
+     },
+     "start": "2026-10-28T18:00:00.000Z"
+    },
+    {
+     "fid": "id1000005373093022",
+     "fxi": {
+      "categoryName": "Italy",
+      "categorySlug": "italy",
+      "participant1Name": "Juve Stabia",
+      "participant1ShortName": "Stabia",
+      "participant2Name": "Hellas Verona",
+      "participant2ShortName": "Hellas Verona",
+      "startTime": "2026-10-28T19:00:00.000Z",
+      "tournamentName": "Serie B"
+     },
+     "label": "Ημίχρονο Over 0.5 γκολ",
+     "market": "10256",
+     "match": "🇮🇹 Stabia – Hellas Verona",
+     "outcome": "10256",
+     "price": 1.44,
+     "prob": 0.6901,
+     "spec": {
+      "line": 0.5,
+      "side": "over",
+      "stat": "ht"
+     },
+     "start": "2026-10-28T19:00:00.000Z"
+    },
+    {
+     "fid": "id1000005373093016",
+     "fxi": {
+      "categoryName": "Italy",
+      "categorySlug": "italy",
+      "participant1Name": "Carrarese Calcio",
+      "participant1ShortName": "Carrarese",
+      "participant2Name": "SS Arezzo",
+      "participant2ShortName": "Arezzo",
+      "startTime": "2026-10-28T19:00:00.000Z",
+      "tournamentName": "Serie B"
+     },
+     "label": "Ημίχρονο Over 0.5 γκολ",
+     "market": "10256",
+     "match": "🇮🇹 Carrarese – Arezzo",
+     "outcome": "10256",
+     "price": 1.47,
+     "prob": 0.6766,
+     "spec": {
+      "line": 0.5,
+      "side": "over",
+      "stat": "ht"
+     },
+     "start": "2026-10-28T19:00:00.000Z"
+    },
+    {
+     "fid": "id1000039068823414",
+     "fxi": {
+      "categoryName": "Brazil",
+      "categorySlug": "brazil",
+      "participant1Name": "Ceara SC CE",
+      "participant1ShortName": "Ceara",
+      "participant2Name": "Goias EC GO",
+      "participant2ShortName": "Goias",
+      "startTime": "2026-10-27T23:00:00.000Z",
+      "tournamentName": "Brasileiro Serie B"
+     },
+     "label": "Ημίχρονο Over 0.5 γκολ",
+     "market": "10256",
+     "match": "🇧🇷 Ceara – Goias",
+     "outcome": "10256",
+     "price": 1.4,
+     "prob": 0.7018,
+     "spec": {
+      "line": 0.5,
+      "side": "over",
+      "stat": "ht"
+     },
+     "start": "2026-10-27T23:00:00.000Z"
+    }
+   ],
+   "legs": [
+    "🇮🇹 Monza – Napoli · Over 2.5 γκολ @1.72",
+    "🏴󠁧󠁢󠁳󠁣󠁴󠁿 St. Johnstone – Motherwell · Ημίχρονο Over 0.5 γκολ @1.42",
+    "🇮🇹 Milan – Bologna · Ημίχρονο Over 0.5 γκολ @1.42",
+    "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Aberdeen – Falkirk · Ημίχρονο Over 0.5 γκολ @1.42",
+    "🇸🇪 Degerfors – Vasteraas · Ημίχρονο Over 0.5 γκολ @1.44",
+    "🇮🇹 Stabia – Hellas Verona · Ημίχρονο Over 0.5 γκολ @1.44",
+    "🇮🇹 Carrarese – Arezzo · Ημίχρονο Over 0.5 γκολ @1.47",
+    "🇧🇷 Ceara – Goias · Ημίχρονο Over 0.5 γκολ @1.40"
+   ],
+   "msg_ids": [
+    490
+   ],
+   "name": "Βραδινό x20–30",
+   "odds": 21.02,
+   "prob": 0.0465,
+   "result": null,
+   "stake": null
   }
  },
  "tickets_sent": {
   "12:00": "2026-10-27",
-  "23:45": "2026-10-26"
+  "23:45": "2026-10-27"
  }
 }
