@@ -6656,6 +6656,27 @@
    },
    {
     "book": "stoiximan",
+    "drop": 1.3,
+    "edge": -2.8,
+    "fair": 1.954,
+    "fid": "id1000002371945364",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🇮🇹 Venezia – Inter",
+    "outcome": "1013",
+    "price": 1.9,
+    "prob": 0.5118,
+    "score": -2.38,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-10-28T17:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 0.2,
     "edge": -2.6,
     "fair": 1.406,
@@ -6671,27 +6692,6 @@
     "spec": {
      "side": "2",
      "stat": "1x2"
-    },
-    "start": "2026-10-28T17:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -1.5,
-    "edge": -3.3,
-    "fair": 2.121,
-    "fid": "id1000002371945364",
-    "group": "goals",
-    "label": "Ημίχρονο Over 1.5 γκολ",
-    "market": "10258",
-    "match": "🇮🇹 Venezia – Inter",
-    "outcome": "10258",
-    "price": 2.05,
-    "prob": 0.4715,
-    "score": -3.35,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "ht"
     },
     "start": "2026-10-28T17:30:00.000Z"
    }
@@ -7365,9 +7365,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 2.1,
-    "edge": -3.1,
-    "fair": 1.579,
+    "drop": 2.0,
+    "edge": -3.3,
+    "fair": 1.582,
     "fid": "id1000004067126842",
     "group": "goals",
     "label": "Under 3.5 γκολ",
@@ -7375,12 +7375,32 @@
     "match": "🇸🇪 Goteborg – Djurgarden",
     "outcome": "1013",
     "price": 1.53,
-    "prob": 0.6333,
-    "score": -2.46,
+    "prob": 0.6321,
+    "score": -2.68,
     "spec": {
      "line": 3.5,
      "side": "under",
      "stat": "goals"
+    },
+    "start": "2026-10-28T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -10.4,
+    "edge": -2.9,
+    "fair": 2.06,
+    "fid": "id1000004067126842",
+    "group": "1x2",
+    "label": "2 (Djurgarden)",
+    "market": "101",
+    "match": "🇸🇪 Goteborg – Djurgarden",
+    "outcome": "103",
+    "price": 2.0,
+    "prob": 0.4854,
+    "score": -2.91,
+    "spec": {
+     "side": "2",
+     "stat": "1x2"
     },
     "start": "2026-10-28T18:00:00.000Z"
    }
@@ -7419,9 +7439,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 13.8,
-    "edge": -2.8,
-    "fair": 1.615,
+    "drop": 14.1,
+    "edge": -2.4,
+    "fair": 1.608,
     "fid": "id1000004067126846",
     "group": "1x2",
     "label": "2 (BK Hacken)",
@@ -7429,8 +7449,8 @@
     "match": "🇸🇪 Brommapojkarna – BK Hacken",
     "outcome": "103",
     "price": 1.57,
-    "prob": 0.6192,
-    "score": 1.35,
+    "prob": 0.6219,
+    "score": 1.87,
     "spec": {
      "side": "2",
      "stat": "1x2"
@@ -7440,8 +7460,8 @@
    {
     "book": "stoiximan",
     "drop": 6.9,
-    "edge": -2.0,
-    "fair": 2.265,
+    "edge": -1.9,
+    "fair": 2.262,
     "fid": "id1000004067126846",
     "group": "goals",
     "label": "Ημίχρονο Over 1.5 γκολ",
@@ -7449,8 +7469,8 @@
     "match": "🇸🇪 Brommapojkarna – BK Hacken",
     "outcome": "10258",
     "price": 2.22,
-    "prob": 0.4415,
-    "score": 0.09,
+    "prob": 0.4421,
+    "score": 0.22,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -7502,9 +7522,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -2.8,
-    "edge": -3.6,
-    "fair": 1.628,
+    "drop": -2.4,
+    "edge": -3.1,
+    "fair": 1.621,
     "fid": "id1000004067126846",
     "group": "btts",
     "label": "Goal/Goal: Ναι",
@@ -7512,8 +7532,8 @@
     "match": "🇸🇪 Brommapojkarna – BK Hacken",
     "outcome": "104",
     "price": 1.57,
-    "prob": 0.6143,
-    "score": -3.56,
+    "prob": 0.6169,
+    "score": -3.15,
     "spec": {
      "side": "yes",
      "stat": "btts"
@@ -7988,9 +8008,9 @@
   "id1000005373093030": [
    {
     "book": "stoiximan",
-    "drop": 3.0,
-    "edge": 3.0,
-    "fair": 2.379,
+    "drop": 3.9,
+    "edge": 3.9,
+    "fair": 2.357,
     "fid": "id1000005373093030",
     "fxi": {
      "categoryName": "Italy",
@@ -8008,8 +8028,8 @@
     "match": "🇮🇹 Pisa – Palermo",
     "outcome": "10807",
     "price": 2.45,
-    "prob": 0.4203,
-    "score": 3.9,
+    "prob": 0.4243,
+    "score": 5.12,
     "spec": {
      "line": 10.5,
      "side": "over",
@@ -8019,9 +8039,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 4.2,
-    "edge": -0.6,
-    "fair": 1.881,
+    "drop": 4.9,
+    "edge": 0.2,
+    "fair": 1.866,
     "fid": "id1000005373093030",
     "group": "corners",
     "label": "Κόρνερ Over 9.5",
@@ -8029,12 +8049,32 @@
     "match": "🇮🇹 Pisa – Palermo",
     "outcome": "10803",
     "price": 1.87,
-    "prob": 0.5316,
-    "score": 0.68,
+    "prob": 0.5359,
+    "score": 1.68,
     "spec": {
      "line": 9.5,
      "side": "over",
      "stat": "corners"
+    },
+    "start": "2026-10-28T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 6.0,
+    "edge": -2.4,
+    "fair": 2.583,
+    "fid": "id1000005373093030",
+    "group": "1x2",
+    "label": "1 (Pisa)",
+    "market": "101",
+    "match": "🇮🇹 Pisa – Palermo",
+    "outcome": "101",
+    "price": 2.52,
+    "prob": 0.3871,
+    "score": -0.63,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
     },
     "start": "2026-10-28T18:00:00.000Z"
    },
@@ -8077,26 +8117,6 @@
      "line": 1.5,
      "side": "under",
      "stat": "ht"
-    },
-    "start": "2026-10-28T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -11.7,
-    "edge": -3.9,
-    "fair": 3.069,
-    "fid": "id1000005373093030",
-    "group": "1x2",
-    "label": "2 (Palermo)",
-    "market": "101",
-    "match": "🇮🇹 Pisa – Palermo",
-    "outcome": "103",
-    "price": 2.95,
-    "prob": 0.3258,
-    "score": -3.88,
-    "spec": {
-     "side": "2",
-     "stat": "1x2"
     },
     "start": "2026-10-28T18:00:00.000Z"
    }
@@ -10402,7 +10422,7 @@
    {
     "book": "stoiximan",
     "drop": 31.8,
-    "edge": -0.4,
+    "edge": -3.2,
     "fair": 1.757,
     "fid": "id1000066873835160",
     "fxi": {
@@ -10420,9 +10440,9 @@
     "market": "101",
     "match": "🇪🇺 Nasaf – Kuwait SC",
     "outcome": "101",
-    "price": 1.75,
+    "price": 1.7,
     "prob": 0.5692,
-    "score": 5.6,
+    "score": 2.76,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -10516,6 +10536,38 @@
     "start": "2026-10-28T18:15:00.000Z"
    }
   ],
+  "id1000066873835302": [
+   {
+    "book": "stoiximan",
+    "drop": 24.4,
+    "edge": -4.0,
+    "fair": 2.343,
+    "fid": "id1000066873835302",
+    "fxi": {
+     "categoryName": "International Clubs",
+     "categorySlug": "international-clubs",
+     "participant1Name": "BG Tampines Rovers",
+     "participant1ShortName": "BG Tampines Rovers",
+     "participant2Name": "PKR Svay Rieng",
+     "participant2ShortName": "Svay Rieng",
+     "startTime": "2026-10-29T10:00:00.000Z",
+     "tournamentName": "AFC Champions League Two"
+    },
+    "group": "1x2",
+    "label": "2 (Svay Rieng)",
+    "market": "101",
+    "match": "🇪🇺 BG Tampines Rovers – Svay Rieng",
+    "outcome": "103",
+    "price": 2.25,
+    "prob": 0.4268,
+    "score": 2.03,
+    "spec": {
+     "side": "2",
+     "stat": "1x2"
+    },
+    "start": "2026-10-29T10:00:00.000Z"
+   }
+  ],
   "id1000229873206546": [
    {
     "book": "stoiximan",
@@ -10546,38 +10598,6 @@
      "stat": "1x2"
     },
     "start": "2026-10-28T12:35:00.000Z"
-   }
-  ],
-  "id1000229873206548": [
-   {
-    "book": "stoiximan",
-    "drop": 16.6,
-    "edge": 1.4,
-    "fair": 1.844,
-    "fid": "id1000229873206548",
-    "fxi": {
-     "categoryName": "Saudi Arabia",
-     "categorySlug": "saudi-arabia",
-     "participant1Name": "Al-Najma",
-     "participant1ShortName": "Al-Najma",
-     "participant2Name": "Al-Zulfi FC",
-     "participant2ShortName": "AL-ZULFI",
-     "startTime": "2026-10-28T15:05:00.000Z",
-     "tournamentName": "Division 1"
-    },
-    "group": "1x2",
-    "label": "1 (Al-Najma)",
-    "market": "101",
-    "match": "🇸🇦 Al-Najma – AL-ZULFI",
-    "outcome": "101",
-    "price": 1.87,
-    "prob": 0.5423,
-    "score": 6.4,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
-    },
-    "start": "2026-10-28T15:05:00.000Z"
    }
   ],
   "id1002655674931492": [
@@ -10656,60 +10676,62 @@
   ]
  },
  "checked": {
-  "id1000002371945350": "2026-10-28T09:50:35Z",
-  "id1000002371945352": "2026-10-28T09:55:28Z",
-  "id1000002371945354": "2026-10-28T09:50:35Z",
-  "id1000002371945356": "2026-10-28T09:55:28Z",
-  "id1000002371945364": "2026-10-28T09:55:28Z",
-  "id1000003672201682": "2026-10-28T09:50:35Z",
+  "id1000002371945350": "2026-10-28T10:00:57Z",
+  "id1000002371945352": "2026-10-28T10:00:57Z",
+  "id1000002371945354": "2026-10-28T10:00:57Z",
+  "id1000002371945356": "2026-10-28T10:00:57Z",
+  "id1000002371945364": "2026-10-28T10:00:57Z",
+  "id1000003672201682": "2026-10-28T10:00:57Z",
   "id1000003672201684": "2026-10-28T09:55:28Z",
   "id1000003672201686": "2026-10-28T09:55:28Z",
   "id1000003672201688": "2026-10-28T09:55:28Z",
   "id1000003672201690": "2026-10-28T09:55:28Z",
   "id1000003672201692": "2026-10-28T09:55:28Z",
-  "id1000004067126842": "2026-10-28T09:55:28Z",
-  "id1000004067126846": "2026-10-28T09:55:28Z",
-  "id1000004067126848": "2026-10-28T09:55:28Z",
-  "id1000004067126852": "2026-10-28T09:55:28Z",
-  "id1000005373093016": "2026-10-28T09:55:28Z",
-  "id1000005373093022": "2026-10-28T09:55:28Z",
-  "id1000005373093030": "2026-10-28T09:55:28Z",
-  "id1000021075804676": "2026-10-28T09:55:28Z",
-  "id1000021075812222": "2026-10-28T09:55:28Z",
-  "id1000024266299730": "2026-10-28T09:50:35Z",
-  "id1000024266299732": "2026-10-28T09:50:35Z",
-  "id1000024266299734": "2026-10-28T09:50:35Z",
-  "id1000024266299736": "2026-10-28T09:50:35Z",
-  "id1000024266299738": "2026-10-28T09:50:35Z",
+  "id1000004067126842": "2026-10-28T10:00:57Z",
+  "id1000004067126846": "2026-10-28T10:00:57Z",
+  "id1000004067126848": "2026-10-28T10:00:57Z",
+  "id1000004067126852": "2026-10-28T10:00:57Z",
+  "id1000005373093016": "2026-10-28T10:00:57Z",
+  "id1000005373093022": "2026-10-28T10:00:57Z",
+  "id1000005373093030": "2026-10-28T10:00:57Z",
+  "id1000021075804676": "2026-10-28T10:00:57Z",
+  "id1000021075812222": "2026-10-28T10:00:57Z",
+  "id1000024266299730": "2026-10-28T10:00:57Z",
+  "id1000024266299732": "2026-10-28T10:00:57Z",
+  "id1000024266299734": "2026-10-28T10:00:57Z",
+  "id1000024266299736": "2026-10-28T10:00:57Z",
+  "id1000024266299738": "2026-10-28T10:00:57Z",
   "id1000024266299740": "2026-10-28T09:55:28Z",
-  "id1000024266299742": "2026-10-28T09:50:35Z",
+  "id1000024266299742": "2026-10-28T10:00:57Z",
   "id1000024266299744": "2026-10-28T09:55:28Z",
   "id1000024266299746": "2026-10-28T09:55:28Z",
-  "id1000024266299748": "2026-10-28T09:50:35Z",
-  "id1000024266299750": "2026-10-28T09:50:35Z",
+  "id1000024266299748": "2026-10-28T10:00:57Z",
+  "id1000024266299750": "2026-10-28T10:00:57Z",
   "id1000024266299752": "2026-10-28T09:55:28Z",
   "id1000024266299754": "2026-10-28T09:55:28Z",
   "id1000024266299756": "2026-10-28T09:55:28Z",
   "id1000032566887118": "2026-10-28T09:55:28Z",
   "id1000032566887122": "2026-10-28T09:55:28Z",
-  "id1000032566887126": "2026-10-28T09:50:35Z",
-  "id1000032566887134": "2026-10-28T09:50:35Z",
+  "id1000032566887126": "2026-10-28T10:00:57Z",
+  "id1000032566887134": "2026-10-28T10:00:57Z",
   "id1000032566887136": "2026-10-28T09:55:28Z",
   "id1000046373835692": "2026-10-28T09:55:28Z",
   "id1000046373835696": "2026-10-28T09:55:28Z",
-  "id1000066873835160": "2026-10-28T09:55:28Z",
-  "id1000066873835162": "2026-10-28T09:55:28Z",
-  "id1000066873835188": "2026-10-28T09:55:28Z",
-  "id1000066873835190": "2026-10-28T09:55:28Z",
-  "id1000066873835216": "2026-10-28T09:55:28Z",
-  "id1000066873835218": "2026-10-28T09:55:28Z",
-  "id1000066873835278": "2026-10-28T09:55:28Z",
-  "id1000066873835444": "2026-10-28T09:50:35Z",
-  "id1000066873878826": "2026-10-28T09:55:28Z",
-  "id1000229873206546": "2026-10-28T09:55:28Z",
-  "id1000229873206548": "2026-10-28T09:55:28Z",
-  "id1000229873206550": "2026-10-28T09:55:28Z",
-  "id1002655674931492": "2026-10-28T09:55:28Z"
+  "id1000066873835160": "2026-10-28T10:00:57Z",
+  "id1000066873835162": "2026-10-28T10:00:57Z",
+  "id1000066873835188": "2026-10-28T10:00:57Z",
+  "id1000066873835190": "2026-10-28T10:00:57Z",
+  "id1000066873835216": "2026-10-28T10:00:57Z",
+  "id1000066873835218": "2026-10-28T10:00:57Z",
+  "id1000066873835278": "2026-10-28T10:00:57Z",
+  "id1000066873835302": "2026-10-28T10:00:57Z",
+  "id1000066873835330": "2026-10-28T10:00:57Z",
+  "id1000066873835444": "2026-10-28T10:00:57Z",
+  "id1000066873878826": "2026-10-28T10:00:57Z",
+  "id1000229873206546": "2026-10-28T10:00:57Z",
+  "id1000229873206548": "2026-10-28T10:00:57Z",
+  "id1000229873206550": "2026-10-28T10:00:57Z",
+  "id1002655674931492": "2026-10-28T10:00:57Z"
  },
  "diag": {
   "2026-10-26": {
@@ -12550,6 +12572,7 @@
     "id1000046373835696|10258|10258|goals",
     "id1000066873835160|101|101|1x2",
     "id1000066873835218|101|101|1x2",
+    "id1000066873835302|101|103|1x2",
     "id1000229873206546|101|101|1x2",
     "id1000229873206548|101|101|1x2"
    ],
@@ -12606,6 +12629,8 @@
     "id1000066873835216",
     "id1000066873835218",
     "id1000066873835278",
+    "id1000066873835302",
+    "id1000066873835330",
     "id1000066873835444",
     "id1000066873878826",
     "id1000229873206546",
@@ -12974,6 +12999,22 @@
     "id1000066873835278|10256|10257|goals",
     "id1000066873835278|10258|10258|goals",
     "id1000066873835278|10258|10259|goals",
+    "id1000066873835302|1010|1010|goals",
+    "id1000066873835302|1010|1011|goals",
+    "id1000066873835302|101|101|1x2",
+    "id1000066873835302|101|102|1x2",
+    "id1000066873835302|101|103|1x2",
+    "id1000066873835302|10258|10258|goals",
+    "id1000066873835302|10258|10259|goals",
+    "id1000066873835330|1010|1010|goals",
+    "id1000066873835330|1010|1011|goals",
+    "id1000066873835330|101|101|1x2",
+    "id1000066873835330|101|102|1x2",
+    "id1000066873835330|101|103|1x2",
+    "id1000066873835330|10256|10256|goals",
+    "id1000066873835330|10256|10257|goals",
+    "id1000066873835330|10258|10258|goals",
+    "id1000066873835330|10258|10259|goals",
     "id1000066873835444|1010|1010|goals",
     "id1000066873835444|1010|1011|goals",
     "id1000066873835444|101|101|1x2",
@@ -13059,6 +13100,7 @@
     "id1000046373835696|10258|10258|goals",
     "id1000066873835160|101|101|1x2",
     "id1000066873835218|101|101|1x2",
+    "id1000066873835302|101|103|1x2",
     "id1000229873206546|101|101|1x2",
     "id1000229873206548|101|101|1x2"
    ],
@@ -13211,6 +13253,8 @@
     "id1000066873835216|10256|10257|goals",
     "id1000066873835278|10256|10256|goals",
     "id1000066873835278|10256|10257|goals",
+    "id1000066873835302|10256|10256|goals",
+    "id1000066873835302|10256|10257|goals",
     "id1000066873835444|10256|10256|goals",
     "id1000066873835444|10256|10257|goals",
     "id1002655674931492|10256|10256|goals",
@@ -65771,10 +65815,320 @@
    "prob": 0.0465,
    "result": null,
    "stake": null
+  },
+  "2026-10-28|0": {
+   "date": "2026-10-28",
+   "last_start": "2026-10-28T19:45:00.000Z",
+   "leg_data": [
+    {
+     "fid": "id1000002371945356",
+     "fxi": {
+      "categoryName": "Italy",
+      "categorySlug": "italy",
+      "participant1Name": "Parma Calcio",
+      "participant1ShortName": "Parma Calcio",
+      "participant2Name": "Udinese Calcio",
+      "participant2ShortName": "Udinese",
+      "startTime": "2026-10-28T17:30:00.000Z",
+      "tournamentName": "Serie A"
+     },
+     "label": "Over 1.5 γκολ",
+     "market": "108",
+     "match": "🇮🇹 Parma Calcio – Udinese",
+     "outcome": "108",
+     "price": 1.39,
+     "prob": 0.7273,
+     "spec": {
+      "line": 1.5,
+      "side": "over",
+      "stat": "goals"
+     },
+     "start": "2026-10-28T17:30:00.000Z"
+    },
+    {
+     "fid": "id1000003672201682",
+     "fxi": {
+      "categoryName": "Scotland",
+      "categorySlug": "scotland",
+      "participant1Name": "Aberdeen FC",
+      "participant1ShortName": "Aberdeen",
+      "participant2Name": "Falkirk FC",
+      "participant2ShortName": "Falkirk",
+      "startTime": "2026-10-28T19:45:00.000Z",
+      "tournamentName": "Premiership"
+     },
+     "label": "Ημίχρονο Over 0.5 γκολ",
+     "market": "10256",
+     "match": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Aberdeen – Falkirk",
+     "outcome": "10256",
+     "price": 1.44,
+     "prob": 0.6988,
+     "spec": {
+      "line": 0.5,
+      "side": "over",
+      "stat": "ht"
+     },
+     "start": "2026-10-28T19:45:00.000Z"
+    },
+    {
+     "fid": "id1000005373093016",
+     "fxi": {
+      "categoryName": "Italy",
+      "categorySlug": "italy",
+      "participant1Name": "Carrarese Calcio",
+      "participant1ShortName": "Carrarese",
+      "participant2Name": "SS Arezzo",
+      "participant2ShortName": "Arezzo",
+      "startTime": "2026-10-28T19:00:00.000Z",
+      "tournamentName": "Serie B"
+     },
+     "label": "Ημίχρονο Over 0.5 γκολ",
+     "market": "10256",
+     "match": "🇮🇹 Carrarese – Arezzo",
+     "outcome": "10256",
+     "price": 1.5,
+     "prob": 0.6693,
+     "spec": {
+      "line": 0.5,
+      "side": "over",
+      "stat": "ht"
+     },
+     "start": "2026-10-28T19:00:00.000Z"
+    },
+    {
+     "fid": "id1000004067126848",
+     "fxi": {
+      "categoryName": "Sweden",
+      "categorySlug": "sweden",
+      "participant1Name": "Degerfors IF",
+      "participant1ShortName": "Degerfors",
+      "participant2Name": "Vasteraas SK",
+      "participant2ShortName": "Vasteraas",
+      "startTime": "2026-10-28T18:00:00.000Z",
+      "tournamentName": "Allsvenskan"
+     },
+     "label": "Ημίχρονο Over 0.5 γκολ",
+     "market": "10256",
+     "match": "🇸🇪 Degerfors – Vasteraas",
+     "outcome": "10256",
+     "price": 1.44,
+     "prob": 0.6954,
+     "spec": {
+      "line": 0.5,
+      "side": "over",
+      "stat": "ht"
+     },
+     "start": "2026-10-28T18:00:00.000Z"
+    },
+    {
+     "fid": "id1000004067126846",
+     "fxi": {
+      "categoryName": "Sweden",
+      "categorySlug": "sweden",
+      "participant1Name": "IF Brommapojkarna",
+      "participant1ShortName": "Brommapojkarna",
+      "participant2Name": "BK Hacken",
+      "participant2ShortName": "BK Hacken",
+      "startTime": "2026-10-28T18:00:00.000Z",
+      "tournamentName": "Allsvenskan"
+     },
+     "label": "Over 2.5 γκολ",
+     "market": "1010",
+     "match": "🇸🇪 Brommapojkarna – BK Hacken",
+     "outcome": "1010",
+     "price": 1.5,
+     "prob": 0.6562,
+     "spec": {
+      "line": 2.5,
+      "side": "over",
+      "stat": "goals"
+     },
+     "start": "2026-10-28T18:00:00.000Z"
+    },
+    {
+     "fid": "id1000066873835160",
+     "fxi": {
+      "categoryName": "International Clubs",
+      "categorySlug": "international-clubs",
+      "participant1Name": "PFC Nasaf",
+      "participant1ShortName": "Nasaf",
+      "participant2Name": "Kuwait SC",
+      "participant2ShortName": "Kuwait SC",
+      "startTime": "2026-10-28T13:45:00.000Z",
+      "tournamentName": "AFC Champions League Two"
+     },
+     "label": "1 (Nasaf)",
+     "market": "101",
+     "match": "🇪🇺 Nasaf – Kuwait SC",
+     "outcome": "101",
+     "price": 1.7,
+     "prob": 0.5692,
+     "spec": {
+      "side": "1",
+      "stat": "1x2"
+     },
+     "start": "2026-10-28T13:45:00.000Z"
+    }
+   ],
+   "legs": [
+    "🇮🇹 Parma Calcio – Udinese · Over 1.5 γκολ @1.39",
+    "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Aberdeen – Falkirk · Ημίχρονο Over 0.5 γκολ @1.44",
+    "🇮🇹 Carrarese – Arezzo · Ημίχρονο Over 0.5 γκολ @1.50",
+    "🇸🇪 Degerfors – Vasteraas · Ημίχρονο Over 0.5 γκολ @1.44",
+    "🇸🇪 Brommapojkarna – BK Hacken · Over 2.5 γκολ @1.50",
+    "🇪🇺 Nasaf – Kuwait SC · 1 (Nasaf) @1.70"
+   ],
+   "msg_ids": [
+    495
+   ],
+   "name": "Δελτίο x10–30 · Over (έως 1.70)",
+   "odds": 11.02,
+   "prob": 0.08835,
+   "result": null,
+   "stake": null
+  },
+  "2026-10-28|1": {
+   "date": "2026-10-28",
+   "last_start": "2026-10-28T19:45:00.000Z",
+   "leg_data": [
+    {
+     "fid": "id1000004067126842",
+     "fxi": {
+      "categoryName": "Sweden",
+      "categorySlug": "sweden",
+      "participant1Name": "IFK Goteborg",
+      "participant1ShortName": "Goteborg",
+      "participant2Name": "Djurgardens IF",
+      "participant2ShortName": "Djurgarden",
+      "startTime": "2026-10-28T18:00:00.000Z",
+      "tournamentName": "Allsvenskan"
+     },
+     "label": "Κόρνερ Under 9.5",
+     "market": "10803",
+     "match": "🇸🇪 Goteborg – Djurgarden",
+     "outcome": "10804",
+     "price": 3.05,
+     "prob": 0.3766,
+     "spec": {
+      "line": 9.5,
+      "side": "under",
+      "stat": "corners"
+     },
+     "start": "2026-10-28T18:00:00.000Z"
+    },
+    {
+     "fid": "id1000002371945350",
+     "fxi": {
+      "categoryName": "Italy",
+      "categorySlug": "italy",
+      "participant1Name": "Genoa CFC",
+      "participant1ShortName": "Genoa",
+      "participant2Name": "Juventus Turin",
+      "participant2ShortName": "Juventus",
+      "startTime": "2026-10-28T19:45:00.000Z",
+      "tournamentName": "Serie A"
+     },
+     "label": "Κάρτες Under 3.5",
+     "market": "10926",
+     "match": "🇮🇹 Genoa – Juventus",
+     "outcome": "10927",
+     "price": 1.83,
+     "prob": 0.5679,
+     "spec": null,
+     "start": "2026-10-28T19:45:00.000Z"
+    },
+    {
+     "fid": "id1000066873835218",
+     "fxi": {
+      "categoryName": "International Clubs",
+      "categorySlug": "international-clubs",
+      "participant1Name": "Al Faisaly (JOR)",
+      "participant1ShortName": "AL Faisaly",
+      "participant2Name": "Al-Taawoun FC",
+      "participant2ShortName": "Al-Taawoun",
+      "startTime": "2026-10-28T18:15:00.000Z",
+      "tournamentName": "AFC Champions League Two"
+     },
+     "label": "1 (AL Faisaly)",
+     "market": "101",
+     "match": "🇪🇺 AL Faisaly – Al-Taawoun",
+     "outcome": "101",
+     "price": 2.3,
+     "prob": 0.4284,
+     "spec": {
+      "side": "1",
+      "stat": "1x2"
+     },
+     "start": "2026-10-28T18:15:00.000Z"
+    },
+    {
+     "fid": "id1000229873206546",
+     "fxi": {
+      "categoryName": "Saudi Arabia",
+      "categorySlug": "saudi-arabia",
+      "participant1Name": "AL Jandal",
+      "participant1ShortName": "AL Jandal",
+      "participant2Name": "Damac FC",
+      "participant2ShortName": "Damac",
+      "startTime": "2026-10-28T12:35:00.000Z",
+      "tournamentName": "Division 1"
+     },
+     "label": "1 (AL Jandal)",
+     "market": "101",
+     "match": "🇸🇦 AL Jandal – Damac",
+     "outcome": "101",
+     "price": 3.1,
+     "prob": 0.3106,
+     "spec": {
+      "side": "1",
+      "stat": "1x2"
+     },
+     "start": "2026-10-28T12:35:00.000Z"
+    },
+    {
+     "fid": "id1000005373093016",
+     "fxi": {
+      "categoryName": "Italy",
+      "categorySlug": "italy",
+      "participant1Name": "Carrarese Calcio",
+      "participant1ShortName": "Carrarese",
+      "participant2Name": "SS Arezzo",
+      "participant2ShortName": "Arezzo",
+      "startTime": "2026-10-28T19:00:00.000Z",
+      "tournamentName": "Serie B"
+     },
+     "label": "1 (Carrarese)",
+     "market": "101",
+     "match": "🇮🇹 Carrarese – Arezzo",
+     "outcome": "101",
+     "price": 2.25,
+     "prob": 0.4413,
+     "spec": {
+      "side": "1",
+      "stat": "1x2"
+     },
+     "start": "2026-10-28T19:00:00.000Z"
+    }
+   ],
+   "legs": [
+    "🇸🇪 Goteborg – Djurgarden · Κόρνερ Under 9.5 @3.05",
+    "🇮🇹 Genoa – Juventus · Κάρτες Under 3.5 @1.83",
+    "🇪🇺 AL Faisaly – Al-Taawoun · 1 (AL Faisaly) @2.30",
+    "🇸🇦 AL Jandal – Damac · 1 (AL Jandal) @3.10",
+    "🇮🇹 Carrarese – Arezzo · 1 (Carrarese) @2.25"
+   ],
+   "msg_ids": [
+    496
+   ],
+   "name": "Δελτίο x80–100 · από όλα",
+   "odds": 89.54,
+   "prob": 0.01256,
+   "result": null,
+   "stake": null
   }
  },
  "tickets_sent": {
-  "12:00": "2026-10-27",
+  "12:00": "2026-10-28",
   "23:45": "2026-10-27"
  }
 }
