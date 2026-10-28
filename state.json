@@ -6282,9 +6282,9 @@
   "id1000002371945350": [
    {
     "book": "stoiximan",
-    "drop": 37.4,
-    "edge": 16.4,
-    "fair": 2.276,
+    "drop": 36.8,
+    "edge": 15.5,
+    "fair": 2.295,
     "fid": "id1000002371945350",
     "fxi": {
      "categoryName": "Italy",
@@ -6302,16 +6302,16 @@
     "match": "🇮🇹 Genoa – Juventus",
     "outcome": "10923",
     "price": 2.65,
-    "prob": 0.4394,
-    "score": 22.43,
+    "prob": 0.4357,
+    "score": 21.47,
     "spec": null,
     "start": "2026-10-28T19:45:00.000Z"
    },
    {
     "book": "stoiximan",
-    "drop": 29.0,
-    "edge": 9.2,
-    "fair": 1.63,
+    "drop": 28.4,
+    "edge": 8.3,
+    "fair": 1.644,
     "fid": "id1000002371945350",
     "group": "cards",
     "label": "Κάρτες Under 3.5",
@@ -6319,8 +6319,8 @@
     "match": "🇮🇹 Genoa – Juventus",
     "outcome": "10927",
     "price": 1.78,
-    "prob": 0.6135,
-    "score": 15.2,
+    "prob": 0.6083,
+    "score": 14.27,
     "spec": null,
     "start": "2026-10-28T19:45:00.000Z"
    },
@@ -6610,9 +6610,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 10.6,
-    "edge": -0.5,
-    "fair": 2.562,
+    "drop": 10.9,
+    "edge": 0.0,
+    "fair": 2.55,
     "fid": "id1000002371945354",
     "group": "goals",
     "label": "Ημίχρονο Over 1.5 γκολ",
@@ -6620,8 +6620,8 @@
     "match": "🇮🇹 Monza – Napoli",
     "outcome": "10258",
     "price": 2.55,
-    "prob": 0.3903,
-    "score": 2.71,
+    "prob": 0.3922,
+    "score": 3.28,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -6631,22 +6631,21 @@
    },
    {
     "book": "stoiximan",
-    "drop": 9.0,
-    "edge": -2.9,
-    "fair": 1.75,
+    "drop": 3.4,
+    "edge": -0.2,
+    "fair": 1.724,
     "fid": "id1000002371945354",
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
+    "group": "1x2",
+    "label": "2 (Napoli)",
+    "market": "101",
     "match": "🇮🇹 Monza – Napoli",
-    "outcome": "1010",
-    "price": 1.7,
-    "prob": 0.5714,
-    "score": -0.15,
+    "outcome": "103",
+    "price": 1.72,
+    "prob": 0.58,
+    "score": 0.78,
     "spec": {
-     "line": 2.5,
-     "side": "over",
-     "stat": "goals"
+     "side": "2",
+     "stat": "1x2"
     },
     "start": "2026-10-28T19:45:00.000Z"
    }
@@ -6943,9 +6942,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -2.2,
-    "edge": -0.1,
-    "fair": 1.422,
+    "drop": -2.1,
+    "edge": 0.0,
+    "fair": 1.42,
     "fid": "id1000003672201682",
     "group": "goals",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -6953,8 +6952,8 @@
     "match": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Aberdeen – Falkirk",
     "outcome": "10256",
     "price": 1.42,
-    "prob": 0.7032,
-    "score": -0.14,
+    "prob": 0.7042,
+    "score": 0.0,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -6964,9 +6963,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 1.5,
-    "edge": -2.8,
-    "fair": 2.078,
+    "drop": 2.9,
+    "edge": -1.3,
+    "fair": 2.047,
     "fid": "id1000003672201682",
     "group": "1x2",
     "label": "1 (Aberdeen)",
@@ -6974,32 +6973,11 @@
     "match": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Aberdeen – Falkirk",
     "outcome": "101",
     "price": 2.02,
-    "prob": 0.4812,
-    "score": -2.34,
+    "prob": 0.4885,
+    "score": -0.44,
     "spec": {
      "side": "1",
      "stat": "1x2"
-    },
-    "start": "2026-10-28T19:45:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -3.4,
-    "edge": -2.7,
-    "fair": 2.898,
-    "fid": "id1000003672201682",
-    "group": "goals",
-    "label": "Ημίχρονο Over 1.5 γκολ",
-    "market": "10258",
-    "match": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Aberdeen – Falkirk",
-    "outcome": "10258",
-    "price": 2.82,
-    "prob": 0.3451,
-    "score": -2.69,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "ht"
     },
     "start": "2026-10-28T19:45:00.000Z"
    },
@@ -7098,33 +7076,13 @@
      "stat": "ht"
     },
     "start": "2026-10-28T19:45:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 5.1,
-    "edge": -3.6,
-    "fair": 1.659,
-    "fid": "id1000003672201684",
-    "group": "btts",
-    "label": "Goal/Goal: Ναι",
-    "market": "104",
-    "match": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Celtic – Dundee United",
-    "outcome": "104",
-    "price": 1.6,
-    "prob": 0.6028,
-    "score": -2.03,
-    "spec": {
-     "side": "yes",
-     "stat": "btts"
-    },
-    "start": "2026-10-28T19:45:00.000Z"
    }
   ],
   "id1000003672201686": [
    {
     "book": "stoiximan",
     "drop": 9.1,
-    "edge": 1.8,
+    "edge": -1.2,
     "fair": 2.378,
     "fid": "id1000003672201686",
     "fxi": {
@@ -7142,9 +7100,9 @@
     "market": "104",
     "match": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Dundee FC – Kilmarnock",
     "outcome": "105",
-    "price": 2.42,
+    "price": 2.35,
     "prob": 0.4205,
-    "score": 4.5,
+    "score": 1.56,
     "spec": {
      "side": "no",
      "stat": "btts"
@@ -7154,7 +7112,7 @@
    {
     "book": "stoiximan",
     "drop": 1.0,
-    "edge": 3.1,
+    "edge": 1.1,
     "fair": 1.503,
     "fid": "id1000003672201686",
     "group": "goals",
@@ -7162,9 +7120,9 @@
     "market": "1012",
     "match": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Dundee FC – Kilmarnock",
     "outcome": "1013",
-    "price": 1.55,
+    "price": 1.52,
     "prob": 0.6653,
-    "score": 3.42,
+    "score": 1.42,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -7175,7 +7133,7 @@
    {
     "book": "stoiximan",
     "drop": 0.5,
-    "edge": 3.0,
+    "edge": 0.7,
     "fair": 2.234,
     "fid": "id1000003672201686",
     "group": "goals",
@@ -7183,34 +7141,13 @@
     "market": "1010",
     "match": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Dundee FC – Kilmarnock",
     "outcome": "1011",
-    "price": 2.3,
+    "price": 2.25,
     "prob": 0.4476,
-    "score": 3.09,
+    "score": 0.85,
     "spec": {
      "line": 2.5,
      "side": "under",
      "stat": "goals"
-    },
-    "start": "2026-10-28T19:45:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -1.2,
-    "edge": -1.9,
-    "fair": 2.7,
-    "fid": "id1000003672201686",
-    "group": "corners",
-    "label": "Κόρνερ Over 11.5",
-    "market": "10811",
-    "match": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Dundee FC – Kilmarnock",
-    "outcome": "10811",
-    "price": 2.65,
-    "prob": 0.3704,
-    "score": -1.85,
-    "spec": {
-     "line": 11.5,
-     "side": "over",
-     "stat": "corners"
     },
     "start": "2026-10-28T19:45:00.000Z"
    }
@@ -7218,9 +7155,9 @@
   "id1000003672201688": [
    {
     "book": "stoiximan",
-    "drop": 6.1,
-    "edge": -1.8,
-    "fair": 2.292,
+    "drop": 0.8,
+    "edge": 0.3,
+    "fair": 2.463,
     "fid": "id1000003672201688",
     "fxi": {
      "categoryName": "Scotland",
@@ -7232,6 +7169,27 @@
      "startTime": "2026-10-28T20:00:00.000Z",
      "tournamentName": "Premiership"
     },
+    "group": "goals",
+    "label": "Ημίχρονο Over 1.5 γκολ",
+    "market": "10258",
+    "match": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Heart of Midlothian – Rangers",
+    "outcome": "10258",
+    "price": 2.47,
+    "prob": 0.406,
+    "score": 0.54,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-10-28T20:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 6.1,
+    "edge": -1.8,
+    "fair": 2.292,
+    "fid": "id1000003672201688",
     "group": "corners",
     "label": "Κόρνερ Under 9.5",
     "market": "10803",
@@ -7249,30 +7207,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.8,
-    "edge": -1.4,
-    "fair": 2.505,
-    "fid": "id1000003672201688",
-    "group": "goals",
-    "label": "Ημίχρονο Over 1.5 γκολ",
-    "market": "10258",
-    "match": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Heart of Midlothian – Rangers",
-    "outcome": "10258",
-    "price": 2.47,
-    "prob": 0.3992,
-    "score": -1.4,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "ht"
-    },
-    "start": "2026-10-28T20:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -0.7,
-    "edge": -3.1,
-    "fair": 1.672,
+    "drop": 1.5,
+    "edge": -1.0,
+    "fair": 1.636,
     "fid": "id1000003672201688",
     "group": "goals",
     "label": "Over 2.5 γκολ",
@@ -7280,8 +7217,8 @@
     "match": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Heart of Midlothian – Rangers",
     "outcome": "1010",
     "price": 1.62,
-    "prob": 0.5981,
-    "score": -3.11,
+    "prob": 0.6112,
+    "score": -0.53,
     "spec": {
      "line": 2.5,
      "side": "over",
@@ -7291,9 +7228,29 @@
    },
    {
     "book": "stoiximan",
-    "drop": -3.2,
-    "edge": -3.4,
-    "fair": 1.626,
+    "drop": 10.6,
+    "edge": -3.8,
+    "fair": 1.943,
+    "fid": "id1000003672201688",
+    "group": "1x2",
+    "label": "2 (Rangers)",
+    "market": "101",
+    "match": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Heart of Midlothian – Rangers",
+    "outcome": "103",
+    "price": 1.87,
+    "prob": 0.5147,
+    "score": -0.57,
+    "spec": {
+     "side": "2",
+     "stat": "1x2"
+    },
+    "start": "2026-10-28T20:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -1.7,
+    "edge": -1.8,
+    "fair": 1.599,
     "fid": "id1000003672201688",
     "group": "btts",
     "label": "Goal/Goal: Ναι",
@@ -7301,8 +7258,8 @@
     "match": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 Heart of Midlothian – Rangers",
     "outcome": "104",
     "price": 1.57,
-    "prob": 0.615,
-    "score": -3.44,
+    "prob": 0.6254,
+    "score": -1.81,
     "spec": {
      "side": "yes",
      "stat": "btts"
@@ -7449,9 +7406,9 @@
   "id1000003672201692": [
    {
     "book": "stoiximan",
-    "drop": 2.5,
-    "edge": 7.5,
-    "fair": 2.028,
+    "drop": 1.5,
+    "edge": 6.5,
+    "fair": 2.047,
     "fid": "id1000003672201692",
     "fxi": {
      "categoryName": "Scotland",
@@ -7469,8 +7426,8 @@
     "match": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 St. Mirren – Hibernian",
     "outcome": "1011",
     "price": 2.18,
-    "prob": 0.4931,
-    "score": 8.24,
+    "prob": 0.4885,
+    "score": 6.94,
     "spec": {
      "line": 2.5,
      "side": "under",
@@ -7501,9 +7458,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 9.9,
-    "edge": 1.8,
-    "fair": 2.278,
+    "drop": 9.1,
+    "edge": 1.2,
+    "fair": 2.293,
     "fid": "id1000003672201692",
     "group": "btts",
     "label": "Goal/Goal: Όχι",
@@ -7511,8 +7468,8 @@
     "match": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 St. Mirren – Hibernian",
     "outcome": "105",
     "price": 2.32,
-    "prob": 0.439,
-    "score": 4.81,
+    "prob": 0.4361,
+    "score": 3.89,
     "spec": {
      "side": "no",
      "stat": "btts"
@@ -7521,9 +7478,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 1.9,
-    "edge": 3.0,
-    "fair": 1.427,
+    "drop": 1.5,
+    "edge": 2.7,
+    "fair": 1.432,
     "fid": "id1000003672201692",
     "group": "goals",
     "label": "Under 3.5 γκολ",
@@ -7531,8 +7488,8 @@
     "match": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 St. Mirren – Hibernian",
     "outcome": "1013",
     "price": 1.47,
-    "prob": 0.7008,
-    "score": 3.57,
+    "prob": 0.6983,
+    "score": 3.1,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -7558,6 +7515,26 @@
      "line": 10.5,
      "side": "under",
      "stat": "corners"
+    },
+    "start": "2026-10-28T19:45:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.0,
+    "edge": -1.5,
+    "fair": 2.233,
+    "fid": "id1000003672201692",
+    "group": "1x2",
+    "label": "2 (Hibernian)",
+    "market": "101",
+    "match": "🏴󠁧󠁢󠁳󠁣󠁴󠁿 St. Mirren – Hibernian",
+    "outcome": "103",
+    "price": 2.2,
+    "prob": 0.4478,
+    "score": -1.48,
+    "spec": {
+     "side": "2",
+     "stat": "1x2"
     },
     "start": "2026-10-28T19:45:00.000Z"
    }
@@ -8075,9 +8052,9 @@
   "id1000005373093016": [
    {
     "book": "stoiximan",
-    "drop": 22.3,
-    "edge": 0.6,
-    "fair": 1.899,
+    "drop": 21.7,
+    "edge": -0.2,
+    "fair": 1.914,
     "fid": "id1000005373093016",
     "fxi": {
      "categoryName": "Italy",
@@ -8095,8 +8072,8 @@
     "match": "🇮🇹 Carrarese – Arezzo",
     "outcome": "101",
     "price": 1.91,
-    "prob": 0.5266,
-    "score": 6.58,
+    "prob": 0.5225,
+    "score": 5.79,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -8105,30 +8082,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 4.7,
-    "edge": -0.1,
-    "fair": 1.982,
-    "fid": "id1000005373093016",
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
-    "match": "🇮🇹 Carrarese – Arezzo",
-    "outcome": "1010",
-    "price": 1.98,
-    "prob": 0.5045,
-    "score": 1.31,
-    "spec": {
-     "line": 2.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-10-28T19:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -0.2,
-    "edge": 0.0,
-    "fair": 1.45,
+    "drop": -0.9,
+    "edge": -0.7,
+    "fair": 1.46,
     "fid": "id1000005373093016",
     "group": "goals",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -8136,8 +8092,8 @@
     "match": "🇮🇹 Carrarese – Arezzo",
     "outcome": "10256",
     "price": 1.45,
-    "prob": 0.6897,
-    "score": 0.0,
+    "prob": 0.6849,
+    "score": -0.68,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -8147,21 +8103,22 @@
    },
    {
     "book": "stoiximan",
-    "drop": 0.3,
-    "edge": -1.4,
-    "fair": 1.825,
+    "drop": 2.9,
+    "edge": -1.9,
+    "fair": 2.019,
     "fid": "id1000005373093016",
-    "group": "btts",
-    "label": "Goal/Goal: Ναι",
-    "market": "104",
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
     "match": "🇮🇹 Carrarese – Arezzo",
-    "outcome": "104",
-    "price": 1.8,
-    "prob": 0.5479,
-    "score": -1.27,
+    "outcome": "1010",
+    "price": 1.98,
+    "prob": 0.4953,
+    "score": -1.06,
     "spec": {
-     "side": "yes",
-     "stat": "btts"
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
     },
     "start": "2026-10-28T19:00:00.000Z"
    },
@@ -8183,6 +8140,26 @@
      "line": 8.5,
      "side": "under",
      "stat": "corners"
+    },
+    "start": "2026-10-28T19:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -1.0,
+    "edge": -2.8,
+    "fair": 1.852,
+    "fid": "id1000005373093016",
+    "group": "btts",
+    "label": "Goal/Goal: Ναι",
+    "market": "104",
+    "match": "🇮🇹 Carrarese – Arezzo",
+    "outcome": "104",
+    "price": 1.8,
+    "prob": 0.54,
+    "score": -2.81,
+    "spec": {
+     "side": "yes",
+     "stat": "btts"
     },
     "start": "2026-10-28T19:00:00.000Z"
    }
@@ -8952,9 +8929,9 @@
   "id1000024266299740": [
    {
     "book": "stoiximan",
-    "drop": 14.0,
-    "edge": -1.8,
-    "fair": 2.292,
+    "drop": 0.8,
+    "edge": -0.9,
+    "fair": 2.643,
     "fid": "id1000024266299740",
     "fxi": {
      "categoryName": "USA",
@@ -8966,26 +8943,6 @@
      "startTime": "2026-10-29T00:30:00.000Z",
      "tournamentName": "MLS"
     },
-    "group": "1x2",
-    "label": "2 (Salt Lake)",
-    "market": "101",
-    "match": "🇺🇸 Austin – Salt Lake",
-    "outcome": "103",
-    "price": 2.25,
-    "prob": 0.4363,
-    "score": 2.35,
-    "spec": {
-     "side": "2",
-     "stat": "1x2"
-    },
-    "start": "2026-10-29T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.8,
-    "edge": -0.9,
-    "fair": 2.643,
-    "fid": "id1000024266299740",
     "group": "corners",
     "label": "Κόρνερ Over 11.5",
     "market": "10811",
@@ -9016,27 +8973,6 @@
     "prob": 0.5609,
     "score": -1.85,
     "spec": null,
-    "start": "2026-10-29T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -0.6,
-    "edge": -3.6,
-    "fair": 1.628,
-    "fid": "id1000024266299740",
-    "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
-    "match": "🇺🇸 Austin – Salt Lake",
-    "outcome": "1013",
-    "price": 1.57,
-    "prob": 0.6143,
-    "score": -3.56,
-    "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "goals"
-    },
     "start": "2026-10-29T00:30:00.000Z"
    }
   ],
@@ -9171,9 +9107,9 @@
   "id1000024266299744": [
    {
     "book": "stoiximan",
-    "drop": -1.4,
-    "edge": 7.8,
-    "fair": 2.366,
+    "drop": 15.4,
+    "edge": 9.3,
+    "fair": 2.195,
     "fid": "id1000024266299744",
     "fxi": {
      "categoryName": "USA",
@@ -9185,6 +9121,40 @@
      "startTime": "2026-10-29T00:30:00.000Z",
      "tournamentName": "MLS"
     },
+    "group": "cards",
+    "label": "Κάρτες Under 3.5",
+    "market": "10926",
+    "match": "🇺🇸 Dallas – Columbus",
+    "outcome": "10927",
+    "price": 2.4,
+    "prob": 0.4556,
+    "score": 13.97,
+    "spec": null,
+    "start": "2026-10-29T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 12.4,
+    "edge": 9.6,
+    "fair": 1.57,
+    "fid": "id1000024266299744",
+    "group": "cards",
+    "label": "Κάρτες Under 4.5",
+    "market": "10930",
+    "match": "🇺🇸 Dallas – Columbus",
+    "outcome": "10931",
+    "price": 1.72,
+    "prob": 0.6369,
+    "score": 13.26,
+    "spec": null,
+    "start": "2026-10-29T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -1.4,
+    "edge": 7.8,
+    "fair": 2.366,
+    "fid": "id1000024266299744",
     "group": "corners",
     "label": "Κόρνερ Over 10.5",
     "market": "10807",
@@ -9198,23 +9168,6 @@
      "side": "over",
      "stat": "corners"
     },
-    "start": "2026-10-29T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 5.7,
-    "edge": 2.7,
-    "fair": 1.674,
-    "fid": "id1000024266299744",
-    "group": "cards",
-    "label": "Κάρτες Under 4.5",
-    "market": "10930",
-    "match": "🇺🇸 Dallas – Columbus",
-    "outcome": "10931",
-    "price": 1.72,
-    "prob": 0.5974,
-    "score": 4.46,
-    "spec": null,
     "start": "2026-10-29T00:30:00.000Z"
    },
    {
@@ -9278,23 +9231,6 @@
      "side": "over",
      "stat": "goals"
     },
-    "start": "2026-10-29T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 8.1,
-    "edge": -0.3,
-    "fair": 2.407,
-    "fid": "id1000024266299744",
-    "group": "cards",
-    "label": "Κάρτες Under 3.5",
-    "market": "10926",
-    "match": "🇺🇸 Dallas – Columbus",
-    "outcome": "10927",
-    "price": 2.4,
-    "prob": 0.4155,
-    "score": 2.15,
-    "spec": null,
     "start": "2026-10-29T00:30:00.000Z"
    }
   ],
@@ -9387,6 +9323,27 @@
    },
    {
     "book": "stoiximan",
+    "drop": 1.0,
+    "edge": -1.8,
+    "fair": 2.058,
+    "fid": "id1000024266299746",
+    "group": "goals",
+    "label": "Ημίχρονο Over 1.5 γκολ",
+    "market": "10258",
+    "match": "🇺🇸 Minnesota – Kansas City",
+    "outcome": "10258",
+    "price": 2.02,
+    "prob": 0.4859,
+    "score": -1.54,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-10-29T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 1.7,
     "edge": -2.9,
     "fair": 1.401,
@@ -9405,35 +9362,14 @@
      "stat": "goals"
     },
     "start": "2026-10-29T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 1.0,
-    "edge": -2.8,
-    "fair": 2.058,
-    "fid": "id1000024266299746",
-    "group": "goals",
-    "label": "Ημίχρονο Over 1.5 γκολ",
-    "market": "10258",
-    "match": "🇺🇸 Minnesota – Kansas City",
-    "outcome": "10258",
-    "price": 2.0,
-    "prob": 0.4859,
-    "score": -2.52,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "ht"
-    },
-    "start": "2026-10-29T00:30:00.000Z"
    }
   ],
   "id1000024266299748": [
    {
     "book": "stoiximan",
-    "drop": 1.1,
-    "edge": 3.2,
-    "fair": 1.695,
+    "drop": 7.6,
+    "edge": 10.4,
+    "fair": 1.585,
     "fid": "id1000024266299748",
     "fxi": {
      "categoryName": "USA",
@@ -9451,8 +9387,25 @@
     "match": "🇺🇸 Nashville – Philadelphia",
     "outcome": "10931",
     "price": 1.75,
-    "prob": 0.59,
-    "score": 3.58,
+    "prob": 0.6309,
+    "score": 12.68,
+    "spec": null,
+    "start": "2026-10-29T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 9.8,
+    "edge": 7.7,
+    "fair": 2.246,
+    "fid": "id1000024266299748",
+    "group": "cards",
+    "label": "Κάρτες Under 3.5",
+    "market": "10926",
+    "match": "🇺🇸 Nashville – Philadelphia",
+    "outcome": "10927",
+    "price": 2.42,
+    "prob": 0.4452,
+    "score": 10.7,
     "spec": null,
     "start": "2026-10-29T00:30:00.000Z"
    },
@@ -9537,23 +9490,6 @@
      "side": "over",
      "stat": "corners"
     },
-    "start": "2026-10-29T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.9,
-    "edge": -2.0,
-    "fair": 2.47,
-    "fid": "id1000024266299748",
-    "group": "cards",
-    "label": "Κάρτες Under 3.5",
-    "market": "10926",
-    "match": "🇺🇸 Nashville – Philadelphia",
-    "outcome": "10927",
-    "price": 2.42,
-    "prob": 0.4049,
-    "score": -1.77,
-    "spec": null,
     "start": "2026-10-29T00:30:00.000Z"
    }
   ],
@@ -11216,61 +11152,61 @@
   ]
  },
  "checked": {
-  "id1000002371945348": "2026-10-28T18:45:35Z",
-  "id1000002371945350": "2026-10-28T18:45:35Z",
+  "id1000002371945348": "2026-10-28T18:50:37Z",
+  "id1000002371945350": "2026-10-28T18:50:37Z",
   "id1000002371945352": "2026-10-28T17:25:27Z",
-  "id1000002371945354": "2026-10-28T18:45:35Z",
+  "id1000002371945354": "2026-10-28T18:50:37Z",
   "id1000002371945356": "2026-10-28T17:25:27Z",
   "id1000002371945364": "2026-10-28T17:25:27Z",
-  "id1000003672201682": "2026-10-28T18:45:35Z",
-  "id1000003672201684": "2026-10-28T18:45:35Z",
-  "id1000003672201686": "2026-10-28T18:45:35Z",
-  "id1000003672201688": "2026-10-28T18:45:35Z",
-  "id1000003672201690": "2026-10-28T18:45:35Z",
-  "id1000003672201692": "2026-10-28T18:45:35Z",
-  "id1000004067126840": "2026-10-28T18:45:35Z",
+  "id1000003672201682": "2026-10-28T18:50:37Z",
+  "id1000003672201684": "2026-10-28T18:50:37Z",
+  "id1000003672201686": "2026-10-28T18:50:37Z",
+  "id1000003672201688": "2026-10-28T18:50:37Z",
+  "id1000003672201690": "2026-10-28T18:50:37Z",
+  "id1000003672201692": "2026-10-28T18:50:37Z",
+  "id1000004067126840": "2026-10-28T18:50:37Z",
   "id1000004067126842": "2026-10-28T17:55:28Z",
   "id1000004067126844": "2026-10-28T18:45:35Z",
   "id1000004067126846": "2026-10-28T17:55:28Z",
   "id1000004067126848": "2026-10-28T17:55:28Z",
   "id1000004067126850": "2026-10-28T18:45:35Z",
   "id1000004067126852": "2026-10-28T17:55:28Z",
-  "id1000005373093016": "2026-10-28T18:45:35Z",
-  "id1000005373093022": "2026-10-28T18:45:35Z",
+  "id1000005373093016": "2026-10-28T18:50:37Z",
+  "id1000005373093022": "2026-10-28T18:50:37Z",
   "id1000005373093030": "2026-10-28T17:55:28Z",
   "id1000021075812222": "2026-10-28T15:55:28Z",
-  "id1000024266299730": "2026-10-28T18:45:35Z",
-  "id1000024266299732": "2026-10-28T18:45:35Z",
-  "id1000024266299734": "2026-10-28T18:45:35Z",
-  "id1000024266299736": "2026-10-28T18:45:35Z",
-  "id1000024266299738": "2026-10-28T18:45:35Z",
-  "id1000024266299740": "2026-10-28T18:45:35Z",
-  "id1000024266299742": "2026-10-28T18:45:35Z",
-  "id1000024266299744": "2026-10-28T18:45:35Z",
-  "id1000024266299746": "2026-10-28T18:45:35Z",
-  "id1000024266299748": "2026-10-28T18:45:35Z",
-  "id1000024266299750": "2026-10-28T18:45:35Z",
-  "id1000024266299752": "2026-10-28T18:45:35Z",
-  "id1000024266299754": "2026-10-28T18:45:35Z",
-  "id1000024266299756": "2026-10-28T18:45:35Z",
-  "id1000032566887118": "2026-10-28T18:45:35Z",
-  "id1000032566887122": "2026-10-28T18:45:35Z",
-  "id1000032566887126": "2026-10-28T18:45:35Z",
-  "id1000032566887134": "2026-10-28T18:45:35Z",
-  "id1000032566887136": "2026-10-28T18:45:35Z",
+  "id1000024266299730": "2026-10-28T18:50:37Z",
+  "id1000024266299732": "2026-10-28T18:50:37Z",
+  "id1000024266299734": "2026-10-28T18:50:37Z",
+  "id1000024266299736": "2026-10-28T18:50:37Z",
+  "id1000024266299738": "2026-10-28T18:50:37Z",
+  "id1000024266299740": "2026-10-28T18:50:37Z",
+  "id1000024266299742": "2026-10-28T18:50:37Z",
+  "id1000024266299744": "2026-10-28T18:50:37Z",
+  "id1000024266299746": "2026-10-28T18:50:37Z",
+  "id1000024266299748": "2026-10-28T18:50:37Z",
+  "id1000024266299750": "2026-10-28T18:50:37Z",
+  "id1000024266299752": "2026-10-28T18:50:37Z",
+  "id1000024266299754": "2026-10-28T18:50:37Z",
+  "id1000024266299756": "2026-10-28T18:50:37Z",
+  "id1000032566887118": "2026-10-28T18:50:37Z",
+  "id1000032566887122": "2026-10-28T18:50:37Z",
+  "id1000032566887126": "2026-10-28T18:50:37Z",
+  "id1000032566887134": "2026-10-28T18:50:37Z",
+  "id1000032566887136": "2026-10-28T18:50:37Z",
   "id1000066873835162": "2026-10-28T18:10:33Z",
   "id1000066873835190": "2026-10-28T15:55:28Z",
   "id1000066873835216": "2026-10-28T15:55:28Z",
   "id1000066873835218": "2026-10-28T18:10:33Z",
-  "id1000066873835302": "2026-10-28T18:45:35Z",
-  "id1000066873835304": "2026-10-28T18:45:35Z",
-  "id1000066873835330": "2026-10-28T18:45:35Z",
-  "id1000066873835332": "2026-10-28T18:45:35Z",
-  "id1000066873835444": "2026-10-28T18:45:35Z",
-  "id1000066873835446": "2026-10-28T18:45:35Z",
-  "id1000095573215826": "2026-10-28T18:45:35Z",
-  "id1000095573215828": "2026-10-28T18:40:36Z",
-  "id1000095573215830": "2026-10-28T18:40:36Z",
+  "id1000066873835302": "2026-10-28T18:50:37Z",
+  "id1000066873835304": "2026-10-28T18:50:37Z",
+  "id1000066873835330": "2026-10-28T18:50:37Z",
+  "id1000066873835332": "2026-10-28T18:50:37Z",
+  "id1000066873835444": "2026-10-28T18:50:37Z",
+  "id1000066873835446": "2026-10-28T18:50:37Z",
+  "id1000095573215826": "2026-10-28T18:50:37Z",
+  "id1000095573215828": "2026-10-28T18:50:37Z",
+  "id1000095573215830": "2026-10-28T18:50:37Z",
   "id1002655674931492": "2026-10-28T16:55:27Z"
  },
  "diag": {
@@ -13120,6 +13056,7 @@
    "drop_edge_e0": [
     "id1000002371945348|10258|10258|goals",
     "id1000002371945352|1010|1011|goals",
+    "id1000003672201686|1010|1011|goals",
     "id1000005373093016|101|101|1x2",
     "id1000005373093030|1010|1010|goals",
     "id1000005373093030|10258|10258|goals",
