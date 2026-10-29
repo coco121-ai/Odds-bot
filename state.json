@@ -6480,9 +6480,9 @@
   "id1000002371945348": [
    {
     "book": "stoiximan",
-    "drop": 22.1,
-    "edge": -2.9,
-    "fair": 1.463,
+    "drop": 22.6,
+    "edge": -2.5,
+    "fair": 1.456,
     "fid": "id1000002371945348",
     "fxi": {
      "categoryName": "Italy",
@@ -6500,10 +6500,31 @@
     "match": "🇮🇹 Frosinone – Lecce",
     "outcome": "1010",
     "price": 1.42,
-    "prob": 0.6835,
-    "score": 3.06,
+    "prob": 0.6868,
+    "score": 3.53,
     "spec": {
      "line": 2.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-10-29T17:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 32.4,
+    "edge": -2.8,
+    "fair": 2.057,
+    "fid": "id1000002371945348",
+    "group": "goals",
+    "label": "Over 3.5 γκολ",
+    "market": "1012",
+    "match": "🇮🇹 Frosinone – Lecce",
+    "outcome": "1012",
+    "price": 2.0,
+    "prob": 0.4861,
+    "score": 3.23,
+    "spec": {
+     "line": 3.5,
      "side": "over",
      "stat": "goals"
     },
@@ -6528,30 +6549,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 31.8,
-    "edge": -3.9,
-    "fair": 2.081,
-    "fid": "id1000002371945348",
-    "group": "goals",
-    "label": "Over 3.5 γκολ",
-    "market": "1012",
-    "match": "🇮🇹 Frosinone – Lecce",
-    "outcome": "1012",
-    "price": 2.0,
-    "prob": 0.4805,
-    "score": 2.11,
-    "spec": {
-     "line": 3.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-10-29T17:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 11.7,
     "edge": -1.5,
-    "fair": 1.777,
+    "fair": 1.776,
     "fid": "id1000002371945348",
     "group": "1x2",
     "label": "1 (Frosinone)",
@@ -6559,8 +6559,8 @@
     "match": "🇮🇹 Frosinone – Lecce",
     "outcome": "101",
     "price": 1.75,
-    "prob": 0.5627,
-    "score": 1.98,
+    "prob": 0.5631,
+    "score": 2.04,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -6644,6 +6644,26 @@
    },
    {
     "book": "stoiximan",
+    "drop": 5.5,
+    "edge": -4.0,
+    "fair": 1.531,
+    "fid": "id1000004067126840",
+    "group": "1x2",
+    "label": "1 (Hammarby)",
+    "market": "101",
+    "match": "🇸🇪 Hammarby – Sirius",
+    "outcome": "101",
+    "price": 1.47,
+    "prob": 0.6532,
+    "score": -2.33,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-10-29T17:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": -7.3,
     "edge": -3.4,
     "fair": 1.677,
@@ -6660,6 +6680,27 @@
      "line": 9.5,
      "side": "over",
      "stat": "corners"
+    },
+    "start": "2026-10-29T17:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -5.7,
+    "edge": -3.8,
+    "fair": 1.612,
+    "fid": "id1000004067126840",
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇸🇪 Hammarby – Sirius",
+    "outcome": "1010",
+    "price": 1.55,
+    "prob": 0.6203,
+    "score": -3.85,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
     },
     "start": "2026-10-29T17:30:00.000Z"
    }
@@ -7204,6 +7245,59 @@
     "start": "2026-10-30T00:30:00.000Z"
    }
   ],
+  "id1000066873835304": [
+   {
+    "book": "stoiximan",
+    "drop": 24.7,
+    "edge": -0.6,
+    "fair": 1.56,
+    "fid": "id1000066873835304",
+    "fxi": {
+     "categoryName": "International Clubs",
+     "categorySlug": "international-clubs",
+     "participant1Name": "Shanghai Shenhua FC",
+     "participant1ShortName": "Shanghai Shenhua",
+     "participant2Name": "Machida Zelvia",
+     "participant2ShortName": "Machida Z",
+     "startTime": "2026-10-29T12:15:00.000Z",
+     "tournamentName": "AFC Champions League Two"
+    },
+    "group": "1x2",
+    "label": "2 (Machida Z)",
+    "market": "101",
+    "match": "🇪🇺 Shanghai Shenhua – Machida Z",
+    "outcome": "103",
+    "price": 1.55,
+    "prob": 0.641,
+    "score": 5.36,
+    "spec": {
+     "side": "2",
+     "stat": "1x2"
+    },
+    "start": "2026-10-29T12:15:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 14.2,
+    "edge": -3.3,
+    "fair": 1.779,
+    "fid": "id1000066873835304",
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇪🇺 Shanghai Shenhua – Machida Z",
+    "outcome": "1010",
+    "price": 1.72,
+    "prob": 0.5621,
+    "score": 0.94,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-10-29T12:15:00.000Z"
+   }
+  ],
   "id1000066873835332": [
    {
     "book": "stoiximan",
@@ -7461,9 +7555,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -8.2,
-    "edge": -2.7,
-    "fair": 1.387,
+    "drop": -6.5,
+    "edge": -1.0,
+    "fair": 1.364,
     "fid": "id1000095573215830",
     "group": "1x2",
     "label": "2 (Al Qadsiah)",
@@ -7471,34 +7565,96 @@
     "match": "🇸🇦 Al-Riyadh – Al Qadsiah",
     "outcome": "103",
     "price": 1.35,
-    "prob": 0.721,
-    "score": -2.67,
+    "prob": 0.7331,
+    "score": -1.03,
     "spec": {
      "side": "2",
      "stat": "1x2"
+    },
+    "start": "2026-10-29T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -3.5,
+    "edge": -3.2,
+    "fair": 2.19,
+    "fid": "id1000095573215830",
+    "group": "goals",
+    "label": "Ημίχρονο Over 1.5 γκολ",
+    "market": "10258",
+    "match": "🇸🇦 Al-Riyadh – Al Qadsiah",
+    "outcome": "10258",
+    "price": 2.12,
+    "prob": 0.4566,
+    "score": -3.2,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-10-29T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -3.9,
+    "edge": -3.6,
+    "fair": 2.127,
+    "fid": "id1000095573215830",
+    "group": "goals",
+    "label": "Over 3.5 γκολ",
+    "market": "1012",
+    "match": "🇸🇦 Al-Riyadh – Al Qadsiah",
+    "outcome": "1012",
+    "price": 2.05,
+    "prob": 0.4701,
+    "score": -3.62,
+    "spec": {
+     "line": 3.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-10-29T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -2.0,
+    "edge": -3.7,
+    "fair": 2.201,
+    "fid": "id1000095573215830",
+    "group": "btts",
+    "label": "Goal/Goal: Όχι",
+    "market": "104",
+    "match": "🇸🇦 Al-Riyadh – Al Qadsiah",
+    "outcome": "105",
+    "price": 2.12,
+    "prob": 0.4543,
+    "score": -3.68,
+    "spec": {
+     "side": "no",
+     "stat": "btts"
     },
     "start": "2026-10-29T18:00:00.000Z"
    }
   ]
  },
  "checked": {
-  "id1000002371945346": "2026-10-29T10:30:43Z",
-  "id1000002371945348": "2026-10-29T10:30:43Z",
-  "id1000004067126840": "2026-10-29T10:30:43Z",
-  "id1000004067126844": "2026-10-29T10:30:43Z",
-  "id1000004067126850": "2026-10-29T10:30:43Z",
-  "id1000032566887120": "2026-10-29T10:30:43Z",
-  "id1000032566887128": "2026-10-29T10:30:43Z",
-  "id1000032566887130": "2026-10-29T10:30:43Z",
+  "id1000002371945346": "2026-10-29T10:35:26Z",
+  "id1000002371945348": "2026-10-29T10:35:26Z",
+  "id1000004067126840": "2026-10-29T10:35:26Z",
+  "id1000004067126844": "2026-10-29T10:35:26Z",
+  "id1000004067126850": "2026-10-29T10:35:26Z",
+  "id1000032566887120": "2026-10-29T10:35:26Z",
+  "id1000032566887128": "2026-10-29T10:35:26Z",
+  "id1000032566887130": "2026-10-29T10:35:26Z",
   "id1000066873835302": "2026-10-29T09:55:28Z",
-  "id1000066873835304": "2026-10-29T10:30:43Z",
+  "id1000066873835304": "2026-10-29T10:35:26Z",
   "id1000066873835330": "2026-10-29T09:55:28Z",
-  "id1000066873835332": "2026-10-29T10:30:43Z",
+  "id1000066873835332": "2026-10-29T10:35:26Z",
   "id1000066873835444": "2026-10-29T07:40:33Z",
-  "id1000066873835446": "2026-10-29T10:30:43Z",
-  "id1000095573215826": "2026-10-29T10:30:43Z",
-  "id1000095573215828": "2026-10-29T10:30:43Z",
-  "id1000095573215830": "2026-10-29T10:30:43Z"
+  "id1000066873835446": "2026-10-29T10:35:26Z",
+  "id1000095573215826": "2026-10-29T10:35:26Z",
+  "id1000095573215828": "2026-10-29T10:35:26Z",
+  "id1000095573215830": "2026-10-29T10:35:26Z"
  },
  "diag": {
   "2026-10-27": {
@@ -9516,6 +9672,7 @@
     "id1000032566887126|1010|1010|goals",
     "id1000032566887126|10258|10258|goals",
     "id1000066873835304|1010|1010|goals",
+    "id1000066873835304|101|103|1x2",
     "id1000066873835330|1010|1010|goals"
    ],
    "drop_edge_e0": [
