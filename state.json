@@ -6423,9 +6423,9 @@
   "id1000002371945348": [
    {
     "book": "stoiximan",
-    "drop": -1.3,
-    "edge": 2.7,
-    "fair": 1.674,
+    "drop": 22.2,
+    "edge": -2.9,
+    "fair": 2.162,
     "fid": "id1000002371945348",
     "fxi": {
      "categoryName": "Italy",
@@ -6437,6 +6437,27 @@
      "startTime": "2026-10-29T17:30:00.000Z",
      "tournamentName": "Serie A"
     },
+    "group": "goals",
+    "label": "Ημίχρονο Over 1.5 γκολ",
+    "market": "10258",
+    "match": "🇮🇹 Frosinone – Lecce",
+    "outcome": "10258",
+    "price": 2.1,
+    "prob": 0.4625,
+    "score": 3.13,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-10-29T17:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -1.3,
+    "edge": 2.7,
+    "fair": 1.674,
+    "fid": "id1000002371945348",
     "group": "cards",
     "label": "Κάρτες Over 3.5",
     "market": "10926",
@@ -6446,27 +6467,6 @@
     "prob": 0.5974,
     "score": 2.75,
     "spec": null,
-    "start": "2026-10-29T17:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 22.6,
-    "edge": -3.7,
-    "fair": 2.149,
-    "fid": "id1000002371945348",
-    "group": "goals",
-    "label": "Ημίχρονο Over 1.5 γκολ",
-    "market": "10258",
-    "match": "🇮🇹 Frosinone – Lecce",
-    "outcome": "10258",
-    "price": 2.07,
-    "prob": 0.4653,
-    "score": 2.32,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "ht"
-    },
     "start": "2026-10-29T17:30:00.000Z"
    },
    {
@@ -6531,8 +6531,8 @@
    {
     "book": "stoiximan",
     "drop": 11.7,
-    "edge": -3.7,
-    "fair": 1.787,
+    "edge": -3.8,
+    "fair": 1.788,
     "fid": "id1000002371945348",
     "group": "1x2",
     "label": "1 (Frosinone)",
@@ -6540,8 +6540,8 @@
     "match": "🇮🇹 Frosinone – Lecce",
     "outcome": "101",
     "price": 1.72,
-    "prob": 0.5596,
-    "score": -0.25,
+    "prob": 0.5593,
+    "score": -0.3,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -6787,6 +6787,136 @@
     "start": "2026-10-29T23:00:00.000Z"
    }
   ],
+  "id1000032566887128": [
+   {
+    "book": "stoiximan",
+    "drop": 4.0,
+    "edge": 3.1,
+    "fair": 2.542,
+    "fid": "id1000032566887128",
+    "fxi": {
+     "categoryName": "Brazil",
+     "categorySlug": "brazil",
+     "participant1Name": "Atletico Mineiro MG",
+     "participant1ShortName": "Atletico Mineiro",
+     "participant2Name": "Cruzeiro EC MG",
+     "participant2ShortName": "Cruzeiro",
+     "startTime": "2026-10-29T22:30:00.000Z",
+     "tournamentName": "Brasileiro Serie A"
+    },
+    "group": "corners",
+    "label": "Κόρνερ Over 11.5",
+    "market": "10811",
+    "match": "🇧🇷 Atletico Mineiro – Cruzeiro",
+    "outcome": "10811",
+    "price": 2.62,
+    "prob": 0.3934,
+    "score": 4.28,
+    "spec": {
+     "line": 11.5,
+     "side": "over",
+     "stat": "corners"
+    },
+    "start": "2026-10-29T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 4.0,
+    "edge": 0.0,
+    "fair": 2.0,
+    "fid": "id1000032566887128",
+    "group": "corners",
+    "label": "Κόρνερ Over 10.5",
+    "market": "10807",
+    "match": "🇧🇷 Atletico Mineiro – Cruzeiro",
+    "outcome": "10807",
+    "price": 2.0,
+    "prob": 0.5,
+    "score": 1.21,
+    "spec": {
+     "line": 10.5,
+     "side": "over",
+     "stat": "corners"
+    },
+    "start": "2026-10-29T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -0.1,
+    "edge": 1.0,
+    "fair": 1.456,
+    "fid": "id1000032566887128",
+    "group": "cards",
+    "label": "Κάρτες Over 5.5",
+    "market": "10934",
+    "match": "🇧🇷 Atletico Mineiro – Cruzeiro",
+    "outcome": "10934",
+    "price": 1.47,
+    "prob": 0.6868,
+    "score": 0.96,
+    "spec": null,
+    "start": "2026-10-29T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -10.7,
+    "edge": -0.9,
+    "fair": 1.867,
+    "fid": "id1000032566887128",
+    "group": "cards",
+    "label": "Κάρτες Over 6.5",
+    "market": "10938",
+    "match": "🇧🇷 Atletico Mineiro – Cruzeiro",
+    "outcome": "10938",
+    "price": 1.85,
+    "prob": 0.5356,
+    "score": -0.91,
+    "spec": null,
+    "start": "2026-10-29T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -1.4,
+    "edge": -2.1,
+    "fair": 1.409,
+    "fid": "id1000032566887128",
+    "group": "goals",
+    "label": "Ημίχρονο Over 0.5 γκολ",
+    "market": "10256",
+    "match": "🇧🇷 Atletico Mineiro – Cruzeiro",
+    "outcome": "10256",
+    "price": 1.38,
+    "prob": 0.7097,
+    "score": -2.06,
+    "spec": {
+     "line": 0.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-10-29T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -1.6,
+    "edge": -3.2,
+    "fair": 1.549,
+    "fid": "id1000032566887128",
+    "group": "goals",
+    "label": "Ημίχρονο Under 1.5 γκολ",
+    "market": "10258",
+    "match": "🇧🇷 Atletico Mineiro – Cruzeiro",
+    "outcome": "10259",
+    "price": 1.5,
+    "prob": 0.6456,
+    "score": -3.16,
+    "spec": {
+     "line": 1.5,
+     "side": "under",
+     "stat": "ht"
+    },
+    "start": "2026-10-29T22:30:00.000Z"
+   }
+  ],
   "id1000032566887130": [
    {
     "book": "stoiximan",
@@ -6917,12 +7047,44 @@
     "start": "2026-10-30T00:30:00.000Z"
    }
   ],
+  "id1000066873835302": [
+   {
+    "book": "stoiximan",
+    "drop": 0.4,
+    "edge": -3.5,
+    "fair": 2.486,
+    "fid": "id1000066873835302",
+    "fxi": {
+     "categoryName": "International Clubs",
+     "categorySlug": "international-clubs",
+     "participant1Name": "BG Tampines Rovers",
+     "participant1ShortName": "BG Tampines Rovers",
+     "participant2Name": "PKR Svay Rieng",
+     "participant2ShortName": "Svay Rieng",
+     "startTime": "2026-10-29T10:00:00.000Z",
+     "tournamentName": "AFC Champions League Two"
+    },
+    "group": "1x2",
+    "label": "1 (BG Tampines Rovers)",
+    "market": "101",
+    "match": "🇪🇺 BG Tampines Rovers – Svay Rieng",
+    "outcome": "101",
+    "price": 2.4,
+    "prob": 0.4023,
+    "score": -3.33,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-10-29T10:00:00.000Z"
+   }
+  ],
   "id1000066873835304": [
    {
     "book": "stoiximan",
-    "drop": 17.7,
-    "edge": -2.1,
-    "fair": 1.705,
+    "drop": 11.6,
+    "edge": -2.9,
+    "fair": 1.834,
     "fid": "id1000066873835304",
     "fxi": {
      "categoryName": "International Clubs",
@@ -6934,26 +7096,6 @@
      "startTime": "2026-10-29T12:15:00.000Z",
      "tournamentName": "AFC Champions League Two"
     },
-    "group": "1x2",
-    "label": "2 (Machida Z)",
-    "market": "101",
-    "match": "🇪🇺 Shanghai Shenhua – Machida Z",
-    "outcome": "103",
-    "price": 1.67,
-    "prob": 0.5865,
-    "score": 3.27,
-    "spec": {
-     "side": "2",
-     "stat": "1x2"
-    },
-    "start": "2026-10-29T12:15:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 11.6,
-    "edge": -2.9,
-    "fair": 1.834,
-    "fid": "id1000066873835304",
     "group": "goals",
     "label": "Over 2.5 γκολ",
     "market": "1010",
@@ -6968,60 +7110,6 @@
      "stat": "goals"
     },
     "start": "2026-10-29T12:15:00.000Z"
-   }
-  ],
-  "id1000066873835330": [
-   {
-    "book": "stoiximan",
-    "drop": 11.8,
-    "edge": -1.1,
-    "fair": 1.617,
-    "fid": "id1000066873835330",
-    "fxi": {
-     "categoryName": "International Clubs",
-     "categorySlug": "international-clubs",
-     "participant1Name": "Gangwon FC",
-     "participant1ShortName": "Gangwon",
-     "participant2Name": "Kuching City FC",
-     "participant2ShortName": "Kuching City",
-     "startTime": "2026-10-29T10:00:00.000Z",
-     "tournamentName": "AFC Champions League Two"
-    },
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
-    "match": "🇪🇺 Gangwon – Kuching City",
-    "outcome": "1010",
-    "price": 1.6,
-    "prob": 0.6184,
-    "score": 2.48,
-    "spec": {
-     "line": 2.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-10-29T10:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 15.4,
-    "edge": -3.7,
-    "fair": 2.461,
-    "fid": "id1000066873835330",
-    "group": "goals",
-    "label": "Over 3.5 γκολ",
-    "market": "1012",
-    "match": "🇪🇺 Gangwon – Kuching City",
-    "outcome": "1012",
-    "price": 2.37,
-    "prob": 0.4063,
-    "score": 0.93,
-    "spec": {
-     "line": 3.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-10-29T10:00:00.000Z"
    }
   ],
   "id1000066873835332": [
@@ -7080,9 +7168,9 @@
   "id1000095573215826": [
    {
     "book": "stoiximan",
-    "drop": -1.7,
-    "edge": -1.2,
-    "fair": 1.437,
+    "drop": -1.1,
+    "edge": -0.5,
+    "fair": 1.427,
     "fid": "id1000095573215826",
     "fxi": {
      "categoryName": "Saudi Arabia",
@@ -7100,33 +7188,12 @@
     "match": "🇸🇦 Al-Khaleej – Al-Hazm",
     "outcome": "10256",
     "price": 1.42,
-    "prob": 0.6959,
-    "score": -1.18,
+    "prob": 0.7008,
+    "score": -0.49,
     "spec": {
      "line": 0.5,
      "side": "over",
      "stat": "ht"
-    },
-    "start": "2026-10-29T14:35:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -1.5,
-    "edge": -2.7,
-    "fair": 1.428,
-    "fid": "id1000095573215826",
-    "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
-    "match": "🇸🇦 Al-Khaleej – Al-Hazm",
-    "outcome": "1013",
-    "price": 1.39,
-    "prob": 0.7003,
-    "score": -2.66,
-    "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "goals"
     },
     "start": "2026-10-29T14:35:00.000Z"
    },
@@ -7150,14 +7217,35 @@
      "stat": "corners"
     },
     "start": "2026-10-29T14:35:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -2.7,
+    "edge": -3.7,
+    "fair": 1.443,
+    "fid": "id1000095573215826",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🇸🇦 Al-Khaleej – Al-Hazm",
+    "outcome": "1013",
+    "price": 1.39,
+    "prob": 0.693,
+    "score": -3.67,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-10-29T14:35:00.000Z"
    }
   ],
   "id1000095573215828": [
    {
     "book": "stoiximan",
-    "drop": 7.1,
-    "edge": -3.4,
-    "fair": 1.842,
+    "drop": 7.6,
+    "edge": -2.9,
+    "fair": 1.833,
     "fid": "id1000095573215828",
     "fxi": {
      "categoryName": "Saudi Arabia",
@@ -7175,8 +7263,8 @@
     "match": "🇸🇦 Al Nassr – Al-Kholood",
     "outcome": "1013",
     "price": 1.78,
-    "prob": 0.5429,
-    "score": -1.25,
+    "prob": 0.5456,
+    "score": -0.6,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -7186,22 +7274,22 @@
    },
    {
     "book": "stoiximan",
-    "drop": -6.6,
-    "edge": -2.9,
-    "fair": 1.483,
+    "drop": 4.6,
+    "edge": -3.6,
+    "fair": 1.815,
     "fid": "id1000095573215828",
     "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
+    "label": "Ημίχρονο Under 1.5 γκολ",
+    "market": "10258",
     "match": "🇸🇦 Al Nassr – Al-Kholood",
-    "outcome": "1010",
-    "price": 1.44,
-    "prob": 0.6743,
-    "score": -2.9,
+    "outcome": "10259",
+    "price": 1.75,
+    "prob": 0.551,
+    "score": -2.19,
     "spec": {
-     "line": 2.5,
-     "side": "over",
-     "stat": "goals"
+     "line": 1.5,
+     "side": "under",
+     "stat": "ht"
     },
     "start": "2026-10-29T18:00:00.000Z"
    },
@@ -7226,26 +7314,121 @@
     },
     "start": "2026-10-29T18:00:00.000Z"
    }
+  ],
+  "id1000095573215830": [
+   {
+    "book": "stoiximan",
+    "drop": -9.6,
+    "edge": 14.0,
+    "fair": 2.543,
+    "fid": "id1000095573215830",
+    "fxi": {
+     "categoryName": "Saudi Arabia",
+     "categorySlug": "saudi-arabia",
+     "participant1Name": "Al-Riyadh SC",
+     "participant1ShortName": "Al-Riyadh",
+     "participant2Name": "Al Qadsiah",
+     "participant2ShortName": "Al Qadsiah",
+     "startTime": "2026-10-29T18:00:00.000Z",
+     "tournamentName": "Saudi Pro League"
+    },
+    "group": "corners",
+    "label": "Κόρνερ Under 9.5",
+    "market": "10803",
+    "match": "🇸🇦 Al-Riyadh – Al Qadsiah",
+    "outcome": "10804",
+    "price": 2.9,
+    "prob": 0.3932,
+    "score": 14.04,
+    "spec": {
+     "line": 9.5,
+     "side": "under",
+     "stat": "corners"
+    },
+    "start": "2026-10-29T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -12.1,
+    "edge": 5.8,
+    "fair": 2.079,
+    "fid": "id1000095573215830",
+    "group": "corners",
+    "label": "Κόρνερ Under 10.5",
+    "market": "10807",
+    "match": "🇸🇦 Al-Riyadh – Al Qadsiah",
+    "outcome": "10808",
+    "price": 2.2,
+    "prob": 0.481,
+    "score": 5.82,
+    "spec": {
+     "line": 10.5,
+     "side": "under",
+     "stat": "corners"
+    },
+    "start": "2026-10-29T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -7.9,
+    "edge": -2.4,
+    "fair": 1.383,
+    "fid": "id1000095573215830",
+    "group": "1x2",
+    "label": "2 (Al Qadsiah)",
+    "market": "101",
+    "match": "🇸🇦 Al-Riyadh – Al Qadsiah",
+    "outcome": "103",
+    "price": 1.35,
+    "prob": 0.7231,
+    "score": -2.39,
+    "spec": {
+     "side": "2",
+     "stat": "1x2"
+    },
+    "start": "2026-10-29T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -4.0,
+    "edge": -3.9,
+    "fair": 2.206,
+    "fid": "id1000095573215830",
+    "group": "goals",
+    "label": "Ημίχρονο Over 1.5 γκολ",
+    "market": "10258",
+    "match": "🇸🇦 Al-Riyadh – Al Qadsiah",
+    "outcome": "10258",
+    "price": 2.12,
+    "prob": 0.4533,
+    "score": -3.9,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-10-29T18:00:00.000Z"
+   }
   ]
  },
  "checked": {
-  "id1000002371945346": "2026-10-29T09:10:34Z",
-  "id1000002371945348": "2026-10-29T09:10:34Z",
-  "id1000004067126840": "2026-10-29T09:10:34Z",
-  "id1000004067126844": "2026-10-29T09:10:34Z",
-  "id1000004067126850": "2026-10-29T09:10:34Z",
-  "id1000032566887120": "2026-10-29T09:10:34Z",
-  "id1000032566887128": "2026-10-29T09:10:34Z",
-  "id1000032566887130": "2026-10-29T09:10:34Z",
-  "id1000066873835302": "2026-10-29T09:10:34Z",
-  "id1000066873835304": "2026-10-29T09:10:34Z",
-  "id1000066873835330": "2026-10-29T09:10:34Z",
-  "id1000066873835332": "2026-10-29T09:10:34Z",
+  "id1000002371945346": "2026-10-29T09:15:32Z",
+  "id1000002371945348": "2026-10-29T09:15:32Z",
+  "id1000004067126840": "2026-10-29T09:15:32Z",
+  "id1000004067126844": "2026-10-29T09:15:32Z",
+  "id1000004067126850": "2026-10-29T09:15:32Z",
+  "id1000032566887120": "2026-10-29T09:15:32Z",
+  "id1000032566887128": "2026-10-29T09:15:32Z",
+  "id1000032566887130": "2026-10-29T09:15:32Z",
+  "id1000066873835302": "2026-10-29T09:15:32Z",
+  "id1000066873835304": "2026-10-29T09:15:32Z",
+  "id1000066873835330": "2026-10-29T09:15:32Z",
+  "id1000066873835332": "2026-10-29T09:15:32Z",
   "id1000066873835444": "2026-10-29T07:40:33Z",
-  "id1000066873835446": "2026-10-29T09:10:34Z",
-  "id1000095573215826": "2026-10-29T09:10:34Z",
-  "id1000095573215828": "2026-10-29T09:10:34Z",
-  "id1000095573215830": "2026-10-29T09:10:34Z"
+  "id1000066873835446": "2026-10-29T09:15:32Z",
+  "id1000095573215826": "2026-10-29T09:15:32Z",
+  "id1000095573215828": "2026-10-29T09:15:32Z",
+  "id1000095573215830": "2026-10-29T09:15:32Z"
  },
  "diag": {
   "2026-10-27": {
