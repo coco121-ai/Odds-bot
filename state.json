@@ -6552,29 +6552,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 11.9,
-    "edge": -1.1,
-    "fair": 1.77,
-    "fid": "id1000002371945348",
-    "group": "1x2",
-    "label": "1 (Frosinone)",
-    "market": "101",
-    "match": "🇮🇹 Frosinone – Lecce",
-    "outcome": "101",
-    "price": 1.75,
-    "prob": 0.565,
-    "score": 2.45,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
-    },
-    "start": "2026-10-29T17:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 32.4,
-    "edge": -3.7,
-    "fair": 2.057,
+    "drop": 32.8,
+    "edge": -3.5,
+    "fair": 2.052,
     "fid": "id1000002371945348",
     "group": "goals",
     "label": "Over 3.5 γκολ",
@@ -6582,8 +6562,8 @@
     "match": "🇮🇹 Frosinone – Lecce",
     "outcome": "1012",
     "price": 1.98,
-    "prob": 0.4861,
-    "score": 2.26,
+    "prob": 0.4873,
+    "score": 2.49,
     "spec": {
      "line": 3.5,
      "side": "over",
@@ -6593,7 +6573,7 @@
    },
    {
     "book": "stoiximan",
-    "drop": 22.4,
+    "drop": 22.6,
     "edge": -3.8,
     "fair": 1.456,
     "fid": "id1000002371945348",
@@ -6609,6 +6589,26 @@
      "line": 2.5,
      "side": "over",
      "stat": "goals"
+    },
+    "start": "2026-10-29T17:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 12.2,
+    "edge": -2.5,
+    "fair": 1.765,
+    "fid": "id1000002371945348",
+    "group": "1x2",
+    "label": "1 (Frosinone)",
+    "market": "101",
+    "match": "🇮🇹 Frosinone – Lecce",
+    "outcome": "101",
+    "price": 1.72,
+    "prob": 0.5666,
+    "score": 1.11,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
     },
     "start": "2026-10-29T17:30:00.000Z"
    }
@@ -6745,9 +6745,9 @@
   "id1000004067126850": [
    {
     "book": "stoiximan",
-    "drop": -4.0,
-    "edge": 6.9,
-    "fair": 2.246,
+    "drop": -3.5,
+    "edge": 7.3,
+    "fair": 2.236,
     "fid": "id1000004067126850",
     "fxi": {
      "categoryName": "Sweden",
@@ -6765,8 +6765,8 @@
     "match": "🇸🇪 Kalmar – GAIS",
     "outcome": "10807",
     "price": 2.4,
-    "prob": 0.4452,
-    "score": 6.86,
+    "prob": 0.4472,
+    "score": 7.33,
     "spec": {
      "line": 10.5,
      "side": "over",
@@ -6796,9 +6796,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -2.7,
-    "edge": 1.5,
-    "fair": 1.803,
+    "drop": -2.4,
+    "edge": 1.8,
+    "fair": 1.797,
     "fid": "id1000004067126850",
     "group": "corners",
     "label": "Κόρνερ Over 9.5",
@@ -6806,8 +6806,8 @@
     "match": "🇸🇪 Kalmar – GAIS",
     "outcome": "10803",
     "price": 1.83,
-    "prob": 0.5546,
-    "score": 1.5,
+    "prob": 0.5565,
+    "score": 1.84,
     "spec": {
      "line": 9.5,
      "side": "over",
@@ -6990,9 +6990,9 @@
   "id1000032566887128": [
    {
     "book": "stoiximan",
-    "drop": 4.5,
-    "edge": 3.5,
-    "fair": 2.532,
+    "drop": 5.7,
+    "edge": 4.9,
+    "fair": 2.498,
     "fid": "id1000032566887128",
     "fxi": {
      "categoryName": "Brazil",
@@ -7010,8 +7010,8 @@
     "match": "🇧🇷 Atletico Mineiro – Cruzeiro",
     "outcome": "10811",
     "price": 2.62,
-    "prob": 0.3949,
-    "score": 4.81,
+    "prob": 0.4003,
+    "score": 6.58,
     "spec": {
      "line": 11.5,
      "side": "over",
@@ -7021,9 +7021,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 4.8,
-    "edge": 0.9,
-    "fair": 1.983,
+    "drop": 6.0,
+    "edge": 1.9,
+    "fair": 1.963,
     "fid": "id1000032566887128",
     "group": "corners",
     "label": "Κόρνερ Over 10.5",
@@ -7031,8 +7031,8 @@
     "match": "🇧🇷 Atletico Mineiro – Cruzeiro",
     "outcome": "10807",
     "price": 2.0,
-    "prob": 0.5043,
-    "score": 2.31,
+    "prob": 0.5094,
+    "score": 3.67,
     "spec": {
      "line": 10.5,
      "side": "over",
@@ -7250,9 +7250,9 @@
   "id1000066873835304": [
    {
     "book": "stoiximan",
-    "drop": 17.1,
-    "edge": -1.2,
-    "fair": 1.72,
+    "drop": 17.4,
+    "edge": -0.8,
+    "fair": 1.714,
     "fid": "id1000066873835304",
     "fxi": {
      "categoryName": "International Clubs",
@@ -7270,8 +7270,8 @@
     "match": "🇪🇺 Shanghai Shenhua – Machida Z",
     "outcome": "1010",
     "price": 1.7,
-    "prob": 0.5814,
-    "score": 3.97,
+    "prob": 0.5834,
+    "score": 4.4,
     "spec": {
      "line": 2.5,
      "side": "over",
@@ -7312,44 +7312,11 @@
     "start": "2026-10-29T12:15:00.000Z"
    }
   ],
-  "id1000066873835446": [
-   {
-    "book": "stoiximan",
-    "drop": 4.3,
-    "edge": -3.2,
-    "fair": 1.498,
-    "fid": "id1000066873835446",
-    "fxi": {
-     "categoryName": "International Clubs",
-     "categorySlug": "international-clubs",
-     "participant1Name": "Tai Po FC",
-     "participant1ShortName": "Tai Po FC",
-     "participant2Name": "BG Pathum United",
-     "participant2ShortName": "Pathum United",
-     "startTime": "2026-10-29T12:15:00.000Z",
-     "tournamentName": "AFC Champions League Two"
-    },
-    "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
-    "match": "🇪🇺 Tai Po FC – Pathum United",
-    "outcome": "1013",
-    "price": 1.45,
-    "prob": 0.6676,
-    "score": -1.91,
-    "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-10-29T12:15:00.000Z"
-   }
-  ],
   "id1000095573215826": [
    {
     "book": "stoiximan",
     "drop": -4.9,
-    "edge": 1.6,
+    "edge": 0.2,
     "fair": 2.116,
     "fid": "id1000095573215826",
     "fxi": {
@@ -7367,9 +7334,9 @@
     "market": "101",
     "match": "🇸🇦 Al-Khaleej – Al-Hazm",
     "outcome": "101",
-    "price": 2.15,
+    "price": 2.12,
     "prob": 0.4726,
-    "score": 1.61,
+    "score": 0.19,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -7633,23 +7600,23 @@
   ]
  },
  "checked": {
-  "id1000002371945346": "2026-10-29T11:35:26Z",
-  "id1000002371945348": "2026-10-29T11:35:26Z",
-  "id1000004067126840": "2026-10-29T11:35:26Z",
-  "id1000004067126844": "2026-10-29T11:35:26Z",
-  "id1000004067126850": "2026-10-29T11:35:26Z",
-  "id1000032566887120": "2026-10-29T11:35:26Z",
-  "id1000032566887128": "2026-10-29T11:35:26Z",
-  "id1000032566887130": "2026-10-29T11:35:26Z",
+  "id1000002371945346": "2026-10-29T11:40:34Z",
+  "id1000002371945348": "2026-10-29T11:40:34Z",
+  "id1000004067126840": "2026-10-29T11:40:34Z",
+  "id1000004067126844": "2026-10-29T11:40:34Z",
+  "id1000004067126850": "2026-10-29T11:40:34Z",
+  "id1000032566887120": "2026-10-29T11:40:34Z",
+  "id1000032566887128": "2026-10-29T11:40:34Z",
+  "id1000032566887130": "2026-10-29T11:40:34Z",
   "id1000066873835302": "2026-10-29T09:55:28Z",
-  "id1000066873835304": "2026-10-29T11:35:26Z",
+  "id1000066873835304": "2026-10-29T11:40:34Z",
   "id1000066873835330": "2026-10-29T09:55:28Z",
-  "id1000066873835332": "2026-10-29T11:35:26Z",
+  "id1000066873835332": "2026-10-29T11:40:34Z",
   "id1000066873835444": "2026-10-29T07:40:33Z",
-  "id1000066873835446": "2026-10-29T11:35:26Z",
-  "id1000095573215826": "2026-10-29T11:35:26Z",
-  "id1000095573215828": "2026-10-29T11:35:26Z",
-  "id1000095573215830": "2026-10-29T11:35:26Z"
+  "id1000066873835446": "2026-10-29T11:40:34Z",
+  "id1000095573215826": "2026-10-29T11:40:34Z",
+  "id1000095573215828": "2026-10-29T11:40:34Z",
+  "id1000095573215830": "2026-10-29T11:40:34Z"
  },
  "diag": {
   "2026-10-27": {
