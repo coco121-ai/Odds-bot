@@ -6527,48 +6527,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 22.9,
-    "edge": -3.8,
-    "fair": 2.131,
-    "fid": "id1000002371945348",
-    "group": "goals",
-    "label": "Ημίχρονο Over 1.5 γκολ",
-    "market": "10258",
-    "match": "🇮🇹 Frosinone – Lecce",
-    "outcome": "10258",
-    "price": 2.05,
-    "prob": 0.4693,
-    "score": 2.2,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "ht"
-    },
-    "start": "2026-10-29T17:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 22.6,
-    "edge": -3.8,
-    "fair": 1.456,
-    "fid": "id1000002371945348",
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
-    "match": "🇮🇹 Frosinone – Lecce",
-    "outcome": "1010",
-    "price": 1.4,
-    "prob": 0.6868,
-    "score": 2.15,
-    "spec": {
-     "line": 2.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-10-29T17:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": -0.8,
     "edge": 1.4,
     "fair": 2.732,
@@ -6607,6 +6565,23 @@
      "side": "over",
      "stat": "corners"
     },
+    "start": "2026-10-29T17:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -1.3,
+    "edge": 0.4,
+    "fair": 2.41,
+    "fid": "id1000002371945348",
+    "group": "cards",
+    "label": "Κάρτες Over 4.5",
+    "market": "10930",
+    "match": "🇮🇹 Frosinone – Lecce",
+    "outcome": "10930",
+    "price": 2.42,
+    "prob": 0.4149,
+    "score": 0.41,
+    "spec": null,
     "start": "2026-10-29T17:30:00.000Z"
    }
   ],
@@ -6967,9 +6942,9 @@
   "id1000032566887128": [
    {
     "book": "stoiximan",
-    "drop": 1.6,
-    "edge": 0.5,
-    "fair": 2.607,
+    "drop": -0.1,
+    "edge": 1.0,
+    "fair": 1.456,
     "fid": "id1000032566887128",
     "fxi": {
      "categoryName": "Brazil",
@@ -6981,27 +6956,6 @@
      "startTime": "2026-10-29T22:30:00.000Z",
      "tournamentName": "Brasileiro Serie A"
     },
-    "group": "corners",
-    "label": "Κόρνερ Over 11.5",
-    "market": "10811",
-    "match": "🇧🇷 Atletico Mineiro – Cruzeiro",
-    "outcome": "10811",
-    "price": 2.62,
-    "prob": 0.3836,
-    "score": 0.98,
-    "spec": {
-     "line": 11.5,
-     "side": "over",
-     "stat": "corners"
-    },
-    "start": "2026-10-29T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -0.1,
-    "edge": 1.0,
-    "fair": 1.456,
-    "fid": "id1000032566887128",
     "group": "cards",
     "label": "Κάρτες Over 5.5",
     "market": "10934",
@@ -7015,22 +6969,22 @@
    },
    {
     "book": "stoiximan",
-    "drop": -2.2,
-    "edge": -0.8,
-    "fair": 1.412,
+    "drop": 1.2,
+    "edge": 0.0,
+    "fair": 2.619,
     "fid": "id1000032566887128",
-    "group": "goals",
-    "label": "Ημίχρονο Over 0.5 γκολ",
-    "market": "10256",
+    "group": "corners",
+    "label": "Κόρνερ Over 11.5",
+    "market": "10811",
     "match": "🇧🇷 Atletico Mineiro – Cruzeiro",
-    "outcome": "10256",
-    "price": 1.4,
-    "prob": 0.7082,
-    "score": -0.85,
+    "outcome": "10811",
+    "price": 2.62,
+    "prob": 0.3818,
+    "score": 0.4,
     "spec": {
-     "line": 0.5,
+     "line": 11.5,
      "side": "over",
-     "stat": "ht"
+     "stat": "corners"
     },
     "start": "2026-10-29T22:30:00.000Z"
    },
@@ -7049,6 +7003,27 @@
     "prob": 0.5356,
     "score": -0.91,
     "spec": null,
+    "start": "2026-10-29T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -1.4,
+    "edge": -0.9,
+    "fair": 1.403,
+    "fid": "id1000032566887128",
+    "group": "goals",
+    "label": "Ημίχρονο Over 0.5 γκολ",
+    "market": "10256",
+    "match": "🇧🇷 Atletico Mineiro – Cruzeiro",
+    "outcome": "10256",
+    "price": 1.39,
+    "prob": 0.7128,
+    "score": -0.93,
+    "spec": {
+     "line": 0.5,
+     "side": "over",
+     "stat": "ht"
+    },
     "start": "2026-10-29T22:30:00.000Z"
    },
    {
@@ -7074,21 +7049,21 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.9,
-    "edge": -2.7,
-    "fair": 1.459,
+    "drop": -0.4,
+    "edge": -3.3,
+    "fair": 1.861,
     "fid": "id1000032566887128",
     "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
     "match": "🇧🇷 Atletico Mineiro – Cruzeiro",
-    "outcome": "1013",
-    "price": 1.42,
-    "prob": 0.6854,
-    "score": -2.67,
+    "outcome": "1010",
+    "price": 1.8,
+    "prob": 0.5373,
+    "score": -3.28,
     "spec": {
-     "line": 3.5,
-     "side": "under",
+     "line": 2.5,
+     "side": "over",
      "stat": "goals"
     },
     "start": "2026-10-29T22:30:00.000Z"
@@ -7227,9 +7202,9 @@
   "id1000066873835332": [
    {
     "book": "stoiximan",
-    "drop": 18.6,
-    "edge": -3.4,
-    "fair": 1.936,
+    "drop": 19.1,
+    "edge": -2.8,
+    "fair": 1.924,
     "fid": "id1000066873835332",
     "fxi": {
      "categoryName": "International Clubs",
@@ -7247,11 +7222,65 @@
     "match": "🇪🇺 Phnom Penh – Kitchee",
     "outcome": "101",
     "price": 1.87,
-    "prob": 0.5165,
-    "score": 2.16,
+    "prob": 0.5198,
+    "score": 2.91,
     "spec": {
      "side": "1",
      "stat": "1x2"
+    },
+    "start": "2026-10-29T12:15:00.000Z"
+   }
+  ],
+  "id1000066873835446": [
+   {
+    "book": "stoiximan",
+    "drop": 5.2,
+    "edge": -1.0,
+    "fair": 1.485,
+    "fid": "id1000066873835446",
+    "fxi": {
+     "categoryName": "International Clubs",
+     "categorySlug": "international-clubs",
+     "participant1Name": "Tai Po FC",
+     "participant1ShortName": "Tai Po FC",
+     "participant2Name": "BG Pathum United",
+     "participant2ShortName": "Pathum United",
+     "startTime": "2026-10-29T12:15:00.000Z",
+     "tournamentName": "AFC Champions League Two"
+    },
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🇪🇺 Tai Po FC – Pathum United",
+    "outcome": "1013",
+    "price": 1.47,
+    "prob": 0.6734,
+    "score": 0.54,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-10-29T12:15:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 6.0,
+    "edge": -1.6,
+    "fair": 2.186,
+    "fid": "id1000066873835446",
+    "group": "goals",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
+    "match": "🇪🇺 Tai Po FC – Pathum United",
+    "outcome": "1011",
+    "price": 2.15,
+    "prob": 0.4575,
+    "score": 0.14,
+    "spec": {
+     "line": 2.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-10-29T12:15:00.000Z"
    }
@@ -7544,23 +7573,23 @@
   ]
  },
  "checked": {
-  "id1000002371945346": "2026-10-29T10:55:26Z",
-  "id1000002371945348": "2026-10-29T10:55:26Z",
-  "id1000004067126840": "2026-10-29T10:55:26Z",
-  "id1000004067126844": "2026-10-29T10:55:26Z",
-  "id1000004067126850": "2026-10-29T10:55:26Z",
-  "id1000032566887120": "2026-10-29T10:55:26Z",
-  "id1000032566887128": "2026-10-29T10:55:26Z",
-  "id1000032566887130": "2026-10-29T10:55:26Z",
+  "id1000002371945346": "2026-10-29T11:00:54Z",
+  "id1000002371945348": "2026-10-29T11:00:54Z",
+  "id1000004067126840": "2026-10-29T11:00:54Z",
+  "id1000004067126844": "2026-10-29T11:00:54Z",
+  "id1000004067126850": "2026-10-29T11:00:54Z",
+  "id1000032566887120": "2026-10-29T11:00:54Z",
+  "id1000032566887128": "2026-10-29T11:00:54Z",
+  "id1000032566887130": "2026-10-29T11:00:54Z",
   "id1000066873835302": "2026-10-29T09:55:28Z",
-  "id1000066873835304": "2026-10-29T10:55:26Z",
+  "id1000066873835304": "2026-10-29T11:00:54Z",
   "id1000066873835330": "2026-10-29T09:55:28Z",
-  "id1000066873835332": "2026-10-29T10:55:26Z",
+  "id1000066873835332": "2026-10-29T11:00:54Z",
   "id1000066873835444": "2026-10-29T07:40:33Z",
-  "id1000066873835446": "2026-10-29T10:55:26Z",
-  "id1000095573215826": "2026-10-29T10:55:26Z",
-  "id1000095573215828": "2026-10-29T10:55:26Z",
-  "id1000095573215830": "2026-10-29T10:55:26Z"
+  "id1000066873835446": "2026-10-29T11:00:54Z",
+  "id1000095573215826": "2026-10-29T11:00:54Z",
+  "id1000095573215828": "2026-10-29T11:00:54Z",
+  "id1000095573215830": "2026-10-29T11:00:54Z"
  },
  "diag": {
   "2026-10-27": {
@@ -9868,6 +9897,8 @@
     "id1000066873835446|101|101|1x2",
     "id1000066873835446|101|102|1x2",
     "id1000066873835446|101|103|1x2",
+    "id1000066873835446|10256|10256|goals",
+    "id1000066873835446|10256|10257|goals",
     "id1000066873835446|10258|10258|goals",
     "id1000066873835446|10258|10259|goals",
     "id1000095573215826|1010|1010|goals",
@@ -9901,6 +9932,8 @@
     "id1000066873835304|101|101|1x2",
     "id1000066873835330|101|102|1x2",
     "id1000066873835444|101|103|1x2",
+    "id1000066873835446|101|101|1x2",
+    "id1000066873835446|101|102|1x2",
     "id1000095573215828|101|103|1x2"
    ],
    "prob_low": [
@@ -9913,6 +9946,8 @@
     "id1000066873835304|101|101|1x2",
     "id1000066873835330|101|102|1x2",
     "id1000066873835444|101|103|1x2",
+    "id1000066873835446|101|101|1x2",
+    "id1000066873835446|101|102|1x2",
     "id1000095573215828|101|103|1x2"
    ],
    "small_market": [
