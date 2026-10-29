@@ -6387,6 +6387,27 @@
    },
    {
     "book": "stoiximan",
+    "drop": 11.4,
+    "edge": -3.9,
+    "fair": 2.497,
+    "fid": "id1000002371945346",
+    "group": "goals",
+    "label": "Over 3.5 γκολ",
+    "market": "1012",
+    "match": "🇮🇹 Fiorentina – Atalanta",
+    "outcome": "1012",
+    "price": 2.4,
+    "prob": 0.4005,
+    "score": -0.48,
+    "spec": {
+     "line": 3.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-10-29T19:45:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 10.5,
     "edge": -3.7,
     "fair": 1.506,
@@ -6423,9 +6444,9 @@
   "id1000002371945348": [
    {
     "book": "stoiximan",
-    "drop": -1.3,
-    "edge": 2.7,
-    "fair": 1.674,
+    "drop": 22.0,
+    "edge": -3.2,
+    "fair": 1.467,
     "fid": "id1000002371945348",
     "fxi": {
      "categoryName": "Italy",
@@ -6437,6 +6458,27 @@
      "startTime": "2026-10-29T17:30:00.000Z",
      "tournamentName": "Serie A"
     },
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇮🇹 Frosinone – Lecce",
+    "outcome": "1010",
+    "price": 1.42,
+    "prob": 0.6817,
+    "score": 2.8,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-10-29T17:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -1.3,
+    "edge": 2.7,
+    "fair": 1.674,
+    "fid": "id1000002371945348",
     "group": "cards",
     "label": "Κάρτες Over 3.5",
     "market": "10926",
@@ -6450,22 +6492,21 @@
    },
    {
     "book": "stoiximan",
-    "drop": 21.5,
-    "edge": -3.8,
-    "fair": 1.476,
+    "drop": 11.4,
+    "edge": -1.9,
+    "fair": 1.783,
     "fid": "id1000002371945348",
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
+    "group": "1x2",
+    "label": "1 (Frosinone)",
+    "market": "101",
     "match": "🇮🇹 Frosinone – Lecce",
-    "outcome": "1010",
-    "price": 1.42,
-    "prob": 0.6775,
-    "score": 2.21,
+    "outcome": "101",
+    "price": 1.75,
+    "prob": 0.5609,
+    "score": 1.58,
     "spec": {
-     "line": 2.5,
-     "side": "over",
-     "stat": "goals"
+     "side": "1",
+     "stat": "1x2"
     },
     "start": "2026-10-29T17:30:00.000Z"
    },
@@ -6487,26 +6528,6 @@
      "line": 11.5,
      "side": "over",
      "stat": "corners"
-    },
-    "start": "2026-10-29T17:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 11.1,
-    "edge": -2.1,
-    "fair": 1.787,
-    "fid": "id1000002371945348",
-    "group": "1x2",
-    "label": "1 (Frosinone)",
-    "market": "101",
-    "match": "🇮🇹 Frosinone – Lecce",
-    "outcome": "101",
-    "price": 1.75,
-    "prob": 0.5596,
-    "score": 1.26,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
     },
     "start": "2026-10-29T17:30:00.000Z"
    },
@@ -7125,9 +7146,9 @@
   "id1000066873835304": [
    {
     "book": "stoiximan",
-    "drop": 11.8,
-    "edge": -2.6,
-    "fair": 1.827,
+    "drop": 20.0,
+    "edge": -3.6,
+    "fair": 1.659,
     "fid": "id1000066873835304",
     "fxi": {
      "categoryName": "International Clubs",
@@ -7139,70 +7160,16 @@
      "startTime": "2026-10-29T12:15:00.000Z",
      "tournamentName": "AFC Champions League Two"
     },
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
-    "match": "🇪🇺 Shanghai Shenhua – Machida Z",
-    "outcome": "1010",
-    "price": 1.78,
-    "prob": 0.5473,
-    "score": 0.97,
-    "spec": {
-     "line": 2.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-10-29T12:15:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 3.7,
-    "edge": -3.9,
-    "fair": 1.415,
-    "fid": "id1000066873835304",
-    "group": "goals",
-    "label": "Ημίχρονο Over 0.5 γκολ",
-    "market": "10256",
-    "match": "🇪🇺 Shanghai Shenhua – Machida Z",
-    "outcome": "10256",
-    "price": 1.36,
-    "prob": 0.7067,
-    "score": -2.78,
-    "spec": {
-     "line": 0.5,
-     "side": "over",
-     "stat": "ht"
-    },
-    "start": "2026-10-29T12:15:00.000Z"
-   }
-  ],
-  "id1000066873835332": [
-   {
-    "book": "stoiximan",
-    "drop": 22.1,
-    "edge": -0.8,
-    "fair": 1.886,
-    "fid": "id1000066873835332",
-    "fxi": {
-     "categoryName": "International Clubs",
-     "categorySlug": "international-clubs",
-     "participant1Name": "Phnom Penh Crown FC",
-     "participant1ShortName": "Phnom Penh",
-     "participant2Name": "Kitchee",
-     "participant2ShortName": "Kitchee",
-     "startTime": "2026-10-29T12:15:00.000Z",
-     "tournamentName": "AFC Champions League Two"
-    },
     "group": "1x2",
-    "label": "1 (Phnom Penh)",
+    "label": "2 (Machida Z)",
     "market": "101",
-    "match": "🇪🇺 Phnom Penh – Kitchee",
-    "outcome": "101",
-    "price": 1.87,
-    "prob": 0.5302,
-    "score": 5.15,
+    "match": "🇪🇺 Shanghai Shenhua – Machida Z",
+    "outcome": "103",
+    "price": 1.6,
+    "prob": 0.6028,
+    "score": 2.44,
     "spec": {
-     "side": "1",
+     "side": "2",
      "stat": "1x2"
     },
     "start": "2026-10-29T12:15:00.000Z"
@@ -7433,23 +7400,23 @@
   ]
  },
  "checked": {
-  "id1000002371945346": "2026-10-29T10:05:35Z",
-  "id1000002371945348": "2026-10-29T10:05:35Z",
-  "id1000004067126840": "2026-10-29T10:05:35Z",
-  "id1000004067126844": "2026-10-29T10:05:35Z",
-  "id1000004067126850": "2026-10-29T10:05:35Z",
-  "id1000032566887120": "2026-10-29T10:05:35Z",
-  "id1000032566887128": "2026-10-29T10:05:35Z",
-  "id1000032566887130": "2026-10-29T10:05:35Z",
+  "id1000002371945346": "2026-10-29T10:10:36Z",
+  "id1000002371945348": "2026-10-29T10:10:36Z",
+  "id1000004067126840": "2026-10-29T10:10:36Z",
+  "id1000004067126844": "2026-10-29T10:10:36Z",
+  "id1000004067126850": "2026-10-29T10:10:36Z",
+  "id1000032566887120": "2026-10-29T10:10:36Z",
+  "id1000032566887128": "2026-10-29T10:10:36Z",
+  "id1000032566887130": "2026-10-29T10:10:36Z",
   "id1000066873835302": "2026-10-29T09:55:28Z",
-  "id1000066873835304": "2026-10-29T10:05:35Z",
+  "id1000066873835304": "2026-10-29T10:10:36Z",
   "id1000066873835330": "2026-10-29T09:55:28Z",
-  "id1000066873835332": "2026-10-29T10:05:35Z",
+  "id1000066873835332": "2026-10-29T10:10:36Z",
   "id1000066873835444": "2026-10-29T07:40:33Z",
-  "id1000066873835446": "2026-10-29T10:05:35Z",
-  "id1000095573215826": "2026-10-29T10:05:35Z",
-  "id1000095573215828": "2026-10-29T10:05:35Z",
-  "id1000095573215830": "2026-10-29T10:05:35Z"
+  "id1000066873835446": "2026-10-29T10:10:36Z",
+  "id1000095573215826": "2026-10-29T10:10:36Z",
+  "id1000095573215828": "2026-10-29T10:10:36Z",
+  "id1000095573215830": "2026-10-29T10:10:36Z"
  },
  "diag": {
   "2026-10-27": {
@@ -9488,6 +9455,7 @@
     "id1000032566887126|10258|10258|goals",
     "id1000066873835302|1010|1010|goals",
     "id1000066873835302|10258|10258|goals",
+    "id1000066873835304|101|103|1x2",
     "id1000066873835330|1010|1010|goals",
     "id1000066873835330|101|101|1x2",
     "id1000066873835330|10258|10258|goals",
@@ -9802,6 +9770,7 @@
     "id1000066873835302|1010|1010|goals",
     "id1000066873835302|101|103|1x2",
     "id1000066873835302|10258|10258|goals",
+    "id1000066873835304|101|103|1x2",
     "id1000066873835330|1010|1010|goals",
     "id1000066873835330|101|101|1x2",
     "id1000066873835330|10258|10258|goals",
