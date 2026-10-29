@@ -6471,9 +6471,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 0.0,
-    "edge": 1.6,
-    "fair": 2.726,
+    "drop": -0.8,
+    "edge": 1.4,
+    "fair": 2.732,
     "fid": "id1000002371945348",
     "group": "corners",
     "label": "Κόρνερ Over 11.5",
@@ -6481,8 +6481,8 @@
     "match": "🇮🇹 Frosinone – Lecce",
     "outcome": "10811",
     "price": 2.77,
-    "prob": 0.3668,
-    "score": 1.61,
+    "prob": 0.366,
+    "score": 1.39,
     "spec": {
      "line": 11.5,
      "side": "over",
@@ -6512,9 +6512,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 4.3,
-    "edge": -0.2,
-    "fair": 2.104,
+    "drop": 3.8,
+    "edge": -0.3,
+    "fair": 2.106,
     "fid": "id1000002371945348",
     "group": "corners",
     "label": "Κόρνερ Over 10.5",
@@ -6522,8 +6522,8 @@
     "match": "🇮🇹 Frosinone – Lecce",
     "outcome": "10807",
     "price": 2.1,
-    "prob": 0.4753,
-    "score": 1.11,
+    "prob": 0.4748,
+    "score": 0.86,
     "spec": {
      "line": 10.5,
      "side": "over",
@@ -6887,7 +6887,7 @@
    {
     "book": "stoiximan",
     "drop": 4.0,
-    "edge": 3.1,
+    "edge": 4.2,
     "fair": 2.542,
     "fid": "id1000032566887128",
     "fxi": {
@@ -6905,9 +6905,9 @@
     "market": "10811",
     "match": "🇧🇷 Atletico Mineiro – Cruzeiro",
     "outcome": "10811",
-    "price": 2.62,
+    "price": 2.65,
     "prob": 0.3934,
-    "score": 4.28,
+    "score": 5.46,
     "spec": {
      "line": 11.5,
      "side": "over",
@@ -6973,7 +6973,7 @@
    {
     "book": "stoiximan",
     "drop": -1.7,
-    "edge": -2.2,
+    "edge": -1.5,
     "fair": 1.411,
     "fid": "id1000032566887128",
     "group": "goals",
@@ -6981,33 +6981,12 @@
     "market": "10256",
     "match": "🇧🇷 Atletico Mineiro – Cruzeiro",
     "outcome": "10256",
-    "price": 1.38,
+    "price": 1.39,
     "prob": 0.7087,
-    "score": -2.2,
+    "score": -1.49,
     "spec": {
      "line": 0.5,
      "side": "over",
-     "stat": "ht"
-    },
-    "start": "2026-10-29T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -1.5,
-    "edge": -3.0,
-    "fair": 1.546,
-    "fid": "id1000032566887128",
-    "group": "goals",
-    "label": "Ημίχρονο Under 1.5 γκολ",
-    "market": "10258",
-    "match": "🇧🇷 Atletico Mineiro – Cruzeiro",
-    "outcome": "10259",
-    "price": 1.5,
-    "prob": 0.6468,
-    "score": -2.98,
-    "spec": {
-     "line": 1.5,
-     "side": "under",
      "stat": "ht"
     },
     "start": "2026-10-29T22:30:00.000Z"
@@ -7143,44 +7122,12 @@
     "start": "2026-10-30T00:30:00.000Z"
    }
   ],
-  "id1000066873835302": [
-   {
-    "book": "stoiximan",
-    "drop": 22.5,
-    "edge": 6.3,
-    "fair": 2.351,
-    "fid": "id1000066873835302",
-    "fxi": {
-     "categoryName": "International Clubs",
-     "categorySlug": "international-clubs",
-     "participant1Name": "BG Tampines Rovers",
-     "participant1ShortName": "BG Tampines Rovers",
-     "participant2Name": "PKR Svay Rieng",
-     "participant2ShortName": "Svay Rieng",
-     "startTime": "2026-10-29T10:00:00.000Z",
-     "tournamentName": "AFC Champions League Two"
-    },
-    "group": "1x2",
-    "label": "2 (Svay Rieng)",
-    "market": "101",
-    "match": "🇪🇺 BG Tampines Rovers – Svay Rieng",
-    "outcome": "103",
-    "price": 2.5,
-    "prob": 0.4254,
-    "score": 12.34,
-    "spec": {
-     "side": "2",
-     "stat": "1x2"
-    },
-    "start": "2026-10-29T10:00:00.000Z"
-   }
-  ],
   "id1000066873835304": [
    {
     "book": "stoiximan",
-    "drop": 11.6,
-    "edge": -2.9,
-    "fair": 1.834,
+    "drop": 11.3,
+    "edge": -3.3,
+    "fair": 1.841,
     "fid": "id1000066873835304",
     "fxi": {
      "categoryName": "International Clubs",
@@ -7198,8 +7145,8 @@
     "match": "🇪🇺 Shanghai Shenhua – Machida Z",
     "outcome": "1010",
     "price": 1.78,
-    "prob": 0.5453,
-    "score": 0.53,
+    "prob": 0.5432,
+    "score": 0.07,
     "spec": {
      "line": 2.5,
      "side": "over",
@@ -7211,9 +7158,9 @@
   "id1000066873835332": [
    {
     "book": "stoiximan",
-    "drop": 20.5,
-    "edge": -2.9,
-    "fair": 1.926,
+    "drop": 21.9,
+    "edge": -1.2,
+    "fair": 1.892,
     "fid": "id1000066873835332",
     "fxi": {
      "categoryName": "International Clubs",
@@ -7231,8 +7178,8 @@
     "match": "🇪🇺 Phnom Penh – Kitchee",
     "outcome": "101",
     "price": 1.87,
-    "prob": 0.5192,
-    "score": 3.09,
+    "prob": 0.5285,
+    "score": 4.84,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -7241,9 +7188,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 3.0,
+    "drop": 2.9,
     "edge": -3.9,
-    "fair": 1.581,
+    "fair": 1.582,
     "fid": "id1000066873835332",
     "group": "goals",
     "label": "Under 3.5 γκολ",
@@ -7251,8 +7198,8 @@
     "match": "🇪🇺 Phnom Penh – Kitchee",
     "outcome": "1013",
     "price": 1.52,
-    "prob": 0.6325,
-    "score": -2.95,
+    "prob": 0.6321,
+    "score": -3.05,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -7528,23 +7475,23 @@
   ]
  },
  "checked": {
-  "id1000002371945346": "2026-10-29T09:30:43Z",
-  "id1000002371945348": "2026-10-29T09:30:43Z",
-  "id1000004067126840": "2026-10-29T09:30:43Z",
-  "id1000004067126844": "2026-10-29T09:30:43Z",
-  "id1000004067126850": "2026-10-29T09:30:43Z",
-  "id1000032566887120": "2026-10-29T09:30:43Z",
-  "id1000032566887128": "2026-10-29T09:30:43Z",
-  "id1000032566887130": "2026-10-29T09:30:43Z",
-  "id1000066873835302": "2026-10-29T09:30:43Z",
-  "id1000066873835304": "2026-10-29T09:30:43Z",
-  "id1000066873835330": "2026-10-29T09:30:43Z",
-  "id1000066873835332": "2026-10-29T09:30:43Z",
+  "id1000002371945346": "2026-10-29T09:35:27Z",
+  "id1000002371945348": "2026-10-29T09:35:27Z",
+  "id1000004067126840": "2026-10-29T09:35:27Z",
+  "id1000004067126844": "2026-10-29T09:35:27Z",
+  "id1000004067126850": "2026-10-29T09:35:27Z",
+  "id1000032566887120": "2026-10-29T09:35:27Z",
+  "id1000032566887128": "2026-10-29T09:35:27Z",
+  "id1000032566887130": "2026-10-29T09:35:27Z",
+  "id1000066873835302": "2026-10-29T09:35:27Z",
+  "id1000066873835304": "2026-10-29T09:35:27Z",
+  "id1000066873835330": "2026-10-29T09:35:27Z",
+  "id1000066873835332": "2026-10-29T09:35:27Z",
   "id1000066873835444": "2026-10-29T07:40:33Z",
-  "id1000066873835446": "2026-10-29T09:30:43Z",
-  "id1000095573215826": "2026-10-29T09:30:43Z",
-  "id1000095573215828": "2026-10-29T09:30:43Z",
-  "id1000095573215830": "2026-10-29T09:30:43Z"
+  "id1000066873835446": "2026-10-29T09:35:27Z",
+  "id1000095573215826": "2026-10-29T09:35:27Z",
+  "id1000095573215828": "2026-10-29T09:35:27Z",
+  "id1000095573215830": "2026-10-29T09:35:27Z"
  },
  "diag": {
   "2026-10-27": {
@@ -9927,6 +9874,7 @@
     "id1000002371945348|101|103|1x2",
     "id1000002371945348|10256|10256|goals",
     "id1000002371945348|10256|10257|goals",
+    "id1000004067126840|101|101|1x2",
     "id1000004067126840|10256|10256|goals",
     "id1000004067126840|10256|10257|goals",
     "id1000004067126844|10256|10256|goals",
