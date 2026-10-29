@@ -6555,9 +6555,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 12.4,
-    "edge": -3.3,
-    "fair": 2.399,
+    "drop": 12.0,
+    "edge": -3.7,
+    "fair": 2.409,
     "fid": "id1000002371945346",
     "group": "1x2",
     "label": "1 (Fiorentina)",
@@ -6565,8 +6565,8 @@
     "match": "🇮🇹 Fiorentina – Atalanta",
     "outcome": "101",
     "price": 2.32,
-    "prob": 0.4168,
-    "score": 0.41,
+    "prob": 0.4151,
+    "score": -0.1,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -6591,6 +6591,27 @@
      "line": 9.5,
      "side": "under",
      "stat": "corners"
+    },
+    "start": "2026-10-29T19:45:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -22.5,
+    "edge": -3.5,
+    "fair": 1.813,
+    "fid": "id1000002371945346",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🇮🇹 Fiorentina – Atalanta",
+    "outcome": "1013",
+    "price": 1.75,
+    "prob": 0.5516,
+    "score": -3.47,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-10-29T19:45:00.000Z"
    }
@@ -6629,9 +6650,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 13.9,
-    "edge": -0.6,
-    "fair": 1.731,
+    "drop": 13.7,
+    "edge": -0.9,
+    "fair": 1.735,
     "fid": "id1000002371945348",
     "group": "1x2",
     "label": "1 (Frosinone)",
@@ -6639,8 +6660,8 @@
     "match": "🇮🇹 Frosinone – Lecce",
     "outcome": "101",
     "price": 1.72,
-    "prob": 0.5777,
-    "score": 3.54,
+    "prob": 0.5764,
+    "score": 3.25,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -6649,9 +6670,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 24.8,
-    "edge": -3.1,
-    "fair": 1.424,
+    "drop": 24.7,
+    "edge": -3.2,
+    "fair": 1.426,
     "fid": "id1000002371945348",
     "group": "goals",
     "label": "Over 2.5 γκολ",
@@ -6659,8 +6680,8 @@
     "match": "🇮🇹 Frosinone – Lecce",
     "outcome": "1010",
     "price": 1.38,
-    "prob": 0.7022,
-    "score": 2.91,
+    "prob": 0.7013,
+    "score": 2.77,
     "spec": {
      "line": 2.5,
      "side": "over",
@@ -6806,6 +6827,27 @@
      "line": 3.5,
      "side": "under",
      "stat": "goals"
+    },
+    "start": "2026-10-29T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -10.5,
+    "edge": -4.0,
+    "fair": 2.343,
+    "fid": "id1000004067126844",
+    "group": "corners",
+    "label": "Κόρνερ Over 10.5",
+    "market": "10807",
+    "match": "🇸🇪 Orgryte – Mjallby",
+    "outcome": "10807",
+    "price": 2.25,
+    "prob": 0.4268,
+    "score": -3.97,
+    "spec": {
+     "line": 10.5,
+     "side": "over",
+     "stat": "corners"
     },
     "start": "2026-10-29T18:00:00.000Z"
    }
@@ -7144,27 +7186,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 5.0,
-    "edge": -3.5,
-    "fair": 1.761,
-    "fid": "id1000032566887128",
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
-    "match": "🇧🇷 Atletico Mineiro – Cruzeiro",
-    "outcome": "1010",
-    "price": 1.7,
-    "prob": 0.5679,
-    "score": -1.97,
-    "spec": {
-     "line": 2.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-10-29T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": -6.3,
     "edge": -2.3,
     "fair": 1.536,
@@ -7181,6 +7202,27 @@
      "line": 3.5,
      "side": "under",
      "stat": "goals"
+    },
+    "start": "2026-10-29T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -5.7,
+    "edge": -3.4,
+    "fair": 1.605,
+    "fid": "id1000032566887128",
+    "group": "goals",
+    "label": "Ημίχρονο Under 1.5 γκολ",
+    "market": "10258",
+    "match": "🇧🇷 Atletico Mineiro – Cruzeiro",
+    "outcome": "10259",
+    "price": 1.55,
+    "prob": 0.6231,
+    "score": -3.43,
+    "spec": {
+     "line": 1.5,
+     "side": "under",
+     "stat": "ht"
     },
     "start": "2026-10-29T22:30:00.000Z"
    }
@@ -7348,26 +7390,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 8.6,
-    "edge": -1.8,
-    "fair": 1.548,
-    "fid": "id1000095573215820",
-    "group": "1x2",
-    "label": "2 (Al-Ittihad)",
-    "market": "101",
-    "match": "🇸🇦 Abha – Al-Ittihad",
-    "outcome": "103",
-    "price": 1.52,
-    "prob": 0.646,
-    "score": 0.78,
-    "spec": {
-     "side": "2",
-     "stat": "1x2"
-    },
-    "start": "2026-10-30T12:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": -7.6,
     "edge": -0.0,
     "fair": 2.021,
@@ -7389,29 +7411,28 @@
    },
    {
     "book": "stoiximan",
-    "drop": 3.8,
-    "edge": -2.2,
-    "fair": 2.403,
+    "drop": 8.6,
+    "edge": -3.1,
+    "fair": 1.548,
     "fid": "id1000095573215820",
-    "group": "goals",
-    "label": "Over 3.5 γκολ",
-    "market": "1012",
+    "group": "1x2",
+    "label": "2 (Al-Ittihad)",
+    "market": "101",
     "match": "🇸🇦 Abha – Al-Ittihad",
-    "outcome": "1012",
-    "price": 2.35,
-    "prob": 0.4161,
-    "score": -1.07,
+    "outcome": "103",
+    "price": 1.5,
+    "prob": 0.646,
+    "score": -0.51,
     "spec": {
-     "line": 3.5,
-     "side": "over",
-     "stat": "goals"
+     "side": "2",
+     "stat": "1x2"
     },
     "start": "2026-10-30T12:30:00.000Z"
    },
    {
     "book": "stoiximan",
     "drop": 3.0,
-    "edge": -2.1,
+    "edge": -3.4,
     "fair": 1.584,
     "fid": "id1000095573215820",
     "group": "goals",
@@ -7419,33 +7440,13 @@
     "market": "1010",
     "match": "🇸🇦 Abha – Al-Ittihad",
     "outcome": "1010",
-    "price": 1.55,
+    "price": 1.53,
     "prob": 0.6313,
-    "score": -1.24,
+    "score": -2.5,
     "spec": {
      "line": 2.5,
      "side": "over",
      "stat": "goals"
-    },
-    "start": "2026-10-30T12:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -3.4,
-    "edge": -2.9,
-    "fair": 1.72,
-    "fid": "id1000095573215820",
-    "group": "btts",
-    "label": "Goal/Goal: Ναι",
-    "market": "104",
-    "match": "🇸🇦 Abha – Al-Ittihad",
-    "outcome": "104",
-    "price": 1.67,
-    "prob": 0.5814,
-    "score": -2.91,
-    "spec": {
-     "side": "yes",
-     "stat": "btts"
     },
     "start": "2026-10-30T12:30:00.000Z"
    }
@@ -7569,9 +7570,9 @@
   "id1000095573215828": [
    {
     "book": "stoiximan",
-    "drop": -1.0,
-    "edge": 0.5,
-    "fair": 2.238,
+    "drop": -1.4,
+    "edge": 0.4,
+    "fair": 2.24,
     "fid": "id1000095573215828",
     "fxi": {
      "categoryName": "Saudi Arabia",
@@ -7589,8 +7590,8 @@
     "match": "🇸🇦 Al Nassr – Al-Kholood",
     "outcome": "10807",
     "price": 2.25,
-    "prob": 0.4468,
-    "score": 0.54,
+    "prob": 0.4464,
+    "score": 0.45,
     "spec": {
      "line": 10.5,
      "side": "over",
@@ -7621,9 +7622,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.8,
-    "edge": -1.7,
-    "fair": 1.781,
+    "drop": -1.4,
+    "edge": -1.8,
+    "fair": 1.782,
     "fid": "id1000095573215828",
     "group": "corners",
     "label": "Κόρνερ Over 9.5",
@@ -7631,8 +7632,8 @@
     "match": "🇸🇦 Al Nassr – Al-Kholood",
     "outcome": "10803",
     "price": 1.75,
-    "prob": 0.5615,
-    "score": -1.74,
+    "prob": 0.5612,
+    "score": -1.8,
     "spec": {
      "line": 9.5,
      "side": "over",
@@ -7665,9 +7666,9 @@
   "id1000095573215830": [
    {
     "book": "stoiximan",
-    "drop": -11.5,
-    "edge": 12.1,
-    "fair": 2.587,
+    "drop": -12.4,
+    "edge": 11.9,
+    "fair": 2.591,
     "fid": "id1000095573215830",
     "fxi": {
      "categoryName": "Saudi Arabia",
@@ -7685,8 +7686,8 @@
     "match": "🇸🇦 Al-Riyadh – Al Qadsiah",
     "outcome": "10804",
     "price": 2.9,
-    "prob": 0.3865,
-    "score": 12.1,
+    "prob": 0.386,
+    "score": 11.93,
     "spec": {
      "line": 9.5,
      "side": "under",
@@ -7696,9 +7697,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -13.8,
+    "drop": -14.3,
     "edge": 4.2,
-    "fair": 2.111,
+    "fair": 2.112,
     "fid": "id1000095573215830",
     "group": "corners",
     "label": "Κόρνερ Under 10.5",
@@ -7706,8 +7707,8 @@
     "match": "🇸🇦 Al-Riyadh – Al Qadsiah",
     "outcome": "10808",
     "price": 2.2,
-    "prob": 0.4737,
-    "score": 4.22,
+    "prob": 0.4735,
+    "score": 4.17,
     "spec": {
      "line": 10.5,
      "side": "under",
@@ -7916,26 +7917,26 @@
   ]
  },
  "checked": {
-  "id1000002371945346": "2026-10-29T16:00:52Z",
-  "id1000002371945348": "2026-10-29T16:00:52Z",
-  "id1000004067126840": "2026-10-29T16:00:52Z",
-  "id1000004067126844": "2026-10-29T16:00:52Z",
-  "id1000004067126850": "2026-10-29T16:00:52Z",
-  "id1000020572300858": "2026-10-29T16:00:52Z",
-  "id1000032566887120": "2026-10-29T16:00:52Z",
-  "id1000032566887128": "2026-10-29T16:00:52Z",
-  "id1000032566887130": "2026-10-29T16:00:52Z",
+  "id1000002371945346": "2026-10-29T16:05:28Z",
+  "id1000002371945348": "2026-10-29T16:05:28Z",
+  "id1000004067126840": "2026-10-29T16:05:28Z",
+  "id1000004067126844": "2026-10-29T16:05:28Z",
+  "id1000004067126850": "2026-10-29T16:05:28Z",
+  "id1000020572300858": "2026-10-29T16:05:28Z",
+  "id1000032566887120": "2026-10-29T16:05:28Z",
+  "id1000032566887128": "2026-10-29T16:05:28Z",
+  "id1000032566887130": "2026-10-29T16:05:28Z",
   "id1000066873835302": "2026-10-29T09:55:28Z",
   "id1000066873835304": "2026-10-29T12:10:32Z",
   "id1000066873835330": "2026-10-29T09:55:28Z",
   "id1000066873835332": "2026-10-29T12:10:32Z",
   "id1000066873835444": "2026-10-29T07:40:33Z",
   "id1000066873835446": "2026-10-29T12:10:32Z",
-  "id1000095573215820": "2026-10-29T16:00:52Z",
+  "id1000095573215820": "2026-10-29T16:05:28Z",
   "id1000095573215826": "2026-10-29T14:30:45Z",
-  "id1000095573215828": "2026-10-29T16:00:52Z",
-  "id1000095573215830": "2026-10-29T16:00:52Z",
-  "id1000095573215836": "2026-10-29T16:00:52Z"
+  "id1000095573215828": "2026-10-29T16:05:28Z",
+  "id1000095573215830": "2026-10-29T16:05:28Z",
+  "id1000095573215836": "2026-10-29T16:05:28Z"
  },
  "diag": {
   "2026-10-27": {
