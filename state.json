@@ -6570,9 +6570,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -24.2,
-    "edge": -3.3,
-    "fair": 1.84,
+    "drop": -23.4,
+    "edge": -2.6,
+    "fair": 1.827,
     "fid": "id1000002371945346",
     "group": "goals",
     "label": "Under 3.5 γκολ",
@@ -6580,10 +6580,31 @@
     "match": "🇮🇹 Fiorentina – Atalanta",
     "outcome": "1013",
     "price": 1.78,
-    "prob": 0.5435,
-    "score": -3.26,
+    "prob": 0.5473,
+    "score": -2.57,
     "spec": {
      "line": 3.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-10-29T19:45:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -32.4,
+    "edge": -3.5,
+    "fair": 2.902,
+    "fid": "id1000002371945346",
+    "group": "goals",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
+    "match": "🇮🇹 Fiorentina – Atalanta",
+    "outcome": "1011",
+    "price": 2.8,
+    "prob": 0.3446,
+    "score": -3.51,
+    "spec": {
+     "line": 2.5,
      "side": "under",
      "stat": "goals"
     },
@@ -6966,9 +6987,9 @@
   "id1000004472513954": [
    {
     "book": "stoiximan",
-    "drop": -2.5,
-    "edge": -1.8,
-    "fair": 1.914,
+    "drop": -3.7,
+    "edge": -1.4,
+    "fair": 1.907,
     "fid": "id1000004472513954",
     "fxi": {
      "categoryName": "Germany",
@@ -6986,8 +7007,8 @@
     "match": "🇩🇪 Bielefeld – Braunschweig",
     "outcome": "101",
     "price": 1.88,
-    "prob": 0.5225,
-    "score": -1.78,
+    "prob": 0.5244,
+    "score": -1.42,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -6996,9 +7017,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 0.7,
-    "edge": -3.2,
-    "fair": 1.58,
+    "drop": 0.4,
+    "edge": -3.0,
+    "fair": 1.577,
     "fid": "id1000004472513954",
     "group": "goals",
     "label": "Under 3.5 γκολ",
@@ -7006,8 +7027,8 @@
     "match": "🇩🇪 Bielefeld – Braunschweig",
     "outcome": "1013",
     "price": 1.53,
-    "prob": 0.6329,
-    "score": -2.95,
+    "prob": 0.6341,
+    "score": -2.86,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -7019,9 +7040,9 @@
   "id1000004472513958": [
    {
     "book": "stoiximan",
-    "drop": 0.4,
-    "edge": -2.6,
-    "fair": 1.458,
+    "drop": 0.0,
+    "edge": -2.5,
+    "fair": 1.457,
     "fid": "id1000004472513958",
     "fxi": {
      "categoryName": "Germany",
@@ -7039,8 +7060,8 @@
     "match": "🇩🇪 Cottbus – Bochum",
     "outcome": "104",
     "price": 1.42,
-    "prob": 0.6859,
-    "score": -2.5,
+    "prob": 0.6863,
+    "score": -2.54,
     "spec": {
      "side": "yes",
      "stat": "btts"
@@ -7262,9 +7283,9 @@
   "id1000013572440734": [
    {
     "book": "stoiximan",
-    "drop": 16.3,
-    "edge": -3.8,
-    "fair": 1.82,
+    "drop": 15.3,
+    "edge": -3.4,
+    "fair": 1.811,
     "fid": "id1000013572440734",
     "fxi": {
      "categoryName": "Austria",
@@ -7282,8 +7303,8 @@
     "match": "🇦🇹 St. Polten – Hertha Wels",
     "outcome": "101",
     "price": 1.75,
-    "prob": 0.5495,
-    "score": 1.03,
+    "prob": 0.5522,
+    "score": 1.22,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -8168,150 +8189,14 @@
      "stat": "goals"
     },
     "start": "2026-10-30T12:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -3.9,
-    "edge": -3.5,
-    "fair": 1.73,
-    "fid": "id1000095573215820",
-    "group": "btts",
-    "label": "Goal/Goal: Ναι",
-    "market": "104",
-    "match": "🇸🇦 Abha – Al-Ittihad",
-    "outcome": "104",
-    "price": 1.67,
-    "prob": 0.578,
-    "score": -3.47,
-    "spec": {
-     "side": "yes",
-     "stat": "btts"
-    },
-    "start": "2026-10-30T12:30:00.000Z"
-   }
-  ],
-  "id1000095573215826": [
-   {
-    "book": "stoiximan",
-    "drop": 2.4,
-    "edge": 3.0,
-    "fair": 2.591,
-    "fid": "id1000095573215826",
-    "fxi": {
-     "categoryName": "Saudi Arabia",
-     "categorySlug": "saudi-arabia",
-     "participant1Name": "Al-Khaleej Club",
-     "participant1ShortName": "Al-Khaleej",
-     "participant2Name": "Al-Hazm",
-     "participant2ShortName": "Al-Hazm",
-     "startTime": "2026-10-29T14:35:00.000Z",
-     "tournamentName": "Saudi Pro League"
-    },
-    "group": "corners",
-    "label": "Κόρνερ Under 8.5",
-    "market": "10799",
-    "match": "🇸🇦 Al-Khaleej – Al-Hazm",
-    "outcome": "10800",
-    "price": 2.67,
-    "prob": 0.386,
-    "score": 3.77,
-    "spec": {
-     "line": 8.5,
-     "side": "under",
-     "stat": "corners"
-    },
-    "start": "2026-10-29T14:35:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -5.2,
-    "edge": 1.5,
-    "fair": 1.991,
-    "fid": "id1000095573215826",
-    "group": "corners",
-    "label": "Κόρνερ Under 9.5",
-    "market": "10803",
-    "match": "🇸🇦 Al-Khaleej – Al-Hazm",
-    "outcome": "10804",
-    "price": 2.02,
-    "prob": 0.5023,
-    "score": 1.46,
-    "spec": {
-     "line": 9.5,
-     "side": "under",
-     "stat": "corners"
-    },
-    "start": "2026-10-29T14:35:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.2,
-    "edge": -2.1,
-    "fair": 1.409,
-    "fid": "id1000095573215826",
-    "group": "goals",
-    "label": "Ημίχρονο Over 0.5 γκολ",
-    "market": "10256",
-    "match": "🇸🇦 Al-Khaleej – Al-Hazm",
-    "outcome": "10256",
-    "price": 1.38,
-    "prob": 0.7097,
-    "score": -2.01,
-    "spec": {
-     "line": 0.5,
-     "side": "over",
-     "stat": "ht"
-    },
-    "start": "2026-10-29T14:35:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -5.0,
-    "edge": -2.4,
-    "fair": 1.476,
-    "fid": "id1000095573215826",
-    "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
-    "match": "🇸🇦 Al-Khaleej – Al-Hazm",
-    "outcome": "1013",
-    "price": 1.44,
-    "prob": 0.6775,
-    "score": -2.44,
-    "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-10-29T14:35:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -5.4,
-    "edge": -3.6,
-    "fair": 2.126,
-    "fid": "id1000095573215826",
-    "group": "1x2",
-    "label": "1 (Al-Khaleej)",
-    "market": "101",
-    "match": "🇸🇦 Al-Khaleej – Al-Hazm",
-    "outcome": "101",
-    "price": 2.05,
-    "prob": 0.4704,
-    "score": -3.57,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
-    },
-    "start": "2026-10-29T14:35:00.000Z"
    }
   ],
   "id1000095573215828": [
    {
     "book": "stoiximan",
-    "drop": -0.5,
-    "edge": 1.4,
-    "fair": 2.218,
+    "drop": 1.4,
+    "edge": 2.2,
+    "fair": 2.172,
     "fid": "id1000095573215828",
     "fxi": {
      "categoryName": "Saudi Arabia",
@@ -8328,9 +8213,9 @@
     "market": "10807",
     "match": "🇸🇦 Al Nassr – Al-Kholood",
     "outcome": "10807",
-    "price": 2.25,
-    "prob": 0.4509,
-    "score": 1.44,
+    "price": 2.22,
+    "prob": 0.4604,
+    "score": 2.64,
     "spec": {
      "line": 10.5,
      "side": "over",
@@ -8340,9 +8225,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.3,
-    "edge": -1.0,
-    "fair": 1.767,
+    "drop": 1.5,
+    "edge": 0.8,
+    "fair": 1.736,
     "fid": "id1000095573215828",
     "group": "corners",
     "label": "Κόρνερ Over 9.5",
@@ -8350,8 +8235,8 @@
     "match": "🇸🇦 Al Nassr – Al-Kholood",
     "outcome": "10803",
     "price": 1.75,
-    "prob": 0.5659,
-    "score": -0.96,
+    "prob": 0.576,
+    "score": 1.26,
     "spec": {
      "line": 9.5,
      "side": "over",
@@ -8361,63 +8246,63 @@
    },
    {
     "book": "stoiximan",
-    "drop": 1.5,
-    "edge": -1.6,
-    "fair": 1.931,
+    "drop": -1.5,
+    "edge": -1.3,
+    "fair": 1.925,
     "fid": "id1000095573215828",
-    "group": "btts",
-    "label": "Goal/Goal: Ναι",
-    "market": "104",
+    "group": "goals",
+    "label": "Ημίχρονο Under 1.5 γκολ",
+    "market": "10258",
     "match": "🇸🇦 Al Nassr – Al-Kholood",
-    "outcome": "104",
+    "outcome": "10259",
     "price": 1.9,
-    "prob": 0.5179,
-    "score": -1.15,
+    "prob": 0.5195,
+    "score": -1.3,
     "spec": {
-     "side": "yes",
-     "stat": "btts"
+     "line": 1.5,
+     "side": "under",
+     "stat": "ht"
     },
     "start": "2026-10-29T18:00:00.000Z"
    },
    {
     "book": "stoiximan",
-    "drop": -1.1,
-    "edge": -1.2,
-    "fair": 1.407,
+    "drop": -1.8,
+    "edge": -2.9,
+    "fair": 2.009,
     "fid": "id1000095573215828",
     "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
-    "match": "🇸🇦 Al Nassr – Al-Kholood",
-    "outcome": "1010",
-    "price": 1.39,
-    "prob": 0.7107,
-    "score": -1.21,
-    "spec": {
-     "line": 2.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-10-29T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -2.1,
-    "edge": -3.5,
-    "fair": 2.0,
-    "fid": "id1000095573215828",
-    "group": "goals",
-    "label": "Over 3.5 γκολ",
+    "label": "Under 3.5 γκολ",
     "market": "1012",
     "match": "🇸🇦 Al Nassr – Al-Kholood",
-    "outcome": "1012",
-    "price": 1.93,
-    "prob": 0.5,
-    "score": -3.5,
+    "outcome": "1013",
+    "price": 1.95,
+    "prob": 0.4978,
+    "score": -2.94,
     "spec": {
      "line": 3.5,
-     "side": "over",
+     "side": "under",
      "stat": "goals"
+    },
+    "start": "2026-10-29T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -4.1,
+    "edge": -3.6,
+    "fair": 2.074,
+    "fid": "id1000095573215828",
+    "group": "btts",
+    "label": "Goal/Goal: Όχι",
+    "market": "104",
+    "match": "🇸🇦 Al Nassr – Al-Kholood",
+    "outcome": "105",
+    "price": 2.0,
+    "prob": 0.4822,
+    "score": -3.57,
+    "spec": {
+     "side": "no",
+     "stat": "btts"
     },
     "start": "2026-10-29T18:00:00.000Z"
    }
@@ -8656,33 +8541,33 @@
   ]
  },
  "checked": {
-  "id1000002371945346": "2026-10-29T17:25:26Z",
+  "id1000002371945346": "2026-10-29T17:35:27Z",
   "id1000002371945348": "2026-10-29T17:25:26Z",
   "id1000004067126840": "2026-10-29T17:25:26Z",
-  "id1000004067126844": "2026-10-29T17:30:43Z",
-  "id1000004067126850": "2026-10-29T17:30:43Z",
-  "id1000004472513954": "2026-10-29T17:30:43Z",
-  "id1000004472513958": "2026-10-29T17:30:43Z",
-  "id1000005272723296": "2026-10-29T17:30:43Z",
-  "id1000009872735878": "2026-10-29T17:30:43Z",
-  "id1000013572440734": "2026-10-29T17:30:43Z",
-  "id1000013572440740": "2026-10-29T17:30:43Z",
-  "id1000017071913116": "2026-10-29T17:30:43Z",
-  "id1000017173160450": "2026-10-29T17:30:43Z",
-  "id1000020272043292": "2026-10-29T17:30:43Z",
-  "id1000020572300858": "2026-10-29T17:30:43Z",
-  "id1000020572587362": "2026-10-29T17:30:43Z",
-  "id1000032566887120": "2026-10-29T17:30:43Z",
-  "id1000032566887128": "2026-10-29T17:30:43Z",
-  "id1000032566887130": "2026-10-29T17:30:43Z",
-  "id1000056273086702": "2026-10-29T17:30:43Z",
-  "id1000072473070182": "2026-10-29T17:30:43Z",
-  "id1000072473070188": "2026-10-29T17:30:43Z",
-  "id1000072473070192": "2026-10-29T17:30:43Z",
-  "id1000095573215820": "2026-10-29T17:30:43Z",
-  "id1000095573215828": "2026-10-29T17:30:43Z",
-  "id1000095573215830": "2026-10-29T17:30:43Z",
-  "id1000095573215836": "2026-10-29T17:30:43Z"
+  "id1000004067126844": "2026-10-29T17:35:27Z",
+  "id1000004067126850": "2026-10-29T17:35:27Z",
+  "id1000004472513954": "2026-10-29T17:35:27Z",
+  "id1000004472513958": "2026-10-29T17:35:27Z",
+  "id1000005272723296": "2026-10-29T17:35:27Z",
+  "id1000009872735878": "2026-10-29T17:35:27Z",
+  "id1000013572440734": "2026-10-29T17:35:27Z",
+  "id1000013572440740": "2026-10-29T17:35:27Z",
+  "id1000017071913116": "2026-10-29T17:35:27Z",
+  "id1000017173160450": "2026-10-29T17:35:27Z",
+  "id1000020272043292": "2026-10-29T17:35:27Z",
+  "id1000020572300858": "2026-10-29T17:35:27Z",
+  "id1000020572587362": "2026-10-29T17:35:27Z",
+  "id1000032566887120": "2026-10-29T17:35:27Z",
+  "id1000032566887128": "2026-10-29T17:35:27Z",
+  "id1000032566887130": "2026-10-29T17:35:27Z",
+  "id1000056273086702": "2026-10-29T17:35:27Z",
+  "id1000072473070182": "2026-10-29T17:35:27Z",
+  "id1000072473070188": "2026-10-29T17:35:27Z",
+  "id1000072473070192": "2026-10-29T17:35:27Z",
+  "id1000095573215820": "2026-10-29T17:35:27Z",
+  "id1000095573215828": "2026-10-29T17:35:27Z",
+  "id1000095573215830": "2026-10-29T17:35:27Z",
+  "id1000095573215836": "2026-10-29T17:35:27Z"
  },
  "diag": {
   "2026-10-27": {
