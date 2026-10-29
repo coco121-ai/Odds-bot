@@ -6490,9 +6490,9 @@
   "id1000002371945346": [
    {
     "book": "stoiximan",
-    "drop": 14.6,
-    "edge": 5.8,
-    "fair": 1.436,
+    "drop": 17.7,
+    "edge": 11.6,
+    "fair": 1.971,
     "fid": "id1000002371945346",
     "fxi": {
      "categoryName": "Italy",
@@ -6505,30 +6505,30 @@
      "tournamentName": "Serie A"
     },
     "group": "cards",
-    "label": "Κάρτες Under 4.5",
-    "market": "10930",
+    "label": "Κάρτες Under 3.5",
+    "market": "10926",
     "match": "🇮🇹 Fiorentina – Atalanta",
-    "outcome": "10931",
-    "price": 1.52,
-    "prob": 0.6964,
-    "score": 10.24,
+    "outcome": "10927",
+    "price": 2.2,
+    "prob": 0.5074,
+    "score": 16.92,
     "spec": null,
     "start": "2026-10-29T19:45:00.000Z"
    },
    {
     "book": "stoiximan",
-    "drop": 18.0,
-    "edge": 4.8,
-    "fair": 1.957,
+    "drop": 14.3,
+    "edge": 11.0,
+    "fair": 1.442,
     "fid": "id1000002371945346",
     "group": "cards",
-    "label": "Κάρτες Under 3.5",
-    "market": "10926",
+    "label": "Κάρτες Under 4.5",
+    "market": "10930",
     "match": "🇮🇹 Fiorentina – Atalanta",
-    "outcome": "10927",
-    "price": 2.05,
-    "prob": 0.511,
-    "score": 10.16,
+    "outcome": "10931",
+    "price": 1.6,
+    "prob": 0.6935,
+    "score": 15.25,
     "spec": null,
     "start": "2026-10-29T19:45:00.000Z"
    },
@@ -6653,7 +6653,7 @@
     "book": "stoiximan",
     "drop": 24.5,
     "edge": -3.4,
-    "fair": 1.429,
+    "fair": 1.428,
     "fid": "id1000002371945348",
     "group": "goals",
     "label": "Over 2.5 γκολ",
@@ -6661,8 +6661,8 @@
     "match": "🇮🇹 Frosinone – Lecce",
     "outcome": "1010",
     "price": 1.38,
-    "prob": 0.6998,
-    "score": 2.57,
+    "prob": 0.7003,
+    "score": 2.64,
     "spec": {
      "line": 2.5,
      "side": "over",
@@ -6672,9 +6672,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 12.7,
-    "edge": -2.1,
-    "fair": 1.756,
+    "drop": 13.0,
+    "edge": -1.7,
+    "fair": 1.75,
     "fid": "id1000002371945348",
     "group": "1x2",
     "label": "1 (Frosinone)",
@@ -6682,8 +6682,8 @@
     "match": "🇮🇹 Frosinone – Lecce",
     "outcome": "101",
     "price": 1.72,
-    "prob": 0.5695,
-    "score": 1.76,
+    "prob": 0.5714,
+    "score": 2.17,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -6705,6 +6705,27 @@
     "prob": 0.5834,
     "score": 0.35,
     "spec": null,
+    "start": "2026-10-29T17:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 1.0,
+    "edge": -3.8,
+    "fair": 2.184,
+    "fid": "id1000002371945348",
+    "group": "corners",
+    "label": "Κόρνερ Over 10.5",
+    "market": "10807",
+    "match": "🇮🇹 Frosinone – Lecce",
+    "outcome": "10807",
+    "price": 2.1,
+    "prob": 0.4579,
+    "score": -3.56,
+    "spec": {
+     "line": 10.5,
+     "side": "over",
+     "stat": "corners"
+    },
     "start": "2026-10-29T17:30:00.000Z"
    },
    {
@@ -7258,6 +7279,26 @@
    },
    {
     "book": "stoiximan",
+    "drop": 8.2,
+    "edge": -3.3,
+    "fair": 2.4,
+    "fid": "id1000032566887130",
+    "group": "1x2",
+    "label": "1 (Gremio)",
+    "market": "101",
+    "match": "🇧🇷 Gremio – Paranaense",
+    "outcome": "101",
+    "price": 2.32,
+    "prob": 0.4167,
+    "score": -0.86,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-10-30T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": -1.0,
     "edge": -1.5,
     "fair": 1.442,
@@ -7292,27 +7333,6 @@
     "prob": 0.4032,
     "score": -2.42,
     "spec": null,
-    "start": "2026-10-30T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -0.9,
-    "edge": -3.3,
-    "fair": 1.344,
-    "fid": "id1000032566887130",
-    "group": "goals",
-    "label": "Over 1.5 γκολ",
-    "market": "108",
-    "match": "🇧🇷 Gremio – Paranaense",
-    "outcome": "108",
-    "price": 1.3,
-    "prob": 0.744,
-    "score": -3.27,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "goals"
-    },
     "start": "2026-10-30T00:30:00.000Z"
    }
   ],
@@ -7571,9 +7591,9 @@
   "id1000095573215828": [
    {
     "book": "stoiximan",
-    "drop": -6.3,
-    "edge": 0.8,
-    "fair": 2.083,
+    "drop": 2.9,
+    "edge": -2.3,
+    "fair": 1.842,
     "fid": "id1000095573215828",
     "fxi": {
      "categoryName": "Saudi Arabia",
@@ -7585,38 +7605,39 @@
      "startTime": "2026-10-29T18:00:00.000Z",
      "tournamentName": "Saudi Pro League"
     },
-    "group": "btts",
-    "label": "Goal/Goal: Ναι",
-    "market": "104",
-    "match": "🇸🇦 Al Nassr – Al-Kholood",
-    "outcome": "104",
-    "price": 2.1,
-    "prob": 0.4801,
-    "score": 0.82,
-    "spec": {
-     "side": "yes",
-     "stat": "btts"
-    },
-    "start": "2026-10-29T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 2.9,
-    "edge": -3.4,
-    "fair": 1.842,
-    "fid": "id1000095573215828",
     "group": "goals",
     "label": "Ημίχρονο Under 1.5 γκολ",
     "market": "10258",
     "match": "🇸🇦 Al Nassr – Al-Kholood",
     "outcome": "10259",
-    "price": 1.78,
+    "price": 1.8,
     "prob": 0.5429,
-    "score": -2.49,
+    "score": -1.41,
     "spec": {
      "line": 1.5,
      "side": "under",
      "stat": "ht"
+    },
+    "start": "2026-10-29T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 5.1,
+    "edge": -3.2,
+    "fair": 1.881,
+    "fid": "id1000095573215828",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🇸🇦 Al Nassr – Al-Kholood",
+    "outcome": "1013",
+    "price": 1.82,
+    "prob": 0.5316,
+    "score": -1.7,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-10-29T18:00:00.000Z"
    },
@@ -7638,27 +7659,6 @@
      "line": 10.5,
      "side": "over",
      "stat": "corners"
-    },
-    "start": "2026-10-29T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -5.1,
-    "edge": -2.9,
-    "fair": 1.462,
-    "fid": "id1000095573215828",
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
-    "match": "🇸🇦 Al Nassr – Al-Kholood",
-    "outcome": "1010",
-    "price": 1.42,
-    "prob": 0.684,
-    "score": -2.87,
-    "spec": {
-     "line": 2.5,
-     "side": "over",
-     "stat": "goals"
     },
     "start": "2026-10-29T18:00:00.000Z"
    }
@@ -7917,25 +7917,25 @@
   ]
  },
  "checked": {
-  "id1000002371945346": "2026-10-29T15:35:32Z",
-  "id1000002371945348": "2026-10-29T15:30:45Z",
-  "id1000004067126840": "2026-10-29T15:35:32Z",
-  "id1000004067126844": "2026-10-29T15:35:32Z",
-  "id1000004067126850": "2026-10-29T15:35:32Z",
-  "id1000032566887120": "2026-10-29T15:30:45Z",
-  "id1000032566887128": "2026-10-29T15:35:32Z",
-  "id1000032566887130": "2026-10-29T15:35:32Z",
+  "id1000002371945346": "2026-10-29T15:40:26Z",
+  "id1000002371945348": "2026-10-29T15:40:26Z",
+  "id1000004067126840": "2026-10-29T15:40:26Z",
+  "id1000004067126844": "2026-10-29T15:40:26Z",
+  "id1000004067126850": "2026-10-29T15:40:26Z",
+  "id1000032566887120": "2026-10-29T15:40:26Z",
+  "id1000032566887128": "2026-10-29T15:40:26Z",
+  "id1000032566887130": "2026-10-29T15:40:26Z",
   "id1000066873835302": "2026-10-29T09:55:28Z",
   "id1000066873835304": "2026-10-29T12:10:32Z",
   "id1000066873835330": "2026-10-29T09:55:28Z",
   "id1000066873835332": "2026-10-29T12:10:32Z",
   "id1000066873835444": "2026-10-29T07:40:33Z",
   "id1000066873835446": "2026-10-29T12:10:32Z",
-  "id1000095573215820": "2026-10-29T15:35:32Z",
+  "id1000095573215820": "2026-10-29T15:40:26Z",
   "id1000095573215826": "2026-10-29T14:30:45Z",
-  "id1000095573215828": "2026-10-29T15:35:32Z",
-  "id1000095573215830": "2026-10-29T15:35:32Z",
-  "id1000095573215836": "2026-10-29T15:35:32Z"
+  "id1000095573215828": "2026-10-29T15:40:26Z",
+  "id1000095573215830": "2026-10-29T15:40:26Z",
+  "id1000095573215836": "2026-10-29T15:40:26Z"
  },
  "diag": {
   "2026-10-27": {
