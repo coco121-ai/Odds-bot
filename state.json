@@ -1,5 +1,11 @@
 {
  "alerts": {
+  "id1000000774165978|10258|10258|pre": {
+   "drop": 16.94,
+   "edge": 0.0,
+   "stars": 3,
+   "start": "2026-11-03T17:45:00.000Z"
+  },
   "id1000001872339996|10803|10803|pre": {
    "drop": 0.0,
    "edge": 2.6,
@@ -1063,6 +1069,47 @@
    "stars": 3,
    "start": "2026-10-21T19:00:00.000Z",
    "status": "settled",
+   "suggested": 5.0,
+   "tries": 0
+  },
+  "id1000000774165978|10258|10258": {
+   "book": "stoiximan",
+   "edge": -2.0,
+   "fair": 1.887,
+   "fixtureId": "id1000000774165978",
+   "fxi": {
+    "categoryName": "International Clubs",
+    "categorySlug": "international-clubs",
+    "participant1Name": "Galatasaray Istanbul",
+    "participant1ShortName": "Galatasaray",
+    "participant2Name": "VfB Stuttgart",
+    "participant2ShortName": "Stuttgart",
+    "startTime": "2026-11-03T17:45:00.000Z",
+    "tournamentName": "UEFA Champions League"
+   },
+   "kind": "steam",
+   "lg": null,
+   "market": "10258",
+   "match": "🇪🇺 Galatasaray – Stuttgart",
+   "model_p": null,
+   "msg_ids": [
+    574
+   ],
+   "outcome": "10258",
+   "pick": "Over/Under Ημιχρόνου (1.5): Over 1.5",
+   "pin_limit": 3052.0,
+   "price": 1.85,
+   "replied": false,
+   "sent_at": "2026-11-03T15:41:18Z",
+   "spec": {
+    "line": 1.5,
+    "side": "over",
+    "stat": "ht"
+   },
+   "stake": 0.0,
+   "stars": 3,
+   "start": "2026-11-03T17:45:00.000Z",
+   "status": "open",
    "suggested": 5.0,
    "tries": 0
   },
@@ -7187,9 +7234,9 @@
   "id1000000774165976": [
    {
     "book": "stoiximan",
-    "drop": -2.1,
-    "edge": 3.0,
-    "fair": 1.815,
+    "drop": 0.8,
+    "edge": 5.8,
+    "fair": 1.767,
     "fid": "id1000000774165976",
     "fxi": {
      "categoryName": "International Clubs",
@@ -7207,16 +7254,16 @@
     "match": "🇪🇺 Shakhtar – Sporting CP",
     "outcome": "10930",
     "price": 1.87,
-    "prob": 0.551,
-    "score": 3.03,
+    "prob": 0.5659,
+    "score": 6.06,
     "spec": null,
     "start": "2026-11-03T17:45:00.000Z"
    },
    {
     "book": "stoiximan",
-    "drop": -4.3,
-    "edge": 0.0,
-    "fair": 2.569,
+    "drop": -0.4,
+    "edge": 3.9,
+    "fair": 2.474,
     "fid": "id1000000774165976",
     "group": "cards",
     "label": "Κάρτες Over 5.5",
@@ -7224,50 +7271,49 @@
     "match": "🇪🇺 Shakhtar – Sporting CP",
     "outcome": "10934",
     "price": 2.57,
-    "prob": 0.3893,
-    "score": 0.04,
+    "prob": 0.4042,
+    "score": 3.88,
     "spec": null,
     "start": "2026-11-03T17:45:00.000Z"
    },
    {
     "book": "stoiximan",
-    "drop": 5.1,
-    "edge": -3.7,
-    "fair": 1.578,
+    "drop": -8.6,
+    "edge": -3.6,
+    "fair": 1.711,
     "fid": "id1000000774165976",
     "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
     "match": "🇪🇺 Shakhtar – Sporting CP",
-    "outcome": "1013",
-    "price": 1.52,
-    "prob": 0.6337,
-    "score": -2.14,
+    "outcome": "1010",
+    "price": 1.65,
+    "prob": 0.5845,
+    "score": -3.57,
     "spec": {
-     "line": 3.5,
-     "side": "under",
+     "line": 2.5,
+     "side": "over",
      "stat": "goals"
     },
     "start": "2026-11-03T17:45:00.000Z"
    },
    {
     "book": "stoiximan",
-    "drop": 2.5,
-    "edge": -3.9,
-    "fair": 1.633,
+    "drop": -11.3,
+    "edge": -4.0,
+    "fair": 2.135,
     "fid": "id1000000774165976",
-    "group": "goals",
-    "label": "Ημίχρονο Under 1.5 γκολ",
-    "market": "10258",
+    "group": "1x2",
+    "label": "2 (Sporting CP)",
+    "market": "101",
     "match": "🇪🇺 Shakhtar – Sporting CP",
-    "outcome": "10259",
-    "price": 1.57,
-    "prob": 0.6124,
-    "score": -3.11,
+    "outcome": "103",
+    "price": 2.05,
+    "prob": 0.4684,
+    "score": -3.98,
     "spec": {
-     "line": 1.5,
-     "side": "under",
-     "stat": "ht"
+     "side": "2",
+     "stat": "1x2"
     },
     "start": "2026-11-03T17:45:00.000Z"
    }
@@ -7319,9 +7365,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 20.0,
-    "edge": -2.2,
-    "fair": 1.789,
+    "drop": 21.3,
+    "edge": -0.3,
+    "fair": 1.755,
     "fid": "id1000000774165978",
     "group": "goals",
     "label": "Over 3.5 γκολ",
@@ -7329,8 +7375,8 @@
     "match": "🇪🇺 Galatasaray – Stuttgart",
     "outcome": "1012",
     "price": 1.75,
-    "prob": 0.559,
-    "score": 3.81,
+    "prob": 0.5698,
+    "score": 5.72,
     "spec": {
      "line": 3.5,
      "side": "over",
@@ -7340,9 +7386,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 15.7,
-    "edge": -3.6,
-    "fair": 1.919,
+    "drop": 16.9,
+    "edge": -2.0,
+    "fair": 1.887,
     "fid": "id1000000774165978",
     "group": "goals",
     "label": "Ημίχρονο Over 1.5 γκολ",
@@ -7350,12 +7396,32 @@
     "match": "🇪🇺 Galatasaray – Stuttgart",
     "outcome": "10258",
     "price": 1.85,
-    "prob": 0.5211,
-    "score": 1.1,
+    "prob": 0.5299,
+    "score": 3.12,
     "spec": {
      "line": 1.5,
      "side": "over",
      "stat": "ht"
+    },
+    "start": "2026-11-03T17:45:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 7.1,
+    "edge": -2.3,
+    "fair": 1.331,
+    "fid": "id1000000774165978",
+    "group": "btts",
+    "label": "Goal/Goal: Ναι",
+    "market": "104",
+    "match": "🇪🇺 Galatasaray – Stuttgart",
+    "outcome": "104",
+    "price": 1.3,
+    "prob": 0.7513,
+    "score": -0.19,
+    "spec": {
+     "side": "yes",
+     "stat": "btts"
     },
     "start": "2026-11-03T17:45:00.000Z"
    },
@@ -7377,26 +7443,6 @@
      "line": 10.5,
      "side": "over",
      "stat": "corners"
-    },
-    "start": "2026-11-03T17:45:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 6.4,
-    "edge": -3.1,
-    "fair": 1.342,
-    "fid": "id1000000774165978",
-    "group": "btts",
-    "label": "Goal/Goal: Ναι",
-    "market": "104",
-    "match": "🇪🇺 Galatasaray – Stuttgart",
-    "outcome": "104",
-    "price": 1.3,
-    "prob": 0.7452,
-    "score": -1.2,
-    "spec": {
-     "side": "yes",
-     "stat": "btts"
     },
     "start": "2026-11-03T17:45:00.000Z"
    }
@@ -7431,6 +7477,47 @@
    },
    {
     "book": "stoiximan",
+    "drop": -21.0,
+    "edge": -2.8,
+    "fair": 2.387,
+    "fid": "id1000000774165980",
+    "group": "1x2",
+    "label": "2 (Bayern Munich)",
+    "market": "101",
+    "match": "🇪🇺 Atletico – Bayern Munich",
+    "outcome": "103",
+    "price": 2.32,
+    "prob": 0.4189,
+    "score": -2.81,
+    "spec": {
+     "side": "2",
+     "stat": "1x2"
+    },
+    "start": "2026-11-03T20:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.0,
+    "edge": -3.3,
+    "fair": 2.429,
+    "fid": "id1000000774165980",
+    "group": "goals",
+    "label": "Over 3.5 γκολ",
+    "market": "1012",
+    "match": "🇪🇺 Atletico – Bayern Munich",
+    "outcome": "1012",
+    "price": 2.35,
+    "prob": 0.4117,
+    "score": -3.25,
+    "spec": {
+     "line": 3.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-03T20:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": -2.3,
     "edge": -3.4,
     "fair": 1.387,
@@ -7448,20 +7535,20 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.4,
-    "edge": -3.6,
-    "fair": 2.438,
+    "drop": 0.0,
+    "edge": -3.5,
+    "fair": 1.607,
     "fid": "id1000000774165980",
     "group": "goals",
-    "label": "Over 3.5 γκολ",
-    "market": "1012",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
     "match": "🇪🇺 Atletico – Bayern Munich",
-    "outcome": "1012",
-    "price": 2.35,
-    "prob": 0.4102,
-    "score": -3.61,
+    "outcome": "1010",
+    "price": 1.55,
+    "prob": 0.6223,
+    "score": -3.55,
     "spec": {
-     "line": 3.5,
+     "line": 2.5,
      "side": "over",
      "stat": "goals"
     },
@@ -7746,7 +7833,7 @@
    {
     "book": "stoiximan",
     "drop": 12.2,
-    "edge": -1.8,
+    "edge": -3.3,
     "fair": 1.406,
     "fid": "id1000000774165990",
     "fxi": {
@@ -7764,9 +7851,9 @@
     "market": "101",
     "match": "🇪🇺 LASK – Slovan Bratislava",
     "outcome": "101",
-    "price": 1.38,
+    "price": 1.36,
     "prob": 0.7112,
-    "score": 1.83,
+    "score": 0.4,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -7922,9 +8009,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -10.3,
-    "edge": -2.6,
-    "fair": 2.669,
+    "drop": -10.7,
+    "edge": -2.9,
+    "fair": 2.679,
     "fid": "id1000000774165992",
     "group": "goals",
     "label": "Under 2.5 γκολ",
@@ -7932,8 +8019,8 @@
     "match": "🇪🇺 Manchester United – Roma",
     "outcome": "1011",
     "price": 2.6,
-    "prob": 0.3747,
-    "score": -2.59,
+    "prob": 0.3733,
+    "score": -2.95,
     "spec": {
      "line": 2.5,
      "side": "under",
@@ -7943,9 +8030,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -6.2,
-    "edge": -2.9,
-    "fair": 1.7,
+    "drop": -6.5,
+    "edge": -3.2,
+    "fair": 1.705,
     "fid": "id1000000774165992",
     "group": "goals",
     "label": "Under 3.5 γκολ",
@@ -7953,8 +8040,8 @@
     "match": "🇪🇺 Manchester United – Roma",
     "outcome": "1013",
     "price": 1.65,
-    "prob": 0.5882,
-    "score": -2.94,
+    "prob": 0.5865,
+    "score": -3.23,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -7965,8 +8052,8 @@
    {
     "book": "stoiximan",
     "drop": -0.5,
-    "edge": -3.7,
-    "fair": 2.263,
+    "edge": -3.9,
+    "fair": 2.268,
     "fid": "id1000000774165992",
     "group": "1x2",
     "label": "1 (Manchester United)",
@@ -7974,8 +8061,8 @@
     "match": "🇪🇺 Manchester United – Roma",
     "outcome": "101",
     "price": 2.18,
-    "prob": 0.4419,
-    "score": -3.67,
+    "prob": 0.4409,
+    "score": -3.88,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -8031,7 +8118,7 @@
    {
     "book": "stoiximan",
     "drop": 3.1,
-    "edge": 0.2,
+    "edge": -1.5,
     "fair": 1.776,
     "fid": "id1000000774165994",
     "group": "1x2",
@@ -8039,9 +8126,9 @@
     "market": "101",
     "match": "🇪🇺 Villarreal – PSG",
     "outcome": "103",
-    "price": 1.78,
+    "price": 1.75,
     "prob": 0.5631,
-    "score": 1.16,
+    "score": -0.53,
     "spec": {
      "side": "2",
      "stat": "1x2"
@@ -8051,7 +8138,7 @@
    {
     "book": "stoiximan",
     "drop": 5.2,
-    "edge": -1.4,
+    "edge": -2.8,
     "fair": 2.079,
     "fid": "id1000000774165994",
     "group": "goals",
@@ -8059,9 +8146,9 @@
     "market": "10258",
     "match": "🇪🇺 Villarreal – PSG",
     "outcome": "10258",
-    "price": 2.05,
+    "price": 2.02,
     "prob": 0.481,
-    "score": 0.17,
+    "score": -1.27,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -8071,20 +8158,20 @@
    },
    {
     "book": "stoiximan",
-    "drop": 4.8,
-    "edge": -2.5,
-    "fair": 2.0,
+    "drop": 3.0,
+    "edge": -2.8,
+    "fair": 1.43,
     "fid": "id1000000774165994",
     "group": "goals",
-    "label": "Over 3.5 γκολ",
-    "market": "1012",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
     "match": "🇪🇺 Villarreal – PSG",
-    "outcome": "1012",
-    "price": 1.95,
-    "prob": 0.5,
-    "score": -1.07,
+    "outcome": "1010",
+    "price": 1.39,
+    "prob": 0.6993,
+    "score": -1.89,
     "spec": {
-     "line": 3.5,
+     "line": 2.5,
      "side": "over",
      "stat": "goals"
     },
@@ -8357,9 +8444,9 @@
   "id1000001872339988": [
    {
     "book": "stoiximan",
-    "drop": 9.6,
-    "edge": 8.6,
-    "fair": 2.026,
+    "drop": 8.8,
+    "edge": 7.7,
+    "fair": 2.043,
     "fid": "id1000001872339988",
     "fxi": {
      "categoryName": "England",
@@ -8377,16 +8464,16 @@
     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Derby – Norwich",
     "outcome": "10930",
     "price": 2.2,
-    "prob": 0.4936,
-    "score": 11.46,
+    "prob": 0.4895,
+    "score": 10.32,
     "spec": null,
     "start": "2026-11-03T19:45:00.000Z"
    },
    {
     "book": "stoiximan",
-    "drop": 4.4,
-    "edge": 5.1,
-    "fair": 1.541,
+    "drop": 4.1,
+    "edge": 4.7,
+    "fair": 1.547,
     "fid": "id1000001872339988",
     "group": "cards",
     "label": "Κάρτες Over 3.5",
@@ -8394,16 +8481,16 @@
     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Derby – Norwich",
     "outcome": "10926",
     "price": 1.62,
-    "prob": 0.6489,
-    "score": 6.45,
+    "prob": 0.6464,
+    "score": 5.96,
     "spec": null,
     "start": "2026-11-03T19:45:00.000Z"
    },
    {
     "book": "stoiximan",
     "drop": 11.5,
-    "edge": -1.2,
-    "fair": 2.074,
+    "edge": -1.3,
+    "fair": 2.076,
     "fid": "id1000001872339988",
     "group": "1x2",
     "label": "2 (Norwich)",
@@ -8411,8 +8498,8 @@
     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Derby – Norwich",
     "outcome": "103",
     "price": 2.05,
-    "prob": 0.4822,
-    "score": 2.29,
+    "prob": 0.4817,
+    "score": 2.2,
     "spec": {
      "side": "2",
      "stat": "1x2"
@@ -8463,9 +8550,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 1.9,
-    "edge": -3.5,
-    "fair": 2.693,
+    "drop": 1.5,
+    "edge": -3.8,
+    "fair": 2.703,
     "fid": "id1000001872339988",
     "group": "goals",
     "label": "Ημίχρονο Over 1.5 γκολ",
@@ -8473,8 +8560,8 @@
     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Derby – Norwich",
     "outcome": "10258",
     "price": 2.6,
-    "prob": 0.3713,
-    "score": -2.88,
+    "prob": 0.37,
+    "score": -3.35,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -8835,7 +8922,7 @@
    {
     "book": "stoiximan",
     "drop": -3.6,
-    "edge": 2.1,
+    "edge": 0.1,
     "fair": 1.469,
     "fid": "id1000001872339994",
     "group": "goals",
@@ -8843,9 +8930,9 @@
     "market": "1012",
     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 QPR – Burnley",
     "outcome": "1013",
-    "price": 1.5,
+    "price": 1.47,
     "prob": 0.6807,
-    "score": 2.11,
+    "score": 0.07,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -9360,9 +9447,9 @@
   "id1000004067126866": [
    {
     "book": "stoiximan",
-    "drop": 3.0,
-    "edge": -1.4,
-    "fair": 1.826,
+    "drop": 2.4,
+    "edge": -2.2,
+    "fair": 1.84,
     "fid": "id1000004067126866",
     "fxi": {
      "categoryName": "Sweden",
@@ -9380,8 +9467,8 @@
     "match": "🇸🇪 Sirius – Halmstad",
     "outcome": "104",
     "price": 1.8,
-    "prob": 0.5476,
-    "score": -0.51,
+    "prob": 0.5435,
+    "score": -1.46,
     "spec": {
      "side": "yes",
      "stat": "btts"
@@ -9439,27 +9526,6 @@
      "line": 0.5,
      "side": "over",
      "stat": "ht"
-    },
-    "start": "2026-11-03T17:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -3.5,
-    "edge": -4.0,
-    "fair": 1.406,
-    "fid": "id1000022972230832",
-    "group": "goals",
-    "label": "Over 1.5 γκολ",
-    "market": "108",
-    "match": "🇵🇱 Glogow – Arka Gdynia",
-    "outcome": "108",
-    "price": 1.35,
-    "prob": 0.7112,
-    "score": -3.98,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "goals"
     },
     "start": "2026-11-03T17:00:00.000Z"
    }
@@ -9627,9 +9693,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -1.5,
-    "edge": -1.4,
-    "fair": 1.4,
+    "drop": -1.7,
+    "edge": -1.6,
+    "fair": 1.402,
     "fid": "id1000032566887150",
     "group": "goals",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -9637,8 +9703,8 @@
     "match": "🇧🇷 Internacional – Coritiba",
     "outcome": "10256",
     "price": 1.38,
-    "prob": 0.7143,
-    "score": -1.43,
+    "prob": 0.7133,
+    "score": -1.57,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -9648,22 +9714,21 @@
    },
    {
     "book": "stoiximan",
-    "drop": -1.8,
-    "edge": -3.3,
-    "fair": 1.861,
+    "drop": 0.2,
+    "edge": -3.4,
+    "fair": 1.625,
     "fid": "id1000032566887150",
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
+    "group": "1x2",
+    "label": "1 (Internacional)",
+    "market": "101",
     "match": "🇧🇷 Internacional – Coritiba",
-    "outcome": "1010",
-    "price": 1.8,
-    "prob": 0.5373,
-    "score": -3.28,
+    "outcome": "101",
+    "price": 1.57,
+    "prob": 0.6154,
+    "score": -3.33,
     "spec": {
-     "line": 2.5,
-     "side": "over",
-     "stat": "goals"
+     "side": "1",
+     "stat": "1x2"
     },
     "start": "2026-11-04T00:30:00.000Z"
    }
@@ -9800,9 +9865,9 @@
   "id1000046373835718": [
    {
     "book": "stoiximan",
-    "drop": 6.1,
-    "edge": -0.4,
-    "fair": 3.214,
+    "drop": 4.9,
+    "edge": -1.8,
+    "fair": 3.257,
     "fid": "id1000046373835718",
     "fxi": {
      "categoryName": "International Clubs",
@@ -9820,8 +9885,8 @@
     "match": "🇪🇺 Esteghlal – Al-Shamal",
     "outcome": "102",
     "price": 3.2,
-    "prob": 0.3111,
-    "score": 1.39,
+    "prob": 0.307,
+    "score": -0.29,
     "spec": {
      "side": "x",
      "stat": "1x2"
@@ -9830,9 +9895,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -1.5,
-    "edge": -2.6,
-    "fair": 1.51,
+    "drop": -1.3,
+    "edge": -2.5,
+    "fair": 1.508,
     "fid": "id1000046373835718",
     "group": "goals",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -9840,8 +9905,8 @@
     "match": "🇪🇺 Esteghlal – Al-Shamal",
     "outcome": "10256",
     "price": 1.47,
-    "prob": 0.6623,
-    "score": -2.65,
+    "prob": 0.6631,
+    "score": -2.52,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -9906,9 +9971,9 @@
   "id1000066873835250": [
    {
     "book": "stoiximan",
-    "drop": 15.9,
-    "edge": -3.5,
-    "fair": 1.896,
+    "drop": 0.3,
+    "edge": -1.3,
+    "fair": 3.191,
     "fid": "id1000066873835250",
     "fxi": {
      "categoryName": "International Clubs",
@@ -9920,56 +9985,14 @@
      "startTime": "2026-11-03T16:00:00.000Z",
      "tournamentName": "AFC Champions League Two"
     },
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
-    "match": "🇪🇺 Al Hussein Irbid – Al Shorta",
-    "outcome": "1010",
-    "price": 1.83,
-    "prob": 0.5274,
-    "score": 1.29,
-    "spec": {
-     "line": 2.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-03T16:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 2.9,
-    "edge": -0.6,
-    "fair": 2.939,
-    "fid": "id1000066873835250",
-    "group": "goals",
-    "label": "Over 3.5 γκολ",
-    "market": "1012",
-    "match": "🇪🇺 Al Hussein Irbid – Al Shorta",
-    "outcome": "1012",
-    "price": 2.92,
-    "prob": 0.3403,
-    "score": 0.23,
-    "spec": {
-     "line": 3.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-03T16:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -1.0,
-    "edge": -2.7,
-    "fair": 3.236,
-    "fid": "id1000066873835250",
     "group": "1x2",
     "label": "Χ",
     "market": "101",
     "match": "🇪🇺 Al Hussein Irbid – Al Shorta",
     "outcome": "102",
     "price": 3.15,
-    "prob": 0.309,
-    "score": -2.66,
+    "prob": 0.3134,
+    "score": -1.18,
     "spec": {
      "side": "x",
      "stat": "1x2"
@@ -10070,33 +10093,33 @@
   ]
  },
  "checked": {
-  "id1000000774165976": "2026-11-03T15:35:34Z",
-  "id1000000774165978": "2026-11-03T15:35:34Z",
-  "id1000000774165980": "2026-11-03T15:35:34Z",
-  "id1000000774165984": "2026-11-03T15:35:34Z",
-  "id1000000774165986": "2026-11-03T15:35:34Z",
-  "id1000000774165988": "2026-11-03T15:35:34Z",
-  "id1000000774165990": "2026-11-03T15:35:34Z",
-  "id1000000774165992": "2026-11-03T15:35:34Z",
-  "id1000000774165994": "2026-11-03T15:35:34Z",
-  "id1000001872339984": "2026-11-03T15:35:34Z",
-  "id1000001872339986": "2026-11-03T15:35:34Z",
-  "id1000001872339988": "2026-11-03T15:35:34Z",
-  "id1000001872339990": "2026-11-03T15:35:34Z",
-  "id1000001872339992": "2026-11-03T15:35:34Z",
-  "id1000001872339994": "2026-11-03T15:35:34Z",
-  "id1000001872339996": "2026-11-03T15:35:34Z",
-  "id1000001872339998": "2026-11-03T15:35:34Z",
-  "id1000001872340004": "2026-11-03T15:35:34Z",
-  "id1000002474821224": "2026-11-03T15:35:34Z",
-  "id1000002476029384": "2026-11-03T15:35:34Z",
-  "id1000004067126866": "2026-11-03T15:35:34Z",
-  "id1000022972230832": "2026-11-03T15:35:34Z",
-  "id1000022972231150": "2026-11-03T15:35:34Z",
-  "id1000032566887150": "2026-11-03T15:35:34Z",
-  "id1000032566887156": "2026-11-03T15:35:34Z",
-  "id1000046373835718": "2026-11-03T15:35:34Z",
-  "id1000046373835720": "2026-11-03T15:35:34Z",
+  "id1000000774165976": "2026-11-03T15:40:35Z",
+  "id1000000774165978": "2026-11-03T15:40:35Z",
+  "id1000000774165980": "2026-11-03T15:40:35Z",
+  "id1000000774165984": "2026-11-03T15:40:35Z",
+  "id1000000774165986": "2026-11-03T15:40:35Z",
+  "id1000000774165988": "2026-11-03T15:40:35Z",
+  "id1000000774165990": "2026-11-03T15:40:35Z",
+  "id1000000774165992": "2026-11-03T15:40:35Z",
+  "id1000000774165994": "2026-11-03T15:40:35Z",
+  "id1000001872339984": "2026-11-03T15:40:35Z",
+  "id1000001872339986": "2026-11-03T15:40:35Z",
+  "id1000001872339988": "2026-11-03T15:40:35Z",
+  "id1000001872339990": "2026-11-03T15:40:35Z",
+  "id1000001872339992": "2026-11-03T15:40:35Z",
+  "id1000001872339994": "2026-11-03T15:40:35Z",
+  "id1000001872339996": "2026-11-03T15:40:35Z",
+  "id1000001872339998": "2026-11-03T15:40:35Z",
+  "id1000001872340004": "2026-11-03T15:40:35Z",
+  "id1000002474821224": "2026-11-03T15:40:35Z",
+  "id1000002476029384": "2026-11-03T15:40:35Z",
+  "id1000004067126866": "2026-11-03T15:40:35Z",
+  "id1000022972230832": "2026-11-03T15:40:35Z",
+  "id1000022972231150": "2026-11-03T15:40:35Z",
+  "id1000032566887150": "2026-11-03T15:40:35Z",
+  "id1000032566887156": "2026-11-03T15:40:35Z",
+  "id1000046373835718": "2026-11-03T15:40:35Z",
+  "id1000046373835720": "2026-11-03T15:40:35Z",
   "id1000046373835724": "2026-11-03T07:40:36Z",
   "id1000046373835726": "2026-11-03T09:55:42Z",
   "id1000046373835728": "2026-11-03T09:55:42Z",
@@ -10104,8 +10127,8 @@
   "id1000046373835732": "2026-11-03T12:10:32Z",
   "id1000046373835734": "2026-11-03T12:10:32Z",
   "id1000066873835248": "2026-11-03T13:40:35Z",
-  "id1000066873835250": "2026-11-03T15:35:34Z",
-  "id1000067974173038": "2026-11-03T15:35:34Z",
+  "id1000066873835250": "2026-11-03T15:40:35Z",
+  "id1000067974173038": "2026-11-03T15:40:35Z",
   "id1000229873206566": "2026-11-03T12:30:42Z",
   "id1000229873206568": "2026-11-03T14:55:25Z"
  },
@@ -14572,6 +14595,9 @@
    ]
   },
   "2026-11-03": {
+   "alert": [
+    "id1000000774165978|10258|10258"
+   ],
    "corners": [
     "id1000001872339996|10803|10803|corners"
    ],
