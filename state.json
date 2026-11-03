@@ -7461,26 +7461,6 @@
      "stat": "ht"
     },
     "start": "2026-11-03T20:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -0.2,
-    "edge": -3.6,
-    "fair": 1.442,
-    "fid": "id1000000774165980",
-    "group": "btts",
-    "label": "Goal/Goal: Ναι",
-    "market": "104",
-    "match": "🇪🇺 Atletico – Bayern Munich",
-    "outcome": "104",
-    "price": 1.39,
-    "prob": 0.6935,
-    "score": -3.61,
-    "spec": {
-     "side": "yes",
-     "stat": "btts"
-    },
-    "start": "2026-11-03T20:00:00.000Z"
    }
   ],
   "id1000000774165984": [
@@ -7696,7 +7676,7 @@
    {
     "book": "stoiximan",
     "drop": 14.9,
-    "edge": -2.6,
+    "edge": -0.9,
     "fair": 1.766,
     "fid": "id1000000774165988",
     "group": "1x2",
@@ -7704,9 +7684,9 @@
     "market": "101",
     "match": "🇪🇺 Bodoe/Glimt – Lille",
     "outcome": "101",
-    "price": 1.72,
+    "price": 1.75,
     "prob": 0.5663,
-    "score": 1.88,
+    "score": 3.57,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -8074,26 +8054,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 0.7,
-    "edge": -2.0,
-    "fair": 1.817,
-    "fid": "id1000000774165994",
-    "group": "1x2",
-    "label": "2 (PSG)",
-    "market": "101",
-    "match": "🇪🇺 Villarreal – PSG",
-    "outcome": "103",
-    "price": 1.78,
-    "prob": 0.5504,
-    "score": -1.83,
-    "spec": {
-     "side": "2",
-     "stat": "1x2"
-    },
-    "start": "2026-11-03T20:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 0.8,
     "edge": -3.1,
     "fair": 2.528,
@@ -8115,9 +8075,29 @@
    },
    {
     "book": "stoiximan",
-    "drop": -14.5,
-    "edge": -3.7,
-    "fair": 2.057,
+    "drop": -0.3,
+    "edge": -2.9,
+    "fair": 1.833,
+    "fid": "id1000000774165994",
+    "group": "1x2",
+    "label": "2 (PSG)",
+    "market": "101",
+    "match": "🇪🇺 Villarreal – PSG",
+    "outcome": "103",
+    "price": 1.78,
+    "prob": 0.5456,
+    "score": -2.89,
+    "spec": {
+     "side": "2",
+     "stat": "1x2"
+    },
+    "start": "2026-11-03T20:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -14.0,
+    "edge": -3.5,
+    "fair": 2.052,
     "fid": "id1000000774165994",
     "group": "goals",
     "label": "Under 3.5 γκολ",
@@ -8125,8 +8105,8 @@
     "match": "🇪🇺 Villarreal – PSG",
     "outcome": "1013",
     "price": 1.98,
-    "prob": 0.4861,
-    "score": -3.74,
+    "prob": 0.4873,
+    "score": -3.51,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -8397,8 +8377,8 @@
    {
     "book": "stoiximan",
     "drop": -1.9,
-    "edge": 0.7,
-    "fair": 2.285,
+    "edge": 0.8,
+    "fair": 2.281,
     "fid": "id1000001872339988",
     "fxi": {
      "categoryName": "England",
@@ -8416,8 +8396,8 @@
     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Derby – Norwich",
     "outcome": "10807",
     "price": 2.3,
-    "prob": 0.4376,
-    "score": 0.66,
+    "prob": 0.4384,
+    "score": 0.83,
     "spec": {
      "line": 10.5,
      "side": "over",
@@ -9011,22 +8991,19 @@
    },
    {
     "book": "stoiximan",
-    "drop": 2.4,
-    "edge": -0.9,
-    "fair": 1.716,
+    "drop": 0.0,
+    "edge": -0.6,
+    "fair": 1.66,
     "fid": "id1000001872339996",
-    "group": "btts",
-    "label": "Goal/Goal: Ναι",
-    "market": "104",
+    "group": "cards",
+    "label": "Κάρτες Under 4.5",
+    "market": "10930",
     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Watford – Lincoln",
-    "outcome": "104",
-    "price": 1.7,
-    "prob": 0.5828,
-    "score": -0.21,
-    "spec": {
-     "side": "yes",
-     "stat": "btts"
-    },
+    "outcome": "10931",
+    "price": 1.65,
+    "prob": 0.6024,
+    "score": -0.6,
+    "spec": null,
     "start": "2026-11-03T19:45:00.000Z"
    }
   ],
@@ -9963,8 +9940,8 @@
    {
     "book": "stoiximan",
     "drop": 19.3,
-    "edge": -3.0,
-    "fair": 2.32,
+    "edge": -3.1,
+    "fair": 2.322,
     "fid": "id1000046373835726",
     "fxi": {
      "categoryName": "International Clubs",
@@ -9982,8 +9959,8 @@
     "match": "🇪🇺 Jeonbuk – Johor Darul Ta'zim",
     "outcome": "103",
     "price": 2.25,
-    "prob": 0.431,
-    "score": 2.76,
+    "prob": 0.4307,
+    "score": 2.68,
     "spec": {
      "side": "2",
      "stat": "1x2"
@@ -9992,9 +9969,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 6.2,
-    "edge": -1.1,
-    "fair": 1.719,
+    "drop": 6.8,
+    "edge": -0.3,
+    "fair": 1.705,
     "fid": "id1000046373835726",
     "group": "goals",
     "label": "Over 2.5 γκολ",
@@ -10002,8 +9979,8 @@
     "match": "🇪🇺 Jeonbuk – Johor Darul Ta'zim",
     "outcome": "1010",
     "price": 1.7,
-    "prob": 0.5817,
-    "score": 0.76,
+    "prob": 0.5865,
+    "score": 1.76,
     "spec": {
      "line": 2.5,
      "side": "over",
@@ -10014,8 +9991,8 @@
    {
     "book": "stoiximan",
     "drop": 6.5,
-    "edge": -3.5,
-    "fair": 2.745,
+    "edge": -3.0,
+    "fair": 2.733,
     "fid": "id1000046373835726",
     "group": "goals",
     "label": "Over 3.5 γκολ",
@@ -10023,8 +10000,8 @@
     "match": "🇪🇺 Jeonbuk – Johor Darul Ta'zim",
     "outcome": "1012",
     "price": 2.65,
-    "prob": 0.3643,
-    "score": -1.52,
+    "prob": 0.3659,
+    "score": -1.09,
     "spec": {
      "line": 3.5,
      "side": "over",
@@ -10053,66 +10030,12 @@
     "start": "2026-11-03T10:00:00.000Z"
    }
   ],
-  "id1000046373835728": [
-   {
-    "book": "stoiximan",
-    "drop": 4.6,
-    "edge": -2.2,
-    "fair": 2.168,
-    "fid": "id1000046373835728",
-    "fxi": {
-     "categoryName": "International Clubs",
-     "categorySlug": "international-clubs",
-     "participant1Name": "Vissel Kobe",
-     "participant1ShortName": "Kobe",
-     "participant2Name": "Ratchaburi FC",
-     "participant2ShortName": "Ratchaburi",
-     "startTime": "2026-11-03T10:00:00.000Z",
-     "tournamentName": "AFC Champions League Elite"
-    },
-    "group": "goals",
-    "label": "Ημίχρονο Over 1.5 γκολ",
-    "market": "10258",
-    "match": "🇪🇺 Kobe – Ratchaburi",
-    "outcome": "10258",
-    "price": 2.12,
-    "prob": 0.4613,
-    "score": -0.83,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "ht"
-    },
-    "start": "2026-11-03T10:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 3.0,
-    "edge": -2.6,
-    "fair": 1.489,
-    "fid": "id1000046373835728",
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
-    "match": "🇪🇺 Kobe – Ratchaburi",
-    "outcome": "1010",
-    "price": 1.45,
-    "prob": 0.6716,
-    "score": -1.73,
-    "spec": {
-     "line": 2.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-03T10:00:00.000Z"
-   }
-  ],
   "id1000046373835730": [
    {
     "book": "stoiximan",
-    "drop": 6.5,
-    "edge": 0.6,
-    "fair": 1.591,
+    "drop": 6.1,
+    "edge": 0.1,
+    "fair": 1.598,
     "fid": "id1000046373835730",
     "fxi": {
      "categoryName": "International Clubs",
@@ -10130,8 +10053,8 @@
     "match": "🇪🇺 Kashiwa – Daejeon Citizen",
     "outcome": "1010",
     "price": 1.6,
-    "prob": 0.6285,
-    "score": 2.51,
+    "prob": 0.6258,
+    "score": 1.96,
     "spec": {
      "line": 2.5,
      "side": "over",
@@ -10141,9 +10064,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 8.7,
-    "edge": -0.4,
-    "fair": 2.429,
+    "drop": 7.9,
+    "edge": -1.3,
+    "fair": 2.451,
     "fid": "id1000046373835730",
     "group": "goals",
     "label": "Over 3.5 γκολ",
@@ -10151,8 +10074,8 @@
     "match": "🇪🇺 Kashiwa – Daejeon Citizen",
     "outcome": "1012",
     "price": 2.42,
-    "prob": 0.4117,
-    "score": 2.24,
+    "prob": 0.408,
+    "score": 1.11,
     "spec": {
      "line": 3.5,
      "side": "over",
@@ -10162,9 +10085,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -2.6,
-    "edge": -1.8,
-    "fair": 1.813,
+    "drop": -1.4,
+    "edge": -0.7,
+    "fair": 1.793,
     "fid": "id1000046373835730",
     "group": "btts",
     "label": "Goal/Goal: Ναι",
@@ -10172,8 +10095,8 @@
     "match": "🇪🇺 Kashiwa – Daejeon Citizen",
     "outcome": "104",
     "price": 1.78,
-    "prob": 0.5516,
-    "score": -1.82,
+    "prob": 0.5577,
+    "score": -0.73,
     "spec": {
      "side": "yes",
      "stat": "btts"
@@ -10200,6 +10123,38 @@
      "stat": "corners"
     },
     "start": "2026-11-03T10:00:00.000Z"
+   }
+  ],
+  "id1000046373835732": [
+   {
+    "book": "stoiximan",
+    "drop": -6.1,
+    "edge": -3.6,
+    "fair": 1.898,
+    "fid": "id1000046373835732",
+    "fxi": {
+     "categoryName": "International Clubs",
+     "categorySlug": "international-clubs",
+     "participant1Name": "Port FC",
+     "participant1ShortName": "Port FC",
+     "participant2Name": "Beijing Guoan",
+     "participant2ShortName": "Beijing Guoan",
+     "startTime": "2026-11-03T12:15:00.000Z",
+     "tournamentName": "AFC Champions League Elite"
+    },
+    "group": "1x2",
+    "label": "2 (Beijing Guoan)",
+    "market": "101",
+    "match": "🇪🇺 Port FC – Beijing Guoan",
+    "outcome": "103",
+    "price": 1.83,
+    "prob": 0.5269,
+    "score": -3.58,
+    "spec": {
+     "side": "2",
+     "stat": "1x2"
+    },
+    "start": "2026-11-03T12:15:00.000Z"
    }
   ],
   "id1000046373835734": [
@@ -10257,30 +10212,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 1.9,
-    "edge": -1.3,
-    "fair": 2.027,
-    "fid": "id1000046373835734",
-    "group": "goals",
-    "label": "Under 2.5 γκολ",
-    "market": "1010",
-    "match": "🇪🇺 Cong An – Kyoto Sanga",
-    "outcome": "1011",
-    "price": 2.0,
-    "prob": 0.4933,
-    "score": -0.77,
-    "spec": {
-     "line": 2.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-03T12:15:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 1.6,
-    "edge": -1.7,
-    "fair": 1.424,
+    "drop": 1.5,
+    "edge": -1.8,
+    "fair": 1.425,
     "fid": "id1000046373835734",
     "group": "goals",
     "label": "Under 3.5 γκολ",
@@ -10288,10 +10222,31 @@
     "match": "🇪🇺 Cong An – Kyoto Sanga",
     "outcome": "1013",
     "price": 1.4,
-    "prob": 0.7022,
-    "score": -1.2,
+    "prob": 0.7018,
+    "score": -1.29,
     "spec": {
      "line": 3.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-03T12:15:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 1.4,
+    "edge": -1.8,
+    "fair": 2.036,
+    "fid": "id1000046373835734",
+    "group": "goals",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
+    "match": "🇪🇺 Cong An – Kyoto Sanga",
+    "outcome": "1011",
+    "price": 2.0,
+    "prob": 0.4912,
+    "score": -1.34,
+    "spec": {
+     "line": 2.5,
      "side": "under",
      "stat": "goals"
     },
@@ -10353,9 +10308,9 @@
   "id1000066873835250": [
    {
     "book": "stoiximan",
-    "drop": 14.9,
-    "edge": 7.0,
-    "fair": 2.758,
+    "drop": 15.3,
+    "edge": 7.4,
+    "fair": 2.747,
     "fid": "id1000066873835250",
     "fxi": {
      "categoryName": "International Clubs",
@@ -10373,8 +10328,8 @@
     "match": "🇪🇺 Al Hussein Irbid – Al Shorta",
     "outcome": "102",
     "price": 2.95,
-    "prob": 0.3626,
-    "score": 11.44,
+    "prob": 0.364,
+    "score": 11.97,
     "spec": {
      "side": "x",
      "stat": "1x2"
@@ -10383,9 +10338,30 @@
    },
    {
     "book": "stoiximan",
-    "drop": 0.8,
-    "edge": -3.3,
-    "fair": 1.499,
+    "drop": 2.7,
+    "edge": -1.7,
+    "fair": 1.383,
+    "fid": "id1000066873835250",
+    "group": "goals",
+    "label": "Over 1.5 γκολ",
+    "market": "108",
+    "match": "🇪🇺 Al Hussein Irbid – Al Shorta",
+    "outcome": "108",
+    "price": 1.36,
+    "prob": 0.7231,
+    "score": -0.86,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-03T16:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.4,
+    "edge": -3.7,
+    "fair": 1.505,
     "fid": "id1000066873835250",
     "group": "goals",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -10393,8 +10369,8 @@
     "match": "🇪🇺 Al Hussein Irbid – Al Shorta",
     "outcome": "10256",
     "price": 1.45,
-    "prob": 0.6671,
-    "score": -3.03,
+    "prob": 0.6645,
+    "score": -3.55,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -10405,43 +10381,43 @@
   ]
  },
  "checked": {
-  "id1000000774165976": "2026-11-03T09:05:27Z",
-  "id1000000774165978": "2026-11-03T09:05:27Z",
-  "id1000000774165980": "2026-11-03T09:05:27Z",
-  "id1000000774165984": "2026-11-03T09:05:27Z",
-  "id1000000774165986": "2026-11-03T09:05:27Z",
-  "id1000000774165988": "2026-11-03T09:05:27Z",
-  "id1000000774165990": "2026-11-03T09:05:27Z",
-  "id1000000774165992": "2026-11-03T09:05:27Z",
-  "id1000000774165994": "2026-11-03T09:05:27Z",
-  "id1000001872339984": "2026-11-03T09:05:27Z",
-  "id1000001872339986": "2026-11-03T09:05:27Z",
-  "id1000001872339988": "2026-11-03T09:05:27Z",
-  "id1000001872339990": "2026-11-03T09:05:27Z",
-  "id1000001872339992": "2026-11-03T09:05:27Z",
-  "id1000001872339994": "2026-11-03T09:05:27Z",
-  "id1000001872339996": "2026-11-03T09:05:27Z",
-  "id1000001872339998": "2026-11-03T09:05:27Z",
-  "id1000001872340004": "2026-11-03T09:05:27Z",
-  "id1000002474821224": "2026-11-03T09:05:27Z",
-  "id1000002476029384": "2026-11-03T09:05:27Z",
-  "id1000004067126866": "2026-11-03T09:05:27Z",
-  "id1000022972230832": "2026-11-03T09:05:27Z",
-  "id1000022972231150": "2026-11-03T09:05:27Z",
-  "id1000032566887150": "2026-11-03T09:05:27Z",
-  "id1000032566887156": "2026-11-03T09:05:27Z",
-  "id1000046373835718": "2026-11-03T09:05:27Z",
-  "id1000046373835720": "2026-11-03T09:05:27Z",
+  "id1000000774165976": "2026-11-03T09:10:33Z",
+  "id1000000774165978": "2026-11-03T09:10:33Z",
+  "id1000000774165980": "2026-11-03T09:10:33Z",
+  "id1000000774165984": "2026-11-03T09:10:33Z",
+  "id1000000774165986": "2026-11-03T09:10:33Z",
+  "id1000000774165988": "2026-11-03T09:10:33Z",
+  "id1000000774165990": "2026-11-03T09:10:33Z",
+  "id1000000774165992": "2026-11-03T09:10:33Z",
+  "id1000000774165994": "2026-11-03T09:10:33Z",
+  "id1000001872339984": "2026-11-03T09:10:33Z",
+  "id1000001872339986": "2026-11-03T09:10:33Z",
+  "id1000001872339988": "2026-11-03T09:10:33Z",
+  "id1000001872339990": "2026-11-03T09:10:33Z",
+  "id1000001872339992": "2026-11-03T09:10:33Z",
+  "id1000001872339994": "2026-11-03T09:10:33Z",
+  "id1000001872339996": "2026-11-03T09:10:33Z",
+  "id1000001872339998": "2026-11-03T09:10:33Z",
+  "id1000001872340004": "2026-11-03T09:10:33Z",
+  "id1000002474821224": "2026-11-03T09:10:33Z",
+  "id1000002476029384": "2026-11-03T09:10:33Z",
+  "id1000004067126866": "2026-11-03T09:10:33Z",
+  "id1000022972230832": "2026-11-03T09:10:33Z",
+  "id1000022972231150": "2026-11-03T09:10:33Z",
+  "id1000032566887150": "2026-11-03T09:10:33Z",
+  "id1000032566887156": "2026-11-03T09:10:33Z",
+  "id1000046373835718": "2026-11-03T09:10:33Z",
+  "id1000046373835720": "2026-11-03T09:10:33Z",
   "id1000046373835724": "2026-11-03T07:40:36Z",
-  "id1000046373835726": "2026-11-03T09:05:27Z",
-  "id1000046373835728": "2026-11-03T09:05:27Z",
-  "id1000046373835730": "2026-11-03T09:05:27Z",
-  "id1000046373835732": "2026-11-03T09:05:27Z",
-  "id1000046373835734": "2026-11-03T09:05:27Z",
-  "id1000066873835248": "2026-11-03T09:05:27Z",
-  "id1000066873835250": "2026-11-03T09:05:27Z",
-  "id1000229873206566": "2026-11-03T09:05:27Z",
-  "id1000229873206568": "2026-11-03T09:05:27Z"
+  "id1000046373835726": "2026-11-03T09:10:33Z",
+  "id1000046373835728": "2026-11-03T09:10:33Z",
+  "id1000046373835730": "2026-11-03T09:10:33Z",
+  "id1000046373835732": "2026-11-03T09:10:33Z",
+  "id1000046373835734": "2026-11-03T09:10:33Z",
+  "id1000066873835248": "2026-11-03T09:10:33Z",
+  "id1000066873835250": "2026-11-03T09:10:33Z",
+  "id1000229873206566": "2026-11-03T09:10:33Z",
+  "id1000229873206568": "2026-11-03T09:10:33Z"
  },
  "diag": {
   "2026-11-01": {
@@ -15266,12 +15242,14 @@
    "odds_high": [
     "id1000001872339996|101|103|1x2",
     "id1000032566887150|10258|10258|goals",
+    "id1000046373835730|101|103|1x2",
     "id1000046373835732|101|101|1x2",
     "id1000066873835250|101|102|1x2"
    ],
    "prob_low": [
     "id1000001872339996|101|103|1x2",
     "id1000032566887150|10258|10258|goals",
+    "id1000046373835730|101|103|1x2",
     "id1000046373835732|101|101|1x2",
     "id1000066873835250|101|102|1x2"
    ],
