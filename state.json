@@ -7780,7 +7780,7 @@
    {
     "book": "stoiximan",
     "drop": 12.1,
-    "edge": -2.5,
+    "edge": -3.2,
     "fair": 1.405,
     "fid": "id1000000774165990",
     "group": "1x2",
@@ -7788,9 +7788,9 @@
     "market": "101",
     "match": "🇪🇺 LASK – Slovan Bratislava",
     "outcome": "101",
-    "price": 1.37,
+    "price": 1.36,
     "prob": 0.7117,
-    "score": 1.13,
+    "score": 0.41,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -7945,22 +7945,22 @@
    },
    {
     "book": "stoiximan",
-    "drop": -10.7,
-    "edge": -3.4,
-    "fair": 2.692,
+    "drop": -5.9,
+    "edge": -3.9,
+    "fair": 1.738,
     "fid": "id1000000774165992",
     "group": "goals",
-    "label": "Under 2.5 γκολ",
-    "market": "1010",
+    "label": "Ημίχρονο Under 1.5 γκολ",
+    "market": "10258",
     "match": "🇪🇺 Manchester United – Roma",
-    "outcome": "1011",
-    "price": 2.6,
-    "prob": 0.3715,
-    "score": -3.42,
+    "outcome": "10259",
+    "price": 1.67,
+    "prob": 0.5754,
+    "score": -3.91,
     "spec": {
-     "line": 2.5,
+     "line": 1.5,
      "side": "under",
-     "stat": "goals"
+     "stat": "ht"
     },
     "start": "2026-11-03T20:00:00.000Z"
    }
@@ -8013,8 +8013,8 @@
    {
     "book": "stoiximan",
     "drop": 0.7,
-    "edge": -2.0,
-    "fair": 1.817,
+    "edge": -1.9,
+    "fair": 1.815,
     "fid": "id1000000774165994",
     "group": "1x2",
     "label": "2 (PSG)",
@@ -8022,8 +8022,8 @@
     "match": "🇪🇺 Villarreal – PSG",
     "outcome": "103",
     "price": 1.78,
-    "prob": 0.5504,
-    "score": -1.83,
+    "prob": 0.551,
+    "score": -1.72,
     "spec": {
      "side": "2",
      "stat": "1x2"
@@ -8249,9 +8249,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 0.7,
-    "edge": 1.4,
-    "fair": 1.479,
+    "drop": 0.8,
+    "edge": 1.6,
+    "fair": 1.477,
     "fid": "id1000001872339986",
     "group": "goals",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -8259,8 +8259,8 @@
     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Blackburn – Stoke",
     "outcome": "10256",
     "price": 1.5,
-    "prob": 0.6761,
-    "score": 1.63,
+    "prob": 0.677,
+    "score": 1.81,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -8271,8 +8271,8 @@
    {
     "book": "stoiximan",
     "drop": 2.3,
-    "edge": -0.7,
-    "fair": 3.173,
+    "edge": -0.6,
+    "fair": 3.17,
     "fid": "id1000001872339986",
     "group": "goals",
     "label": "Ημίχρονο Over 1.5 γκολ",
@@ -8280,8 +8280,8 @@
     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Blackburn – Stoke",
     "outcome": "10258",
     "price": 3.15,
-    "prob": 0.3152,
-    "score": -0.05,
+    "prob": 0.3155,
+    "score": 0.05,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -8549,30 +8549,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 1.5,
-    "edge": -2.6,
-    "fair": 1.427,
-    "fid": "id1000001872339990",
-    "group": "goals",
-    "label": "Ημίχρονο Under 1.5 γκολ",
-    "market": "10258",
-    "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Portsmouth – Swansea",
-    "outcome": "10259",
-    "price": 1.39,
-    "prob": 0.7008,
-    "score": -2.14,
-    "spec": {
-     "line": 1.5,
-     "side": "under",
-     "stat": "ht"
-    },
-    "start": "2026-11-03T19:45:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -1.3,
-    "edge": -2.5,
-    "fair": 1.507,
+    "drop": -0.6,
+    "edge": -1.8,
+    "fair": 1.497,
     "fid": "id1000001872339990",
     "group": "goals",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -8580,12 +8559,33 @@
     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Portsmouth – Swansea",
     "outcome": "10256",
     "price": 1.47,
-    "prob": 0.6636,
-    "score": -2.46,
+    "prob": 0.668,
+    "score": -1.8,
     "spec": {
      "line": 0.5,
      "side": "over",
      "stat": "ht"
+    },
+    "start": "2026-11-03T19:45:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -4.8,
+    "edge": -2.6,
+    "fair": 1.437,
+    "fid": "id1000001872339990",
+    "group": "goals",
+    "label": "Over 1.5 γκολ",
+    "market": "108",
+    "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Portsmouth – Swansea",
+    "outcome": "108",
+    "price": 1.4,
+    "prob": 0.6959,
+    "score": -2.57,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "goals"
     },
     "start": "2026-11-03T19:45:00.000Z"
    }
@@ -8665,6 +8665,27 @@
    },
    {
     "book": "stoiximan",
+    "drop": -1.1,
+    "edge": -2.2,
+    "fair": 1.421,
+    "fid": "id1000001872339992",
+    "group": "goals",
+    "label": "Ημίχρονο Over 0.5 γκολ",
+    "market": "10256",
+    "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Preston – Sheffield United",
+    "outcome": "10256",
+    "price": 1.39,
+    "prob": 0.7037,
+    "score": -2.18,
+    "spec": {
+     "line": 0.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-11-03T19:45:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": -0.5,
     "edge": -2.6,
     "fair": 1.612,
@@ -8682,22 +8703,22 @@
    },
    {
     "book": "stoiximan",
-    "drop": -1.1,
-    "edge": -2.9,
-    "fair": 1.421,
+    "drop": -1.4,
+    "edge": -3.4,
+    "fair": 1.449,
     "fid": "id1000001872339992",
     "group": "goals",
-    "label": "Ημίχρονο Over 0.5 γκολ",
-    "market": "10256",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Preston – Sheffield United",
-    "outcome": "10256",
-    "price": 1.38,
-    "prob": 0.7037,
-    "score": -2.89,
+    "outcome": "1013",
+    "price": 1.4,
+    "prob": 0.6901,
+    "score": -3.38,
     "spec": {
-     "line": 0.5,
-     "side": "over",
-     "stat": "ht"
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-11-03T19:45:00.000Z"
    }
@@ -8865,26 +8886,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 11.4,
-    "edge": 0.2,
-    "fair": 2.815,
-    "fid": "id1000001872339996",
-    "group": "1x2",
-    "label": "2 (Lincoln)",
-    "market": "101",
-    "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Watford – Lincoln",
-    "outcome": "103",
-    "price": 2.82,
-    "prob": 0.3552,
-    "score": 3.59,
-    "spec": {
-     "side": "2",
-     "stat": "1x2"
-    },
-    "start": "2026-11-03T19:45:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 0.0,
     "edge": 3.1,
     "fair": 1.813,
@@ -8906,8 +8907,28 @@
    },
    {
     "book": "stoiximan",
+    "drop": 11.4,
+    "edge": -2.3,
+    "fair": 2.815,
+    "fid": "id1000001872339996",
+    "group": "1x2",
+    "label": "2 (Lincoln)",
+    "market": "101",
+    "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Watford – Lincoln",
+    "outcome": "103",
+    "price": 2.75,
+    "prob": 0.3552,
+    "score": 1.1,
+    "spec": {
+     "side": "2",
+     "stat": "1x2"
+    },
+    "start": "2026-11-03T19:45:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 1.4,
-    "edge": 0.9,
+    "edge": -0.5,
     "fair": 1.427,
     "fid": "id1000001872339996",
     "group": "goals",
@@ -8915,9 +8936,9 @@
     "market": "10256",
     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Watford – Lincoln",
     "outcome": "10256",
-    "price": 1.44,
+    "price": 1.42,
     "prob": 0.7008,
-    "score": 1.32,
+    "score": -0.08,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -8944,22 +8965,22 @@
    },
    {
     "book": "stoiximan",
-    "drop": 3.1,
-    "edge": -1.7,
-    "fair": 2.92,
+    "drop": -1.9,
+    "edge": -2.9,
+    "fair": 1.432,
     "fid": "id1000001872339996",
     "group": "goals",
-    "label": "Ημίχρονο Over 1.5 γκολ",
-    "market": "10258",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Watford – Lincoln",
-    "outcome": "10258",
-    "price": 2.87,
-    "prob": 0.3425,
-    "score": -0.77,
+    "outcome": "1013",
+    "price": 1.39,
+    "prob": 0.6983,
+    "score": -2.93,
     "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "ht"
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-11-03T19:45:00.000Z"
    }
@@ -9225,9 +9246,9 @@
   "id1000002474821224": [
    {
     "book": "stoiximan",
-    "drop": 1.8,
-    "edge": -3.2,
-    "fair": 1.549,
+    "drop": 2.7,
+    "edge": -3.6,
+    "fair": 2.334,
     "fid": "id1000002474821224",
     "fxi": {
      "categoryName": "England",
@@ -9239,27 +9260,6 @@
      "startTime": "2026-11-03T19:45:00.000Z",
      "tournamentName": "League One"
     },
-    "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
-    "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Huddersfield – Luton",
-    "outcome": "1013",
-    "price": 1.5,
-    "prob": 0.6456,
-    "score": -2.63,
-    "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-03T19:45:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 2.7,
-    "edge": -3.6,
-    "fair": 2.334,
-    "fid": "id1000002474821224",
     "group": "corners",
     "label": "Κόρνερ Under 9.5",
     "market": "10803",
@@ -9274,14 +9274,35 @@
      "stat": "corners"
     },
     "start": "2026-11-03T19:45:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 1.7,
+    "edge": -3.4,
+    "fair": 1.552,
+    "fid": "id1000002474821224",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Huddersfield – Luton",
+    "outcome": "1013",
+    "price": 1.5,
+    "prob": 0.6443,
+    "score": -2.85,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-03T19:45:00.000Z"
    }
   ],
   "id1000002476029384": [
    {
     "book": "stoiximan",
-    "drop": -3.0,
-    "edge": -0.0,
-    "fair": 2.151,
+    "drop": 19.8,
+    "edge": -3.6,
+    "fair": 2.23,
     "fid": "id1000002476029384",
     "fxi": {
      "categoryName": "England",
@@ -9293,6 +9314,26 @@
      "startTime": "2026-11-03T19:45:00.000Z",
      "tournamentName": "League One"
     },
+    "group": "1x2",
+    "label": "2 (Mansfield)",
+    "market": "101",
+    "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Wigan – Mansfield",
+    "outcome": "103",
+    "price": 2.15,
+    "prob": 0.4484,
+    "score": 2.35,
+    "spec": {
+     "side": "2",
+     "stat": "1x2"
+    },
+    "start": "2026-11-03T19:45:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -3.0,
+    "edge": -0.0,
+    "fair": 2.151,
+    "fid": "id1000002476029384",
     "group": "corners",
     "label": "Κόρνερ Over 10.5",
     "market": "10807",
@@ -9311,8 +9352,8 @@
    {
     "book": "stoiximan",
     "drop": 5.9,
-    "edge": -3.5,
-    "fair": 2.664,
+    "edge": -3.4,
+    "fair": 2.661,
     "fid": "id1000002476029384",
     "group": "goals",
     "label": "Ημίχρονο Over 1.5 γκολ",
@@ -9320,8 +9361,8 @@
     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Wigan – Mansfield",
     "outcome": "10258",
     "price": 2.57,
-    "prob": 0.3754,
-    "score": -1.74,
+    "prob": 0.3758,
+    "score": -1.64,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -9331,9 +9372,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 4.8,
-    "edge": -3.6,
-    "fair": 1.785,
+    "drop": 5.1,
+    "edge": -3.3,
+    "fair": 1.779,
     "fid": "id1000002476029384",
     "group": "goals",
     "label": "Over 2.5 γκολ",
@@ -9341,8 +9382,8 @@
     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Wigan – Mansfield",
     "outcome": "1010",
     "price": 1.72,
-    "prob": 0.5602,
-    "score": -2.2,
+    "prob": 0.5621,
+    "score": -1.79,
     "spec": {
      "line": 2.5,
      "side": "over",
@@ -10002,9 +10043,9 @@
   "id1000046373835732": [
    {
     "book": "stoiximan",
-    "drop": -1.4,
-    "edge": -2.5,
-    "fair": 2.379,
+    "drop": 1.3,
+    "edge": -2.0,
+    "fair": 2.367,
     "fid": "id1000046373835732",
     "fxi": {
      "categoryName": "International Clubs",
@@ -10016,14 +10057,35 @@
      "startTime": "2026-11-03T12:15:00.000Z",
      "tournamentName": "AFC Champions League Elite"
     },
+    "group": "corners",
+    "label": "Κόρνερ Over 10.5",
+    "market": "10807",
+    "match": "🇪🇺 Port FC – Beijing Guoan",
+    "outcome": "10807",
+    "price": 2.32,
+    "prob": 0.4225,
+    "score": -1.58,
+    "spec": {
+     "line": 10.5,
+     "side": "over",
+     "stat": "corners"
+    },
+    "start": "2026-11-03T12:15:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -0.9,
+    "edge": -1.9,
+    "fair": 2.365,
+    "fid": "id1000046373835732",
     "group": "goals",
     "label": "Ημίχρονο Over 1.5 γκολ",
     "market": "10258",
     "match": "🇪🇺 Port FC – Beijing Guoan",
     "outcome": "10258",
     "price": 2.32,
-    "prob": 0.4203,
-    "score": -2.48,
+    "prob": 0.4228,
+    "score": -1.9,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -10033,9 +10095,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -2.7,
-    "edge": -3.0,
-    "fair": 1.598,
+    "drop": -2.2,
+    "edge": -2.5,
+    "fair": 1.59,
     "fid": "id1000046373835732",
     "group": "goals",
     "label": "Over 2.5 γκολ",
@@ -10043,8 +10105,8 @@
     "match": "🇪🇺 Port FC – Beijing Guoan",
     "outcome": "1010",
     "price": 1.55,
-    "prob": 0.6258,
-    "score": -3.0,
+    "prob": 0.6289,
+    "score": -2.52,
     "spec": {
      "line": 2.5,
      "side": "over",
@@ -10055,8 +10117,8 @@
    {
     "book": "stoiximan",
     "drop": -8.1,
-    "edge": -3.3,
-    "fair": 1.933,
+    "edge": -3.2,
+    "fair": 1.932,
     "fid": "id1000046373835732",
     "group": "1x2",
     "label": "2 (Beijing Guoan)",
@@ -10064,8 +10126,8 @@
     "match": "🇪🇺 Port FC – Beijing Guoan",
     "outcome": "103",
     "price": 1.87,
-    "prob": 0.5173,
-    "score": -3.26,
+    "prob": 0.5176,
+    "score": -3.21,
     "spec": {
      "side": "2",
      "stat": "1x2"
@@ -10128,9 +10190,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 1.0,
-    "edge": -2.3,
-    "fair": 1.433,
+    "drop": 0.9,
+    "edge": -2.4,
+    "fair": 1.435,
     "fid": "id1000046373835734",
     "group": "goals",
     "label": "Under 3.5 γκολ",
@@ -10138,8 +10200,8 @@
     "match": "🇪🇺 Cong An – Kyoto Sanga",
     "outcome": "1013",
     "price": 1.4,
-    "prob": 0.6978,
-    "score": -2.0,
+    "prob": 0.6969,
+    "score": -2.18,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -10149,9 +10211,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.5,
-    "edge": -2.4,
-    "fair": 2.275,
+    "drop": -1.4,
+    "edge": -3.3,
+    "fair": 2.295,
     "fid": "id1000046373835734",
     "group": "btts",
     "label": "Goal/Goal: Όχι",
@@ -10159,8 +10221,8 @@
     "match": "🇪🇺 Cong An – Kyoto Sanga",
     "outcome": "105",
     "price": 2.22,
-    "prob": 0.4396,
-    "score": -2.42,
+    "prob": 0.4357,
+    "score": -3.27,
     "spec": {
      "side": "no",
      "stat": "btts"
@@ -10170,8 +10232,8 @@
    {
     "book": "stoiximan",
     "drop": 0.0,
-    "edge": -3.1,
-    "fair": 2.063,
+    "edge": -3.3,
+    "fair": 2.068,
     "fid": "id1000046373835734",
     "group": "goals",
     "label": "Under 2.5 γκολ",
@@ -10179,8 +10241,8 @@
     "match": "🇪🇺 Cong An – Kyoto Sanga",
     "outcome": "1011",
     "price": 2.0,
-    "prob": 0.4847,
-    "score": -3.05,
+    "prob": 0.4836,
+    "score": -3.29,
     "spec": {
      "line": 2.5,
      "side": "under",
@@ -10255,43 +10317,43 @@
   ]
  },
  "checked": {
-  "id1000000774165976": "2026-11-03T09:55:42Z",
-  "id1000000774165978": "2026-11-03T09:55:42Z",
-  "id1000000774165980": "2026-11-03T09:55:42Z",
-  "id1000000774165984": "2026-11-03T09:55:42Z",
-  "id1000000774165986": "2026-11-03T09:55:42Z",
-  "id1000000774165988": "2026-11-03T09:55:42Z",
-  "id1000000774165990": "2026-11-03T09:55:42Z",
-  "id1000000774165992": "2026-11-03T09:55:42Z",
-  "id1000000774165994": "2026-11-03T09:55:42Z",
-  "id1000001872339984": "2026-11-03T09:55:42Z",
-  "id1000001872339986": "2026-11-03T09:55:42Z",
-  "id1000001872339988": "2026-11-03T09:55:42Z",
-  "id1000001872339990": "2026-11-03T09:55:42Z",
-  "id1000001872339992": "2026-11-03T09:55:42Z",
-  "id1000001872339994": "2026-11-03T09:55:42Z",
-  "id1000001872339996": "2026-11-03T09:55:42Z",
-  "id1000001872339998": "2026-11-03T09:55:42Z",
-  "id1000001872340004": "2026-11-03T09:55:42Z",
-  "id1000002474821224": "2026-11-03T09:55:42Z",
-  "id1000002476029384": "2026-11-03T09:55:42Z",
-  "id1000004067126866": "2026-11-03T09:55:42Z",
-  "id1000022972230832": "2026-11-03T09:55:42Z",
-  "id1000022972231150": "2026-11-03T09:55:42Z",
-  "id1000032566887150": "2026-11-03T09:55:42Z",
-  "id1000032566887156": "2026-11-03T09:55:42Z",
-  "id1000046373835718": "2026-11-03T09:55:42Z",
-  "id1000046373835720": "2026-11-03T09:55:42Z",
+  "id1000000774165976": "2026-11-03T10:00:54Z",
+  "id1000000774165978": "2026-11-03T10:00:54Z",
+  "id1000000774165980": "2026-11-03T10:00:54Z",
+  "id1000000774165984": "2026-11-03T10:00:54Z",
+  "id1000000774165986": "2026-11-03T10:00:54Z",
+  "id1000000774165988": "2026-11-03T10:00:54Z",
+  "id1000000774165990": "2026-11-03T10:00:54Z",
+  "id1000000774165992": "2026-11-03T10:00:54Z",
+  "id1000000774165994": "2026-11-03T10:00:54Z",
+  "id1000001872339984": "2026-11-03T10:00:54Z",
+  "id1000001872339986": "2026-11-03T10:00:54Z",
+  "id1000001872339988": "2026-11-03T10:00:54Z",
+  "id1000001872339990": "2026-11-03T10:00:54Z",
+  "id1000001872339992": "2026-11-03T10:00:54Z",
+  "id1000001872339994": "2026-11-03T10:00:54Z",
+  "id1000001872339996": "2026-11-03T10:00:54Z",
+  "id1000001872339998": "2026-11-03T10:00:54Z",
+  "id1000001872340004": "2026-11-03T10:00:54Z",
+  "id1000002474821224": "2026-11-03T10:00:54Z",
+  "id1000002476029384": "2026-11-03T10:00:54Z",
+  "id1000004067126866": "2026-11-03T10:00:54Z",
+  "id1000022972230832": "2026-11-03T10:00:54Z",
+  "id1000022972231150": "2026-11-03T10:00:54Z",
+  "id1000032566887150": "2026-11-03T10:00:54Z",
+  "id1000032566887156": "2026-11-03T10:00:54Z",
+  "id1000046373835718": "2026-11-03T10:00:54Z",
+  "id1000046373835720": "2026-11-03T10:00:54Z",
   "id1000046373835724": "2026-11-03T07:40:36Z",
   "id1000046373835726": "2026-11-03T09:55:42Z",
   "id1000046373835728": "2026-11-03T09:55:42Z",
   "id1000046373835730": "2026-11-03T09:55:42Z",
-  "id1000046373835732": "2026-11-03T09:55:42Z",
-  "id1000046373835734": "2026-11-03T09:55:42Z",
-  "id1000066873835248": "2026-11-03T09:55:42Z",
-  "id1000066873835250": "2026-11-03T09:55:42Z",
-  "id1000229873206566": "2026-11-03T09:55:42Z",
-  "id1000229873206568": "2026-11-03T09:55:42Z"
+  "id1000046373835732": "2026-11-03T10:00:54Z",
+  "id1000046373835734": "2026-11-03T10:00:54Z",
+  "id1000066873835248": "2026-11-03T10:00:54Z",
+  "id1000066873835250": "2026-11-03T10:00:54Z",
+  "id1000229873206566": "2026-11-03T10:00:54Z",
+  "id1000229873206568": "2026-11-03T10:00:54Z"
  },
  "diag": {
   "2026-11-01": {
@@ -82977,10 +83039,348 @@
    "prob": 0.03698,
    "result": null,
    "stake": null
+  },
+  "2026-11-03|0": {
+   "date": "2026-11-03",
+   "last_start": "2026-11-03T20:00:00.000Z",
+   "leg_data": [
+    {
+     "fid": "id1000000774165990",
+     "fxi": {
+      "categoryName": "International Clubs",
+      "categorySlug": "international-clubs",
+      "participant1Name": "LASK Linz",
+      "participant1ShortName": "LASK",
+      "participant2Name": "SK Slovan Bratislava",
+      "participant2ShortName": "Slovan Bratislava",
+      "startTime": "2026-11-03T20:00:00.000Z",
+      "tournamentName": "UEFA Champions League"
+     },
+     "label": "Over 2.5 γκολ",
+     "market": "1010",
+     "match": "🇪🇺 LASK – Slovan Bratislava",
+     "outcome": "1010",
+     "price": 1.34,
+     "prob": 0.7267,
+     "spec": {
+      "line": 2.5,
+      "side": "over",
+      "stat": "goals"
+     },
+     "start": "2026-11-03T20:00:00.000Z"
+    },
+    {
+     "fid": "id1000001872339986",
+     "fxi": {
+      "categoryName": "England",
+      "categorySlug": "england",
+      "participant1Name": "Blackburn Rovers",
+      "participant1ShortName": "Blackburn",
+      "participant2Name": "Stoke City",
+      "participant2ShortName": "Stoke",
+      "startTime": "2026-11-03T19:45:00.000Z",
+      "tournamentName": "Championship"
+     },
+     "label": "Ημίχρονο Over 0.5 γκολ",
+     "market": "10256",
+     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Blackburn – Stoke",
+     "outcome": "10256",
+     "price": 1.5,
+     "prob": 0.677,
+     "spec": {
+      "line": 0.5,
+      "side": "over",
+      "stat": "ht"
+     },
+     "start": "2026-11-03T19:45:00.000Z"
+    },
+    {
+     "fid": "id1000001872339996",
+     "fxi": {
+      "categoryName": "England",
+      "categorySlug": "england",
+      "participant1Name": "Watford FC",
+      "participant1ShortName": "Watford",
+      "participant2Name": "Lincoln City",
+      "participant2ShortName": "Lincoln",
+      "startTime": "2026-11-03T19:45:00.000Z",
+      "tournamentName": "Championship"
+     },
+     "label": "Ημίχρονο Over 0.5 γκολ",
+     "market": "10256",
+     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Watford – Lincoln",
+     "outcome": "10256",
+     "price": 1.42,
+     "prob": 0.7008,
+     "spec": {
+      "line": 0.5,
+      "side": "over",
+      "stat": "ht"
+     },
+     "start": "2026-11-03T19:45:00.000Z"
+    },
+    {
+     "fid": "id1000001872339984",
+     "fxi": {
+      "categoryName": "England",
+      "categorySlug": "england",
+      "participant1Name": "Birmingham City",
+      "participant1ShortName": "Birmingham",
+      "participant2Name": "Millwall FC",
+      "participant2ShortName": "Millwall",
+      "startTime": "2026-11-03T20:00:00.000Z",
+      "tournamentName": "Championship"
+     },
+     "label": "Ημίχρονο Over 0.5 γκολ",
+     "market": "10256",
+     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Birmingham – Millwall",
+     "outcome": "10256",
+     "price": 1.4,
+     "prob": 0.7067,
+     "spec": {
+      "line": 0.5,
+      "side": "over",
+      "stat": "ht"
+     },
+     "start": "2026-11-03T20:00:00.000Z"
+    },
+    {
+     "fid": "id1000022972230832",
+     "fxi": {
+      "categoryName": "Poland",
+      "categorySlug": "poland",
+      "participant1Name": "Chrobry Glogow",
+      "participant1ShortName": "Glogow",
+      "participant2Name": "MKS Arka Gdynia",
+      "participant2ShortName": "Arka Gdynia",
+      "startTime": "2026-11-03T17:00:00.000Z",
+      "tournamentName": "1. Liga"
+     },
+     "label": "Ημίχρονο Over 0.5 γκολ",
+     "market": "10256",
+     "match": "🇵🇱 Glogow – Arka Gdynia",
+     "outcome": "10256",
+     "price": 1.47,
+     "prob": 0.6684,
+     "spec": {
+      "line": 0.5,
+      "side": "over",
+      "stat": "ht"
+     },
+     "start": "2026-11-03T17:00:00.000Z"
+    },
+    {
+     "fid": "id1000001872339990",
+     "fxi": {
+      "categoryName": "England",
+      "categorySlug": "england",
+      "participant1Name": "Portsmouth FC",
+      "participant1ShortName": "Portsmouth",
+      "participant2Name": "Swansea City",
+      "participant2ShortName": "Swansea",
+      "startTime": "2026-11-03T19:45:00.000Z",
+      "tournamentName": "Championship"
+     },
+     "label": "Ημίχρονο Over 0.5 γκολ",
+     "market": "10256",
+     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Portsmouth – Swansea",
+     "outcome": "10256",
+     "price": 1.47,
+     "prob": 0.668,
+     "spec": {
+      "line": 0.5,
+      "side": "over",
+      "stat": "ht"
+     },
+     "start": "2026-11-03T19:45:00.000Z"
+    },
+    {
+     "fid": "id1000000774165986",
+     "fxi": {
+      "categoryName": "International Clubs",
+      "categorySlug": "international-clubs",
+      "participant1Name": "Feyenoord Rotterdam",
+      "participant1ShortName": "Feyenoord",
+      "participant2Name": "Inter Milano",
+      "participant2ShortName": "Inter",
+      "startTime": "2026-11-03T20:00:00.000Z",
+      "tournamentName": "UEFA Champions League"
+     },
+     "label": "Over 2.5 γκολ",
+     "market": "1010",
+     "match": "🇪🇺 Feyenoord – Inter",
+     "outcome": "1010",
+     "price": 1.45,
+     "prob": 0.6658,
+     "spec": {
+      "line": 2.5,
+      "side": "over",
+      "stat": "goals"
+     },
+     "start": "2026-11-03T20:00:00.000Z"
+    }
+   ],
+   "legs": [
+    "🇪🇺 LASK – Slovan Bratislava · Over 2.5 γκολ @1.34",
+    "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Blackburn – Stoke · Ημίχρονο Over 0.5 γκολ @1.50",
+    "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Watford – Lincoln · Ημίχρονο Over 0.5 γκολ @1.42",
+    "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Birmingham – Millwall · Ημίχρονο Over 0.5 γκολ @1.40",
+    "🇵🇱 Glogow – Arka Gdynia · Ημίχρονο Over 0.5 γκολ @1.47",
+    "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Portsmouth – Swansea · Ημίχρονο Over 0.5 γκολ @1.47",
+    "🇪🇺 Feyenoord – Inter · Over 2.5 γκολ @1.45"
+   ],
+   "msg_ids": [
+    570
+   ],
+   "name": "Δελτίο x10–30 · Over (έως 1.70)",
+   "odds": 12.52,
+   "prob": 0.07243,
+   "result": null,
+   "stake": null
+  },
+  "2026-11-03|1": {
+   "date": "2026-11-03",
+   "last_start": "2026-11-03T20:00:00.000Z",
+   "leg_data": [
+    {
+     "fid": "id1000066873835250",
+     "fxi": {
+      "categoryName": "International Clubs",
+      "categorySlug": "international-clubs",
+      "participant1Name": "Al Hussein Irbid",
+      "participant1ShortName": "Al Hussein Irbid",
+      "participant2Name": "Al Shorta SC",
+      "participant2ShortName": "Al Shorta",
+      "startTime": "2026-11-03T16:00:00.000Z",
+      "tournamentName": "AFC Champions League Two"
+     },
+     "label": "Χ",
+     "market": "101",
+     "match": "🇪🇺 Al Hussein Irbid – Al Shorta",
+     "outcome": "102",
+     "price": 2.95,
+     "prob": 0.3733,
+     "spec": {
+      "side": "x",
+      "stat": "1x2"
+     },
+     "start": "2026-11-03T16:00:00.000Z"
+    },
+    {
+     "fid": "id1000000774165988",
+     "fxi": {
+      "categoryName": "International Clubs",
+      "categorySlug": "international-clubs",
+      "participant1Name": "Bodoe/Glimt",
+      "participant1ShortName": "Bodoe/Glimt",
+      "participant2Name": "Lille OSC",
+      "participant2ShortName": "Lille",
+      "startTime": "2026-11-03T20:00:00.000Z",
+      "tournamentName": "UEFA Champions League"
+     },
+     "label": "Κόρνερ Under 8.5",
+     "market": "10799",
+     "match": "🇪🇺 Bodoe/Glimt – Lille",
+     "outcome": "10800",
+     "price": 2.8,
+     "prob": 0.3937,
+     "spec": {
+      "line": 8.5,
+      "side": "under",
+      "stat": "corners"
+     },
+     "start": "2026-11-03T20:00:00.000Z"
+    },
+    {
+     "fid": "id1000000774165986",
+     "fxi": {
+      "categoryName": "International Clubs",
+      "categorySlug": "international-clubs",
+      "participant1Name": "Feyenoord Rotterdam",
+      "participant1ShortName": "Feyenoord",
+      "participant2Name": "Inter Milano",
+      "participant2ShortName": "Inter",
+      "startTime": "2026-11-03T20:00:00.000Z",
+      "tournamentName": "UEFA Champions League"
+     },
+     "label": "Κάρτες Under 3.5",
+     "market": "10926",
+     "match": "🇪🇺 Feyenoord – Inter",
+     "outcome": "10927",
+     "price": 2.0,
+     "prob": 0.5206,
+     "spec": null,
+     "start": "2026-11-03T20:00:00.000Z"
+    },
+    {
+     "fid": "id1000000774165990",
+     "fxi": {
+      "categoryName": "International Clubs",
+      "categorySlug": "international-clubs",
+      "participant1Name": "LASK Linz",
+      "participant1ShortName": "LASK",
+      "participant2Name": "SK Slovan Bratislava",
+      "participant2ShortName": "Slovan Bratislava",
+      "startTime": "2026-11-03T20:00:00.000Z",
+      "tournamentName": "UEFA Champions League"
+     },
+     "label": "Over 3.5 γκολ",
+     "market": "1012",
+     "match": "🇪🇺 LASK – Slovan Bratislava",
+     "outcome": "1012",
+     "price": 1.83,
+     "prob": 0.5302,
+     "spec": {
+      "line": 3.5,
+      "side": "over",
+      "stat": "goals"
+     },
+     "start": "2026-11-03T20:00:00.000Z"
+    },
+    {
+     "fid": "id1000001872339996",
+     "fxi": {
+      "categoryName": "England",
+      "categorySlug": "england",
+      "participant1Name": "Watford FC",
+      "participant1ShortName": "Watford",
+      "participant2Name": "Lincoln City",
+      "participant2ShortName": "Lincoln",
+      "startTime": "2026-11-03T19:45:00.000Z",
+      "tournamentName": "Championship"
+     },
+     "label": "2 (Lincoln)",
+     "market": "101",
+     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Watford – Lincoln",
+     "outcome": "103",
+     "price": 2.75,
+     "prob": 0.3552,
+     "spec": {
+      "side": "2",
+      "stat": "1x2"
+     },
+     "start": "2026-11-03T19:45:00.000Z"
+    }
+   ],
+   "legs": [
+    "🇪🇺 Al Hussein Irbid – Al Shorta · Χ @2.95",
+    "🇪🇺 Bodoe/Glimt – Lille · Κόρνερ Under 8.5 @2.80",
+    "🇪🇺 Feyenoord – Inter · Κάρτες Under 3.5 @2.00",
+    "🇪🇺 LASK – Slovan Bratislava · Over 3.5 γκολ @1.83",
+    "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Watford – Lincoln · 2 (Lincoln) @2.75"
+   ],
+   "msg_ids": [
+    571
+   ],
+   "name": "Δελτίο x80–100 · από όλα",
+   "odds": 83.14,
+   "prob": 0.01441,
+   "result": null,
+   "stake": null
   }
  },
  "tickets_sent": {
-  "12:00": "2026-11-02",
+  "12:00": "2026-11-03",
   "23:45": "2026-11-02"
  }
 }
