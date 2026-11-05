@@ -7959,9 +7959,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -3.0,
-    "edge": -3.4,
-    "fair": 1.657,
+    "drop": -3.3,
+    "edge": -3.7,
+    "fair": 1.661,
     "fid": "id1000032566887144",
     "group": "goals",
     "label": "Under 3.5 γκολ",
@@ -7969,11 +7969,32 @@
     "match": "🇧🇷 Palmeiras – Remo",
     "outcome": "1013",
     "price": 1.6,
-    "prob": 0.6035,
-    "score": -3.44,
+    "prob": 0.602,
+    "score": -3.67,
     "spec": {
      "line": 3.5,
      "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-05T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.2,
+    "edge": -3.8,
+    "fair": 1.611,
+    "fid": "id1000032566887144",
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇧🇷 Palmeiras – Remo",
+    "outcome": "1010",
+    "price": 1.55,
+    "prob": 0.6207,
+    "score": -3.73,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
      "stat": "goals"
     },
     "start": "2026-11-05T22:30:00.000Z"
@@ -8250,29 +8271,8 @@
    },
    {
     "book": "stoiximan",
-    "drop": 8.0,
-    "edge": -3.6,
-    "fair": 2.304,
-    "fid": "id1000067974173022",
-    "group": "goals",
-    "label": "Ημίχρονο Over 1.5 γκολ",
-    "market": "10258",
-    "match": "🇪🇺 Milan – Ferencvarosi",
-    "outcome": "10258",
-    "price": 2.22,
-    "prob": 0.434,
-    "score": -1.25,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "ht"
-    },
-    "start": "2026-11-05T17:45:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 4.2,
-    "edge": -2.7,
+    "edge": -3.4,
     "fair": 1.356,
     "fid": "id1000067974173022",
     "group": "1x2",
@@ -8280,9 +8280,9 @@
     "market": "101",
     "match": "🇪🇺 Milan – Ferencvarosi",
     "outcome": "101",
-    "price": 1.32,
+    "price": 1.31,
     "prob": 0.7375,
-    "score": -1.38,
+    "score": -2.12,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -8292,7 +8292,7 @@
    {
     "book": "stoiximan",
     "drop": 1.0,
-    "edge": -3.6,
+    "edge": -2.7,
     "fair": 2.178,
     "fid": "id1000067974173022",
     "group": "corners",
@@ -8300,9 +8300,9 @@
     "market": "10803",
     "match": "🇪🇺 Milan – Ferencvarosi",
     "outcome": "10803",
-    "price": 2.1,
+    "price": 2.12,
     "prob": 0.4591,
-    "score": -3.29,
+    "score": -2.38,
     "spec": {
      "line": 9.5,
      "side": "over",
@@ -8313,7 +8313,7 @@
    {
     "book": "stoiximan",
     "drop": -13.4,
-    "edge": -3.8,
+    "edge": -2.7,
     "fair": 1.768,
     "fid": "id1000067974173022",
     "group": "goals",
@@ -8321,9 +8321,9 @@
     "market": "1012",
     "match": "🇪🇺 Milan – Ferencvarosi",
     "outcome": "1013",
-    "price": 1.7,
+    "price": 1.72,
     "prob": 0.5656,
-    "score": -3.85,
+    "score": -2.71,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -8398,6 +8398,27 @@
      "line": 10.5,
      "side": "over",
      "stat": "corners"
+    },
+    "start": "2026-11-05T17:45:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -8.5,
+    "edge": -3.1,
+    "fair": 1.652,
+    "fid": "id1000067974173024",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🇪🇺 Sparta Prague – Bournemouth",
+    "outcome": "1013",
+    "price": 1.6,
+    "prob": 0.6053,
+    "score": -3.15,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-11-05T17:45:00.000Z"
    },
@@ -8554,9 +8575,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 2.0,
-    "edge": -3.3,
-    "fair": 1.914,
+    "drop": 2.4,
+    "edge": -3.0,
+    "fair": 1.908,
     "fid": "id1000067974173026",
     "group": "1x2",
     "label": "1 (Crystal Palace)",
@@ -8564,8 +8585,8 @@
     "match": "🇪🇺 Crystal Palace – Hoffenheim",
     "outcome": "101",
     "price": 1.85,
-    "prob": 0.5225,
-    "score": -2.74,
+    "prob": 0.5241,
+    "score": -2.33,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -8576,9 +8597,9 @@
   "id1000067974173028": [
    {
     "book": "stoiximan",
-    "drop": 0.0,
-    "edge": -0.9,
-    "fair": 1.413,
+    "drop": 18.3,
+    "edge": -3.8,
+    "fair": 2.339,
     "fid": "id1000067974173028",
     "fxi": {
      "categoryName": "International Clubs",
@@ -8590,6 +8611,26 @@
      "startTime": "2026-11-05T17:45:00.000Z",
      "tournamentName": "UEFA Europa League"
     },
+    "group": "1x2",
+    "label": "2 (Plzen)",
+    "market": "101",
+    "match": "🇪🇺 Lillestroem – Plzen",
+    "outcome": "103",
+    "price": 2.25,
+    "prob": 0.4275,
+    "score": 1.7,
+    "spec": {
+     "side": "2",
+     "stat": "1x2"
+    },
+    "start": "2026-11-05T17:45:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.0,
+    "edge": -0.9,
+    "fair": 1.413,
+    "fid": "id1000067974173028",
     "group": "cards",
     "label": "Κάρτες Over 3.5",
     "market": "10926",
@@ -8799,27 +8840,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 15.7,
-    "edge": 2.9,
-    "fair": 1.797,
-    "fid": "id1000067974173032",
-    "group": "goals",
-    "label": "Under 2.5 γκολ",
-    "market": "1010",
-    "match": "🇪🇺 Levski Sofia – Jagiellonia",
-    "outcome": "1011",
-    "price": 1.85,
-    "prob": 0.5565,
-    "score": 7.65,
-    "spec": {
-     "line": 2.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-05T17:45:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 7.8,
     "edge": 4.0,
     "fair": 2.355,
@@ -8841,8 +8861,29 @@
    },
    {
     "book": "stoiximan",
+    "drop": 16.1,
+    "edge": -0.3,
+    "fair": 1.785,
+    "fid": "id1000067974173032",
+    "group": "goals",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
+    "match": "🇪🇺 Levski Sofia – Jagiellonia",
+    "outcome": "1011",
+    "price": 1.78,
+    "prob": 0.5602,
+    "score": 4.56,
+    "spec": {
+     "line": 2.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-05T17:45:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 8.9,
-    "edge": 2.2,
+    "edge": 1.7,
     "fair": 1.839,
     "fid": "id1000067974173032",
     "group": "corners",
@@ -8850,9 +8891,9 @@
     "market": "10803",
     "match": "🇪🇺 Levski Sofia – Jagiellonia",
     "outcome": "10804",
-    "price": 1.88,
+    "price": 1.87,
     "prob": 0.5438,
-    "score": 4.91,
+    "score": 4.36,
     "spec": {
      "line": 9.5,
      "side": "under",
@@ -8879,21 +8920,22 @@
    },
    {
     "book": "stoiximan",
-    "drop": 12.1,
-    "edge": 0.5,
-    "fair": 1.991,
+    "drop": 9.9,
+    "edge": -1.9,
+    "fair": 1.325,
     "fid": "id1000067974173032",
-    "group": "btts",
-    "label": "Goal/Goal: Όχι",
-    "market": "104",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
     "match": "🇪🇺 Levski Sofia – Jagiellonia",
-    "outcome": "105",
-    "price": 2.0,
-    "prob": 0.5023,
-    "score": 4.07,
+    "outcome": "1013",
+    "price": 1.3,
+    "prob": 0.7547,
+    "score": 1.07,
     "spec": {
-     "side": "no",
-     "stat": "btts"
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-11-05T17:45:00.000Z"
    }
@@ -8902,7 +8944,7 @@
    {
     "book": "stoiximan",
     "drop": 21.7,
-    "edge": -0.2,
+    "edge": -2.0,
     "fair": 1.653,
     "fid": "id1000067974173034",
     "fxi": {
@@ -8920,9 +8962,9 @@
     "market": "101",
     "match": "🇪🇺 Real Sociedad – Lyon",
     "outcome": "101",
-    "price": 1.65,
+    "price": 1.62,
     "prob": 0.605,
-    "score": 5.82,
+    "score": 4.0,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -9061,48 +9103,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 12.5,
-    "edge": 1.5,
-    "fair": 2.316,
-    "fid": "id1000067974173036",
-    "group": "goals",
-    "label": "Over 3.5 γκολ",
-    "market": "1012",
-    "match": "🇪🇺 Anderlecht – Salzburg",
-    "outcome": "1012",
-    "price": 2.35,
-    "prob": 0.4318,
-    "score": 5.23,
-    "spec": {
-     "line": 3.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-05T17:45:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 8.8,
-    "edge": 0.6,
-    "fair": 1.561,
-    "fid": "id1000067974173036",
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
-    "match": "🇪🇺 Anderlecht – Salzburg",
-    "outcome": "1010",
-    "price": 1.57,
-    "prob": 0.6406,
-    "score": 3.21,
-    "spec": {
-     "line": 2.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-05T17:45:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 5.4,
     "edge": 0.2,
     "fair": 1.866,
@@ -9124,21 +9124,43 @@
    },
    {
     "book": "stoiximan",
-    "drop": 5.4,
-    "edge": -3.3,
-    "fair": 1.52,
+    "drop": 12.5,
+    "edge": -2.0,
+    "fair": 2.316,
     "fid": "id1000067974173036",
-    "group": "btts",
-    "label": "Goal/Goal: Ναι",
-    "market": "104",
+    "group": "goals",
+    "label": "Over 3.5 γκολ",
+    "market": "1012",
     "match": "🇪🇺 Anderlecht – Salzburg",
-    "outcome": "104",
-    "price": 1.47,
-    "prob": 0.6579,
-    "score": -1.66,
+    "outcome": "1012",
+    "price": 2.27,
+    "prob": 0.4318,
+    "score": 1.78,
     "spec": {
-     "side": "yes",
-     "stat": "btts"
+     "line": 3.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-05T17:45:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 8.8,
+    "edge": -2.0,
+    "fair": 1.561,
+    "fid": "id1000067974173036",
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇪🇺 Anderlecht – Salzburg",
+    "outcome": "1010",
+    "price": 1.53,
+    "prob": 0.6406,
+    "score": 0.65,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
     },
     "start": "2026-11-05T17:45:00.000Z"
    },
@@ -9158,14 +9180,34 @@
     "score": -3.8,
     "spec": null,
     "start": "2026-11-05T17:45:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -5.0,
+    "edge": -3.9,
+    "fair": 2.103,
+    "fid": "id1000067974173036",
+    "group": "1x2",
+    "label": "1 (Anderlecht)",
+    "market": "101",
+    "match": "🇪🇺 Anderlecht – Salzburg",
+    "outcome": "101",
+    "price": 2.02,
+    "prob": 0.4755,
+    "score": -3.95,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-11-05T17:45:00.000Z"
    }
   ],
   "id1000067974173040": [
    {
     "book": "stoiximan",
-    "drop": 4.1,
-    "edge": -1.0,
-    "fair": 2.474,
+    "drop": 11.2,
+    "edge": -1.3,
+    "fair": 1.955,
     "fid": "id1000067974173040",
     "fxi": {
      "categoryName": "International Clubs",
@@ -9177,6 +9219,26 @@
      "startTime": "2026-11-05T20:00:00.000Z",
      "tournamentName": "UEFA Europa League"
     },
+    "group": "1x2",
+    "label": "2 (Juventus)",
+    "market": "101",
+    "match": "🇪🇺 Alkmaar – Juventus",
+    "outcome": "103",
+    "price": 1.93,
+    "prob": 0.5115,
+    "score": 2.07,
+    "spec": {
+     "side": "2",
+     "stat": "1x2"
+    },
+    "start": "2026-11-05T20:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 4.1,
+    "edge": -1.0,
+    "fair": 2.474,
+    "fid": "id1000067974173040",
     "group": "corners",
     "label": "Κόρνερ Under 8.5",
     "market": "10799",
@@ -9216,8 +9278,8 @@
    {
     "book": "stoiximan",
     "drop": 0.0,
-    "edge": -2.1,
-    "fair": 1.42,
+    "edge": -2.0,
+    "fair": 1.419,
     "fid": "id1000067974173040",
     "group": "goals",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -9225,8 +9287,8 @@
     "match": "🇪🇺 Alkmaar – Juventus",
     "outcome": "10256",
     "price": 1.39,
-    "prob": 0.7042,
-    "score": -2.11,
+    "prob": 0.7047,
+    "score": -2.04,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -9253,9 +9315,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -5.5,
-    "edge": -2.9,
-    "fair": 1.462,
+    "drop": -5.7,
+    "edge": -3.1,
+    "fair": 1.465,
     "fid": "id1000067974173040",
     "group": "goals",
     "label": "Under 3.5 γκολ",
@@ -9263,8 +9325,8 @@
     "match": "🇪🇺 Alkmaar – Juventus",
     "outcome": "1013",
     "price": 1.42,
-    "prob": 0.684,
-    "score": -2.87,
+    "prob": 0.6826,
+    "score": -3.07,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -9307,9 +9369,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 21.4,
-    "edge": -1.8,
-    "fair": 1.365,
+    "drop": 21.7,
+    "edge": -1.4,
+    "fair": 1.359,
     "fid": "id1000067974173042",
     "group": "1x2",
     "label": "1 (Leverkusen)",
@@ -9317,8 +9379,8 @@
     "match": "🇪🇺 Leverkusen – Marseille",
     "outcome": "101",
     "price": 1.34,
-    "prob": 0.7326,
-    "score": 4.17,
+    "prob": 0.7358,
+    "score": 4.6,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -9328,8 +9390,8 @@
    {
     "book": "stoiximan",
     "drop": 16.4,
-    "edge": -1.7,
-    "fair": 2.086,
+    "edge": -1.5,
+    "fair": 2.082,
     "fid": "id1000067974173042",
     "group": "goals",
     "label": "Ημίχρονο Over 1.5 γκολ",
@@ -9337,8 +9399,8 @@
     "match": "🇪🇺 Leverkusen – Marseille",
     "outcome": "10258",
     "price": 2.05,
-    "prob": 0.4794,
-    "score": 3.19,
+    "prob": 0.4803,
+    "score": 3.38,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -9613,9 +9675,9 @@
   "id1000067974173048": [
    {
     "book": "stoiximan",
-    "drop": 23.4,
-    "edge": 1.1,
-    "fair": 1.909,
+    "drop": 24.0,
+    "edge": 2.0,
+    "fair": 1.893,
     "fid": "id1000067974173048",
     "fxi": {
      "categoryName": "International Clubs",
@@ -9633,10 +9695,31 @@
     "match": "🇪🇺 Celta Vigo – Union Gilloise",
     "outcome": "1011",
     "price": 1.93,
-    "prob": 0.5238,
-    "score": 7.1,
+    "prob": 0.5283,
+    "score": 7.95,
     "spec": {
      "line": 2.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-05T20:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 17.1,
+    "edge": -0.6,
+    "fair": 1.378,
+    "fid": "id1000067974173048",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🇪🇺 Celta Vigo – Union Gilloise",
+    "outcome": "1013",
+    "price": 1.37,
+    "prob": 0.7257,
+    "score": 4.55,
+    "spec": {
+     "line": 3.5,
      "side": "under",
      "stat": "goals"
     },
@@ -9657,27 +9740,6 @@
     "prob": 0.6337,
     "score": 3.93,
     "spec": null,
-    "start": "2026-11-05T20:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 16.7,
-    "edge": -1.1,
-    "fair": 1.385,
-    "fid": "id1000067974173048",
-    "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
-    "match": "🇪🇺 Celta Vigo – Union Gilloise",
-    "outcome": "1013",
-    "price": 1.37,
-    "prob": 0.722,
-    "score": 3.92,
-    "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "goals"
-    },
     "start": "2026-11-05T20:00:00.000Z"
    },
    {
@@ -10053,27 +10115,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 18.8,
-    "edge": -2.8,
-    "fair": 1.872,
-    "fid": "id1000067974173056",
-    "group": "goals",
-    "label": "Ημίχρονο Over 1.5 γκολ",
-    "market": "10258",
-    "match": "🇪🇺 SL Benfica – Lech Poznan",
-    "outcome": "10258",
-    "price": 1.82,
-    "prob": 0.5342,
-    "score": 2.85,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "ht"
-    },
-    "start": "2026-11-05T20:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 11.7,
     "edge": -0.9,
     "fair": 1.463,
@@ -10087,6 +10128,27 @@
     "prob": 0.6835,
     "score": 2.63,
     "spec": null,
+    "start": "2026-11-05T20:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 18.8,
+    "edge": -3.8,
+    "fair": 1.872,
+    "fid": "id1000067974173056",
+    "group": "goals",
+    "label": "Ημίχρονο Over 1.5 γκολ",
+    "market": "10258",
+    "match": "🇪🇺 SL Benfica – Lech Poznan",
+    "outcome": "10258",
+    "price": 1.8,
+    "prob": 0.5342,
+    "score": 1.79,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "ht"
+    },
     "start": "2026-11-05T20:00:00.000Z"
    },
    {
@@ -10297,9 +10359,9 @@
   "id1003448074173278": [
    {
     "book": "stoiximan",
-    "drop": 16.9,
-    "edge": -2.6,
-    "fair": 1.827,
+    "drop": 13.9,
+    "edge": -2.2,
+    "fair": 1.891,
     "fid": "id1003448074173278",
     "fxi": {
      "categoryName": "International Clubs",
@@ -10312,27 +10374,6 @@
      "tournamentName": "UEFA Conference League"
     },
     "group": "goals",
-    "label": "Over 3.5 γκολ",
-    "market": "1012",
-    "match": "🇪🇺 Atalanta – Kairat",
-    "outcome": "1012",
-    "price": 1.78,
-    "prob": 0.5473,
-    "score": 2.48,
-    "spec": {
-     "line": 3.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-05T17:45:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 13.9,
-    "edge": -2.2,
-    "fair": 1.891,
-    "fid": "id1003448074173278",
-    "group": "goals",
     "label": "Ημίχρονο Over 1.5 γκολ",
     "market": "10258",
     "match": "🇪🇺 Atalanta – Kairat",
@@ -10344,6 +10385,27 @@
      "line": 1.5,
      "side": "over",
      "stat": "ht"
+    },
+    "start": "2026-11-05T17:45:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 11.3,
+    "edge": -2.5,
+    "fair": 1.343,
+    "fid": "id1003448074173278",
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇪🇺 Atalanta – Kairat",
+    "outcome": "1010",
+    "price": 1.31,
+    "prob": 0.7446,
+    "score": 0.94,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
     },
     "start": "2026-11-05T17:45:00.000Z"
    },
@@ -10540,8 +10602,8 @@
    {
     "book": "stoiximan",
     "drop": 21.8,
-    "edge": -3.0,
-    "fair": 2.042,
+    "edge": -3.1,
+    "fair": 2.043,
     "fid": "id1003448074173282",
     "group": "1x2",
     "label": "1 (Thun)",
@@ -10549,11 +10611,32 @@
     "match": "🇪🇺 Thun – Heart of Midlothian",
     "outcome": "101",
     "price": 1.98,
-    "prob": 0.4897,
-    "score": 2.96,
+    "prob": 0.4895,
+    "score": 2.92,
     "spec": {
      "side": "1",
      "stat": "1x2"
+    },
+    "start": "2026-11-05T17:45:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -7.8,
+    "edge": -3.5,
+    "fair": 2.611,
+    "fid": "id1003448074173282",
+    "group": "goals",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
+    "match": "🇪🇺 Thun – Heart of Midlothian",
+    "outcome": "1011",
+    "price": 2.52,
+    "prob": 0.383,
+    "score": -3.49,
+    "spec": {
+     "line": 2.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-11-05T17:45:00.000Z"
    },
@@ -10573,27 +10656,6 @@
     "score": -3.79,
     "spec": {
      "line": 3.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-05T17:45:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -8.2,
-    "edge": -3.8,
-    "fair": 2.62,
-    "fid": "id1003448074173282",
-    "group": "goals",
-    "label": "Under 2.5 γκολ",
-    "market": "1010",
-    "match": "🇪🇺 Thun – Heart of Midlothian",
-    "outcome": "1011",
-    "price": 2.52,
-    "prob": 0.3817,
-    "score": -3.82,
-    "spec": {
-     "line": 2.5,
      "side": "under",
      "stat": "goals"
     },
@@ -11047,9 +11109,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -5.5,
-    "edge": -0.9,
-    "fair": 1.534,
+    "drop": -4.7,
+    "edge": -0.2,
+    "fair": 1.523,
     "fid": "id1003448074173294",
     "group": "1x2",
     "label": "1 (Monaco)",
@@ -11057,8 +11119,8 @@
     "match": "🇪🇺 Monaco – Nordsjaelland",
     "outcome": "101",
     "price": 1.52,
-    "prob": 0.6519,
-    "score": -0.91,
+    "prob": 0.6566,
+    "score": -0.2,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -11067,9 +11129,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 2.1,
-    "edge": -3.6,
-    "fair": 1.504,
+    "drop": 2.2,
+    "edge": -3.5,
+    "fair": 1.503,
     "fid": "id1003448074173294",
     "group": "goals",
     "label": "Over 2.5 γκολ",
@@ -11077,8 +11139,8 @@
     "match": "🇪🇺 Monaco – Nordsjaelland",
     "outcome": "1010",
     "price": 1.45,
-    "prob": 0.6649,
-    "score": -2.96,
+    "prob": 0.6653,
+    "score": -2.85,
     "spec": {
      "line": 2.5,
      "side": "over",
@@ -11142,18 +11204,18 @@
    },
    {
     "book": "stoiximan",
-    "drop": 11.8,
-    "edge": -2.3,
-    "fair": 1.709,
+    "drop": 11.6,
+    "edge": -0.6,
+    "fair": 1.711,
     "fid": "id1003448074173296",
     "group": "goals",
     "label": "Under 3.5 γκολ",
     "market": "1012",
     "match": "🇪🇺 Copenhagen – Iberia",
     "outcome": "1013",
-    "price": 1.67,
-    "prob": 0.5851,
-    "score": 1.25,
+    "price": 1.7,
+    "prob": 0.5845,
+    "score": 2.83,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -11164,8 +11226,8 @@
    {
     "book": "stoiximan",
     "drop": 15.2,
-    "edge": -3.4,
-    "fair": 2.713,
+    "edge": -3.6,
+    "fair": 2.717,
     "fid": "id1003448074173296",
     "group": "goals",
     "label": "Under 2.5 γκολ",
@@ -11173,8 +11235,8 @@
     "match": "🇪🇺 Copenhagen – Iberia",
     "outcome": "1011",
     "price": 2.62,
-    "prob": 0.3686,
-    "score": 1.13,
+    "prob": 0.3681,
+    "score": 0.98,
     "spec": {
      "line": 2.5,
      "side": "under",
@@ -11206,9 +11268,9 @@
   "id1003448074173298": [
    {
     "book": "stoiximan",
-    "drop": 6.1,
-    "edge": -1.2,
-    "fair": 2.044,
+    "drop": 6.6,
+    "edge": -0.9,
+    "fair": 2.039,
     "fid": "id1003448074173298",
     "fxi": {
      "categoryName": "International Clubs",
@@ -11226,8 +11288,8 @@
     "match": "🇪🇺 Lugano – Kauno",
     "outcome": "10258",
     "price": 2.02,
-    "prob": 0.4892,
-    "score": 0.67,
+    "prob": 0.4904,
+    "score": 1.04,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -11257,9 +11319,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -4.9,
-    "edge": -1.5,
-    "fair": 1.939,
+    "drop": -5.4,
+    "edge": -2.0,
+    "fair": 1.948,
     "fid": "id1003448074173298",
     "group": "goals",
     "label": "Under 3.5 γκολ",
@@ -11267,8 +11329,8 @@
     "match": "🇪🇺 Lugano – Kauno",
     "outcome": "1013",
     "price": 1.91,
-    "prob": 0.5157,
-    "score": -1.5,
+    "prob": 0.5133,
+    "score": -1.95,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -11504,9 +11566,9 @@
   "id1003448074173304": [
    {
     "book": "stoiximan",
-    "drop": 23.8,
-    "edge": -3.7,
-    "fair": 2.076,
+    "drop": 24.6,
+    "edge": -2.6,
+    "fair": 2.053,
     "fid": "id1003448074173304",
     "fxi": {
      "categoryName": "International Clubs",
@@ -11524,8 +11586,8 @@
     "match": "🇪🇺 St. Truidense – Brann",
     "outcome": "10258",
     "price": 2.0,
-    "prob": 0.4817,
-    "score": 2.34,
+    "prob": 0.4871,
+    "score": 3.42,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -11535,22 +11597,42 @@
    },
    {
     "book": "stoiximan",
-    "drop": 35.1,
-    "edge": -3.7,
-    "fair": 1.973,
+    "drop": 25.0,
+    "edge": -3.2,
+    "fair": 1.415,
     "fid": "id1003448074173304",
     "group": "goals",
-    "label": "Over 3.5 γκολ",
-    "market": "1012",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
     "match": "🇪🇺 St. Truidense – Brann",
-    "outcome": "1012",
-    "price": 1.9,
-    "prob": 0.5068,
-    "score": 2.3,
+    "outcome": "1010",
+    "price": 1.37,
+    "prob": 0.7067,
+    "score": 2.82,
     "spec": {
-     "line": 3.5,
+     "line": 2.5,
      "side": "over",
      "stat": "goals"
+    },
+    "start": "2026-11-05T20:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 8.8,
+    "edge": -4.0,
+    "fair": 1.479,
+    "fid": "id1003448074173304",
+    "group": "btts",
+    "label": "Goal/Goal: Ναι",
+    "market": "104",
+    "match": "🇪🇺 St. Truidense – Brann",
+    "outcome": "104",
+    "price": 1.42,
+    "prob": 0.6761,
+    "score": -1.35,
+    "spec": {
+     "side": "yes",
+     "stat": "btts"
     },
     "start": "2026-11-05T20:00:00.000Z"
    }
@@ -11863,53 +11945,53 @@
   ]
  },
  "checked": {
-  "id1000015573265520": "2026-11-05T13:20:51Z",
-  "id1000015573265524": "2026-11-05T13:20:51Z",
-  "id1000032566887144": "2026-11-05T13:20:51Z",
-  "id1000032566887148": "2026-11-05T13:15:45Z",
+  "id1000015573265520": "2026-11-05T13:25:23Z",
+  "id1000015573265524": "2026-11-05T13:25:23Z",
+  "id1000032566887144": "2026-11-05T13:25:23Z",
+  "id1000032566887148": "2026-11-05T13:25:23Z",
   "id1000039068823446": "2026-11-05T13:20:51Z",
-  "id1000056273086736": "2026-11-05T13:20:51Z",
+  "id1000056273086736": "2026-11-05T13:25:23Z",
   "id1000066873835306": "2026-11-05T09:59:27Z",
   "id1000066873835308": "2026-11-05T12:10:30Z",
   "id1000066873835334": "2026-11-05T09:59:27Z",
   "id1000066873835336": "2026-11-05T12:10:30Z",
   "id1000066873835448": "2026-11-05T09:59:27Z",
   "id1000066873835450": "2026-11-05T12:10:30Z",
-  "id1000067974173022": "2026-11-05T13:20:51Z",
-  "id1000067974173024": "2026-11-05T13:20:51Z",
-  "id1000067974173026": "2026-11-05T13:20:51Z",
-  "id1000067974173028": "2026-11-05T13:20:51Z",
-  "id1000067974173030": "2026-11-05T13:20:51Z",
-  "id1000067974173032": "2026-11-05T13:20:51Z",
-  "id1000067974173034": "2026-11-05T13:20:51Z",
-  "id1000067974173036": "2026-11-05T13:20:51Z",
-  "id1000067974173040": "2026-11-05T13:20:51Z",
-  "id1000067974173042": "2026-11-05T13:20:51Z",
-  "id1000067974173044": "2026-11-05T13:20:51Z",
-  "id1000067974173046": "2026-11-05T13:20:51Z",
-  "id1000067974173048": "2026-11-05T13:20:51Z",
-  "id1000067974173052": "2026-11-05T13:20:51Z",
-  "id1000067974173054": "2026-11-05T13:20:51Z",
-  "id1000067974173056": "2026-11-05T13:20:51Z",
-  "id1000067974173058": "2026-11-05T13:20:51Z",
-  "id1003448074173276": "2026-11-05T13:20:51Z",
-  "id1003448074173278": "2026-11-05T13:20:51Z",
-  "id1003448074173280": "2026-11-05T13:20:51Z",
-  "id1003448074173282": "2026-11-05T13:20:51Z",
-  "id1003448074173284": "2026-11-05T13:20:51Z",
-  "id1003448074173286": "2026-11-05T13:20:51Z",
-  "id1003448074173288": "2026-11-05T13:20:51Z",
-  "id1003448074173290": "2026-11-05T13:20:51Z",
-  "id1003448074173292": "2026-11-05T13:20:51Z",
-  "id1003448074173294": "2026-11-05T13:20:51Z",
-  "id1003448074173296": "2026-11-05T13:20:51Z",
-  "id1003448074173298": "2026-11-05T13:20:51Z",
-  "id1003448074173300": "2026-11-05T13:20:51Z",
-  "id1003448074173302": "2026-11-05T13:20:51Z",
-  "id1003448074173304": "2026-11-05T13:20:51Z",
-  "id1003448074173306": "2026-11-05T13:20:51Z",
-  "id1003448074173308": "2026-11-05T13:20:51Z",
-  "id1003448074173310": "2026-11-05T13:20:51Z"
+  "id1000067974173022": "2026-11-05T13:25:23Z",
+  "id1000067974173024": "2026-11-05T13:25:23Z",
+  "id1000067974173026": "2026-11-05T13:25:23Z",
+  "id1000067974173028": "2026-11-05T13:25:23Z",
+  "id1000067974173030": "2026-11-05T13:25:23Z",
+  "id1000067974173032": "2026-11-05T13:25:23Z",
+  "id1000067974173034": "2026-11-05T13:25:23Z",
+  "id1000067974173036": "2026-11-05T13:25:23Z",
+  "id1000067974173040": "2026-11-05T13:25:23Z",
+  "id1000067974173042": "2026-11-05T13:25:23Z",
+  "id1000067974173044": "2026-11-05T13:25:23Z",
+  "id1000067974173046": "2026-11-05T13:25:23Z",
+  "id1000067974173048": "2026-11-05T13:25:23Z",
+  "id1000067974173052": "2026-11-05T13:25:23Z",
+  "id1000067974173054": "2026-11-05T13:25:23Z",
+  "id1000067974173056": "2026-11-05T13:25:23Z",
+  "id1000067974173058": "2026-11-05T13:25:23Z",
+  "id1003448074173276": "2026-11-05T13:25:23Z",
+  "id1003448074173278": "2026-11-05T13:25:23Z",
+  "id1003448074173280": "2026-11-05T13:25:23Z",
+  "id1003448074173282": "2026-11-05T13:25:23Z",
+  "id1003448074173284": "2026-11-05T13:25:23Z",
+  "id1003448074173286": "2026-11-05T13:25:23Z",
+  "id1003448074173288": "2026-11-05T13:25:23Z",
+  "id1003448074173290": "2026-11-05T13:25:23Z",
+  "id1003448074173292": "2026-11-05T13:25:23Z",
+  "id1003448074173294": "2026-11-05T13:25:23Z",
+  "id1003448074173296": "2026-11-05T13:25:23Z",
+  "id1003448074173298": "2026-11-05T13:25:23Z",
+  "id1003448074173300": "2026-11-05T13:25:23Z",
+  "id1003448074173302": "2026-11-05T13:25:23Z",
+  "id1003448074173304": "2026-11-05T13:25:23Z",
+  "id1003448074173306": "2026-11-05T13:25:23Z",
+  "id1003448074173308": "2026-11-05T13:25:23Z",
+  "id1003448074173310": "2026-11-05T13:25:23Z"
  },
  "diag": {
   "2026-11-03": {
@@ -13918,6 +14000,7 @@
     "id1000067974173042|101|101|1x2",
     "id1000067974173042|10258|10258|goals",
     "id1000067974173048|1010|1011|goals",
+    "id1000067974173048|10258|10259|goals",
     "id1000067974173056|1010|1010|goals",
     "id1000067974173056|10258|10258|goals",
     "id1003448074173304|1010|1010|goals"
@@ -13967,11 +14050,13 @@
     "id1000067974173026|1010|1010|goals",
     "id1000067974173026|10258|10258|goals",
     "id1000067974173028|101|103|1x2",
+    "id1000067974173032|1010|1011|goals",
     "id1000067974173034|101|101|1x2",
     "id1000067974173042|1010|1010|goals",
     "id1000067974173042|101|101|1x2",
     "id1000067974173042|10258|10258|goals",
     "id1000067974173048|1010|1011|goals",
+    "id1000067974173048|10258|10259|goals",
     "id1000067974173056|1010|1010|goals",
     "id1000067974173056|10258|10258|goals",
     "id1003448074173276|101|103|1x2",
