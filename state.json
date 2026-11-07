@@ -8843,9 +8843,9 @@
   "id1000001772221384": [
    {
     "book": "stoiximan",
-    "drop": -5.4,
-    "edge": 7.9,
-    "fair": 2.271,
+    "drop": -4.9,
+    "edge": 8.5,
+    "fair": 2.258,
     "fid": "id1000001772221384",
     "fxi": {
      "categoryName": "England",
@@ -8863,8 +8863,8 @@
     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Leeds United – Tottenham",
     "outcome": "10807",
     "price": 2.45,
-    "prob": 0.4403,
-    "score": 7.88,
+    "prob": 0.4429,
+    "score": 8.5,
     "spec": {
      "line": 10.5,
      "side": "over",
@@ -8874,9 +8874,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -5.0,
-    "edge": 2.2,
-    "fair": 1.829,
+    "drop": -4.3,
+    "edge": 2.8,
+    "fair": 1.819,
     "fid": "id1000001772221384",
     "group": "corners",
     "label": "Κόρνερ Over 9.5",
@@ -8884,8 +8884,8 @@
     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Leeds United – Tottenham",
     "outcome": "10803",
     "price": 1.87,
-    "prob": 0.5467,
-    "score": 2.24,
+    "prob": 0.5498,
+    "score": 2.8,
     "spec": {
      "line": 9.5,
      "side": "over",
@@ -8896,7 +8896,7 @@
    {
     "book": "stoiximan",
     "drop": -2.3,
-    "edge": 0.8,
+    "edge": 0.1,
     "fair": 1.438,
     "fid": "id1000001772221384",
     "group": "goals",
@@ -8904,9 +8904,9 @@
     "market": "10256",
     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Leeds United – Tottenham",
     "outcome": "10256",
-    "price": 1.45,
+    "price": 1.44,
     "prob": 0.6954,
-    "score": 0.83,
+    "score": 0.14,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -8916,59 +8916,22 @@
    },
    {
     "book": "stoiximan",
-    "drop": -2.6,
-    "edge": -1.1,
-    "fair": 1.335,
+    "drop": 4.0,
+    "edge": -3.8,
+    "fair": 1.413,
     "fid": "id1000001772221384",
     "group": "goals",
-    "label": "Over 1.5 γκολ",
-    "market": "108",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Leeds United – Tottenham",
-    "outcome": "108",
-    "price": 1.32,
-    "prob": 0.7491,
-    "score": -1.12,
+    "outcome": "1013",
+    "price": 1.36,
+    "prob": 0.7077,
+    "score": -2.55,
     "spec": {
-     "line": 1.5,
-     "side": "over",
+     "line": 3.5,
+     "side": "under",
      "stat": "goals"
-    },
-    "start": "2026-11-07T12:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 6.1,
-    "edge": -3.5,
-    "fair": 1.761,
-    "fid": "id1000001772221384",
-    "group": "cards",
-    "label": "Κάρτες Over 4.5",
-    "market": "10930",
-    "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Leeds United – Tottenham",
-    "outcome": "10930",
-    "price": 1.7,
-    "prob": 0.5679,
-    "score": -1.62,
-    "spec": null,
-    "start": "2026-11-07T12:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.3,
-    "edge": -3.1,
-    "fair": 1.755,
-    "fid": "id1000001772221384",
-    "group": "btts",
-    "label": "Goal/Goal: Ναι",
-    "market": "104",
-    "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Leeds United – Tottenham",
-    "outcome": "104",
-    "price": 1.7,
-    "prob": 0.5698,
-    "score": -3.05,
-    "spec": {
-     "side": "yes",
-     "stat": "btts"
     },
     "start": "2026-11-07T12:30:00.000Z"
    }
@@ -9395,27 +9358,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 3.9,
-    "edge": -3.0,
-    "fair": 1.423,
-    "fid": "id1000001872340012",
-    "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
-    "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Bristol City – Norwich",
-    "outcome": "1013",
-    "price": 1.38,
-    "prob": 0.7027,
-    "score": -1.86,
-    "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-07T12:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 3.0,
     "edge": -2.8,
     "fair": 1.512,
@@ -9432,6 +9374,27 @@
      "line": 1.5,
      "side": "under",
      "stat": "ht"
+    },
+    "start": "2026-11-07T12:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 3.8,
+    "edge": -3.0,
+    "fair": 1.423,
+    "fid": "id1000001872340012",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Bristol City – Norwich",
+    "outcome": "1013",
+    "price": 1.38,
+    "prob": 0.7027,
+    "score": -1.88,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-11-07T12:30:00.000Z"
    }
@@ -9732,29 +9695,8 @@
    },
    {
     "book": "stoiximan",
-    "drop": 2.8,
-    "edge": -1.8,
-    "fair": 1.731,
-    "fid": "id1000001872340020",
-    "group": "goals",
-    "label": "Under 2.5 γκολ",
-    "market": "1010",
-    "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Portsmouth – Stoke",
-    "outcome": "1011",
-    "price": 1.7,
-    "prob": 0.5777,
-    "score": -0.94,
-    "spec": {
-     "line": 2.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-07T12:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": -2.2,
-    "edge": -2.3,
+    "edge": -1.0,
     "fair": 1.536,
     "fid": "id1000001872340020",
     "group": "goals",
@@ -9762,13 +9704,34 @@
     "market": "10256",
     "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Portsmouth – Stoke",
     "outcome": "10256",
-    "price": 1.5,
+    "price": 1.52,
     "prob": 0.651,
-    "score": -2.34,
+    "score": -1.04,
     "spec": {
      "line": 0.5,
      "side": "over",
      "stat": "ht"
+    },
+    "start": "2026-11-07T12:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 2.8,
+    "edge": -3.5,
+    "fair": 1.731,
+    "fid": "id1000001872340020",
+    "group": "goals",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
+    "match": "🏴󠁧󠁢󠁥󠁮󠁧󠁿 Portsmouth – Stoke",
+    "outcome": "1011",
+    "price": 1.67,
+    "prob": 0.5777,
+    "score": -2.67,
+    "spec": {
+     "line": 2.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-11-07T12:30:00.000Z"
    },
@@ -13252,8 +13215,8 @@
    {
     "book": "stoiximan",
     "drop": 0.9,
-    "edge": 4.8,
-    "fair": 2.386,
+    "edge": 5.4,
+    "fair": 2.372,
     "fid": "id1000004472513964",
     "fxi": {
      "categoryName": "Germany",
@@ -13271,8 +13234,8 @@
     "match": "🇩🇪 Nuremberg – Darmstadt",
     "outcome": "10811",
     "price": 2.5,
-    "prob": 0.4191,
-    "score": 5.04,
+    "prob": 0.4216,
+    "score": 5.66,
     "spec": {
      "line": 11.5,
      "side": "over",
@@ -13283,8 +13246,8 @@
    {
     "book": "stoiximan",
     "drop": 0.7,
-    "edge": 1.4,
-    "fair": 1.903,
+    "edge": 1.9,
+    "fair": 1.894,
     "fid": "id1000004472513964",
     "group": "corners",
     "label": "Κόρνερ Over 10.5",
@@ -13292,8 +13255,8 @@
     "match": "🇩🇪 Nuremberg – Darmstadt",
     "outcome": "10807",
     "price": 1.93,
-    "prob": 0.5255,
-    "score": 1.63,
+    "prob": 0.528,
+    "score": 2.12,
     "spec": {
      "line": 10.5,
      "side": "over",
@@ -13347,9 +13310,9 @@
   "id1000004472513970": [
    {
     "book": "stoiximan",
-    "drop": -2.5,
-    "edge": -0.7,
-    "fair": 1.43,
+    "drop": 14.4,
+    "edge": -0.2,
+    "fair": 1.954,
     "fid": "id1000004472513970",
     "fxi": {
      "categoryName": "Germany",
@@ -13362,17 +13325,38 @@
      "tournamentName": "2. Bundesliga"
     },
     "group": "goals",
-    "label": "Ημίχρονο Over 0.5 γκολ",
-    "market": "10256",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
     "match": "🇩🇪 Kiel – Bielefeld",
-    "outcome": "10256",
-    "price": 1.42,
-    "prob": 0.6993,
-    "score": -0.7,
+    "outcome": "1011",
+    "price": 1.95,
+    "prob": 0.5118,
+    "score": 4.11,
     "spec": {
-     "line": 0.5,
-     "side": "over",
-     "stat": "ht"
+     "line": 2.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-07T12:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 9.9,
+    "edge": -2.2,
+    "fair": 1.401,
+    "fid": "id1000004472513970",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🇩🇪 Kiel – Bielefeld",
+    "outcome": "1013",
+    "price": 1.37,
+    "prob": 0.7138,
+    "score": 0.75,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-11-07T12:00:00.000Z"
    }
@@ -13380,9 +13364,9 @@
   "id1000004472513976": [
    {
     "book": "stoiximan",
-    "drop": 10.6,
-    "edge": 0.5,
-    "fair": 2.238,
+    "drop": 10.2,
+    "edge": 0.6,
+    "fair": 2.237,
     "fid": "id1000004472513976",
     "fxi": {
      "categoryName": "Germany",
@@ -13400,8 +13384,8 @@
     "match": "🇩🇪 Osnabruck – Kaiserslautern",
     "outcome": "10804",
     "price": 2.25,
-    "prob": 0.4468,
-    "score": 3.71,
+    "prob": 0.447,
+    "score": 3.63,
     "spec": {
      "line": 9.5,
      "side": "under",
@@ -13411,9 +13395,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 9.7,
-    "edge": -3.3,
-    "fair": 1.81,
+    "drop": 9.4,
+    "edge": -3.2,
+    "fair": 1.808,
     "fid": "id1000004472513976",
     "group": "corners",
     "label": "Κόρνερ Under 10.5",
@@ -13421,8 +13405,8 @@
     "match": "🇩🇪 Osnabruck – Kaiserslautern",
     "outcome": "10808",
     "price": 1.75,
-    "prob": 0.5525,
-    "score": -0.41,
+    "prob": 0.5531,
+    "score": -0.39,
     "spec": {
      "line": 10.5,
      "side": "under",
@@ -13432,9 +13416,29 @@
    },
    {
     "book": "stoiximan",
-    "drop": 2.2,
-    "edge": -2.1,
-    "fair": 1.584,
+    "drop": 3.0,
+    "edge": -2.0,
+    "fair": 2.295,
+    "fid": "id1000004472513976",
+    "group": "1x2",
+    "label": "1 (Osnabruck)",
+    "market": "101",
+    "match": "🇩🇪 Osnabruck – Kaiserslautern",
+    "outcome": "101",
+    "price": 2.25,
+    "prob": 0.4357,
+    "score": -1.05,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-11-07T12:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 2.1,
+    "edge": -2.2,
+    "fair": 1.585,
     "fid": "id1000004472513976",
     "group": "goals",
     "label": "Ημίχρονο Under 1.5 γκολ",
@@ -13442,8 +13446,8 @@
     "match": "🇩🇪 Osnabruck – Kaiserslautern",
     "outcome": "10259",
     "price": 1.55,
-    "prob": 0.6313,
-    "score": -1.47,
+    "prob": 0.6309,
+    "score": -1.59,
     "spec": {
      "line": 1.5,
      "side": "under",
@@ -13453,9 +13457,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 4.2,
-    "edge": -2.8,
-    "fair": 1.513,
+    "drop": 4.1,
+    "edge": -3.0,
+    "fair": 1.515,
     "fid": "id1000004472513976",
     "group": "goals",
     "label": "Under 3.5 γκολ",
@@ -13463,32 +13467,12 @@
     "match": "🇩🇪 Osnabruck – Kaiserslautern",
     "outcome": "1013",
     "price": 1.47,
-    "prob": 0.6609,
-    "score": -1.58,
+    "prob": 0.6601,
+    "score": -1.75,
     "spec": {
      "line": 3.5,
      "side": "under",
      "stat": "goals"
-    },
-    "start": "2026-11-07T12:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.9,
-    "edge": -2.0,
-    "fair": 2.347,
-    "fid": "id1000004472513976",
-    "group": "1x2",
-    "label": "1 (Osnabruck)",
-    "market": "101",
-    "match": "🇩🇪 Osnabruck – Kaiserslautern",
-    "outcome": "101",
-    "price": 2.3,
-    "prob": 0.4261,
-    "score": -1.74,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
     },
     "start": "2026-11-07T12:00:00.000Z"
    }
@@ -14416,9 +14400,9 @@
   "id1000005272723306": [
    {
     "book": "stoiximan",
-    "drop": -0.8,
-    "edge": 0.8,
-    "fair": 1.389,
+    "drop": -0.7,
+    "edge": -0.5,
+    "fair": 1.387,
     "fid": "id1000005272723306",
     "fxi": {
      "categoryName": "Turkiye",
@@ -14435,9 +14419,9 @@
     "market": "10258",
     "match": "🇹🇷 Eyupspor – Kocaeli",
     "outcome": "10259",
-    "price": 1.4,
-    "prob": 0.7199,
-    "score": 0.79,
+    "price": 1.38,
+    "prob": 0.721,
+    "score": -0.5,
     "spec": {
      "line": 1.5,
      "side": "under",
@@ -14447,18 +14431,18 @@
    },
    {
     "book": "stoiximan",
-    "drop": 0.0,
-    "edge": 0.6,
-    "fair": 1.709,
+    "drop": 0.2,
+    "edge": -2.1,
+    "fair": 1.705,
     "fid": "id1000005272723306",
     "group": "goals",
     "label": "Under 2.5 γκολ",
     "market": "1010",
     "match": "🇹🇷 Eyupspor – Kocaeli",
     "outcome": "1011",
-    "price": 1.72,
-    "prob": 0.5851,
-    "score": 0.64,
+    "price": 1.67,
+    "prob": 0.5865,
+    "score": -1.98,
     "spec": {
      "line": 2.5,
      "side": "under",
@@ -14468,28 +14452,8 @@
    },
    {
     "book": "stoiximan",
-    "drop": 4.1,
-    "edge": -2.3,
-    "fair": 1.862,
-    "fid": "id1000005272723306",
-    "group": "btts",
-    "label": "Goal/Goal: Όχι",
-    "market": "104",
-    "match": "🇹🇷 Eyupspor – Kocaeli",
-    "outcome": "105",
-    "price": 1.82,
-    "prob": 0.5371,
-    "score": -1.04,
-    "spec": {
-     "side": "no",
-     "stat": "btts"
-    },
-    "start": "2026-11-07T10:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": -4.6,
-    "edge": -2.4,
+    "edge": -3.3,
     "fair": 2.429,
     "fid": "id1000005272723306",
     "group": "corners",
@@ -14497,9 +14461,9 @@
     "market": "10803",
     "match": "🇹🇷 Eyupspor – Kocaeli",
     "outcome": "10803",
-    "price": 2.37,
+    "price": 2.35,
     "prob": 0.4117,
-    "score": -2.43,
+    "score": -3.25,
     "spec": {
      "line": 9.5,
      "side": "over",
@@ -14511,9 +14475,9 @@
   "id1000005272723312": [
    {
     "book": "stoiximan",
-    "drop": 16.3,
-    "edge": -0.8,
-    "fair": 1.996,
+    "drop": 15.1,
+    "edge": -2.2,
+    "fair": 2.025,
     "fid": "id1000005272723312",
     "fxi": {
      "categoryName": "Turkiye",
@@ -14531,8 +14495,8 @@
     "match": "🇹🇷 Goztepe Izmir – Basaksehir",
     "outcome": "101",
     "price": 1.98,
-    "prob": 0.501,
-    "score": 4.08,
+    "prob": 0.4938,
+    "score": 2.31,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -14541,9 +14505,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -3.6,
-    "edge": -2.5,
-    "fair": 1.539,
+    "drop": -3.4,
+    "edge": -2.4,
+    "fair": 1.537,
     "fid": "id1000005272723312",
     "group": "goals",
     "label": "Under 3.5 γκολ",
@@ -14551,8 +14515,8 @@
     "match": "🇹🇷 Goztepe Izmir – Basaksehir",
     "outcome": "1013",
     "price": 1.5,
-    "prob": 0.6498,
-    "score": -2.53,
+    "prob": 0.6506,
+    "score": -2.41,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -14562,9 +14526,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 3.1,
-    "edge": -3.5,
-    "fair": 2.643,
+    "drop": 2.7,
+    "edge": -3.9,
+    "fair": 2.653,
     "fid": "id1000005272723312",
     "group": "goals",
     "label": "Ημίχρονο Over 1.5 γκολ",
@@ -14572,8 +14536,8 @@
     "match": "🇹🇷 Goztepe Izmir – Basaksehir",
     "outcome": "10258",
     "price": 2.55,
-    "prob": 0.3784,
-    "score": -2.6,
+    "prob": 0.3769,
+    "score": -3.07,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -14585,9 +14549,9 @@
   "id1000005272723316": [
    {
     "book": "stoiximan",
-    "drop": 0.0,
-    "edge": -1.8,
-    "fair": 2.291,
+    "drop": 2.9,
+    "edge": -3.7,
+    "fair": 1.475,
     "fid": "id1000005272723316",
     "fxi": {
      "categoryName": "Turkiye",
@@ -14599,14 +14563,34 @@
      "startTime": "2026-11-07T16:00:00.000Z",
      "tournamentName": "Super Lig"
     },
+    "group": "1x2",
+    "label": "1 (Galatasaray)",
+    "market": "101",
+    "match": "🇹🇷 Galatasaray – Amed",
+    "outcome": "101",
+    "price": 1.42,
+    "prob": 0.678,
+    "score": -2.87,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-11-07T16:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -1.4,
+    "edge": -3.2,
+    "fair": 2.325,
+    "fid": "id1000005272723316",
     "group": "corners",
     "label": "Κόρνερ Over 10.5",
     "market": "10807",
     "match": "🇹🇷 Galatasaray – Amed",
     "outcome": "10807",
     "price": 2.25,
-    "prob": 0.4365,
-    "score": -1.79,
+    "prob": 0.4301,
+    "score": -3.23,
     "spec": {
      "line": 10.5,
      "side": "over",
@@ -14616,50 +14600,30 @@
    },
    {
     "book": "stoiximan",
-    "drop": 3.5,
-    "edge": -3.2,
-    "fair": 1.467,
-    "fid": "id1000005272723316",
-    "group": "1x2",
-    "label": "1 (Galatasaray)",
-    "market": "101",
-    "match": "🇹🇷 Galatasaray – Amed",
-    "outcome": "101",
-    "price": 1.42,
-    "prob": 0.6817,
-    "score": -2.16,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
-    },
-    "start": "2026-11-07T16:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": -0.6,
-    "edge": -3.3,
-    "fair": 1.809,
+    "edge": -3.4,
+    "fair": 1.811,
     "fid": "id1000005272723316",
     "group": "goals",
-    "label": "Ημίχρονο Under 1.5 γκολ",
-    "market": "10258",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
     "match": "🇹🇷 Galatasaray – Amed",
-    "outcome": "10259",
+    "outcome": "1013",
     "price": 1.75,
-    "prob": 0.5528,
-    "score": -3.26,
+    "prob": 0.5522,
+    "score": -3.37,
     "spec": {
-     "line": 1.5,
+     "line": 3.5,
      "side": "under",
-     "stat": "ht"
+     "stat": "goals"
     },
     "start": "2026-11-07T16:00:00.000Z"
    },
    {
     "book": "stoiximan",
-    "drop": 1.1,
-    "edge": -3.7,
-    "fair": 1.506,
+    "drop": 1.0,
+    "edge": -3.8,
+    "fair": 1.508,
     "fid": "id1000005272723316",
     "group": "goals",
     "label": "Over 2.5 γκολ",
@@ -14667,33 +14631,12 @@
     "match": "🇹🇷 Galatasaray – Amed",
     "outcome": "1010",
     "price": 1.45,
-    "prob": 0.664,
-    "score": -3.39,
+    "prob": 0.6631,
+    "score": -3.56,
     "spec": {
      "line": 2.5,
      "side": "over",
      "stat": "goals"
-    },
-    "start": "2026-11-07T16:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.6,
-    "edge": -3.6,
-    "fair": 1.815,
-    "fid": "id1000005272723316",
-    "group": "corners",
-    "label": "Κόρνερ Over 9.5",
-    "market": "10803",
-    "match": "🇹🇷 Galatasaray – Amed",
-    "outcome": "10803",
-    "price": 1.75,
-    "prob": 0.551,
-    "score": -3.41,
-    "spec": {
-     "line": 9.5,
-     "side": "over",
-     "stat": "corners"
     },
     "start": "2026-11-07T16:00:00.000Z"
    }
@@ -16008,35 +15951,14 @@
      "stat": "corners"
     },
     "start": "2026-11-07T10:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 2.2,
-    "edge": -3.8,
-    "fair": 2.34,
-    "fid": "id1000009872735888",
-    "group": "goals",
-    "label": "Ημίχρονο Over 1.5 γκολ",
-    "market": "10258",
-    "match": "🇹🇷 Keciorengucu – Manisa",
-    "outcome": "10258",
-    "price": 2.25,
-    "prob": 0.4274,
-    "score": -3.19,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "ht"
-    },
-    "start": "2026-11-07T10:30:00.000Z"
    }
   ],
   "id1000009872735890": [
    {
     "book": "stoiximan",
     "drop": -1.5,
-    "edge": 8.3,
-    "fair": 2.234,
+    "edge": 8.2,
+    "fair": 2.237,
     "fid": "id1000009872735890",
     "fxi": {
      "categoryName": "Turkiye",
@@ -16054,8 +15976,8 @@
     "match": "🇹🇷 Pendik – Istanbulspor",
     "outcome": "10803",
     "price": 2.42,
-    "prob": 0.4476,
-    "score": 8.33,
+    "prob": 0.447,
+    "score": 8.18,
     "spec": {
      "line": 9.5,
      "side": "over",
@@ -16065,9 +15987,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -1.0,
-    "edge": 4.6,
-    "fair": 1.769,
+    "drop": -1.3,
+    "edge": 4.3,
+    "fair": 1.774,
     "fid": "id1000009872735890",
     "group": "corners",
     "label": "Κόρνερ Over 8.5",
@@ -16075,8 +15997,8 @@
     "match": "🇹🇷 Pendik – Istanbulspor",
     "outcome": "10799",
     "price": 1.85,
-    "prob": 0.5653,
-    "score": 4.58,
+    "prob": 0.5637,
+    "score": 4.28,
     "spec": {
      "line": 8.5,
      "side": "over",
@@ -16087,7 +16009,7 @@
    {
     "book": "stoiximan",
     "drop": -1.7,
-    "edge": -2.5,
+    "edge": -1.8,
     "fair": 1.415,
     "fid": "id1000009872735890",
     "group": "goals",
@@ -16095,13 +16017,33 @@
     "market": "10256",
     "match": "🇹🇷 Pendik – Istanbulspor",
     "outcome": "10256",
-    "price": 1.38,
+    "price": 1.39,
     "prob": 0.7067,
-    "score": -2.47,
+    "score": -1.77,
     "spec": {
      "line": 0.5,
      "side": "over",
      "stat": "ht"
+    },
+    "start": "2026-11-07T16:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -12.2,
+    "edge": -2.1,
+    "fair": 2.114,
+    "fid": "id1000009872735890",
+    "group": "1x2",
+    "label": "1 (Pendik)",
+    "market": "101",
+    "match": "🇹🇷 Pendik – Istanbulspor",
+    "outcome": "101",
+    "price": 2.07,
+    "prob": 0.473,
+    "score": -2.08,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
     },
     "start": "2026-11-07T16:00:00.000Z"
    }
@@ -16109,9 +16051,9 @@
   "id1000009872735902": [
    {
     "book": "stoiximan",
-    "drop": 25.5,
-    "edge": -3.1,
-    "fair": 2.044,
+    "drop": -1.4,
+    "edge": -3.3,
+    "fair": 1.437,
     "fid": "id1000009872735902",
     "fxi": {
      "categoryName": "Turkiye",
@@ -16123,38 +16065,39 @@
      "startTime": "2026-11-07T10:30:00.000Z",
      "tournamentName": "1. Lig"
     },
-    "group": "1x2",
-    "label": "1 (Van)",
-    "market": "101",
-    "match": "🇹🇷 Van – Sivasspor",
-    "outcome": "101",
-    "price": 1.98,
-    "prob": 0.4892,
-    "score": 2.87,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
-    },
-    "start": "2026-11-07T10:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -0.7,
-    "edge": -2.5,
-    "fair": 1.425,
-    "fid": "id1000009872735902",
     "group": "goals",
     "label": "Ημίχρονο Over 0.5 γκολ",
     "market": "10256",
     "match": "🇹🇷 Van – Sivasspor",
     "outcome": "10256",
     "price": 1.39,
-    "prob": 0.7018,
-    "score": -2.46,
+    "prob": 0.6959,
+    "score": -3.27,
     "spec": {
      "line": 0.5,
      "side": "over",
      "stat": "ht"
+    },
+    "start": "2026-11-07T10:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -0.8,
+    "edge": -3.9,
+    "fair": 2.008,
+    "fid": "id1000009872735902",
+    "group": "goals",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
+    "match": "🇹🇷 Van – Sivasspor",
+    "outcome": "1011",
+    "price": 1.93,
+    "prob": 0.498,
+    "score": -3.88,
+    "spec": {
+     "line": 2.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-11-07T10:30:00.000Z"
    }
@@ -18483,9 +18426,9 @@
   "id1000020272043310": [
    {
     "book": "stoiximan",
-    "drop": -2.0,
-    "edge": -2.8,
-    "fair": 1.832,
+    "drop": 8.5,
+    "edge": -2.6,
+    "fair": 1.848,
     "fid": "id1000020272043310",
     "fxi": {
      "categoryName": "Poland",
@@ -18497,6 +18440,48 @@
      "startTime": "2026-11-07T11:15:00.000Z",
      "tournamentName": "Ekstraklasa"
     },
+    "group": "corners",
+    "label": "Κόρνερ Over 10.5",
+    "market": "10807",
+    "match": "🇵🇱 Korona Kielce – Radomiak Radom",
+    "outcome": "10807",
+    "price": 1.8,
+    "prob": 0.5411,
+    "score": -0.04,
+    "spec": {
+     "line": 10.5,
+     "side": "over",
+     "stat": "corners"
+    },
+    "start": "2026-11-07T11:15:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 7.2,
+    "edge": -2.3,
+    "fair": 2.324,
+    "fid": "id1000020272043310",
+    "group": "corners",
+    "label": "Κόρνερ Over 11.5",
+    "market": "10811",
+    "match": "🇵🇱 Korona Kielce – Radomiak Radom",
+    "outcome": "10811",
+    "price": 2.27,
+    "prob": 0.4303,
+    "score": -0.17,
+    "spec": {
+     "line": 11.5,
+     "side": "over",
+     "stat": "corners"
+    },
+    "start": "2026-11-07T11:15:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -2.0,
+    "edge": -2.8,
+    "fair": 1.832,
+    "fid": "id1000020272043310",
     "group": "1x2",
     "label": "1 (Korona Kielce)",
     "market": "101",
@@ -18508,27 +18493,6 @@
     "spec": {
      "side": "1",
      "stat": "1x2"
-    },
-    "start": "2026-11-07T11:15:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -3.7,
-    "edge": -3.2,
-    "fair": 2.656,
-    "fid": "id1000020272043310",
-    "group": "corners",
-    "label": "Κόρνερ Under 9.5",
-    "market": "10803",
-    "match": "🇵🇱 Korona Kielce – Radomiak Radom",
-    "outcome": "10804",
-    "price": 2.57,
-    "prob": 0.3765,
-    "score": -3.24,
-    "spec": {
-     "line": 9.5,
-     "side": "under",
-     "stat": "corners"
     },
     "start": "2026-11-07T11:15:00.000Z"
    }
@@ -19184,9 +19148,9 @@
   "id1000021072083130": [
    {
     "book": "stoiximan",
-    "drop": 0.9,
-    "edge": -3.7,
-    "fair": 1.474,
+    "drop": 1.1,
+    "edge": -3.8,
+    "fair": 1.434,
     "fid": "id1000021072083130",
     "fxi": {
      "categoryName": "Serbia",
@@ -19199,38 +19163,38 @@
      "tournamentName": "Superliga"
     },
     "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
-    "match": "🇷🇸 FK Zeleznicar Pancevo – Radnicki Kragujevac",
-    "outcome": "1013",
-    "price": 1.42,
-    "prob": 0.6784,
-    "score": -3.38,
-    "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-07T16:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.9,
-    "edge": -3.9,
-    "fair": 1.436,
-    "fid": "id1000021072083130",
-    "group": "goals",
     "label": "Ημίχρονο Over 0.5 γκολ",
     "market": "10256",
     "match": "🇷🇸 FK Zeleznicar Pancevo – Radnicki Kragujevac",
     "outcome": "10256",
     "price": 1.38,
-    "prob": 0.6964,
-    "score": -3.63,
+    "prob": 0.6974,
+    "score": -3.43,
     "spec": {
      "line": 0.5,
      "side": "over",
      "stat": "ht"
+    },
+    "start": "2026-11-07T16:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.7,
+    "edge": -3.9,
+    "fair": 1.477,
+    "fid": "id1000021072083130",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🇷🇸 FK Zeleznicar Pancevo – Radnicki Kragujevac",
+    "outcome": "1013",
+    "price": 1.42,
+    "prob": 0.677,
+    "score": -3.64,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-11-07T16:00:00.000Z"
    }
@@ -23146,9 +23110,9 @@
   "id1000056273086724": [
    {
     "book": "stoiximan",
-    "drop": -1.0,
-    "edge": -3.5,
-    "fair": 1.451,
+    "drop": 1.5,
+    "edge": -2.8,
+    "fair": 2.18,
     "fid": "id1000056273086724",
     "fxi": {
      "categoryName": "Romania",
@@ -23160,16 +23124,57 @@
      "startTime": "2026-11-07T10:30:00.000Z",
      "tournamentName": "Liga 2"
     },
+    "group": "1x2",
+    "label": "1 (Oradea)",
+    "market": "101",
+    "match": "🇷🇴 Oradea – Slatina",
+    "outcome": "101",
+    "price": 2.12,
+    "prob": 0.4587,
+    "score": -2.3,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-11-07T10:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -0.9,
+    "edge": -3.4,
+    "fair": 1.449,
+    "fid": "id1000056273086724",
     "group": "goals",
     "label": "Ημίχρονο Over 0.5 γκολ",
     "market": "10256",
     "match": "🇷🇴 Oradea – Slatina",
     "outcome": "10256",
     "price": 1.4,
-    "prob": 0.6892,
-    "score": -3.51,
+    "prob": 0.6901,
+    "score": -3.38,
     "spec": {
      "line": 0.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-11-07T10:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -1.6,
+    "edge": -3.8,
+    "fair": 2.827,
+    "fid": "id1000056273086724",
+    "group": "goals",
+    "label": "Ημίχρονο Over 1.5 γκολ",
+    "market": "10258",
+    "match": "🇷🇴 Oradea – Slatina",
+    "outcome": "10258",
+    "price": 2.72,
+    "prob": 0.3537,
+    "score": -3.78,
+    "spec": {
+     "line": 1.5,
      "side": "over",
      "stat": "ht"
     },
@@ -23975,19 +23980,19 @@
   "id1000000972302210": "2026-11-07T08:20:31Z",
   "id1000001772221372": "2026-11-07T09:40:30Z",
   "id1000001772221380": "2026-11-07T09:40:30Z",
-  "id1000001772221384": "2026-11-07T09:50:29Z",
+  "id1000001772221384": "2026-11-07T10:00:43Z",
   "id1000001772221388": "2026-11-07T08:20:31Z",
   "id1000001872340008": "2026-11-07T09:40:30Z",
   "id1000001872340010": "2026-11-07T09:40:30Z",
-  "id1000001872340012": "2026-11-07T09:50:29Z",
+  "id1000001872340012": "2026-11-07T10:00:43Z",
   "id1000001872340014": "2026-11-07T09:40:30Z",
   "id1000001872340016": "2026-11-07T09:40:30Z",
-  "id1000001872340020": "2026-11-07T09:50:29Z",
+  "id1000001872340020": "2026-11-07T10:00:43Z",
   "id1000001872340022": "2026-11-07T09:40:30Z",
   "id1000001872340024": "2026-11-07T09:40:30Z",
   "id1000001872340026": "2026-11-07T09:45:26Z",
   "id1000001872340028": "2026-11-07T09:45:26Z",
-  "id1000001872340030": "2026-11-07T09:50:29Z",
+  "id1000001872340030": "2026-11-07T10:00:43Z",
   "id1000002067015458": "2026-11-07T08:20:31Z",
   "id1000002371945386": "2026-11-07T09:45:26Z",
   "id1000002371945398": "2026-11-07T08:20:31Z",
@@ -24015,11 +24020,11 @@
   "id1000004067126876": "2026-11-07T07:55:22Z",
   "id1000004067126880": "2026-11-07T07:55:22Z",
   "id1000004472513962": "2026-11-07T07:55:22Z",
-  "id1000004472513964": "2026-11-07T09:50:29Z",
-  "id1000004472513970": "2026-11-07T09:50:29Z",
-  "id1000004472513976": "2026-11-07T09:50:29Z",
+  "id1000004472513964": "2026-11-07T10:00:43Z",
+  "id1000004472513970": "2026-11-07T10:00:43Z",
+  "id1000004472513976": "2026-11-07T10:00:43Z",
   "id1000004572345574": "2026-11-07T07:55:22Z",
-  "id1000004572345578": "2026-11-07T09:20:32Z",
+  "id1000004572345578": "2026-11-07T10:00:43Z",
   "id1000004667126452": "2026-11-07T09:45:26Z",
   "id1000004667126454": "2026-11-07T09:45:26Z",
   "id1000004667126456": "2026-11-07T09:45:26Z",
@@ -24028,11 +24033,11 @@
   "id1000004667126462": "2026-11-07T09:45:26Z",
   "id1000004667126464": "2026-11-07T09:45:26Z",
   "id1000004667126466": "2026-11-07T09:45:26Z",
-  "id1000004772044394": "2026-11-07T09:50:29Z",
-  "id1000004772044402": "2026-11-07T09:50:29Z",
-  "id1000005272723306": "2026-11-07T09:55:25Z",
-  "id1000005272723312": "2026-11-07T09:25:22Z",
-  "id1000005272723316": "2026-11-07T09:25:22Z",
+  "id1000004772044394": "2026-11-07T10:00:43Z",
+  "id1000004772044402": "2026-11-07T10:00:43Z",
+  "id1000005272723306": "2026-11-07T10:00:43Z",
+  "id1000005272723312": "2026-11-07T10:00:43Z",
+  "id1000005272723316": "2026-11-07T10:00:43Z",
   "id1000005272723320": "2026-11-07T09:55:25Z",
   "id1000005373093054": "2026-11-07T07:55:22Z",
   "id1000005373093058": "2026-11-07T09:45:26Z",
@@ -24044,18 +24049,18 @@
   "id1000005472477564": "2026-11-07T09:45:26Z",
   "id1000005472477568": "2026-11-07T08:20:31Z",
   "id1000005472477574": "2026-11-07T08:20:31Z",
-  "id1000006572499144": "2026-11-07T09:50:29Z",
-  "id1000006572499148": "2026-11-07T09:50:29Z",
-  "id1000009872735888": "2026-11-07T09:55:25Z",
-  "id1000009872735890": "2026-11-07T09:25:22Z",
-  "id1000009872735902": "2026-11-07T09:55:25Z",
-  "id1000009872735906": "2026-11-07T09:50:29Z",
+  "id1000006572499144": "2026-11-07T10:00:43Z",
+  "id1000006572499148": "2026-11-07T10:00:43Z",
+  "id1000009872735888": "2026-11-07T10:00:43Z",
+  "id1000009872735890": "2026-11-07T10:00:43Z",
+  "id1000009872735902": "2026-11-07T10:00:43Z",
+  "id1000009872735906": "2026-11-07T10:00:43Z",
   "id1000013172044804": "2026-11-07T09:55:25Z",
   "id1000013572440750": "2026-11-07T07:55:22Z",
   "id1000013572440760": "2026-11-07T09:55:25Z",
-  "id1000013572440762": "2026-11-07T09:35:23Z",
+  "id1000013572440762": "2026-11-07T10:00:43Z",
   "id1000015272388080": "2026-11-07T07:55:22Z",
-  "id1000015272388082": "2026-11-07T09:50:29Z",
+  "id1000015272388082": "2026-11-07T10:00:43Z",
   "id1000015272388084": "2026-11-07T09:35:23Z",
   "id1000015573265496": "2026-11-07T09:05:22Z",
   "id1000015573265504": "2026-11-07T08:20:31Z",
@@ -24071,30 +24076,30 @@
   "id1000017272608062": "2026-11-07T09:50:29Z",
   "id1000017272608066": "2026-11-07T09:50:29Z",
   "id1000017272608074": "2026-11-07T09:50:29Z",
-  "id1000018272037436": "2026-11-07T09:50:29Z",
+  "id1000018272037436": "2026-11-07T10:00:43Z",
   "id1000018272037448": "2026-11-07T08:20:31Z",
   "id1000018272037450": "2026-11-07T08:20:31Z",
   "id1000018572936124": "2026-11-07T08:20:31Z",
   "id1000018572936126": "2026-11-07T09:45:26Z",
-  "id1000018674172518": "2026-11-07T09:50:29Z",
+  "id1000018674172518": "2026-11-07T10:00:43Z",
   "id1000018674172774": "2026-11-07T09:55:25Z",
-  "id1000020272043310": "2026-11-07T09:50:29Z",
+  "id1000020272043310": "2026-11-07T10:00:43Z",
   "id1000020272043316": "2026-11-07T09:55:25Z",
   "id1000020272043318": "2026-11-07T08:40:30Z",
   "id1000020272043322": "2026-11-07T08:15:28Z",
-  "id1000020572300864": "2026-11-07T09:50:29Z",
-  "id1000020572300878": "2026-11-07T09:25:22Z",
+  "id1000020572300864": "2026-11-07T10:00:43Z",
+  "id1000020572300878": "2026-11-07T10:00:43Z",
   "id1000020672202720": "2026-11-07T09:45:26Z",
   "id1000020672202722": "2026-11-07T09:45:26Z",
   "id1000020672202724": "2026-11-07T09:45:26Z",
   "id1000020672202726": "2026-11-07T09:45:26Z",
   "id1000021072083126": "2026-11-07T09:55:25Z",
   "id1000021072083128": "2026-11-07T09:50:29Z",
-  "id1000021072083130": "2026-11-07T09:25:22Z",
+  "id1000021072083130": "2026-11-07T10:00:43Z",
   "id1000021466918388": "2026-11-07T09:55:25Z",
-  "id1000021466918392": "2026-11-07T09:50:29Z",
-  "id1000021466918394": "2026-11-07T09:50:29Z",
-  "id1000021466918396": "2026-11-07T09:50:29Z",
+  "id1000021466918392": "2026-11-07T10:00:43Z",
+  "id1000021466918394": "2026-11-07T10:00:43Z",
+  "id1000021466918396": "2026-11-07T10:00:43Z",
   "id1000021574376152": "2026-11-07T08:20:31Z",
   "id1000021574376154": "2026-11-07T08:20:31Z",
   "id1000021574376156": "2026-11-07T07:55:22Z",
@@ -24107,7 +24112,7 @@
   "id1000023872531014": "2026-11-07T08:40:30Z",
   "id1000023972531646": "2026-11-07T09:35:23Z",
   "id1000023972531650": "2026-11-07T09:50:29Z",
-  "id1000023972531656": "2026-11-07T09:55:25Z",
+  "id1000023972531656": "2026-11-07T10:00:43Z",
   "id1000024266299788": "2026-11-07T08:40:30Z",
   "id1000024266299790": "2026-11-07T08:40:30Z",
   "id1000024266299792": "2026-11-07T09:05:22Z",
@@ -24129,16 +24134,16 @@
   "id1000039068823462": "2026-11-07T08:40:30Z",
   "id1000039068823464": "2026-11-07T07:45:27Z",
   "id1000049172680266": "2026-11-07T09:35:23Z",
-  "id1000049172680268": "2026-11-07T09:50:29Z",
-  "id1000049172680270": "2026-11-07T09:50:29Z",
-  "id1000049172680272": "2026-11-07T09:50:29Z",
+  "id1000049172680268": "2026-11-07T10:00:43Z",
+  "id1000049172680270": "2026-11-07T10:00:43Z",
+  "id1000049172680272": "2026-11-07T10:00:43Z",
   "id1000049172680274": "2026-11-07T09:55:25Z",
   "id1000049172680278": "2026-11-07T09:55:25Z",
-  "id1000051572398790": "2026-11-07T09:50:29Z",
+  "id1000051572398790": "2026-11-07T10:00:43Z",
   "id1000051572398792": "2026-11-07T08:20:31Z",
   "id1000051572398794": "2026-11-07T09:55:25Z",
-  "id1000051572398802": "2026-11-07T09:55:25Z",
-  "id1000056273086724": "2026-11-07T09:55:25Z",
+  "id1000051572398802": "2026-11-07T10:00:43Z",
+  "id1000056273086724": "2026-11-07T10:00:43Z",
   "id1000056273086726": "2026-11-07T08:55:26Z",
   "id1000056273086728": "2026-11-07T08:55:26Z",
   "id1000056273086734": "2026-11-07T08:55:26Z",
@@ -24152,7 +24157,7 @@
   "id1000110172521040": "2026-11-07T09:50:29Z",
   "id1000110172521042": "2026-11-07T09:50:29Z",
   "id1000110172521050": "2026-11-07T08:15:28Z",
-  "id1000229873206574": "2026-11-07T09:50:29Z",
+  "id1000229873206574": "2026-11-07T10:00:43Z",
   "id1000229873206576": "2026-11-07T09:45:26Z",
   "id1000229873206578": "2026-11-07T08:20:31Z",
   "id1002627872594636": "2026-11-07T09:55:25Z",
@@ -24177,7 +24182,7 @@
   "id1002741268311952": "2026-11-07T09:55:25Z",
   "id1002741268311954": "2026-11-07T09:55:25Z",
   "id1002741268311956": "2026-11-07T09:55:25Z",
-  "id1002741268311958": "2026-11-07T09:35:23Z",
+  "id1002741268311958": "2026-11-07T10:00:43Z",
   "id1002741268311960": "2026-11-07T09:40:30Z",
   "id1002741268311962": "2026-11-07T09:40:30Z",
   "id1002741268311964": "2026-11-07T09:40:30Z",
@@ -24188,7 +24193,7 @@
   "id1002816376363624": "2026-11-07T08:20:31Z",
   "id1002816576363120": "2026-11-07T08:20:31Z",
   "id1003483472559204": "2026-11-07T09:40:30Z",
-  "id1003483472559214": "2026-11-07T09:50:29Z",
+  "id1003483472559214": "2026-11-07T10:00:43Z",
   "id1003483472559222": "2026-11-07T08:40:30Z",
   "id1003483473068174": "2026-11-07T09:40:30Z",
   "id1003483473068178": "2026-11-07T09:40:30Z",
@@ -115655,10 +115660,182 @@
    "prob": 0.05079,
    "result": null,
    "stake": null
+  },
+  "2026-11-07|0": {
+   "date": "2026-11-07",
+   "last_start": "2026-11-07T21:00:00.000Z",
+   "leg_data": [
+    {
+     "fid": "id1000004667126454",
+     "fxi": {
+      "categoryName": "Sweden",
+      "categorySlug": "sweden",
+      "participant1Name": "IFK Varnamo",
+      "participant1ShortName": "Varnamo",
+      "participant2Name": "IFK Norrkoping FK",
+      "participant2ShortName": "Norrkoping",
+      "startTime": "2026-11-07T14:00:00.000Z",
+      "tournamentName": "Superettan"
+     },
+     "label": "Over 2.5 γκολ",
+     "market": "1010",
+     "match": "🇸🇪 Varnamo – Norrkoping",
+     "outcome": "1010",
+     "price": 1.38,
+     "prob": 0.7199,
+     "spec": {
+      "line": 2.5,
+      "side": "over",
+      "stat": "goals"
+     },
+     "start": "2026-11-07T14:00:00.000Z"
+    },
+    {
+     "fid": "id1000024266299792",
+     "fxi": {
+      "categoryName": "USA",
+      "categorySlug": "usa",
+      "participant1Name": "DC United",
+      "participant1ShortName": "DC United",
+      "participant2Name": "New York City FC",
+      "participant2ShortName": "New York City",
+      "startTime": "2026-11-07T21:00:00.000Z",
+      "tournamentName": "MLS"
+     },
+     "label": "Ημίχρονο Over 0.5 γκολ",
+     "market": "10256",
+     "match": "🇺🇸 DC United – New York City",
+     "outcome": "10256",
+     "price": 1.45,
+     "prob": 0.7072,
+     "spec": {
+      "line": 0.5,
+      "side": "over",
+      "stat": "ht"
+     },
+     "start": "2026-11-07T21:00:00.000Z"
+    },
+    {
+     "fid": "id1000015573265518",
+     "fxi": {
+      "categoryName": "Argentina",
+      "categorySlug": "argentina",
+      "participant1Name": "CA Rosario Central",
+      "participant1ShortName": "Rosario",
+      "participant2Name": "Estudiantes Rio Cuarto",
+      "participant2ShortName": "Rio Cuarto",
+      "startTime": "2026-11-07T20:30:00.000Z",
+      "tournamentName": "Primera LPF"
+     },
+     "label": "Over 2.5 γκολ",
+     "market": "1010",
+     "match": "🇦🇷 Rosario – Rio Cuarto",
+     "outcome": "1010",
+     "price": 1.67,
+     "prob": 0.5834,
+     "spec": {
+      "line": 2.5,
+      "side": "over",
+      "stat": "goals"
+     },
+     "start": "2026-11-07T20:30:00.000Z"
+    },
+    {
+     "fid": "id1000017272608074",
+     "fxi": {
+      "categoryName": "Czechia",
+      "categorySlug": "czechia",
+      "participant1Name": "FC Zlin",
+      "participant1ShortName": "Zlin",
+      "participant2Name": "1. FC Slovacko Uherske Hradiste",
+      "participant2ShortName": "Slovacko Uherske H.",
+      "startTime": "2026-11-07T14:00:00.000Z",
+      "tournamentName": "1. Liga"
+     },
+     "label": "Ημίχρονο Over 0.5 γκολ",
+     "market": "10256",
+     "match": "🇨🇿 Zlin – Slovacko Uherske H.",
+     "outcome": "10256",
+     "price": 1.47,
+     "prob": 0.6854,
+     "spec": {
+      "line": 0.5,
+      "side": "over",
+      "stat": "ht"
+     },
+     "start": "2026-11-07T14:00:00.000Z"
+    },
+    {
+     "fid": "id1000005272723320",
+     "fxi": {
+      "categoryName": "Turkiye",
+      "categorySlug": "turkiye",
+      "participant1Name": "Samsunspor",
+      "participant1ShortName": "Samsunspor",
+      "participant2Name": "Konyaspor",
+      "participant2ShortName": "Konyaspor",
+      "startTime": "2026-11-07T13:00:00.000Z",
+      "tournamentName": "Super Lig"
+     },
+     "label": "Ημίχρονο Over 0.5 γκολ",
+     "market": "10256",
+     "match": "🇹🇷 Samsunspor – Konyaspor",
+     "outcome": "10256",
+     "price": 1.44,
+     "prob": 0.6998,
+     "spec": {
+      "line": 0.5,
+      "side": "over",
+      "stat": "ht"
+     },
+     "start": "2026-11-07T13:00:00.000Z"
+    },
+    {
+     "fid": "id1000017071913126",
+     "fxi": {
+      "categoryName": "Croatia",
+      "categorySlug": "croatia",
+      "participant1Name": "HNK Gorica",
+      "participant1ShortName": "Gorica",
+      "participant2Name": "NK Slaven Belupo",
+      "participant2ShortName": "Slaven Belupo",
+      "startTime": "2026-11-07T14:00:00.000Z",
+      "tournamentName": "HNL"
+     },
+     "label": "Ημίχρονο Over 0.5 γκολ",
+     "market": "10256",
+     "match": "🇭🇷 Gorica – Slaven Belupo",
+     "outcome": "10256",
+     "price": 1.42,
+     "prob": 0.7097,
+     "spec": {
+      "line": 0.5,
+      "side": "over",
+      "stat": "ht"
+     },
+     "start": "2026-11-07T14:00:00.000Z"
+    }
+   ],
+   "legs": [
+    "🇸🇪 Varnamo – Norrkoping · Over 2.5 γκολ @1.38",
+    "🇺🇸 DC United – New York City · Ημίχρονο Over 0.5 γκολ @1.45",
+    "🇦🇷 Rosario – Rio Cuarto · Over 2.5 γκολ @1.67",
+    "🇨🇿 Zlin – Slovacko Uherske H. · Ημίχρονο Over 0.5 γκολ @1.47",
+    "🇹🇷 Samsunspor – Konyaspor · Ημίχρονο Over 0.5 γκολ @1.44",
+    "🇭🇷 Gorica – Slaven Belupo · Ημίχρονο Over 0.5 γκολ @1.42"
+   ],
+   "msg_ids": [
+    629
+   ],
+   "name": "Δελτίο x10–30 · Over (έως 1.70)",
+   "odds": 10.04,
+   "prob": 0.10111,
+   "result": null,
+   "stake": null
   }
  },
  "tickets_sent": {
-  "12:00": "2026-11-06",
+  "12:00": "2026-11-07",
   "23:45": "2026-11-06"
  }
 }
