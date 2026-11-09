@@ -8441,9 +8441,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 1.0,
-    "edge": -3.7,
-    "fair": 1.527,
+    "drop": 0.9,
+    "edge": -3.9,
+    "fair": 1.529,
     "fid": "id1000004772044396",
     "group": "goals",
     "label": "Under 3.5 γκολ",
@@ -8451,8 +8451,8 @@
     "match": "🇩🇰 Hvidovre – Aarhus Fremad",
     "outcome": "1013",
     "price": 1.47,
-    "prob": 0.6549,
-    "score": -3.43,
+    "prob": 0.654,
+    "score": -3.59,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -8464,9 +8464,9 @@
   "id1000005472477576": [
    {
     "book": "stoiximan",
-    "drop": -1.4,
-    "edge": -0.6,
-    "fair": 1.399,
+    "drop": 10.4,
+    "edge": 4.5,
+    "fair": 2.392,
     "fid": "id1000005472477576",
     "fxi": {
      "categoryName": "Spain",
@@ -8478,6 +8478,48 @@
      "startTime": "2026-11-09T19:30:00.000Z",
      "tournamentName": "LaLiga 2"
     },
+    "group": "corners",
+    "label": "Κόρνερ Under 8.5",
+    "market": "10799",
+    "match": "🇪🇸 Las Palmas – Eldense",
+    "outcome": "10800",
+    "price": 2.5,
+    "prob": 0.4181,
+    "score": 7.65,
+    "spec": {
+     "line": 8.5,
+     "side": "under",
+     "stat": "corners"
+    },
+    "start": "2026-11-09T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 8.9,
+    "edge": 1.1,
+    "fair": 1.889,
+    "fid": "id1000005472477576",
+    "group": "corners",
+    "label": "Κόρνερ Under 9.5",
+    "market": "10803",
+    "match": "🇪🇸 Las Palmas – Eldense",
+    "outcome": "10804",
+    "price": 1.91,
+    "prob": 0.5294,
+    "score": 3.77,
+    "spec": {
+     "line": 9.5,
+     "side": "under",
+     "stat": "corners"
+    },
+    "start": "2026-11-09T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -1.4,
+    "edge": -0.6,
+    "fair": 1.399,
+    "fid": "id1000005472477576",
     "group": "goals",
     "label": "Ημίχρονο Over 0.5 γκολ",
     "market": "10256",
@@ -8586,9 +8628,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 3.4,
-    "edge": -1.5,
-    "fair": 1.472,
+    "drop": 3.6,
+    "edge": -1.2,
+    "fair": 1.468,
     "fid": "id1000005472477578",
     "group": "goals",
     "label": "Ημίχρονο Under 1.5 γκολ",
@@ -8596,8 +8638,8 @@
     "match": "🇪🇸 Sabadell – Real Sociedad B",
     "outcome": "10259",
     "price": 1.45,
-    "prob": 0.6793,
-    "score": -0.48,
+    "prob": 0.6812,
+    "score": -0.15,
     "spec": {
      "line": 1.5,
      "side": "under",
@@ -8645,21 +8687,22 @@
    },
    {
     "book": "stoiximan",
-    "drop": -3.3,
-    "edge": -2.5,
-    "fair": 1.794,
+    "drop": 2.9,
+    "edge": -3.4,
+    "fair": 1.377,
     "fid": "id1000005472477578",
-    "group": "1x2",
-    "label": "1 (Sabadell)",
-    "market": "101",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
     "match": "🇪🇸 Sabadell – Real Sociedad B",
-    "outcome": "101",
-    "price": 1.75,
-    "prob": 0.5574,
-    "score": -2.45,
+    "outcome": "1013",
+    "price": 1.33,
+    "prob": 0.7262,
+    "score": -2.55,
     "spec": {
-     "side": "1",
-     "stat": "1x2"
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-11-09T19:30:00.000Z"
    }
@@ -8740,6 +8783,26 @@
    },
    {
     "book": "stoiximan",
+    "drop": -1.8,
+    "edge": -3.1,
+    "fair": 1.755,
+    "fid": "id1000015272388088",
+    "group": "btts",
+    "label": "Goal/Goal: Ναι",
+    "market": "104",
+    "match": "🇷🇴 Botosani – Otelul Galati",
+    "outcome": "104",
+    "price": 1.7,
+    "prob": 0.5698,
+    "score": -3.13,
+    "spec": {
+     "side": "yes",
+     "stat": "btts"
+    },
+    "start": "2026-11-09T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": -4.5,
     "edge": -3.2,
     "fair": 1.353,
@@ -8763,9 +8826,9 @@
   "id1000023972531662": [
    {
     "book": "stoiximan",
-    "drop": 3.1,
-    "edge": -3.6,
-    "fair": 1.784,
+    "drop": 6.6,
+    "edge": -1.7,
+    "fair": 1.984,
     "fid": "id1000023972531662",
     "fxi": {
      "categoryName": "Portugal",
@@ -8777,18 +8840,60 @@
      "startTime": "2026-11-09T20:15:00.000Z",
      "tournamentName": "Liga Portugal 2"
     },
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
+    "group": "corners",
+    "label": "Κόρνερ Under 9.5",
+    "market": "10803",
     "match": "🇵🇹 Torreense – Leiria",
-    "outcome": "1010",
-    "price": 1.72,
-    "prob": 0.5605,
-    "score": -2.67,
+    "outcome": "10804",
+    "price": 1.95,
+    "prob": 0.504,
+    "score": 0.25,
     "spec": {
-     "line": 2.5,
-     "side": "over",
-     "stat": "goals"
+     "line": 9.5,
+     "side": "under",
+     "stat": "corners"
+    },
+    "start": "2026-11-09T20:15:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 6.4,
+    "edge": -3.7,
+    "fair": 1.63,
+    "fid": "id1000023972531662",
+    "group": "corners",
+    "label": "Κόρνερ Under 10.5",
+    "market": "10807",
+    "match": "🇵🇹 Torreense – Leiria",
+    "outcome": "10808",
+    "price": 1.57,
+    "prob": 0.6135,
+    "score": -1.77,
+    "spec": {
+     "line": 10.5,
+     "side": "under",
+     "stat": "corners"
+    },
+    "start": "2026-11-09T20:15:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -4.5,
+    "edge": -4.0,
+    "fair": 1.583,
+    "fid": "id1000023972531662",
+    "group": "goals",
+    "label": "Ημίχρονο Under 1.5 γκολ",
+    "market": "10258",
+    "match": "🇵🇹 Torreense – Leiria",
+    "outcome": "10259",
+    "price": 1.52,
+    "prob": 0.6317,
+    "score": -3.98,
+    "spec": {
+     "line": 1.5,
+     "side": "under",
+     "stat": "ht"
     },
     "start": "2026-11-09T20:15:00.000Z"
    }
@@ -8829,9 +8934,9 @@
   "id1000056276121458": [
    {
     "book": "stoiximan",
-    "drop": 15.0,
-    "edge": -3.6,
-    "fair": 2.148,
+    "drop": -10.3,
+    "edge": -0.5,
+    "fair": 1.759,
     "fid": "id1000056276121458",
     "fxi": {
      "categoryName": "Romania",
@@ -8844,17 +8949,38 @@
      "tournamentName": "Liga 2"
     },
     "group": "goals",
-    "label": "Ημίχρονο Over 1.5 γκολ",
-    "market": "10258",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
     "match": "🇷🇴 CS Dinamo Bucuresti – Scm Ramnicu Valcea",
-    "outcome": "10258",
-    "price": 2.07,
-    "prob": 0.4655,
-    "score": 0.88,
+    "outcome": "1013",
+    "price": 1.75,
+    "prob": 0.5685,
+    "score": -0.51,
     "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "ht"
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-09T15:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -17.2,
+    "edge": -2.4,
+    "fair": 2.818,
+    "fid": "id1000056276121458",
+    "group": "goals",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
+    "match": "🇷🇴 CS Dinamo Bucuresti – Scm Ramnicu Valcea",
+    "outcome": "1011",
+    "price": 2.75,
+    "prob": 0.3549,
+    "score": -2.41,
+    "spec": {
+     "line": 2.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-11-09T15:00:00.000Z"
    }
@@ -9140,19 +9266,19 @@
   ]
  },
  "checked": {
-  "id1000002076509750": "2026-11-09T11:00:47Z",
-  "id1000004772044396": "2026-11-09T11:00:47Z",
-  "id1000005472477576": "2026-11-09T11:00:47Z",
-  "id1000005472477578": "2026-11-09T11:00:47Z",
-  "id1000015272388088": "2026-11-09T11:00:47Z",
-  "id1000018674172520": "2026-11-09T11:00:47Z",
-  "id1000023972531662": "2026-11-09T11:00:47Z",
-  "id1000056276121454": "2026-11-09T11:00:47Z",
-  "id1000056276121458": "2026-11-09T11:00:47Z",
-  "id1002655673294070": "2026-11-09T11:00:47Z",
-  "id1002655873294802": "2026-11-09T11:00:47Z",
-  "id1002655873294810": "2026-11-09T11:00:47Z",
-  "id1002655873294816": "2026-11-09T11:00:47Z"
+  "id1000002076509750": "2026-11-09T11:05:25Z",
+  "id1000004772044396": "2026-11-09T11:05:25Z",
+  "id1000005472477576": "2026-11-09T11:05:25Z",
+  "id1000005472477578": "2026-11-09T11:05:25Z",
+  "id1000015272388088": "2026-11-09T11:05:25Z",
+  "id1000018674172520": "2026-11-09T11:05:25Z",
+  "id1000023972531662": "2026-11-09T11:05:25Z",
+  "id1000056276121454": "2026-11-09T11:05:25Z",
+  "id1000056276121458": "2026-11-09T11:05:25Z",
+  "id1002655673294070": "2026-11-09T11:05:25Z",
+  "id1002655873294802": "2026-11-09T11:05:25Z",
+  "id1002655873294810": "2026-11-09T11:05:25Z",
+  "id1002655873294816": "2026-11-09T11:05:25Z"
  },
  "diag": {
   "2026-11-07": {
