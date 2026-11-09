@@ -8294,9 +8294,9 @@
   "id1000002076509750": [
    {
     "book": "stoiximan",
-    "drop": 0.9,
-    "edge": 3.2,
-    "fair": 2.325,
+    "drop": -2.7,
+    "edge": -0.9,
+    "fair": 2.421,
     "fid": "id1000002076509750",
     "fxi": {
      "categoryName": "Norway",
@@ -8314,8 +8314,8 @@
     "match": "🇳🇴 Kristiansund – Valerenga",
     "outcome": "10808",
     "price": 2.4,
-    "prob": 0.4301,
-    "score": 3.5,
+    "prob": 0.4131,
+    "score": -0.87,
     "spec": {
      "line": 10.5,
      "side": "under",
@@ -8340,27 +8340,6 @@
     "spec": {
      "side": "2",
      "stat": "1x2"
-    },
-    "start": "2026-11-09T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.3,
-    "edge": -1.8,
-    "fair": 1.905,
-    "fid": "id1000002076509750",
-    "group": "corners",
-    "label": "Κόρνερ Under 11.5",
-    "market": "10811",
-    "match": "🇳🇴 Kristiansund – Valerenga",
-    "outcome": "10812",
-    "price": 1.87,
-    "prob": 0.5249,
-    "score": -1.74,
-    "spec": {
-     "line": 11.5,
-     "side": "under",
-     "stat": "corners"
     },
     "start": "2026-11-09T18:00:00.000Z"
    },
@@ -8420,9 +8399,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 16.9,
-    "edge": -1.7,
-    "fair": 1.781,
+    "drop": 17.9,
+    "edge": -0.6,
+    "fair": 1.761,
     "fid": "id1000004772044396",
     "group": "1x2",
     "label": "1 (Hvidovre)",
@@ -8430,8 +8409,8 @@
     "match": "🇩🇰 Hvidovre – Aarhus Fremad",
     "outcome": "101",
     "price": 1.75,
-    "prob": 0.5615,
-    "score": 3.32,
+    "prob": 0.5679,
+    "score": 4.73,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -8532,6 +8511,26 @@
    },
    {
     "book": "stoiximan",
+    "drop": 5.5,
+    "edge": -2.1,
+    "fair": 2.115,
+    "fid": "id1000005472477576",
+    "group": "1x2",
+    "label": "1 (Las Palmas)",
+    "market": "101",
+    "match": "🇪🇸 Las Palmas – Eldense",
+    "outcome": "101",
+    "price": 2.07,
+    "prob": 0.4728,
+    "score": -0.47,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-11-09T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 10.5,
     "edge": -4.0,
     "fair": 2.083,
@@ -8549,29 +8548,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 5.1,
-    "edge": -2.6,
-    "fair": 2.126,
-    "fid": "id1000005472477576",
-    "group": "1x2",
-    "label": "1 (Las Palmas)",
-    "market": "101",
-    "match": "🇪🇸 Las Palmas – Eldense",
-    "outcome": "101",
-    "price": 2.07,
-    "prob": 0.4704,
-    "score": -1.11,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
-    },
-    "start": "2026-11-09T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -4.5,
-    "edge": -3.0,
-    "fair": 2.185,
+    "drop": -5.0,
+    "edge": -3.2,
+    "fair": 2.19,
     "fid": "id1000005472477576",
     "group": "goals",
     "label": "Under 2.5 γκολ",
@@ -8579,8 +8558,8 @@
     "match": "🇪🇸 Las Palmas – Eldense",
     "outcome": "1011",
     "price": 2.12,
-    "prob": 0.4577,
-    "score": -2.97,
+    "prob": 0.4566,
+    "score": -3.2,
     "spec": {
      "line": 2.5,
      "side": "under",
@@ -8754,8 +8733,8 @@
    {
     "book": "stoiximan",
     "drop": -1.9,
-    "edge": 0.2,
-    "fair": 1.437,
+    "edge": 0.3,
+    "fair": 1.435,
     "fid": "id1000015272388088",
     "group": "goals",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -8763,8 +8742,8 @@
     "match": "🇷🇴 Botosani – Otelul Galati",
     "outcome": "10256",
     "price": 1.44,
-    "prob": 0.6959,
-    "score": 0.21,
+    "prob": 0.6969,
+    "score": 0.35,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -8795,30 +8774,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -3.3,
+    "drop": 5.5,
     "edge": -2.2,
-    "fair": 1.339,
-    "fid": "id1000015272388088",
-    "group": "goals",
-    "label": "Over 1.5 γκολ",
-    "market": "108",
-    "match": "🇷🇴 Botosani – Otelul Galati",
-    "outcome": "108",
-    "price": 1.31,
-    "prob": 0.7468,
-    "score": -2.17,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-09T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 3.8,
-    "edge": -3.8,
-    "fair": 2.027,
+    "fair": 1.993,
     "fid": "id1000015272388088",
     "group": "1x2",
     "label": "1 (Botosani)",
@@ -8826,8 +8784,8 @@
     "match": "🇷🇴 Botosani – Otelul Galati",
     "outcome": "101",
     "price": 1.95,
-    "prob": 0.4933,
-    "score": -2.66,
+    "prob": 0.5018,
+    "score": -0.51,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -8836,21 +8794,22 @@
    },
    {
     "book": "stoiximan",
-    "drop": -3.6,
-    "edge": -3.6,
-    "fair": 1.785,
+    "drop": -3.2,
+    "edge": -2.0,
+    "fair": 1.337,
     "fid": "id1000015272388088",
-    "group": "btts",
-    "label": "Goal/Goal: Ναι",
-    "market": "104",
+    "group": "goals",
+    "label": "Over 1.5 γκολ",
+    "market": "108",
     "match": "🇷🇴 Botosani – Otelul Galati",
-    "outcome": "104",
-    "price": 1.72,
-    "prob": 0.5602,
-    "score": -3.64,
+    "outcome": "108",
+    "price": 1.31,
+    "prob": 0.7479,
+    "score": -2.02,
     "spec": {
-     "side": "yes",
-     "stat": "btts"
+     "line": 1.5,
+     "side": "over",
+     "stat": "goals"
     },
     "start": "2026-11-09T18:00:00.000Z"
    }
@@ -9304,19 +9263,19 @@
   ]
  },
  "checked": {
-  "id1000002076509750": "2026-11-09T16:25:22Z",
-  "id1000004772044396": "2026-11-09T16:25:22Z",
-  "id1000005472477576": "2026-11-09T16:25:22Z",
-  "id1000005472477578": "2026-11-09T16:25:22Z",
-  "id1000015272388088": "2026-11-09T16:25:22Z",
+  "id1000002076509750": "2026-11-09T16:30:41Z",
+  "id1000004772044396": "2026-11-09T16:30:41Z",
+  "id1000005472477576": "2026-11-09T16:30:41Z",
+  "id1000005472477578": "2026-11-09T16:30:41Z",
+  "id1000015272388088": "2026-11-09T16:30:41Z",
   "id1000018674172520": "2026-11-09T12:55:25Z",
-  "id1000023972531662": "2026-11-09T16:25:22Z",
+  "id1000023972531662": "2026-11-09T16:30:41Z",
   "id1000056276121454": "2026-11-09T12:25:25Z",
   "id1000056276121458": "2026-11-09T14:55:27Z",
-  "id1002655673294070": "2026-11-09T16:25:22Z",
-  "id1002655873294802": "2026-11-09T16:25:22Z",
-  "id1002655873294810": "2026-11-09T16:25:22Z",
-  "id1002655873294816": "2026-11-09T16:25:22Z"
+  "id1002655673294070": "2026-11-09T16:30:41Z",
+  "id1002655873294802": "2026-11-09T16:30:41Z",
+  "id1002655873294810": "2026-11-09T16:30:41Z",
+  "id1002655873294816": "2026-11-09T16:30:41Z"
  },
  "diag": {
   "2026-11-07": {
