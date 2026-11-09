@@ -8421,9 +8421,9 @@
   "id1000005472477576": [
    {
     "book": "stoiximan",
-    "drop": 8.4,
-    "edge": 2.9,
-    "fair": 2.429,
+    "drop": 6.0,
+    "edge": 0.0,
+    "fair": 2.499,
     "fid": "id1000005472477576",
     "fxi": {
      "categoryName": "Spain",
@@ -8441,31 +8441,10 @@
     "match": "🇪🇸 Las Palmas – Eldense",
     "outcome": "10800",
     "price": 2.5,
-    "prob": 0.4117,
-    "score": 5.45,
+    "prob": 0.4002,
+    "score": 1.85,
     "spec": {
      "line": 8.5,
-     "side": "under",
-     "stat": "corners"
-    },
-    "start": "2026-11-09T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 7.2,
-    "edge": -0.2,
-    "fair": 1.914,
-    "fid": "id1000005472477576",
-    "group": "corners",
-    "label": "Κόρνερ Under 9.5",
-    "market": "10803",
-    "match": "🇪🇸 Las Palmas – Eldense",
-    "outcome": "10804",
-    "price": 1.91,
-    "prob": 0.5225,
-    "score": 1.96,
-    "spec": {
-     "line": 9.5,
      "side": "under",
      "stat": "corners"
     },
@@ -8507,6 +8486,27 @@
    },
    {
     "book": "stoiximan",
+    "drop": 4.7,
+    "edge": -2.7,
+    "fair": 1.962,
+    "fid": "id1000005472477576",
+    "group": "corners",
+    "label": "Κόρνερ Under 9.5",
+    "market": "10803",
+    "match": "🇪🇸 Las Palmas – Eldense",
+    "outcome": "10804",
+    "price": 1.91,
+    "prob": 0.5097,
+    "score": -1.24,
+    "spec": {
+     "line": 9.5,
+     "side": "under",
+     "stat": "corners"
+    },
+    "start": "2026-11-09T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 0.9,
     "edge": -2.4,
     "fair": 1.66,
@@ -8524,34 +8524,14 @@
      "stat": "btts"
     },
     "start": "2026-11-09T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 3.7,
-    "edge": -3.9,
-    "fair": 2.155,
-    "fid": "id1000005472477576",
-    "group": "1x2",
-    "label": "1 (Las Palmas)",
-    "market": "101",
-    "match": "🇪🇸 Las Palmas – Eldense",
-    "outcome": "101",
-    "price": 2.07,
-    "prob": 0.464,
-    "score": -2.84,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
-    },
-    "start": "2026-11-09T19:30:00.000Z"
    }
   ],
   "id1000005472477578": [
    {
     "book": "stoiximan",
-    "drop": -3.2,
-    "edge": 8.0,
-    "fair": 1.592,
+    "drop": -3.7,
+    "edge": 7.5,
+    "fair": 1.6,
     "fid": "id1000005472477578",
     "fxi": {
      "categoryName": "Spain",
@@ -8569,16 +8549,16 @@
     "match": "🇪🇸 Sabadell – Real Sociedad B",
     "outcome": "10939",
     "price": 1.72,
-    "prob": 0.6281,
-    "score": 8.04,
+    "prob": 0.625,
+    "score": 7.5,
     "spec": null,
     "start": "2026-11-09T19:30:00.000Z"
    },
    {
     "book": "stoiximan",
-    "drop": -4.7,
-    "edge": 7.0,
-    "fair": 2.102,
+    "drop": -5.3,
+    "edge": 6.4,
+    "fair": 2.115,
     "fid": "id1000005472477578",
     "group": "cards",
     "label": "Κάρτες Under 5.5",
@@ -8586,58 +8566,16 @@
     "match": "🇪🇸 Sabadell – Real Sociedad B",
     "outcome": "10935",
     "price": 2.25,
-    "prob": 0.4757,
-    "score": 7.04,
+    "prob": 0.4728,
+    "score": 6.38,
     "spec": null,
     "start": "2026-11-09T19:30:00.000Z"
    },
    {
     "book": "stoiximan",
-    "drop": 12.0,
-    "edge": 1.2,
-    "fair": 2.322,
-    "fid": "id1000005472477578",
-    "group": "corners",
-    "label": "Κόρνερ Under 8.5",
-    "market": "10799",
-    "match": "🇪🇸 Sabadell – Real Sociedad B",
-    "outcome": "10800",
-    "price": 2.35,
-    "prob": 0.4307,
-    "score": 4.82,
-    "spec": {
-     "line": 8.5,
-     "side": "under",
-     "stat": "corners"
-    },
-    "start": "2026-11-09T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 7.0,
-    "edge": 2.2,
-    "fair": 1.781,
-    "fid": "id1000005472477578",
-    "group": "corners",
-    "label": "Κόρνερ Under 9.5",
-    "market": "10803",
-    "match": "🇪🇸 Sabadell – Real Sociedad B",
-    "outcome": "10804",
-    "price": 1.82,
-    "prob": 0.5615,
-    "score": 4.28,
-    "spec": {
-     "line": 9.5,
-     "side": "under",
-     "stat": "corners"
-    },
-    "start": "2026-11-09T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 4.3,
-    "edge": -0.5,
-    "fair": 1.458,
+    "edge": -0.4,
+    "fair": 1.456,
     "fid": "id1000005472477578",
     "group": "goals",
     "label": "Ημίχρονο Under 1.5 γκολ",
@@ -8645,8 +8583,8 @@
     "match": "🇪🇸 Sabadell – Real Sociedad B",
     "outcome": "10259",
     "price": 1.45,
-    "prob": 0.6859,
-    "score": 0.75,
+    "prob": 0.6868,
+    "score": 0.89,
     "spec": {
      "line": 1.5,
      "side": "under",
@@ -8656,18 +8594,60 @@
    },
    {
     "book": "stoiximan",
-    "drop": 4.3,
-    "edge": -3.4,
-    "fair": 1.356,
+    "drop": 3.7,
+    "edge": -1.4,
+    "fair": 1.845,
+    "fid": "id1000005472477578",
+    "group": "corners",
+    "label": "Κόρνερ Under 9.5",
+    "market": "10803",
+    "match": "🇪🇸 Sabadell – Real Sociedad B",
+    "outcome": "10804",
+    "price": 1.82,
+    "prob": 0.542,
+    "score": -0.26,
+    "spec": {
+     "line": 9.5,
+     "side": "under",
+     "stat": "corners"
+    },
+    "start": "2026-11-09T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 8.4,
+    "edge": -2.9,
+    "fair": 2.42,
+    "fid": "id1000005472477578",
+    "group": "corners",
+    "label": "Κόρνερ Under 8.5",
+    "market": "10799",
+    "match": "🇪🇸 Sabadell – Real Sociedad B",
+    "outcome": "10800",
+    "price": 2.35,
+    "prob": 0.4132,
+    "score": -0.36,
+    "spec": {
+     "line": 8.5,
+     "side": "under",
+     "stat": "corners"
+    },
+    "start": "2026-11-09T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 4.4,
+    "edge": -1.8,
+    "fair": 1.354,
     "fid": "id1000005472477578",
     "group": "goals",
     "label": "Under 3.5 γκολ",
     "market": "1012",
     "match": "🇪🇸 Sabadell – Real Sociedad B",
     "outcome": "1013",
-    "price": 1.31,
-    "prob": 0.7375,
-    "score": -2.09,
+    "price": 1.33,
+    "prob": 0.7386,
+    "score": -0.45,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -8775,9 +8755,9 @@
   "id1000023972531662": [
    {
     "book": "stoiximan",
-    "drop": -4.3,
-    "edge": -3.1,
-    "fair": 1.497,
+    "drop": -4.5,
+    "edge": -3.3,
+    "fair": 1.499,
     "fid": "id1000023972531662",
     "fxi": {
      "categoryName": "Portugal",
@@ -8795,8 +8775,8 @@
     "match": "🇵🇹 Torreense – Leiria",
     "outcome": "1013",
     "price": 1.45,
-    "prob": 0.668,
-    "score": -3.14,
+    "prob": 0.6671,
+    "score": -3.27,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -8913,6 +8893,27 @@
    },
    {
     "book": "stoiximan",
+    "drop": 7.0,
+    "edge": -1.3,
+    "fair": 2.838,
+    "fid": "id1002655673294070",
+    "group": "goals",
+    "label": "Ημίχρονο Over 1.5 γκολ",
+    "market": "10258",
+    "match": "🇮🇹 Pineto – Pesaro",
+    "outcome": "10258",
+    "price": 2.8,
+    "prob": 0.3524,
+    "score": 0.77,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-11-09T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 3.0,
     "edge": -1.6,
     "fair": 1.443,
@@ -8950,27 +8951,6 @@
      "line": 8.5,
      "side": "over",
      "stat": "corners"
-    },
-    "start": "2026-11-09T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 7.0,
-    "edge": -3.1,
-    "fair": 2.838,
-    "fid": "id1002655673294070",
-    "group": "goals",
-    "label": "Ημίχρονο Over 1.5 γκολ",
-    "market": "10258",
-    "match": "🇮🇹 Pineto – Pesaro",
-    "outcome": "10258",
-    "price": 2.75,
-    "prob": 0.3524,
-    "score": -1.0,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "ht"
     },
     "start": "2026-11-09T19:30:00.000Z"
    }
@@ -9011,9 +8991,9 @@
   "id1002655873294810": [
    {
     "book": "stoiximan",
-    "drop": 10.9,
-    "edge": 4.5,
-    "fair": 2.488,
+    "drop": 12.4,
+    "edge": 6.3,
+    "fair": 2.445,
     "fid": "id1002655873294810",
     "fxi": {
      "categoryName": "Italy",
@@ -9031,8 +9011,8 @@
     "match": "🇮🇹 Foggia – Barletta",
     "outcome": "10796",
     "price": 2.6,
-    "prob": 0.4019,
-    "score": 7.76,
+    "prob": 0.409,
+    "score": 10.06,
     "spec": {
      "line": 7.5,
      "side": "under",
@@ -9042,9 +9022,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 12.8,
-    "edge": 3.4,
-    "fair": 1.867,
+    "drop": 14.6,
+    "edge": 5.3,
+    "fair": 1.833,
     "fid": "id1002655873294810",
     "group": "corners",
     "label": "Κόρνερ Under 8.5",
@@ -9052,8 +9032,8 @@
     "match": "🇮🇹 Foggia – Barletta",
     "outcome": "10800",
     "price": 1.93,
-    "prob": 0.5356,
-    "score": 7.22,
+    "prob": 0.5456,
+    "score": 9.68,
     "spec": {
      "line": 8.5,
      "side": "under",
@@ -9182,15 +9162,15 @@
  "checked": {
   "id1000002076509750": "2026-11-09T17:55:28Z",
   "id1000004772044396": "2026-11-09T17:55:28Z",
-  "id1000005472477576": "2026-11-09T18:45:31Z",
-  "id1000005472477578": "2026-11-09T18:45:31Z",
+  "id1000005472477576": "2026-11-09T18:50:31Z",
+  "id1000005472477578": "2026-11-09T18:50:31Z",
   "id1000015272388088": "2026-11-09T17:55:28Z",
-  "id1000023972531662": "2026-11-09T18:45:31Z",
-  "id1000056276121460": "2026-11-09T18:45:31Z",
-  "id1002655673294070": "2026-11-09T18:45:31Z",
-  "id1002655873294802": "2026-11-09T18:45:31Z",
-  "id1002655873294810": "2026-11-09T18:45:31Z",
-  "id1002655873294816": "2026-11-09T18:45:31Z"
+  "id1000023972531662": "2026-11-09T18:50:31Z",
+  "id1000056276121460": "2026-11-09T18:50:31Z",
+  "id1002655673294070": "2026-11-09T18:50:31Z",
+  "id1002655873294802": "2026-11-09T18:50:31Z",
+  "id1002655873294810": "2026-11-09T18:50:31Z",
+  "id1002655873294816": "2026-11-09T18:50:31Z"
  },
  "diag": {
   "2026-11-07": {
