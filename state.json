@@ -8366,9 +8366,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 3.8,
-    "edge": -3.7,
-    "fair": 2.098,
+    "drop": 4.3,
+    "edge": -3.3,
+    "fair": 2.088,
     "fid": "id1000002076509750",
     "group": "goals",
     "label": "Ημίχρονο Over 1.5 γκολ",
@@ -8376,8 +8376,8 @@
     "match": "🇳🇴 Kristiansund – Valerenga",
     "outcome": "10258",
     "price": 2.02,
-    "prob": 0.4766,
-    "score": -2.57,
+    "prob": 0.4789,
+    "score": -1.96,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -8512,9 +8512,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 4.0,
-    "edge": -0.8,
-    "fair": 1.462,
+    "drop": 3.4,
+    "edge": -1.5,
+    "fair": 1.472,
     "fid": "id1000005472477578",
     "group": "goals",
     "label": "Ημίχρονο Under 1.5 γκολ",
@@ -8522,8 +8522,8 @@
     "match": "🇪🇸 Sabadell – Real Sociedad B",
     "outcome": "10259",
     "price": 1.45,
-    "prob": 0.684,
-    "score": 0.38,
+    "prob": 0.6793,
+    "score": -0.48,
     "spec": {
      "line": 1.5,
      "side": "under",
@@ -8571,22 +8571,21 @@
    },
    {
     "book": "stoiximan",
-    "drop": 3.4,
-    "edge": -3.6,
-    "fair": 1.369,
+    "drop": -3.3,
+    "edge": -2.5,
+    "fair": 1.794,
     "fid": "id1000005472477578",
-    "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
+    "group": "1x2",
+    "label": "1 (Sabadell)",
+    "market": "101",
     "match": "🇪🇸 Sabadell – Real Sociedad B",
-    "outcome": "1013",
-    "price": 1.32,
-    "prob": 0.7305,
-    "score": -2.57,
+    "outcome": "101",
+    "price": 1.75,
+    "prob": 0.5574,
+    "score": -2.45,
     "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "goals"
+     "side": "1",
+     "stat": "1x2"
     },
     "start": "2026-11-09T19:30:00.000Z"
    }
@@ -8667,24 +8666,110 @@
    },
    {
     "book": "stoiximan",
-    "drop": 5.4,
-    "edge": -2.8,
-    "fair": 1.965,
+    "drop": 5.0,
+    "edge": -3.7,
+    "fair": 1.973,
     "fid": "id1000015272388088",
     "group": "goals",
     "label": "Under 2.5 γκολ",
     "market": "1010",
     "match": "🇷🇴 Botosani – Otelul Galati",
     "outcome": "1011",
-    "price": 1.91,
-    "prob": 0.5089,
-    "score": -1.18,
+    "price": 1.9,
+    "prob": 0.5068,
+    "score": -2.2,
     "spec": {
      "line": 2.5,
      "side": "under",
      "stat": "goals"
     },
     "start": "2026-11-09T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -1.8,
+    "edge": -3.1,
+    "fair": 1.755,
+    "fid": "id1000015272388088",
+    "group": "btts",
+    "label": "Goal/Goal: Ναι",
+    "market": "104",
+    "match": "🇷🇴 Botosani – Otelul Galati",
+    "outcome": "104",
+    "price": 1.7,
+    "prob": 0.5698,
+    "score": -3.13,
+    "spec": {
+     "side": "yes",
+     "stat": "btts"
+    },
+    "start": "2026-11-09T18:00:00.000Z"
+   }
+  ],
+  "id1000023972531662": [
+   {
+    "book": "stoiximan",
+    "drop": 2.8,
+    "edge": -2.0,
+    "fair": 1.786,
+    "fid": "id1000023972531662",
+    "fxi": {
+     "categoryName": "Portugal",
+     "categorySlug": "portugal",
+     "participant1Name": "SCU Torreense",
+     "participant1ShortName": "Torreense",
+     "participant2Name": "UD Leiria",
+     "participant2ShortName": "Leiria",
+     "startTime": "2026-11-09T20:15:00.000Z",
+     "tournamentName": "Liga Portugal 2"
+    },
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇵🇹 Torreense – Leiria",
+    "outcome": "1010",
+    "price": 1.75,
+    "prob": 0.5599,
+    "score": -1.18,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-09T20:15:00.000Z"
+   }
+  ],
+  "id1000056276121454": [
+   {
+    "book": "stoiximan",
+    "drop": -0.1,
+    "edge": -3.8,
+    "fair": 1.476,
+    "fid": "id1000056276121454",
+    "fxi": {
+     "categoryName": "Romania",
+     "categorySlug": "romania",
+     "participant1Name": "Stinta Poli Timisoara",
+     "participant1ShortName": "Stinta Poli Timisoara",
+     "participant2Name": "ACSM Resita",
+     "participant2ShortName": "Resita",
+     "startTime": "2026-11-09T12:30:00.000Z",
+     "tournamentName": "Liga 2"
+    },
+    "group": "goals",
+    "label": "Ημίχρονο Over 0.5 γκολ",
+    "market": "10256",
+    "match": "🇷🇴 Stinta Poli Timisoara – Resita",
+    "outcome": "10256",
+    "price": 1.42,
+    "prob": 0.6775,
+    "score": -3.79,
+    "spec": {
+     "line": 0.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-11-09T12:30:00.000Z"
    }
   ],
   "id1000056276121458": [
@@ -9001,19 +9086,19 @@
   ]
  },
  "checked": {
-  "id1000002076509750": "2026-11-09T10:50:32Z",
-  "id1000004772044396": "2026-11-09T10:50:32Z",
-  "id1000005472477576": "2026-11-09T10:50:32Z",
-  "id1000005472477578": "2026-11-09T10:50:32Z",
-  "id1000015272388088": "2026-11-09T10:50:32Z",
-  "id1000018674172520": "2026-11-09T10:50:32Z",
-  "id1000023972531662": "2026-11-09T10:50:32Z",
-  "id1000056276121454": "2026-11-09T10:50:32Z",
-  "id1000056276121458": "2026-11-09T10:50:32Z",
-  "id1002655673294070": "2026-11-09T10:50:32Z",
-  "id1002655873294802": "2026-11-09T10:50:32Z",
-  "id1002655873294810": "2026-11-09T10:50:32Z",
-  "id1002655873294816": "2026-11-09T10:50:32Z"
+  "id1000002076509750": "2026-11-09T10:55:28Z",
+  "id1000004772044396": "2026-11-09T10:55:28Z",
+  "id1000005472477576": "2026-11-09T10:55:28Z",
+  "id1000005472477578": "2026-11-09T10:55:28Z",
+  "id1000015272388088": "2026-11-09T10:55:28Z",
+  "id1000018674172520": "2026-11-09T10:55:28Z",
+  "id1000023972531662": "2026-11-09T10:55:28Z",
+  "id1000056276121454": "2026-11-09T10:55:28Z",
+  "id1000056276121458": "2026-11-09T10:55:28Z",
+  "id1002655673294070": "2026-11-09T10:55:28Z",
+  "id1002655873294802": "2026-11-09T10:55:28Z",
+  "id1002655873294810": "2026-11-09T10:55:28Z",
+  "id1002655873294816": "2026-11-09T10:55:28Z"
  },
  "diag": {
   "2026-11-07": {
