@@ -8366,27 +8366,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": -2.8,
-    "edge": -2.1,
-    "fair": 2.677,
-    "fid": "id1000004772044396",
-    "group": "goals",
-    "label": "Ημίχρονο Over 1.5 γκολ",
-    "market": "10258",
-    "match": "🇩🇰 Hvidovre – Aarhus Fremad",
-    "outcome": "10258",
-    "price": 2.62,
-    "prob": 0.3736,
-    "score": -2.13,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "ht"
-    },
-    "start": "2026-11-09T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 1.5,
     "edge": -3.4,
     "fair": 1.759,
@@ -8611,6 +8590,39 @@
     "start": "2026-11-09T18:00:00.000Z"
    }
   ],
+  "id1000018674172520": [
+   {
+    "book": "stoiximan",
+    "drop": -2.2,
+    "edge": -3.9,
+    "fair": 1.457,
+    "fid": "id1000018674172520",
+    "fxi": {
+     "categoryName": "Greece",
+     "categorySlug": "greece",
+     "participant1Name": "APS Zakynthos",
+     "participant1ShortName": "Zakynthos",
+     "participant2Name": "Niki Volou 1924 PAE",
+     "participant2ShortName": "Niki Volou",
+     "startTime": "2026-11-09T13:00:00.000Z",
+     "tournamentName": "Super League 2"
+    },
+    "group": "goals",
+    "label": "Ημίχρονο Under 1.5 γκολ",
+    "market": "10258",
+    "match": "🇬🇷 Zakynthos – Niki Volou",
+    "outcome": "10259",
+    "price": 1.4,
+    "prob": 0.6863,
+    "score": -3.91,
+    "spec": {
+     "line": 1.5,
+     "side": "under",
+     "stat": "ht"
+    },
+    "start": "2026-11-09T13:00:00.000Z"
+   }
+  ],
   "id1000023972531662": [
    {
     "book": "stoiximan",
@@ -8789,7 +8801,7 @@
    {
     "book": "stoiximan",
     "drop": 0.0,
-    "edge": 1.2,
+    "edge": -3.9,
     "fair": 2.154,
     "fid": "id1002655873294802",
     "fxi": {
@@ -8807,32 +8819,11 @@
     "market": "10799",
     "match": "🇮🇹 Altamura – Cavese",
     "outcome": "10799",
-    "price": 2.18,
+    "price": 2.07,
     "prob": 0.4643,
-    "score": 1.21,
+    "score": -3.9,
     "spec": {
      "line": 8.5,
-     "side": "over",
-     "stat": "corners"
-    },
-    "start": "2026-11-09T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.0,
-    "edge": -3.2,
-    "fair": 1.725,
-    "fid": "id1002655873294802",
-    "group": "corners",
-    "label": "Κόρνερ Over 7.5",
-    "market": "10795",
-    "match": "🇮🇹 Altamura – Cavese",
-    "outcome": "10795",
-    "price": 1.67,
-    "prob": 0.5797,
-    "score": -3.19,
-    "spec": {
-     "line": 7.5,
      "side": "over",
      "stat": "corners"
     },
@@ -8990,27 +8981,7 @@
    {
     "book": "stoiximan",
     "drop": 0.0,
-    "edge": -1.9,
-    "fair": 1.967,
-    "fid": "id1002655873294816",
-    "group": "btts",
-    "label": "Goal/Goal: Όχι",
-    "market": "104",
-    "match": "🇮🇹 Picerno – Bari",
-    "outcome": "105",
-    "price": 1.93,
-    "prob": 0.5084,
-    "score": -1.88,
-    "spec": {
-     "side": "no",
-     "stat": "btts"
-    },
-    "start": "2026-11-09T19:45:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.0,
-    "edge": -2.1,
+    "edge": -3.3,
     "fair": 1.706,
     "fid": "id1002655873294816",
     "group": "goals",
@@ -9018,32 +8989,53 @@
     "market": "1010",
     "match": "🇮🇹 Picerno – Bari",
     "outcome": "1011",
-    "price": 1.67,
+    "price": 1.65,
     "prob": 0.5862,
-    "score": -2.11,
+    "score": -3.28,
     "spec": {
      "line": 2.5,
      "side": "under",
      "stat": "goals"
     },
     "start": "2026-11-09T19:45:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -2.2,
+    "edge": -3.5,
+    "fair": 1.575,
+    "fid": "id1002655873294816",
+    "group": "goals",
+    "label": "Ημίχρονο Over 0.5 γκολ",
+    "market": "10256",
+    "match": "🇮🇹 Picerno – Bari",
+    "outcome": "10256",
+    "price": 1.52,
+    "prob": 0.6349,
+    "score": -3.49,
+    "spec": {
+     "line": 0.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-11-09T19:45:00.000Z"
    }
   ]
  },
  "checked": {
-  "id1000002076509750": "2026-11-09T06:50:29Z",
-  "id1000004772044396": "2026-11-09T06:50:29Z",
-  "id1000005472477576": "2026-11-09T06:50:29Z",
-  "id1000005472477578": "2026-11-09T06:50:29Z",
-  "id1000015272388088": "2026-11-09T06:50:29Z",
-  "id1000018674172520": "2026-11-09T06:50:29Z",
-  "id1000023972531662": "2026-11-09T06:50:29Z",
-  "id1000056276121454": "2026-11-09T06:50:29Z",
-  "id1000056276121458": "2026-11-09T06:50:29Z",
-  "id1002655673294070": "2026-11-09T06:50:29Z",
-  "id1002655873294802": "2026-11-09T06:50:29Z",
-  "id1002655873294810": "2026-11-09T06:50:29Z",
-  "id1002655873294816": "2026-11-09T06:50:29Z"
+  "id1000002076509750": "2026-11-09T06:55:25Z",
+  "id1000004772044396": "2026-11-09T06:55:25Z",
+  "id1000005472477576": "2026-11-09T06:55:25Z",
+  "id1000005472477578": "2026-11-09T06:55:25Z",
+  "id1000015272388088": "2026-11-09T06:55:25Z",
+  "id1000018674172520": "2026-11-09T06:55:25Z",
+  "id1000023972531662": "2026-11-09T06:55:25Z",
+  "id1000056276121454": "2026-11-09T06:55:25Z",
+  "id1000056276121458": "2026-11-09T06:55:25Z",
+  "id1002655673294070": "2026-11-09T06:55:25Z",
+  "id1002655873294802": "2026-11-09T06:55:25Z",
+  "id1002655873294810": "2026-11-09T06:55:25Z",
+  "id1002655873294816": "2026-11-09T06:55:25Z"
  },
  "diag": {
   "2026-11-07": {
