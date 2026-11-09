@@ -8438,6 +8438,27 @@
      "stat": "corners"
     },
     "start": "2026-11-09T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 1.2,
+    "edge": -3.5,
+    "fair": 1.524,
+    "fid": "id1000004772044396",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🇩🇰 Hvidovre – Aarhus Fremad",
+    "outcome": "1013",
+    "price": 1.47,
+    "prob": 0.6562,
+    "score": -3.2,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-09T18:00:00.000Z"
    }
   ],
   "id1000005472477578": [
@@ -8491,9 +8512,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 4.1,
-    "edge": -0.7,
-    "fair": 1.46,
+    "drop": 4.0,
+    "edge": -0.8,
+    "fair": 1.462,
     "fid": "id1000005472477578",
     "group": "goals",
     "label": "Ημίχρονο Under 1.5 γκολ",
@@ -8501,8 +8522,8 @@
     "match": "🇪🇸 Sabadell – Real Sociedad B",
     "outcome": "10259",
     "price": 1.45,
-    "prob": 0.6849,
-    "score": 0.56,
+    "prob": 0.684,
+    "score": 0.38,
     "spec": {
      "line": 1.5,
      "side": "under",
@@ -8550,22 +8571,21 @@
    },
    {
     "book": "stoiximan",
-    "drop": 3.4,
-    "edge": -3.6,
-    "fair": 1.369,
+    "drop": -3.6,
+    "edge": -2.7,
+    "fair": 1.798,
     "fid": "id1000005472477578",
-    "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
+    "group": "1x2",
+    "label": "1 (Sabadell)",
+    "market": "101",
     "match": "🇪🇸 Sabadell – Real Sociedad B",
-    "outcome": "1013",
-    "price": 1.32,
-    "prob": 0.7305,
-    "score": -2.57,
+    "outcome": "101",
+    "price": 1.75,
+    "prob": 0.5562,
+    "score": -2.67,
     "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "goals"
+     "side": "1",
+     "stat": "1x2"
     },
     "start": "2026-11-09T19:30:00.000Z"
    }
@@ -8664,39 +8684,6 @@
      "stat": "goals"
     },
     "start": "2026-11-09T18:00:00.000Z"
-   }
-  ],
-  "id1000023972531662": [
-   {
-    "book": "stoiximan",
-    "drop": -3.1,
-    "edge": -4.0,
-    "fair": 1.479,
-    "fid": "id1000023972531662",
-    "fxi": {
-     "categoryName": "Portugal",
-     "categorySlug": "portugal",
-     "participant1Name": "SCU Torreense",
-     "participant1ShortName": "Torreense",
-     "participant2Name": "UD Leiria",
-     "participant2ShortName": "Leiria",
-     "startTime": "2026-11-09T20:15:00.000Z",
-     "tournamentName": "Liga Portugal 2"
-    },
-    "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
-    "match": "🇵🇹 Torreense – Leiria",
-    "outcome": "1013",
-    "price": 1.42,
-    "prob": 0.6761,
-    "score": -3.99,
-    "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-09T20:15:00.000Z"
    }
   ],
   "id1000056276121458": [
@@ -8859,27 +8846,6 @@
      "stat": "corners"
     },
     "start": "2026-11-09T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -1.8,
-    "edge": -3.2,
-    "fair": 1.602,
-    "fid": "id1002655873294802",
-    "group": "goals",
-    "label": "Ημίχρονο Over 0.5 γκολ",
-    "market": "10256",
-    "match": "🇮🇹 Altamura – Cavese",
-    "outcome": "10256",
-    "price": 1.55,
-    "prob": 0.6242,
-    "score": -3.25,
-    "spec": {
-     "line": 0.5,
-     "side": "over",
-     "stat": "ht"
-    },
-    "start": "2026-11-09T19:30:00.000Z"
    }
   ],
   "id1002655873294810": [
@@ -8961,7 +8927,7 @@
    {
     "book": "stoiximan",
     "drop": 3.9,
-    "edge": 1.5,
+    "edge": 2.3,
     "fair": 2.659,
     "fid": "id1002655873294816",
     "fxi": {
@@ -8979,9 +8945,9 @@
     "market": "10795",
     "match": "🇮🇹 Picerno – Bari",
     "outcome": "10796",
-    "price": 2.7,
+    "price": 2.72,
     "prob": 0.3761,
-    "score": 2.72,
+    "score": 3.48,
     "spec": {
      "line": 7.5,
      "side": "under",
@@ -9012,20 +8978,41 @@
    },
    {
     "book": "stoiximan",
-    "drop": 5.9,
-    "edge": -1.7,
-    "fair": 2.218,
+    "drop": 0.0,
+    "edge": -3.3,
+    "fair": 1.706,
+    "fid": "id1002655873294816",
+    "group": "goals",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
+    "match": "🇮🇹 Picerno – Bari",
+    "outcome": "1011",
+    "price": 1.65,
+    "prob": 0.5862,
+    "score": -3.28,
+    "spec": {
+     "line": 2.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-09T19:45:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.0,
+    "edge": -3.5,
+    "fair": 3.211,
     "fid": "id1002655873294816",
     "group": "1x2",
-    "label": "2 (Bari)",
+    "label": "Χ",
     "market": "101",
     "match": "🇮🇹 Picerno – Bari",
-    "outcome": "103",
-    "price": 2.18,
-    "prob": 0.4509,
-    "score": 0.06,
+    "outcome": "102",
+    "price": 3.1,
+    "prob": 0.3114,
+    "score": -3.46,
     "spec": {
-     "side": "2",
+     "side": "x",
      "stat": "1x2"
     },
     "start": "2026-11-09T19:45:00.000Z"
@@ -9033,19 +9020,19 @@
   ]
  },
  "checked": {
-  "id1000002076509750": "2026-11-09T10:40:31Z",
-  "id1000004772044396": "2026-11-09T10:40:31Z",
-  "id1000005472477576": "2026-11-09T10:40:31Z",
-  "id1000005472477578": "2026-11-09T10:40:31Z",
-  "id1000015272388088": "2026-11-09T10:40:31Z",
-  "id1000018674172520": "2026-11-09T10:40:31Z",
-  "id1000023972531662": "2026-11-09T10:40:31Z",
-  "id1000056276121454": "2026-11-09T10:40:31Z",
-  "id1000056276121458": "2026-11-09T10:40:31Z",
-  "id1002655673294070": "2026-11-09T10:40:31Z",
-  "id1002655873294802": "2026-11-09T10:40:31Z",
-  "id1002655873294810": "2026-11-09T10:40:31Z",
-  "id1002655873294816": "2026-11-09T10:40:31Z"
+  "id1000002076509750": "2026-11-09T10:45:29Z",
+  "id1000004772044396": "2026-11-09T10:45:29Z",
+  "id1000005472477576": "2026-11-09T10:45:29Z",
+  "id1000005472477578": "2026-11-09T10:45:29Z",
+  "id1000015272388088": "2026-11-09T10:45:29Z",
+  "id1000018674172520": "2026-11-09T10:45:29Z",
+  "id1000023972531662": "2026-11-09T10:45:29Z",
+  "id1000056276121454": "2026-11-09T10:45:29Z",
+  "id1000056276121458": "2026-11-09T10:45:29Z",
+  "id1002655673294070": "2026-11-09T10:45:29Z",
+  "id1002655873294802": "2026-11-09T10:45:29Z",
+  "id1002655873294810": "2026-11-09T10:45:29Z",
+  "id1002655873294816": "2026-11-09T10:45:29Z"
  },
  "diag": {
   "2026-11-07": {
