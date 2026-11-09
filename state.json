@@ -8620,6 +8620,27 @@
    },
    {
     "book": "stoiximan",
+    "drop": 8.0,
+    "edge": -3.4,
+    "fair": 2.433,
+    "fid": "id1000005472477578",
+    "group": "corners",
+    "label": "Κόρνερ Under 8.5",
+    "market": "10799",
+    "match": "🇪🇸 Sabadell – Real Sociedad B",
+    "outcome": "10800",
+    "price": 2.35,
+    "prob": 0.411,
+    "score": -1.0,
+    "spec": {
+     "line": 8.5,
+     "side": "under",
+     "stat": "corners"
+    },
+    "start": "2026-11-09T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": -6.8,
     "edge": -1.1,
     "fair": 2.143,
@@ -8633,27 +8654,6 @@
     "prob": 0.4666,
     "score": -1.07,
     "spec": null,
-    "start": "2026-11-09T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 7.6,
-    "edge": -3.8,
-    "fair": 2.442,
-    "fid": "id1000005472477578",
-    "group": "corners",
-    "label": "Κόρνερ Under 8.5",
-    "market": "10799",
-    "match": "🇪🇸 Sabadell – Real Sociedad B",
-    "outcome": "10800",
-    "price": 2.35,
-    "prob": 0.4095,
-    "score": -1.48,
-    "spec": {
-     "line": 8.5,
-     "side": "under",
-     "stat": "corners"
-    },
     "start": "2026-11-09T19:30:00.000Z"
    }
   ],
@@ -8936,9 +8936,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 1.9,
-    "edge": -2.2,
-    "fair": 1.452,
+    "drop": 2.4,
+    "edge": -1.8,
+    "fair": 1.446,
     "fid": "id1002655673294070",
     "group": "goals",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -8946,8 +8946,8 @@
     "match": "🇮🇹 Pineto – Pesaro",
     "outcome": "10256",
     "price": 1.42,
-    "prob": 0.6887,
-    "score": -1.62,
+    "prob": 0.6916,
+    "score": -1.06,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -8957,9 +8957,30 @@
    },
    {
     "book": "stoiximan",
-    "drop": 0.6,
-    "edge": -2.9,
-    "fair": 1.833,
+    "drop": 6.0,
+    "edge": -3.0,
+    "fair": 2.856,
+    "fid": "id1002655673294070",
+    "group": "goals",
+    "label": "Ημίχρονο Over 1.5 γκολ",
+    "market": "10258",
+    "match": "🇮🇹 Pineto – Pesaro",
+    "outcome": "10258",
+    "price": 2.77,
+    "prob": 0.3501,
+    "score": -1.22,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-11-09T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 1.5,
+    "edge": -1.8,
+    "fair": 1.813,
     "fid": "id1002655673294070",
     "group": "btts",
     "label": "Goal/Goal: Ναι",
@@ -8967,8 +8988,8 @@
     "match": "🇮🇹 Pineto – Pesaro",
     "outcome": "104",
     "price": 1.78,
-    "prob": 0.5456,
-    "score": -2.7,
+    "prob": 0.5516,
+    "score": -1.36,
     "spec": {
      "side": "yes",
      "stat": "btts"
@@ -8979,9 +9000,9 @@
   "id1002655873294802": [
    {
     "book": "stoiximan",
-    "drop": -3.5,
-    "edge": 1.7,
-    "fair": 3.145,
+    "drop": -0.5,
+    "edge": -0.3,
+    "fair": 2.157,
     "fid": "id1002655873294802",
     "fxi": {
      "categoryName": "Italy",
@@ -8993,26 +9014,6 @@
      "startTime": "2026-11-09T19:30:00.000Z",
      "tournamentName": "Serie C, Group C"
     },
-    "group": "1x2",
-    "label": "Χ",
-    "market": "101",
-    "match": "🇮🇹 Altamura – Cavese",
-    "outcome": "102",
-    "price": 3.2,
-    "prob": 0.318,
-    "score": 1.75,
-    "spec": {
-     "side": "x",
-     "stat": "1x2"
-    },
-    "start": "2026-11-09T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -0.5,
-    "edge": -0.3,
-    "fair": 2.157,
-    "fid": "id1002655873294802",
     "group": "corners",
     "label": "Κόρνερ Over 8.5",
     "market": "10799",
@@ -9030,22 +9031,21 @@
    },
    {
     "book": "stoiximan",
-    "drop": -7.6,
-    "edge": -3.9,
-    "fair": 1.509,
+    "drop": -5.9,
+    "edge": -0.4,
+    "fair": 3.212,
     "fid": "id1002655873294802",
-    "group": "goals",
-    "label": "Ημίχρονο Under 1.5 γκολ",
-    "market": "10258",
+    "group": "1x2",
+    "label": "Χ",
+    "market": "101",
     "match": "🇮🇹 Altamura – Cavese",
-    "outcome": "10259",
-    "price": 1.45,
-    "prob": 0.6627,
-    "score": -3.91,
+    "outcome": "102",
+    "price": 3.2,
+    "prob": 0.3113,
+    "score": -0.37,
     "spec": {
-     "line": 1.5,
-     "side": "under",
-     "stat": "ht"
+     "side": "x",
+     "stat": "1x2"
     },
     "start": "2026-11-09T19:30:00.000Z"
    }
@@ -9105,9 +9105,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.8,
-    "edge": -2.5,
-    "fair": 1.539,
+    "drop": -0.7,
+    "edge": -2.3,
+    "fair": 1.536,
     "fid": "id1002655873294810",
     "group": "goals",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -9115,8 +9115,8 @@
     "match": "🇮🇹 Foggia – Barletta",
     "outcome": "10256",
     "price": 1.5,
-    "prob": 0.6498,
-    "score": -2.53,
+    "prob": 0.651,
+    "score": -2.34,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -9126,9 +9126,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 0.0,
-    "edge": -3.1,
-    "fair": 1.724,
+    "drop": 0.5,
+    "edge": -2.6,
+    "fair": 1.714,
     "fid": "id1002655873294810",
     "group": "goals",
     "label": "Under 2.5 γκολ",
@@ -9136,8 +9136,8 @@
     "match": "🇮🇹 Foggia – Barletta",
     "outcome": "1011",
     "price": 1.67,
-    "prob": 0.58,
-    "score": -3.13,
+    "prob": 0.5834,
+    "score": -2.42,
     "spec": {
      "line": 2.5,
      "side": "under",
@@ -9147,9 +9147,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.3,
-    "edge": -4.0,
-    "fair": 3.228,
+    "drop": 0.7,
+    "edge": -3.0,
+    "fair": 3.195,
     "fid": "id1002655873294810",
     "group": "1x2",
     "label": "Χ",
@@ -9157,8 +9157,8 @@
     "match": "🇮🇹 Foggia – Barletta",
     "outcome": "102",
     "price": 3.1,
-    "prob": 0.3098,
-    "score": -3.97,
+    "prob": 0.313,
+    "score": -2.78,
     "spec": {
      "side": "x",
      "stat": "1x2"
@@ -9221,9 +9221,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.1,
-    "edge": -2.7,
-    "fair": 1.542,
+    "drop": -0.3,
+    "edge": -2.9,
+    "fair": 1.545,
     "fid": "id1002655873294816",
     "group": "goals",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -9231,8 +9231,8 @@
     "match": "🇮🇹 Picerno – Bari",
     "outcome": "10256",
     "price": 1.5,
-    "prob": 0.6485,
-    "score": -2.72,
+    "prob": 0.6472,
+    "score": -2.91,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -9245,15 +9245,15 @@
  "checked": {
   "id1000002076509750": "2026-11-09T17:55:28Z",
   "id1000004772044396": "2026-11-09T17:55:28Z",
-  "id1000005472477576": "2026-11-09T19:10:30Z",
-  "id1000005472477578": "2026-11-09T19:10:30Z",
+  "id1000005472477576": "2026-11-09T19:15:30Z",
+  "id1000005472477578": "2026-11-09T19:15:30Z",
   "id1000015272388088": "2026-11-09T17:55:28Z",
-  "id1000023972531662": "2026-11-09T19:10:30Z",
-  "id1000056276121460": "2026-11-09T19:10:30Z",
-  "id1002655673294070": "2026-11-09T19:10:30Z",
-  "id1002655873294802": "2026-11-09T19:10:30Z",
-  "id1002655873294810": "2026-11-09T19:10:30Z",
-  "id1002655873294816": "2026-11-09T19:10:30Z"
+  "id1000023972531662": "2026-11-09T19:15:30Z",
+  "id1000056276121460": "2026-11-09T19:15:30Z",
+  "id1002655673294070": "2026-11-09T19:15:30Z",
+  "id1002655873294802": "2026-11-09T19:15:30Z",
+  "id1002655873294810": "2026-11-09T19:15:30Z",
+  "id1002655873294816": "2026-11-09T19:15:30Z"
  },
  "diag": {
   "2026-11-07": {
