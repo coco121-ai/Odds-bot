@@ -8399,6 +8399,26 @@
    },
    {
     "book": "stoiximan",
+    "drop": 8.4,
+    "edge": -3.1,
+    "fair": 1.961,
+    "fid": "id1000004772044396",
+    "group": "1x2",
+    "label": "1 (Hvidovre)",
+    "market": "101",
+    "match": "🇩🇰 Hvidovre – Aarhus Fremad",
+    "outcome": "101",
+    "price": 1.9,
+    "prob": 0.5099,
+    "score": -0.58,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-11-09T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": -0.2,
     "edge": -1.1,
     "fair": 1.769,
@@ -8420,9 +8440,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 3.0,
-    "edge": -3.5,
-    "fair": 1.73,
+    "drop": 3.3,
+    "edge": -3.2,
+    "fair": 1.725,
     "fid": "id1000004772044396",
     "group": "goals",
     "label": "Over 2.5 γκολ",
@@ -8430,8 +8450,8 @@
     "match": "🇩🇰 Hvidovre – Aarhus Fremad",
     "outcome": "1010",
     "price": 1.67,
-    "prob": 0.578,
-    "score": -2.56,
+    "prob": 0.5797,
+    "score": -2.21,
     "spec": {
      "line": 2.5,
      "side": "over",
@@ -8492,7 +8512,7 @@
    {
     "book": "stoiximan",
     "drop": 4.2,
-    "edge": -1.2,
+    "edge": -0.5,
     "fair": 1.458,
     "fid": "id1000005472477578",
     "group": "goals",
@@ -8500,9 +8520,9 @@
     "market": "10258",
     "match": "🇪🇸 Sabadell – Real Sociedad B",
     "outcome": "10259",
-    "price": 1.44,
+    "price": 1.45,
     "prob": 0.6859,
-    "score": 0.03,
+    "score": 0.71,
     "spec": {
      "line": 1.5,
      "side": "under",
@@ -8550,21 +8570,21 @@
    },
    {
     "book": "stoiximan",
-    "drop": -6.1,
-    "edge": -2.9,
-    "fair": 1.39,
+    "drop": 3.5,
+    "edge": -3.4,
+    "fair": 1.367,
     "fid": "id1000005472477578",
     "group": "goals",
-    "label": "Over 1.5 γκολ",
-    "market": "108",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
     "match": "🇪🇸 Sabadell – Real Sociedad B",
-    "outcome": "108",
-    "price": 1.35,
-    "prob": 0.7194,
-    "score": -2.88,
+    "outcome": "1013",
+    "price": 1.32,
+    "prob": 0.7315,
+    "score": -2.38,
     "spec": {
-     "line": 1.5,
-     "side": "over",
+     "line": 3.5,
+     "side": "under",
      "stat": "goals"
     },
     "start": "2026-11-09T19:30:00.000Z"
@@ -8626,8 +8646,8 @@
    {
     "book": "stoiximan",
     "drop": -3.1,
-    "edge": -0.9,
-    "fair": 1.453,
+    "edge": -0.8,
+    "fair": 1.451,
     "fid": "id1000015272388088",
     "group": "goals",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -8635,8 +8655,8 @@
     "match": "🇷🇴 Botosani – Otelul Galati",
     "outcome": "10256",
     "price": 1.44,
-    "prob": 0.6882,
-    "score": -0.89,
+    "prob": 0.6892,
+    "score": -0.76,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -8646,9 +8666,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -4.6,
-    "edge": -3.2,
-    "fair": 1.354,
+    "drop": -4.5,
+    "edge": -3.1,
+    "fair": 1.352,
     "fid": "id1000015272388088",
     "group": "goals",
     "label": "Over 1.5 γκολ",
@@ -8656,8 +8676,8 @@
     "match": "🇷🇴 Botosani – Otelul Galati",
     "outcome": "108",
     "price": 1.31,
-    "prob": 0.7386,
-    "score": -3.25,
+    "prob": 0.7396,
+    "score": -3.11,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -9054,19 +9074,19 @@
   ]
  },
  "checked": {
-  "id1000002076509750": "2026-11-09T09:55:24Z",
-  "id1000004772044396": "2026-11-09T09:55:24Z",
-  "id1000005472477576": "2026-11-09T09:55:24Z",
-  "id1000005472477578": "2026-11-09T09:55:24Z",
-  "id1000015272388088": "2026-11-09T09:55:24Z",
-  "id1000018674172520": "2026-11-09T09:55:24Z",
-  "id1000023972531662": "2026-11-09T09:55:24Z",
-  "id1000056276121454": "2026-11-09T09:55:24Z",
-  "id1000056276121458": "2026-11-09T09:55:24Z",
-  "id1002655673294070": "2026-11-09T09:55:24Z",
-  "id1002655873294802": "2026-11-09T09:55:24Z",
-  "id1002655873294810": "2026-11-09T09:55:24Z",
-  "id1002655873294816": "2026-11-09T09:55:24Z"
+  "id1000002076509750": "2026-11-09T10:00:48Z",
+  "id1000004772044396": "2026-11-09T10:00:48Z",
+  "id1000005472477576": "2026-11-09T10:00:48Z",
+  "id1000005472477578": "2026-11-09T10:00:48Z",
+  "id1000015272388088": "2026-11-09T10:00:48Z",
+  "id1000018674172520": "2026-11-09T10:00:48Z",
+  "id1000023972531662": "2026-11-09T10:00:48Z",
+  "id1000056276121454": "2026-11-09T10:00:48Z",
+  "id1000056276121458": "2026-11-09T10:00:48Z",
+  "id1002655673294070": "2026-11-09T10:00:48Z",
+  "id1002655873294802": "2026-11-09T10:00:48Z",
+  "id1002655873294810": "2026-11-09T10:00:48Z",
+  "id1002655873294816": "2026-11-09T10:00:48Z"
  },
  "diag": {
   "2026-11-07": {
@@ -85944,10 +85964,203 @@
    "prob": 0.04285,
    "result": null,
    "stake": null
+  },
+  "2026-11-09|1": {
+   "date": "2026-11-09",
+   "last_start": "2026-11-09T19:45:00.000Z",
+   "leg_data": [
+    {
+     "fid": "id1000002076509750",
+     "fxi": {
+      "categoryName": "Norway",
+      "categorySlug": "norway",
+      "participant1Name": "Kristiansund BK",
+      "participant1ShortName": "Kristiansund",
+      "participant2Name": "Vaalerenga IF",
+      "participant2ShortName": "Valerenga",
+      "startTime": "2026-11-09T18:00:00.000Z",
+      "tournamentName": "Eliteserien"
+     },
+     "label": "Κόρνερ Under 10.5",
+     "market": "10807",
+     "match": "🇳🇴 Kristiansund – Valerenga",
+     "outcome": "10808",
+     "price": 2.4,
+     "prob": 0.4472,
+     "spec": {
+      "line": 10.5,
+      "side": "under",
+      "stat": "corners"
+     },
+     "start": "2026-11-09T18:00:00.000Z"
+    },
+    {
+     "fid": "id1000056276121458",
+     "fxi": {
+      "categoryName": "Romania",
+      "categorySlug": "romania",
+      "participant1Name": "CS Dinamo Bucuresti",
+      "participant1ShortName": "CS Dinamo Bucuresti",
+      "participant2Name": "Scm Ramnicu Valcea",
+      "participant2ShortName": "Scm Ramnicu Valcea",
+      "startTime": "2026-11-09T15:00:00.000Z",
+      "tournamentName": "Liga 2"
+     },
+     "label": "Ημίχρονο Over 1.5 γκολ",
+     "market": "10258",
+     "match": "🇷🇴 CS Dinamo Bucuresti – Scm Ramnicu Valcea",
+     "outcome": "10258",
+     "price": 2.07,
+     "prob": 0.4655,
+     "spec": {
+      "line": 1.5,
+      "side": "over",
+      "stat": "ht"
+     },
+     "start": "2026-11-09T15:00:00.000Z"
+    },
+    {
+     "fid": "id1000004772044396",
+     "fxi": {
+      "categoryName": "Denmark",
+      "categorySlug": "denmark",
+      "participant1Name": "Hvidovre IF",
+      "participant1ShortName": "Hvidovre",
+      "participant2Name": "Aarhus Fremad",
+      "participant2ShortName": "Aarhus Fremad",
+      "startTime": "2026-11-09T18:00:00.000Z",
+      "tournamentName": "1. Division"
+     },
+     "label": "1 (Hvidovre)",
+     "market": "101",
+     "match": "🇩🇰 Hvidovre – Aarhus Fremad",
+     "outcome": "101",
+     "price": 1.9,
+     "prob": 0.5099,
+     "spec": {
+      "side": "1",
+      "stat": "1x2"
+     },
+     "start": "2026-11-09T18:00:00.000Z"
+    },
+    {
+     "fid": "id1000015272388088",
+     "fxi": {
+      "categoryName": "Romania",
+      "categorySlug": "romania",
+      "participant1Name": "FC Botosani",
+      "participant1ShortName": "Botosani",
+      "participant2Name": "ASC Otelul Galati",
+      "participant2ShortName": "Otelul Galati",
+      "startTime": "2026-11-09T18:00:00.000Z",
+      "tournamentName": "Superliga"
+     },
+     "label": "Ημίχρονο Over 0.5 γκολ",
+     "market": "10256",
+     "match": "🇷🇴 Botosani – Otelul Galati",
+     "outcome": "10256",
+     "price": 1.44,
+     "prob": 0.6892,
+     "spec": {
+      "line": 0.5,
+      "side": "over",
+      "stat": "ht"
+     },
+     "start": "2026-11-09T18:00:00.000Z"
+    },
+    {
+     "fid": "id1000005472477578",
+     "fxi": {
+      "categoryName": "Spain",
+      "categorySlug": "spain",
+      "participant1Name": "CE Sabadell FC",
+      "participant1ShortName": "Sabadell",
+      "participant2Name": "Real Sociedad San Sebastian B",
+      "participant2ShortName": "Real Sociedad B",
+      "startTime": "2026-11-09T19:30:00.000Z",
+      "tournamentName": "LaLiga 2"
+     },
+     "label": "Κάρτες Under 5.5",
+     "market": "10934",
+     "match": "🇪🇸 Sabadell – Real Sociedad B",
+     "outcome": "10935",
+     "price": 2.0,
+     "prob": 0.4916,
+     "spec": null,
+     "start": "2026-11-09T19:30:00.000Z"
+    },
+    {
+     "fid": "id1002655873294816",
+     "fxi": {
+      "categoryName": "Italy",
+      "categorySlug": "italy",
+      "participant1Name": "AZ Picerno",
+      "participant1ShortName": "Picerno",
+      "participant2Name": "SSC Bari",
+      "participant2ShortName": "Bari",
+      "startTime": "2026-11-09T19:45:00.000Z",
+      "tournamentName": "Serie C, Group C"
+     },
+     "label": "Under 2.5 γκολ",
+     "market": "1010",
+     "match": "🇮🇹 Picerno – Bari",
+     "outcome": "1011",
+     "price": 1.65,
+     "prob": 0.5882,
+     "spec": {
+      "line": 2.5,
+      "side": "under",
+      "stat": "goals"
+     },
+     "start": "2026-11-09T19:45:00.000Z"
+    },
+    {
+     "fid": "id1002655673294070",
+     "fxi": {
+      "categoryName": "Italy",
+      "categorySlug": "italy",
+      "participant1Name": "ASD Pineto Calcio",
+      "participant1ShortName": "Pineto",
+      "participant2Name": "Vis Pesaro 1898",
+      "participant2ShortName": "Pesaro",
+      "startTime": "2026-11-09T19:30:00.000Z",
+      "tournamentName": "Serie C, Group B"
+     },
+     "label": "Under 2.5 γκολ",
+     "market": "1010",
+     "match": "🇮🇹 Pineto – Pesaro",
+     "outcome": "1011",
+     "price": 1.9,
+     "prob": 0.5081,
+     "spec": {
+      "line": 2.5,
+      "side": "under",
+      "stat": "goals"
+     },
+     "start": "2026-11-09T19:30:00.000Z"
+    }
+   ],
+   "legs": [
+    "🇳🇴 Kristiansund – Valerenga · Κόρνερ Under 10.5 @2.40",
+    "🇷🇴 CS Dinamo Bucuresti – Scm Ramnicu Valcea · Ημίχρονο Over 1.5 γκολ @2.07",
+    "🇩🇰 Hvidovre – Aarhus Fremad · 1 (Hvidovre) @1.90",
+    "🇷🇴 Botosani – Otelul Galati · Ημίχρονο Over 0.5 γκολ @1.44",
+    "🇪🇸 Sabadell – Real Sociedad B · Κάρτες Under 5.5 @2.00",
+    "🇮🇹 Picerno – Bari · Under 2.5 γκολ @1.65",
+    "🇮🇹 Pineto – Pesaro · Under 2.5 γκολ @1.90"
+   ],
+   "msg_ids": [
+    657
+   ],
+   "name": "Δελτίο x80–100 · από όλα",
+   "odds": 85.22,
+   "prob": 0.01075,
+   "result": null,
+   "stake": null
   }
  },
  "tickets_sent": {
-  "12:00": "2026-11-08",
+  "12:00": "2026-11-09",
   "23:45": "2026-11-08"
  }
 }
