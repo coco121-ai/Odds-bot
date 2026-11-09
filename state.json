@@ -8314,9 +8314,9 @@
   "id1000002076509750": [
    {
     "book": "stoiximan",
-    "drop": 5.0,
-    "edge": 6.0,
-    "fair": 2.236,
+    "drop": 4.5,
+    "edge": 5.4,
+    "fair": 2.249,
     "fid": "id1000002076509750",
     "fxi": {
      "categoryName": "Norway",
@@ -8334,8 +8334,8 @@
     "match": "🇳🇴 Kristiansund – Valerenga",
     "outcome": "10808",
     "price": 2.37,
-    "prob": 0.4472,
-    "score": 7.49,
+    "prob": 0.4446,
+    "score": 6.74,
     "spec": {
      "line": 10.5,
      "side": "under",
@@ -8345,9 +8345,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 4.3,
-    "edge": 1.5,
-    "fair": 1.843,
+    "drop": 3.7,
+    "edge": 0.9,
+    "fair": 1.853,
     "fid": "id1000002076509750",
     "group": "corners",
     "label": "Κόρνερ Under 11.5",
@@ -8355,8 +8355,8 @@
     "match": "🇳🇴 Kristiansund – Valerenga",
     "outcome": "10812",
     "price": 1.87,
-    "prob": 0.5426,
-    "score": 2.74,
+    "prob": 0.5397,
+    "score": 2.01,
     "spec": {
      "line": 11.5,
      "side": "under",
@@ -8495,8 +8495,8 @@
    {
     "book": "stoiximan",
     "drop": 5.5,
-    "edge": -2.2,
-    "fair": 2.117,
+    "edge": -2.1,
+    "fair": 2.114,
     "fid": "id1000005472477576",
     "group": "1x2",
     "label": "1 (Las Palmas)",
@@ -8504,8 +8504,8 @@
     "match": "🇪🇸 Las Palmas – Eldense",
     "outcome": "101",
     "price": 2.07,
-    "prob": 0.4724,
-    "score": -0.56,
+    "prob": 0.473,
+    "score": -0.42,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -8623,9 +8623,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 4.3,
-    "edge": -0.5,
-    "fair": 1.458,
+    "drop": 4.4,
+    "edge": -0.4,
+    "fair": 1.456,
     "fid": "id1000005472477578",
     "group": "goals",
     "label": "Ημίχρονο Under 1.5 γκολ",
@@ -8633,8 +8633,8 @@
     "match": "🇪🇸 Sabadell – Real Sociedad B",
     "outcome": "10259",
     "price": 1.45,
-    "prob": 0.6859,
-    "score": 0.75,
+    "prob": 0.6868,
+    "score": 0.91,
     "spec": {
      "line": 1.5,
      "side": "under",
@@ -8644,9 +8644,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 6.6,
-    "edge": -3.3,
-    "fair": 1.893,
+    "drop": 7.0,
+    "edge": -3.0,
+    "fair": 1.886,
     "fid": "id1000005472477578",
     "group": "goals",
     "label": "Under 2.5 γκολ",
@@ -8654,8 +8654,8 @@
     "match": "🇪🇸 Sabadell – Real Sociedad B",
     "outcome": "1011",
     "price": 1.83,
-    "prob": 0.5283,
-    "score": -1.35,
+    "prob": 0.5302,
+    "score": -0.88,
     "spec": {
      "line": 2.5,
      "side": "under",
@@ -8706,7 +8706,7 @@
    {
     "book": "stoiximan",
     "drop": 2.8,
-    "edge": 2.2,
+    "edge": 1.5,
     "fair": 2.612,
     "fid": "id1000015272388088",
     "fxi": {
@@ -8724,9 +8724,9 @@
     "market": "10799",
     "match": "🇷🇴 Botosani – Otelul Galati",
     "outcome": "10800",
-    "price": 2.67,
+    "price": 2.65,
     "prob": 0.3828,
-    "score": 3.06,
+    "score": 2.29,
     "spec": {
      "line": 8.5,
      "side": "under",
@@ -8737,7 +8737,7 @@
    {
     "book": "stoiximan",
     "drop": -3.2,
-    "edge": 0.0,
+    "edge": 1.0,
     "fair": 2.0,
     "fid": "id1000015272388088",
     "group": "corners",
@@ -8745,9 +8745,9 @@
     "market": "10803",
     "match": "🇷🇴 Botosani – Otelul Galati",
     "outcome": "10804",
-    "price": 2.0,
+    "price": 2.02,
     "prob": 0.5,
-    "score": 0.0,
+    "score": 1.0,
     "spec": {
      "line": 9.5,
      "side": "under",
@@ -8798,12 +8798,45 @@
     "start": "2026-11-09T18:00:00.000Z"
    }
   ],
+  "id1000023972531662": [
+   {
+    "book": "stoiximan",
+    "drop": 1.9,
+    "edge": -3.0,
+    "fair": 1.804,
+    "fid": "id1000023972531662",
+    "fxi": {
+     "categoryName": "Portugal",
+     "categorySlug": "portugal",
+     "participant1Name": "SCU Torreense",
+     "participant1ShortName": "Torreense",
+     "participant2Name": "UD Leiria",
+     "participant2ShortName": "Leiria",
+     "startTime": "2026-11-09T20:15:00.000Z",
+     "tournamentName": "Liga Portugal 2"
+    },
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇵🇹 Torreense – Leiria",
+    "outcome": "1010",
+    "price": 1.75,
+    "prob": 0.5543,
+    "score": -2.41,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-09T20:15:00.000Z"
+   }
+  ],
   "id1000056276121454": [
    {
     "book": "stoiximan",
-    "drop": 6.7,
-    "edge": -0.8,
-    "fair": 1.815,
+    "drop": 5.0,
+    "edge": -3.6,
+    "fair": 1.846,
     "fid": "id1000056276121454",
     "fxi": {
      "categoryName": "Romania",
@@ -8820,34 +8853,13 @@
     "market": "1010",
     "match": "🇷🇴 Stinta Poli Timisoara – Resita",
     "outcome": "1011",
-    "price": 1.8,
-    "prob": 0.551,
-    "score": 1.18,
+    "price": 1.78,
+    "prob": 0.5417,
+    "score": -2.08,
     "spec": {
      "line": 2.5,
      "side": "under",
      "stat": "goals"
-    },
-    "start": "2026-11-09T12:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 2.5,
-    "edge": -2.5,
-    "fair": 1.456,
-    "fid": "id1000056276121454",
-    "group": "goals",
-    "label": "Ημίχρονο Under 1.5 γκολ",
-    "market": "10258",
-    "match": "🇷🇴 Stinta Poli Timisoara – Resita",
-    "outcome": "10259",
-    "price": 1.42,
-    "prob": 0.6868,
-    "score": -1.71,
-    "spec": {
-     "line": 1.5,
-     "side": "under",
-     "stat": "ht"
     },
     "start": "2026-11-09T12:30:00.000Z"
    }
@@ -9032,27 +9044,6 @@
      "stat": "corners"
     },
     "start": "2026-11-09T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -1.8,
-    "edge": -3.2,
-    "fair": 1.602,
-    "fid": "id1002655873294802",
-    "group": "goals",
-    "label": "Ημίχρονο Over 0.5 γκολ",
-    "market": "10256",
-    "match": "🇮🇹 Altamura – Cavese",
-    "outcome": "10256",
-    "price": 1.55,
-    "prob": 0.6242,
-    "score": -3.25,
-    "spec": {
-     "line": 0.5,
-     "side": "over",
-     "stat": "ht"
-    },
-    "start": "2026-11-09T19:30:00.000Z"
    }
   ],
   "id1002655873294810": [
@@ -9207,19 +9198,19 @@
   ]
  },
  "checked": {
-  "id1000002076509750": "2026-11-09T12:20:37Z",
-  "id1000004772044396": "2026-11-09T12:20:37Z",
-  "id1000005472477576": "2026-11-09T12:20:37Z",
-  "id1000005472477578": "2026-11-09T12:20:37Z",
-  "id1000015272388088": "2026-11-09T12:20:37Z",
-  "id1000018674172520": "2026-11-09T12:20:37Z",
-  "id1000023972531662": "2026-11-09T12:20:37Z",
-  "id1000056276121454": "2026-11-09T12:20:37Z",
-  "id1000056276121458": "2026-11-09T12:20:37Z",
-  "id1002655673294070": "2026-11-09T12:20:37Z",
-  "id1002655873294802": "2026-11-09T12:20:37Z",
-  "id1002655873294810": "2026-11-09T12:20:37Z",
-  "id1002655873294816": "2026-11-09T12:20:37Z"
+  "id1000002076509750": "2026-11-09T12:25:25Z",
+  "id1000004772044396": "2026-11-09T12:25:25Z",
+  "id1000005472477576": "2026-11-09T12:25:25Z",
+  "id1000005472477578": "2026-11-09T12:25:25Z",
+  "id1000015272388088": "2026-11-09T12:25:25Z",
+  "id1000018674172520": "2026-11-09T12:25:25Z",
+  "id1000023972531662": "2026-11-09T12:25:25Z",
+  "id1000056276121454": "2026-11-09T12:25:25Z",
+  "id1000056276121458": "2026-11-09T12:25:25Z",
+  "id1002655673294070": "2026-11-09T12:25:25Z",
+  "id1002655873294802": "2026-11-09T12:25:25Z",
+  "id1002655873294810": "2026-11-09T12:25:25Z",
+  "id1002655873294816": "2026-11-09T12:25:25Z"
  },
  "diag": {
   "2026-11-07": {
