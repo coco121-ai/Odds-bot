@@ -8495,6 +8495,23 @@
    },
    {
     "book": "stoiximan",
+    "drop": 7.4,
+    "edge": -3.7,
+    "fair": 1.609,
+    "fid": "id1000005472477576",
+    "group": "cards",
+    "label": "Κάρτες Over 4.5",
+    "market": "10930",
+    "match": "🇪🇸 Las Palmas – Eldense",
+    "outcome": "10930",
+    "price": 1.55,
+    "prob": 0.6215,
+    "score": -1.44,
+    "spec": null,
+    "start": "2026-11-09T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 4.1,
     "edge": -3.5,
     "fair": 2.146,
@@ -8531,26 +8548,6 @@
      "line": 2.5,
      "side": "under",
      "stat": "goals"
-    },
-    "start": "2026-11-09T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -0.4,
-    "edge": -2.9,
-    "fair": 2.369,
-    "fid": "id1000005472477576",
-    "group": "btts",
-    "label": "Goal/Goal: Όχι",
-    "market": "104",
-    "match": "🇪🇸 Las Palmas – Eldense",
-    "outcome": "105",
-    "price": 2.3,
-    "prob": 0.4221,
-    "score": -2.91,
-    "spec": {
-     "side": "no",
-     "stat": "btts"
     },
     "start": "2026-11-09T19:30:00.000Z"
    }
@@ -8719,6 +8716,27 @@
    },
    {
     "book": "stoiximan",
+    "drop": -3.2,
+    "edge": 1.0,
+    "fair": 2.0,
+    "fid": "id1000015272388088",
+    "group": "corners",
+    "label": "Κόρνερ Under 9.5",
+    "market": "10803",
+    "match": "🇷🇴 Botosani – Otelul Galati",
+    "outcome": "10804",
+    "price": 2.02,
+    "prob": 0.5,
+    "score": 1.0,
+    "spec": {
+     "line": 9.5,
+     "side": "under",
+     "stat": "corners"
+    },
+    "start": "2026-11-09T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": -2.8,
     "edge": 0.1,
     "fair": 1.449,
@@ -8740,28 +8758,7 @@
    },
    {
     "book": "stoiximan",
-    "drop": -3.2,
-    "edge": 0.0,
-    "fair": 2.0,
-    "fid": "id1000015272388088",
-    "group": "corners",
-    "label": "Κόρνερ Under 9.5",
-    "market": "10803",
-    "match": "🇷🇴 Botosani – Otelul Galati",
-    "outcome": "10804",
-    "price": 2.0,
-    "prob": 0.5,
-    "score": 0.0,
-    "spec": {
-     "line": 9.5,
-     "side": "under",
-     "stat": "corners"
-    },
-    "start": "2026-11-09T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -4.3,
+    "drop": -4.2,
     "edge": -2.2,
     "fair": 1.35,
     "fid": "id1000015272388088",
@@ -8777,26 +8774,6 @@
      "line": 1.5,
      "side": "over",
      "stat": "goals"
-    },
-    "start": "2026-11-09T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -8.4,
-    "edge": -3.6,
-    "fair": 2.281,
-    "fid": "id1000015272388088",
-    "group": "1x2",
-    "label": "1 (Botosani)",
-    "market": "101",
-    "match": "🇷🇴 Botosani – Otelul Galati",
-    "outcome": "101",
-    "price": 2.2,
-    "prob": 0.4384,
-    "score": -3.55,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
     },
     "start": "2026-11-09T18:00:00.000Z"
    },
@@ -8824,9 +8801,9 @@
   "id1000056276121454": [
    {
     "book": "stoiximan",
-    "drop": 1.0,
-    "edge": -2.7,
-    "fair": 1.46,
+    "drop": 12.0,
+    "edge": 2.2,
+    "fair": 1.712,
     "fid": "id1000056276121454",
     "fxi": {
      "categoryName": "Romania",
@@ -8838,37 +8815,36 @@
      "startTime": "2026-11-09T12:30:00.000Z",
      "tournamentName": "Liga 2"
     },
+    "group": "1x2",
+    "label": "1 (Stinta Poli Timisoara)",
+    "market": "101",
+    "match": "🇷🇴 Stinta Poli Timisoara – Resita",
+    "outcome": "101",
+    "price": 1.75,
+    "prob": 0.5841,
+    "score": 5.82,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-11-09T12:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.4,
+    "edge": -3.3,
+    "fair": 1.468,
+    "fid": "id1000056276121454",
     "group": "goals",
     "label": "Ημίχρονο Over 0.5 γκολ",
     "market": "10256",
     "match": "🇷🇴 Stinta Poli Timisoara – Resita",
     "outcome": "10256",
     "price": 1.42,
-    "prob": 0.6849,
-    "score": -2.45,
+    "prob": 0.6812,
+    "score": -3.16,
     "spec": {
      "line": 0.5,
-     "side": "over",
-     "stat": "ht"
-    },
-    "start": "2026-11-09T12:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 1.5,
-    "edge": -3.9,
-    "fair": 2.914,
-    "fid": "id1000056276121454",
-    "group": "goals",
-    "label": "Ημίχρονο Over 1.5 γκολ",
-    "market": "10258",
-    "match": "🇷🇴 Stinta Poli Timisoara – Resita",
-    "outcome": "10258",
-    "price": 2.8,
-    "prob": 0.3432,
-    "score": -3.47,
-    "spec": {
-     "line": 1.5,
      "side": "over",
      "stat": "ht"
     },
@@ -9209,19 +9185,19 @@
   ]
  },
  "checked": {
-  "id1000002076509750": "2026-11-09T11:50:30Z",
-  "id1000004772044396": "2026-11-09T11:50:30Z",
-  "id1000005472477576": "2026-11-09T11:50:30Z",
-  "id1000005472477578": "2026-11-09T11:50:30Z",
-  "id1000015272388088": "2026-11-09T11:50:30Z",
-  "id1000018674172520": "2026-11-09T11:50:30Z",
-  "id1000023972531662": "2026-11-09T11:50:30Z",
-  "id1000056276121454": "2026-11-09T11:50:30Z",
+  "id1000002076509750": "2026-11-09T11:55:23Z",
+  "id1000004772044396": "2026-11-09T11:55:23Z",
+  "id1000005472477576": "2026-11-09T11:55:23Z",
+  "id1000005472477578": "2026-11-09T11:55:23Z",
+  "id1000015272388088": "2026-11-09T11:55:23Z",
+  "id1000018674172520": "2026-11-09T11:55:23Z",
+  "id1000023972531662": "2026-11-09T11:55:23Z",
+  "id1000056276121454": "2026-11-09T11:55:23Z",
   "id1000056276121458": "2026-11-09T11:50:30Z",
-  "id1002655673294070": "2026-11-09T11:50:30Z",
-  "id1002655873294802": "2026-11-09T11:50:30Z",
-  "id1002655873294810": "2026-11-09T11:50:30Z",
-  "id1002655873294816": "2026-11-09T11:50:30Z"
+  "id1002655673294070": "2026-11-09T11:55:23Z",
+  "id1002655873294802": "2026-11-09T11:55:23Z",
+  "id1002655873294810": "2026-11-09T11:55:23Z",
+  "id1002655873294816": "2026-11-09T11:55:23Z"
  },
  "diag": {
   "2026-11-07": {
