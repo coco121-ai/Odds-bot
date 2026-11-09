@@ -8527,22 +8527,21 @@
    },
    {
     "book": "stoiximan",
-    "drop": 1.1,
-    "edge": -3.2,
-    "fair": 2.706,
+    "drop": 3.7,
+    "edge": -3.9,
+    "fair": 2.153,
     "fid": "id1000005472477576",
-    "group": "goals",
-    "label": "Ημίχρονο Over 1.5 γκολ",
-    "market": "10258",
+    "group": "1x2",
+    "label": "1 (Las Palmas)",
+    "market": "101",
     "match": "🇪🇸 Las Palmas – Eldense",
-    "outcome": "10258",
-    "price": 2.62,
-    "prob": 0.3695,
-    "score": -2.83,
+    "outcome": "101",
+    "price": 2.07,
+    "prob": 0.4645,
+    "score": -2.75,
     "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "ht"
+     "side": "1",
+     "stat": "1x2"
     },
     "start": "2026-11-09T19:30:00.000Z"
    }
@@ -8550,9 +8549,9 @@
   "id1000005472477578": [
    {
     "book": "stoiximan",
-    "drop": -2.7,
-    "edge": 8.7,
-    "fair": 1.582,
+    "drop": -3.2,
+    "edge": 8.0,
+    "fair": 1.592,
     "fid": "id1000005472477578",
     "fxi": {
      "categoryName": "Spain",
@@ -8570,16 +8569,16 @@
     "match": "🇪🇸 Sabadell – Real Sociedad B",
     "outcome": "10939",
     "price": 1.72,
-    "prob": 0.6321,
-    "score": 8.72,
+    "prob": 0.6281,
+    "score": 8.04,
     "spec": null,
     "start": "2026-11-09T19:30:00.000Z"
    },
    {
     "book": "stoiximan",
-    "drop": -3.7,
-    "edge": 8.2,
-    "fair": 2.079,
+    "drop": -4.7,
+    "edge": 7.0,
+    "fair": 2.102,
     "fid": "id1000005472477578",
     "group": "cards",
     "label": "Κάρτες Under 5.5",
@@ -8587,51 +8586,9 @@
     "match": "🇪🇸 Sabadell – Real Sociedad B",
     "outcome": "10935",
     "price": 2.25,
-    "prob": 0.481,
-    "score": 8.23,
+    "prob": 0.4757,
+    "score": 7.04,
     "spec": null,
-    "start": "2026-11-09T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 13.0,
-    "edge": 3.3,
-    "fair": 1.772,
-    "fid": "id1000005472477578",
-    "group": "goals",
-    "label": "Under 2.5 γκολ",
-    "market": "1010",
-    "match": "🇪🇸 Sabadell – Real Sociedad B",
-    "outcome": "1011",
-    "price": 1.83,
-    "prob": 0.5643,
-    "score": 7.17,
-    "spec": {
-     "line": 2.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-09T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 14.1,
-    "edge": 1.1,
-    "fair": 2.889,
-    "fid": "id1000005472477578",
-    "group": "goals",
-    "label": "Ημίχρονο Under 0.5 γκολ",
-    "market": "10256",
-    "match": "🇪🇸 Sabadell – Real Sociedad B",
-    "outcome": "10257",
-    "price": 2.92,
-    "prob": 0.3461,
-    "score": 5.29,
-    "spec": {
-     "line": 0.5,
-     "side": "under",
-     "stat": "ht"
-    },
     "start": "2026-11-09T19:30:00.000Z"
    },
    {
@@ -8673,6 +8630,48 @@
      "line": 9.5,
      "side": "under",
      "stat": "corners"
+    },
+    "start": "2026-11-09T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 4.2,
+    "edge": -0.5,
+    "fair": 1.458,
+    "fid": "id1000005472477578",
+    "group": "goals",
+    "label": "Ημίχρονο Under 1.5 γκολ",
+    "market": "10258",
+    "match": "🇪🇸 Sabadell – Real Sociedad B",
+    "outcome": "10259",
+    "price": 1.45,
+    "prob": 0.6859,
+    "score": 0.71,
+    "spec": {
+     "line": 1.5,
+     "side": "under",
+     "stat": "ht"
+    },
+    "start": "2026-11-09T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 4.3,
+    "edge": -3.5,
+    "fair": 1.357,
+    "fid": "id1000005472477578",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🇪🇸 Sabadell – Real Sociedad B",
+    "outcome": "1013",
+    "price": 1.31,
+    "prob": 0.7369,
+    "score": -2.19,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-11-09T19:30:00.000Z"
    }
@@ -9204,15 +9203,15 @@
  "checked": {
   "id1000002076509750": "2026-11-09T17:55:28Z",
   "id1000004772044396": "2026-11-09T17:55:28Z",
-  "id1000005472477576": "2026-11-09T18:30:39Z",
-  "id1000005472477578": "2026-11-09T18:30:39Z",
+  "id1000005472477576": "2026-11-09T18:35:24Z",
+  "id1000005472477578": "2026-11-09T18:35:24Z",
   "id1000015272388088": "2026-11-09T17:55:28Z",
-  "id1000023972531662": "2026-11-09T18:30:39Z",
-  "id1000056276121460": "2026-11-09T18:30:39Z",
-  "id1002655673294070": "2026-11-09T18:30:39Z",
-  "id1002655873294802": "2026-11-09T18:30:39Z",
-  "id1002655873294810": "2026-11-09T18:30:39Z",
-  "id1002655873294816": "2026-11-09T18:30:39Z"
+  "id1000023972531662": "2026-11-09T18:35:24Z",
+  "id1000056276121460": "2026-11-09T18:35:24Z",
+  "id1002655673294070": "2026-11-09T18:35:24Z",
+  "id1002655873294802": "2026-11-09T18:35:24Z",
+  "id1002655873294810": "2026-11-09T18:35:24Z",
+  "id1002655873294816": "2026-11-09T18:35:24Z"
  },
  "diag": {
   "2026-11-07": {
