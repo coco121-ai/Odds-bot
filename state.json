@@ -8494,9 +8494,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 5.5,
-    "edge": -2.1,
-    "fair": 2.114,
+    "drop": 5.1,
+    "edge": -2.5,
+    "fair": 2.124,
     "fid": "id1000005472477576",
     "group": "1x2",
     "label": "1 (Las Palmas)",
@@ -8504,8 +8504,8 @@
     "match": "🇪🇸 Las Palmas – Eldense",
     "outcome": "101",
     "price": 2.07,
-    "prob": 0.473,
-    "score": -0.42,
+    "prob": 0.4708,
+    "score": -1.02,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -8532,8 +8532,8 @@
    {
     "book": "stoiximan",
     "drop": -4.0,
-    "edge": -2.3,
-    "fair": 2.171,
+    "edge": -2.2,
+    "fair": 2.167,
     "fid": "id1000005472477576",
     "group": "goals",
     "label": "Under 2.5 γκολ",
@@ -8541,8 +8541,8 @@
     "match": "🇪🇸 Las Palmas – Eldense",
     "outcome": "1011",
     "price": 2.12,
-    "prob": 0.4606,
-    "score": -2.35,
+    "prob": 0.4615,
+    "score": -2.17,
     "spec": {
      "line": 2.5,
      "side": "under",
@@ -8757,9 +8757,29 @@
    },
    {
     "book": "stoiximan",
-    "drop": -2.9,
-    "edge": -0.1,
-    "fair": 1.451,
+    "drop": -1.5,
+    "edge": 0.5,
+    "fair": 2.139,
+    "fid": "id1000015272388088",
+    "group": "1x2",
+    "label": "1 (Botosani)",
+    "market": "101",
+    "match": "🇷🇴 Botosani – Otelul Galati",
+    "outcome": "101",
+    "price": 2.15,
+    "prob": 0.4675,
+    "score": 0.51,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-11-09T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -2.6,
+    "edge": 0.2,
+    "fair": 1.447,
     "fid": "id1000015272388088",
     "group": "goals",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -8767,8 +8787,8 @@
     "match": "🇷🇴 Botosani – Otelul Galati",
     "outcome": "10256",
     "price": 1.45,
-    "prob": 0.6892,
-    "score": -0.07,
+    "prob": 0.6911,
+    "score": 0.21,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -8778,9 +8798,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -4.5,
-    "edge": -3.2,
-    "fair": 1.353,
+    "drop": -4.2,
+    "edge": -2.9,
+    "fair": 1.349,
     "fid": "id1000015272388088",
     "group": "goals",
     "label": "Over 1.5 γκολ",
@@ -8788,8 +8808,8 @@
     "match": "🇷🇴 Botosani – Otelul Galati",
     "outcome": "108",
     "price": 1.31,
-    "prob": 0.7391,
-    "score": -3.18,
+    "prob": 0.7413,
+    "score": -2.89,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -8798,12 +8818,45 @@
     "start": "2026-11-09T18:00:00.000Z"
    }
   ],
+  "id1000018674172520": [
+   {
+    "book": "stoiximan",
+    "drop": -19.8,
+    "edge": -3.0,
+    "fair": 2.083,
+    "fid": "id1000018674172520",
+    "fxi": {
+     "categoryName": "Greece",
+     "categorySlug": "greece",
+     "participant1Name": "APS Zakynthos",
+     "participant1ShortName": "Zakynthos",
+     "participant2Name": "Niki Volou 1924 PAE",
+     "participant2ShortName": "Niki Volou",
+     "startTime": "2026-11-09T13:00:00.000Z",
+     "tournamentName": "Super League 2"
+    },
+    "group": "goals",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
+    "match": "🇬🇷 Zakynthos – Niki Volou",
+    "outcome": "1011",
+    "price": 2.02,
+    "prob": 0.4801,
+    "score": -3.02,
+    "spec": {
+     "line": 2.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-09T13:00:00.000Z"
+   }
+  ],
   "id1000023972531662": [
    {
     "book": "stoiximan",
-    "drop": 1.9,
-    "edge": -3.0,
-    "fair": 1.804,
+    "drop": 7.1,
+    "edge": -1.8,
+    "fair": 2.058,
     "fid": "id1000023972531662",
     "fxi": {
      "categoryName": "Portugal",
@@ -8815,14 +8868,34 @@
      "startTime": "2026-11-09T20:15:00.000Z",
      "tournamentName": "Liga Portugal 2"
     },
+    "group": "1x2",
+    "label": "1 (Torreense)",
+    "market": "101",
+    "match": "🇵🇹 Torreense – Leiria",
+    "outcome": "101",
+    "price": 2.02,
+    "prob": 0.4859,
+    "score": 0.28,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-11-09T20:15:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 2.5,
+    "edge": -2.3,
+    "fair": 1.792,
+    "fid": "id1000023972531662",
     "group": "goals",
     "label": "Over 2.5 γκολ",
     "market": "1010",
     "match": "🇵🇹 Torreense – Leiria",
     "outcome": "1010",
     "price": 1.75,
-    "prob": 0.5543,
-    "score": -2.41,
+    "prob": 0.558,
+    "score": -1.6,
     "spec": {
      "line": 2.5,
      "side": "over",
@@ -9198,19 +9271,19 @@
   ]
  },
  "checked": {
-  "id1000002076509750": "2026-11-09T12:25:25Z",
-  "id1000004772044396": "2026-11-09T12:25:25Z",
-  "id1000005472477576": "2026-11-09T12:25:25Z",
-  "id1000005472477578": "2026-11-09T12:25:25Z",
-  "id1000015272388088": "2026-11-09T12:25:25Z",
-  "id1000018674172520": "2026-11-09T12:25:25Z",
-  "id1000023972531662": "2026-11-09T12:25:25Z",
+  "id1000002076509750": "2026-11-09T12:30:43Z",
+  "id1000004772044396": "2026-11-09T12:30:43Z",
+  "id1000005472477576": "2026-11-09T12:30:43Z",
+  "id1000005472477578": "2026-11-09T12:30:43Z",
+  "id1000015272388088": "2026-11-09T12:30:43Z",
+  "id1000018674172520": "2026-11-09T12:30:43Z",
+  "id1000023972531662": "2026-11-09T12:30:43Z",
   "id1000056276121454": "2026-11-09T12:25:25Z",
-  "id1000056276121458": "2026-11-09T12:25:25Z",
-  "id1002655673294070": "2026-11-09T12:25:25Z",
-  "id1002655873294802": "2026-11-09T12:25:25Z",
-  "id1002655873294810": "2026-11-09T12:25:25Z",
-  "id1002655873294816": "2026-11-09T12:25:25Z"
+  "id1000056276121458": "2026-11-09T12:30:43Z",
+  "id1002655673294070": "2026-11-09T12:30:43Z",
+  "id1002655873294802": "2026-11-09T12:30:43Z",
+  "id1002655873294810": "2026-11-09T12:30:43Z",
+  "id1002655873294816": "2026-11-09T12:30:43Z"
  },
  "diag": {
   "2026-11-07": {
@@ -16748,6 +16821,7 @@
     "id1000039068823456|1010|1010|goals"
    ],
    "drop_edge_e0": [
+    "id1000015272388088|101|101|1x2",
     "id1000056276121454|1010|1011|goals"
    ],
    "drop_edge_neg": [
@@ -16931,6 +17005,7 @@
     "id1002655673294070|101|102|1x2"
    ],
    "small_market": [
+    "id1000015272388088|101|101|1x2",
     "id1000015573265498|1010|1010|goals",
     "id1000018674172520|1010|1010|goals",
     "id1000018674172520|1010|1011|goals",
