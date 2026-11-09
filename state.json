@@ -8420,38 +8420,18 @@
    },
    {
     "book": "stoiximan",
-    "drop": 1.7,
-    "edge": -2.9,
-    "fair": 1.7,
-    "fid": "id1000004772044396",
-    "group": "btts",
-    "label": "Goal/Goal: Ναι",
-    "market": "104",
-    "match": "🇩🇰 Hvidovre – Aarhus Fremad",
-    "outcome": "104",
-    "price": 1.65,
-    "prob": 0.5882,
-    "score": -2.43,
-    "spec": {
-     "side": "yes",
-     "stat": "btts"
-    },
-    "start": "2026-11-09T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.3,
-    "edge": -3.3,
-    "fair": 1.778,
+    "drop": 3.0,
+    "edge": -3.5,
+    "fair": 1.73,
     "fid": "id1000004772044396",
     "group": "goals",
     "label": "Over 2.5 γκολ",
     "market": "1010",
     "match": "🇩🇰 Hvidovre – Aarhus Fremad",
     "outcome": "1010",
-    "price": 1.72,
-    "prob": 0.5624,
-    "score": -3.17,
+    "price": 1.67,
+    "prob": 0.578,
+    "score": -2.56,
     "spec": {
      "line": 2.5,
      "side": "over",
@@ -8686,7 +8666,7 @@
    {
     "book": "stoiximan",
     "drop": -4.6,
-    "edge": -3.2,
+    "edge": -2.5,
     "fair": 1.354,
     "fid": "id1000015272388088",
     "group": "goals",
@@ -8694,48 +8674,15 @@
     "market": "108",
     "match": "🇷🇴 Botosani – Otelul Galati",
     "outcome": "108",
-    "price": 1.31,
+    "price": 1.32,
     "prob": 0.7386,
-    "score": -3.25,
+    "score": -2.51,
     "spec": {
      "line": 1.5,
      "side": "over",
      "stat": "goals"
     },
     "start": "2026-11-09T18:00:00.000Z"
-   }
-  ],
-  "id1000018674172520": [
-   {
-    "book": "stoiximan",
-    "drop": -5.8,
-    "edge": -2.7,
-    "fair": 1.87,
-    "fid": "id1000018674172520",
-    "fxi": {
-     "categoryName": "Greece",
-     "categorySlug": "greece",
-     "participant1Name": "APS Zakynthos",
-     "participant1ShortName": "Zakynthos",
-     "participant2Name": "Niki Volou 1924 PAE",
-     "participant2ShortName": "Niki Volou",
-     "startTime": "2026-11-09T13:00:00.000Z",
-     "tournamentName": "Super League 2"
-    },
-    "group": "goals",
-    "label": "Under 2.5 γκολ",
-    "market": "1010",
-    "match": "🇬🇷 Zakynthos – Niki Volou",
-    "outcome": "1011",
-    "price": 1.82,
-    "prob": 0.5348,
-    "score": -2.67,
-    "spec": {
-     "line": 2.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-09T13:00:00.000Z"
    }
   ],
   "id1000023972531662": [
@@ -8769,60 +8716,6 @@
      "stat": "goals"
     },
     "start": "2026-11-09T20:15:00.000Z"
-   }
-  ],
-  "id1000056276121458": [
-   {
-    "book": "stoiximan",
-    "drop": 16.7,
-    "edge": 2.1,
-    "fair": 2.203,
-    "fid": "id1000056276121458",
-    "fxi": {
-     "categoryName": "Romania",
-     "categorySlug": "romania",
-     "participant1Name": "CS Dinamo Bucuresti",
-     "participant1ShortName": "CS Dinamo Bucuresti",
-     "participant2Name": "Scm Ramnicu Valcea",
-     "participant2ShortName": "Scm Ramnicu Valcea",
-     "startTime": "2026-11-09T15:00:00.000Z",
-     "tournamentName": "Liga 2"
-    },
-    "group": "goals",
-    "label": "Over 3.5 γκολ",
-    "market": "1012",
-    "match": "🇷🇴 CS Dinamo Bucuresti – Scm Ramnicu Valcea",
-    "outcome": "1012",
-    "price": 2.25,
-    "prob": 0.4539,
-    "score": 7.13,
-    "spec": {
-     "line": 3.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-09T15:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 12.0,
-    "edge": 2.7,
-    "fair": 2.21,
-    "fid": "id1000056276121458",
-    "group": "goals",
-    "label": "Ημίχρονο Over 1.5 γκολ",
-    "market": "10258",
-    "match": "🇷🇴 CS Dinamo Bucuresti – Scm Ramnicu Valcea",
-    "outcome": "10258",
-    "price": 2.27,
-    "prob": 0.4525,
-    "score": 6.32,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "ht"
-    },
-    "start": "2026-11-09T15:00:00.000Z"
    }
   ],
   "id1002655673294070": [
@@ -9148,19 +9041,19 @@
   ]
  },
  "checked": {
-  "id1000002076509750": "2026-11-09T09:25:26Z",
-  "id1000004772044396": "2026-11-09T09:25:26Z",
-  "id1000005472477576": "2026-11-09T09:25:26Z",
-  "id1000005472477578": "2026-11-09T09:25:26Z",
-  "id1000015272388088": "2026-11-09T09:25:26Z",
-  "id1000018674172520": "2026-11-09T09:25:26Z",
-  "id1000023972531662": "2026-11-09T09:25:26Z",
-  "id1000056276121454": "2026-11-09T09:25:26Z",
-  "id1000056276121458": "2026-11-09T09:25:26Z",
-  "id1002655673294070": "2026-11-09T09:25:26Z",
-  "id1002655873294802": "2026-11-09T09:25:26Z",
-  "id1002655873294810": "2026-11-09T09:25:26Z",
-  "id1002655873294816": "2026-11-09T09:25:26Z"
+  "id1000002076509750": "2026-11-09T09:30:42Z",
+  "id1000004772044396": "2026-11-09T09:30:42Z",
+  "id1000005472477576": "2026-11-09T09:30:42Z",
+  "id1000005472477578": "2026-11-09T09:30:42Z",
+  "id1000015272388088": "2026-11-09T09:30:42Z",
+  "id1000018674172520": "2026-11-09T09:30:42Z",
+  "id1000023972531662": "2026-11-09T09:30:42Z",
+  "id1000056276121454": "2026-11-09T09:30:42Z",
+  "id1000056276121458": "2026-11-09T09:30:42Z",
+  "id1002655673294070": "2026-11-09T09:30:42Z",
+  "id1002655873294802": "2026-11-09T09:30:42Z",
+  "id1002655873294810": "2026-11-09T09:30:42Z",
+  "id1002655873294816": "2026-11-09T09:30:42Z"
  },
  "diag": {
   "2026-11-07": {
