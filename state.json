@@ -8294,9 +8294,9 @@
   "id1000002076509750": [
    {
     "book": "stoiximan",
-    "drop": -2.7,
-    "edge": -0.9,
-    "fair": 2.421,
+    "drop": 17.0,
+    "edge": 6.0,
+    "fair": 1.792,
     "fid": "id1000002076509750",
     "fxi": {
      "categoryName": "Norway",
@@ -8308,6 +8308,68 @@
      "startTime": "2026-11-09T18:00:00.000Z",
      "tournamentName": "Eliteserien"
     },
+    "group": "goals",
+    "label": "Over 3.5 γκολ",
+    "market": "1012",
+    "match": "🇳🇴 Kristiansund – Valerenga",
+    "outcome": "1012",
+    "price": 1.9,
+    "prob": 0.558,
+    "score": 11.12,
+    "spec": {
+     "line": 3.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-09T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 12.0,
+    "edge": 3.2,
+    "fair": 1.919,
+    "fid": "id1000002076509750",
+    "group": "goals",
+    "label": "Ημίχρονο Over 1.5 γκολ",
+    "market": "10258",
+    "match": "🇳🇴 Kristiansund – Valerenga",
+    "outcome": "10258",
+    "price": 1.98,
+    "prob": 0.5211,
+    "score": 6.79,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-11-09T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 3.9,
+    "edge": 0.8,
+    "fair": 1.349,
+    "fid": "id1000002076509750",
+    "group": "btts",
+    "label": "Goal/Goal: Ναι",
+    "market": "104",
+    "match": "🇳🇴 Kristiansund – Valerenga",
+    "outcome": "104",
+    "price": 1.36,
+    "prob": 0.7413,
+    "score": 1.99,
+    "spec": {
+     "side": "yes",
+     "stat": "btts"
+    },
+    "start": "2026-11-09T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -2.7,
+    "edge": -0.9,
+    "fair": 2.421,
+    "fid": "id1000002076509750",
     "group": "corners",
     "label": "Κόρνερ Under 10.5",
     "market": "10807",
@@ -8320,27 +8382,6 @@
      "line": 10.5,
      "side": "under",
      "stat": "corners"
-    },
-    "start": "2026-11-09T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 5.7,
-    "edge": -3.6,
-    "fair": 2.055,
-    "fid": "id1000002076509750",
-    "group": "goals",
-    "label": "Ημίχρονο Over 1.5 γκολ",
-    "market": "10258",
-    "match": "🇳🇴 Kristiansund – Valerenga",
-    "outcome": "10258",
-    "price": 1.98,
-    "prob": 0.4866,
-    "score": -1.94,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "ht"
     },
     "start": "2026-11-09T18:00:00.000Z"
    }
@@ -8374,26 +8415,6 @@
      "line": 9.5,
      "side": "under",
      "stat": "corners"
-    },
-    "start": "2026-11-09T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 17.6,
-    "edge": -3.7,
-    "fair": 1.766,
-    "fid": "id1000004772044396",
-    "group": "1x2",
-    "label": "1 (Hvidovre)",
-    "market": "101",
-    "match": "🇩🇰 Hvidovre – Aarhus Fremad",
-    "outcome": "101",
-    "price": 1.7,
-    "prob": 0.5663,
-    "score": 1.55,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
     },
     "start": "2026-11-09T18:00:00.000Z"
    },
@@ -8614,32 +8635,11 @@
     "outcome": "10259",
     "price": 1.45,
     "prob": 0.6911,
-    "score": 1.72,
+    "score": 1.7,
     "spec": {
      "line": 1.5,
      "side": "under",
      "stat": "ht"
-    },
-    "start": "2026-11-09T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 8.3,
-    "edge": -2.0,
-    "fair": 1.868,
-    "fid": "id1000005472477578",
-    "group": "goals",
-    "label": "Under 2.5 γκολ",
-    "market": "1010",
-    "match": "🇪🇸 Sabadell – Real Sociedad B",
-    "outcome": "1011",
-    "price": 1.83,
-    "prob": 0.5353,
-    "score": 0.46,
-    "spec": {
-     "line": 2.5,
-     "side": "under",
-     "stat": "goals"
     },
     "start": "2026-11-09T19:30:00.000Z"
    },
@@ -8658,6 +8658,27 @@
     "prob": 0.6394,
     "score": 0.38,
     "spec": null,
+    "start": "2026-11-09T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 8.0,
+    "edge": -2.5,
+    "fair": 1.876,
+    "fid": "id1000005472477578",
+    "group": "goals",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
+    "match": "🇪🇸 Sabadell – Real Sociedad B",
+    "outcome": "1011",
+    "price": 1.83,
+    "prob": 0.533,
+    "score": -0.06,
+    "spec": {
+     "line": 2.5,
+     "side": "under",
+     "stat": "goals"
+    },
     "start": "2026-11-09T19:30:00.000Z"
    },
    {
@@ -8682,7 +8703,7 @@
    {
     "book": "stoiximan",
     "drop": 1.2,
-    "edge": 0.3,
+    "edge": 1.1,
     "fair": 2.641,
     "fid": "id1000015272388088",
     "fxi": {
@@ -8700,9 +8721,9 @@
     "market": "10799",
     "match": "🇷🇴 Botosani – Otelul Galati",
     "outcome": "10800",
-    "price": 2.65,
+    "price": 2.67,
     "prob": 0.3786,
-    "score": 0.7,
+    "score": 1.46,
     "spec": {
      "line": 8.5,
      "side": "under",
@@ -8749,26 +8770,6 @@
      "line": 0.5,
      "side": "over",
      "stat": "ht"
-    },
-    "start": "2026-11-09T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -3.0,
-    "edge": -1.5,
-    "fair": 1.777,
-    "fid": "id1000015272388088",
-    "group": "btts",
-    "label": "Goal/Goal: Ναι",
-    "market": "104",
-    "match": "🇷🇴 Botosani – Otelul Galati",
-    "outcome": "104",
-    "price": 1.75,
-    "prob": 0.5627,
-    "score": -1.52,
-    "spec": {
-     "side": "yes",
-     "stat": "btts"
     },
     "start": "2026-11-09T18:00:00.000Z"
    },
@@ -9244,19 +9245,19 @@
   ]
  },
  "checked": {
-  "id1000002076509750": "2026-11-09T16:50:31Z",
-  "id1000004772044396": "2026-11-09T16:50:31Z",
-  "id1000005472477576": "2026-11-09T16:50:31Z",
-  "id1000005472477578": "2026-11-09T16:50:31Z",
-  "id1000015272388088": "2026-11-09T16:50:31Z",
+  "id1000002076509750": "2026-11-09T16:55:23Z",
+  "id1000004772044396": "2026-11-09T16:55:23Z",
+  "id1000005472477576": "2026-11-09T16:55:23Z",
+  "id1000005472477578": "2026-11-09T16:55:23Z",
+  "id1000015272388088": "2026-11-09T16:55:23Z",
   "id1000018674172520": "2026-11-09T12:55:25Z",
-  "id1000023972531662": "2026-11-09T16:50:31Z",
+  "id1000023972531662": "2026-11-09T16:55:23Z",
   "id1000056276121454": "2026-11-09T12:25:25Z",
   "id1000056276121458": "2026-11-09T14:55:27Z",
-  "id1002655673294070": "2026-11-09T16:50:31Z",
-  "id1002655873294802": "2026-11-09T16:50:31Z",
-  "id1002655873294810": "2026-11-09T16:50:31Z",
-  "id1002655873294816": "2026-11-09T16:50:31Z"
+  "id1002655673294070": "2026-11-09T16:55:23Z",
+  "id1002655873294802": "2026-11-09T16:55:23Z",
+  "id1002655873294810": "2026-11-09T16:55:23Z",
+  "id1002655873294816": "2026-11-09T16:55:23Z"
  },
  "diag": {
   "2026-11-07": {
