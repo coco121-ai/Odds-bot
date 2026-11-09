@@ -8624,6 +8624,27 @@
    },
    {
     "book": "stoiximan",
+    "drop": 5.0,
+    "edge": -1.2,
+    "fair": 1.973,
+    "fid": "id1000015272388088",
+    "group": "goals",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
+    "match": "🇷🇴 Botosani – Otelul Galati",
+    "outcome": "1011",
+    "price": 1.95,
+    "prob": 0.5068,
+    "score": 0.33,
+    "spec": {
+     "line": 2.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-09T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": -4.1,
     "edge": 0.1,
     "fair": 2.017,
@@ -8645,65 +8666,57 @@
    },
    {
     "book": "stoiximan",
-    "drop": -3.1,
-    "edge": -0.8,
-    "fair": 1.451,
+    "drop": 2.7,
+    "edge": -2.3,
+    "fair": 1.412,
     "fid": "id1000015272388088",
     "group": "goals",
-    "label": "Ημίχρονο Over 0.5 γκολ",
-    "market": "10256",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
     "match": "🇷🇴 Botosani – Otelul Galati",
-    "outcome": "10256",
-    "price": 1.44,
-    "prob": 0.6892,
-    "score": -0.76,
+    "outcome": "1013",
+    "price": 1.38,
+    "prob": 0.7082,
+    "score": -1.46,
     "spec": {
-     "line": 0.5,
-     "side": "over",
-     "stat": "ht"
-    },
-    "start": "2026-11-09T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -4.5,
-    "edge": -3.1,
-    "fair": 1.352,
-    "fid": "id1000015272388088",
-    "group": "goals",
-    "label": "Over 1.5 γκολ",
-    "market": "108",
-    "match": "🇷🇴 Botosani – Otelul Galati",
-    "outcome": "108",
-    "price": 1.31,
-    "prob": 0.7396,
-    "score": -3.11,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
+     "line": 3.5,
+     "side": "under",
      "stat": "goals"
     },
     "start": "2026-11-09T18:00:00.000Z"
-   },
+   }
+  ],
+  "id1000018674172520": [
    {
     "book": "stoiximan",
-    "drop": -2.1,
-    "edge": -3.4,
-    "fair": 1.76,
-    "fid": "id1000015272388088",
-    "group": "btts",
-    "label": "Goal/Goal: Ναι",
-    "market": "104",
-    "match": "🇷🇴 Botosani – Otelul Galati",
-    "outcome": "104",
-    "price": 1.7,
-    "prob": 0.5682,
-    "score": -3.41,
-    "spec": {
-     "side": "yes",
-     "stat": "btts"
+    "drop": 10.0,
+    "edge": -2.5,
+    "fair": 2.071,
+    "fid": "id1000018674172520",
+    "fxi": {
+     "categoryName": "Greece",
+     "categorySlug": "greece",
+     "participant1Name": "APS Zakynthos",
+     "participant1ShortName": "Zakynthos",
+     "participant2Name": "Niki Volou 1924 PAE",
+     "participant2ShortName": "Niki Volou",
+     "startTime": "2026-11-09T13:00:00.000Z",
+     "tournamentName": "Super League 2"
     },
-    "start": "2026-11-09T18:00:00.000Z"
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇬🇷 Zakynthos – Niki Volou",
+    "outcome": "1010",
+    "price": 2.02,
+    "prob": 0.4829,
+    "score": 0.55,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-09T13:00:00.000Z"
    }
   ],
   "id1000023972531662": [
@@ -8827,22 +8840,21 @@
    },
    {
     "book": "stoiximan",
-    "drop": -6.7,
-    "edge": -3.5,
-    "fair": 1.968,
+    "drop": -0.8,
+    "edge": -0.5,
+    "fair": 2.03,
     "fid": "id1002655673294070",
-    "group": "goals",
-    "label": "Under 2.5 γκολ",
-    "market": "1010",
+    "group": "1x2",
+    "label": "1 (Pineto)",
+    "market": "101",
     "match": "🇮🇹 Pineto – Pesaro",
-    "outcome": "1011",
-    "price": 1.9,
-    "prob": 0.5081,
-    "score": -3.46,
+    "outcome": "101",
+    "price": 2.02,
+    "prob": 0.4926,
+    "score": -0.49,
     "spec": {
-     "line": 2.5,
-     "side": "under",
-     "stat": "goals"
+     "side": "1",
+     "stat": "1x2"
     },
     "start": "2026-11-09T19:30:00.000Z"
    }
@@ -9074,19 +9086,19 @@
   ]
  },
  "checked": {
-  "id1000002076509750": "2026-11-09T10:00:48Z",
-  "id1000004772044396": "2026-11-09T10:00:48Z",
-  "id1000005472477576": "2026-11-09T10:00:48Z",
-  "id1000005472477578": "2026-11-09T10:00:48Z",
-  "id1000015272388088": "2026-11-09T10:00:48Z",
-  "id1000018674172520": "2026-11-09T10:00:48Z",
-  "id1000023972531662": "2026-11-09T10:00:48Z",
-  "id1000056276121454": "2026-11-09T10:00:48Z",
-  "id1000056276121458": "2026-11-09T10:00:48Z",
-  "id1002655673294070": "2026-11-09T10:00:48Z",
-  "id1002655873294802": "2026-11-09T10:00:48Z",
-  "id1002655873294810": "2026-11-09T10:00:48Z",
-  "id1002655873294816": "2026-11-09T10:00:48Z"
+  "id1000002076509750": "2026-11-09T10:05:28Z",
+  "id1000004772044396": "2026-11-09T10:05:28Z",
+  "id1000005472477576": "2026-11-09T10:05:28Z",
+  "id1000005472477578": "2026-11-09T10:05:28Z",
+  "id1000015272388088": "2026-11-09T10:05:28Z",
+  "id1000018674172520": "2026-11-09T10:05:28Z",
+  "id1000023972531662": "2026-11-09T10:05:28Z",
+  "id1000056276121454": "2026-11-09T10:05:28Z",
+  "id1000056276121458": "2026-11-09T10:05:28Z",
+  "id1002655673294070": "2026-11-09T10:05:28Z",
+  "id1002655873294802": "2026-11-09T10:05:28Z",
+  "id1002655873294810": "2026-11-09T10:05:28Z",
+  "id1002655873294816": "2026-11-09T10:05:28Z"
  },
  "diag": {
   "2026-11-07": {
