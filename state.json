@@ -8315,7 +8315,7 @@
    {
     "book": "stoiximan",
     "drop": 4.5,
-    "edge": 5.4,
+    "edge": 6.7,
     "fair": 2.249,
     "fid": "id1000002076509750",
     "fxi": {
@@ -8333,33 +8333,13 @@
     "market": "10807",
     "match": "🇳🇴 Kristiansund – Valerenga",
     "outcome": "10808",
-    "price": 2.37,
+    "price": 2.4,
     "prob": 0.4446,
-    "score": 6.74,
+    "score": 8.07,
     "spec": {
      "line": 10.5,
      "side": "under",
      "stat": "corners"
-    },
-    "start": "2026-11-09T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 2.1,
-    "edge": 4.1,
-    "fair": 2.881,
-    "fid": "id1000002076509750",
-    "group": "1x2",
-    "label": "1 (Kristiansund)",
-    "market": "101",
-    "match": "🇳🇴 Kristiansund – Valerenga",
-    "outcome": "101",
-    "price": 3.0,
-    "prob": 0.3471,
-    "score": 4.76,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
     },
     "start": "2026-11-09T18:00:00.000Z"
    },
@@ -8381,46 +8361,6 @@
      "line": 11.5,
      "side": "under",
      "stat": "corners"
-    },
-    "start": "2026-11-09T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.4,
-    "edge": -3.3,
-    "fair": 2.399,
-    "fid": "id1000002076509750",
-    "group": "1x2",
-    "label": "2 (Valerenga)",
-    "market": "101",
-    "match": "🇳🇴 Kristiansund – Valerenga",
-    "outcome": "103",
-    "price": 2.32,
-    "prob": 0.4168,
-    "score": -3.17,
-    "spec": {
-     "side": "2",
-     "stat": "1x2"
-    },
-    "start": "2026-11-09T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -2.9,
-    "edge": -4.0,
-    "fair": 3.332,
-    "fid": "id1000002076509750",
-    "group": "btts",
-    "label": "Goal/Goal: Όχι",
-    "market": "104",
-    "match": "🇳🇴 Kristiansund – Valerenga",
-    "outcome": "105",
-    "price": 3.2,
-    "prob": 0.3001,
-    "score": -3.96,
-    "spec": {
-     "side": "no",
-     "stat": "btts"
     },
     "start": "2026-11-09T18:00:00.000Z"
    }
@@ -8554,9 +8494,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 7.4,
-    "edge": -3.7,
-    "fair": 1.609,
+    "drop": 7.9,
+    "edge": -3.2,
+    "fair": 1.601,
     "fid": "id1000005472477576",
     "group": "cards",
     "label": "Κάρτες Over 4.5",
@@ -8564,8 +8504,8 @@
     "match": "🇪🇸 Las Palmas – Eldense",
     "outcome": "10930",
     "price": 1.55,
-    "prob": 0.6215,
-    "score": -1.44,
+    "prob": 0.6246,
+    "score": -0.83,
     "spec": null,
     "start": "2026-11-09T19:30:00.000Z"
    },
@@ -8745,9 +8685,9 @@
   "id1000015272388088": [
    {
     "book": "stoiximan",
-    "drop": 2.8,
-    "edge": 1.5,
-    "fair": 2.612,
+    "drop": 1.0,
+    "edge": 3.1,
+    "fair": 2.085,
     "fid": "id1000015272388088",
     "fxi": {
      "categoryName": "Romania",
@@ -8759,6 +8699,26 @@
      "startTime": "2026-11-09T18:00:00.000Z",
      "tournamentName": "Superliga"
     },
+    "group": "1x2",
+    "label": "1 (Botosani)",
+    "market": "101",
+    "match": "🇷🇴 Botosani – Otelul Galati",
+    "outcome": "101",
+    "price": 2.15,
+    "prob": 0.4796,
+    "score": 3.41,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-11-09T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 2.8,
+    "edge": 1.5,
+    "fair": 2.612,
+    "fid": "id1000015272388088",
     "group": "corners",
     "label": "Κόρνερ Under 8.5",
     "market": "10799",
@@ -8776,29 +8736,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -1.5,
-    "edge": 0.4,
-    "fair": 2.141,
-    "fid": "id1000015272388088",
-    "group": "1x2",
-    "label": "1 (Botosani)",
-    "market": "101",
-    "match": "🇷🇴 Botosani – Otelul Galati",
-    "outcome": "101",
-    "price": 2.15,
-    "prob": 0.4671,
-    "score": 0.42,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
-    },
-    "start": "2026-11-09T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -2.5,
-    "edge": 0.3,
-    "fair": 1.445,
+    "drop": -2.3,
+    "edge": 0.6,
+    "fair": 1.441,
     "fid": "id1000015272388088",
     "group": "goals",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -8806,8 +8746,8 @@
     "match": "🇷🇴 Botosani – Otelul Galati",
     "outcome": "10256",
     "price": 1.45,
-    "prob": 0.692,
-    "score": 0.35,
+    "prob": 0.694,
+    "score": 0.62,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -8838,9 +8778,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -4.2,
-    "edge": -2.9,
-    "fair": 1.349,
+    "drop": -4.0,
+    "edge": -2.7,
+    "fair": 1.346,
     "fid": "id1000015272388088",
     "group": "goals",
     "label": "Over 1.5 γκολ",
@@ -8848,14 +8788,47 @@
     "match": "🇷🇴 Botosani – Otelul Galati",
     "outcome": "108",
     "price": 1.31,
-    "prob": 0.7413,
-    "score": -2.89,
+    "prob": 0.7429,
+    "score": -2.67,
     "spec": {
      "line": 1.5,
      "side": "over",
      "stat": "goals"
     },
     "start": "2026-11-09T18:00:00.000Z"
+   }
+  ],
+  "id1000018674172520": [
+   {
+    "book": "stoiximan",
+    "drop": -23.3,
+    "edge": -2.7,
+    "fair": 2.159,
+    "fid": "id1000018674172520",
+    "fxi": {
+     "categoryName": "Greece",
+     "categorySlug": "greece",
+     "participant1Name": "APS Zakynthos",
+     "participant1ShortName": "Zakynthos",
+     "participant2Name": "Niki Volou 1924 PAE",
+     "participant2ShortName": "Niki Volou",
+     "startTime": "2026-11-09T13:00:00.000Z",
+     "tournamentName": "Super League 2"
+    },
+    "group": "goals",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
+    "match": "🇬🇷 Zakynthos – Niki Volou",
+    "outcome": "1011",
+    "price": 2.1,
+    "prob": 0.4632,
+    "score": -2.73,
+    "spec": {
+     "line": 2.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-09T13:00:00.000Z"
    }
   ],
   "id1000023972531662": [
@@ -9279,19 +9252,19 @@
   ]
  },
  "checked": {
-  "id1000002076509750": "2026-11-09T12:45:32Z",
-  "id1000004772044396": "2026-11-09T12:45:32Z",
-  "id1000005472477576": "2026-11-09T12:45:32Z",
-  "id1000005472477578": "2026-11-09T12:45:32Z",
-  "id1000015272388088": "2026-11-09T12:45:32Z",
-  "id1000018674172520": "2026-11-09T12:45:32Z",
-  "id1000023972531662": "2026-11-09T12:45:32Z",
+  "id1000002076509750": "2026-11-09T12:50:32Z",
+  "id1000004772044396": "2026-11-09T12:50:32Z",
+  "id1000005472477576": "2026-11-09T12:50:32Z",
+  "id1000005472477578": "2026-11-09T12:50:32Z",
+  "id1000015272388088": "2026-11-09T12:50:32Z",
+  "id1000018674172520": "2026-11-09T12:50:32Z",
+  "id1000023972531662": "2026-11-09T12:50:32Z",
   "id1000056276121454": "2026-11-09T12:25:25Z",
-  "id1000056276121458": "2026-11-09T12:45:32Z",
-  "id1002655673294070": "2026-11-09T12:45:32Z",
-  "id1002655873294802": "2026-11-09T12:45:32Z",
-  "id1002655873294810": "2026-11-09T12:45:32Z",
-  "id1002655873294816": "2026-11-09T12:45:32Z"
+  "id1000056276121458": "2026-11-09T12:50:32Z",
+  "id1002655673294070": "2026-11-09T12:50:32Z",
+  "id1002655873294802": "2026-11-09T12:50:32Z",
+  "id1002655873294810": "2026-11-09T12:50:32Z",
+  "id1002655873294816": "2026-11-09T12:50:32Z"
  },
  "diag": {
   "2026-11-07": {
@@ -17010,6 +16983,7 @@
    "prob_low": [
     "id1000002076509750|101|101|1x2",
     "id1000015272388088|1010|1011|goals",
+    "id1000015272388088|101|101|1x2",
     "id1000056276121454|101|103|1x2",
     "id1000056276121458|10258|10258|goals",
     "id1002655673294070|101|102|1x2"
