@@ -8537,20 +8537,20 @@
    },
    {
     "book": "stoiximan",
-    "drop": -2.4,
-    "edge": -1.2,
-    "fair": 1.488,
+    "drop": -4.0,
+    "edge": -2.3,
+    "fair": 2.171,
     "fid": "id1000005472477576",
     "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
     "match": "🇪🇸 Las Palmas – Eldense",
-    "outcome": "1013",
-    "price": 1.47,
-    "prob": 0.672,
-    "score": -1.21,
+    "outcome": "1011",
+    "price": 2.12,
+    "prob": 0.4606,
+    "score": -2.35,
     "spec": {
-     "line": 3.5,
+     "line": 2.5,
      "side": "under",
      "stat": "goals"
     },
@@ -8783,26 +8783,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": -1.8,
-    "edge": -3.1,
-    "fair": 1.755,
-    "fid": "id1000015272388088",
-    "group": "btts",
-    "label": "Goal/Goal: Ναι",
-    "market": "104",
-    "match": "🇷🇴 Botosani – Otelul Galati",
-    "outcome": "104",
-    "price": 1.7,
-    "prob": 0.5698,
-    "score": -3.13,
-    "spec": {
-     "side": "yes",
-     "stat": "btts"
-    },
-    "start": "2026-11-09T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": -4.5,
     "edge": -3.2,
     "fair": 1.353,
@@ -8821,81 +8801,6 @@
      "stat": "goals"
     },
     "start": "2026-11-09T18:00:00.000Z"
-   }
-  ],
-  "id1000023972531662": [
-   {
-    "book": "stoiximan",
-    "drop": 6.6,
-    "edge": -1.7,
-    "fair": 1.984,
-    "fid": "id1000023972531662",
-    "fxi": {
-     "categoryName": "Portugal",
-     "categorySlug": "portugal",
-     "participant1Name": "SCU Torreense",
-     "participant1ShortName": "Torreense",
-     "participant2Name": "UD Leiria",
-     "participant2ShortName": "Leiria",
-     "startTime": "2026-11-09T20:15:00.000Z",
-     "tournamentName": "Liga Portugal 2"
-    },
-    "group": "corners",
-    "label": "Κόρνερ Under 9.5",
-    "market": "10803",
-    "match": "🇵🇹 Torreense – Leiria",
-    "outcome": "10804",
-    "price": 1.95,
-    "prob": 0.504,
-    "score": 0.25,
-    "spec": {
-     "line": 9.5,
-     "side": "under",
-     "stat": "corners"
-    },
-    "start": "2026-11-09T20:15:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 6.4,
-    "edge": -3.7,
-    "fair": 1.63,
-    "fid": "id1000023972531662",
-    "group": "corners",
-    "label": "Κόρνερ Under 10.5",
-    "market": "10807",
-    "match": "🇵🇹 Torreense – Leiria",
-    "outcome": "10808",
-    "price": 1.57,
-    "prob": 0.6135,
-    "score": -1.77,
-    "spec": {
-     "line": 10.5,
-     "side": "under",
-     "stat": "corners"
-    },
-    "start": "2026-11-09T20:15:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -4.5,
-    "edge": -4.0,
-    "fair": 1.583,
-    "fid": "id1000023972531662",
-    "group": "goals",
-    "label": "Ημίχρονο Under 1.5 γκολ",
-    "market": "10258",
-    "match": "🇵🇹 Torreense – Leiria",
-    "outcome": "10259",
-    "price": 1.52,
-    "prob": 0.6317,
-    "score": -3.98,
-    "spec": {
-     "line": 1.5,
-     "side": "under",
-     "stat": "ht"
-    },
-    "start": "2026-11-09T20:15:00.000Z"
    }
   ],
   "id1000056276121454": [
@@ -8934,9 +8839,9 @@
   "id1000056276121458": [
    {
     "book": "stoiximan",
-    "drop": -10.3,
-    "edge": -0.5,
-    "fair": 1.759,
+    "drop": 9.9,
+    "edge": -3.2,
+    "fair": 2.273,
     "fid": "id1000056276121458",
     "fxi": {
      "categoryName": "Romania",
@@ -8949,38 +8854,17 @@
      "tournamentName": "Liga 2"
     },
     "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
+    "label": "Ημίχρονο Over 1.5 γκολ",
+    "market": "10258",
     "match": "🇷🇴 CS Dinamo Bucuresti – Scm Ramnicu Valcea",
-    "outcome": "1013",
-    "price": 1.75,
-    "prob": 0.5685,
-    "score": -0.51,
+    "outcome": "10258",
+    "price": 2.2,
+    "prob": 0.4399,
+    "score": -0.25,
     "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-09T15:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -17.2,
-    "edge": -2.4,
-    "fair": 2.818,
-    "fid": "id1000056276121458",
-    "group": "goals",
-    "label": "Under 2.5 γκολ",
-    "market": "1010",
-    "match": "🇷🇴 CS Dinamo Bucuresti – Scm Ramnicu Valcea",
-    "outcome": "1011",
-    "price": 2.75,
-    "prob": 0.3549,
-    "score": -2.41,
-    "spec": {
-     "line": 2.5,
-     "side": "under",
-     "stat": "goals"
+     "line": 1.5,
+     "side": "over",
+     "stat": "ht"
     },
     "start": "2026-11-09T15:00:00.000Z"
    }
@@ -9266,19 +9150,19 @@
   ]
  },
  "checked": {
-  "id1000002076509750": "2026-11-09T11:05:25Z",
-  "id1000004772044396": "2026-11-09T11:05:25Z",
-  "id1000005472477576": "2026-11-09T11:05:25Z",
-  "id1000005472477578": "2026-11-09T11:05:25Z",
-  "id1000015272388088": "2026-11-09T11:05:25Z",
-  "id1000018674172520": "2026-11-09T11:05:25Z",
-  "id1000023972531662": "2026-11-09T11:05:25Z",
-  "id1000056276121454": "2026-11-09T11:05:25Z",
-  "id1000056276121458": "2026-11-09T11:05:25Z",
-  "id1002655673294070": "2026-11-09T11:05:25Z",
-  "id1002655873294802": "2026-11-09T11:05:25Z",
-  "id1002655873294810": "2026-11-09T11:05:25Z",
-  "id1002655873294816": "2026-11-09T11:05:25Z"
+  "id1000002076509750": "2026-11-09T11:10:29Z",
+  "id1000004772044396": "2026-11-09T11:10:29Z",
+  "id1000005472477576": "2026-11-09T11:10:29Z",
+  "id1000005472477578": "2026-11-09T11:10:29Z",
+  "id1000015272388088": "2026-11-09T11:10:29Z",
+  "id1000018674172520": "2026-11-09T11:10:29Z",
+  "id1000023972531662": "2026-11-09T11:10:29Z",
+  "id1000056276121454": "2026-11-09T11:10:29Z",
+  "id1000056276121458": "2026-11-09T11:10:29Z",
+  "id1002655673294070": "2026-11-09T11:10:29Z",
+  "id1002655873294802": "2026-11-09T11:10:29Z",
+  "id1002655873294810": "2026-11-09T11:10:29Z",
+  "id1002655873294816": "2026-11-09T11:10:29Z"
  },
  "diag": {
   "2026-11-07": {
