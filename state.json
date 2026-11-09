@@ -8357,34 +8357,13 @@
      "stat": "corners"
     },
     "start": "2026-11-09T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 4.8,
-    "edge": -3.6,
-    "fair": 2.074,
-    "fid": "id1000002076509750",
-    "group": "goals",
-    "label": "Ημίχρονο Over 1.5 γκολ",
-    "market": "10258",
-    "match": "🇳🇴 Kristiansund – Valerenga",
-    "outcome": "10258",
-    "price": 2.0,
-    "prob": 0.4822,
-    "score": -2.14,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "ht"
-    },
-    "start": "2026-11-09T18:00:00.000Z"
    }
   ],
   "id1000004772044396": [
    {
     "book": "stoiximan",
     "drop": 2.0,
-    "edge": 4.4,
+    "edge": 3.0,
     "fair": 2.155,
     "fid": "id1000004772044396",
     "fxi": {
@@ -8402,9 +8381,9 @@
     "market": "10803",
     "match": "🇩🇰 Hvidovre – Aarhus Fremad",
     "outcome": "10804",
-    "price": 2.25,
+    "price": 2.22,
     "prob": 0.464,
-    "score": 5.01,
+    "score": 3.62,
     "spec": {
      "line": 9.5,
      "side": "under",
@@ -8415,7 +8394,7 @@
    {
     "book": "stoiximan",
     "drop": 14.0,
-    "edge": -1.2,
+    "edge": -3.4,
     "fair": 1.842,
     "fid": "id1000004772044396",
     "group": "1x2",
@@ -8423,9 +8402,9 @@
     "market": "101",
     "match": "🇩🇰 Hvidovre – Aarhus Fremad",
     "outcome": "101",
-    "price": 1.82,
+    "price": 1.78,
     "prob": 0.5429,
-    "score": 3.01,
+    "score": 0.83,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -8450,6 +8429,27 @@
      "line": 10.5,
      "side": "under",
      "stat": "corners"
+    },
+    "start": "2026-11-09T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 2.8,
+    "edge": -3.7,
+    "fair": 1.735,
+    "fid": "id1000004772044396",
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇩🇰 Hvidovre – Aarhus Fremad",
+    "outcome": "1010",
+    "price": 1.67,
+    "prob": 0.5764,
+    "score": -2.92,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
     },
     "start": "2026-11-09T18:00:00.000Z"
    }
@@ -8586,9 +8586,9 @@
   "id1000005472477578": [
    {
     "book": "stoiximan",
-    "drop": -1.3,
-    "edge": 1.2,
-    "fair": 2.52,
+    "drop": -0.8,
+    "edge": 1.0,
+    "fair": 1.554,
     "fid": "id1000005472477578",
     "fxi": {
      "categoryName": "Spain",
@@ -8600,27 +8600,6 @@
      "startTime": "2026-11-09T19:30:00.000Z",
      "tournamentName": "LaLiga 2"
     },
-    "group": "corners",
-    "label": "Κόρνερ Over 10.5",
-    "market": "10807",
-    "match": "🇪🇸 Sabadell – Real Sociedad B",
-    "outcome": "10807",
-    "price": 2.55,
-    "prob": 0.3968,
-    "score": 1.19,
-    "spec": {
-     "line": 10.5,
-     "side": "over",
-     "stat": "corners"
-    },
-    "start": "2026-11-09T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -0.8,
-    "edge": 1.0,
-    "fair": 1.554,
-    "fid": "id1000005472477578",
     "group": "cards",
     "label": "Κάρτες Under 6.5",
     "market": "10938",
@@ -8650,6 +8629,27 @@
      "line": 1.5,
      "side": "under",
      "stat": "ht"
+    },
+    "start": "2026-11-09T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -3.0,
+    "edge": -0.5,
+    "fair": 2.563,
+    "fid": "id1000005472477578",
+    "group": "corners",
+    "label": "Κόρνερ Over 10.5",
+    "market": "10807",
+    "match": "🇪🇸 Sabadell – Real Sociedad B",
+    "outcome": "10807",
+    "price": 2.55,
+    "prob": 0.3902,
+    "score": -0.51,
+    "spec": {
+     "line": 10.5,
+     "side": "over",
+     "stat": "corners"
     },
     "start": "2026-11-09T19:30:00.000Z"
    },
@@ -8693,9 +8693,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.8,
-    "edge": -2.3,
-    "fair": 1.975,
+    "drop": -2.5,
+    "edge": -3.9,
+    "fair": 2.009,
     "fid": "id1000005472477578",
     "group": "corners",
     "label": "Κόρνερ Over 9.5",
@@ -8703,8 +8703,8 @@
     "match": "🇪🇸 Sabadell – Real Sociedad B",
     "outcome": "10803",
     "price": 1.93,
-    "prob": 0.5063,
-    "score": -2.28,
+    "prob": 0.4978,
+    "score": -3.93,
     "spec": {
      "line": 9.5,
      "side": "over",
@@ -8886,7 +8886,7 @@
    {
     "book": "stoiximan",
     "drop": 8.2,
-    "edge": -4.0,
+    "edge": -1.8,
     "fair": 2.291,
     "fid": "id1000056276121458",
     "fxi": {
@@ -8904,13 +8904,34 @@
     "market": "10258",
     "match": "🇷🇴 CS Dinamo Bucuresti – Scm Ramnicu Valcea",
     "outcome": "10258",
-    "price": 2.2,
+    "price": 2.25,
     "prob": 0.4365,
-    "score": -1.53,
+    "score": 0.66,
     "spec": {
      "line": 1.5,
      "side": "over",
      "stat": "ht"
+    },
+    "start": "2026-11-09T15:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 9.1,
+    "edge": -3.5,
+    "fair": 1.554,
+    "fid": "id1000056276121458",
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇷🇴 CS Dinamo Bucuresti – Scm Ramnicu Valcea",
+    "outcome": "1010",
+    "price": 1.5,
+    "prob": 0.6435,
+    "score": -0.74,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
     },
     "start": "2026-11-09T15:00:00.000Z"
    }
@@ -9013,9 +9034,9 @@
   "id1002655873294802": [
    {
     "book": "stoiximan",
-    "drop": 8.2,
-    "edge": 1.7,
-    "fair": 2.261,
+    "drop": 0.0,
+    "edge": 1.2,
+    "fair": 2.154,
     "fid": "id1002655873294802",
     "fxi": {
      "categoryName": "Italy",
@@ -9027,68 +9048,6 @@
      "startTime": "2026-11-09T19:30:00.000Z",
      "tournamentName": "Serie C, Group C"
     },
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
-    "match": "🇮🇹 Altamura – Cavese",
-    "outcome": "1010",
-    "price": 2.3,
-    "prob": 0.4423,
-    "score": 4.18,
-    "spec": {
-     "line": 2.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-09T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 6.9,
-    "edge": -0.5,
-    "fair": 1.94,
-    "fid": "id1002655873294802",
-    "group": "btts",
-    "label": "Goal/Goal: Ναι",
-    "market": "104",
-    "match": "🇮🇹 Altamura – Cavese",
-    "outcome": "104",
-    "price": 1.93,
-    "prob": 0.5155,
-    "score": 1.55,
-    "spec": {
-     "side": "yes",
-     "stat": "btts"
-    },
-    "start": "2026-11-09T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 4.2,
-    "edge": 0.1,
-    "fair": 1.439,
-    "fid": "id1002655873294802",
-    "group": "goals",
-    "label": "Over 1.5 γκολ",
-    "market": "108",
-    "match": "🇮🇹 Altamura – Cavese",
-    "outcome": "108",
-    "price": 1.44,
-    "prob": 0.6949,
-    "score": 1.33,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-09T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.0,
-    "edge": 1.2,
-    "fair": 2.154,
-    "fid": "id1002655873294802",
     "group": "corners",
     "label": "Κόρνερ Over 8.5",
     "market": "10799",
@@ -9101,6 +9060,48 @@
      "line": 8.5,
      "side": "over",
      "stat": "corners"
+    },
+    "start": "2026-11-09T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 6.1,
+    "edge": -3.0,
+    "fair": 1.412,
+    "fid": "id1002655873294802",
+    "group": "goals",
+    "label": "Over 1.5 γκολ",
+    "market": "108",
+    "match": "🇮🇹 Altamura – Cavese",
+    "outcome": "108",
+    "price": 1.37,
+    "prob": 0.7082,
+    "score": -1.16,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-09T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 4.2,
+    "edge": -3.4,
+    "fair": 1.521,
+    "fid": "id1002655873294802",
+    "group": "goals",
+    "label": "Ημίχρονο Over 0.5 γκολ",
+    "market": "10256",
+    "match": "🇮🇹 Altamura – Cavese",
+    "outcome": "10256",
+    "price": 1.47,
+    "prob": 0.6575,
+    "score": -2.09,
+    "spec": {
+     "line": 0.5,
+     "side": "over",
+     "stat": "ht"
     },
     "start": "2026-11-09T19:30:00.000Z"
    },
@@ -9129,9 +9130,9 @@
   "id1002655873294810": [
    {
     "book": "stoiximan",
-    "drop": 8.9,
-    "edge": 1.6,
-    "fair": 2.559,
+    "drop": 7.8,
+    "edge": 0.4,
+    "fair": 2.59,
     "fid": "id1002655873294810",
     "fxi": {
      "categoryName": "Italy",
@@ -9149,8 +9150,8 @@
     "match": "🇮🇹 Foggia – Barletta",
     "outcome": "10796",
     "price": 2.6,
-    "prob": 0.3908,
-    "score": 4.28,
+    "prob": 0.3861,
+    "score": 2.71,
     "spec": {
      "line": 7.5,
      "side": "under",
@@ -9160,9 +9161,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 10.2,
-    "edge": 0.3,
-    "fair": 1.924,
+    "drop": 9.2,
+    "edge": -0.8,
+    "fair": 1.946,
     "fid": "id1002655873294810",
     "group": "corners",
     "label": "Κόρνερ Under 8.5",
@@ -9170,8 +9171,8 @@
     "match": "🇮🇹 Foggia – Barletta",
     "outcome": "10800",
     "price": 1.93,
-    "prob": 0.5198,
-    "score": 3.37,
+    "prob": 0.5139,
+    "score": 1.95,
     "spec": {
      "line": 8.5,
      "side": "under",
@@ -9299,19 +9300,19 @@
   ]
  },
  "checked": {
-  "id1000002076509750": "2026-11-09T14:35:24Z",
-  "id1000004772044396": "2026-11-09T14:35:24Z",
-  "id1000005472477576": "2026-11-09T14:35:24Z",
-  "id1000005472477578": "2026-11-09T14:35:24Z",
-  "id1000015272388088": "2026-11-09T14:35:24Z",
+  "id1000002076509750": "2026-11-09T14:40:30Z",
+  "id1000004772044396": "2026-11-09T14:40:30Z",
+  "id1000005472477576": "2026-11-09T14:40:30Z",
+  "id1000005472477578": "2026-11-09T14:40:30Z",
+  "id1000015272388088": "2026-11-09T14:40:30Z",
   "id1000018674172520": "2026-11-09T12:55:25Z",
-  "id1000023972531662": "2026-11-09T14:35:24Z",
+  "id1000023972531662": "2026-11-09T14:40:30Z",
   "id1000056276121454": "2026-11-09T12:25:25Z",
-  "id1000056276121458": "2026-11-09T14:35:24Z",
-  "id1002655673294070": "2026-11-09T14:35:24Z",
-  "id1002655873294802": "2026-11-09T14:35:24Z",
-  "id1002655873294810": "2026-11-09T14:35:24Z",
-  "id1002655873294816": "2026-11-09T14:35:24Z"
+  "id1000056276121458": "2026-11-09T14:40:30Z",
+  "id1002655673294070": "2026-11-09T14:40:30Z",
+  "id1002655873294802": "2026-11-09T14:40:30Z",
+  "id1002655873294810": "2026-11-09T14:40:30Z",
+  "id1002655873294816": "2026-11-09T14:40:30Z"
  },
  "diag": {
   "2026-11-07": {
@@ -16865,6 +16866,7 @@
     "id1000039068823456|1010|1010|goals",
     "id1000039068823456|10258|10258|goals",
     "id1000056276121458|10258|10258|goals",
+    "id1002655873294802|1010|1010|goals",
     "id1002655873294816|101|103|1x2"
    ],
    "drop_edge_none": [
