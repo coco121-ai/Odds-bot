@@ -8448,9 +8448,9 @@
   "id1000005472477576": [
    {
     "book": "stoiximan",
-    "drop": 8.8,
-    "edge": 3.2,
-    "fair": 2.423,
+    "drop": 8.4,
+    "edge": 2.9,
+    "fair": 2.429,
     "fid": "id1000005472477576",
     "fxi": {
      "categoryName": "Spain",
@@ -8468,8 +8468,8 @@
     "match": "🇪🇸 Las Palmas – Eldense",
     "outcome": "10800",
     "price": 2.5,
-    "prob": 0.4127,
-    "score": 5.83,
+    "prob": 0.4117,
+    "score": 5.45,
     "spec": {
      "line": 8.5,
      "side": "under",
@@ -8577,9 +8577,9 @@
   "id1000005472477578": [
    {
     "book": "stoiximan",
-    "drop": 12.0,
-    "edge": 1.2,
-    "fair": 2.322,
+    "drop": 12.5,
+    "edge": 2.6,
+    "fair": 1.784,
     "fid": "id1000005472477578",
     "fxi": {
      "categoryName": "Spain",
@@ -8591,6 +8591,27 @@
      "startTime": "2026-11-09T19:30:00.000Z",
      "tournamentName": "LaLiga 2"
     },
+    "group": "goals",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
+    "match": "🇪🇸 Sabadell – Real Sociedad B",
+    "outcome": "1011",
+    "price": 1.83,
+    "prob": 0.5605,
+    "score": 6.32,
+    "spec": {
+     "line": 2.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-09T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 12.0,
+    "edge": 1.2,
+    "fair": 2.322,
+    "fid": "id1000005472477578",
     "group": "corners",
     "label": "Κόρνερ Under 8.5",
     "market": "10799",
@@ -8603,6 +8624,27 @@
      "line": 8.5,
      "side": "under",
      "stat": "corners"
+    },
+    "start": "2026-11-09T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 7.1,
+    "edge": 2.5,
+    "fair": 1.414,
+    "fid": "id1000005472477578",
+    "group": "goals",
+    "label": "Ημίχρονο Under 1.5 γκολ",
+    "market": "10258",
+    "match": "🇪🇸 Sabadell – Real Sociedad B",
+    "outcome": "10259",
+    "price": 1.45,
+    "prob": 0.7072,
+    "score": 4.68,
+    "spec": {
+     "line": 1.5,
+     "side": "under",
+     "stat": "ht"
     },
     "start": "2026-11-09T19:30:00.000Z"
    },
@@ -8629,48 +8671,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 10.2,
-    "edge": 0.2,
-    "fair": 1.827,
-    "fid": "id1000005472477578",
-    "group": "goals",
-    "label": "Under 2.5 γκολ",
-    "market": "1010",
-    "match": "🇪🇸 Sabadell – Real Sociedad B",
-    "outcome": "1011",
-    "price": 1.83,
-    "prob": 0.5473,
-    "score": 3.23,
-    "spec": {
-     "line": 2.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-09T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 6.0,
-    "edge": 1.3,
-    "fair": 1.431,
-    "fid": "id1000005472477578",
-    "group": "goals",
-    "label": "Ημίχρονο Under 1.5 γκολ",
-    "market": "10258",
-    "match": "🇪🇸 Sabadell – Real Sociedad B",
-    "outcome": "10259",
-    "price": 1.45,
-    "prob": 0.6988,
-    "score": 3.13,
-    "spec": {
-     "line": 1.5,
-     "side": "under",
-     "stat": "ht"
-    },
-    "start": "2026-11-09T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": -1.4,
     "edge": 0.4,
     "fair": 1.564,
@@ -8688,19 +8688,22 @@
    },
    {
     "book": "stoiximan",
-    "drop": -1.8,
-    "edge": -2.1,
-    "fair": 2.043,
+    "drop": -2.2,
+    "edge": -1.7,
+    "fair": 1.903,
     "fid": "id1000005472477578",
-    "group": "cards",
-    "label": "Κάρτες Under 5.5",
-    "market": "10934",
+    "group": "btts",
+    "label": "Goal/Goal: Όχι",
+    "market": "104",
     "match": "🇪🇸 Sabadell – Real Sociedad B",
-    "outcome": "10935",
-    "price": 2.0,
-    "prob": 0.4895,
-    "score": -2.1,
-    "spec": null,
+    "outcome": "105",
+    "price": 1.87,
+    "prob": 0.5255,
+    "score": -1.73,
+    "spec": {
+     "side": "no",
+     "stat": "btts"
+    },
     "start": "2026-11-09T19:30:00.000Z"
    }
   ],
@@ -8708,7 +8711,7 @@
    {
     "book": "stoiximan",
     "drop": 2.0,
-    "edge": 1.8,
+    "edge": 1.0,
     "fair": 2.623,
     "fid": "id1000015272388088",
     "fxi": {
@@ -8726,9 +8729,9 @@
     "market": "10799",
     "match": "🇷🇴 Botosani – Otelul Galati",
     "outcome": "10800",
-    "price": 2.67,
+    "price": 2.65,
     "prob": 0.3812,
-    "score": 2.39,
+    "score": 1.63,
     "spec": {
      "line": 8.5,
      "side": "under",
@@ -8759,18 +8762,18 @@
    },
    {
     "book": "stoiximan",
-    "drop": -2.3,
-    "edge": -0.1,
-    "fair": 1.442,
+    "drop": -2.5,
+    "edge": -1.6,
+    "fair": 1.443,
     "fid": "id1000015272388088",
     "group": "goals",
     "label": "Ημίχρονο Over 0.5 γκολ",
     "market": "10256",
     "match": "🇷🇴 Botosani – Otelul Galati",
     "outcome": "10256",
-    "price": 1.44,
-    "prob": 0.6935,
-    "score": -0.14,
+    "price": 1.42,
+    "prob": 0.693,
+    "score": -1.59,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -8780,9 +8783,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -3.9,
-    "edge": -2.6,
-    "fair": 1.345,
+    "drop": -4.0,
+    "edge": -2.7,
+    "fair": 1.346,
     "fid": "id1000015272388088",
     "group": "goals",
     "label": "Over 1.5 γκολ",
@@ -8790,8 +8793,8 @@
     "match": "🇷🇴 Botosani – Otelul Galati",
     "outcome": "108",
     "price": 1.31,
-    "prob": 0.7435,
-    "score": -2.6,
+    "prob": 0.7429,
+    "score": -2.67,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -9204,44 +9207,23 @@
      "stat": "corners"
     },
     "start": "2026-11-09T19:45:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -0.7,
-    "edge": -3.9,
-    "fair": 1.717,
-    "fid": "id1002655873294816",
-    "group": "goals",
-    "label": "Under 2.5 γκολ",
-    "market": "1010",
-    "match": "🇮🇹 Picerno – Bari",
-    "outcome": "1011",
-    "price": 1.65,
-    "prob": 0.5824,
-    "score": -3.9,
-    "spec": {
-     "line": 2.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-09T19:45:00.000Z"
    }
   ]
  },
  "checked": {
-  "id1000002076509750": "2026-11-09T17:40:30Z",
-  "id1000004772044396": "2026-11-09T17:40:30Z",
-  "id1000005472477576": "2026-11-09T17:40:30Z",
-  "id1000005472477578": "2026-11-09T17:40:30Z",
-  "id1000015272388088": "2026-11-09T17:40:30Z",
+  "id1000002076509750": "2026-11-09T17:45:31Z",
+  "id1000004772044396": "2026-11-09T17:45:31Z",
+  "id1000005472477576": "2026-11-09T17:45:31Z",
+  "id1000005472477578": "2026-11-09T17:45:31Z",
+  "id1000015272388088": "2026-11-09T17:45:31Z",
   "id1000018674172520": "2026-11-09T12:55:25Z",
-  "id1000023972531662": "2026-11-09T17:40:30Z",
+  "id1000023972531662": "2026-11-09T17:45:31Z",
   "id1000056276121454": "2026-11-09T12:25:25Z",
   "id1000056276121458": "2026-11-09T14:55:27Z",
-  "id1002655673294070": "2026-11-09T17:40:30Z",
-  "id1002655873294802": "2026-11-09T17:40:30Z",
-  "id1002655873294810": "2026-11-09T17:40:30Z",
-  "id1002655873294816": "2026-11-09T17:40:30Z"
+  "id1002655673294070": "2026-11-09T17:45:31Z",
+  "id1002655873294802": "2026-11-09T17:45:31Z",
+  "id1002655873294810": "2026-11-09T17:45:31Z",
+  "id1002655873294816": "2026-11-09T17:45:31Z"
  },
  "diag": {
   "2026-11-07": {
@@ -16778,11 +16760,14 @@
    ],
    "drop": [
     "id1000002076509750|10258|10258|goals",
+    "id1000004772044396|1010|1011|goals",
+    "id1000005472477578|10256|10257|goals",
     "id1000015573265498|1010|1010|goals",
     "id1000015573265498|101|103|1x2",
     "id1000039068823456|1010|1010|goals"
    ],
    "drop_edge_e0": [
+    "id1000005472477578|10256|10257|goals",
     "id1000015272388088|101|101|1x2",
     "id1000056276121454|1010|1011|goals",
     "id1002655873294802|1010|1010|goals"
