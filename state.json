@@ -8337,6 +8337,64 @@
   }
  },
  "cands": {
+  "id1000039068823466": [
+   {
+    "book": "stoiximan",
+    "drop": 0.0,
+    "edge": 3.5,
+    "fair": 1.643,
+    "fid": "id1000039068823466",
+    "fxi": {
+     "categoryName": "Brazil",
+     "categorySlug": "brazil",
+     "participant1Name": "AA Ponte Preta SP",
+     "participant1ShortName": "Ponte Preta",
+     "participant2Name": "Operario Ferroviario EC PR",
+     "participant2ShortName": "Ferroviario",
+     "startTime": "2026-11-12T22:00:00.000Z",
+     "tournamentName": "Brasileiro Serie B"
+    },
+    "group": "corners",
+    "label": "Κόρνερ Under 11.5",
+    "market": "10811",
+    "match": "🇧🇷 Ponte Preta – Ferroviario",
+    "model_p": null,
+    "outcome": "10812",
+    "price": 1.7,
+    "prob": 0.6086,
+    "sb": 1.66,
+    "score": 3.47,
+    "spec": {
+     "line": 11.5,
+     "side": "under",
+     "stat": "corners"
+    },
+    "start": "2026-11-12T22:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -6.2,
+    "edge": 2.5,
+    "fair": 1.971,
+    "fid": "id1000039068823466",
+    "group": "corners",
+    "label": "Κόρνερ Under 10.5",
+    "market": "10807",
+    "match": "🇧🇷 Ponte Preta – Ferroviario",
+    "model_p": null,
+    "outcome": "10808",
+    "price": 2.02,
+    "prob": 0.5074,
+    "sb": 2.0,
+    "score": 2.49,
+    "spec": {
+     "line": 10.5,
+     "side": "under",
+     "stat": "corners"
+    },
+    "start": "2026-11-12T22:00:00.000Z"
+   }
+  ],
   "id1000039068823472": [
    {
     "book": "stoiximan",
@@ -8419,7 +8477,7 @@
   ]
  },
  "checked": {
-  "id1000039068823466": "2026-11-11T22:05:27Z",
+  "id1000039068823466": "2026-11-11T22:10:33Z",
   "id1000039068823472": "2026-11-11T21:55:23Z"
  },
  "diag": {
