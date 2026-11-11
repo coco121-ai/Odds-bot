@@ -496,8 +496,8 @@ def test_evening_ticket_slot_and_auto_settle():
         fid = f"N{i}"
         start = (night + dt.timedelta(hours=14 + i % 6)).isoformat()   # αύριο απόγευμα
         cands[fid] = [{"fid": fid, "market": "1010", "outcome": "1010", "group": "goals",
-                       "label": "Over 2.5 γκολ", "price": 1.75 + 0.02 * i, "prob": 0.55, "score": 1.0,
-                       "drop": 6, "edge": 1.0, "match": f"H{i} – A{i}", "start": start}]
+                       "label": "Over 1.5 γκολ", "price": 1.28 + 0.01 * i, "prob": 0.79, "score": 1.0,
+                       "drop": 6, "edge": 1.0, "match": f"H{i} – A{i}", "start": start, "model_p": None}]
     state = {"cands": cands, "tickets_sent": "2026-10-10"}   # παλιά μορφή: τα ημέρας είχαν σταλεί
     sent = []
     ids = iter(range(900, 999))
@@ -508,7 +508,7 @@ def test_evening_ticket_slot_and_auto_settle():
         assert "ΒΡΑΔΙΝΟ" in sent[0][0]
         assert bot.maybe_send_tickets(state, night + dt.timedelta(minutes=10)) == 0
         tk = next(iter(state["tickets"].values()))
-        assert 20 <= tk["odds"] <= 30 and tk["name"].startswith("Βραδινό")
+        assert 4 <= tk["odds"] <= 30 and tk["name"].startswith("Βραδινό") and 7 <= len(tk["leg_data"]) <= 10
         # αποτελέσματα: όλα WIN εκτός από ένα → κάηκε, και ενημέρωση στο Telegram ως απάντηση
         lose_fid = tk["leg_data"][-1]["fid"]
         calls = []
@@ -531,6 +531,7 @@ def test_evening_ticket_slot_and_auto_settle():
         state["tickets"]["x"] = tk2
         lose_fid = "none"
         sent.clear()
+        state["settle_used"] = {}      # νέα μέρα για το ημερήσιο όριο αιτημάτων
         bot.settle_bets(state, later + dt.timedelta(hours=1))
         assert tk2["result"] == "WIN" and "ΒΓΗΚΕ" in sent[-1][0] and sent[-1][1] == 777
     finally:
@@ -611,6 +612,11 @@ def test_stats_model_corners_and_free_settlement():
     assert ST.settle([day, "A", "B", 1, 1, 0, 0, 5, 5], {"stat": "corners", "line": 10, "side": "over"}) == "PUSH"
     assert ST.settle([day, "A", "B", 1, 1, 0, 0, 5, 5], {"stat": "1x2", "side": "x"}) == "WIN"
     assert ST.settle([day, "A", "B", 1, 0, 0, 0, 5, 5], {"stat": "btts", "side": "no"}) == "WIN"
+    assert ST.settle([day, "A", "B", 1, 1, 0, 0, 5, 5], {"stat": "dc", "side": "x2"}) == "WIN"
+    assert ST.settle([day, "A", "B", 2, 1, 0, 0, 5, 5], {"stat": "dc", "side": "x2"}) == "LOSE"
+    p1x = ST.prob_spec(pr, {"stat": "dc", "side": "1x"})
+    p1, px = ST.prob_spec(pr, {"stat": "1x2", "side": "1"}), ST.prob_spec(pr, {"stat": "1x2", "side": "x"})
+    assert abs(p1x - p1 - px) < 1e-9 and p1 > 0.5      # η Alpha είναι φαβορί εντός
 
 
 def test_stats_filter_blocks_unsupported_over():
@@ -720,6 +726,12 @@ def test_tickets_candidates_build_and_replies():
     cat["10783"] = {"marketId": 10783, "marketName": "Corners - Over Under Full Time", "handicap": 9.5,
                     "period": "fulltime", "outcomes": [{"outcomeId": 10783, "outcomeName": "Over"},
                                                        {"outcomeId": 10784, "outcomeName": "Under"}]}
+    cat["108"] = {"marketId": 108, "marketName": "Over Under Full Time", "handicap": 1.5, "period": "fulltime",
+                  "outcomes": [{"outcomeId": 108, "outcomeName": "Over"}, {"outcomeId": 109, "outcomeName": "Under"}]}
+    cat[C.DC_MARKET_ID] = {"marketId": int(C.DC_MARKET_ID), "marketName": "Double Chance Full Time", "handicap": 0,
+                           "period": "fulltime", "outcomes": [{"outcomeId": 101902, "outcomeName": "1X"},
+                                                              {"outcomeId": 101903, "outcomeName": "12"},
+                                                              {"outcomeId": 101904, "outcomeName": "2X"}]}
     state = {}
     fixtures = []
     for i in range(12):
@@ -728,16 +740,25 @@ def test_tickets_candidates_build_and_replies():
         fixtures.append(fx)
         p1 = 1.40 + 0.03 * i   # ποικιλία αποδόσεων ανά αγώνα
         p2 = round(1 / (1.04 - 1 / p1 - 1 / 3.6), 2)   # ρεαλιστικό περιθώριο ~4%
+        tot = 1 / p1 + 1 / 3.6 + 1 / p2
+        f1x = tot / (1 / p1 + 1 / 3.6)
         hist = {"pinnacle": book({"101": {"101": [(300, p1 + 0.15), (10, p1)], "102": [(300, 3.6)], "103": [(300, p2)]},
                                   "1010": {"1010": [(300, 1.75), (20, 1.60)], "1011": [(300, 2.25)]},
+                                  "108": {"108": [(300, 1.30)], "109": [(300, 3.60)]},
                                   "10783": {"10783": [(300, 1.90)], "10784": [(300, 1.90)]}}),
-                "stoiximan": book({"101": {"101": [(300, round(p1 * 1.03, 2))], "102": [(300, 3.4)], "103": [(300, p2)]},
+                "stoiximan": book({"101": {"101": [(300, round(p1 * 1.07, 2))], "102": [(300, 3.4)], "103": [(300, p2)]},
                                    "1010": {"1010": [(300, 1.66)], "1011": [(300, 2.20)]},
-                                   "10783": {"10783": [(300, 1.97)], "10784": [(300, 1.92)]}})}
+                                   "108": {"108": [(300, 1.38)], "109": [(300, 3.2)]},
+                                   C.DC_MARKET_ID: {"101902": [(300, round(f1x * 1.02, 2))]},
+                                   "10783": {"10783": [(300, 2.06)], "10784": [(300, 1.80)]}}),
+                "superbet.ro": book({"108": {"108": [(300, 1.33)]}})}
         n = bot.collect_candidates(state, fx, hist, NOW, cat, MARKETS)
         assert n >= 2, (i, n)
     groups = {c["group"] for c in state["cands"]["T0"]}
     assert {"1x2", "goals", "corners"} <= groups, groups
+    assert any(c["group"] == "dc" for v in state["cands"].values() for c in v)
+    o15 = next(c for c in state["cands"]["T0"] if c["market"] == "108" and c["outcome"] == "108")
+    assert o15["sb"] == 1.33 and o15["label"] == "Over 1.5 γκολ" and o15["edge"] > 0
     pool = sorted([c for v in state["cands"].values() for c in v], key=lambda c: -c["score"])
     for spec in C.TICKETS:
         legs = bot.build_ticket(pool, spec, set())
@@ -749,6 +770,8 @@ def test_tickets_candidates_build_and_replies():
         assert len({c["fid"] for c in legs}) == len(legs)          # ένα σημείο ανά αγώνα
         assert {c["group"] for c in legs} <= set(spec["groups"])
         assert all(c["price"] <= spec.get("leg_max", 99) for c in legs), spec["name"]
+        assert all(c["edge"] >= spec.get("min_edge", -99) and c["prob"] >= spec.get("min_prob", 0) for c in legs)
+        assert spec.get("min_legs", 1) <= len(legs) <= spec.get("max_legs", 99)
         for k, cap in spec.get("max_kind", {}).items():
             assert sum(1 for c in legs if k == c["group"] or k in bot.norm(c["label"])) <= cap, (spec["name"], k)
     sent = []
@@ -764,9 +787,9 @@ def test_tickets_candidates_build_and_replies():
         assert bot.maybe_send_tickets(st2, noon + dt.timedelta(minutes=5)) == 0   # μία φορά τη μέρα
     finally:
         bot.send_telegram = orig
-    assert "ΔΕΛΤΙΑ ΗΜΕΡΑΣ" in sent[0] and "Πιθανότητα <b>" in sent[1]
-    print(sent[2], "\n")
-    tk = list(st2["tickets"].values())[1]
+    assert "ΠΑΡΟΛΙ ΗΜΕΡΑΣ" in sent[0] and "Πιθανότητα <b>" in sent[1] and "Αξία δελτίου <b>+" in sent[1]
+    print(sent[1], "\n")
+    tk = list(st2["tickets"].values())[0]
     assert tk["leg_data"] and {"fid", "market", "outcome"} <= tk["leg_data"][0].keys()
     mid = tk["msg_ids"][0]
     upd = {"ok": True, "result": [

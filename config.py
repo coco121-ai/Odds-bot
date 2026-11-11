@@ -76,8 +76,12 @@ STEAM_STAKE_PCT = 1           # προτεινόμενο ποντάρισμα: 1
 # Ελληνικοί bookmakers που συγκρίνουμε (ΜΕΧΡΙ 2 — όριο του API).
 # Αν ένα όνομα είναι λάθος, το bot βρίσκει μόνο του το σωστό από τη λίστα του API.
 GREEK_BOOKS = ["stoiximan"]
+# Έξτρα bookmaker μόνο για να δούμε αν μια αγορά υπάρχει και εκεί (δεν επηρεάζει αξία/ειδοποιήσεις).
+# Το OddsPapi δεν έχει ελληνική Superbet· η ρουμάνικη τρέχει στην ίδια πλατφόρμα (ίδιες αγορές, άλλες τιμές).
+EXTRA_BOOKS = ["superbet.ro"]
 
 BOOK_NAMES = {
+    "superbet.ro": "Superbet",
     "pinnacle": "Pinnacle",
     "betfair-ex": "Betfair",
     "stoiximan": "Stoiximan",
@@ -229,34 +233,37 @@ CLV_MAX_PER_RUN = 5           # πόσους αγώνες ελέγχει για 
 # από την αρχή το PnL. Το bot σβήνει τα παλιά στοιχήματα στον επόμενο γύρο.
 STATS_RESET = "restart-1"
 
-# ---------- Δελτία ημέρας ----------
-# Κάθε μέρα στις TICKETS_TIME στέλνει δελτία (συνδυασμούς από διαφορετικά ματς) με τις πραγματικές
-# αποδόσεις της Stoiximan. Τα ποσά τα αποφασίζεις εσύ (απάντηση με ποσό, και μετά ✅ ή ❌).
+# ---------- Παρολί ----------
+# Κανόνας: παρολί κερδίζει μακροπρόθεσμα ΜΟΝΟ αν κάθε σημείο έχει θετική αξία (η αξία πολλαπλασιάζεται).
+# Γι' αυτό: λίγα σημεία, μόνο με αξία (Stoiximan ≥ δίκαιη Pinnacle) και χωρίς διαφωνία των στατιστικών.
+# Αν δεν βρεθούν τέτοια σημεία, δεν στέλνεται δελτίο.
 TICKETS_ENABLED = True
 TICKETS_TIME = "12:00"            # ώρα Ελλάδας
 TICKET_WINDOW_HOURS = 12          # αγώνες που ξεκινούν μέσα στις επόμενες Χ ώρες
 TICKET_MIN_MINUTES_BEFORE = 20    # όχι αγώνες που ξεκινούν σε λιγότερο από Χ λεπτά
-TICKET_MIN_EDGE_PCT = -4.0        # η Stoiximan έως 4% κάτω από τη δίκαιη απόδοση
-TICKET_LEG_MIN_ODDS = 1.30
+TICKET_MIN_EDGE_PCT = -4.0        # ποιες επιλογές μαζεύει (τα δελτία έχουν δικό τους, αυστηρότερο όριο)
+TICKET_LEG_MIN_ODDS = 1.12
 TICKET_LEG_MAX_ODDS = 3.20
-TICKET_MAX_LEGS = 10
-TICKET_POOL_SIZE = 40             # από πόσες καλύτερες επιλογές διαλέγει
+TICKET_MAX_LEGS = 6
+TICKET_PER_FIXTURE = 10           # πόσες επιλογές κρατάει ανά αγώνα
+TICKET_POOL_SIZE = 50             # από πόσες καλύτερες επιλογές διαλέγει
 TICKET_BEAM = 300                 # εύρος αναζήτησης συνδυασμών
 TICKET_DROP_WEIGHT = 0.3          # πόσο μετράει το "μπαίνουν λεφτά" στην επιλογή
+TICKET_MODEL_WEIGHT = 0.3         # πόσο μετράει η συμφωνία των στατιστικών
 TICKET_MONEY_DROP_PCT = 5.0       # 💸 όταν η απόδοση στο Pinnacle έχει πέσει ≥ Χ% από την αρχή
-ALL_GROUPS = ["1x2", "goals", "btts", "corners", "cards"]
+DC_MARKET_ID = "101902"           # Διπλή ευκαιρία (δίκαιη τιμή από το 1Χ2 του Pinnacle)
+ALL_GROUPS = ["1x2", "dc", "goals", "btts", "corners", "cards"]   # το "ht" (ημίχρονο) δεν μπαίνει
 TICKET_AUTO_SETTLE = True         # βρίσκει μόνο του αν βγήκε το δελτίο και σου το λέει
 TICKETS = [
-    # Ημέρας (TICKETS_TIME, αγώνες των επόμενων TICKET_WINDOW_HOURS ωρών)
-    # 1) x10–30: «σίγουρα» σημεία έως 1.70, κυρίως Over (γκολ / ημίχρονο), έως 2 σημεία 1Χ2, έως 1 Under
-    {"name": "Δελτίο x10–30 · Over (έως 1.70)", "target": 15, "min": 10, "max": 30,
-     "groups": ["goals", "1x2"], "leg_max": 1.70,
-     "bonus": {"over": 3.0}, "max_kind": {"1x2": 2, "under": 1}},
-    # 2) x80–100: από όλα — 1Χ2, γκολ, γκολ-γκολ, και το πολύ 1 κόρνερ και 1 κάρτες
-    {"name": "Δελτίο x80–100 · από όλα", "target": 90, "min": 80, "max": 100, "groups": ALL_GROUPS,
-     "max_kind": {"corners": 1, "cards": 1}},
-    # Βραδινό: στις 23:45, αγώνες μέχρι το τέλος της επόμενης μέρας, απόδοση 20–30
-    {"name": "Βραδινό x20–30", "time": "23:45", "window": 24, "target": 25, "min": 20, "max": 30,
-     "groups": ["goals", "1x2", "btts"], "leg_max": 2.20,
-     "bonus": {"over": 1.5}, "max_kind": {"1x2": 3, "under": 1}},
+    # 🎯 Ημέρας: 2–3 σημεία με αξία ≥ +1%, συνολική απόδοση 2.5–6
+    {"name": "Παρολί αξίας", "icon": "🎯", "target": 4, "min": 2.5, "max": 6,
+     "min_legs": 2, "max_legs": 3, "groups": ["1x2", "dc", "goals", "btts", "corners"],
+     "min_edge": 1.0, "min_prob": 0.42, "leg_max": 2.60, "model_check": True, "model_tol": 0.05,
+     "stake_pct": 1.5},
+    # 🌙 Βραδινό (23:45, αγώνες έως το επόμενο βράδυ): «σίγουρα» σημεία — διπλή ευκαιρία, μικρά lines
+    # σε Over/Under γκολ, κόρνερ, κάρτες — με πιθανότητα ≥ 70% και χωρίς αρνητική αξία
+    {"name": "Βραδινό σίγουρο", "icon": "🌙", "time": "23:45", "window": 24, "target": 4, "min": 3, "max": 8,
+     "min_legs": 3, "max_legs": 6, "groups": ["dc", "goals", "corners", "cards"],
+     "min_edge": 0.0, "min_prob": 0.70, "leg_min": 1.12, "leg_max": 1.55, "model_check": True,
+     "model_tol": 0.04, "max_kind": {"cards": 2, "corners": 2}, "stake_pct": 1.0},
 ]

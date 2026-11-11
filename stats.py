@@ -297,7 +297,45 @@ def predict(state: dict, fx: dict) -> dict | None:
         if e:
             out[stat] = round(e[0] + e[1], 2)
             out[stat + "_n"] = e[2]
+            if stat == "goals":
+                out["goals_h"], out["goals_a"] = round(e[0], 3), round(e[1], 3)
     return out if len(out) > 3 else None
+
+
+def _score_grid(lh: float, la: float, n: int = 11) -> list[list[float]]:
+    ph = [_pmf(k, lh, 1.0) for k in range(n)]
+    pa = [_pmf(k, la, 1.0) for k in range(n)]
+    return [[ph[i] * pa[j] for j in range(n)] for i in range(n)]
+
+
+def prob_result(pred: dict | None, stat: str, side: str) -> float | None:
+    """1Χ2 / διπλή ευκαιρία / Goal-Goal από τα αναμενόμενα γκολ κάθε ομάδας (Poisson)."""
+    if not pred or "goals_h" not in pred:
+        return None
+    g = _score_grid(pred["goals_h"], pred["goals_a"])
+    p1 = sum(g[i][j] for i in range(len(g)) for j in range(len(g)) if i > j)
+    px = sum(g[i][i] for i in range(len(g)))
+    p2 = max(0.0, 1 - p1 - px)
+    if stat == "1x2":
+        return {"1": p1, "x": px, "2": p2}.get(side)
+    if stat == "dc":
+        return {"1x": p1 + px, "x2": p2 + px, "12": p1 + p2}.get(side)
+    if stat == "btts":
+        yes = (1 - _pmf(0, pred["goals_h"], 1.0)) * (1 - _pmf(0, pred["goals_a"], 1.0))
+        return {"yes": yes, "no": 1 - yes}.get(side)
+    return None
+
+
+def prob_spec(pred: dict | None, spec: dict | None) -> float | None:
+    """Πιθανότητα κατά τα στατιστικά για οποιαδήποτε επιλογή που ξέρουμε να υπολογίσουμε."""
+    if not pred or not spec:
+        return None
+    st = spec.get("stat")
+    if st in ("1x2", "dc", "btts"):
+        return prob_result(pred, st, spec.get("side"))
+    if st in ("goals", "ht", "corners") and spec.get("line") is not None:
+        return prob(pred, st, float(spec["line"]), spec.get("side"))
+    return None
 
 
 def prob(pred: dict | None, stat: str, line: float, side: str) -> float | None:
@@ -333,6 +371,9 @@ def settle(row: list, spec: dict) -> str | None:
     if stat == "1x2":
         res = "1" if row[3] > row[4] else ("2" if row[3] < row[4] else "x")
         return "WIN" if side == res else "LOSE"
+    if stat == "dc":
+        res = "1" if row[3] > row[4] else ("2" if row[3] < row[4] else "x")
+        return "WIN" if res in side else "LOSE"
     if stat == "btts":
         yes = row[3] > 0 and row[4] > 0
         return "WIN" if (side == "yes") == yes else "LOSE"
