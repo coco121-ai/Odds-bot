@@ -8322,9 +8322,9 @@
   "id1000039068823472": [
    {
     "book": "stoiximan",
-    "drop": 4.7,
-    "edge": 1.7,
-    "fair": 2.114,
+    "drop": 7.9,
+    "edge": -0.0,
+    "fair": 2.121,
     "fid": "id1000039068823472",
     "fxi": {
      "categoryName": "Brazil",
@@ -8336,48 +8336,6 @@
      "startTime": "2026-11-11T22:00:00.000Z",
      "tournamentName": "Brasileiro Serie B"
     },
-    "group": "goals",
-    "label": "Under 2.5 γκολ",
-    "market": "1010",
-    "match": "🇧🇷 Londrina – Nautico",
-    "outcome": "1011",
-    "price": 2.15,
-    "prob": 0.473,
-    "score": 3.12,
-    "spec": {
-     "line": 2.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-11T22:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 4.3,
-    "edge": 1.5,
-    "fair": 1.448,
-    "fid": "id1000039068823472",
-    "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
-    "match": "🇧🇷 Londrina – Nautico",
-    "outcome": "1013",
-    "price": 1.47,
-    "prob": 0.6906,
-    "score": 2.82,
-    "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-11T22:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 7.9,
-    "edge": -0.0,
-    "fair": 2.121,
-    "fid": "id1000039068823472",
     "group": "corners",
     "label": "Κόρνερ Under 10.5",
     "market": "10807",
@@ -8413,11 +8371,53 @@
      "stat": "corners"
     },
     "start": "2026-11-11T22:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 4.3,
+    "edge": 0.1,
+    "fair": 1.448,
+    "fid": "id1000039068823472",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🇧🇷 Londrina – Nautico",
+    "outcome": "1013",
+    "price": 1.45,
+    "prob": 0.6906,
+    "score": 1.44,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-11T22:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 4.7,
+    "edge": -0.7,
+    "fair": 2.114,
+    "fid": "id1000039068823472",
+    "group": "goals",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
+    "match": "🇧🇷 Londrina – Nautico",
+    "outcome": "1011",
+    "price": 2.1,
+    "prob": 0.473,
+    "score": 0.75,
+    "spec": {
+     "line": 2.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-11T22:00:00.000Z"
    }
   ]
  },
  "checked": {
-  "id1000039068823472": "2026-11-11T04:15:32Z",
+  "id1000039068823472": "2026-11-11T04:20:30Z",
   "id1000056276121460": "2026-11-10T17:25:23Z"
  },
  "diag": {
