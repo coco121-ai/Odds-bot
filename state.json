@@ -8325,9 +8325,9 @@
   "id1000039068823472": [
    {
     "book": "stoiximan",
-    "drop": -10.5,
-    "edge": 1.7,
-    "fair": 1.692,
+    "drop": -10.8,
+    "edge": 1.4,
+    "fair": 1.697,
     "fid": "id1000039068823472",
     "fxi": {
      "categoryName": "Brazil",
@@ -8345,18 +8345,39 @@
     "match": "🇧🇷 Londrina – Nautico",
     "outcome": "101",
     "price": 1.72,
-    "prob": 0.591,
-    "score": 1.65,
+    "prob": 0.5893,
+    "score": 1.36,
     "spec": {
      "side": "1",
      "stat": "1x2"
+    },
+    "start": "2026-11-11T22:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 6.5,
+    "edge": -3.7,
+    "fair": 2.15,
+    "fid": "id1000039068823472",
+    "group": "corners",
+    "label": "Κόρνερ Under 10.5",
+    "market": "10807",
+    "match": "🇧🇷 Londrina – Nautico",
+    "outcome": "10808",
+    "price": 2.07,
+    "prob": 0.4651,
+    "score": -1.78,
+    "spec": {
+     "line": 10.5,
+     "side": "under",
+     "stat": "corners"
     },
     "start": "2026-11-11T22:00:00.000Z"
    }
   ]
  },
  "checked": {
-  "id1000039068823472": "2026-11-11T20:00:46Z"
+  "id1000039068823472": "2026-11-11T20:05:24Z"
  },
  "diag": {
   "2026-11-09": {
