@@ -8325,9 +8325,9 @@
   "id1000039068823472": [
    {
     "book": "stoiximan",
-    "drop": 7.9,
-    "edge": -0.0,
-    "fair": 2.121,
+    "drop": 7.5,
+    "edge": -3.9,
+    "fair": 1.395,
     "fid": "id1000039068823472",
     "fxi": {
      "categoryName": "Brazil",
@@ -8339,48 +8339,6 @@
      "startTime": "2026-11-11T22:00:00.000Z",
      "tournamentName": "Brasileiro Serie B"
     },
-    "group": "corners",
-    "label": "Κόρνερ Under 10.5",
-    "market": "10807",
-    "match": "🇧🇷 Londrina – Nautico",
-    "outcome": "10808",
-    "price": 2.12,
-    "prob": 0.4715,
-    "score": 2.31,
-    "spec": {
-     "line": 10.5,
-     "side": "under",
-     "stat": "corners"
-    },
-    "start": "2026-11-11T22:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 6.0,
-    "edge": -0.3,
-    "fair": 1.756,
-    "fid": "id1000039068823472",
-    "group": "corners",
-    "label": "Κόρνερ Under 11.5",
-    "market": "10811",
-    "match": "🇧🇷 Londrina – Nautico",
-    "outcome": "10812",
-    "price": 1.75,
-    "prob": 0.5695,
-    "score": 1.46,
-    "spec": {
-     "line": 11.5,
-     "side": "under",
-     "stat": "corners"
-    },
-    "start": "2026-11-11T22:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 7.5,
-    "edge": -3.9,
-    "fair": 1.395,
-    "fid": "id1000039068823472",
     "group": "goals",
     "label": "Under 3.5 γκολ",
     "market": "1012",
@@ -8393,6 +8351,48 @@
      "line": 3.5,
      "side": "under",
      "stat": "goals"
+    },
+    "start": "2026-11-11T22:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 5.1,
+    "edge": -3.3,
+    "fair": 2.193,
+    "fid": "id1000039068823472",
+    "group": "corners",
+    "label": "Κόρνερ Under 10.5",
+    "market": "10807",
+    "match": "🇧🇷 Londrina – Nautico",
+    "outcome": "10808",
+    "price": 2.12,
+    "prob": 0.456,
+    "score": -1.8,
+    "spec": {
+     "line": 10.5,
+     "side": "under",
+     "stat": "corners"
+    },
+    "start": "2026-11-11T22:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 3.6,
+    "edge": -2.9,
+    "fair": 1.802,
+    "fid": "id1000039068823472",
+    "group": "corners",
+    "label": "Κόρνερ Under 11.5",
+    "market": "10811",
+    "match": "🇧🇷 Londrina – Nautico",
+    "outcome": "10812",
+    "price": 1.75,
+    "prob": 0.5549,
+    "score": -1.82,
+    "spec": {
+     "line": 11.5,
+     "side": "under",
+     "stat": "corners"
     },
     "start": "2026-11-11T22:00:00.000Z"
    },
@@ -8419,7 +8419,7 @@
   ]
  },
  "checked": {
-  "id1000039068823472": "2026-11-11T14:25:30Z"
+  "id1000039068823472": "2026-11-11T14:30:40Z"
  },
  "diag": {
   "2026-11-09": {
