@@ -244,7 +244,7 @@ TICKET_MIN_MINUTES_BEFORE = 20    # όχι αγώνες που ξεκινούν 
 TICKET_MIN_EDGE_PCT = -4.0        # ποιες επιλογές μαζεύει (τα δελτία έχουν δικό τους, αυστηρότερο όριο)
 TICKET_LEG_MIN_ODDS = 1.12
 TICKET_LEG_MAX_ODDS = 3.20
-TICKET_MAX_LEGS = 6
+TICKET_MAX_LEGS = 10
 TICKET_PER_FIXTURE = 10           # πόσες επιλογές κρατάει ανά αγώνα
 TICKET_POOL_SIZE = 50             # από πόσες καλύτερες επιλογές διαλέγει
 TICKET_BEAM = 300                 # εύρος αναζήτησης συνδυασμών
@@ -262,8 +262,9 @@ TICKETS = [
      "stake_pct": 1.5},
     # 🌙 Βραδινό (23:45, αγώνες έως το επόμενο βράδυ): «σίγουρα» σημεία — διπλή ευκαιρία, μικρά lines
     # σε Over/Under γκολ, κόρνερ, κάρτες — με πιθανότητα ≥ 70% και χωρίς αρνητική αξία
-    {"name": "Βραδινό σίγουρο", "icon": "🌙", "time": "23:45", "window": 24, "target": 4, "min": 3, "max": 8,
-     "min_legs": 3, "max_legs": 6, "groups": ["dc", "goals", "corners", "cards"],
+    # 7–10 αγώνες, ένα σημείο ανά αγώνα
+    {"name": "Βραδινό σίγουρο", "icon": "🌙", "time": "23:45", "window": 24, "target": 8, "min": 4, "max": 30,
+     "min_legs": 7, "max_legs": 10, "groups": ["dc", "goals", "corners", "cards"],
      "min_edge": 0.0, "min_prob": 0.70, "leg_min": 1.12, "leg_max": 1.55, "model_check": True,
-     "model_tol": 0.04, "max_kind": {"cards": 2, "corners": 2}, "stake_pct": 1.0},
+     "model_tol": 0.04, "max_kind": {"cards": 3, "corners": 3}, "stake_pct": 1.0},
 ]
