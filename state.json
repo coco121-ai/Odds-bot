@@ -8440,6 +8440,63 @@
     "start": "2026-11-12T22:00:00.000Z"
    }
   ],
+  "id1000039068823468": [
+   {
+    "book": "stoiximan",
+    "drop": 11.5,
+    "edge": -3.4,
+    "fair": 1.997,
+    "fid": "id1000039068823468",
+    "fxi": {
+     "categoryName": "Brazil",
+     "categorySlug": "brazil",
+     "participant1Name": "Sao Bernardo FC",
+     "participant1ShortName": "Sao Bernardo",
+     "participant2Name": "Athletic Club Sjdr MG",
+     "participant2ShortName": "Athletic Club Sjdr",
+     "startTime": "2026-11-12T23:00:00.000Z",
+     "tournamentName": "Brasileiro Serie B"
+    },
+    "group": "1x2",
+    "label": "1 (Sao Bernardo)",
+    "market": "101",
+    "match": "🇧🇷 Sao Bernardo – Athletic Club Sjdr",
+    "model_p": null,
+    "outcome": "101",
+    "price": 1.93,
+    "prob": 0.5008,
+    "sb": 1.95,
+    "score": 0.08,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-11-12T23:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 7.7,
+    "edge": -3.6,
+    "fair": 1.328,
+    "fid": "id1000039068823468",
+    "group": "goals",
+    "label": "Over 1.5 γκολ",
+    "market": "108",
+    "match": "🇧🇷 Sao Bernardo – Athletic Club Sjdr",
+    "model_p": null,
+    "outcome": "108",
+    "price": 1.28,
+    "prob": 0.753,
+    "sb": 1.27,
+    "score": -1.31,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-12T23:00:00.000Z"
+   }
+  ],
   "id1000039068823472": [
    {
     "book": "stoiximan",
@@ -8522,7 +8579,8 @@
   ]
  },
  "checked": {
-  "id1000039068823466": "2026-11-11T22:55:24Z",
+  "id1000039068823466": "2026-11-11T23:00:52Z",
+  "id1000039068823468": "2026-11-11T23:00:52Z",
   "id1000039068823472": "2026-11-11T21:55:23Z"
  },
  "diag": {
@@ -8578,8 +8636,13 @@
    ]
   },
   "2026-11-12": {
+   "drop_edge_neg": [
+    "id1000039068823468|1010|1010|goals",
+    "id1000039068823468|10258|10258|goals"
+   ],
    "fixtures": [
-    "id1000039068823466"
+    "id1000039068823466",
+    "id1000039068823468"
    ],
    "low_limit": [
     "id1000039068823466|1010|1010|goals",
@@ -8588,7 +8651,20 @@
     "id1000039068823466|101|102|1x2",
     "id1000039068823466|101|103|1x2",
     "id1000039068823466|10258|10258|goals",
-    "id1000039068823466|10258|10259|goals"
+    "id1000039068823466|10258|10259|goals",
+    "id1000039068823468|1010|1010|goals",
+    "id1000039068823468|1010|1011|goals",
+    "id1000039068823468|101|101|1x2",
+    "id1000039068823468|101|102|1x2",
+    "id1000039068823468|101|103|1x2",
+    "id1000039068823468|10256|10256|goals",
+    "id1000039068823468|10256|10257|goals",
+    "id1000039068823468|10258|10258|goals",
+    "id1000039068823468|10258|10259|goals"
+   ],
+   "small_market": [
+    "id1000039068823468|1010|1010|goals",
+    "id1000039068823468|10258|10258|goals"
    ],
    "too_early": [
     "id1000039068823466|10256|10256|goals",
