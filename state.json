@@ -8443,9 +8443,9 @@
   "id1000039068823468": [
    {
     "book": "stoiximan",
-    "drop": 10.8,
-    "edge": -3.2,
-    "fair": 1.994,
+    "drop": 10.4,
+    "edge": -3.5,
+    "fair": 1.999,
     "fid": "id1000039068823468",
     "fxi": {
      "categoryName": "Brazil",
@@ -8464,9 +8464,9 @@
     "model_p": null,
     "outcome": "101",
     "price": 1.93,
-    "prob": 0.5015,
+    "prob": 0.5003,
     "sb": 1.95,
-    "score": 0.02,
+    "score": -0.34,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -8475,9 +8475,32 @@
    },
    {
     "book": "stoiximan",
-    "drop": 7.5,
-    "edge": -3.5,
-    "fair": 1.327,
+    "drop": 1.4,
+    "edge": -1.5,
+    "fair": 1.899,
+    "fid": "id1000039068823468",
+    "group": "corners",
+    "label": "Κόρνερ Under 10.5",
+    "market": "10807",
+    "match": "🇧🇷 Sao Bernardo – Athletic Club Sjdr",
+    "model_p": null,
+    "outcome": "10808",
+    "price": 1.87,
+    "prob": 0.5266,
+    "sb": 1.85,
+    "score": -1.11,
+    "spec": {
+     "line": 10.5,
+     "side": "under",
+     "stat": "corners"
+    },
+    "start": "2026-11-12T23:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 7.0,
+    "edge": -3.9,
+    "fair": 1.332,
     "fid": "id1000039068823468",
     "group": "goals",
     "label": "Over 1.5 γκολ",
@@ -8486,9 +8509,9 @@
     "model_p": null,
     "outcome": "108",
     "price": 1.28,
-    "prob": 0.7536,
+    "prob": 0.7508,
     "sb": 1.27,
-    "score": -1.3,
+    "score": -1.8,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -8579,8 +8602,8 @@
   ]
  },
  "checked": {
-  "id1000039068823466": "2026-11-11T23:05:24Z",
-  "id1000039068823468": "2026-11-11T23:05:24Z",
+  "id1000039068823466": "2026-11-11T23:10:29Z",
+  "id1000039068823468": "2026-11-11T23:10:29Z",
   "id1000039068823472": "2026-11-11T21:55:23Z"
  },
  "diag": {
