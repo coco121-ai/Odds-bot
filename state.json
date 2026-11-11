@@ -8325,9 +8325,9 @@
   "id1000039068823472": [
    {
     "book": "stoiximan",
-    "drop": 7.6,
-    "edge": -3.8,
-    "fair": 1.393,
+    "drop": 5.1,
+    "edge": -3.3,
+    "fair": 2.193,
     "fid": "id1000039068823472",
     "fxi": {
      "categoryName": "Brazil",
@@ -8339,27 +8339,6 @@
      "startTime": "2026-11-11T22:00:00.000Z",
      "tournamentName": "Brasileiro Serie B"
     },
-    "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
-    "match": "🇧🇷 Londrina – Nautico",
-    "outcome": "1013",
-    "price": 1.34,
-    "prob": 0.7179,
-    "score": -1.52,
-    "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-11T22:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 5.1,
-    "edge": -3.3,
-    "fair": 2.193,
-    "fid": "id1000039068823472",
     "group": "corners",
     "label": "Κόρνερ Under 10.5",
     "market": "10807",
@@ -8398,9 +8377,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -23.7,
-    "edge": -3.3,
-    "fair": 1.893,
+    "drop": -22.8,
+    "edge": -2.7,
+    "fair": 1.88,
     "fid": "id1000039068823472",
     "group": "1x2",
     "label": "1 (Londrina)",
@@ -8408,18 +8387,39 @@
     "match": "🇧🇷 Londrina – Nautico",
     "outcome": "101",
     "price": 1.83,
-    "prob": 0.5283,
-    "score": -3.33,
+    "prob": 0.5319,
+    "score": -2.66,
     "spec": {
      "side": "1",
      "stat": "1x2"
+    },
+    "start": "2026-11-11T22:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -1.2,
+    "edge": -3.3,
+    "fair": 1.417,
+    "fid": "id1000039068823472",
+    "group": "goals",
+    "label": "Ημίχρονο Over 0.5 γκολ",
+    "market": "10256",
+    "match": "🇧🇷 Londrina – Nautico",
+    "outcome": "10256",
+    "price": 1.37,
+    "prob": 0.7057,
+    "score": -3.32,
+    "spec": {
+     "line": 0.5,
+     "side": "over",
+     "stat": "ht"
     },
     "start": "2026-11-11T22:00:00.000Z"
    }
   ]
  },
  "checked": {
-  "id1000039068823472": "2026-11-11T14:45:31Z"
+  "id1000039068823472": "2026-11-11T14:50:33Z"
  },
  "diag": {
   "2026-11-09": {
