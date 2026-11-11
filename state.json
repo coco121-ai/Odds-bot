@@ -8325,9 +8325,9 @@
   "id1000039068823472": [
    {
     "book": "stoiximan",
-    "drop": 6.7,
+    "drop": 5.1,
     "edge": -3.3,
-    "fair": 1.406,
+    "fair": 2.193,
     "fid": "id1000039068823472",
     "fxi": {
      "categoryName": "Brazil",
@@ -8339,27 +8339,6 @@
      "startTime": "2026-11-11T22:00:00.000Z",
      "tournamentName": "Brasileiro Serie B"
     },
-    "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
-    "match": "🇧🇷 Londrina – Nautico",
-    "outcome": "1013",
-    "price": 1.36,
-    "prob": 0.7112,
-    "score": -1.26,
-    "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-11T22:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 5.1,
-    "edge": -3.3,
-    "fair": 2.193,
-    "fid": "id1000039068823472",
     "group": "corners",
     "label": "Κόρνερ Under 10.5",
     "market": "10807",
@@ -8395,11 +8374,32 @@
      "stat": "corners"
     },
     "start": "2026-11-11T22:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 6.7,
+    "edge": -4.0,
+    "fair": 1.406,
+    "fid": "id1000039068823472",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🇧🇷 Londrina – Nautico",
+    "outcome": "1013",
+    "price": 1.35,
+    "prob": 0.7112,
+    "score": -1.97,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-11T22:00:00.000Z"
    }
   ]
  },
  "checked": {
-  "id1000039068823472": "2026-11-11T15:20:31Z"
+  "id1000039068823472": "2026-11-11T15:25:24Z"
  },
  "diag": {
   "2026-11-09": {
