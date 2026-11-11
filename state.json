@@ -8325,9 +8325,9 @@
   "id1000039068823472": [
    {
     "book": "stoiximan",
-    "drop": 7.9,
-    "edge": -2.1,
-    "fair": 2.114,
+    "drop": 8.3,
+    "edge": -1.6,
+    "fair": 2.104,
     "fid": "id1000039068823472",
     "fxi": {
      "categoryName": "Brazil",
@@ -8346,9 +8346,9 @@
     "model_p": null,
     "outcome": "10808",
     "price": 2.07,
-    "prob": 0.473,
+    "prob": 0.4753,
     "sb": 1.78,
-    "score": 0.28,
+    "score": 0.88,
     "spec": {
      "line": 10.5,
      "side": "under",
@@ -8358,9 +8358,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -15.3,
-    "edge": -3.8,
-    "fair": 1.767,
+    "drop": -15.1,
+    "edge": -2.3,
+    "fair": 1.76,
     "fid": "id1000039068823472",
     "group": "1x2",
     "label": "1 (Londrina)",
@@ -8368,20 +8368,43 @@
     "match": "🇧🇷 Londrina – Nautico",
     "model_p": null,
     "outcome": "101",
-    "price": 1.7,
-    "prob": 0.5659,
+    "price": 1.72,
+    "prob": 0.5682,
     "sb": 1.73,
-    "score": -3.79,
+    "score": -2.27,
     "spec": {
      "side": "1",
      "stat": "1x2"
+    },
+    "start": "2026-11-11T22:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -1.2,
+    "edge": -4.0,
+    "fair": 1.416,
+    "fid": "id1000039068823472",
+    "group": "ht",
+    "label": "Ημίχρονο Over 0.5 γκολ",
+    "market": "10256",
+    "match": "🇧🇷 Londrina – Nautico",
+    "model_p": null,
+    "outcome": "10256",
+    "price": 1.36,
+    "prob": 0.7062,
+    "sb": 1.33,
+    "score": -3.95,
+    "spec": {
+     "line": 0.5,
+     "side": "over",
+     "stat": "ht"
     },
     "start": "2026-11-11T22:00:00.000Z"
    }
   ]
  },
  "checked": {
-  "id1000039068823472": "2026-11-11T21:40:54Z"
+  "id1000039068823472": "2026-11-11T21:45:31Z"
  },
  "diag": {
   "2026-11-09": {
@@ -79129,6 +79152,6 @@
  },
  "tickets_sent": {
   "12:00": "2026-11-11",
-  "23:45": "2026-11-10"
+  "23:45": "2026-11-11"
  }
 }
