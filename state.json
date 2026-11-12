@@ -8378,31 +8378,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -9.1,
+    "drop": -0.3,
     "edge": -3.5,
-    "fair": 1.73,
-    "fid": "id1000039068823466",
-    "group": "1x2",
-    "label": "2 (Ferroviario)",
-    "market": "101",
-    "match": "🇧🇷 Ponte Preta – Ferroviario",
-    "model_p": null,
-    "outcome": "103",
-    "price": 1.67,
-    "prob": 0.578,
-    "sb": 1.67,
-    "score": -3.47,
-    "spec": {
-     "side": "2",
-     "stat": "1x2"
-    },
-    "start": "2026-11-12T22:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -0.6,
-    "edge": -3.8,
-    "fair": 1.206,
+    "fair": 1.202,
     "fid": "id1000039068823466",
     "group": "goals",
     "label": "Under 4.5 γκολ",
@@ -8411,9 +8389,9 @@
     "model_p": null,
     "outcome": "1015",
     "price": 1.16,
-    "prob": 0.8292,
+    "prob": 0.8319,
     "sb": 1.15,
-    "score": -3.81,
+    "score": -3.49,
     "spec": {
      "line": 4.5,
      "side": "under",
@@ -8425,9 +8403,9 @@
   "id1000039068823468": [
    {
     "book": "stoiximan",
-    "drop": 9.1,
-    "edge": -2.4,
-    "fair": 1.896,
+    "drop": 2.0,
+    "edge": 0.3,
+    "fair": 1.774,
     "fid": "id1000039068823468",
     "fxi": {
      "categoryName": "Brazil",
@@ -8439,28 +8417,6 @@
      "startTime": "2026-11-12T23:00:00.000Z",
      "tournamentName": "Brasileiro Serie B"
     },
-    "group": "btts",
-    "label": "Goal/Goal: Όχι",
-    "market": "104",
-    "match": "🇧🇷 Sao Bernardo – Athletic Club Sjdr",
-    "model_p": null,
-    "outcome": "105",
-    "price": 1.85,
-    "prob": 0.5274,
-    "sb": 1.85,
-    "score": 0.3,
-    "spec": {
-     "side": "no",
-     "stat": "btts"
-    },
-    "start": "2026-11-12T23:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 1.4,
-    "edge": -0.3,
-    "fair": 1.785,
-    "fid": "id1000039068823468",
     "group": "goals",
     "label": "Under 2.5 γκολ",
     "market": "1010",
@@ -8468,9 +8424,9 @@
     "model_p": null,
     "outcome": "1011",
     "price": 1.78,
-    "prob": 0.5602,
+    "prob": 0.5637,
     "sb": 1.77,
-    "score": 0.15,
+    "score": 0.95,
     "spec": {
      "line": 2.5,
      "side": "under",
@@ -8480,9 +8436,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 0.7,
-    "edge": -1.1,
-    "fair": 1.325,
+    "drop": 1.1,
+    "edge": -0.8,
+    "fair": 1.32,
     "fid": "id1000039068823468",
     "group": "goals",
     "label": "Under 3.5 γκολ",
@@ -8491,9 +8447,9 @@
     "model_p": null,
     "outcome": "1013",
     "price": 1.31,
-    "prob": 0.7547,
+    "prob": 0.7576,
     "sb": 1.28,
-    "score": -0.92,
+    "score": -0.43,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -8503,9 +8459,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 1.5,
-    "edge": -2.6,
-    "fair": 1.407,
+    "drop": 1.8,
+    "edge": -2.4,
+    "fair": 1.403,
     "fid": "id1000039068823468",
     "group": "ht",
     "label": "Ημίχρονο Under 1.5 γκολ",
@@ -8514,21 +8470,44 @@
     "model_p": null,
     "outcome": "10259",
     "price": 1.37,
-    "prob": 0.7107,
+    "prob": 0.7128,
     "sb": 1.39,
-    "score": -2.16,
+    "score": -1.82,
     "spec": {
      "line": 1.5,
      "side": "under",
      "stat": "ht"
     },
     "start": "2026-11-12T23:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 3.5,
+    "edge": -3.9,
+    "fair": 3.227,
+    "fid": "id1000039068823468",
+    "group": "goals",
+    "label": "Under 1.5 γκολ",
+    "market": "108",
+    "match": "🇧🇷 Sao Bernardo – Athletic Club Sjdr",
+    "model_p": null,
+    "outcome": "109",
+    "price": 3.1,
+    "prob": 0.3099,
+    "sb": 3.25,
+    "score": -2.89,
+    "spec": {
+     "line": 1.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-12T23:00:00.000Z"
    }
   ]
  },
  "checked": {
-  "id1000039068823466": "2026-11-12T14:45:33Z",
-  "id1000039068823468": "2026-11-12T14:45:33Z"
+  "id1000039068823466": "2026-11-12T14:50:45Z",
+  "id1000039068823468": "2026-11-12T14:50:45Z"
  },
  "diag": {
   "2026-11-10": {
