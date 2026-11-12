@@ -8370,37 +8370,14 @@
      "stat": "corners"
     },
     "start": "2026-11-12T22:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 3.4,
-    "edge": -3.7,
-    "fair": 1.288,
-    "fid": "id1000039068823466",
-    "group": "goals",
-    "label": "Over 1.5 γκολ",
-    "market": "108",
-    "match": "🇧🇷 Ponte Preta – Ferroviario",
-    "model_p": null,
-    "outcome": "108",
-    "price": 1.24,
-    "prob": 0.7764,
-    "sb": 1.22,
-    "score": -2.7,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-12T22:00:00.000Z"
    }
   ],
   "id1000039068823468": [
    {
     "book": "stoiximan",
-    "drop": 9.9,
-    "edge": -1.2,
-    "fair": 2.348,
+    "drop": 10.4,
+    "edge": -2.5,
+    "fair": 1.999,
     "fid": "id1000039068823468",
     "fxi": {
      "categoryName": "Brazil",
@@ -8412,20 +8389,19 @@
      "startTime": "2026-11-12T23:00:00.000Z",
      "tournamentName": "Brasileiro Serie B"
     },
-    "group": "corners",
-    "label": "Κόρνερ Under 9.5",
-    "market": "10803",
+    "group": "1x2",
+    "label": "1 (Sao Bernardo)",
+    "market": "101",
     "match": "🇧🇷 Sao Bernardo – Athletic Club Sjdr",
     "model_p": null,
-    "outcome": "10804",
-    "price": 2.32,
-    "prob": 0.4259,
-    "sb": 2.27,
-    "score": 1.77,
+    "outcome": "101",
+    "price": 1.95,
+    "prob": 0.5003,
+    "sb": 1.95,
+    "score": 0.66,
     "spec": {
-     "line": 9.5,
-     "side": "under",
-     "stat": "corners"
+     "side": "1",
+     "stat": "1x2"
     },
     "start": "2026-11-12T23:00:00.000Z"
    },
@@ -8478,8 +8454,8 @@
   ]
  },
  "checked": {
-  "id1000039068823466": "2026-11-12T02:20:30Z",
-  "id1000039068823468": "2026-11-12T02:20:30Z",
+  "id1000039068823466": "2026-11-12T02:25:25Z",
+  "id1000039068823468": "2026-11-12T02:25:25Z",
   "id1000039068823472": "2026-11-11T21:55:23Z"
  },
  "diag": {
