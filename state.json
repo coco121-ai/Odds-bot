@@ -8408,28 +8408,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 10.4,
-    "edge": -3.5,
-    "fair": 2.0,
-    "fid": "id1000039068823468",
-    "group": "1x2",
-    "label": "1 (Sao Bernardo)",
-    "market": "101",
-    "match": "🇧🇷 Sao Bernardo – Athletic Club Sjdr",
-    "model_p": null,
-    "outcome": "101",
-    "price": 1.93,
-    "prob": 0.5,
-    "sb": 1.87,
-    "score": -0.39,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
-    },
-    "start": "2026-11-12T23:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 1.4,
     "edge": -1.5,
     "fair": 1.899,
@@ -8473,12 +8451,34 @@
      "stat": "goals"
     },
     "start": "2026-11-12T23:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 4.8,
+    "edge": -3.4,
+    "fair": 1.812,
+    "fid": "id1000039068823468",
+    "group": "btts",
+    "label": "Goal/Goal: Ναι",
+    "market": "104",
+    "match": "🇧🇷 Sao Bernardo – Athletic Club Sjdr",
+    "model_p": null,
+    "outcome": "104",
+    "price": 1.75,
+    "prob": 0.5519,
+    "sb": 1.72,
+    "score": -1.99,
+    "spec": {
+     "side": "yes",
+     "stat": "btts"
+    },
+    "start": "2026-11-12T23:00:00.000Z"
    }
   ]
  },
  "checked": {
-  "id1000039068823466": "2026-11-12T06:05:24Z",
-  "id1000039068823468": "2026-11-12T06:05:24Z"
+  "id1000039068823466": "2026-11-12T06:10:29Z",
+  "id1000039068823468": "2026-11-12T06:10:29Z"
  },
  "diag": {
   "2026-11-10": {
