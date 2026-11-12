@@ -8375,9 +8375,9 @@
   "id1000039068823468": [
    {
     "book": "stoiximan",
-    "drop": 10.4,
-    "edge": -2.5,
-    "fair": 2.0,
+    "drop": 9.9,
+    "edge": -1.2,
+    "fair": 2.348,
     "fid": "id1000039068823468",
     "fxi": {
      "categoryName": "Brazil",
@@ -8389,16 +8389,39 @@
      "startTime": "2026-11-12T23:00:00.000Z",
      "tournamentName": "Brasileiro Serie B"
     },
+    "group": "corners",
+    "label": "Κόρνερ Under 9.5",
+    "market": "10803",
+    "match": "🇧🇷 Sao Bernardo – Athletic Club Sjdr",
+    "model_p": null,
+    "outcome": "10804",
+    "price": 2.32,
+    "prob": 0.4259,
+    "sb": 2.27,
+    "score": 1.77,
+    "spec": {
+     "line": 9.5,
+     "side": "under",
+     "stat": "corners"
+    },
+    "start": "2026-11-12T23:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 10.4,
+    "edge": -3.5,
+    "fair": 2.0,
+    "fid": "id1000039068823468",
     "group": "1x2",
     "label": "1 (Sao Bernardo)",
     "market": "101",
     "match": "🇧🇷 Sao Bernardo – Athletic Club Sjdr",
     "model_p": null,
     "outcome": "101",
-    "price": 1.95,
+    "price": 1.93,
     "prob": 0.5,
     "sb": 1.87,
-    "score": 0.61,
+    "score": -0.39,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -8454,8 +8477,8 @@
   ]
  },
  "checked": {
-  "id1000039068823466": "2026-11-12T05:25:23Z",
-  "id1000039068823468": "2026-11-12T05:25:23Z",
+  "id1000039068823466": "2026-11-12T05:30:40Z",
+  "id1000039068823468": "2026-11-12T05:30:40Z",
   "id1000039068823472": "2026-11-11T21:55:23Z"
  },
  "diag": {
