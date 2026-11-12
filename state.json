@@ -8375,9 +8375,9 @@
   "id1000039068823468": [
    {
     "book": "stoiximan",
-    "drop": 10.4,
-    "edge": -2.5,
-    "fair": 1.999,
+    "drop": 15.5,
+    "edge": -3.2,
+    "fair": 1.891,
     "fid": "id1000039068823468",
     "fxi": {
      "categoryName": "Brazil",
@@ -8389,6 +8389,29 @@
      "startTime": "2026-11-12T23:00:00.000Z",
      "tournamentName": "Brasileiro Serie B"
     },
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇧🇷 Sao Bernardo – Athletic Club Sjdr",
+    "model_p": null,
+    "outcome": "1010",
+    "price": 1.83,
+    "prob": 0.5288,
+    "sb": 1.8,
+    "score": 1.42,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-12T23:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 10.8,
+    "edge": -2.2,
+    "fair": 1.993,
+    "fid": "id1000039068823468",
     "group": "1x2",
     "label": "1 (Sao Bernardo)",
     "market": "101",
@@ -8396,12 +8419,35 @@
     "model_p": null,
     "outcome": "101",
     "price": 1.95,
-    "prob": 0.5003,
+    "prob": 0.5018,
     "sb": 1.87,
-    "score": 0.66,
+    "score": 1.07,
     "spec": {
      "side": "1",
      "stat": "1x2"
+    },
+    "start": "2026-11-12T23:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 7.9,
+    "edge": -3.0,
+    "fair": 1.319,
+    "fid": "id1000039068823468",
+    "group": "goals",
+    "label": "Over 1.5 γκολ",
+    "market": "108",
+    "match": "🇧🇷 Sao Bernardo – Athletic Club Sjdr",
+    "model_p": null,
+    "outcome": "108",
+    "price": 1.28,
+    "prob": 0.7582,
+    "sb": 1.25,
+    "score": -0.58,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "goals"
     },
     "start": "2026-11-12T23:00:00.000Z"
    },
@@ -8427,35 +8473,12 @@
      "stat": "corners"
     },
     "start": "2026-11-12T23:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 7.0,
-    "edge": -3.9,
-    "fair": 1.332,
-    "fid": "id1000039068823468",
-    "group": "goals",
-    "label": "Over 1.5 γκολ",
-    "market": "108",
-    "match": "🇧🇷 Sao Bernardo – Athletic Club Sjdr",
-    "model_p": null,
-    "outcome": "108",
-    "price": 1.28,
-    "prob": 0.7508,
-    "sb": 1.25,
-    "score": -1.8,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-12T23:00:00.000Z"
    }
   ]
  },
  "checked": {
-  "id1000039068823466": "2026-11-12T05:05:23Z",
-  "id1000039068823468": "2026-11-12T05:05:23Z",
+  "id1000039068823466": "2026-11-12T05:10:28Z",
+  "id1000039068823468": "2026-11-12T05:10:28Z",
   "id1000039068823472": "2026-11-11T21:55:23Z"
  },
  "diag": {
