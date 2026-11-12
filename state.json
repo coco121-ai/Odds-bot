@@ -8453,22 +8453,45 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.1,
-    "edge": -3.8,
-    "fair": 1.164,
+    "drop": -2.7,
+    "edge": -2.5,
+    "fair": 1.866,
     "fid": "id1000039068823468",
     "group": "goals",
-    "label": "Under 4.5 γκολ",
-    "market": "1014",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
     "match": "🇧🇷 Sao Bernardo – Athletic Club Sjdr",
     "model_p": null,
-    "outcome": "1015",
-    "price": 1.12,
-    "prob": 0.8591,
-    "sb": 1.11,
-    "score": -3.78,
+    "outcome": "1011",
+    "price": 1.82,
+    "prob": 0.5359,
+    "sb": 1.83,
+    "score": -2.47,
     "spec": {
-     "line": 4.5,
+     "line": 2.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-12T23:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -1.7,
+    "edge": -3.2,
+    "fair": 1.363,
+    "fid": "id1000039068823468",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🇧🇷 Sao Bernardo – Athletic Club Sjdr",
+    "model_p": null,
+    "outcome": "1013",
+    "price": 1.32,
+    "prob": 0.7337,
+    "sb": 1.31,
+    "score": -3.15,
+    "spec": {
+     "line": 3.5,
      "side": "under",
      "stat": "goals"
     },
@@ -8477,8 +8500,8 @@
   ]
  },
  "checked": {
-  "id1000039068823466": "2026-11-12T07:25:24Z",
-  "id1000039068823468": "2026-11-12T07:25:24Z"
+  "id1000039068823466": "2026-11-12T07:30:48Z",
+  "id1000039068823468": "2026-11-12T07:30:48Z"
  },
  "diag": {
   "2026-11-10": {
@@ -8536,6 +8559,7 @@
    "drop_edge_neg": [
     "id1000039068823468|1010|1010|goals",
     "id1000039068823468|1010|1011|goals",
+    "id1000039068823468|10256|10257|goals",
     "id1000039068823468|10258|10258|goals"
    ],
    "fixtures": [
@@ -8563,6 +8587,7 @@
    "small_market": [
     "id1000039068823468|1010|1010|goals",
     "id1000039068823468|1010|1011|goals",
+    "id1000039068823468|10256|10257|goals",
     "id1000039068823468|10258|10258|goals"
    ],
    "too_early": [
