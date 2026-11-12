@@ -8378,9 +8378,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.4,
-    "edge": -3.6,
-    "fair": 1.203,
+    "drop": -0.3,
+    "edge": -3.5,
+    "fair": 1.202,
     "fid": "id1000039068823466",
     "group": "goals",
     "label": "Under 4.5 γκολ",
@@ -8389,11 +8389,34 @@
     "model_p": null,
     "outcome": "1015",
     "price": 1.16,
-    "prob": 0.8313,
+    "prob": 0.8319,
     "sb": 1.15,
-    "score": -3.57,
+    "score": -3.49,
     "spec": {
      "line": 4.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-12T22:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -1.0,
+    "edge": -3.9,
+    "fair": 1.478,
+    "fid": "id1000039068823466",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🇧🇷 Ponte Preta – Ferroviario",
+    "model_p": null,
+    "outcome": "1013",
+    "price": 1.42,
+    "prob": 0.6766,
+    "sb": 1.41,
+    "score": -3.92,
+    "spec": {
+     "line": 3.5,
      "side": "under",
      "stat": "goals"
     },
@@ -8460,8 +8483,8 @@
   ]
  },
  "checked": {
-  "id1000039068823466": "2026-11-12T14:10:30Z",
-  "id1000039068823468": "2026-11-12T14:10:30Z"
+  "id1000039068823466": "2026-11-12T14:15:29Z",
+  "id1000039068823468": "2026-11-12T14:15:29Z"
  },
  "diag": {
   "2026-11-10": {
