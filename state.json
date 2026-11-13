@@ -8735,53 +8735,53 @@
     "start": "2026-11-13T19:30:00.000Z"
    }
   ],
-  "id1003483473068212": [
+  "id1003483472559240": [
    {
     "book": "stoiximan",
-    "drop": 18.0,
-    "edge": 7.5,
-    "fair": 2.373,
-    "fid": "id1003483473068212",
+    "drop": 8.4,
+    "edge": -3.1,
+    "fair": 3.095,
+    "fid": "id1003483472559240",
     "fxi": {
      "categoryName": "Spain",
      "categorySlug": "spain",
-     "participant1Name": "Gimnastic de Tarragona",
-     "participant1ShortName": "Tarragona",
-     "participant2Name": "Real Madrid Castilla",
-     "participant2ShortName": "Real Madrid Castilla",
-     "startTime": "2026-11-13T20:15:00.000Z",
+     "participant1Name": "SD Ponferradina",
+     "participant1ShortName": "Ponferradina",
+     "participant2Name": "CP Cacereno SAD",
+     "participant2ShortName": "Cacereno",
+     "startTime": "2026-11-13T18:00:00.000Z",
      "tournamentName": "Primera Federacion"
     },
     "group": "1x2",
-    "label": "2 (Real Madrid Castilla)",
+    "label": "Χ",
     "market": "101",
-    "match": "🇪🇸 Tarragona – Real Madrid Castilla",
+    "match": "🇪🇸 Ponferradina – Cacereno",
     "model_p": null,
-    "outcome": "103",
-    "price": 2.55,
-    "prob": 0.4214,
-    "sb": 2.17,
-    "score": 12.85,
+    "outcome": "102",
+    "price": 3.0,
+    "prob": 0.3231,
+    "sb": 2.92,
+    "score": -0.56,
     "spec": {
-     "side": "2",
+     "side": "x",
      "stat": "1x2"
     },
-    "start": "2026-11-13T20:15:00.000Z"
+    "start": "2026-11-13T18:00:00.000Z"
    }
   ]
  },
  "checked": {
-  "id1000005472477592": "2026-11-13T05:35:28Z",
-  "id1000006572499156": "2026-11-13T05:35:28Z",
-  "id1000006572499160": "2026-11-13T05:35:28Z",
-  "id1000006572499164": "2026-11-13T05:35:28Z",
+  "id1000005472477592": "2026-11-13T05:40:28Z",
+  "id1000006572499156": "2026-11-13T05:40:28Z",
+  "id1000006572499160": "2026-11-13T05:40:28Z",
+  "id1000006572499164": "2026-11-13T05:40:28Z",
   "id1000039068823466": "2026-11-12T21:55:37Z",
   "id1000039068823468": "2026-11-12T22:55:34Z",
-  "id1000051572398808": "2026-11-13T05:35:28Z",
-  "id1002655473293348": "2026-11-13T05:35:28Z",
-  "id1002655673294084": "2026-11-13T05:35:28Z",
-  "id1003483472559240": "2026-11-13T05:35:28Z",
-  "id1003483473068212": "2026-11-13T05:35:28Z"
+  "id1000051572398808": "2026-11-13T05:40:28Z",
+  "id1002655473293348": "2026-11-13T05:40:28Z",
+  "id1002655673294084": "2026-11-13T05:40:28Z",
+  "id1003483472559240": "2026-11-13T05:40:28Z",
+  "id1003483473068212": "2026-11-13T05:40:28Z"
  },
  "diag": {
   "2026-11-11": {
@@ -8971,6 +8971,9 @@
     "id1003483473068212|101|103|1x2"
    ],
    "drop_edge_e5": [
+    "id1003483473068212|101|103|1x2"
+   ],
+   "drop_edge_neg": [
     "id1003483473068212|101|103|1x2"
    ],
    "fixtures": [
