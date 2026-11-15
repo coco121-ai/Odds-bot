@@ -8691,8 +8691,8 @@
    {
     "book": "stoiximan",
     "drop": 1.4,
-    "edge": -3.5,
-    "fair": 1.275,
+    "edge": -3.6,
+    "fair": 1.276,
     "fid": "id1000005472477586",
     "group": "goals",
     "label": "Over 1.5 γκολ",
@@ -8701,9 +8701,9 @@
     "model_p": 0.852,
     "outcome": "108",
     "price": 1.23,
-    "prob": 0.7843,
+    "prob": 0.7837,
     "sb": 1.22,
-    "score": -1.06,
+    "score": -1.15,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -8713,9 +8713,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -3.3,
-    "edge": -1.6,
-    "fair": 1.219,
+    "drop": -3.2,
+    "edge": -1.4,
+    "fair": 1.217,
     "fid": "id1000005472477586",
     "group": "goals",
     "label": "Under 4.5 γκολ",
@@ -8724,9 +8724,9 @@
     "model_p": 0.746,
     "outcome": "1015",
     "price": 1.2,
-    "prob": 0.8203,
+    "prob": 0.8217,
     "sb": 1.17,
-    "score": -3.79,
+    "score": -3.67,
     "spec": {
      "line": 4.5,
      "side": "under",
@@ -8754,52 +8754,6 @@
      "line": 3.5,
      "side": "under",
      "stat": "goals"
-    },
-    "start": "2026-11-15T17:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -6.1,
-    "edge": 0.4,
-    "fair": 2.411,
-    "fid": "id1000005472477586",
-    "group": "corners",
-    "label": "Κόρνερ Over 10.5",
-    "market": "10807",
-    "match": "🇪🇸 Eibar – Cadiz",
-    "model_p": 0.208,
-    "outcome": "10807",
-    "price": 2.42,
-    "prob": 0.4148,
-    "sb": 2.15,
-    "score": -5.82,
-    "spec": {
-     "line": 10.5,
-     "side": "over",
-     "stat": "corners"
-    },
-    "start": "2026-11-15T17:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -1.6,
-    "edge": 0.3,
-    "fair": 1.864,
-    "fid": "id1000005472477586",
-    "group": "corners",
-    "label": "Κόρνερ Over 9.5",
-    "market": "10803",
-    "match": "🇪🇸 Eibar – Cadiz",
-    "model_p": 0.298,
-    "outcome": "10803",
-    "price": 1.87,
-    "prob": 0.5365,
-    "sb": 1.75,
-    "score": -6.84,
-    "spec": {
-     "line": 9.5,
-     "side": "over",
-     "stat": "corners"
     },
     "start": "2026-11-15T17:30:00.000Z"
    }
@@ -8886,53 +8840,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 5.7,
-    "edge": -3.0,
-    "fair": 3.092,
-    "fid": "id1000005472477588",
-    "group": "1x2",
-    "label": "Χ",
-    "market": "101",
-    "match": "🇪🇸 Eldense – Sabadell",
-    "model_p": 0.3,
-    "outcome": "102",
-    "price": 3.0,
-    "prob": 0.3234,
-    "sb": 2.95,
-    "score": -1.99,
-    "spec": {
-     "side": "x",
-     "stat": "1x2"
-    },
-    "start": "2026-11-15T17:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -5.2,
-    "edge": -0.4,
-    "fair": 3.113,
-    "fid": "id1000005472477588",
-    "group": "1x2",
-    "label": "2 (Sabadell)",
-    "market": "101",
-    "match": "🇪🇸 Eldense – Sabadell",
-    "model_p": 0.266,
-    "outcome": "103",
-    "price": 3.1,
-    "prob": 0.3212,
-    "sb": 2.95,
-    "score": -2.08,
-    "spec": {
-     "side": "2",
-     "stat": "1x2"
-    },
-    "start": "2026-11-15T17:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -9.2,
-    "edge": -1.3,
-    "fair": 1.57,
+    "drop": -9.0,
+    "edge": -1.1,
+    "fair": 1.568,
     "fid": "id1000005472477588",
     "group": "goals",
     "label": "Over 1.5 γκολ",
@@ -8941,9 +8851,9 @@
     "model_p": 0.602,
     "outcome": "108",
     "price": 1.55,
-    "prob": 0.6369,
+    "prob": 0.6378,
     "sb": 1.49,
-    "score": -2.32,
+    "score": -2.22,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -8953,9 +8863,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -1.6,
-    "edge": -2.8,
-    "fair": 1.162,
+    "drop": -1.5,
+    "edge": -2.6,
+    "fair": 1.16,
     "fid": "id1000005472477588",
     "group": "goals",
     "label": "Over 0.5 γκολ",
@@ -8964,13 +8874,35 @@
     "model_p": 0.869,
     "outcome": "106",
     "price": 1.13,
-    "prob": 0.8606,
+    "prob": 0.8621,
     "sb": 1.1,
-    "score": -2.51,
+    "score": -2.39,
     "spec": {
      "line": 0.5,
      "side": "over",
      "stat": "goals"
+    },
+    "start": "2026-11-15T17:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 5.0,
+    "edge": -3.5,
+    "fair": 3.108,
+    "fid": "id1000005472477588",
+    "group": "1x2",
+    "label": "Χ",
+    "market": "101",
+    "match": "🇪🇸 Eldense – Sabadell",
+    "model_p": 0.3,
+    "outcome": "102",
+    "price": 3.0,
+    "prob": 0.3218,
+    "sb": 2.95,
+    "score": -2.62,
+    "spec": {
+     "side": "x",
+     "stat": "1x2"
     },
     "start": "2026-11-15T17:30:00.000Z"
    },
@@ -8999,9 +8931,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -6.0,
-    "edge": -0.1,
-    "fair": 1.621,
+    "drop": -5.8,
+    "edge": 0.2,
+    "fair": 1.617,
     "fid": "id1000005472477588",
     "group": "ht",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -9010,9 +8942,9 @@
     "model_p": 0.493,
     "outcome": "10256",
     "price": 1.62,
-    "prob": 0.6169,
+    "prob": 0.6184,
     "sb": 1.55,
-    "score": -3.77,
+    "score": -3.57,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -9022,23 +8954,46 @@
    },
    {
     "book": "stoiximan",
-    "drop": -3.5,
-    "edge": -2.8,
-    "fair": 2.16,
+    "drop": -7.7,
+    "edge": -2.5,
+    "fair": 3.18,
     "fid": "id1000005472477588",
-    "group": "btts",
-    "label": "Goal/Goal: Ναι",
-    "market": "104",
+    "group": "1x2",
+    "label": "2 (Sabadell)",
+    "market": "101",
     "match": "🇪🇸 Eldense – Sabadell",
-    "model_p": 0.398,
-    "outcome": "104",
-    "price": 2.1,
-    "prob": 0.463,
-    "sb": 2.1,
-    "score": -4.73,
+    "model_p": 0.266,
+    "outcome": "103",
+    "price": 3.1,
+    "prob": 0.3145,
+    "sb": 2.95,
+    "score": -3.98,
     "spec": {
-     "side": "yes",
-     "stat": "btts"
+     "side": "2",
+     "stat": "1x2"
+    },
+    "start": "2026-11-15T17:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -15.9,
+    "edge": -3.5,
+    "fair": 2.714,
+    "fid": "id1000005472477588",
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇪🇸 Eldense – Sabadell",
+    "model_p": 0.331,
+    "outcome": "1010",
+    "price": 2.62,
+    "prob": 0.3685,
+    "sb": 2.55,
+    "score": -4.57,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
     },
     "start": "2026-11-15T17:30:00.000Z"
    }
@@ -9490,86 +9445,6 @@
     "start": "2026-11-15T15:30:00.000Z"
    }
   ],
-  "id1000023972531676": [
-   {
-    "book": "stoiximan",
-    "drop": -2.1,
-    "edge": -0.6,
-    "fair": 1.509,
-    "fid": "id1000023972531676",
-    "fxi": {
-     "categoryName": "Portugal",
-     "categorySlug": "portugal",
-     "participant1Name": "Portimonense SAD",
-     "participant1ShortName": "Portimonense SAD",
-     "participant2Name": "Academica de Coimbra",
-     "participant2ShortName": "Coimbra",
-     "startTime": "2026-11-15T14:00:00.000Z",
-     "tournamentName": "Liga Portugal 2"
-    },
-    "group": "ht",
-    "label": "Ημίχρονο Over 0.5 γκολ",
-    "market": "10256",
-    "match": "🇵🇹 Portimonense SAD – Coimbra",
-    "model_p": null,
-    "outcome": "10256",
-    "price": 1.5,
-    "prob": 0.6627,
-    "sb": 1.42,
-    "score": -0.6,
-    "spec": {
-     "line": 0.5,
-     "side": "over",
-     "stat": "ht"
-    },
-    "start": "2026-11-15T14:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 1.7,
-    "edge": -3.1,
-    "fair": 2.395,
-    "fid": "id1000023972531676",
-    "group": "1x2",
-    "label": "1 (Portimonense SAD)",
-    "market": "101",
-    "match": "🇵🇹 Portimonense SAD – Coimbra",
-    "model_p": null,
-    "outcome": "101",
-    "price": 2.32,
-    "prob": 0.4175,
-    "sb": 2.22,
-    "score": -2.62,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
-    },
-    "start": "2026-11-15T14:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -4.0,
-    "edge": -3.7,
-    "fair": 2.752,
-    "fid": "id1000023972531676",
-    "group": "corners",
-    "label": "Κόρνερ Under 8.5",
-    "market": "10799",
-    "match": "🇵🇹 Portimonense SAD – Coimbra",
-    "model_p": null,
-    "outcome": "10800",
-    "price": 2.65,
-    "prob": 0.3634,
-    "sb": 2.4,
-    "score": -3.71,
-    "spec": {
-     "line": 8.5,
-     "side": "under",
-     "stat": "corners"
-    },
-    "start": "2026-11-15T14:00:00.000Z"
-   }
-  ],
   "id1000051572398816": [
    {
     "book": "stoiximan",
@@ -9595,7 +9470,7 @@
     "outcome": "1011",
     "price": 2.1,
     "prob": 0.4753,
-    "sb": 2.02,
+    "sb": 2.0,
     "score": 2.29,
     "spec": {
      "line": 2.5,
@@ -10658,8 +10533,8 @@
   ]
  },
  "checked": {
-  "id1000005472477586": "2026-11-15T16:55:24Z",
-  "id1000005472477588": "2026-11-15T16:55:24Z",
+  "id1000005472477586": "2026-11-15T17:00:48Z",
+  "id1000005472477588": "2026-11-15T17:00:48Z",
   "id1000005472477590": "2026-11-15T15:10:30Z",
   "id1000005472477600": "2026-11-15T12:55:21Z",
   "id1000006572499176": "2026-11-15T11:55:22Z",
@@ -10673,15 +10548,15 @@
   "id1000021466918412": "2026-11-15T12:55:21Z",
   "id1000021466918414": "2026-11-15T12:55:21Z",
   "id1000023972531664": "2026-11-15T10:55:23Z",
-  "id1000023972531670": "2026-11-15T16:55:24Z",
+  "id1000023972531670": "2026-11-15T17:00:48Z",
   "id1000023972531672": "2026-11-15T15:25:27Z",
   "id1000023972531676": "2026-11-15T13:55:23Z",
   "id1000023972531678": "2026-11-15T10:55:23Z",
   "id1000051572398814": "2026-11-15T13:55:23Z",
-  "id1000051572398816": "2026-11-15T16:55:24Z",
-  "id1000070376411704": "2026-11-15T16:55:24Z",
-  "id1000070376413246": "2026-11-15T16:55:24Z",
-  "id1000070376413248": "2026-11-15T16:55:24Z",
+  "id1000051572398816": "2026-11-15T17:00:48Z",
+  "id1000070376411704": "2026-11-15T17:00:48Z",
+  "id1000070376413246": "2026-11-15T17:00:48Z",
+  "id1000070376413248": "2026-11-15T17:00:48Z",
   "id1000072172121008": "2026-11-15T11:55:22Z",
   "id1002655473293340": "2026-11-15T16:25:24Z",
   "id1002655473293342": "2026-11-15T16:25:24Z",
@@ -10699,7 +10574,7 @@
   "id1002655873294838": "2026-11-15T13:25:26Z",
   "id1002741276657334": "2026-11-15T11:55:22Z",
   "id1002741276657336": "2026-11-15T11:55:22Z",
-  "id1002816376582718": "2026-11-15T16:55:24Z",
+  "id1002816376582718": "2026-11-15T17:00:48Z",
   "id1003483472559230": "2026-11-15T10:55:23Z",
   "id1003483472559234": "2026-11-15T15:25:27Z",
   "id1003483472559238": "2026-11-15T15:25:27Z",
@@ -10707,7 +10582,7 @@
   "id1003483473068194": "2026-11-15T15:25:27Z",
   "id1003483473068196": "2026-11-15T10:55:23Z",
   "id1003483473068202": "2026-11-15T10:55:23Z",
-  "id1003483473068210": "2026-11-15T16:55:24Z"
+  "id1003483473068210": "2026-11-15T17:00:48Z"
  },
  "diag": {
   "2026-11-13": {
