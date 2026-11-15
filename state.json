@@ -9535,46 +9535,12 @@
     "start": "2026-11-15T15:30:00.000Z"
    }
   ],
-  "id1000051572398816": [
-   {
-    "book": "stoiximan",
-    "drop": 2.7,
-    "edge": -1.5,
-    "fair": 2.742,
-    "fid": "id1000051572398816",
-    "fxi": {
-     "categoryName": "Poland",
-     "categorySlug": "poland",
-     "participant1Name": "ZKS Stal Stalowa Wola",
-     "participant1ShortName": "Stal Stalowa Wola",
-     "participant2Name": "Olimpia Grudziadz",
-     "participant2ShortName": "Grudziadz",
-     "startTime": "2026-11-15T18:30:00.000Z",
-     "tournamentName": "II Liga"
-    },
-    "group": "1x2",
-    "label": "1 (Stal Stalowa Wola)",
-    "market": "101",
-    "match": "🇵🇱 Stal Stalowa Wola – Grudziadz",
-    "model_p": null,
-    "outcome": "101",
-    "price": 2.7,
-    "prob": 0.3647,
-    "sb": 2.62,
-    "score": -0.73,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
-    },
-    "start": "2026-11-15T18:30:00.000Z"
-   }
-  ],
   "id1000070376411704": [
    {
     "book": "stoiximan",
-    "drop": 0.0,
-    "edge": -3.9,
-    "fair": 1.925,
+    "drop": -0.9,
+    "edge": -0.8,
+    "fair": 2.521,
     "fid": "id1000070376411704",
     "fxi": {
      "categoryName": "Argentina",
@@ -9586,6 +9552,51 @@
      "startTime": "2026-11-15T20:00:00.000Z",
      "tournamentName": "Primera Nacional"
     },
+    "group": "corners",
+    "label": "Κόρνερ Under 7.5",
+    "market": "10795",
+    "match": "🇦🇷 Godoy Cruz – Tristan Suarez",
+    "model_p": null,
+    "outcome": "10796",
+    "price": 2.5,
+    "prob": 0.3967,
+    "sb": 2.32,
+    "score": -0.83,
+    "spec": {
+     "line": 7.5,
+     "side": "under",
+     "stat": "corners"
+    },
+    "start": "2026-11-15T20:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 2.3,
+    "edge": -3.2,
+    "fair": 3.098,
+    "fid": "id1000070376411704",
+    "group": "1x2",
+    "label": "Χ",
+    "market": "101",
+    "match": "🇦🇷 Godoy Cruz – Tristan Suarez",
+    "model_p": null,
+    "outcome": "102",
+    "price": 3.0,
+    "prob": 0.3228,
+    "sb": 2.9,
+    "score": -2.47,
+    "spec": {
+     "side": "x",
+     "stat": "1x2"
+    },
+    "start": "2026-11-15T20:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.0,
+    "edge": -3.9,
+    "fair": 1.925,
+    "fid": "id1000070376411704",
     "group": "corners",
     "label": "Κόρνερ Under 8.5",
     "market": "10799",
@@ -9721,9 +9732,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 3.5,
-    "edge": -2.9,
-    "fair": 1.195,
+    "drop": 3.4,
+    "edge": -3.0,
+    "fair": 1.196,
     "fid": "id1000070376413248",
     "group": "goals",
     "label": "Under 3.5 γκολ",
@@ -9732,9 +9743,9 @@
     "model_p": null,
     "outcome": "1013",
     "price": 1.16,
-    "prob": 0.8368,
+    "prob": 0.8361,
     "sb": 1.13,
-    "score": -1.88,
+    "score": -1.99,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -10610,10 +10621,10 @@
   "id1000023972531676": "2026-11-15T13:55:23Z",
   "id1000023972531678": "2026-11-15T10:55:23Z",
   "id1000051572398814": "2026-11-15T13:55:23Z",
-  "id1000051572398816": "2026-11-15T18:05:25Z",
-  "id1000070376411704": "2026-11-15T18:05:25Z",
+  "id1000051572398816": "2026-11-15T18:10:31Z",
+  "id1000070376411704": "2026-11-15T18:10:31Z",
   "id1000070376413246": "2026-11-15T17:55:23Z",
-  "id1000070376413248": "2026-11-15T18:05:25Z",
+  "id1000070376413248": "2026-11-15T18:10:31Z",
   "id1000072172121008": "2026-11-15T11:55:22Z",
   "id1002655473293340": "2026-11-15T16:25:24Z",
   "id1002655473293342": "2026-11-15T16:25:24Z",
@@ -10631,7 +10642,7 @@
   "id1002655873294838": "2026-11-15T13:25:26Z",
   "id1002741276657334": "2026-11-15T11:55:22Z",
   "id1002741276657336": "2026-11-15T11:55:22Z",
-  "id1002816376582718": "2026-11-15T18:05:25Z",
+  "id1002816376582718": "2026-11-15T18:10:31Z",
   "id1003483472559230": "2026-11-15T10:55:23Z",
   "id1003483472559234": "2026-11-15T15:25:27Z",
   "id1003483472559238": "2026-11-15T15:25:27Z",
