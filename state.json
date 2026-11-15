@@ -8906,9 +8906,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 6.9,
-    "edge": -1.5,
-    "fair": 3.047,
+    "drop": 7.2,
+    "edge": -1.2,
+    "fair": 3.035,
     "fid": "id1000005472477588",
     "group": "1x2",
     "label": "Χ",
@@ -8917,58 +8917,12 @@
     "model_p": 0.3,
     "outcome": "102",
     "price": 3.0,
-    "prob": 0.3282,
+    "prob": 0.3295,
     "sb": 3.0,
-    "score": -0.32,
+    "score": 0.13,
     "spec": {
      "side": "x",
      "stat": "1x2"
-    },
-    "start": "2026-11-15T17:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -11.2,
-    "edge": -1.9,
-    "fair": 1.6,
-    "fid": "id1000005472477588",
-    "group": "goals",
-    "label": "Over 1.5 γκολ",
-    "market": "108",
-    "match": "🇪🇸 Eldense – Sabadell",
-    "model_p": 0.602,
-    "outcome": "108",
-    "price": 1.57,
-    "prob": 0.625,
-    "sb": 1.54,
-    "score": -2.56,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-15T17:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -2.4,
-    "edge": -3.5,
-    "fair": 1.171,
-    "fid": "id1000005472477588",
-    "group": "goals",
-    "label": "Over 0.5 γκολ",
-    "market": "106",
-    "match": "🇪🇸 Eldense – Sabadell",
-    "model_p": 0.869,
-    "outcome": "106",
-    "price": 1.13,
-    "prob": 0.854,
-    "sb": 1.11,
-    "score": -3.06,
-    "spec": {
-     "line": 0.5,
-     "side": "over",
-     "stat": "goals"
     },
     "start": "2026-11-15T17:30:00.000Z"
    },
@@ -8997,9 +8951,55 @@
    },
    {
     "book": "stoiximan",
-    "drop": -7.8,
-    "edge": 0.2,
-    "fair": 1.647,
+    "drop": -12.1,
+    "edge": -2.6,
+    "fair": 1.612,
+    "fid": "id1000005472477588",
+    "group": "goals",
+    "label": "Over 1.5 γκολ",
+    "market": "108",
+    "match": "🇪🇸 Eldense – Sabadell",
+    "model_p": 0.602,
+    "outcome": "108",
+    "price": 1.57,
+    "prob": 0.6203,
+    "sb": 1.54,
+    "score": -3.15,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-15T17:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -2.6,
+    "edge": -3.7,
+    "fair": 1.174,
+    "fid": "id1000005472477588",
+    "group": "goals",
+    "label": "Over 0.5 γκολ",
+    "market": "106",
+    "match": "🇪🇸 Eldense – Sabadell",
+    "model_p": 0.869,
+    "outcome": "106",
+    "price": 1.13,
+    "prob": 0.8518,
+    "sb": 1.11,
+    "score": -3.24,
+    "spec": {
+     "line": 0.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-15T17:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -8.2,
+    "edge": -0.3,
+    "fair": 1.655,
     "fid": "id1000005472477588",
     "group": "ht",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -9008,9 +9008,9 @@
     "model_p": 0.493,
     "outcome": "10256",
     "price": 1.65,
-    "prob": 0.6072,
+    "prob": 0.6042,
     "sb": 1.59,
-    "score": -3.23,
+    "score": -3.63,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -9673,41 +9673,6 @@
     "start": "2026-11-15T13:00:00.000Z"
    }
   ],
-  "id1000023972531664": [
-   {
-    "book": "stoiximan",
-    "drop": -4.9,
-    "edge": -3.5,
-    "fair": 1.575,
-    "fid": "id1000023972531664",
-    "fxi": {
-     "categoryName": "Portugal",
-     "categorySlug": "portugal",
-     "participant1Name": "Amarante FC",
-     "participant1ShortName": "Amarante",
-     "participant2Name": "FC Felgueiras 1932",
-     "participant2ShortName": "Felgueiras",
-     "startTime": "2026-11-15T11:00:00.000Z",
-     "tournamentName": "Liga Portugal 2"
-    },
-    "group": "goals",
-    "label": "Over 1.5 γκολ",
-    "market": "108",
-    "match": "🇵🇹 Amarante – Felgueiras",
-    "model_p": null,
-    "outcome": "108",
-    "price": 1.52,
-    "prob": 0.6349,
-    "sb": 1.45,
-    "score": -3.49,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-15T11:00:00.000Z"
-   }
-  ],
   "id1000023972531670": [
    {
     "book": "stoiximan",
@@ -9860,9 +9825,9 @@
   "id1000023972531672": [
    {
     "book": "stoiximan",
-    "drop": 16.3,
-    "edge": 1.7,
-    "fair": 1.917,
+    "drop": 15.7,
+    "edge": 1.0,
+    "fair": 1.931,
     "fid": "id1000023972531672",
     "fxi": {
      "categoryName": "Portugal",
@@ -9881,9 +9846,9 @@
     "model_p": null,
     "outcome": "101",
     "price": 1.95,
-    "prob": 0.5216,
+    "prob": 0.5179,
     "sb": 1.92,
-    "score": 6.61,
+    "score": 5.68,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -9915,9 +9880,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.5,
-    "edge": -0.3,
-    "fair": 1.455,
+    "drop": -0.6,
+    "edge": -0.4,
+    "fair": 1.456,
     "fid": "id1000023972531672",
     "group": "ht",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -9926,9 +9891,9 @@
     "model_p": null,
     "outcome": "10256",
     "price": 1.45,
-    "prob": 0.6873,
+    "prob": 0.6868,
     "sb": 1.38,
-    "score": -0.34,
+    "score": -0.41,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -9961,7 +9926,7 @@
    },
    {
     "book": "stoiximan",
-    "drop": 0.1,
+    "drop": 0.0,
     "edge": -3.4,
     "fair": 1.366,
     "fid": "id1000023972531672",
@@ -9974,7 +9939,7 @@
     "price": 1.32,
     "prob": 0.7321,
     "sb": 1.28,
-    "score": -3.34,
+    "score": -3.37,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -10061,133 +10026,6 @@
      "stat": "corners"
     },
     "start": "2026-11-15T14:00:00.000Z"
-   }
-  ],
-  "id1000023972531678": [
-   {
-    "book": "stoiximan",
-    "drop": -0.9,
-    "edge": 0.0,
-    "fair": 2.42,
-    "fid": "id1000023972531678",
-    "fxi": {
-     "categoryName": "Portugal",
-     "categorySlug": "portugal",
-     "participant1Name": "CD Tondela",
-     "participant1ShortName": "Tondela",
-     "participant2Name": "SC Farense",
-     "participant2ShortName": "Farense",
-     "startTime": "2026-11-15T11:00:00.000Z",
-     "tournamentName": "Liga Portugal 2"
-    },
-    "group": "corners",
-    "label": "Κόρνερ Over 10.5",
-    "market": "10807",
-    "match": "🇵🇹 Tondela – Farense",
-    "model_p": null,
-    "outcome": "10807",
-    "price": 2.42,
-    "prob": 0.4132,
-    "sb": 2.27,
-    "score": 0.0,
-    "spec": {
-     "line": 10.5,
-     "side": "over",
-     "stat": "corners"
-    },
-    "start": "2026-11-15T11:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -3.4,
-    "edge": -1.2,
-    "fair": 1.458,
-    "fid": "id1000023972531678",
-    "group": "ht",
-    "label": "Ημίχρονο Under 1.5 γκολ",
-    "market": "10258",
-    "match": "🇵🇹 Tondela – Farense",
-    "model_p": null,
-    "outcome": "10259",
-    "price": 1.44,
-    "prob": 0.6859,
-    "sb": 1.37,
-    "score": -1.23,
-    "spec": {
-     "line": 1.5,
-     "side": "under",
-     "stat": "ht"
-    },
-    "start": "2026-11-15T11:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.0,
-    "edge": -2.5,
-    "fair": 1.917,
-    "fid": "id1000023972531678",
-    "group": "corners",
-    "label": "Κόρνερ Over 9.5",
-    "market": "10803",
-    "match": "🇵🇹 Tondela – Farense",
-    "model_p": null,
-    "outcome": "10803",
-    "price": 1.87,
-    "prob": 0.5216,
-    "sb": 1.83,
-    "score": -2.45,
-    "spec": {
-     "line": 9.5,
-     "side": "over",
-     "stat": "corners"
-    },
-    "start": "2026-11-15T11:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -0.8,
-    "edge": -3.7,
-    "fair": 1.578,
-    "fid": "id1000023972531678",
-    "group": "corners",
-    "label": "Κόρνερ Over 8.5",
-    "market": "10799",
-    "match": "🇵🇹 Tondela – Farense",
-    "model_p": null,
-    "outcome": "10799",
-    "price": 1.52,
-    "prob": 0.6337,
-    "sb": 1.54,
-    "score": -3.68,
-    "spec": {
-     "line": 8.5,
-     "side": "over",
-     "stat": "corners"
-    },
-    "start": "2026-11-15T11:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -0.7,
-    "edge": -3.9,
-    "fair": 1.405,
-    "fid": "id1000023972531678",
-    "group": "goals",
-    "label": "Over 1.5 γκολ",
-    "market": "108",
-    "match": "🇵🇹 Tondela – Farense",
-    "model_p": null,
-    "outcome": "108",
-    "price": 1.35,
-    "prob": 0.7117,
-    "sb": 1.31,
-    "score": -3.91,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-15T11:00:00.000Z"
    }
   ],
   "id1000070376411704": [
@@ -11568,41 +11406,6 @@
     "start": "2026-11-16T00:00:00.000Z"
    }
   ],
-  "id1003483472559230": [
-   {
-    "book": "stoiximan",
-    "drop": 1.1,
-    "edge": -3.8,
-    "fair": 1.382,
-    "fid": "id1003483472559230",
-    "fxi": {
-     "categoryName": "Spain",
-     "categorySlug": "spain",
-     "participant1Name": "CD Extremadura",
-     "participant1ShortName": "Extremadura",
-     "participant2Name": "Pontevedra CF",
-     "participant2ShortName": "Pontevedra",
-     "startTime": "2026-11-15T11:00:00.000Z",
-     "tournamentName": "Primera Federacion"
-    },
-    "group": "goals",
-    "label": "Over 1.5 γκολ",
-    "market": "108",
-    "match": "🇪🇸 Extremadura – Pontevedra",
-    "model_p": null,
-    "outcome": "108",
-    "price": 1.33,
-    "prob": 0.7236,
-    "sb": false,
-    "score": -3.44,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-15T11:00:00.000Z"
-   }
-  ],
   "id1003483472559234": [
    {
     "book": "stoiximan",
@@ -11635,41 +11438,6 @@
      "stat": "1x2"
     },
     "start": "2026-11-15T15:30:00.000Z"
-   }
-  ],
-  "id1003483473068202": [
-   {
-    "book": "stoiximan",
-    "drop": 1.0,
-    "edge": 1.1,
-    "fair": 1.85,
-    "fid": "id1003483473068202",
-    "fxi": {
-     "categoryName": "Spain",
-     "categorySlug": "spain",
-     "participant1Name": "UD Ibiza",
-     "participant1ShortName": "Ibiza",
-     "participant2Name": "FC Cartagena",
-     "participant2ShortName": "Cartagena",
-     "startTime": "2026-11-15T11:00:00.000Z",
-     "tournamentName": "Primera Federacion"
-    },
-    "group": "goals",
-    "label": "Under 2.5 γκολ",
-    "market": "1010",
-    "match": "🇪🇸 Ibiza – Cartagena",
-    "model_p": null,
-    "outcome": "1011",
-    "price": 1.87,
-    "prob": 0.5405,
-    "sb": 1.85,
-    "score": 1.39,
-    "spec": {
-     "line": 2.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-15T11:00:00.000Z"
    }
   ],
   "id1003483473068210": [
@@ -11730,9 +11498,9 @@
   ]
  },
  "checked": {
-  "id1000005472477586": "2026-11-15T13:55:23Z",
-  "id1000005472477588": "2026-11-15T13:55:23Z",
-  "id1000005472477590": "2026-11-15T13:55:23Z",
+  "id1000005472477586": "2026-11-15T14:00:45Z",
+  "id1000005472477588": "2026-11-15T14:00:45Z",
+  "id1000005472477590": "2026-11-15T14:00:45Z",
   "id1000005472477600": "2026-11-15T12:55:21Z",
   "id1000006572499176": "2026-11-15T11:55:22Z",
   "id1000013172044824": "2026-11-15T13:25:26Z",
@@ -11745,41 +11513,41 @@
   "id1000021466918412": "2026-11-15T12:55:21Z",
   "id1000021466918414": "2026-11-15T12:55:21Z",
   "id1000023972531664": "2026-11-15T10:55:23Z",
-  "id1000023972531670": "2026-11-15T13:55:23Z",
-  "id1000023972531672": "2026-11-15T13:55:23Z",
+  "id1000023972531670": "2026-11-15T14:00:45Z",
+  "id1000023972531672": "2026-11-15T14:00:45Z",
   "id1000023972531676": "2026-11-15T13:55:23Z",
   "id1000023972531678": "2026-11-15T10:55:23Z",
   "id1000051572398814": "2026-11-15T13:55:23Z",
-  "id1000051572398816": "2026-11-15T13:55:23Z",
-  "id1000070376411704": "2026-11-15T13:55:23Z",
-  "id1000070376413246": "2026-11-15T13:55:23Z",
-  "id1000070376413248": "2026-11-15T13:55:23Z",
+  "id1000051572398816": "2026-11-15T14:00:45Z",
+  "id1000070376411704": "2026-11-15T14:00:45Z",
+  "id1000070376413246": "2026-11-15T14:00:45Z",
+  "id1000070376413248": "2026-11-15T14:00:45Z",
   "id1000072172121008": "2026-11-15T11:55:22Z",
-  "id1002655473293340": "2026-11-15T13:55:23Z",
-  "id1002655473293342": "2026-11-15T13:55:23Z",
+  "id1002655473293340": "2026-11-15T14:00:45Z",
+  "id1002655473293342": "2026-11-15T14:00:45Z",
   "id1002655473293346": "2026-11-15T11:25:24Z",
-  "id1002655473293350": "2026-11-15T13:55:23Z",
+  "id1002655473293350": "2026-11-15T14:00:45Z",
   "id1002655673294082": "2026-11-15T13:25:26Z",
   "id1002655673294088": "2026-11-15T13:25:26Z",
-  "id1002655673294090": "2026-11-15T13:55:23Z",
+  "id1002655673294090": "2026-11-15T14:00:45Z",
   "id1002655673294094": "2026-11-15T13:25:26Z",
-  "id1002655873294826": "2026-11-15T13:55:23Z",
+  "id1002655873294826": "2026-11-15T14:00:45Z",
   "id1002655873294830": "2026-11-15T13:25:26Z",
-  "id1002655873294832": "2026-11-15T13:55:23Z",
+  "id1002655873294832": "2026-11-15T14:00:45Z",
   "id1002655873294834": "2026-11-15T11:25:24Z",
   "id1002655873294836": "2026-11-15T13:25:26Z",
   "id1002655873294838": "2026-11-15T13:25:26Z",
   "id1002741276657334": "2026-11-15T11:55:22Z",
   "id1002741276657336": "2026-11-15T11:55:22Z",
-  "id1002816376582718": "2026-11-15T13:55:23Z",
+  "id1002816376582718": "2026-11-15T14:00:45Z",
   "id1003483472559230": "2026-11-15T10:55:23Z",
-  "id1003483472559234": "2026-11-15T13:55:23Z",
-  "id1003483472559238": "2026-11-15T13:55:23Z",
+  "id1003483472559234": "2026-11-15T14:00:45Z",
+  "id1003483472559238": "2026-11-15T14:00:45Z",
   "id1003483472559242": "2026-11-15T13:10:28Z",
-  "id1003483473068194": "2026-11-15T13:55:23Z",
+  "id1003483473068194": "2026-11-15T14:00:45Z",
   "id1003483473068196": "2026-11-15T10:55:23Z",
   "id1003483473068202": "2026-11-15T10:55:23Z",
-  "id1003483473068210": "2026-11-15T13:55:23Z"
+  "id1003483473068210": "2026-11-15T14:00:45Z"
  },
  "diag": {
   "2026-11-13": {
