@@ -8634,9 +8634,9 @@
   "id1000005472477586": [
    {
     "book": "stoiximan",
-    "drop": -2.2,
-    "edge": 3.0,
-    "fair": 1.767,
+    "drop": 6.2,
+    "edge": -0.4,
+    "fair": 1.727,
     "fid": "id1000005472477586",
     "fxi": {
      "categoryName": "Spain",
@@ -8648,6 +8648,52 @@
      "startTime": "2026-11-15T17:30:00.000Z",
      "tournamentName": "LaLiga 2"
     },
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇪🇸 Eibar – Cadiz",
+    "model_p": 0.658,
+    "outcome": "1010",
+    "price": 1.72,
+    "prob": 0.579,
+    "sb": 1.7,
+    "score": 3.83,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-15T17:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 7.5,
+    "edge": -1.4,
+    "fair": 2.841,
+    "fid": "id1000005472477586",
+    "group": "goals",
+    "label": "Over 3.5 γκολ",
+    "market": "1012",
+    "match": "🇪🇸 Eibar – Cadiz",
+    "model_p": 0.439,
+    "outcome": "1012",
+    "price": 2.8,
+    "prob": 0.352,
+    "sb": 2.75,
+    "score": 3.42,
+    "spec": {
+     "line": 3.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-15T17:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -2.2,
+    "edge": 3.0,
+    "fair": 1.767,
+    "fid": "id1000005472477586",
     "group": "cards",
     "label": "Κάρτες Over 5.5",
     "market": "10934",
@@ -8662,6 +8708,28 @@
      "line": 5.5,
      "side": "over",
      "stat": "cards"
+    },
+    "start": "2026-11-15T17:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.0,
+    "edge": -1.7,
+    "fair": 1.852,
+    "fid": "id1000005472477586",
+    "group": "btts",
+    "label": "Goal/Goal: Ναι",
+    "market": "104",
+    "match": "🇪🇸 Eibar – Cadiz",
+    "model_p": 0.634,
+    "outcome": "104",
+    "price": 1.82,
+    "prob": 0.54,
+    "sb": 1.83,
+    "score": 1.08,
+    "spec": {
+     "side": "yes",
+     "stat": "btts"
     },
     "start": "2026-11-15T17:30:00.000Z"
    },
@@ -8690,9 +8758,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 1.8,
-    "edge": -3.2,
-    "fair": 1.271,
+    "drop": 2.1,
+    "edge": -2.1,
+    "fair": 1.267,
     "fid": "id1000005472477586",
     "group": "goals",
     "label": "Over 1.5 γκολ",
@@ -8700,10 +8768,10 @@
     "match": "🇪🇸 Eibar – Cadiz",
     "model_p": 0.852,
     "outcome": "108",
-    "price": 1.23,
-    "prob": 0.7868,
+    "price": 1.24,
+    "prob": 0.7893,
     "sb": 1.22,
-    "score": -0.74,
+    "score": 0.38,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -8713,32 +8781,32 @@
    },
    {
     "book": "stoiximan",
-    "drop": -3.4,
-    "edge": -1.7,
-    "fair": 1.221,
+    "drop": 4.9,
+    "edge": -3.5,
+    "fair": 2.643,
     "fid": "id1000005472477586",
-    "group": "goals",
-    "label": "Under 4.5 γκολ",
-    "market": "1014",
+    "group": "ht",
+    "label": "Ημίχρονο Over 1.5 γκολ",
+    "market": "10258",
     "match": "🇪🇸 Eibar – Cadiz",
-    "model_p": 0.746,
-    "outcome": "1015",
-    "price": 1.2,
-    "prob": 0.819,
-    "sb": 1.17,
-    "score": -3.91,
+    "model_p": 0.446,
+    "outcome": "10258",
+    "price": 2.55,
+    "prob": 0.3784,
+    "sb": 2.42,
+    "score": -0.03,
     "spec": {
-     "line": 4.5,
-     "side": "under",
-     "stat": "goals"
+     "line": 1.5,
+     "side": "over",
+     "stat": "ht"
     },
     "start": "2026-11-15T17:30:00.000Z"
    },
    {
     "book": "stoiximan",
-    "drop": 4.3,
-    "edge": -4.0,
-    "fair": 1.593,
+    "drop": 4.8,
+    "edge": -3.4,
+    "fair": 1.584,
     "fid": "id1000005472477586",
     "group": "1x2",
     "label": "1 (Eibar)",
@@ -8747,9 +8815,9 @@
     "model_p": 0.566,
     "outcome": "101",
     "price": 1.53,
-    "prob": 0.6277,
+    "prob": 0.6313,
     "sb": 1.51,
-    "score": -4.53,
+    "score": -3.93,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -8776,29 +8844,6 @@
      "line": 10.5,
      "side": "over",
      "stat": "corners"
-    },
-    "start": "2026-11-15T17:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -6.9,
-    "edge": -2.2,
-    "fair": 1.534,
-    "fid": "id1000005472477586",
-    "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
-    "match": "🇪🇸 Eibar – Cadiz",
-    "model_p": 0.561,
-    "outcome": "1013",
-    "price": 1.5,
-    "prob": 0.6519,
-    "sb": 1.45,
-    "score": -4.96,
-    "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "goals"
     },
     "start": "2026-11-15T17:30:00.000Z"
    },
@@ -8887,7 +8932,7 @@
     "book": "stoiximan",
     "drop": 5.0,
     "edge": -2.0,
-    "fair": 3.112,
+    "fair": 3.111,
     "fid": "id1000005472477588",
     "group": "1x2",
     "label": "Χ",
@@ -8896,9 +8941,9 @@
     "model_p": 0.3,
     "outcome": "102",
     "price": 3.05,
-    "prob": 0.3213,
+    "prob": 0.3214,
     "sb": 2.95,
-    "score": -1.13,
+    "score": -1.1,
     "spec": {
      "side": "x",
      "stat": "1x2"
@@ -8930,9 +8975,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -7.9,
-    "edge": -1.4,
-    "fair": 1.552,
+    "drop": -8.3,
+    "edge": -0.4,
+    "fair": 1.556,
     "fid": "id1000005472477588",
     "group": "goals",
     "label": "Over 1.5 γκολ",
@@ -8940,37 +8985,14 @@
     "match": "🇪🇸 Eldense – Sabadell",
     "model_p": 0.602,
     "outcome": "108",
-    "price": 1.53,
-    "prob": 0.6443,
+    "price": 1.55,
+    "prob": 0.6427,
     "sb": 1.48,
-    "score": -2.69,
+    "score": -1.6,
     "spec": {
      "line": 1.5,
      "side": "over",
      "stat": "goals"
-    },
-    "start": "2026-11-15T17:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -5.0,
-    "edge": 0.9,
-    "fair": 1.605,
-    "fid": "id1000005472477588",
-    "group": "ht",
-    "label": "Ημίχρονο Over 0.5 γκολ",
-    "market": "10256",
-    "match": "🇪🇸 Eldense – Sabadell",
-    "model_p": 0.493,
-    "outcome": "10256",
-    "price": 1.62,
-    "prob": 0.6231,
-    "sb": 1.55,
-    "score": -2.96,
-    "spec": {
-     "line": 0.5,
-     "side": "over",
-     "stat": "ht"
     },
     "start": "2026-11-15T17:30:00.000Z"
    },
@@ -8999,6 +9021,29 @@
    },
    {
     "book": "stoiximan",
+    "drop": -5.2,
+    "edge": 0.7,
+    "fair": 1.609,
+    "fid": "id1000005472477588",
+    "group": "ht",
+    "label": "Ημίχρονο Over 0.5 γκολ",
+    "market": "10256",
+    "match": "🇪🇸 Eldense – Sabadell",
+    "model_p": 0.493,
+    "outcome": "10256",
+    "price": 1.62,
+    "prob": 0.6215,
+    "sb": 1.55,
+    "score": -3.16,
+    "spec": {
+     "line": 0.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-11-15T17:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 0.7,
     "edge": -1.0,
     "fair": 1.888,
@@ -9022,6 +9067,29 @@
    },
    {
     "book": "stoiximan",
+    "drop": -14.6,
+    "edge": -2.3,
+    "fair": 2.682,
+    "fid": "id1000005472477588",
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇪🇸 Eldense – Sabadell",
+    "model_p": 0.331,
+    "outcome": "1010",
+    "price": 2.62,
+    "prob": 0.3729,
+    "sb": 2.5,
+    "score": -3.55,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-15T17:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": -2.0,
     "edge": -2.9,
     "fair": 2.131,
@@ -9039,29 +9107,6 @@
     "spec": {
      "side": "yes",
      "stat": "btts"
-    },
-    "start": "2026-11-15T17:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -14.2,
-    "edge": -3.8,
-    "fair": 2.672,
-    "fid": "id1000005472477588",
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
-    "match": "🇪🇸 Eldense – Sabadell",
-    "model_p": 0.331,
-    "outcome": "1010",
-    "price": 2.57,
-    "prob": 0.3743,
-    "sb": 2.5,
-    "score": -5.1,
-    "spec": {
-     "line": 2.5,
-     "side": "over",
-     "stat": "goals"
     },
     "start": "2026-11-15T17:30:00.000Z"
    }
@@ -9287,9 +9332,9 @@
   "id1000023972531670": [
    {
     "book": "stoiximan",
-    "drop": 11.2,
-    "edge": -2.3,
-    "fair": 1.975,
+    "drop": 11.5,
+    "edge": -1.9,
+    "fair": 1.967,
     "fid": "id1000023972531670",
     "fxi": {
      "categoryName": "Portugal",
@@ -9308,9 +9353,9 @@
     "model_p": null,
     "outcome": "101",
     "price": 1.93,
-    "prob": 0.5063,
+    "prob": 0.5084,
     "sb": 1.9,
-    "score": 1.07,
+    "score": 1.58,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -9319,9 +9364,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -3.0,
-    "edge": -2.0,
-    "fair": 1.469,
+    "drop": -2.7,
+    "edge": -1.7,
+    "fair": 1.465,
     "fid": "id1000023972531670",
     "group": "ht",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -9330,9 +9375,9 @@
     "model_p": null,
     "outcome": "10256",
     "price": 1.44,
-    "prob": 0.6807,
+    "prob": 0.6826,
     "sb": 1.38,
-    "score": -1.97,
+    "score": -1.71,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -9388,9 +9433,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.3,
-    "edge": -3.5,
-    "fair": 1.161,
+    "drop": -0.4,
+    "edge": -3.7,
+    "fair": 1.163,
     "fid": "id1000023972531670",
     "group": "goals",
     "label": "Under 4.5 γκολ",
@@ -9399,9 +9444,9 @@
     "model_p": null,
     "outcome": "1015",
     "price": 1.12,
-    "prob": 0.8613,
+    "prob": 0.8598,
     "sb": 1.09,
-    "score": -3.53,
+    "score": -3.7,
     "spec": {
      "line": 4.5,
      "side": "under",
@@ -9733,31 +9778,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 5.9,
-    "edge": -2.8,
-    "fair": 1.595,
-    "fid": "id1000070376413248",
-    "group": "1x2",
-    "label": "1 (Ferro Carril Oeste)",
-    "market": "101",
-    "match": "🇦🇷 Ferro Carril Oeste – Salta",
-    "model_p": null,
-    "outcome": "101",
-    "price": 1.55,
-    "prob": 0.627,
-    "sb": 1.53,
-    "score": -1.05,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
-    },
-    "start": "2026-11-15T23:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": -5.1,
-    "edge": -1.2,
-    "fair": 1.639,
+    "edge": -1.3,
+    "fair": 1.641,
     "fid": "id1000070376413248",
     "group": "ht",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -9766,13 +9789,35 @@
     "model_p": null,
     "outcome": "10256",
     "price": 1.62,
-    "prob": 0.6101,
+    "prob": 0.6094,
     "sb": 1.53,
-    "score": -1.16,
+    "score": -1.28,
     "spec": {
      "line": 0.5,
      "side": "over",
      "stat": "ht"
+    },
+    "start": "2026-11-15T23:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 5.1,
+    "edge": -3.7,
+    "fair": 1.609,
+    "fid": "id1000070376413248",
+    "group": "1x2",
+    "label": "1 (Ferro Carril Oeste)",
+    "market": "101",
+    "match": "🇦🇷 Ferro Carril Oeste – Salta",
+    "model_p": null,
+    "outcome": "101",
+    "price": 1.55,
+    "prob": 0.6215,
+    "sb": 1.53,
+    "score": -2.14,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
     },
     "start": "2026-11-15T23:30:00.000Z"
    }
@@ -10624,8 +10669,8 @@
   ]
  },
  "checked": {
-  "id1000005472477586": "2026-11-15T17:20:28Z",
-  "id1000005472477588": "2026-11-15T17:20:28Z",
+  "id1000005472477586": "2026-11-15T17:25:29Z",
+  "id1000005472477588": "2026-11-15T17:25:29Z",
   "id1000005472477590": "2026-11-15T15:10:30Z",
   "id1000005472477600": "2026-11-15T12:55:21Z",
   "id1000006572499176": "2026-11-15T11:55:22Z",
@@ -10639,15 +10684,15 @@
   "id1000021466918412": "2026-11-15T12:55:21Z",
   "id1000021466918414": "2026-11-15T12:55:21Z",
   "id1000023972531664": "2026-11-15T10:55:23Z",
-  "id1000023972531670": "2026-11-15T17:20:28Z",
+  "id1000023972531670": "2026-11-15T17:25:29Z",
   "id1000023972531672": "2026-11-15T15:25:27Z",
   "id1000023972531676": "2026-11-15T13:55:23Z",
   "id1000023972531678": "2026-11-15T10:55:23Z",
   "id1000051572398814": "2026-11-15T13:55:23Z",
-  "id1000051572398816": "2026-11-15T17:20:28Z",
-  "id1000070376411704": "2026-11-15T17:20:28Z",
-  "id1000070376413246": "2026-11-15T17:20:28Z",
-  "id1000070376413248": "2026-11-15T17:20:28Z",
+  "id1000051572398816": "2026-11-15T17:25:29Z",
+  "id1000070376411704": "2026-11-15T17:25:29Z",
+  "id1000070376413246": "2026-11-15T17:25:29Z",
+  "id1000070376413248": "2026-11-15T17:25:29Z",
   "id1000072172121008": "2026-11-15T11:55:22Z",
   "id1002655473293340": "2026-11-15T16:25:24Z",
   "id1002655473293342": "2026-11-15T16:25:24Z",
@@ -10665,7 +10710,7 @@
   "id1002655873294838": "2026-11-15T13:25:26Z",
   "id1002741276657334": "2026-11-15T11:55:22Z",
   "id1002741276657336": "2026-11-15T11:55:22Z",
-  "id1002816376582718": "2026-11-15T17:20:28Z",
+  "id1002816376582718": "2026-11-15T17:25:29Z",
   "id1003483472559230": "2026-11-15T10:55:23Z",
   "id1003483472559234": "2026-11-15T15:25:27Z",
   "id1003483472559238": "2026-11-15T15:25:27Z",
@@ -10673,7 +10718,7 @@
   "id1003483473068194": "2026-11-15T15:25:27Z",
   "id1003483473068196": "2026-11-15T10:55:23Z",
   "id1003483473068202": "2026-11-15T10:55:23Z",
-  "id1003483473068210": "2026-11-15T17:20:28Z"
+  "id1003483473068210": "2026-11-15T17:25:29Z"
  },
  "diag": {
   "2026-11-13": {
