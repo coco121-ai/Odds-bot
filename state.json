@@ -8759,6 +8759,29 @@
    },
    {
     "book": "stoiximan",
+    "drop": -2.5,
+    "edge": -2.5,
+    "fair": 1.262,
+    "fid": "id1000005472477582",
+    "group": "goals",
+    "label": "Under 4.5 γκολ",
+    "market": "1014",
+    "match": "🇪🇸 Albacete – Celta Fortuna",
+    "model_p": 0.789,
+    "outcome": "1015",
+    "price": 1.23,
+    "prob": 0.7924,
+    "sb": 1.21,
+    "score": -2.62,
+    "spec": {
+     "line": 4.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-16T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 4.5,
     "edge": -1.4,
     "fair": 1.643,
@@ -8778,64 +8801,6 @@
      "stat": "1x2"
     },
     "start": "2026-11-16T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -2.5,
-    "edge": -3.3,
-    "fair": 1.262,
-    "fid": "id1000005472477582",
-    "group": "goals",
-    "label": "Under 4.5 γκολ",
-    "market": "1014",
-    "match": "🇪🇸 Albacete – Celta Fortuna",
-    "model_p": 0.789,
-    "outcome": "1015",
-    "price": 1.22,
-    "prob": 0.7924,
-    "sb": 1.21,
-    "score": -3.42,
-    "spec": {
-     "line": 4.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-16T19:30:00.000Z"
-   }
-  ],
-  "id1000018674172538": [
-   {
-    "book": "stoiximan",
-    "drop": -25.6,
-    "edge": -1.5,
-    "fair": 1.929,
-    "fid": "id1000018674172538",
-    "fxi": {
-     "categoryName": "Greece",
-     "categorySlug": "greece",
-     "participant1Name": "GS Marko",
-     "participant1ShortName": "Marko",
-     "participant2Name": "APS Zakynthos",
-     "participant2ShortName": "Zakynthos",
-     "startTime": "2026-11-16T12:00:00.000Z",
-     "tournamentName": "Super League 2"
-    },
-    "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
-    "match": "🇬🇷 Marko – Zakynthos",
-    "model_p": null,
-    "outcome": "1013",
-    "price": 1.9,
-    "prob": 0.5184,
-    "sb": 1.82,
-    "score": -1.5,
-    "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-16T12:00:00.000Z"
    }
   ],
   "id1002655673294086": [
@@ -9092,15 +9057,15 @@
   ]
  },
  "checked": {
-  "id1000005472477582": "2026-11-16T07:44:16Z",
-  "id1000018674172534": "2026-11-16T07:44:16Z",
-  "id1000018674172538": "2026-11-16T07:44:16Z",
-  "id1000018674172540": "2026-11-16T07:44:16Z",
-  "id1000072172121016": "2026-11-16T07:44:16Z",
-  "id1000072172121018": "2026-11-16T07:44:16Z",
-  "id1002655673294086": "2026-11-16T07:44:16Z",
-  "id1002655873294840": "2026-11-16T07:44:16Z",
-  "id1002816376582718": "2026-11-16T07:44:16Z"
+  "id1000005472477582": "2026-11-16T07:45:35Z",
+  "id1000018674172534": "2026-11-16T07:45:35Z",
+  "id1000018674172538": "2026-11-16T07:45:35Z",
+  "id1000018674172540": "2026-11-16T07:45:35Z",
+  "id1000072172121016": "2026-11-16T07:45:35Z",
+  "id1000072172121018": "2026-11-16T07:45:35Z",
+  "id1002655673294086": "2026-11-16T07:45:35Z",
+  "id1002655873294840": "2026-11-16T07:45:35Z",
+  "id1002816376582718": "2026-11-16T07:45:35Z"
  },
  "diag": {
   "2026-11-14": {
