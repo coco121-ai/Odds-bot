@@ -8656,7 +8656,7 @@
     "outcome": "10807",
     "price": 2.35,
     "prob": 0.4537,
-    "sb": 2.2,
+    "sb": 2.05,
     "score": 8.65,
     "spec": {
      "line": 10.5,
@@ -8679,7 +8679,7 @@
     "outcome": "10803",
     "price": 1.82,
     "prob": 0.5653,
-    "sb": 1.78,
+    "sb": 1.69,
     "score": 4.97,
     "spec": {
      "line": 9.5,
@@ -9057,15 +9057,15 @@
   ]
  },
  "checked": {
-  "id1000005472477582": "2026-11-16T09:55:23Z",
-  "id1000018674172534": "2026-11-16T09:55:23Z",
-  "id1000018674172538": "2026-11-16T09:55:23Z",
-  "id1000018674172540": "2026-11-16T09:55:23Z",
-  "id1000072172121016": "2026-11-16T09:55:23Z",
-  "id1000072172121018": "2026-11-16T09:55:23Z",
-  "id1002655673294086": "2026-11-16T09:55:23Z",
-  "id1002655873294840": "2026-11-16T09:55:23Z",
-  "id1002816376582718": "2026-11-16T09:55:23Z"
+  "id1000005472477582": "2026-11-16T10:00:58Z",
+  "id1000018674172534": "2026-11-16T10:00:58Z",
+  "id1000018674172538": "2026-11-16T10:00:58Z",
+  "id1000018674172540": "2026-11-16T10:00:58Z",
+  "id1000072172121016": "2026-11-16T10:00:58Z",
+  "id1000072172121018": "2026-11-16T10:00:58Z",
+  "id1002655673294086": "2026-11-16T10:00:58Z",
+  "id1002655873294840": "2026-11-16T10:00:58Z",
+  "id1002816376582718": "2026-11-16T10:00:58Z"
  },
  "diag": {
   "2026-11-14": {
@@ -81752,10 +81752,79 @@
    "result": null,
    "stake": null,
    "suggested": 8
+  },
+  "2026-11-16|0": {
+   "date": "2026-11-16",
+   "last_start": "2026-11-16T19:30:00.000Z",
+   "leg_data": [
+    {
+     "fid": "id1000005472477582",
+     "fxi": {
+      "categoryName": "Spain",
+      "categorySlug": "spain",
+      "participant1Name": "Albacete Balompie",
+      "participant1ShortName": "Albacete",
+      "participant2Name": "RC Celta Fortuna",
+      "participant2ShortName": "Celta Fortuna",
+      "startTime": "2026-11-16T19:30:00.000Z",
+      "tournamentName": "LaLiga 2"
+     },
+     "label": "Κόρνερ Over 10.5",
+     "market": "10807",
+     "match": "🇪🇸 Albacete – Celta Fortuna",
+     "outcome": "10807",
+     "price": 2.35,
+     "prob": 0.4537,
+     "spec": {
+      "line": 10.5,
+      "side": "over",
+      "stat": "corners"
+     },
+     "start": "2026-11-16T19:30:00.000Z"
+    },
+    {
+     "fid": "id1002655873294840",
+     "fxi": {
+      "categoryName": "Italy",
+      "categorySlug": "italy",
+      "participant1Name": "ASD Sorrento 1945",
+      "participant1ShortName": "Sorrento",
+      "participant2Name": "SS Monopoli",
+      "participant2ShortName": "Monopoli",
+      "startTime": "2026-11-16T19:30:00.000Z",
+      "tournamentName": "Serie C, Group C"
+     },
+     "label": "Κόρνερ Over 8.5",
+     "market": "10799",
+     "match": "🇮🇹 Sorrento – Monopoli",
+     "outcome": "10799",
+     "price": 2.18,
+     "prob": 0.4843,
+     "spec": {
+      "line": 8.5,
+      "side": "over",
+      "stat": "corners"
+     },
+     "start": "2026-11-16T19:30:00.000Z"
+    }
+   ],
+   "legs": [
+    "🇪🇸 Albacete – Celta Fortuna · Κόρνερ Over 10.5 @2.35",
+    "🇮🇹 Sorrento – Monopoli · Κόρνερ Over 8.5 @2.18"
+   ],
+   "msg_ids": [
+    696
+   ],
+   "name": "Παρολί αξίας",
+   "odds": 5.12,
+   "prob": 0.21973,
+   "result": null,
+   "stake": null,
+   "suggested": 8
   }
  },
  "tickets_sent": {
-  "12:00": "2026-11-15",
+  "12:00": "2026-11-16",
   "23:45": "2026-11-15"
  }
 }
