@@ -8620,9 +8620,9 @@
   "id1000005472477582": [
    {
     "book": "stoiximan",
-    "drop": 4.9,
-    "edge": -2.0,
-    "fair": 1.582,
+    "drop": 3.3,
+    "edge": -3.9,
+    "fair": 2.206,
     "fid": "id1000005472477582",
     "fxi": {
      "categoryName": "Spain",
@@ -8634,29 +8634,6 @@
      "startTime": "2026-11-16T19:30:00.000Z",
      "tournamentName": "LaLiga 2"
     },
-    "group": "cards",
-    "label": "Κάρτες Over 4.5",
-    "market": "10930",
-    "match": "🇪🇸 Albacete – Celta Fortuna",
-    "model_p": null,
-    "outcome": "10930",
-    "price": 1.55,
-    "prob": 0.6321,
-    "sb": 1.52,
-    "score": -0.55,
-    "spec": {
-     "line": 4.5,
-     "side": "over",
-     "stat": "cards"
-    },
-    "start": "2026-11-16T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 3.3,
-    "edge": -3.9,
-    "fair": 2.206,
-    "fid": "id1000005472477582",
     "group": "corners",
     "label": "Κόρνερ Over 10.5",
     "market": "10807",
@@ -8699,22 +8676,45 @@
    },
    {
     "book": "stoiximan",
-    "drop": 4.8,
-    "edge": -3.8,
-    "fair": 2.079,
+    "drop": -2.0,
+    "edge": -2.4,
+    "fair": 1.485,
     "fid": "id1000005472477582",
     "group": "cards",
-    "label": "Κάρτες Over 5.5",
-    "market": "10934",
+    "label": "Κάρτες Under 6.5",
+    "market": "10938",
     "match": "🇪🇸 Albacete – Celta Fortuna",
     "model_p": null,
-    "outcome": "10934",
-    "price": 2.0,
-    "prob": 0.481,
-    "sb": 2.0,
-    "score": -2.35,
+    "outcome": "10939",
+    "price": 1.45,
+    "prob": 0.6734,
+    "sb": 1.35,
+    "score": -2.36,
     "spec": {
-     "line": 5.5,
+     "line": 6.5,
+     "side": "under",
+     "stat": "cards"
+    },
+    "start": "2026-11-16T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 4.9,
+    "edge": -3.9,
+    "fair": 1.582,
+    "fid": "id1000005472477582",
+    "group": "cards",
+    "label": "Κάρτες Over 4.5",
+    "market": "10930",
+    "match": "🇪🇸 Albacete – Celta Fortuna",
+    "model_p": null,
+    "outcome": "10930",
+    "price": 1.52,
+    "prob": 0.6321,
+    "sb": 1.52,
+    "score": -2.45,
+    "spec": {
+     "line": 4.5,
      "side": "over",
      "stat": "cards"
     },
@@ -9019,9 +9019,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -1.3,
-    "edge": -3.7,
-    "fair": 1.63,
+    "drop": -0.4,
+    "edge": -2.9,
+    "fair": 1.617,
     "fid": "id1002655873294840",
     "group": "ht",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -9030,9 +9030,9 @@
     "model_p": null,
     "outcome": "10256",
     "price": 1.57,
-    "prob": 0.6135,
+    "prob": 0.6184,
     "sb": 1.5,
-    "score": -3.68,
+    "score": -2.91,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -9044,9 +9044,9 @@
   "id1002816376582718": [
    {
     "book": "stoiximan",
-    "drop": 13.2,
-    "edge": 12.0,
-    "fair": 2.34,
+    "drop": 16.0,
+    "edge": -3.6,
+    "fair": 2.262,
     "fid": "id1002816376582718",
     "fxi": {
      "categoryName": "USA",
@@ -9064,10 +9064,10 @@
     "match": "🇺🇸 New Mexico United – Sacramento Republic",
     "model_p": null,
     "outcome": "103",
-    "price": 2.62,
-    "prob": 0.4274,
-    "sb": 2.47,
-    "score": 15.92,
+    "price": 2.18,
+    "prob": 0.4421,
+    "sb": 2.2,
+    "score": 1.19,
     "spec": {
      "side": "2",
      "stat": "1x2"
@@ -9076,9 +9076,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 4.0,
-    "edge": -2.0,
-    "fair": 1.418,
+    "drop": 4.1,
+    "edge": -3.2,
+    "fair": 1.416,
     "fid": "id1002816376582718",
     "group": "ht",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -9086,10 +9086,10 @@
     "match": "🇺🇸 New Mexico United – Sacramento Republic",
     "model_p": null,
     "outcome": "10256",
-    "price": 1.39,
-    "prob": 0.7052,
+    "price": 1.37,
+    "prob": 0.7062,
     "sb": 1.34,
-    "score": -0.79,
+    "score": -2.01,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -9100,10 +9100,10 @@
   ]
  },
  "checked": {
-  "id1000005472477582": "2026-11-16T19:05:32Z",
-  "id1002655673294086": "2026-11-16T19:05:32Z",
-  "id1002655873294840": "2026-11-16T19:05:32Z",
-  "id1002816376582718": "2026-11-16T19:05:32Z"
+  "id1000005472477582": "2026-11-16T19:10:29Z",
+  "id1002655673294086": "2026-11-16T19:10:29Z",
+  "id1002655873294840": "2026-11-16T19:10:29Z",
+  "id1002816376582718": "2026-11-16T19:10:29Z"
  },
  "diag": {
   "2026-11-14": {
@@ -11437,6 +11437,7 @@
     "id1000018674172538|10258|10258|goals",
     "id1002816376582718|1010|1010|goals",
     "id1002816376582718|101|101|1x2",
+    "id1002816376582718|101|103|1x2",
     "id1002816376582718|10258|10258|goals"
    ],
    "drop_edge_none": [
