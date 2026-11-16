@@ -3012,18 +3012,22 @@
    "outcome": "10807",
    "pick": "Κόρνερ Over/Under 10.5: Over",
    "pin_limit": 412.0,
+   "pnl": -0.0,
    "price": 1.75,
    "replied": false,
+   "result": "LOSE",
    "sent_at": "2026-11-14T14:30:46Z",
+   "settled_at": "2026-11-16T15:20:29Z",
    "spec": {
     "line": 10.5,
     "side": "over",
     "stat": "corners"
    },
+   "src": "stats",
    "stake": 0.0,
    "stars": 1,
    "start": "2026-11-14T15:00:00.000Z",
-   "status": "open",
+   "status": "settled",
    "suggested": 5.0,
    "tries": 0
   },
@@ -8684,9 +8688,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.9,
-    "edge": -2.7,
-    "fair": 1.254,
+    "drop": -1.1,
+    "edge": -2.9,
+    "fair": 1.256,
     "fid": "id1000005472477582",
     "group": "goals",
     "label": "Over 1.5 γκολ",
@@ -8695,56 +8699,11 @@
     "model_p": 0.822,
     "outcome": "108",
     "price": 1.22,
-    "prob": 0.7974,
+    "prob": 0.7962,
     "sb": 1.2,
-    "score": -1.97,
+    "score": -2.09,
     "spec": {
      "line": 1.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-16T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 3.6,
-    "edge": -0.4,
-    "fair": 1.657,
-    "fid": "id1000005472477582",
-    "group": "1x2",
-    "label": "1 (Albacete)",
-    "market": "101",
-    "match": "🇪🇸 Albacete – Celta Fortuna",
-    "model_p": 0.515,
-    "outcome": "101",
-    "price": 1.65,
-    "prob": 0.6035,
-    "sb": 1.6,
-    "score": -1.99,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
-    },
-    "start": "2026-11-16T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.0,
-    "edge": -3.0,
-    "fair": 1.701,
-    "fid": "id1000005472477582",
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
-    "match": "🇪🇸 Albacete – Celta Fortuna",
-    "model_p": 0.61,
-    "outcome": "1010",
-    "price": 1.65,
-    "prob": 0.5879,
-    "sb": 1.64,
-    "score": -2.35,
-    "spec": {
-     "line": 2.5,
      "side": "over",
      "stat": "goals"
     },
@@ -8775,9 +8734,32 @@
    },
    {
     "book": "stoiximan",
-    "drop": -1.5,
-    "edge": -3.2,
-    "fair": 1.25,
+    "drop": -0.5,
+    "edge": -3.4,
+    "fair": 1.708,
+    "fid": "id1000005472477582",
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇪🇸 Albacete – Celta Fortuna",
+    "model_p": 0.61,
+    "outcome": "1010",
+    "price": 1.65,
+    "prob": 0.5855,
+    "sb": 1.64,
+    "score": -2.67,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-16T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -1.4,
+    "edge": -3.0,
+    "fair": 1.248,
     "fid": "id1000005472477582",
     "group": "goals",
     "label": "Under 4.5 γκολ",
@@ -8786,13 +8768,35 @@
     "model_p": 0.789,
     "outcome": "1015",
     "price": 1.21,
-    "prob": 0.8,
+    "prob": 0.8013,
     "sb": 1.19,
-    "score": -3.52,
+    "score": -3.4,
     "spec": {
      "line": 4.5,
      "side": "under",
      "stat": "goals"
+    },
+    "start": "2026-11-16T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 3.4,
+    "edge": -2.5,
+    "fair": 1.662,
+    "fid": "id1000005472477582",
+    "group": "1x2",
+    "label": "1 (Albacete)",
+    "market": "101",
+    "match": "🇪🇸 Albacete – Celta Fortuna",
+    "model_p": 0.515,
+    "outcome": "101",
+    "price": 1.62,
+    "prob": 0.6017,
+    "sb": 1.6,
+    "score": -4.11,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
     },
     "start": "2026-11-16T19:30:00.000Z"
    }
@@ -9006,15 +9010,15 @@
   ]
  },
  "checked": {
-  "id1000005472477582": "2026-11-16T15:15:31Z",
+  "id1000005472477582": "2026-11-16T15:20:29Z",
   "id1000018674172534": "2026-11-16T12:55:33Z",
   "id1000018674172538": "2026-11-16T11:40:32Z",
   "id1000018674172540": "2026-11-16T12:40:29Z",
   "id1000072172121016": "2026-11-16T11:40:32Z",
   "id1000072172121018": "2026-11-16T11:40:32Z",
-  "id1002655673294086": "2026-11-16T15:15:31Z",
-  "id1002655873294840": "2026-11-16T15:15:31Z",
-  "id1002816376582718": "2026-11-16T15:15:31Z"
+  "id1002655673294086": "2026-11-16T15:20:29Z",
+  "id1002655873294840": "2026-11-16T15:20:29Z",
+  "id1002816376582718": "2026-11-16T15:20:29Z"
  },
  "diag": {
   "2026-11-14": {
@@ -42963,7 +42967,7 @@
    ]
   },
   "E2": {
-   "at": "2026-11-16T03:20:29Z",
+   "at": "2026-11-16T15:20:29Z",
    "rows": [
     [
      "2026-01-20",
@@ -43858,28 +43862,6 @@
     ],
     [
      "2026-04-03",
-     "Burton",
-     "Barnsley",
-     1,
-     1,
-     0,
-     0,
-     9,
-     0
-    ],
-    [
-     "2026-04-03",
-     "Huddersfield",
-     "Reading",
-     1,
-     1,
-     0,
-     1,
-     4,
-     2
-    ],
-    [
-     "2026-04-03",
      "Lincoln",
      "AFC Wimbledon",
      1,
@@ -43932,17 +43914,6 @@
      1,
      8,
      3
-    ],
-    [
-     "2026-04-06",
-     "Barnsley",
-     "Plymouth",
-     0,
-     3,
-     0,
-     1,
-     4,
-     8
     ],
     [
      "2026-04-06",
@@ -46484,6 +46455,61 @@
      0,
      5,
      8
+    ],
+    [
+     "2026-11-14",
+     "AFC Wimbledon",
+     "Blackpool",
+     1,
+     0,
+     1,
+     0,
+     3,
+     7
+    ],
+    [
+     "2026-11-14",
+     "Milton Keynes Dons",
+     "Burton",
+     6,
+     2,
+     2,
+     0,
+     4,
+     1
+    ],
+    [
+     "2026-11-14",
+     "Sheffield Weds",
+     "Plymouth",
+     3,
+     0,
+     1,
+     0,
+     7,
+     5
+    ],
+    [
+     "2026-11-14",
+     "Stockport",
+     "Reading",
+     3,
+     1,
+     2,
+     1,
+     7,
+     5
+    ],
+    [
+     "2026-11-14",
+     "Wigan",
+     "Barnsley",
+     2,
+     1,
+     1,
+     0,
+     2,
+     10
     ]
    ]
   },
@@ -81565,6 +81591,7 @@
    "stake": null
   },
   "2026-11-14|0": {
+   "auto": true,
    "date": "2026-11-14",
    "last_start": "2026-11-14T17:30:00.000Z",
    "leg_data": [
@@ -81586,6 +81613,7 @@
      "outcome": "10811",
      "price": 2.2,
      "prob": 0.469,
+     "res": "LOSE",
      "spec": {
       "line": 11.5,
       "side": "over",
@@ -81631,7 +81659,7 @@
    "name": "Παρολί αξίας",
    "odds": 4.88,
    "prob": 0.2209,
-   "result": null,
+   "result": "LOSE",
    "stake": null,
    "suggested": 8
   },
