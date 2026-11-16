@@ -8653,9 +8653,54 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.8,
-    "edge": -2.6,
-    "fair": 1.252,
+    "drop": 7.2,
+    "edge": 0.1,
+    "fair": 1.598,
+    "fid": "id1000005472477582",
+    "group": "1x2",
+    "label": "1 (Albacete)",
+    "market": "101",
+    "match": "🇪🇸 Albacete – Celta Fortuna",
+    "model_p": 0.515,
+    "outcome": "101",
+    "price": 1.6,
+    "prob": 0.6258,
+    "sb": 1.55,
+    "score": -1.05,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-11-16T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.8,
+    "edge": -2.2,
+    "fair": 1.687,
+    "fid": "id1000005472477582",
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇪🇸 Albacete – Celta Fortuna",
+    "model_p": 0.61,
+    "outcome": "1010",
+    "price": 1.65,
+    "prob": 0.5928,
+    "sb": 1.64,
+    "score": -1.45,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-16T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -0.3,
+    "edge": -2.2,
+    "fair": 1.247,
     "fid": "id1000005472477582",
     "group": "goals",
     "label": "Over 1.5 γκολ",
@@ -8664,9 +8709,9 @@
     "model_p": 0.822,
     "outcome": "108",
     "price": 1.22,
-    "prob": 0.7987,
+    "prob": 0.8019,
     "sb": 1.2,
-    "score": -1.85,
+    "score": -1.56,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -8722,32 +8767,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.2,
-    "edge": -3.1,
-    "fair": 1.703,
-    "fid": "id1000005472477582",
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
-    "match": "🇪🇸 Albacete – Celta Fortuna",
-    "model_p": 0.61,
-    "outcome": "1010",
-    "price": 1.65,
-    "prob": 0.5872,
-    "sb": 1.64,
-    "score": -2.44,
-    "spec": {
-     "line": 2.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-16T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -1.5,
-    "edge": -3.2,
-    "fair": 1.25,
+    "drop": -1.9,
+    "edge": -3.7,
+    "fair": 1.256,
     "fid": "id1000005472477582",
     "group": "goals",
     "label": "Under 4.5 γκολ",
@@ -8756,35 +8778,13 @@
     "model_p": 0.789,
     "outcome": "1015",
     "price": 1.21,
-    "prob": 0.8,
+    "prob": 0.7962,
     "sb": 1.19,
-    "score": -3.52,
+    "score": -3.86,
     "spec": {
      "line": 4.5,
      "side": "under",
      "stat": "goals"
-    },
-    "start": "2026-11-16T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 4.7,
-    "edge": -2.4,
-    "fair": 1.639,
-    "fid": "id1000005472477582",
-    "group": "1x2",
-    "label": "1 (Albacete)",
-    "market": "101",
-    "match": "🇪🇸 Albacete – Celta Fortuna",
-    "model_p": 0.515,
-    "outcome": "101",
-    "price": 1.6,
-    "prob": 0.6101,
-    "sb": 1.57,
-    "score": -3.82,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
     },
     "start": "2026-11-16T19:30:00.000Z"
    }
@@ -9044,9 +9044,9 @@
   "id1002816376582718": [
    {
     "book": "stoiximan",
-    "drop": 12.8,
-    "edge": 5.0,
-    "fair": 2.62,
+    "drop": 14.2,
+    "edge": 6.7,
+    "fair": 2.577,
     "fid": "id1002816376582718",
     "fxi": {
      "categoryName": "USA",
@@ -9065,9 +9065,9 @@
     "model_p": null,
     "outcome": "101",
     "price": 2.75,
-    "prob": 0.3817,
-    "sb": 2.72,
-    "score": 8.82,
+    "prob": 0.388,
+    "sb": 2.65,
+    "score": 10.98,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -9100,15 +9100,15 @@
   ]
  },
  "checked": {
-  "id1000005472477582": "2026-11-16T18:20:29Z",
+  "id1000005472477582": "2026-11-16T18:22:27Z",
   "id1000018674172534": "2026-11-16T12:55:33Z",
   "id1000018674172538": "2026-11-16T11:40:32Z",
   "id1000018674172540": "2026-11-16T12:40:29Z",
   "id1000072172121016": "2026-11-16T11:40:32Z",
   "id1000072172121018": "2026-11-16T11:40:32Z",
-  "id1002655673294086": "2026-11-16T18:20:29Z",
-  "id1002655873294840": "2026-11-16T18:20:29Z",
-  "id1002816376582718": "2026-11-16T18:20:29Z"
+  "id1002655673294086": "2026-11-16T18:22:27Z",
+  "id1002655873294840": "2026-11-16T18:22:27Z",
+  "id1002816376582718": "2026-11-16T18:22:27Z"
  },
  "diag": {
   "2026-11-14": {
@@ -11432,6 +11432,9 @@
     "id1000018674172538|10258|10258|goals"
    ],
    "drop_edge_e2": [
+    "id1002816376582718|101|101|1x2"
+   ],
+   "drop_edge_e5": [
     "id1002816376582718|101|101|1x2"
    ],
    "drop_edge_neg": [
