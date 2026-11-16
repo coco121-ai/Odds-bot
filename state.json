@@ -8713,29 +8713,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.3,
-    "edge": -3.0,
-    "fair": 1.247,
-    "fid": "id1000005472477582",
-    "group": "goals",
-    "label": "Over 1.5 γκολ",
-    "market": "108",
-    "match": "🇪🇸 Albacete – Celta Fortuna",
-    "model_p": 0.822,
-    "outcome": "108",
-    "price": 1.21,
-    "prob": 0.8019,
-    "sb": 1.18,
-    "score": -2.36,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-16T19:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": -2.1,
     "edge": -2.2,
     "fair": 1.258,
@@ -8759,22 +8736,45 @@
    },
    {
     "book": "stoiximan",
-    "drop": 1.2,
-    "edge": -3.5,
-    "fair": 1.678,
+    "drop": -3.5,
+    "edge": -2.6,
+    "fair": 1.591,
     "fid": "id1000005472477582",
     "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
     "match": "🇪🇸 Albacete – Celta Fortuna",
-    "model_p": 0.61,
-    "outcome": "1010",
-    "price": 1.62,
-    "prob": 0.5959,
-    "sb": 1.6,
-    "score": -2.68,
+    "model_p": 0.614,
+    "outcome": "1013",
+    "price": 1.55,
+    "prob": 0.6285,
+    "sb": 1.54,
+    "score": -3.02,
     "spec": {
-     "line": 2.5,
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-16T19:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -0.3,
+    "edge": -3.8,
+    "fair": 1.247,
+    "fid": "id1000005472477582",
+    "group": "goals",
+    "label": "Over 1.5 γκολ",
+    "market": "108",
+    "match": "🇪🇸 Albacete – Celta Fortuna",
+    "model_p": 0.822,
+    "outcome": "108",
+    "price": 1.2,
+    "prob": 0.8019,
+    "sb": 1.18,
+    "score": -3.16,
+    "spec": {
+     "line": 1.5,
      "side": "over",
      "stat": "goals"
     },
@@ -8783,7 +8783,7 @@
    {
     "book": "stoiximan",
     "drop": 2.0,
-    "edge": -3.8,
+    "edge": -2.0,
     "fair": 1.684,
     "fid": "id1000005472477582",
     "group": "1x2",
@@ -8792,108 +8792,15 @@
     "match": "🇪🇸 Albacete – Celta Fortuna",
     "model_p": 0.515,
     "outcome": "101",
-    "price": 1.62,
+    "price": 1.65,
     "prob": 0.5938,
     "sb": 1.62,
-    "score": -5.55,
+    "score": -3.77,
     "spec": {
      "side": "1",
      "stat": "1x2"
     },
     "start": "2026-11-16T19:30:00.000Z"
-   }
-  ],
-  "id1000018674172538": [
-   {
-    "book": "stoiximan",
-    "drop": 26.3,
-    "edge": -2.9,
-    "fair": 1.905,
-    "fid": "id1000018674172538",
-    "fxi": {
-     "categoryName": "Greece",
-     "categorySlug": "greece",
-     "participant1Name": "GS Marko",
-     "participant1ShortName": "Marko",
-     "participant2Name": "APS Zakynthos",
-     "participant2ShortName": "Zakynthos",
-     "startTime": "2026-11-16T12:00:00.000Z",
-     "tournamentName": "Super League 2"
-    },
-    "group": "ht",
-    "label": "Ημίχρονο Over 1.5 γκολ",
-    "market": "10258",
-    "match": "🇬🇷 Marko – Zakynthos",
-    "model_p": null,
-    "outcome": "10258",
-    "price": 1.85,
-    "prob": 0.5249,
-    "sb": 1.85,
-    "score": 3.11,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "ht"
-    },
-    "start": "2026-11-16T12:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 30.7,
-    "edge": -3.2,
-    "fair": 1.911,
-    "fid": "id1000018674172538",
-    "group": "goals",
-    "label": "Over 3.5 γκολ",
-    "market": "1012",
-    "match": "🇬🇷 Marko – Zakynthos",
-    "model_p": null,
-    "outcome": "1012",
-    "price": 1.85,
-    "prob": 0.5233,
-    "sb": 1.83,
-    "score": 2.81,
-    "spec": {
-     "line": 3.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-16T12:00:00.000Z"
-   }
-  ],
-  "id1000018674172540": [
-   {
-    "book": "stoiximan",
-    "drop": 5.0,
-    "edge": -2.8,
-    "fair": 2.038,
-    "fid": "id1000018674172540",
-    "fxi": {
-     "categoryName": "Greece",
-     "categorySlug": "greece",
-     "participant1Name": "Panionios Athens",
-     "participant1ShortName": "Panionios",
-     "participant2Name": "Olympiacos Piraeus B",
-     "participant2ShortName": "Olympiacos Piraeus B",
-     "startTime": "2026-11-16T12:45:00.000Z",
-     "tournamentName": "Super League 2"
-    },
-    "group": "goals",
-    "label": "Under 2.5 γκολ",
-    "market": "1010",
-    "match": "🇬🇷 Panionios – Olympiacos Piraeus B",
-    "model_p": null,
-    "outcome": "1011",
-    "price": 1.98,
-    "prob": 0.4907,
-    "sb": 1.95,
-    "score": -1.35,
-    "spec": {
-     "line": 2.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-16T12:45:00.000Z"
    }
   ],
   "id1002655673294086": [
@@ -9150,15 +9057,15 @@
   ]
  },
  "checked": {
-  "id1000005472477582": "2026-11-16T08:50:28Z",
-  "id1000018674172534": "2026-11-16T08:50:28Z",
-  "id1000018674172538": "2026-11-16T08:50:28Z",
-  "id1000018674172540": "2026-11-16T08:50:28Z",
-  "id1000072172121016": "2026-11-16T08:50:28Z",
-  "id1000072172121018": "2026-11-16T08:50:28Z",
-  "id1002655673294086": "2026-11-16T08:50:28Z",
-  "id1002655873294840": "2026-11-16T08:50:28Z",
-  "id1002816376582718": "2026-11-16T08:50:28Z"
+  "id1000005472477582": "2026-11-16T08:55:28Z",
+  "id1000018674172534": "2026-11-16T08:55:28Z",
+  "id1000018674172538": "2026-11-16T08:55:28Z",
+  "id1000018674172540": "2026-11-16T08:55:28Z",
+  "id1000072172121016": "2026-11-16T08:55:28Z",
+  "id1000072172121018": "2026-11-16T08:55:28Z",
+  "id1002655673294086": "2026-11-16T08:55:28Z",
+  "id1002655873294840": "2026-11-16T08:55:28Z",
+  "id1002816376582718": "2026-11-16T08:55:28Z"
  },
  "diag": {
   "2026-11-14": {
