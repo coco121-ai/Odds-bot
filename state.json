@@ -8803,6 +8803,99 @@
     "start": "2026-11-16T19:30:00.000Z"
    }
   ],
+  "id1000018674172538": [
+   {
+    "book": "stoiximan",
+    "drop": 26.3,
+    "edge": -2.9,
+    "fair": 1.905,
+    "fid": "id1000018674172538",
+    "fxi": {
+     "categoryName": "Greece",
+     "categorySlug": "greece",
+     "participant1Name": "GS Marko",
+     "participant1ShortName": "Marko",
+     "participant2Name": "APS Zakynthos",
+     "participant2ShortName": "Zakynthos",
+     "startTime": "2026-11-16T12:00:00.000Z",
+     "tournamentName": "Super League 2"
+    },
+    "group": "ht",
+    "label": "Ημίχρονο Over 1.5 γκολ",
+    "market": "10258",
+    "match": "🇬🇷 Marko – Zakynthos",
+    "model_p": null,
+    "outcome": "10258",
+    "price": 1.85,
+    "prob": 0.5249,
+    "sb": 1.85,
+    "score": 3.11,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-11-16T12:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 30.7,
+    "edge": -3.2,
+    "fair": 1.911,
+    "fid": "id1000018674172538",
+    "group": "goals",
+    "label": "Over 3.5 γκολ",
+    "market": "1012",
+    "match": "🇬🇷 Marko – Zakynthos",
+    "model_p": null,
+    "outcome": "1012",
+    "price": 1.85,
+    "prob": 0.5233,
+    "sb": 1.83,
+    "score": 2.81,
+    "spec": {
+     "line": 3.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-16T12:00:00.000Z"
+   }
+  ],
+  "id1000018674172540": [
+   {
+    "book": "stoiximan",
+    "drop": 5.0,
+    "edge": -2.8,
+    "fair": 2.038,
+    "fid": "id1000018674172540",
+    "fxi": {
+     "categoryName": "Greece",
+     "categorySlug": "greece",
+     "participant1Name": "Panionios Athens",
+     "participant1ShortName": "Panionios",
+     "participant2Name": "Olympiacos Piraeus B",
+     "participant2ShortName": "Olympiacos Piraeus B",
+     "startTime": "2026-11-16T12:45:00.000Z",
+     "tournamentName": "Super League 2"
+    },
+    "group": "goals",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
+    "match": "🇬🇷 Panionios – Olympiacos Piraeus B",
+    "model_p": null,
+    "outcome": "1011",
+    "price": 1.98,
+    "prob": 0.4907,
+    "sb": 1.95,
+    "score": -1.35,
+    "spec": {
+     "line": 2.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-16T12:45:00.000Z"
+   }
+  ],
   "id1002655673294086": [
    {
     "book": "stoiximan",
@@ -9057,15 +9150,15 @@
   ]
  },
  "checked": {
-  "id1000005472477582": "2026-11-16T08:45:30Z",
-  "id1000018674172534": "2026-11-16T08:45:30Z",
-  "id1000018674172538": "2026-11-16T08:45:30Z",
-  "id1000018674172540": "2026-11-16T08:45:30Z",
-  "id1000072172121016": "2026-11-16T08:45:30Z",
-  "id1000072172121018": "2026-11-16T08:45:30Z",
-  "id1002655673294086": "2026-11-16T08:45:30Z",
-  "id1002655873294840": "2026-11-16T08:45:30Z",
-  "id1002816376582718": "2026-11-16T08:45:30Z"
+  "id1000005472477582": "2026-11-16T08:50:28Z",
+  "id1000018674172534": "2026-11-16T08:50:28Z",
+  "id1000018674172538": "2026-11-16T08:50:28Z",
+  "id1000018674172540": "2026-11-16T08:50:28Z",
+  "id1000072172121016": "2026-11-16T08:50:28Z",
+  "id1000072172121018": "2026-11-16T08:50:28Z",
+  "id1002655673294086": "2026-11-16T08:50:28Z",
+  "id1002655873294840": "2026-11-16T08:50:28Z",
+  "id1002816376582718": "2026-11-16T08:50:28Z"
  },
  "diag": {
   "2026-11-14": {
