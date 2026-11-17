@@ -8638,6 +8638,179 @@
   }
  },
  "cands": {
+  "id1000032566887172": [
+   {
+    "book": "stoiximan",
+    "drop": 5.7,
+    "edge": 8.0,
+    "fair": 2.055,
+    "fid": "id1000032566887172",
+    "fxi": {
+     "categoryName": "Brazil",
+     "categorySlug": "brazil",
+     "participant1Name": "Coritiba FC PR",
+     "participant1ShortName": "Coritiba",
+     "participant2Name": "Santos FC SP",
+     "participant2ShortName": "Santos",
+     "startTime": "2026-11-18T22:30:00.000Z",
+     "tournamentName": "Brasileiro Serie A"
+    },
+    "group": "cards",
+    "label": "Κάρτες Under 4.5",
+    "market": "10930",
+    "match": "🇧🇷 Coritiba – Santos",
+    "model_p": null,
+    "outcome": "10931",
+    "price": 2.22,
+    "prob": 0.4866,
+    "sb": 2.05,
+    "score": 9.73,
+    "spec": {
+     "line": 4.5,
+     "side": "under",
+     "stat": "cards"
+    },
+    "start": "2026-11-18T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 5.4,
+    "edge": 7.0,
+    "fair": 1.561,
+    "fid": "id1000032566887172",
+    "group": "cards",
+    "label": "Κάρτες Under 5.5",
+    "market": "10934",
+    "match": "🇧🇷 Coritiba – Santos",
+    "model_p": null,
+    "outcome": "10935",
+    "price": 1.67,
+    "prob": 0.6406,
+    "sb": 1.55,
+    "score": 8.61,
+    "spec": {
+     "line": 5.5,
+     "side": "under",
+     "stat": "cards"
+    },
+    "start": "2026-11-18T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.0,
+    "edge": -2.4,
+    "fair": 2.376,
+    "fid": "id1000032566887172",
+    "group": "corners",
+    "label": "Κόρνερ Over 11.5",
+    "market": "10811",
+    "match": "🇧🇷 Coritiba – Santos",
+    "model_p": null,
+    "outcome": "10811",
+    "price": 2.32,
+    "prob": 0.4209,
+    "sb": 2.12,
+    "score": -2.36,
+    "spec": {
+     "line": 11.5,
+     "side": "over",
+     "stat": "corners"
+    },
+    "start": "2026-11-18T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 1.1,
+    "edge": -2.8,
+    "fair": 1.276,
+    "fid": "id1000032566887172",
+    "group": "goals",
+    "label": "Over 1.5 γκολ",
+    "market": "108",
+    "match": "🇧🇷 Coritiba – Santos",
+    "model_p": null,
+    "outcome": "108",
+    "price": 1.24,
+    "prob": 0.7837,
+    "sb": 1.22,
+    "score": -2.51,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-18T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -1.7,
+    "edge": -2.9,
+    "fair": 1.226,
+    "fid": "id1000032566887172",
+    "group": "goals",
+    "label": "Under 4.5 γκολ",
+    "market": "1014",
+    "match": "🇧🇷 Coritiba – Santos",
+    "model_p": null,
+    "outcome": "1015",
+    "price": 1.19,
+    "prob": 0.8157,
+    "sb": 1.17,
+    "score": -2.94,
+    "spec": {
+     "line": 4.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-18T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -3.4,
+    "edge": -3.2,
+    "fair": 1.519,
+    "fid": "id1000032566887172",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🇧🇷 Coritiba – Santos",
+    "model_p": null,
+    "outcome": "1013",
+    "price": 1.47,
+    "prob": 0.6583,
+    "sb": 1.45,
+    "score": -3.23,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-18T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 1.2,
+    "edge": -3.9,
+    "fair": 2.705,
+    "fid": "id1000032566887172",
+    "group": "ht",
+    "label": "Ημίχρονο Over 1.5 γκολ",
+    "market": "10258",
+    "match": "🇧🇷 Coritiba – Santos",
+    "model_p": null,
+    "outcome": "10258",
+    "price": 2.6,
+    "prob": 0.3697,
+    "sb": 2.47,
+    "score": -3.54,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-11-18T22:30:00.000Z"
+   }
+  ],
   "id1000229876482690": [
    {
     "book": "stoiximan",
@@ -8698,7 +8871,8 @@
   ]
  },
  "checked": {
-  "id1000229876482690": "2026-11-17T22:25:25Z"
+  "id1000032566887172": "2026-11-17T22:30:40Z",
+  "id1000229876482690": "2026-11-17T22:30:40Z"
  },
  "diag": {
   "2026-11-16": {
@@ -8901,9 +9075,17 @@
     "id1000229876482690|101|101|1x2"
    ],
    "fixtures": [
+    "id1000032566887172",
     "id1000229876482690"
    ],
    "low_limit": [
+    "id1000032566887172|1010|1010|goals",
+    "id1000032566887172|1010|1011|goals",
+    "id1000032566887172|101|101|1x2",
+    "id1000032566887172|101|102|1x2",
+    "id1000032566887172|101|103|1x2",
+    "id1000032566887172|10258|10258|goals",
+    "id1000032566887172|10258|10259|goals",
     "id1000229876482690|1010|1010|goals",
     "id1000229876482690|1010|1011|goals",
     "id1000229876482690|101|101|1x2",
@@ -8916,6 +9098,10 @@
    ],
    "small_market": [
     "id1000229876482690|101|101|1x2"
+   ],
+   "too_early": [
+    "id1000032566887172|10256|10256|goals",
+    "id1000032566887172|10256|10257|goals"
    ]
   }
  },
