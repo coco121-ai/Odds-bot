@@ -8833,6 +8833,156 @@
     "start": "2026-11-18T22:30:00.000Z"
    }
   ],
+  "id1000032566887176": [
+   {
+    "book": "stoiximan",
+    "drop": 15.0,
+    "edge": 9.2,
+    "fair": 2.243,
+    "fid": "id1000032566887176",
+    "fxi": {
+     "categoryName": "Brazil",
+     "categorySlug": "brazil",
+     "participant1Name": "Clube do Remo PA",
+     "participant1ShortName": "Remo",
+     "participant2Name": "Chapecoense SC",
+     "participant2ShortName": "Chapecoense",
+     "startTime": "2026-11-18T23:00:00.000Z",
+     "tournamentName": "Brasileiro Serie A"
+    },
+    "group": "cards",
+    "label": "Κάρτες Under 3.5",
+    "market": "10926",
+    "match": "🇧🇷 Remo – Chapecoense",
+    "model_p": null,
+    "outcome": "10927",
+    "price": 2.45,
+    "prob": 0.4458,
+    "sb": 2.1,
+    "score": 13.72,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "cards"
+    },
+    "start": "2026-11-18T23:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 10.7,
+    "edge": 9.6,
+    "fair": 1.597,
+    "fid": "id1000032566887176",
+    "group": "cards",
+    "label": "Κάρτες Under 4.5",
+    "market": "10930",
+    "match": "🇧🇷 Remo – Chapecoense",
+    "model_p": null,
+    "outcome": "10931",
+    "price": 1.75,
+    "prob": 0.6262,
+    "sb": 1.54,
+    "score": 12.79,
+    "spec": {
+     "line": 4.5,
+     "side": "under",
+     "stat": "cards"
+    },
+    "start": "2026-11-18T23:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 2.9,
+    "edge": -3.3,
+    "fair": 2.483,
+    "fid": "id1000032566887176",
+    "group": "ht",
+    "label": "Ημίχρονο Over 1.5 γκολ",
+    "market": "10258",
+    "match": "🇧🇷 Remo – Chapecoense",
+    "model_p": null,
+    "outcome": "10258",
+    "price": 2.4,
+    "prob": 0.4027,
+    "sb": 2.25,
+    "score": -2.48,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-11-18T23:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 1.3,
+    "edge": -3.1,
+    "fair": 1.238,
+    "fid": "id1000032566887176",
+    "group": "goals",
+    "label": "Over 1.5 γκολ",
+    "market": "108",
+    "match": "🇧🇷 Remo – Chapecoense",
+    "model_p": null,
+    "outcome": "108",
+    "price": 1.2,
+    "prob": 0.8078,
+    "sb": 1.18,
+    "score": -2.67,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-18T23:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -1.4,
+    "edge": -3.3,
+    "fair": 1.624,
+    "fid": "id1000032566887176",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🇧🇷 Remo – Chapecoense",
+    "model_p": null,
+    "outcome": "1013",
+    "price": 1.57,
+    "prob": 0.6158,
+    "sb": 1.55,
+    "score": -3.33,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-18T23:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -0.9,
+    "edge": -3.8,
+    "fair": 1.278,
+    "fid": "id1000032566887176",
+    "group": "goals",
+    "label": "Under 4.5 γκολ",
+    "market": "1014",
+    "match": "🇧🇷 Remo – Chapecoense",
+    "model_p": null,
+    "outcome": "1015",
+    "price": 1.23,
+    "prob": 0.7825,
+    "sb": 1.22,
+    "score": -3.76,
+    "spec": {
+     "line": 4.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-18T23:00:00.000Z"
+   }
+  ],
   "id1000229876482690": [
    {
     "book": "stoiximan",
@@ -8893,8 +9043,9 @@
   ]
  },
  "checked": {
-  "id1000032566887172": "2026-11-17T22:55:23Z",
-  "id1000229876482690": "2026-11-17T22:55:23Z"
+  "id1000032566887172": "2026-11-17T23:00:51Z",
+  "id1000032566887176": "2026-11-17T23:00:51Z",
+  "id1000229876482690": "2026-11-17T23:00:51Z"
  },
  "diag": {
   "2026-11-16": {
@@ -9098,6 +9249,7 @@
    ],
    "fixtures": [
     "id1000032566887172",
+    "id1000032566887176",
     "id1000229876482690"
    ],
    "low_limit": [
@@ -9108,6 +9260,13 @@
     "id1000032566887172|101|103|1x2",
     "id1000032566887172|10258|10258|goals",
     "id1000032566887172|10258|10259|goals",
+    "id1000032566887176|1010|1010|goals",
+    "id1000032566887176|1010|1011|goals",
+    "id1000032566887176|101|101|1x2",
+    "id1000032566887176|101|102|1x2",
+    "id1000032566887176|101|103|1x2",
+    "id1000032566887176|10258|10258|goals",
+    "id1000032566887176|10258|10259|goals",
     "id1000229876482690|1010|1010|goals",
     "id1000229876482690|1010|1011|goals",
     "id1000229876482690|101|101|1x2",
@@ -9123,7 +9282,9 @@
    ],
    "too_early": [
     "id1000032566887172|10256|10256|goals",
-    "id1000032566887172|10256|10257|goals"
+    "id1000032566887172|10256|10257|goals",
+    "id1000032566887176|10256|10256|goals",
+    "id1000032566887176|10256|10257|goals"
    ]
   }
  },
