@@ -8937,9 +8937,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 0.0,
-    "edge": 0.5,
-    "fair": 1.433,
+    "drop": -0.1,
+    "edge": 0.4,
+    "fair": 1.434,
     "fid": "id1000032566887164",
     "group": "ht",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -8948,9 +8948,9 @@
     "model_p": null,
     "outcome": "10256",
     "price": 1.44,
-    "prob": 0.6978,
+    "prob": 0.6974,
     "sb": 1.37,
-    "score": 0.49,
+    "score": 0.42,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -9523,28 +9523,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 7.4,
-    "edge": -4.0,
-    "fair": 2.208,
-    "fid": "id1000032566887172",
-    "group": "1x2",
-    "label": "2 (Santos)",
-    "market": "101",
-    "match": "🇧🇷 Coritiba – Santos",
-    "model_p": null,
-    "outcome": "103",
-    "price": 2.12,
-    "prob": 0.4529,
-    "sb": 2.12,
-    "score": -1.78,
-    "spec": {
-     "side": "2",
-     "stat": "1x2"
-    },
-    "start": "2026-11-18T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 1.6,
     "edge": -2.7,
     "fair": 3.239,
@@ -9591,32 +9569,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 0.6,
+    "drop": -1.9,
     "edge": -2.7,
-    "fair": 1.275,
-    "fid": "id1000032566887172",
-    "group": "goals",
-    "label": "Over 1.5 γκολ",
-    "market": "108",
-    "match": "🇧🇷 Coritiba – Santos",
-    "model_p": null,
-    "outcome": "108",
-    "price": 1.24,
-    "prob": 0.7843,
-    "sb": 1.23,
-    "score": -2.55,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-18T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -2.0,
-    "edge": -2.8,
-    "fair": 1.224,
+    "fair": 1.223,
     "fid": "id1000032566887172",
     "group": "goals",
     "label": "Under 4.5 γκολ",
@@ -9625,9 +9580,9 @@
     "model_p": null,
     "outcome": "1015",
     "price": 1.19,
-    "prob": 0.817,
+    "prob": 0.8177,
     "sb": 1.16,
-    "score": -2.78,
+    "score": -2.7,
     "spec": {
      "line": 4.5,
      "side": "under",
@@ -9637,9 +9592,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -3.4,
-    "edge": -2.9,
-    "fair": 1.514,
+    "drop": -3.3,
+    "edge": -2.7,
+    "fair": 1.511,
     "fid": "id1000032566887172",
     "group": "goals",
     "label": "Under 3.5 γκολ",
@@ -9648,12 +9603,35 @@
     "model_p": null,
     "outcome": "1013",
     "price": 1.47,
-    "prob": 0.6605,
+    "prob": 0.6618,
     "sb": 1.43,
-    "score": -2.91,
+    "score": -2.71,
     "spec": {
      "line": 3.5,
      "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-18T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.6,
+    "edge": -2.9,
+    "fair": 1.277,
+    "fid": "id1000032566887172",
+    "group": "goals",
+    "label": "Over 1.5 γκολ",
+    "market": "108",
+    "match": "🇧🇷 Coritiba – Santos",
+    "model_p": null,
+    "outcome": "108",
+    "price": 1.24,
+    "prob": 0.7831,
+    "sb": 1.23,
+    "score": -2.73,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
      "stat": "goals"
     },
     "start": "2026-11-18T22:30:00.000Z"
@@ -9856,9 +9834,9 @@
   "id1000229876482690": [
    {
     "book": "stoiximan",
-    "drop": 4.4,
-    "edge": -3.5,
-    "fair": 1.938,
+    "drop": 4.1,
+    "edge": -3.7,
+    "fair": 1.942,
     "fid": "id1000229876482690",
     "fxi": {
      "categoryName": "Saudi Arabia",
@@ -9877,9 +9855,9 @@
     "model_p": null,
     "outcome": "1010",
     "price": 1.87,
-    "prob": 0.516,
+    "prob": 0.5149,
     "sb": 1.8,
-    "score": -2.18,
+    "score": -2.49,
     "spec": {
      "line": 2.5,
      "side": "over",
@@ -9913,13 +9891,13 @@
   ]
  },
  "checked": {
-  "id1000032566887158": "2026-11-18T05:35:24Z",
-  "id1000032566887164": "2026-11-18T05:35:24Z",
-  "id1000032566887168": "2026-11-18T05:35:24Z",
-  "id1000032566887170": "2026-11-18T05:35:24Z",
-  "id1000032566887172": "2026-11-18T05:35:24Z",
-  "id1000032566887176": "2026-11-18T05:35:24Z",
-  "id1000229876482690": "2026-11-18T05:35:24Z"
+  "id1000032566887158": "2026-11-18T05:40:30Z",
+  "id1000032566887164": "2026-11-18T05:40:30Z",
+  "id1000032566887168": "2026-11-18T05:40:30Z",
+  "id1000032566887170": "2026-11-18T05:40:30Z",
+  "id1000032566887172": "2026-11-18T05:40:30Z",
+  "id1000032566887176": "2026-11-18T05:40:30Z",
+  "id1000229876482690": "2026-11-18T05:40:30Z"
  },
  "diag": {
   "2026-11-16": {
