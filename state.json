@@ -9353,6 +9353,29 @@
    },
    {
     "book": "stoiximan",
+    "drop": 4.3,
+    "edge": -2.7,
+    "fair": 1.748,
+    "fid": "id1000032566887168",
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇧🇷 Cruzeiro – Palmeiras",
+    "model_p": null,
+    "outcome": "1010",
+    "price": 1.7,
+    "prob": 0.5721,
+    "sb": 1.66,
+    "score": -1.46,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-18T23:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 5.3,
     "edge": -3.2,
     "fair": 1.725,
@@ -9371,29 +9394,6 @@
      "line": 10.5,
      "side": "over",
      "stat": "corners"
-    },
-    "start": "2026-11-18T23:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -3.2,
-    "edge": -1.8,
-    "fair": 1.548,
-    "fid": "id1000032566887168",
-    "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
-    "match": "🇧🇷 Cruzeiro – Palmeiras",
-    "model_p": null,
-    "outcome": "1013",
-    "price": 1.52,
-    "prob": 0.646,
-    "sb": 1.49,
-    "score": -1.81,
-    "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "goals"
     },
     "start": "2026-11-18T23:30:00.000Z"
    },
@@ -9440,28 +9440,6 @@
      "line": 4.5,
      "side": "under",
      "stat": "goals"
-    },
-    "start": "2026-11-18T23:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -4.1,
-    "edge": -3.4,
-    "fair": 2.848,
-    "fid": "id1000032566887168",
-    "group": "1x2",
-    "label": "1 (Cruzeiro)",
-    "market": "101",
-    "match": "🇧🇷 Cruzeiro – Palmeiras",
-    "model_p": null,
-    "outcome": "101",
-    "price": 2.75,
-    "prob": 0.3511,
-    "sb": 2.67,
-    "score": -3.44,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
     },
     "start": "2026-11-18T23:30:00.000Z"
    }
@@ -9869,6 +9847,28 @@
    },
    {
     "book": "stoiximan",
+    "drop": 14.8,
+    "edge": -2.7,
+    "fair": 1.511,
+    "fid": "id1000032566887176",
+    "group": "1x2",
+    "label": "1 (Remo)",
+    "market": "101",
+    "match": "🇧🇷 Remo – Chapecoense",
+    "model_p": null,
+    "outcome": "101",
+    "price": 1.47,
+    "prob": 0.6618,
+    "sb": 1.44,
+    "score": 1.72,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-11-18T23:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 8.1,
     "edge": -2.0,
     "fair": 1.469,
@@ -9915,29 +9915,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 4.5,
-    "edge": -2.3,
-    "fair": 1.566,
-    "fid": "id1000032566887176",
-    "group": "ht",
-    "label": "Ημίχρονο Under 1.5 γκολ",
-    "market": "10258",
-    "match": "🇧🇷 Remo – Chapecoense",
-    "model_p": null,
-    "outcome": "10259",
-    "price": 1.53,
-    "prob": 0.6386,
-    "sb": 1.51,
-    "score": -0.94,
-    "spec": {
-     "line": 1.5,
-     "side": "under",
-     "stat": "ht"
-    },
-    "start": "2026-11-18T23:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 4.0,
     "edge": -2.7,
     "fair": 1.203,
@@ -9958,18 +9935,41 @@
      "stat": "goals"
     },
     "start": "2026-11-18T23:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 4.5,
+    "edge": -2.9,
+    "fair": 1.566,
+    "fid": "id1000032566887176",
+    "group": "ht",
+    "label": "Ημίχρονο Under 1.5 γκολ",
+    "market": "10258",
+    "match": "🇧🇷 Remo – Chapecoense",
+    "model_p": null,
+    "outcome": "10259",
+    "price": 1.52,
+    "prob": 0.6386,
+    "sb": 1.51,
+    "score": -1.58,
+    "spec": {
+     "line": 1.5,
+     "side": "under",
+     "stat": "ht"
+    },
+    "start": "2026-11-18T23:00:00.000Z"
    }
   ]
  },
  "checked": {
-  "id1000004772044406": "2026-11-18T21:05:23Z",
-  "id1000021476860576": "2026-11-18T21:05:23Z",
-  "id1000032566887158": "2026-11-18T21:05:23Z",
-  "id1000032566887164": "2026-11-18T21:05:23Z",
-  "id1000032566887168": "2026-11-18T21:05:23Z",
-  "id1000032566887170": "2026-11-18T21:05:23Z",
-  "id1000032566887172": "2026-11-18T21:05:23Z",
-  "id1000032566887176": "2026-11-18T21:05:23Z"
+  "id1000004772044406": "2026-11-18T21:10:31Z",
+  "id1000021476860576": "2026-11-18T21:10:31Z",
+  "id1000032566887158": "2026-11-18T21:10:31Z",
+  "id1000032566887164": "2026-11-18T21:10:31Z",
+  "id1000032566887168": "2026-11-18T21:10:31Z",
+  "id1000032566887170": "2026-11-18T21:10:31Z",
+  "id1000032566887172": "2026-11-18T21:10:31Z",
+  "id1000032566887176": "2026-11-18T21:10:31Z"
  },
  "diag": {
   "2026-11-16": {
