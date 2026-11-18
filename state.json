@@ -8790,9 +8790,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -2.8,
-    "edge": -2.7,
-    "fair": 1.83,
+    "drop": -2.5,
+    "edge": -2.4,
+    "fair": 1.824,
     "fid": "id1000032566887158",
     "group": "ht",
     "label": "Ημίχρονο Under 1.5 γκολ",
@@ -8801,9 +8801,9 @@
     "model_p": null,
     "outcome": "10259",
     "price": 1.78,
-    "prob": 0.5464,
+    "prob": 0.5482,
     "sb": 1.75,
-    "score": -2.73,
+    "score": -2.41,
     "spec": {
      "line": 1.5,
      "side": "under",
@@ -8893,7 +8893,7 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.1,
+    "drop": -0.2,
     "edge": -1.0,
     "fair": 1.435,
     "fid": "id1000032566887164",
@@ -9054,9 +9054,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 0.1,
-    "edge": -4.0,
-    "fair": 1.51,
+    "drop": 0.3,
+    "edge": -3.9,
+    "fair": 1.509,
     "fid": "id1000032566887164",
     "group": "ht",
     "label": "Ημίχρονο Under 1.5 γκολ",
@@ -9065,9 +9065,9 @@
     "model_p": null,
     "outcome": "10259",
     "price": 1.45,
-    "prob": 0.6623,
+    "prob": 0.6627,
     "sb": 1.44,
-    "score": -3.93,
+    "score": -3.83,
     "spec": {
      "line": 1.5,
      "side": "under",
@@ -9309,8 +9309,8 @@
    {
     "book": "stoiximan",
     "drop": 9.9,
-    "edge": -3.1,
-    "fair": 2.342,
+    "edge": -2.9,
+    "fair": 2.338,
     "fid": "id1000032566887170",
     "group": "1x2",
     "label": "1 (Gremio)",
@@ -9319,9 +9319,9 @@
     "model_p": null,
     "outcome": "101",
     "price": 2.27,
-    "prob": 0.427,
+    "prob": 0.4277,
     "sb": 2.3,
-    "score": -0.1,
+    "score": 0.07,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -9330,9 +9330,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -2.8,
-    "edge": -0.9,
-    "fair": 1.766,
+    "drop": -2.5,
+    "edge": -0.6,
+    "fair": 1.761,
     "fid": "id1000032566887170",
     "group": "goals",
     "label": "Over 2.5 γκολ",
@@ -9341,9 +9341,9 @@
     "model_p": null,
     "outcome": "1010",
     "price": 1.75,
-    "prob": 0.5663,
-    "sb": 1.71,
-    "score": -0.91,
+    "prob": 0.5679,
+    "sb": 1.69,
+    "score": -0.62,
     "spec": {
      "line": 2.5,
      "side": "over",
@@ -9354,8 +9354,8 @@
    {
     "book": "stoiximan",
     "drop": -4.7,
-    "edge": -1.5,
-    "fair": 2.812,
+    "edge": -1.4,
+    "fair": 2.81,
     "fid": "id1000032566887170",
     "group": "goals",
     "label": "Over 3.5 γκολ",
@@ -9364,9 +9364,9 @@
     "model_p": null,
     "outcome": "1012",
     "price": 2.77,
-    "prob": 0.3556,
+    "prob": 0.3559,
     "sb": 2.67,
-    "score": -1.49,
+    "score": -1.42,
     "spec": {
      "line": 3.5,
      "side": "over",
@@ -9377,8 +9377,8 @@
    {
     "book": "stoiximan",
     "drop": -2.0,
-    "edge": -1.6,
-    "fair": 2.643,
+    "edge": -1.5,
+    "fair": 2.64,
     "fid": "id1000032566887170",
     "group": "ht",
     "label": "Ημίχρονο Over 1.5 γκολ",
@@ -9387,9 +9387,9 @@
     "model_p": null,
     "outcome": "10258",
     "price": 2.6,
-    "prob": 0.3784,
+    "prob": 0.3788,
     "sb": 2.42,
-    "score": -1.63,
+    "score": -1.52,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -9411,7 +9411,7 @@
     "outcome": "10811",
     "price": 2.2,
     "prob": 0.4427,
-    "sb": 2.02,
+    "sb": 2.0,
     "score": -1.65,
     "spec": {
      "line": 11.5,
@@ -9463,28 +9463,6 @@
      "line": 5.5,
      "side": "under",
      "stat": "cards"
-    },
-    "start": "2026-11-19T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -11.4,
-    "edge": -4.0,
-    "fair": 3.229,
-    "fid": "id1000032566887170",
-    "group": "1x2",
-    "label": "2 (Bahia)",
-    "market": "101",
-    "match": "🇧🇷 Gremio – Bahia",
-    "model_p": null,
-    "outcome": "103",
-    "price": 3.1,
-    "prob": 0.3097,
-    "sb": 2.95,
-    "score": -4.0,
-    "spec": {
-     "side": "2",
-     "stat": "1x2"
     },
     "start": "2026-11-19T00:30:00.000Z"
    }
@@ -9594,7 +9572,7 @@
    },
    {
     "book": "stoiximan",
-    "drop": 0.6,
+    "drop": 0.7,
     "edge": -2.3,
     "fair": 1.269,
     "fid": "id1000032566887172",
@@ -9607,33 +9585,10 @@
     "price": 1.24,
     "prob": 0.788,
     "sb": 1.22,
-    "score": -2.09,
+    "score": -2.07,
     "spec": {
      "line": 1.5,
      "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-18T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -2.6,
-    "edge": -2.9,
-    "fair": 1.225,
-    "fid": "id1000032566887172",
-    "group": "goals",
-    "label": "Under 4.5 γκολ",
-    "market": "1014",
-    "match": "🇧🇷 Coritiba – Santos",
-    "model_p": null,
-    "outcome": "1015",
-    "price": 1.19,
-    "prob": 0.8163,
-    "sb": 1.17,
-    "score": -2.86,
-    "spec": {
-     "line": 4.5,
-     "side": "under",
      "stat": "goals"
     },
     "start": "2026-11-18T22:30:00.000Z"
@@ -9663,9 +9618,32 @@
    },
    {
     "book": "stoiximan",
+    "drop": -2.6,
+    "edge": -2.9,
+    "fair": 1.226,
+    "fid": "id1000032566887172",
+    "group": "goals",
+    "label": "Under 4.5 γκολ",
+    "market": "1014",
+    "match": "🇧🇷 Coritiba – Santos",
+    "model_p": null,
+    "outcome": "1015",
+    "price": 1.19,
+    "prob": 0.8157,
+    "sb": 1.17,
+    "score": -2.94,
+    "spec": {
+     "line": 4.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-18T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 0.8,
-    "edge": -3.5,
-    "fair": 2.694,
+    "edge": -3.4,
+    "fair": 2.691,
     "fid": "id1000032566887172",
     "group": "ht",
     "label": "Ημίχρονο Over 1.5 γκολ",
@@ -9674,9 +9652,9 @@
     "model_p": null,
     "outcome": "10258",
     "price": 2.6,
-    "prob": 0.3712,
+    "prob": 0.3716,
     "sb": 2.47,
-    "score": -3.26,
+    "score": -3.15,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -9744,9 +9722,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 13.9,
-    "edge": -3.8,
-    "fair": 1.528,
+    "drop": 14.0,
+    "edge": -3.7,
+    "fair": 1.526,
     "fid": "id1000032566887176",
     "group": "1x2",
     "label": "1 (Remo)",
@@ -9755,9 +9733,9 @@
     "model_p": null,
     "outcome": "101",
     "price": 1.47,
-    "prob": 0.6545,
+    "prob": 0.6553,
     "sb": 1.44,
-    "score": 0.36,
+    "score": 0.52,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -9859,13 +9837,13 @@
   ]
  },
  "checked": {
-  "id1000032566887158": "2026-11-18T12:25:24Z",
-  "id1000032566887164": "2026-11-18T12:25:24Z",
-  "id1000032566887168": "2026-11-18T12:25:24Z",
-  "id1000032566887170": "2026-11-18T12:25:24Z",
-  "id1000032566887172": "2026-11-18T12:25:24Z",
-  "id1000032566887176": "2026-11-18T12:25:24Z",
-  "id1000229876482690": "2026-11-18T12:25:24Z"
+  "id1000032566887158": "2026-11-18T12:30:57Z",
+  "id1000032566887164": "2026-11-18T12:30:57Z",
+  "id1000032566887168": "2026-11-18T12:30:57Z",
+  "id1000032566887170": "2026-11-18T12:30:57Z",
+  "id1000032566887172": "2026-11-18T12:30:57Z",
+  "id1000032566887176": "2026-11-18T12:30:57Z",
+  "id1000229876482690": "2026-11-18T12:30:57Z"
  },
  "diag": {
   "2026-11-16": {
