@@ -8746,9 +8746,9 @@
   "id1000032566887158": [
    {
     "book": "stoiximan",
-    "drop": 12.8,
-    "edge": 7.4,
-    "fair": 1.704,
+    "drop": 13.7,
+    "edge": 8.7,
+    "fair": 1.684,
     "fid": "id1000032566887158",
     "fxi": {
      "categoryName": "Brazil",
@@ -8767,9 +8767,9 @@
     "model_p": null,
     "outcome": "10931",
     "price": 1.83,
-    "prob": 0.5869,
+    "prob": 0.5938,
     "sb": 1.56,
-    "score": 11.24,
+    "score": 12.79,
     "spec": {
      "line": 4.5,
      "side": "under",
@@ -8779,9 +8779,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 11.4,
-    "edge": 0.9,
-    "fair": 2.578,
+    "drop": 13.2,
+    "edge": 2.9,
+    "fair": 2.527,
     "fid": "id1000032566887158",
     "group": "cards",
     "label": "Κάρτες Under 3.5",
@@ -8790,9 +8790,9 @@
     "model_p": null,
     "outcome": "10927",
     "price": 2.6,
-    "prob": 0.3879,
+    "prob": 0.3957,
     "sb": 2.15,
-    "score": 4.26,
+    "score": 6.84,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -8848,29 +8848,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 1.4,
-    "edge": -1.9,
-    "fair": 1.753,
-    "fid": "id1000032566887158",
-    "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
-    "match": "🇧🇷 Flamengo – Paranaense",
-    "model_p": null,
-    "outcome": "1013",
-    "price": 1.72,
-    "prob": 0.5705,
-    "sb": 1.69,
-    "score": -1.46,
-    "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-18T23:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 4.3,
     "edge": -3.3,
     "fair": 1.251,
@@ -8895,43 +8872,20 @@
     "book": "stoiximan",
     "drop": 1.4,
     "edge": -3.0,
-    "fair": 1.774,
-    "fid": "id1000032566887158",
-    "group": "ht",
-    "label": "Ημίχρονο Under 1.5 γκολ",
-    "market": "10258",
-    "match": "🇧🇷 Flamengo – Paranaense",
-    "model_p": null,
-    "outcome": "10259",
-    "price": 1.72,
-    "prob": 0.5637,
-    "sb": 1.73,
-    "score": -2.62,
-    "spec": {
-     "line": 1.5,
-     "side": "under",
-     "stat": "ht"
-    },
-    "start": "2026-11-18T23:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.1,
-    "edge": -2.8,
-    "fair": 1.338,
+    "fair": 1.753,
     "fid": "id1000032566887158",
     "group": "goals",
-    "label": "Under 4.5 γκολ",
-    "market": "1014",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
     "match": "🇧🇷 Flamengo – Paranaense",
     "model_p": null,
-    "outcome": "1015",
-    "price": 1.3,
-    "prob": 0.7474,
-    "sb": 1.29,
-    "score": -2.82,
+    "outcome": "1013",
+    "price": 1.7,
+    "prob": 0.5705,
+    "sb": 1.69,
+    "score": -2.6,
     "spec": {
-     "line": 4.5,
+     "line": 3.5,
      "side": "under",
      "stat": "goals"
     },
@@ -8939,23 +8893,23 @@
    },
    {
     "book": "stoiximan",
-    "drop": 0.7,
-    "edge": -3.2,
-    "fair": 2.84,
+    "drop": -2.1,
+    "edge": -2.8,
+    "fair": 1.544,
     "fid": "id1000032566887158",
     "group": "goals",
-    "label": "Under 2.5 γκολ",
+    "label": "Over 2.5 γκολ",
     "market": "1010",
     "match": "🇧🇷 Flamengo – Paranaense",
     "model_p": null,
-    "outcome": "1011",
-    "price": 2.75,
-    "prob": 0.3521,
-    "sb": 2.7,
-    "score": -2.95,
+    "outcome": "1010",
+    "price": 1.5,
+    "prob": 0.6477,
+    "sb": 1.46,
+    "score": -2.85,
     "spec": {
      "line": 2.5,
-     "side": "under",
+     "side": "over",
      "stat": "goals"
     },
     "start": "2026-11-18T23:30:00.000Z"
@@ -8980,6 +8934,29 @@
      "line": 9.5,
      "side": "over",
      "stat": "corners"
+    },
+    "start": "2026-11-18T23:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -0.9,
+    "edge": -3.4,
+    "fair": 1.201,
+    "fid": "id1000032566887158",
+    "group": "goals",
+    "label": "Over 1.5 γκολ",
+    "market": "108",
+    "match": "🇧🇷 Flamengo – Paranaense",
+    "model_p": null,
+    "outcome": "108",
+    "price": 1.16,
+    "prob": 0.8326,
+    "sb": 1.14,
+    "score": -3.41,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "goals"
     },
     "start": "2026-11-18T23:30:00.000Z"
    }
@@ -9423,9 +9400,9 @@
   "id1000032566887170": [
    {
     "book": "stoiximan",
-    "drop": -3.5,
-    "edge": 0.9,
-    "fair": 1.655,
+    "drop": -2.5,
+    "edge": 2.0,
+    "fair": 1.638,
     "fid": "id1000032566887170",
     "fxi": {
      "categoryName": "Brazil",
@@ -9444,9 +9421,9 @@
     "model_p": null,
     "outcome": "10939",
     "price": 1.67,
-    "prob": 0.6042,
+    "prob": 0.6105,
     "sb": 1.49,
-    "score": 0.91,
+    "score": 1.95,
     "spec": {
      "line": 6.5,
      "side": "under",
@@ -9588,6 +9565,29 @@
      "line": 10.5,
      "side": "under",
      "stat": "corners"
+    },
+    "start": "2026-11-19T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -4.5,
+    "edge": -3.8,
+    "fair": 2.236,
+    "fid": "id1000032566887170",
+    "group": "cards",
+    "label": "Κάρτες Under 5.5",
+    "market": "10934",
+    "match": "🇧🇷 Gremio – Bahia",
+    "model_p": null,
+    "outcome": "10935",
+    "price": 2.15,
+    "prob": 0.4472,
+    "sb": 1.92,
+    "score": -3.85,
+    "spec": {
+     "line": 5.5,
+     "side": "under",
+     "stat": "cards"
     },
     "start": "2026-11-19T00:30:00.000Z"
    }
@@ -9939,14 +9939,14 @@
   ]
  },
  "checked": {
-  "id1000004772044406": "2026-11-18T19:10:29Z",
-  "id1000021476860576": "2026-11-18T19:10:29Z",
-  "id1000032566887158": "2026-11-18T19:10:29Z",
-  "id1000032566887164": "2026-11-18T19:10:29Z",
-  "id1000032566887168": "2026-11-18T19:10:29Z",
-  "id1000032566887170": "2026-11-18T19:10:29Z",
-  "id1000032566887172": "2026-11-18T19:10:29Z",
-  "id1000032566887176": "2026-11-18T19:10:29Z"
+  "id1000004772044406": "2026-11-18T19:15:30Z",
+  "id1000021476860576": "2026-11-18T19:15:30Z",
+  "id1000032566887158": "2026-11-18T19:15:30Z",
+  "id1000032566887164": "2026-11-18T19:15:30Z",
+  "id1000032566887168": "2026-11-18T19:15:30Z",
+  "id1000032566887170": "2026-11-18T19:15:30Z",
+  "id1000032566887172": "2026-11-18T19:15:30Z",
+  "id1000032566887176": "2026-11-18T19:15:30Z"
  },
  "diag": {
   "2026-11-16": {
