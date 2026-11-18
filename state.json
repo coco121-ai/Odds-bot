@@ -8745,9 +8745,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 3.3,
-    "edge": -2.7,
-    "fair": 1.264,
+    "drop": 3.2,
+    "edge": -2.8,
+    "fair": 1.266,
     "fid": "id1000032566887158",
     "group": "1x2",
     "label": "1 (Flamengo)",
@@ -8756,9 +8756,9 @@
     "model_p": null,
     "outcome": "101",
     "price": 1.23,
-    "prob": 0.7911,
+    "prob": 0.7899,
     "sb": 1.19,
-    "score": -1.69,
+    "score": -1.89,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -8767,32 +8767,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -1.6,
-    "edge": -2.3,
-    "fair": 1.535,
-    "fid": "id1000032566887158",
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
-    "match": "🇧🇷 Flamengo – Paranaense",
-    "model_p": null,
-    "outcome": "1010",
-    "price": 1.5,
-    "prob": 0.6515,
-    "sb": 1.46,
-    "score": -2.28,
-    "spec": {
-     "line": 2.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-18T23:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 1.2,
-    "edge": -3.4,
-    "fair": 1.78,
+    "drop": 1.9,
+    "edge": -2.7,
+    "fair": 1.767,
     "fid": "id1000032566887158",
     "group": "ht",
     "label": "Ημίχρονο Under 1.5 γκολ",
@@ -8801,13 +8778,59 @@
     "model_p": null,
     "outcome": "10259",
     "price": 1.72,
-    "prob": 0.5618,
+    "prob": 0.5659,
     "sb": 1.73,
-    "score": -3.02,
+    "score": -2.08,
     "spec": {
      "line": 1.5,
      "side": "under",
      "stat": "ht"
+    },
+    "start": "2026-11-18T23:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 1.7,
+    "edge": -2.7,
+    "fair": 1.748,
+    "fid": "id1000032566887158",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🇧🇷 Flamengo – Paranaense",
+    "model_p": null,
+    "outcome": "1013",
+    "price": 1.7,
+    "prob": 0.5721,
+    "sb": 1.69,
+    "score": -2.24,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-18T23:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.3,
+    "edge": -2.6,
+    "fair": 1.335,
+    "fid": "id1000032566887158",
+    "group": "goals",
+    "label": "Under 4.5 γκολ",
+    "market": "1014",
+    "match": "🇧🇷 Flamengo – Paranaense",
+    "model_p": null,
+    "outcome": "1015",
+    "price": 1.3,
+    "prob": 0.7491,
+    "sb": 1.29,
+    "score": -2.53,
+    "spec": {
+     "line": 4.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-11-18T23:30:00.000Z"
    },
@@ -8836,45 +8859,22 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.2,
-    "edge": -3.1,
-    "fair": 1.342,
+    "drop": -2.5,
+    "edge": -3.2,
+    "fair": 1.549,
     "fid": "id1000032566887158",
     "group": "goals",
-    "label": "Under 4.5 γκολ",
-    "market": "1014",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
     "match": "🇧🇷 Flamengo – Paranaense",
     "model_p": null,
-    "outcome": "1015",
-    "price": 1.3,
-    "prob": 0.7452,
-    "sb": 1.29,
-    "score": -3.13,
+    "outcome": "1010",
+    "price": 1.5,
+    "prob": 0.6456,
+    "sb": 1.46,
+    "score": -3.16,
     "spec": {
-     "line": 4.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-18T23:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -0.7,
-    "edge": -3.3,
-    "fair": 1.199,
-    "fid": "id1000032566887158",
-    "group": "goals",
-    "label": "Over 1.5 γκολ",
-    "market": "108",
-    "match": "🇧🇷 Flamengo – Paranaense",
-    "model_p": null,
-    "outcome": "108",
-    "price": 1.16,
-    "prob": 0.834,
-    "sb": 1.14,
-    "score": -3.25,
-    "spec": {
-     "line": 1.5,
+     "line": 2.5,
      "side": "over",
      "stat": "goals"
     },
@@ -8884,9 +8884,9 @@
   "id1000032566887164": [
    {
     "book": "stoiximan",
-    "drop": -1.0,
-    "edge": 0.3,
-    "fair": 1.465,
+    "drop": 3.0,
+    "edge": 0.4,
+    "fair": 2.411,
     "fid": "id1000032566887164",
     "fxi": {
      "categoryName": "Brazil",
@@ -8898,6 +8898,29 @@
      "startTime": "2026-11-19T00:30:00.000Z",
      "tournamentName": "Brasileiro Serie A"
     },
+    "group": "corners",
+    "label": "Κόρνερ Under 9.5",
+    "market": "10803",
+    "match": "🇧🇷 Corinthians – Botafogo",
+    "model_p": null,
+    "outcome": "10804",
+    "price": 2.42,
+    "prob": 0.4148,
+    "sb": 2.3,
+    "score": 1.28,
+    "spec": {
+     "line": 9.5,
+     "side": "under",
+     "stat": "corners"
+    },
+    "start": "2026-11-19T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -1.0,
+    "edge": 0.3,
+    "fair": 1.465,
+    "fid": "id1000032566887164",
     "group": "cards",
     "label": "Κάρτες Under 6.5",
     "market": "10938",
@@ -8912,6 +8935,29 @@
      "line": 6.5,
      "side": "under",
      "stat": "cards"
+    },
+    "start": "2026-11-19T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 3.0,
+    "edge": -2.0,
+    "fair": 1.908,
+    "fid": "id1000032566887164",
+    "group": "corners",
+    "label": "Κόρνερ Under 10.5",
+    "market": "10807",
+    "match": "🇧🇷 Corinthians – Botafogo",
+    "model_p": null,
+    "outcome": "10808",
+    "price": 1.87,
+    "prob": 0.5241,
+    "sb": 1.87,
+    "score": -1.09,
+    "spec": {
+     "line": 10.5,
+     "side": "under",
+     "stat": "corners"
     },
     "start": "2026-11-19T00:30:00.000Z"
    },
@@ -8980,29 +9026,6 @@
      "line": 0.5,
      "side": "over",
      "stat": "ht"
-    },
-    "start": "2026-11-19T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.0,
-    "edge": -2.8,
-    "fair": 2.489,
-    "fid": "id1000032566887164",
-    "group": "corners",
-    "label": "Κόρνερ Under 9.5",
-    "market": "10803",
-    "match": "🇧🇷 Corinthians – Botafogo",
-    "model_p": null,
-    "outcome": "10804",
-    "price": 2.42,
-    "prob": 0.4018,
-    "sb": 2.3,
-    "score": -2.77,
-    "spec": {
-     "line": 9.5,
-     "side": "under",
-     "stat": "corners"
     },
     "start": "2026-11-19T00:30:00.000Z"
    },
@@ -9097,37 +9120,14 @@
      "stat": "goals"
     },
     "start": "2026-11-19T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -0.4,
-    "edge": -3.4,
-    "fair": 1.336,
-    "fid": "id1000032566887164",
-    "group": "goals",
-    "label": "Over 1.5 γκολ",
-    "market": "108",
-    "match": "🇧🇷 Corinthians – Botafogo",
-    "model_p": null,
-    "outcome": "108",
-    "price": 1.29,
-    "prob": 0.7485,
-    "sb": 1.28,
-    "score": -3.44,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-19T00:30:00.000Z"
    }
   ],
   "id1000032566887168": [
    {
     "book": "stoiximan",
-    "drop": 0.8,
-    "edge": 19.0,
-    "fair": 1.975,
+    "drop": 0.0,
+    "edge": 18.0,
+    "fair": 1.992,
     "fid": "id1000032566887168",
     "fxi": {
      "categoryName": "Brazil",
@@ -9146,9 +9146,9 @@
     "model_p": null,
     "outcome": "10935",
     "price": 2.35,
-    "prob": 0.5063,
+    "prob": 0.502,
     "sb": 1.73,
-    "score": 19.23,
+    "score": 17.97,
     "spec": {
      "line": 5.5,
      "side": "under",
@@ -9158,9 +9158,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -1.2,
-    "edge": 14.5,
-    "fair": 1.554,
+    "drop": -1.7,
+    "edge": 14.0,
+    "fair": 1.561,
     "fid": "id1000032566887168",
     "group": "cards",
     "label": "Κάρτες Under 6.5",
@@ -9169,9 +9169,9 @@
     "model_p": null,
     "outcome": "10939",
     "price": 1.78,
-    "prob": 0.6435,
+    "prob": 0.6406,
     "sb": 1.37,
-    "score": 14.54,
+    "score": 14.03,
     "spec": {
      "line": 6.5,
      "side": "under",
@@ -9711,8 +9711,8 @@
    {
     "book": "stoiximan",
     "drop": 1.5,
-    "edge": -3.9,
-    "fair": 2.674,
+    "edge": -3.8,
+    "fair": 2.672,
     "fid": "id1000032566887172",
     "group": "ht",
     "label": "Ημίχρονο Over 1.5 γκολ",
@@ -9721,9 +9721,9 @@
     "model_p": null,
     "outcome": "10258",
     "price": 2.57,
-    "prob": 0.374,
+    "prob": 0.3743,
     "sb": 2.4,
-    "score": -3.43,
+    "score": -3.36,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -9757,7 +9757,7 @@
     "outcome": "10927",
     "price": 2.27,
     "prob": 0.439,
-    "sb": 1.95,
+    "sb": 2.12,
     "score": 3.66,
     "spec": {
      "line": 3.5,
@@ -9780,7 +9780,7 @@
     "outcome": "10931",
     "price": 1.65,
     "prob": 0.6105,
-    "sb": 1.44,
+    "sb": 1.55,
     "score": 3.14,
     "spec": {
      "line": 4.5,
@@ -9883,12 +9883,12 @@
   ]
  },
  "checked": {
-  "id1000032566887158": "2026-11-18T16:00:47Z",
-  "id1000032566887164": "2026-11-18T16:00:47Z",
-  "id1000032566887168": "2026-11-18T16:00:47Z",
-  "id1000032566887170": "2026-11-18T16:00:47Z",
-  "id1000032566887172": "2026-11-18T16:00:47Z",
-  "id1000032566887176": "2026-11-18T16:00:47Z",
+  "id1000032566887158": "2026-11-18T16:05:29Z",
+  "id1000032566887164": "2026-11-18T16:05:29Z",
+  "id1000032566887168": "2026-11-18T16:05:29Z",
+  "id1000032566887170": "2026-11-18T16:05:29Z",
+  "id1000032566887172": "2026-11-18T16:05:29Z",
+  "id1000032566887176": "2026-11-18T16:05:29Z",
   "id1000229876482690": "2026-11-18T14:25:22Z"
  },
  "diag": {
@@ -10096,6 +10096,7 @@
     "id1000032566887158|1010|1010|goals"
    ],
    "drop_edge_neg": [
+    "id1000032566887158|1010|1011|goals",
     "id1000032566887158|10258|10258|goals",
     "id1000032566887176|1010|1011|goals",
     "id1000229876482690|101|101|1x2"
@@ -10180,6 +10181,7 @@
     "id1000032566887176|1010|1011|goals"
    ],
    "small_market": [
+    "id1000032566887158|1010|1011|goals",
     "id1000032566887158|10258|10258|goals",
     "id1000032566887176|1010|1011|goals",
     "id1000229876482690|101|101|1x2"
