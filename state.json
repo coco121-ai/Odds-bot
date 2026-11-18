@@ -8940,6 +8940,28 @@
    },
    {
     "book": "stoiximan",
+    "drop": 6.6,
+    "edge": -2.3,
+    "fair": 1.822,
+    "fid": "id1000032566887164",
+    "group": "1x2",
+    "label": "1 (Corinthians)",
+    "market": "101",
+    "match": "🇧🇷 Corinthians – Botafogo",
+    "model_p": null,
+    "outcome": "101",
+    "price": 1.78,
+    "prob": 0.5488,
+    "sb": 1.75,
+    "score": -0.33,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-11-19T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 3.0,
     "edge": -2.0,
     "fair": 1.908,
@@ -8958,28 +8980,6 @@
      "line": 10.5,
      "side": "under",
      "stat": "corners"
-    },
-    "start": "2026-11-19T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 5.9,
-    "edge": -3.1,
-    "fair": 1.836,
-    "fid": "id1000032566887164",
-    "group": "1x2",
-    "label": "1 (Corinthians)",
-    "market": "101",
-    "match": "🇧🇷 Corinthians – Botafogo",
-    "model_p": null,
-    "outcome": "101",
-    "price": 1.78,
-    "prob": 0.5447,
-    "sb": 1.75,
-    "score": -1.27,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
     },
     "start": "2026-11-19T00:30:00.000Z"
    },
@@ -9009,8 +9009,8 @@
    {
     "book": "stoiximan",
     "drop": -0.4,
-    "edge": -2.2,
-    "fair": 1.432,
+    "edge": -2.4,
+    "fair": 1.434,
     "fid": "id1000032566887164",
     "group": "ht",
     "label": "Ημίχρονο Over 0.5 γκολ",
@@ -9019,9 +9019,9 @@
     "model_p": null,
     "outcome": "10256",
     "price": 1.4,
-    "prob": 0.6983,
+    "prob": 0.6974,
     "sb": 1.37,
-    "score": -2.23,
+    "score": -2.37,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -9031,7 +9031,7 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.4,
+    "drop": -0.6,
     "edge": -2.8,
     "fair": 1.513,
     "fid": "id1000032566887164",
@@ -9049,29 +9049,6 @@
      "line": 1.5,
      "side": "under",
      "stat": "ht"
-    },
-    "start": "2026-11-19T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -0.1,
-    "edge": -3.0,
-    "fair": 1.422,
-    "fid": "id1000032566887164",
-    "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
-    "match": "🇧🇷 Corinthians – Botafogo",
-    "model_p": null,
-    "outcome": "1013",
-    "price": 1.38,
-    "prob": 0.7032,
-    "sb": 1.35,
-    "score": -2.95,
-    "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "goals"
     },
     "start": "2026-11-19T00:30:00.000Z"
    },
@@ -9101,22 +9078,45 @@
    {
     "book": "stoiximan",
     "drop": -0.3,
-    "edge": -3.3,
-    "fair": 1.179,
+    "edge": -3.1,
+    "fair": 1.424,
     "fid": "id1000032566887164",
     "group": "goals",
-    "label": "Under 4.5 γκολ",
-    "market": "1014",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
     "match": "🇧🇷 Corinthians – Botafogo",
     "model_p": null,
-    "outcome": "1015",
-    "price": 1.14,
-    "prob": 0.8482,
-    "sb": 1.13,
-    "score": -3.31,
+    "outcome": "1013",
+    "price": 1.38,
+    "prob": 0.7022,
+    "sb": 1.35,
+    "score": -3.09,
     "spec": {
-     "line": 4.5,
+     "line": 3.5,
      "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-19T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -0.2,
+    "edge": -3.3,
+    "fair": 1.334,
+    "fid": "id1000032566887164",
+    "group": "goals",
+    "label": "Over 1.5 γκολ",
+    "market": "108",
+    "match": "🇧🇷 Corinthians – Botafogo",
+    "model_p": null,
+    "outcome": "108",
+    "price": 1.29,
+    "prob": 0.7496,
+    "sb": 1.28,
+    "score": -3.3,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
      "stat": "goals"
     },
     "start": "2026-11-19T00:30:00.000Z"
@@ -9860,12 +9860,12 @@
   ]
  },
  "checked": {
-  "id1000032566887158": "2026-11-18T16:20:28Z",
-  "id1000032566887164": "2026-11-18T16:20:28Z",
-  "id1000032566887168": "2026-11-18T16:20:28Z",
-  "id1000032566887170": "2026-11-18T16:20:28Z",
-  "id1000032566887172": "2026-11-18T16:20:28Z",
-  "id1000032566887176": "2026-11-18T16:20:28Z",
+  "id1000032566887158": "2026-11-18T16:25:24Z",
+  "id1000032566887164": "2026-11-18T16:25:24Z",
+  "id1000032566887168": "2026-11-18T16:25:24Z",
+  "id1000032566887170": "2026-11-18T16:25:24Z",
+  "id1000032566887172": "2026-11-18T16:25:24Z",
+  "id1000032566887176": "2026-11-18T16:25:24Z",
   "id1000229876482690": "2026-11-18T14:25:22Z"
  },
  "diag": {
