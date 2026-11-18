@@ -8861,9 +8861,9 @@
   "id1000032566887164": [
    {
     "book": "stoiximan",
-    "drop": -1.0,
-    "edge": 0.3,
-    "fair": 1.465,
+    "drop": 3.0,
+    "edge": -0.6,
+    "fair": 2.414,
     "fid": "id1000032566887164",
     "fxi": {
      "categoryName": "Brazil",
@@ -8875,29 +8875,6 @@
      "startTime": "2026-11-19T00:30:00.000Z",
      "tournamentName": "Brasileiro Serie A"
     },
-    "group": "cards",
-    "label": "Κάρτες Under 6.5",
-    "market": "10938",
-    "match": "🇧🇷 Corinthians – Botafogo",
-    "model_p": null,
-    "outcome": "10939",
-    "price": 1.47,
-    "prob": 0.6826,
-    "sb": 1.35,
-    "score": 0.34,
-    "spec": {
-     "line": 6.5,
-     "side": "under",
-     "stat": "cards"
-    },
-    "start": "2026-11-19T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 3.0,
-    "edge": -0.6,
-    "fair": 2.414,
-    "fid": "id1000032566887164",
     "group": "corners",
     "label": "Κόρνερ Under 9.5",
     "market": "10803",
@@ -8962,22 +8939,22 @@
    },
    {
     "book": "stoiximan",
-    "drop": -5.4,
+    "drop": -3.0,
     "edge": -1.5,
-    "fair": 1.879,
+    "fair": 1.493,
     "fid": "id1000032566887164",
     "group": "cards",
-    "label": "Κάρτες Under 5.5",
-    "market": "10934",
+    "label": "Κάρτες Under 6.5",
+    "market": "10938",
     "match": "🇧🇷 Corinthians – Botafogo",
     "model_p": null,
-    "outcome": "10935",
-    "price": 1.85,
-    "prob": 0.5322,
-    "sb": 1.69,
+    "outcome": "10939",
+    "price": 1.47,
+    "prob": 0.6698,
+    "sb": 1.35,
     "score": -1.54,
     "spec": {
-     "line": 5.5,
+     "line": 6.5,
      "side": "under",
      "stat": "cards"
     },
@@ -9054,29 +9031,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": -5.6,
-    "edge": -3.1,
-    "fair": 2.631,
-    "fid": "id1000032566887164",
-    "group": "cards",
-    "label": "Κάρτες Under 4.5",
-    "market": "10930",
-    "match": "🇧🇷 Corinthians – Botafogo",
-    "model_p": null,
-    "outcome": "10931",
-    "price": 2.55,
-    "prob": 0.3801,
-    "sb": 2.27,
-    "score": -3.08,
-    "spec": {
-     "line": 4.5,
-     "side": "under",
-     "stat": "cards"
-    },
-    "start": "2026-11-19T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": -0.1,
     "edge": -3.2,
     "fair": 1.332,
@@ -9094,6 +9048,29 @@
     "spec": {
      "line": 1.5,
      "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-19T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -0.4,
+    "edge": -3.2,
+    "fair": 1.426,
+    "fid": "id1000032566887164",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🇧🇷 Corinthians – Botafogo",
+    "model_p": null,
+    "outcome": "1013",
+    "price": 1.38,
+    "prob": 0.7013,
+    "sb": 1.35,
+    "score": -3.23,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
      "stat": "goals"
     },
     "start": "2026-11-19T00:30:00.000Z"
@@ -9298,9 +9275,9 @@
   "id1000032566887170": [
    {
     "book": "stoiximan",
-    "drop": -0.1,
-    "edge": 3.5,
-    "fair": 1.613,
+    "drop": -3.5,
+    "edge": 0.9,
+    "fair": 1.655,
     "fid": "id1000032566887170",
     "fxi": {
      "categoryName": "Brazil",
@@ -9319,57 +9296,11 @@
     "model_p": null,
     "outcome": "10939",
     "price": 1.67,
-    "prob": 0.62,
+    "prob": 0.6042,
     "sb": 1.49,
-    "score": 3.53,
+    "score": 0.91,
     "spec": {
      "line": 6.5,
-     "side": "under",
-     "stat": "cards"
-    },
-    "start": "2026-11-19T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -1.0,
-    "edge": 0.1,
-    "fair": 2.147,
-    "fid": "id1000032566887170",
-    "group": "cards",
-    "label": "Κάρτες Under 5.5",
-    "market": "10934",
-    "match": "🇧🇷 Gremio – Bahia",
-    "model_p": null,
-    "outcome": "10935",
-    "price": 2.15,
-    "prob": 0.4658,
-    "sb": 1.92,
-    "score": 0.14,
-    "spec": {
-     "line": 5.5,
-     "side": "under",
-     "stat": "cards"
-    },
-    "start": "2026-11-19T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -1.1,
-    "edge": 0.1,
-    "fair": 3.096,
-    "fid": "id1000032566887170",
-    "group": "cards",
-    "label": "Κάρτες Under 4.5",
-    "market": "10930",
-    "match": "🇧🇷 Gremio – Bahia",
-    "model_p": null,
-    "outcome": "10931",
-    "price": 3.1,
-    "prob": 0.323,
-    "sb": 2.62,
-    "score": 0.13,
-    "spec": {
-     "line": 4.5,
      "side": "under",
      "stat": "cards"
     },
@@ -9882,12 +9813,12 @@
   ]
  },
  "checked": {
-  "id1000032566887158": "2026-11-18T17:20:28Z",
-  "id1000032566887164": "2026-11-18T17:20:28Z",
-  "id1000032566887168": "2026-11-18T17:20:28Z",
-  "id1000032566887170": "2026-11-18T17:20:28Z",
-  "id1000032566887172": "2026-11-18T17:20:28Z",
-  "id1000032566887176": "2026-11-18T17:20:28Z",
+  "id1000032566887158": "2026-11-18T17:25:25Z",
+  "id1000032566887164": "2026-11-18T17:25:25Z",
+  "id1000032566887168": "2026-11-18T17:25:25Z",
+  "id1000032566887170": "2026-11-18T17:25:25Z",
+  "id1000032566887172": "2026-11-18T17:25:25Z",
+  "id1000032566887176": "2026-11-18T17:25:25Z",
   "id1000229876482690": "2026-11-18T14:25:22Z"
  },
  "diag": {
