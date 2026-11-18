@@ -8871,6 +8871,28 @@
    },
    {
     "book": "stoiximan",
+    "drop": 5.9,
+    "edge": -3.1,
+    "fair": 1.837,
+    "fid": "id1000032566887164",
+    "group": "1x2",
+    "label": "1 (Corinthians)",
+    "market": "101",
+    "match": "🇧🇷 Corinthians – Botafogo",
+    "model_p": null,
+    "outcome": "101",
+    "price": 1.78,
+    "prob": 0.5444,
+    "sb": 1.75,
+    "score": -1.32,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-11-19T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": -5.4,
     "edge": -1.5,
     "fair": 1.879,
@@ -8894,52 +8916,7 @@
    },
    {
     "book": "stoiximan",
-    "drop": 5.6,
-    "edge": -3.5,
-    "fair": 1.844,
-    "fid": "id1000032566887164",
-    "group": "1x2",
-    "label": "1 (Corinthians)",
-    "market": "101",
-    "match": "🇧🇷 Corinthians – Botafogo",
-    "model_p": null,
-    "outcome": "101",
-    "price": 1.78,
-    "prob": 0.5423,
-    "sb": 1.75,
-    "score": -1.78,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
-    },
-    "start": "2026-11-19T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.5,
-    "edge": -2.3,
-    "fair": 1.413,
-    "fid": "id1000032566887164",
-    "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
-    "match": "🇧🇷 Corinthians – Botafogo",
-    "model_p": null,
-    "outcome": "1013",
-    "price": 1.38,
-    "prob": 0.7077,
-    "sb": 1.35,
-    "score": -2.18,
-    "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-19T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.1,
+    "drop": 0.0,
     "edge": -2.3,
     "fair": 1.505,
     "fid": "id1000032566887164",
@@ -8952,11 +8929,34 @@
     "price": 1.47,
     "prob": 0.6645,
     "sb": 1.44,
-    "score": -2.28,
+    "score": -2.33,
     "spec": {
      "line": 1.5,
      "side": "under",
      "stat": "ht"
+    },
+    "start": "2026-11-19T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.4,
+    "edge": -2.5,
+    "fair": 1.415,
+    "fid": "id1000032566887164",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🇧🇷 Corinthians – Botafogo",
+    "model_p": null,
+    "outcome": "1013",
+    "price": 1.38,
+    "prob": 0.7067,
+    "sb": 1.35,
+    "score": -2.34,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-11-19T00:30:00.000Z"
    },
@@ -9008,29 +9008,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 0.0,
-    "edge": -3.1,
-    "fair": 1.176,
-    "fid": "id1000032566887164",
-    "group": "goals",
-    "label": "Under 4.5 γκολ",
-    "market": "1014",
-    "match": "🇧🇷 Corinthians – Botafogo",
-    "model_p": null,
-    "outcome": "1015",
-    "price": 1.14,
-    "prob": 0.8503,
-    "sb": 1.13,
-    "score": -3.06,
-    "spec": {
-     "line": 4.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-19T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": -5.6,
     "edge": -3.1,
     "fair": 2.631,
@@ -9049,6 +9026,29 @@
      "line": 4.5,
      "side": "under",
      "stat": "cards"
+    },
+    "start": "2026-11-19T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -0.1,
+    "edge": -3.1,
+    "fair": 1.177,
+    "fid": "id1000032566887164",
+    "group": "goals",
+    "label": "Under 4.5 γκολ",
+    "market": "1014",
+    "match": "🇧🇷 Corinthians – Botafogo",
+    "model_p": null,
+    "outcome": "1015",
+    "price": 1.14,
+    "prob": 0.8496,
+    "sb": 1.13,
+    "score": -3.14,
+    "spec": {
+     "line": 4.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-11-19T00:30:00.000Z"
    },
@@ -9204,9 +9204,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 3.4,
-    "edge": -3.5,
-    "fair": 1.762,
+    "drop": 3.7,
+    "edge": -3.4,
+    "fair": 1.76,
     "fid": "id1000032566887168",
     "group": "goals",
     "label": "Over 2.5 γκολ",
@@ -9215,9 +9215,9 @@
     "model_p": null,
     "outcome": "1010",
     "price": 1.7,
-    "prob": 0.5675,
+    "prob": 0.5682,
     "sb": 1.71,
-    "score": -2.49,
+    "score": -2.29,
     "spec": {
      "line": 2.5,
      "side": "over",
@@ -9526,28 +9526,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 10.8,
-    "edge": -3.0,
-    "fair": 2.114,
-    "fid": "id1000032566887172",
-    "group": "1x2",
-    "label": "2 (Santos)",
-    "market": "101",
-    "match": "🇧🇷 Coritiba – Santos",
-    "model_p": null,
-    "outcome": "103",
-    "price": 2.05,
-    "prob": 0.473,
-    "sb": 2.02,
-    "score": 0.22,
-    "spec": {
-     "side": "2",
-     "stat": "1x2"
-    },
-    "start": "2026-11-18T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 1.1,
     "edge": -1.8,
     "fair": 1.263,
@@ -9721,9 +9699,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 15.7,
-    "edge": -2.4,
-    "fair": 2.029,
+    "drop": 15.3,
+    "edge": -2.8,
+    "fair": 2.038,
     "fid": "id1000032566887176",
     "group": "goals",
     "label": "Under 2.5 γκολ",
@@ -9732,9 +9710,9 @@
     "model_p": null,
     "outcome": "1011",
     "price": 1.98,
-    "prob": 0.4929,
+    "prob": 0.4907,
     "sb": 1.95,
-    "score": 2.31,
+    "score": 1.75,
     "spec": {
      "line": 2.5,
      "side": "under",
@@ -9744,9 +9722,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 11.3,
-    "edge": -2.5,
-    "fair": 1.416,
+    "drop": 11.1,
+    "edge": -2.7,
+    "fair": 1.419,
     "fid": "id1000032566887176",
     "group": "goals",
     "label": "Under 3.5 γκολ",
@@ -9755,9 +9733,9 @@
     "model_p": null,
     "outcome": "1013",
     "price": 1.38,
-    "prob": 0.7062,
+    "prob": 0.7047,
     "sb": 1.37,
-    "score": 0.85,
+    "score": 0.58,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -9767,7 +9745,7 @@
    },
    {
     "book": "stoiximan",
-    "drop": -2.0,
+    "drop": -1.9,
     "edge": -1.6,
     "fair": 1.423,
     "fid": "id1000032566887176",
@@ -9790,9 +9768,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 5.8,
-    "edge": -3.5,
-    "fair": 1.181,
+    "drop": 5.7,
+    "edge": -3.6,
+    "fair": 1.182,
     "fid": "id1000032566887176",
     "group": "goals",
     "label": "Under 4.5 γκολ",
@@ -9801,9 +9779,9 @@
     "model_p": null,
     "outcome": "1015",
     "price": 1.14,
-    "prob": 0.8467,
+    "prob": 0.846,
     "sb": 1.13,
-    "score": -1.74,
+    "score": -1.84,
     "spec": {
      "line": 4.5,
      "side": "under",
@@ -9814,13 +9792,13 @@
   ]
  },
  "checked": {
-  "id1000032566887158": "2026-11-18T14:20:31Z",
-  "id1000032566887164": "2026-11-18T14:20:31Z",
-  "id1000032566887168": "2026-11-18T14:20:31Z",
-  "id1000032566887170": "2026-11-18T14:20:31Z",
-  "id1000032566887172": "2026-11-18T14:20:31Z",
-  "id1000032566887176": "2026-11-18T14:20:31Z",
-  "id1000229876482690": "2026-11-18T14:20:31Z"
+  "id1000032566887158": "2026-11-18T14:25:22Z",
+  "id1000032566887164": "2026-11-18T14:25:22Z",
+  "id1000032566887168": "2026-11-18T14:25:22Z",
+  "id1000032566887170": "2026-11-18T14:25:22Z",
+  "id1000032566887172": "2026-11-18T14:25:22Z",
+  "id1000032566887176": "2026-11-18T14:25:22Z",
+  "id1000229876482690": "2026-11-18T14:25:22Z"
  },
  "diag": {
   "2026-11-16": {
