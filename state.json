@@ -8676,6 +8676,52 @@
    },
    {
     "book": "stoiximan",
+    "drop": 2.3,
+    "edge": 5.9,
+    "fair": 2.171,
+    "fid": "id1000032566887158",
+    "group": "goals",
+    "label": "Over 3.5 γκολ",
+    "market": "1012",
+    "match": "🇧🇷 Flamengo – Paranaense",
+    "model_p": null,
+    "outcome": "1012",
+    "price": 2.3,
+    "prob": 0.4606,
+    "sb": 2.15,
+    "score": 6.64,
+    "spec": {
+     "line": 3.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-18T23:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 1.5,
+    "edge": 3.5,
+    "fair": 1.478,
+    "fid": "id1000032566887158",
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇧🇷 Flamengo – Paranaense",
+    "model_p": null,
+    "outcome": "1010",
+    "price": 1.53,
+    "prob": 0.6766,
+    "sb": 1.46,
+    "score": 3.98,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-18T23:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 10.6,
     "edge": 0.0,
     "fair": 2.599,
@@ -8699,55 +8745,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.5,
-    "edge": 3.0,
-    "fair": 2.234,
-    "fid": "id1000032566887158",
-    "group": "goals",
-    "label": "Over 3.5 γκολ",
-    "market": "1012",
-    "match": "🇧🇷 Flamengo – Paranaense",
-    "model_p": null,
-    "outcome": "1012",
-    "price": 2.3,
-    "prob": 0.4476,
-    "sb": 2.15,
-    "score": 2.95,
-    "spec": {
-     "line": 3.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-18T23:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.0,
-    "edge": 1.9,
-    "fair": 1.502,
-    "fid": "id1000032566887158",
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
-    "match": "🇧🇷 Flamengo – Paranaense",
-    "model_p": null,
-    "outcome": "1010",
-    "price": 1.53,
-    "prob": 0.6658,
-    "sb": 1.46,
-    "score": 1.86,
-    "spec": {
-     "line": 2.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-18T23:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -0.3,
-    "edge": -1.3,
-    "fair": 1.185,
+    "drop": 0.5,
+    "edge": -0.5,
+    "fair": 1.176,
     "fid": "id1000032566887158",
     "group": "goals",
     "label": "Over 1.5 γκολ",
@@ -8756,9 +8756,9 @@
     "model_p": null,
     "outcome": "108",
     "price": 1.17,
-    "prob": 0.8439,
+    "prob": 0.8503,
     "sb": 1.14,
-    "score": -1.27,
+    "score": -0.35,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -8768,54 +8768,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 3.3,
-    "edge": -3.0,
-    "fair": 1.258,
-    "fid": "id1000032566887158",
-    "group": "1x2",
-    "label": "1 (Flamengo)",
-    "market": "101",
-    "match": "🇧🇷 Flamengo – Paranaense",
-    "model_p": null,
-    "outcome": "101",
-    "price": 1.22,
-    "prob": 0.7949,
-    "sb": 1.2,
-    "score": -2.04,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
-    },
-    "start": "2026-11-18T23:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.0,
-    "edge": -3.2,
-    "fair": 2.48,
-    "fid": "id1000032566887158",
-    "group": "corners",
-    "label": "Κόρνερ Over 11.5",
-    "market": "10811",
-    "match": "🇧🇷 Flamengo – Paranaense",
-    "model_p": null,
-    "outcome": "10811",
-    "price": 2.4,
-    "prob": 0.4032,
-    "sb": 2.2,
-    "score": -3.23,
-    "spec": {
-     "line": 11.5,
-     "side": "over",
-     "stat": "corners"
-    },
-    "start": "2026-11-18T23:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 1.8,
-    "edge": -3.8,
-    "fair": 2.235,
+    "drop": 3.2,
+    "edge": -1.9,
+    "fair": 2.191,
     "fid": "id1000032566887158",
     "group": "ht",
     "label": "Ημίχρονο Over 1.5 γκολ",
@@ -8824,13 +8779,80 @@
     "model_p": null,
     "outcome": "10258",
     "price": 2.15,
-    "prob": 0.4474,
+    "prob": 0.4564,
     "sb": 2.07,
-    "score": -3.25,
+    "score": -0.9,
     "spec": {
      "line": 1.5,
      "side": "over",
      "stat": "ht"
+    },
+    "start": "2026-11-18T23:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 3.7,
+    "edge": -2.6,
+    "fair": 1.253,
+    "fid": "id1000032566887158",
+    "group": "1x2",
+    "label": "1 (Flamengo)",
+    "market": "101",
+    "match": "🇧🇷 Flamengo – Paranaense",
+    "model_p": null,
+    "outcome": "101",
+    "price": 1.22,
+    "prob": 0.7981,
+    "sb": 1.2,
+    "score": -1.54,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-11-18T23:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -2.0,
+    "edge": -2.9,
+    "fair": 2.131,
+    "fid": "id1000032566887158",
+    "group": "btts",
+    "label": "Goal/Goal: Ναι",
+    "market": "104",
+    "match": "🇧🇷 Flamengo – Paranaense",
+    "model_p": null,
+    "outcome": "104",
+    "price": 2.07,
+    "prob": 0.4693,
+    "sb": 2.0,
+    "score": -2.86,
+    "spec": {
+     "side": "yes",
+     "stat": "btts"
+    },
+    "start": "2026-11-18T23:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -0.4,
+    "edge": -3.5,
+    "fair": 2.486,
+    "fid": "id1000032566887158",
+    "group": "corners",
+    "label": "Κόρνερ Over 11.5",
+    "market": "10811",
+    "match": "🇧🇷 Flamengo – Paranaense",
+    "model_p": null,
+    "outcome": "10811",
+    "price": 2.4,
+    "prob": 0.4023,
+    "sb": 2.2,
+    "score": -3.46,
+    "spec": {
+     "line": 11.5,
+     "side": "over",
+     "stat": "corners"
     },
     "start": "2026-11-18T23:30:00.000Z"
    }
@@ -9205,8 +9227,8 @@
    {
     "book": "stoiximan",
     "drop": 0.9,
-    "edge": -3.5,
-    "fair": 1.213,
+    "edge": -3.6,
+    "fair": 1.214,
     "fid": "id1000032566887168",
     "group": "goals",
     "label": "Under 4.5 γκολ",
@@ -9215,12 +9237,35 @@
     "model_p": null,
     "outcome": "1015",
     "price": 1.17,
-    "prob": 0.8244,
+    "prob": 0.8237,
     "sb": 1.15,
-    "score": -3.29,
+    "score": -3.37,
     "spec": {
      "line": 4.5,
      "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-18T23:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -1.0,
+    "edge": -4.0,
+    "fair": 1.854,
+    "fid": "id1000032566887168",
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇧🇷 Cruzeiro – Palmeiras",
+    "model_p": null,
+    "outcome": "1010",
+    "price": 1.78,
+    "prob": 0.5394,
+    "sb": 1.76,
+    "score": -3.99,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
      "stat": "goals"
     },
     "start": "2026-11-18T23:30:00.000Z"
@@ -9549,7 +9594,7 @@
    },
    {
     "book": "stoiximan",
-    "drop": -2.3,
+    "drop": -2.4,
     "edge": -3.1,
     "fair": 1.228,
     "fid": "id1000032566887172",
@@ -9790,13 +9835,13 @@
   ]
  },
  "checked": {
-  "id1000032566887158": "2026-11-18T10:10:29Z",
-  "id1000032566887164": "2026-11-18T10:10:29Z",
-  "id1000032566887168": "2026-11-18T10:10:29Z",
-  "id1000032566887170": "2026-11-18T10:10:29Z",
-  "id1000032566887172": "2026-11-18T10:10:29Z",
-  "id1000032566887176": "2026-11-18T10:10:29Z",
-  "id1000229876482690": "2026-11-18T10:10:29Z"
+  "id1000032566887158": "2026-11-18T10:15:29Z",
+  "id1000032566887164": "2026-11-18T10:15:29Z",
+  "id1000032566887168": "2026-11-18T10:15:29Z",
+  "id1000032566887170": "2026-11-18T10:15:29Z",
+  "id1000032566887172": "2026-11-18T10:15:29Z",
+  "id1000032566887176": "2026-11-18T10:15:29Z",
+  "id1000229876482690": "2026-11-18T10:15:29Z"
  },
  "diag": {
   "2026-11-16": {
