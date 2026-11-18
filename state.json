@@ -8858,9 +8858,9 @@
   "id1000032566887164": [
    {
     "book": "stoiximan",
-    "drop": -3.9,
-    "edge": 7.7,
-    "fair": 2.601,
+    "drop": -0.4,
+    "edge": 0.5,
+    "fair": 1.462,
     "fid": "id1000032566887164",
     "fxi": {
      "categoryName": "Brazil",
@@ -8873,63 +8873,17 @@
      "tournamentName": "Brasileiro Serie A"
     },
     "group": "cards",
-    "label": "Κάρτες Under 4.5",
-    "market": "10930",
-    "match": "🇧🇷 Corinthians – Botafogo",
-    "model_p": null,
-    "outcome": "10931",
-    "price": 2.8,
-    "prob": 0.3845,
-    "sb": 2.27,
-    "score": 7.65,
-    "spec": {
-     "line": 4.5,
-     "side": "under",
-     "stat": "cards"
-    },
-    "start": "2026-11-19T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -0.4,
-    "edge": 7.4,
-    "fair": 1.462,
-    "fid": "id1000032566887164",
-    "group": "cards",
     "label": "Κάρτες Under 6.5",
     "market": "10938",
     "match": "🇧🇷 Corinthians – Botafogo",
     "model_p": null,
     "outcome": "10939",
-    "price": 1.57,
+    "price": 1.47,
     "prob": 0.684,
     "sb": 1.35,
-    "score": 7.39,
+    "score": 0.55,
     "spec": {
      "line": 6.5,
-     "side": "under",
-     "stat": "cards"
-    },
-    "start": "2026-11-19T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -4.7,
-    "edge": 7.0,
-    "fair": 1.869,
-    "fid": "id1000032566887164",
-    "group": "cards",
-    "label": "Κάρτες Under 5.5",
-    "market": "10934",
-    "match": "🇧🇷 Corinthians – Botafogo",
-    "model_p": null,
-    "outcome": "10935",
-    "price": 2.0,
-    "prob": 0.535,
-    "sb": 1.69,
-    "score": 7.01,
-    "spec": {
-     "line": 5.5,
      "side": "under",
      "stat": "cards"
     },
@@ -8960,6 +8914,29 @@
    },
    {
     "book": "stoiximan",
+    "drop": -4.7,
+    "edge": -1.0,
+    "fair": 1.869,
+    "fid": "id1000032566887164",
+    "group": "cards",
+    "label": "Κάρτες Under 5.5",
+    "market": "10934",
+    "match": "🇧🇷 Corinthians – Botafogo",
+    "model_p": null,
+    "outcome": "10935",
+    "price": 1.85,
+    "prob": 0.535,
+    "sb": 1.69,
+    "score": -1.02,
+    "spec": {
+     "line": 5.5,
+     "side": "under",
+     "stat": "cards"
+    },
+    "start": "2026-11-19T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 3.5,
     "edge": -2.3,
     "fair": 1.893,
@@ -8977,6 +8954,29 @@
     "spec": {
      "side": "1",
      "stat": "1x2"
+    },
+    "start": "2026-11-19T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -3.9,
+    "edge": -2.0,
+    "fair": 2.601,
+    "fid": "id1000032566887164",
+    "group": "cards",
+    "label": "Κάρτες Under 4.5",
+    "market": "10930",
+    "match": "🇧🇷 Corinthians – Botafogo",
+    "model_p": null,
+    "outcome": "10931",
+    "price": 2.55,
+    "prob": 0.3845,
+    "sb": 2.27,
+    "score": -1.96,
+    "spec": {
+     "line": 4.5,
+     "side": "under",
+     "stat": "cards"
     },
     "start": "2026-11-19T00:30:00.000Z"
    },
@@ -9936,13 +9936,13 @@
   ]
  },
  "checked": {
-  "id1000032566887158": "2026-11-18T07:40:33Z",
-  "id1000032566887164": "2026-11-18T07:40:33Z",
-  "id1000032566887168": "2026-11-18T07:40:33Z",
-  "id1000032566887170": "2026-11-18T07:40:33Z",
-  "id1000032566887172": "2026-11-18T07:40:33Z",
-  "id1000032566887176": "2026-11-18T07:40:33Z",
-  "id1000229876482690": "2026-11-18T07:40:33Z"
+  "id1000032566887158": "2026-11-18T07:45:27Z",
+  "id1000032566887164": "2026-11-18T07:45:27Z",
+  "id1000032566887168": "2026-11-18T07:45:27Z",
+  "id1000032566887170": "2026-11-18T07:45:27Z",
+  "id1000032566887172": "2026-11-18T07:45:27Z",
+  "id1000032566887176": "2026-11-18T07:45:27Z",
+  "id1000229876482690": "2026-11-18T07:45:27Z"
  },
  "diag": {
   "2026-11-16": {
