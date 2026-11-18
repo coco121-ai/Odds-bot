@@ -8676,31 +8676,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 2.9,
-    "edge": 0.6,
-    "fair": 1.262,
-    "fid": "id1000032566887158",
-    "group": "1x2",
-    "label": "1 (Flamengo)",
-    "market": "101",
-    "match": "🇧🇷 Flamengo – Paranaense",
-    "model_p": null,
-    "outcome": "101",
-    "price": 1.27,
-    "prob": 0.7924,
-    "sb": 1.22,
-    "score": 1.52,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
-    },
-    "start": "2026-11-18T23:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -0.7,
-    "edge": 1.3,
-    "fair": 1.511,
+    "drop": -1.0,
+    "edge": 0.9,
+    "fair": 1.516,
     "fid": "id1000032566887158",
     "group": "goals",
     "label": "Over 2.5 γκολ",
@@ -8709,9 +8687,9 @@
     "model_p": null,
     "outcome": "1010",
     "price": 1.53,
-    "prob": 0.6618,
+    "prob": 0.6596,
     "sb": 1.47,
-    "score": 1.26,
+    "score": 0.92,
     "spec": {
      "line": 2.5,
      "side": "over",
@@ -8721,9 +8699,31 @@
    },
    {
     "book": "stoiximan",
+    "drop": 2.8,
+    "edge": -0.2,
+    "fair": 1.263,
+    "fid": "id1000032566887158",
+    "group": "1x2",
+    "label": "1 (Flamengo)",
+    "market": "101",
+    "match": "🇧🇷 Flamengo – Paranaense",
+    "model_p": null,
+    "outcome": "101",
+    "price": 1.26,
+    "prob": 0.7918,
+    "sb": 1.22,
+    "score": 0.6,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-11-18T23:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": -2.3,
-    "edge": -0.1,
-    "fair": 2.272,
+    "edge": -0.3,
+    "fair": 2.276,
     "fid": "id1000032566887158",
     "group": "goals",
     "label": "Over 3.5 γκολ",
@@ -8732,35 +8732,13 @@
     "model_p": null,
     "outcome": "1012",
     "price": 2.27,
-    "prob": 0.4401,
+    "prob": 0.4394,
     "sb": 2.17,
-    "score": -0.09,
+    "score": -0.26,
     "spec": {
      "line": 3.5,
      "side": "over",
      "stat": "goals"
-    },
-    "start": "2026-11-18T23:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 5.7,
-    "edge": -2.1,
-    "fair": 1.859,
-    "fid": "id1000032566887158",
-    "group": "btts",
-    "label": "Goal/Goal: Όχι",
-    "market": "104",
-    "match": "🇧🇷 Flamengo – Paranaense",
-    "model_p": null,
-    "outcome": "105",
-    "price": 1.82,
-    "prob": 0.5379,
-    "sb": 1.73,
-    "score": -0.38,
-    "spec": {
-     "side": "no",
-     "stat": "btts"
     },
     "start": "2026-11-18T23:30:00.000Z"
    },
@@ -8789,9 +8767,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.5,
-    "edge": -1.5,
-    "fair": 1.188,
+    "drop": -0.6,
+    "edge": -1.6,
+    "fair": 1.189,
     "fid": "id1000032566887158",
     "group": "goals",
     "label": "Over 1.5 γκολ",
@@ -8800,9 +8778,9 @@
     "model_p": null,
     "outcome": "108",
     "price": 1.17,
-    "prob": 0.8418,
+    "prob": 0.841,
     "sb": 1.14,
-    "score": -1.52,
+    "score": -1.6,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -8830,6 +8808,29 @@
      "line": 11.5,
      "side": "over",
      "stat": "corners"
+    },
+    "start": "2026-11-18T23:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -0.3,
+    "edge": -4.0,
+    "fair": 1.791,
+    "fid": "id1000032566887158",
+    "group": "ht",
+    "label": "Ημίχρονο Under 1.5 γκολ",
+    "market": "10258",
+    "match": "🇧🇷 Flamengo – Paranaense",
+    "model_p": null,
+    "outcome": "10259",
+    "price": 1.72,
+    "prob": 0.5583,
+    "sb": 1.72,
+    "score": -3.96,
+    "spec": {
+     "line": 1.5,
+     "side": "under",
+     "stat": "ht"
     },
     "start": "2026-11-18T23:30:00.000Z"
    }
@@ -9664,9 +9665,9 @@
   "id1000032566887176": [
    {
     "book": "stoiximan",
-    "drop": 12.6,
-    "edge": -1.3,
-    "fair": 2.3,
+    "drop": 12.4,
+    "edge": -0.8,
+    "fair": 1.562,
     "fid": "id1000032566887176",
     "fxi": {
      "categoryName": "Brazil",
@@ -9678,6 +9679,28 @@
      "startTime": "2026-11-18T23:00:00.000Z",
      "tournamentName": "Brasileiro Serie A"
     },
+    "group": "1x2",
+    "label": "1 (Remo)",
+    "market": "101",
+    "match": "🇧🇷 Remo – Chapecoense",
+    "model_p": null,
+    "outcome": "101",
+    "price": 1.55,
+    "prob": 0.6402,
+    "sb": 1.53,
+    "score": 2.96,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-11-18T23:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 12.6,
+    "edge": -1.3,
+    "fair": 2.3,
+    "fid": "id1000032566887176",
     "group": "cards",
     "label": "Κάρτες Under 3.5",
     "market": "10926",
@@ -9720,31 +9743,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 16.2,
-    "edge": -2.6,
-    "fair": 1.592,
-    "fid": "id1000032566887176",
-    "group": "1x2",
-    "label": "1 (Remo)",
-    "market": "101",
-    "match": "🇧🇷 Remo – Chapecoense",
-    "model_p": null,
-    "outcome": "101",
-    "price": 1.55,
-    "prob": 0.6281,
-    "sb": 1.53,
-    "score": 2.23,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
-    },
-    "start": "2026-11-18T23:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 4.9,
-    "edge": -2.4,
-    "fair": 2.53,
+    "drop": 0.4,
+    "edge": -2.5,
+    "fair": 2.534,
     "fid": "id1000032566887176",
     "group": "ht",
     "label": "Ημίχρονο Over 1.5 γκολ",
@@ -9753,26 +9754,72 @@
     "model_p": null,
     "outcome": "10258",
     "price": 2.47,
-    "prob": 0.3953,
+    "prob": 0.3946,
     "sb": 2.3,
-    "score": -0.89,
+    "score": -2.4,
     "spec": {
      "line": 1.5,
      "side": "over",
      "stat": "ht"
     },
     "start": "2026-11-18T23:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.5,
+    "edge": -2.7,
+    "fair": 1.243,
+    "fid": "id1000032566887176",
+    "group": "goals",
+    "label": "Over 1.5 γκολ",
+    "market": "108",
+    "match": "🇧🇷 Remo – Chapecoense",
+    "model_p": null,
+    "outcome": "108",
+    "price": 1.21,
+    "prob": 0.8045,
+    "sb": 1.19,
+    "score": -2.5,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-18T23:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -0.3,
+    "edge": -3.6,
+    "fair": 1.265,
+    "fid": "id1000032566887176",
+    "group": "goals",
+    "label": "Under 4.5 γκολ",
+    "market": "1014",
+    "match": "🇧🇷 Remo – Chapecoense",
+    "model_p": null,
+    "outcome": "1015",
+    "price": 1.22,
+    "prob": 0.7905,
+    "sb": 1.2,
+    "score": -3.56,
+    "spec": {
+     "line": 4.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-18T23:00:00.000Z"
    }
   ]
  },
  "checked": {
-  "id1000032566887158": "2026-11-18T08:37:21Z",
-  "id1000032566887164": "2026-11-18T08:37:21Z",
-  "id1000032566887168": "2026-11-18T08:37:21Z",
-  "id1000032566887170": "2026-11-18T08:37:21Z",
-  "id1000032566887172": "2026-11-18T08:37:21Z",
-  "id1000032566887176": "2026-11-18T08:37:21Z",
-  "id1000229876482690": "2026-11-18T08:37:21Z"
+  "id1000032566887158": "2026-11-18T08:40:30Z",
+  "id1000032566887164": "2026-11-18T08:40:30Z",
+  "id1000032566887168": "2026-11-18T08:40:30Z",
+  "id1000032566887170": "2026-11-18T08:40:30Z",
+  "id1000032566887172": "2026-11-18T08:40:30Z",
+  "id1000032566887176": "2026-11-18T08:40:30Z",
+  "id1000229876482690": "2026-11-18T08:40:30Z"
  },
  "diag": {
   "2026-11-16": {
