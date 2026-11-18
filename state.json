@@ -8721,7 +8721,7 @@
    {
     "book": "stoiximan",
     "drop": 6.6,
-    "edge": 0.1,
+    "edge": -1.8,
     "fair": 1.649,
     "fid": "id1000032566887158",
     "group": "goals",
@@ -8730,57 +8730,12 @@
     "match": "🇧🇷 Flamengo – Paranaense",
     "model_p": null,
     "outcome": "1013",
-    "price": 1.65,
+    "price": 1.62,
     "prob": 0.6064,
     "sb": 1.58,
-    "score": 2.05,
+    "score": 0.23,
     "spec": {
      "line": 3.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-18T23:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 2.4,
-    "edge": -0.4,
-    "fair": 1.838,
-    "fid": "id1000032566887158",
-    "group": "btts",
-    "label": "Goal/Goal: Όχι",
-    "market": "104",
-    "match": "🇧🇷 Flamengo – Paranaense",
-    "model_p": null,
-    "outcome": "105",
-    "price": 1.83,
-    "prob": 0.5441,
-    "sb": 1.73,
-    "score": 0.29,
-    "spec": {
-     "side": "no",
-     "stat": "btts"
-    },
-    "start": "2026-11-18T23:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 7.7,
-    "edge": -2.4,
-    "fair": 2.614,
-    "fid": "id1000032566887158",
-    "group": "goals",
-    "label": "Under 2.5 γκολ",
-    "market": "1010",
-    "match": "🇧🇷 Flamengo – Paranaense",
-    "model_p": null,
-    "outcome": "1011",
-    "price": 2.55,
-    "prob": 0.3826,
-    "sb": 2.45,
-    "score": -0.14,
-    "spec": {
-     "line": 2.5,
      "side": "under",
      "stat": "goals"
     },
@@ -8811,6 +8766,73 @@
    },
    {
     "book": "stoiximan",
+    "drop": 2.4,
+    "edge": -1.0,
+    "fair": 1.838,
+    "fid": "id1000032566887158",
+    "group": "btts",
+    "label": "Goal/Goal: Όχι",
+    "market": "104",
+    "match": "🇧🇷 Flamengo – Paranaense",
+    "model_p": null,
+    "outcome": "105",
+    "price": 1.82,
+    "prob": 0.5441,
+    "sb": 1.73,
+    "score": -0.25,
+    "spec": {
+     "side": "no",
+     "stat": "btts"
+    },
+    "start": "2026-11-18T23:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 7.7,
+    "edge": -3.6,
+    "fair": 2.614,
+    "fid": "id1000032566887158",
+    "group": "goals",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
+    "match": "🇧🇷 Flamengo – Paranaense",
+    "model_p": null,
+    "outcome": "1011",
+    "price": 2.52,
+    "prob": 0.3826,
+    "sb": 2.45,
+    "score": -1.29,
+    "spec": {
+     "line": 2.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-18T23:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -1.0,
+    "edge": -2.6,
+    "fair": 1.314,
+    "fid": "id1000032566887158",
+    "group": "1x2",
+    "label": "1 (Flamengo)",
+    "market": "101",
+    "match": "🇧🇷 Flamengo – Paranaense",
+    "model_p": null,
+    "outcome": "101",
+    "price": 1.28,
+    "prob": 0.761,
+    "sb": 1.26,
+    "score": -2.59,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-11-18T23:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 0.0,
     "edge": -3.2,
     "fair": 2.48,
@@ -8829,28 +8851,6 @@
      "line": 11.5,
      "side": "over",
      "stat": "corners"
-    },
-    "start": "2026-11-18T23:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -1.0,
-    "edge": -3.3,
-    "fair": 1.314,
-    "fid": "id1000032566887158",
-    "group": "1x2",
-    "label": "1 (Flamengo)",
-    "market": "101",
-    "match": "🇧🇷 Flamengo – Paranaense",
-    "model_p": null,
-    "outcome": "101",
-    "price": 1.27,
-    "prob": 0.761,
-    "sb": 1.26,
-    "score": -3.35,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
     },
     "start": "2026-11-18T23:30:00.000Z"
    }
@@ -9891,13 +9891,13 @@
   ]
  },
  "checked": {
-  "id1000032566887158": "2026-11-18T06:10:33Z",
-  "id1000032566887164": "2026-11-18T06:10:33Z",
-  "id1000032566887168": "2026-11-18T06:10:33Z",
-  "id1000032566887170": "2026-11-18T06:10:33Z",
-  "id1000032566887172": "2026-11-18T06:10:33Z",
-  "id1000032566887176": "2026-11-18T06:10:33Z",
-  "id1000229876482690": "2026-11-18T06:10:33Z"
+  "id1000032566887158": "2026-11-18T06:15:28Z",
+  "id1000032566887164": "2026-11-18T06:15:28Z",
+  "id1000032566887168": "2026-11-18T06:15:28Z",
+  "id1000032566887170": "2026-11-18T06:15:28Z",
+  "id1000032566887172": "2026-11-18T06:15:28Z",
+  "id1000032566887176": "2026-11-18T06:15:28Z",
+  "id1000229876482690": "2026-11-18T06:15:28Z"
  },
  "diag": {
   "2026-11-16": {
