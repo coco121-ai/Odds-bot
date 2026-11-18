@@ -9618,7 +9618,7 @@
    {
     "book": "stoiximan",
     "drop": 8.1,
-    "edge": 8.5,
+    "edge": 1.6,
     "fair": 2.165,
     "fid": "id1000032566887172",
     "fxi": {
@@ -9637,10 +9637,10 @@
     "match": "🇧🇷 Coritiba – Santos",
     "model_p": null,
     "outcome": "10811",
-    "price": 2.35,
+    "price": 2.2,
     "prob": 0.4619,
     "sb": 2.1,
-    "score": 10.98,
+    "score": 4.05,
     "spec": {
      "line": 11.5,
      "side": "over",
@@ -9651,7 +9651,7 @@
    {
     "book": "stoiximan",
     "drop": 7.8,
-    "edge": 2.6,
+    "edge": -1.4,
     "fair": 1.774,
     "fid": "id1000032566887172",
     "group": "corners",
@@ -9660,59 +9660,14 @@
     "match": "🇧🇷 Coritiba – Santos",
     "model_p": null,
     "outcome": "10807",
-    "price": 1.82,
+    "price": 1.75,
     "prob": 0.5637,
     "sb": 1.73,
-    "score": 4.94,
+    "score": 1.0,
     "spec": {
      "line": 10.5,
      "side": "over",
      "stat": "corners"
-    },
-    "start": "2026-11-18T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 11.7,
-    "edge": -2.1,
-    "fair": 2.093,
-    "fid": "id1000032566887172",
-    "group": "1x2",
-    "label": "2 (Santos)",
-    "market": "101",
-    "match": "🇧🇷 Coritiba – Santos",
-    "model_p": null,
-    "outcome": "103",
-    "price": 2.05,
-    "prob": 0.4778,
-    "sb": 2.02,
-    "score": 1.45,
-    "spec": {
-     "side": "2",
-     "stat": "1x2"
-    },
-    "start": "2026-11-18T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 1.1,
-    "edge": -1.8,
-    "fair": 1.263,
-    "fid": "id1000032566887172",
-    "group": "goals",
-    "label": "Over 1.5 γκολ",
-    "market": "108",
-    "match": "🇧🇷 Coritiba – Santos",
-    "model_p": null,
-    "outcome": "108",
-    "price": 1.24,
-    "prob": 0.7918,
-    "sb": 1.2,
-    "score": -1.48,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "goals"
     },
     "start": "2026-11-18T22:30:00.000Z"
    },
@@ -9735,29 +9690,6 @@
     "spec": {
      "line": 3.5,
      "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-18T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 2.9,
-    "edge": -3.0,
-    "fair": 1.773,
-    "fid": "id1000032566887172",
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
-    "match": "🇧🇷 Coritiba – Santos",
-    "model_p": null,
-    "outcome": "1010",
-    "price": 1.72,
-    "prob": 0.564,
-    "sb": 1.67,
-    "score": -2.13,
-    "spec": {
-     "line": 2.5,
-     "side": "over",
      "stat": "goals"
     },
     "start": "2026-11-18T22:30:00.000Z"
@@ -9787,24 +9719,47 @@
    },
    {
     "book": "stoiximan",
-    "drop": 2.3,
-    "edge": -3.1,
-    "fair": 2.653,
+    "drop": 1.1,
+    "edge": -2.6,
+    "fair": 1.263,
     "fid": "id1000032566887172",
-    "group": "ht",
-    "label": "Ημίχρονο Over 1.5 γκολ",
-    "market": "10258",
+    "group": "goals",
+    "label": "Over 1.5 γκολ",
+    "market": "108",
     "match": "🇧🇷 Coritiba – Santos",
     "model_p": null,
-    "outcome": "10258",
-    "price": 2.57,
-    "prob": 0.3769,
-    "sb": 2.42,
-    "score": -2.44,
+    "outcome": "108",
+    "price": 1.23,
+    "prob": 0.7918,
+    "sb": 1.2,
+    "score": -2.27,
     "spec": {
      "line": 1.5,
      "side": "over",
-     "stat": "ht"
+     "stat": "goals"
+    },
+    "start": "2026-11-18T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -2.9,
+    "edge": -2.4,
+    "fair": 1.23,
+    "fid": "id1000032566887172",
+    "group": "goals",
+    "label": "Under 4.5 γκολ",
+    "market": "1014",
+    "match": "🇧🇷 Coritiba – Santos",
+    "model_p": null,
+    "outcome": "1015",
+    "price": 1.2,
+    "prob": 0.813,
+    "sb": 1.18,
+    "score": -2.44,
+    "spec": {
+     "line": 4.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-11-18T22:30:00.000Z"
    }
@@ -9983,14 +9938,14 @@
   ]
  },
  "checked": {
-  "id1000004772044406": "2026-11-18T20:45:29Z",
-  "id1000021476860576": "2026-11-18T20:45:29Z",
-  "id1000032566887158": "2026-11-18T20:45:29Z",
-  "id1000032566887164": "2026-11-18T20:45:29Z",
-  "id1000032566887168": "2026-11-18T20:45:29Z",
-  "id1000032566887170": "2026-11-18T20:45:29Z",
-  "id1000032566887172": "2026-11-18T20:45:29Z",
-  "id1000032566887176": "2026-11-18T20:45:29Z"
+  "id1000004772044406": "2026-11-18T20:50:30Z",
+  "id1000021476860576": "2026-11-18T20:50:30Z",
+  "id1000032566887158": "2026-11-18T20:50:30Z",
+  "id1000032566887164": "2026-11-18T20:50:30Z",
+  "id1000032566887168": "2026-11-18T20:50:30Z",
+  "id1000032566887170": "2026-11-18T20:50:30Z",
+  "id1000032566887172": "2026-11-18T20:50:30Z",
+  "id1000032566887176": "2026-11-18T20:50:30Z"
  },
  "diag": {
   "2026-11-16": {
