@@ -8700,7 +8700,7 @@
    {
     "book": "stoiximan",
     "drop": 0.7,
-    "edge": 1.1,
+    "edge": -0.9,
     "fair": 1.484,
     "fid": "id1000032566887158",
     "group": "goals",
@@ -8709,35 +8709,12 @@
     "match": "🇧🇷 Flamengo – Paranaense",
     "model_p": null,
     "outcome": "1010",
-    "price": 1.5,
+    "price": 1.47,
     "prob": 0.6739,
     "sb": 1.42,
-    "score": 1.29,
+    "score": -0.74,
     "spec": {
      "line": 2.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-18T23:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.9,
-    "edge": -0.5,
-    "fair": 2.192,
-    "fid": "id1000032566887158",
-    "group": "goals",
-    "label": "Over 3.5 γκολ",
-    "market": "1012",
-    "match": "🇧🇷 Flamengo – Paranaense",
-    "model_p": null,
-    "outcome": "1012",
-    "price": 2.18,
-    "prob": 0.4562,
-    "sb": 2.07,
-    "score": -0.27,
-    "spec": {
-     "line": 3.5,
      "side": "over",
      "stat": "goals"
     },
@@ -8767,6 +8744,29 @@
    },
    {
     "book": "stoiximan",
+    "drop": 0.9,
+    "edge": -1.9,
+    "fair": 2.192,
+    "fid": "id1000032566887158",
+    "group": "goals",
+    "label": "Over 3.5 γκολ",
+    "market": "1012",
+    "match": "🇧🇷 Flamengo – Paranaense",
+    "model_p": null,
+    "outcome": "1012",
+    "price": 2.15,
+    "prob": 0.4562,
+    "sb": 2.07,
+    "score": -1.64,
+    "spec": {
+     "line": 3.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-18T23:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 0.0,
     "edge": -2.2,
     "fair": 1.176,
@@ -8785,6 +8785,29 @@
      "line": 1.5,
      "side": "over",
      "stat": "goals"
+    },
+    "start": "2026-11-18T23:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -2.8,
+    "edge": -2.7,
+    "fair": 1.83,
+    "fid": "id1000032566887158",
+    "group": "ht",
+    "label": "Ημίχρονο Under 1.5 γκολ",
+    "market": "10258",
+    "match": "🇧🇷 Flamengo – Paranaense",
+    "model_p": null,
+    "outcome": "10259",
+    "price": 1.78,
+    "prob": 0.5464,
+    "sb": 1.75,
+    "score": -2.73,
+    "spec": {
+     "line": 1.5,
+     "side": "under",
+     "stat": "ht"
     },
     "start": "2026-11-18T23:30:00.000Z"
    },
@@ -9159,30 +9182,7 @@
    {
     "book": "stoiximan",
     "drop": 0.0,
-    "edge": -1.5,
-    "fair": 2.964,
-    "fid": "id1000032566887168",
-    "group": "goals",
-    "label": "Over 3.5 γκολ",
-    "market": "1012",
-    "match": "🇧🇷 Cruzeiro – Palmeiras",
-    "model_p": null,
-    "outcome": "1012",
-    "price": 2.92,
-    "prob": 0.3374,
-    "sb": 2.85,
-    "score": -1.48,
-    "spec": {
-     "line": 3.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-18T23:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.0,
-    "edge": -1.5,
+    "edge": -2.3,
     "fair": 1.279,
     "fid": "id1000032566887168",
     "group": "goals",
@@ -9191,35 +9191,12 @@
     "match": "🇧🇷 Cruzeiro – Palmeiras",
     "model_p": null,
     "outcome": "108",
-    "price": 1.26,
+    "price": 1.25,
     "prob": 0.7819,
     "sb": 1.24,
-    "score": -1.49,
+    "score": -2.27,
     "spec": {
      "line": 1.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-18T23:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.7,
-    "edge": -1.8,
-    "fair": 1.812,
-    "fid": "id1000032566887168",
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
-    "match": "🇧🇷 Cruzeiro – Palmeiras",
-    "model_p": null,
-    "outcome": "1010",
-    "price": 1.78,
-    "prob": 0.5519,
-    "sb": 1.76,
-    "score": -1.56,
-    "spec": {
-     "line": 2.5,
      "side": "over",
      "stat": "goals"
     },
@@ -9251,22 +9228,46 @@
    {
     "book": "stoiximan",
     "drop": 0.7,
-    "edge": -3.9,
-    "fair": 1.665,
+    "edge": -3.4,
+    "fair": 1.812,
     "fid": "id1000032566887168",
-    "group": "btts",
-    "label": "Goal/Goal: Ναι",
-    "market": "104",
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
     "match": "🇧🇷 Cruzeiro – Palmeiras",
     "model_p": null,
-    "outcome": "104",
-    "price": 1.6,
-    "prob": 0.6006,
-    "sb": 1.6,
-    "score": -3.68,
+    "outcome": "1010",
+    "price": 1.75,
+    "prob": 0.5519,
+    "sb": 1.76,
+    "score": -3.22,
     "spec": {
-     "side": "yes",
-     "stat": "btts"
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-18T23:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -0.4,
+    "edge": -3.5,
+    "fair": 1.223,
+    "fid": "id1000032566887168",
+    "group": "goals",
+    "label": "Under 4.5 γκολ",
+    "market": "1014",
+    "match": "🇧🇷 Cruzeiro – Palmeiras",
+    "model_p": null,
+    "outcome": "1015",
+    "price": 1.18,
+    "prob": 0.8177,
+    "sb": 1.15,
+    "score": -3.52,
+    "spec": {
+     "line": 4.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-11-18T23:30:00.000Z"
    }
@@ -9869,13 +9870,13 @@
   ]
  },
  "checked": {
-  "id1000032566887158": "2026-11-18T12:05:27Z",
-  "id1000032566887164": "2026-11-18T12:05:27Z",
-  "id1000032566887168": "2026-11-18T12:05:27Z",
-  "id1000032566887170": "2026-11-18T12:05:27Z",
-  "id1000032566887172": "2026-11-18T12:05:27Z",
-  "id1000032566887176": "2026-11-18T12:05:27Z",
-  "id1000229876482690": "2026-11-18T12:05:27Z"
+  "id1000032566887158": "2026-11-18T12:10:30Z",
+  "id1000032566887164": "2026-11-18T12:10:30Z",
+  "id1000032566887168": "2026-11-18T12:10:30Z",
+  "id1000032566887170": "2026-11-18T12:10:30Z",
+  "id1000032566887172": "2026-11-18T12:10:30Z",
+  "id1000032566887176": "2026-11-18T12:10:30Z",
+  "id1000229876482690": "2026-11-18T12:10:30Z"
  },
  "diag": {
   "2026-11-16": {
