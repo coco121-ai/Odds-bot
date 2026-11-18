@@ -8641,9 +8641,9 @@
   "id1000032566887158": [
    {
     "book": "stoiximan",
-    "drop": 11.3,
-    "edge": 5.2,
-    "fair": 1.739,
+    "drop": 11.0,
+    "edge": 5.3,
+    "fair": 1.738,
     "fid": "id1000032566887158",
     "fxi": {
      "categoryName": "Brazil",
@@ -8662,34 +8662,11 @@
     "model_p": null,
     "outcome": "10931",
     "price": 1.83,
-    "prob": 0.575,
+    "prob": 0.5754,
     "sb": 1.73,
-    "score": 8.64,
+    "score": 8.58,
     "spec": {
      "line": 4.5,
-     "side": "under",
-     "stat": "cards"
-    },
-    "start": "2026-11-18T23:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 11.0,
-    "edge": -0.0,
-    "fair": 2.601,
-    "fid": "id1000032566887158",
-    "group": "cards",
-    "label": "Κάρτες Under 3.5",
-    "market": "10926",
-    "match": "🇧🇷 Flamengo – Paranaense",
-    "model_p": null,
-    "outcome": "10927",
-    "price": 2.6,
-    "prob": 0.3845,
-    "sb": 2.4,
-    "score": 3.26,
-    "spec": {
-     "line": 3.5,
      "side": "under",
      "stat": "cards"
     },
@@ -8720,6 +8697,29 @@
    },
    {
     "book": "stoiximan",
+    "drop": 10.3,
+    "edge": -0.3,
+    "fair": 2.609,
+    "fid": "id1000032566887158",
+    "group": "cards",
+    "label": "Κάρτες Under 3.5",
+    "market": "10926",
+    "match": "🇧🇷 Flamengo – Paranaense",
+    "model_p": null,
+    "outcome": "10927",
+    "price": 2.6,
+    "prob": 0.3833,
+    "sb": 2.4,
+    "score": 2.73,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "cards"
+    },
+    "start": "2026-11-18T23:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 5.3,
     "edge": 0.5,
     "fair": 1.692,
@@ -8743,6 +8743,28 @@
    },
    {
     "book": "stoiximan",
+    "drop": 2.8,
+    "edge": -0.1,
+    "fair": 1.832,
+    "fid": "id1000032566887158",
+    "group": "btts",
+    "label": "Goal/Goal: Όχι",
+    "market": "104",
+    "match": "🇧🇷 Flamengo – Paranaense",
+    "model_p": null,
+    "outcome": "105",
+    "price": 1.83,
+    "prob": 0.5459,
+    "sb": 1.73,
+    "score": 0.72,
+    "spec": {
+     "side": "no",
+     "stat": "btts"
+    },
+    "start": "2026-11-18T23:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 3.8,
     "edge": -0.8,
     "fair": 1.28,
@@ -8761,28 +8783,6 @@
      "line": 4.5,
      "side": "under",
      "stat": "goals"
-    },
-    "start": "2026-11-18T23:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 2.4,
-    "edge": -0.4,
-    "fair": 1.838,
-    "fid": "id1000032566887158",
-    "group": "btts",
-    "label": "Goal/Goal: Όχι",
-    "market": "104",
-    "match": "🇧🇷 Flamengo – Paranaense",
-    "model_p": null,
-    "outcome": "105",
-    "price": 1.83,
-    "prob": 0.5441,
-    "sb": 1.73,
-    "score": 0.29,
-    "spec": {
-     "side": "no",
-     "stat": "btts"
     },
     "start": "2026-11-18T23:30:00.000Z"
    },
@@ -9099,9 +9099,9 @@
   "id1000032566887168": [
    {
     "book": "stoiximan",
-    "drop": 5.8,
-    "edge": 6.2,
-    "fair": 1.884,
+    "drop": 5.5,
+    "edge": 6.3,
+    "fair": 1.882,
     "fid": "id1000032566887168",
     "fxi": {
      "categoryName": "Brazil",
@@ -9120,9 +9120,9 @@
     "model_p": null,
     "outcome": "10935",
     "price": 2.0,
-    "prob": 0.5308,
+    "prob": 0.5313,
     "sb": 1.85,
-    "score": 7.89,
+    "score": 7.91,
     "spec": {
      "line": 5.5,
      "side": "under",
@@ -9132,9 +9132,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 5.3,
+    "drop": 5.0,
     "edge": 4.6,
-    "fair": 2.676,
+    "fair": 2.677,
     "fid": "id1000032566887168",
     "group": "cards",
     "label": "Κάρτες Under 4.5",
@@ -9143,9 +9143,9 @@
     "model_p": null,
     "outcome": "10931",
     "price": 2.8,
-    "prob": 0.3737,
+    "prob": 0.3736,
     "sb": 2.5,
-    "score": 6.24,
+    "score": 6.08,
     "spec": {
      "line": 4.5,
      "side": "under",
@@ -9155,9 +9155,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 3.1,
-    "edge": 5.1,
-    "fair": 1.494,
+    "drop": 2.8,
+    "edge": 5.2,
+    "fair": 1.493,
     "fid": "id1000032566887168",
     "group": "cards",
     "label": "Κάρτες Under 6.5",
@@ -9166,9 +9166,9 @@
     "model_p": null,
     "outcome": "10939",
     "price": 1.57,
-    "prob": 0.6693,
+    "prob": 0.6698,
     "sb": 1.44,
-    "score": 6.03,
+    "score": 6.0,
     "spec": {
      "line": 6.5,
      "side": "under",
@@ -9936,13 +9936,13 @@
   ]
  },
  "checked": {
-  "id1000032566887158": "2026-11-18T07:30:38Z",
-  "id1000032566887164": "2026-11-18T07:30:38Z",
-  "id1000032566887168": "2026-11-18T07:30:38Z",
-  "id1000032566887170": "2026-11-18T07:30:38Z",
-  "id1000032566887172": "2026-11-18T07:30:38Z",
-  "id1000032566887176": "2026-11-18T07:30:38Z",
-  "id1000229876482690": "2026-11-18T07:30:38Z"
+  "id1000032566887158": "2026-11-18T07:35:38Z",
+  "id1000032566887164": "2026-11-18T07:35:38Z",
+  "id1000032566887168": "2026-11-18T07:35:38Z",
+  "id1000032566887170": "2026-11-18T07:35:38Z",
+  "id1000032566887172": "2026-11-18T07:35:38Z",
+  "id1000032566887176": "2026-11-18T07:35:38Z",
+  "id1000229876482690": "2026-11-18T07:35:38Z"
  },
  "diag": {
   "2026-11-16": {
