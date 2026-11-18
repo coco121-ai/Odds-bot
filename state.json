@@ -8697,31 +8697,8 @@
    },
    {
     "book": "stoiximan",
-    "drop": 4.5,
-    "edge": 0.7,
-    "fair": 1.708,
-    "fid": "id1000032566887158",
-    "group": "ht",
-    "label": "Ημίχρονο Under 1.5 γκολ",
-    "market": "10258",
-    "match": "🇧🇷 Flamengo – Paranaense",
-    "model_p": null,
-    "outcome": "10259",
-    "price": 1.72,
-    "prob": 0.5855,
-    "sb": 1.66,
-    "score": 2.04,
-    "spec": {
-     "line": 1.5,
-     "side": "under",
-     "stat": "ht"
-    },
-    "start": "2026-11-18T23:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 6.4,
-    "edge": -2.1,
+    "edge": -0.2,
     "fair": 1.654,
     "fid": "id1000032566887158",
     "group": "goals",
@@ -8730,10 +8707,10 @@
     "match": "🇧🇷 Flamengo – Paranaense",
     "model_p": null,
     "outcome": "1013",
-    "price": 1.62,
+    "price": 1.65,
     "prob": 0.6046,
     "sb": 1.58,
-    "score": -0.14,
+    "score": 1.68,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -8743,8 +8720,31 @@
    },
    {
     "book": "stoiximan",
+    "drop": 4.5,
+    "edge": -0.5,
+    "fair": 1.708,
+    "fid": "id1000032566887158",
+    "group": "ht",
+    "label": "Ημίχρονο Under 1.5 γκολ",
+    "market": "10258",
+    "match": "🇧🇷 Flamengo – Paranaense",
+    "model_p": null,
+    "outcome": "10259",
+    "price": 1.7,
+    "prob": 0.5855,
+    "sb": 1.66,
+    "score": 0.87,
+    "spec": {
+     "line": 1.5,
+     "side": "under",
+     "stat": "ht"
+    },
+    "start": "2026-11-18T23:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 2.4,
-    "edge": -1.0,
+    "edge": -0.4,
     "fair": 1.838,
     "fid": "id1000032566887158",
     "group": "btts",
@@ -8753,10 +8753,10 @@
     "match": "🇧🇷 Flamengo – Paranaense",
     "model_p": null,
     "outcome": "105",
-    "price": 1.82,
+    "price": 1.83,
     "prob": 0.5441,
     "sb": 1.73,
-    "score": -0.25,
+    "score": 0.29,
     "spec": {
      "side": "no",
      "stat": "btts"
@@ -8789,7 +8789,7 @@
    {
     "book": "stoiximan",
     "drop": -0.9,
-    "edge": -2.4,
+    "edge": -3.2,
     "fair": 1.312,
     "fid": "id1000032566887158",
     "group": "1x2",
@@ -8798,10 +8798,10 @@
     "match": "🇧🇷 Flamengo – Paranaense",
     "model_p": null,
     "outcome": "101",
-    "price": 1.28,
+    "price": 1.27,
     "prob": 0.7622,
     "sb": 1.26,
-    "score": -2.44,
+    "score": -3.2,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -8915,7 +8915,7 @@
    {
     "book": "stoiximan",
     "drop": -0.1,
-    "edge": 0.4,
+    "edge": -1.0,
     "fair": 1.434,
     "fid": "id1000032566887164",
     "group": "ht",
@@ -8924,10 +8924,10 @@
     "match": "🇧🇷 Corinthians – Botafogo",
     "model_p": null,
     "outcome": "10256",
-    "price": 1.44,
+    "price": 1.42,
     "prob": 0.6974,
     "sb": 1.37,
-    "score": 0.42,
+    "score": -0.98,
     "spec": {
      "line": 0.5,
      "side": "over",
@@ -9419,6 +9419,28 @@
    },
    {
     "book": "stoiximan",
+    "drop": -8.5,
+    "edge": -3.1,
+    "fair": 3.146,
+    "fid": "id1000032566887170",
+    "group": "1x2",
+    "label": "2 (Bahia)",
+    "market": "101",
+    "match": "🇧🇷 Gremio – Bahia",
+    "model_p": null,
+    "outcome": "103",
+    "price": 3.05,
+    "prob": 0.3179,
+    "sb": 2.95,
+    "score": -3.05,
+    "spec": {
+     "side": "2",
+     "stat": "1x2"
+    },
+    "start": "2026-11-19T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": -4.0,
     "edge": -3.8,
     "fair": 2.234,
@@ -9444,9 +9466,9 @@
   "id1000032566887172": [
    {
     "book": "stoiximan",
-    "drop": 5.7,
+    "drop": 5.2,
     "edge": 4.6,
-    "fair": 2.055,
+    "fair": 2.056,
     "fid": "id1000032566887172",
     "fxi": {
      "categoryName": "Brazil",
@@ -9465,9 +9487,9 @@
     "model_p": null,
     "outcome": "10931",
     "price": 2.15,
-    "prob": 0.4866,
+    "prob": 0.4864,
     "sb": 1.95,
-    "score": 6.32,
+    "score": 6.14,
     "spec": {
      "line": 4.5,
      "side": "under",
@@ -9477,7 +9499,7 @@
    },
    {
     "book": "stoiximan",
-    "drop": 5.4,
+    "drop": 5.2,
     "edge": 3.8,
     "fair": 1.561,
     "fid": "id1000032566887172",
@@ -9490,7 +9512,7 @@
     "price": 1.62,
     "prob": 0.6406,
     "sb": 1.47,
-    "score": 5.41,
+    "score": 5.33,
     "spec": {
      "line": 5.5,
      "side": "under",
@@ -9517,29 +9539,6 @@
     "spec": {
      "side": "2",
      "stat": "1x2"
-    },
-    "start": "2026-11-18T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 1.6,
-    "edge": -2.7,
-    "fair": 3.239,
-    "fid": "id1000032566887172",
-    "group": "cards",
-    "label": "Κάρτες Under 3.5",
-    "market": "10926",
-    "match": "🇧🇷 Coritiba – Santos",
-    "model_p": null,
-    "outcome": "10927",
-    "price": 3.15,
-    "prob": 0.3087,
-    "sb": 2.75,
-    "score": -2.26,
-    "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "cards"
     },
     "start": "2026-11-18T22:30:00.000Z"
    },
@@ -9609,6 +9608,29 @@
      "line": 4.5,
      "side": "under",
      "stat": "goals"
+    },
+    "start": "2026-11-18T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 1.0,
+    "edge": -3.0,
+    "fair": 3.249,
+    "fid": "id1000032566887172",
+    "group": "cards",
+    "label": "Κάρτες Under 3.5",
+    "market": "10926",
+    "match": "🇧🇷 Coritiba – Santos",
+    "model_p": null,
+    "outcome": "10927",
+    "price": 3.15,
+    "prob": 0.3078,
+    "sb": 2.75,
+    "score": -2.75,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "cards"
     },
     "start": "2026-11-18T22:30:00.000Z"
    },
@@ -9696,8 +9718,8 @@
    {
     "book": "stoiximan",
     "drop": 2.6,
-    "edge": -0.6,
-    "fair": 1.56,
+    "edge": -0.8,
+    "fair": 1.562,
     "fid": "id1000032566887176",
     "group": "goals",
     "label": "Under 3.5 γκολ",
@@ -9706,9 +9728,9 @@
     "model_p": null,
     "outcome": "1013",
     "price": 1.55,
-    "prob": 0.641,
+    "prob": 0.6402,
     "sb": 1.53,
-    "score": 0.14,
+    "score": 0.01,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -9719,8 +9741,8 @@
    {
     "book": "stoiximan",
     "drop": 3.0,
-    "edge": -1.4,
-    "fair": 2.354,
+    "edge": -1.6,
+    "fair": 2.357,
     "fid": "id1000032566887176",
     "group": "goals",
     "label": "Under 2.5 γκολ",
@@ -9729,9 +9751,9 @@
     "model_p": null,
     "outcome": "1011",
     "price": 2.32,
-    "prob": 0.4248,
+    "prob": 0.4243,
     "sb": 2.32,
-    "score": -0.55,
+    "score": -0.68,
     "spec": {
      "line": 2.5,
      "side": "under",
@@ -9741,9 +9763,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 1.1,
+    "drop": 1.0,
     "edge": -1.4,
-    "fair": 1.247,
+    "fair": 1.248,
     "fid": "id1000032566887176",
     "group": "goals",
     "label": "Under 4.5 γκολ",
@@ -9752,9 +9774,9 @@
     "model_p": null,
     "outcome": "1015",
     "price": 1.23,
-    "prob": 0.8019,
+    "prob": 0.8013,
     "sb": 1.2,
-    "score": -1.04,
+    "score": -1.15,
     "spec": {
      "line": 4.5,
      "side": "under",
@@ -9786,9 +9808,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 5.7,
-    "edge": -3.7,
-    "fair": 1.682,
+    "drop": 6.0,
+    "edge": -3.4,
+    "fair": 1.677,
     "fid": "id1000032566887176",
     "group": "1x2",
     "label": "1 (Remo)",
@@ -9797,9 +9819,9 @@
     "model_p": null,
     "outcome": "101",
     "price": 1.62,
-    "prob": 0.5945,
+    "prob": 0.5963,
     "sb": 1.59,
-    "score": -1.96,
+    "score": -1.61,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -9890,13 +9912,13 @@
   ]
  },
  "checked": {
-  "id1000032566887158": "2026-11-18T06:25:24Z",
-  "id1000032566887164": "2026-11-18T06:25:24Z",
-  "id1000032566887168": "2026-11-18T06:25:24Z",
-  "id1000032566887170": "2026-11-18T06:25:24Z",
-  "id1000032566887172": "2026-11-18T06:25:24Z",
-  "id1000032566887176": "2026-11-18T06:25:24Z",
-  "id1000229876482690": "2026-11-18T06:25:24Z"
+  "id1000032566887158": "2026-11-18T06:30:40Z",
+  "id1000032566887164": "2026-11-18T06:30:40Z",
+  "id1000032566887168": "2026-11-18T06:30:40Z",
+  "id1000032566887170": "2026-11-18T06:30:40Z",
+  "id1000032566887172": "2026-11-18T06:30:40Z",
+  "id1000032566887176": "2026-11-18T06:30:40Z",
+  "id1000229876482690": "2026-11-18T06:30:40Z"
  },
  "diag": {
   "2026-11-16": {
