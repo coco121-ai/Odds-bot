@@ -9447,9 +9447,9 @@
   "id1000032566887172": [
    {
     "book": "stoiximan",
-    "drop": 1.8,
-    "edge": 1.2,
-    "fair": 2.322,
+    "drop": 10.8,
+    "edge": -3.1,
+    "fair": 2.115,
     "fid": "id1000032566887172",
     "fxi": {
      "categoryName": "Brazil",
@@ -9461,6 +9461,28 @@
      "startTime": "2026-11-18T22:30:00.000Z",
      "tournamentName": "Brasileiro Serie A"
     },
+    "group": "1x2",
+    "label": "2 (Santos)",
+    "market": "101",
+    "match": "🇧🇷 Coritiba – Santos",
+    "model_p": null,
+    "outcome": "103",
+    "price": 2.05,
+    "prob": 0.4728,
+    "sb": 2.05,
+    "score": 0.17,
+    "spec": {
+     "side": "2",
+     "stat": "1x2"
+    },
+    "start": "2026-11-18T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.5,
+    "edge": -0.3,
+    "fair": 2.357,
+    "fid": "id1000032566887172",
     "group": "corners",
     "label": "Κόρνερ Over 11.5",
     "market": "10811",
@@ -9468,9 +9490,9 @@
     "model_p": null,
     "outcome": "10811",
     "price": 2.35,
-    "prob": 0.4307,
+    "prob": 0.4243,
     "sb": 2.12,
-    "score": 1.75,
+    "score": -0.16,
     "spec": {
      "line": 11.5,
      "side": "over",
@@ -9480,54 +9502,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 10.4,
-    "edge": -3.3,
-    "fair": 2.12,
-    "fid": "id1000032566887172",
-    "group": "1x2",
-    "label": "2 (Santos)",
-    "market": "101",
-    "match": "🇧🇷 Coritiba – Santos",
-    "model_p": null,
-    "outcome": "103",
-    "price": 2.05,
-    "prob": 0.4717,
-    "sb": 2.05,
-    "score": -0.19,
-    "spec": {
-     "side": "2",
-     "stat": "1x2"
-    },
-    "start": "2026-11-18T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 3.1,
-    "edge": -2.5,
-    "fair": 1.866,
-    "fid": "id1000032566887172",
-    "group": "corners",
-    "label": "Κόρνερ Over 10.5",
-    "market": "10807",
-    "match": "🇧🇷 Coritiba – Santos",
-    "model_p": null,
-    "outcome": "10807",
-    "price": 1.82,
-    "prob": 0.5359,
-    "sb": 1.76,
-    "score": -1.54,
-    "spec": {
-     "line": 10.5,
-     "side": "over",
-     "stat": "corners"
-    },
-    "start": "2026-11-18T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -5.0,
-    "edge": -1.9,
-    "fair": 1.529,
+    "drop": -4.8,
+    "edge": -1.8,
+    "fair": 1.528,
     "fid": "id1000032566887172",
     "group": "goals",
     "label": "Under 3.5 γκολ",
@@ -9536,9 +9513,9 @@
     "model_p": null,
     "outcome": "1013",
     "price": 1.5,
-    "prob": 0.654,
+    "prob": 0.6545,
     "sb": 1.47,
-    "score": -1.9,
+    "score": -1.83,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -9813,12 +9790,12 @@
   ]
  },
  "checked": {
-  "id1000032566887158": "2026-11-18T17:40:36Z",
-  "id1000032566887164": "2026-11-18T17:40:36Z",
-  "id1000032566887168": "2026-11-18T17:40:36Z",
-  "id1000032566887170": "2026-11-18T17:40:36Z",
-  "id1000032566887172": "2026-11-18T17:40:36Z",
-  "id1000032566887176": "2026-11-18T17:40:36Z",
+  "id1000032566887158": "2026-11-18T17:45:28Z",
+  "id1000032566887164": "2026-11-18T17:45:28Z",
+  "id1000032566887168": "2026-11-18T17:45:28Z",
+  "id1000032566887170": "2026-11-18T17:45:28Z",
+  "id1000032566887172": "2026-11-18T17:45:28Z",
+  "id1000032566887176": "2026-11-18T17:45:28Z",
   "id1000229876482690": "2026-11-18T14:25:22Z"
  },
  "diag": {
