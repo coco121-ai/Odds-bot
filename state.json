@@ -8961,7 +8961,7 @@
    {
     "book": "stoiximan",
     "drop": 3.9,
-    "edge": -0.8,
+    "edge": -1.9,
     "fair": 1.885,
     "fid": "id1000032566887164",
     "group": "1x2",
@@ -8970,10 +8970,10 @@
     "match": "🇧🇷 Corinthians – Botafogo",
     "model_p": null,
     "outcome": "101",
-    "price": 1.87,
+    "price": 1.85,
     "prob": 0.5305,
     "sb": 1.85,
-    "score": 0.37,
+    "score": -0.69,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -9351,31 +9351,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -6.0,
-    "edge": -0.6,
-    "fair": 3.068,
-    "fid": "id1000032566887170",
-    "group": "1x2",
-    "label": "2 (Bahia)",
-    "market": "101",
-    "match": "🇧🇷 Gremio – Bahia",
-    "model_p": null,
-    "outcome": "103",
-    "price": 3.05,
-    "prob": 0.3259,
-    "sb": 2.95,
-    "score": -0.59,
-    "spec": {
-     "side": "2",
-     "stat": "1x2"
-    },
-    "start": "2026-11-19T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 3.2,
-    "edge": -2.6,
-    "fair": 2.259,
+    "drop": 4.1,
+    "edge": -1.6,
+    "fair": 2.236,
     "fid": "id1000032566887170",
     "group": "corners",
     "label": "Κόρνερ Over 11.5",
@@ -9384,9 +9362,9 @@
     "model_p": null,
     "outcome": "10811",
     "price": 2.2,
-    "prob": 0.4427,
+    "prob": 0.4472,
     "sb": 2.07,
-    "score": -1.65,
+    "score": -0.38,
     "spec": {
      "line": 11.5,
      "side": "over",
@@ -9419,6 +9397,29 @@
    },
    {
     "book": "stoiximan",
+    "drop": 3.7,
+    "edge": -3.4,
+    "fair": 1.811,
+    "fid": "id1000032566887170",
+    "group": "corners",
+    "label": "Κόρνερ Over 10.5",
+    "market": "10807",
+    "match": "🇧🇷 Gremio – Bahia",
+    "model_p": null,
+    "outcome": "10807",
+    "price": 1.75,
+    "prob": 0.5522,
+    "sb": 1.71,
+    "score": -2.27,
+    "spec": {
+     "line": 10.5,
+     "side": "over",
+     "stat": "corners"
+    },
+    "start": "2026-11-19T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": -2.3,
     "edge": -2.4,
     "fair": 1.271,
@@ -9437,6 +9438,28 @@
      "line": 1.5,
      "side": "over",
      "stat": "goals"
+    },
+    "start": "2026-11-19T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -6.8,
+    "edge": -3.0,
+    "fair": 3.093,
+    "fid": "id1000032566887170",
+    "group": "1x2",
+    "label": "2 (Bahia)",
+    "market": "101",
+    "match": "🇧🇷 Gremio – Bahia",
+    "model_p": null,
+    "outcome": "103",
+    "price": 3.0,
+    "prob": 0.3233,
+    "sb": 2.95,
+    "score": -3.01,
+    "spec": {
+     "side": "2",
+     "stat": "1x2"
     },
     "start": "2026-11-19T00:30:00.000Z"
    },
@@ -9766,7 +9789,7 @@
    {
     "book": "stoiximan",
     "drop": 1.6,
-    "edge": -0.4,
+    "edge": -1.6,
     "fair": 1.576,
     "fid": "id1000032566887176",
     "group": "goals",
@@ -9775,10 +9798,10 @@
     "match": "🇧🇷 Remo – Chapecoense",
     "model_p": null,
     "outcome": "1013",
-    "price": 1.57,
+    "price": 1.55,
     "prob": 0.6345,
     "sb": 1.53,
-    "score": 0.11,
+    "score": -1.16,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -9789,7 +9812,7 @@
    {
     "book": "stoiximan",
     "drop": 1.7,
-    "edge": -1.6,
+    "edge": -2.8,
     "fair": 2.387,
     "fid": "id1000032566887176",
     "group": "goals",
@@ -9798,10 +9821,10 @@
     "match": "🇧🇷 Remo – Chapecoense",
     "model_p": null,
     "outcome": "1011",
-    "price": 2.35,
+    "price": 2.32,
     "prob": 0.4189,
     "sb": 2.32,
-    "score": -1.04,
+    "score": -2.3,
     "spec": {
      "line": 2.5,
      "side": "under",
@@ -9812,7 +9835,7 @@
    {
     "book": "stoiximan",
     "drop": 0.6,
-    "edge": -1.9,
+    "edge": -2.7,
     "fair": 1.254,
     "fid": "id1000032566887176",
     "group": "goals",
@@ -9821,10 +9844,10 @@
     "match": "🇧🇷 Remo – Chapecoense",
     "model_p": null,
     "outcome": "1015",
-    "price": 1.23,
+    "price": 1.22,
     "prob": 0.7974,
     "sb": 1.21,
-    "score": -1.74,
+    "score": -2.54,
     "spec": {
      "line": 4.5,
      "side": "under",
@@ -9893,13 +9916,13 @@
   ]
  },
  "checked": {
-  "id1000032566887158": "2026-11-18T04:15:36Z",
-  "id1000032566887164": "2026-11-18T04:15:36Z",
-  "id1000032566887168": "2026-11-18T04:15:36Z",
-  "id1000032566887170": "2026-11-18T04:15:36Z",
-  "id1000032566887172": "2026-11-18T04:15:36Z",
-  "id1000032566887176": "2026-11-18T04:15:36Z",
-  "id1000229876482690": "2026-11-18T04:15:36Z"
+  "id1000032566887158": "2026-11-18T04:20:31Z",
+  "id1000032566887164": "2026-11-18T04:20:31Z",
+  "id1000032566887168": "2026-11-18T04:20:31Z",
+  "id1000032566887170": "2026-11-18T04:20:31Z",
+  "id1000032566887172": "2026-11-18T04:20:31Z",
+  "id1000032566887176": "2026-11-18T04:20:31Z",
+  "id1000229876482690": "2026-11-18T04:20:31Z"
  },
  "diag": {
   "2026-11-16": {
