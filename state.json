@@ -8673,7 +8673,7 @@
     "outcome": "10804",
     "price": 2.42,
     "prob": 0.4346,
-    "sb": 2.2,
+    "sb": 1.97,
     "score": 5.17,
     "spec": {
      "line": 9.5,
@@ -8696,7 +8696,7 @@
     "outcome": "10808",
     "price": 1.87,
     "prob": 0.5438,
-    "sb": 1.8,
+    "sb": 1.64,
     "score": 1.69,
     "spec": {
      "line": 10.5,
@@ -9074,8 +9074,8 @@
    {
     "book": "stoiximan",
     "drop": 1.8,
-    "edge": -2.0,
-    "fair": 1.989,
+    "edge": -1.5,
+    "fair": 1.979,
     "fid": "id1000024276573130",
     "group": "1x2",
     "label": "1 (Seattle)",
@@ -9084,9 +9084,9 @@
     "model_p": null,
     "outcome": "101",
     "price": 1.95,
-    "prob": 0.5028,
+    "prob": 0.5053,
     "sb": 1.97,
-    "score": -1.42,
+    "score": -0.93,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -9095,7 +9095,7 @@
    },
    {
     "book": "stoiximan",
-    "drop": -13.8,
+    "drop": -14.3,
     "edge": -2.7,
     "fair": 2.569,
     "fid": "id1000024276573130",
@@ -9118,9 +9118,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -9.3,
+    "drop": -9.5,
     "edge": -2.9,
-    "fair": 1.669,
+    "fair": 1.668,
     "fid": "id1000024276573130",
     "group": "goals",
     "label": "Over 2.5 γκολ",
@@ -9129,9 +9129,9 @@
     "model_p": null,
     "outcome": "1010",
     "price": 1.62,
-    "prob": 0.5992,
-    "sb": 1.59,
-    "score": -2.94,
+    "prob": 0.5995,
+    "sb": 1.6,
+    "score": -2.88,
     "spec": {
      "line": 2.5,
      "side": "over",
@@ -9141,23 +9141,23 @@
    },
    {
     "book": "stoiximan",
-    "drop": -4.3,
-    "edge": -3.1,
-    "fair": 1.238,
+    "drop": 3.6,
+    "edge": -4.0,
+    "fair": 1.281,
     "fid": "id1000024276573130",
     "group": "goals",
-    "label": "Over 1.5 γκολ",
-    "market": "108",
+    "label": "Under 4.5 γκολ",
+    "market": "1014",
     "match": "🇺🇸 Seattle – Salt Lake",
     "model_p": null,
-    "outcome": "108",
-    "price": 1.2,
-    "prob": 0.8078,
-    "sb": 1.18,
-    "score": -3.07,
+    "outcome": "1015",
+    "price": 1.23,
+    "prob": 0.7806,
+    "sb": 1.21,
+    "score": -2.9,
     "spec": {
-     "line": 1.5,
-     "side": "over",
+     "line": 4.5,
+     "side": "under",
      "stat": "goals"
     },
     "start": "2026-11-20T03:00:00.000Z"
@@ -9199,6 +9199,28 @@
    },
    {
     "book": "stoiximan",
+    "drop": 7.6,
+    "edge": 0.3,
+    "fair": 1.596,
+    "fid": "id1000032566887160",
+    "group": "1x2",
+    "label": "1 (Vasco da Gama)",
+    "market": "101",
+    "match": "🇧🇷 Vasco da Gama – Internacional",
+    "model_p": null,
+    "outcome": "101",
+    "price": 1.6,
+    "prob": 0.6266,
+    "sb": 1.53,
+    "score": 2.54,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-11-19T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 14.4,
     "edge": -3.1,
     "fair": 1.992,
@@ -9217,28 +9239,6 @@
      "line": 4.5,
      "side": "under",
      "stat": "cards"
-    },
-    "start": "2026-11-19T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 6.3,
-    "edge": -1.2,
-    "fair": 1.619,
-    "fid": "id1000032566887160",
-    "group": "1x2",
-    "label": "1 (Vasco da Gama)",
-    "market": "101",
-    "match": "🇧🇷 Vasco da Gama – Internacional",
-    "model_p": null,
-    "outcome": "101",
-    "price": 1.6,
-    "prob": 0.6177,
-    "sb": 1.55,
-    "score": 0.72,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
     },
     "start": "2026-11-19T22:30:00.000Z"
    },
@@ -9267,9 +9267,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -2.5,
-    "edge": -2.5,
-    "fair": 1.22,
+    "drop": -2.8,
+    "edge": -2.7,
+    "fair": 1.223,
     "fid": "id1000032566887160",
     "group": "goals",
     "label": "Under 4.5 γκολ",
@@ -9278,9 +9278,9 @@
     "model_p": null,
     "outcome": "1015",
     "price": 1.19,
-    "prob": 0.8197,
+    "prob": 0.8177,
     "sb": 1.17,
-    "score": -2.46,
+    "score": -2.7,
     "spec": {
      "line": 4.5,
      "side": "under",
@@ -9290,9 +9290,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -3.7,
-    "edge": -2.8,
-    "fair": 1.512,
+    "drop": -4.2,
+    "edge": -3.2,
+    "fair": 1.518,
     "fid": "id1000032566887160",
     "group": "goals",
     "label": "Under 3.5 γκολ",
@@ -9301,9 +9301,9 @@
     "model_p": null,
     "outcome": "1013",
     "price": 1.47,
-    "prob": 0.6614,
+    "prob": 0.6588,
     "sb": 1.44,
-    "score": -2.78,
+    "score": -3.16,
     "spec": {
      "line": 3.5,
      "side": "under",
@@ -9313,23 +9313,23 @@
    },
    {
     "book": "stoiximan",
-    "drop": -5.8,
-    "edge": -2.9,
-    "fair": 2.245,
+    "drop": 0.0,
+    "edge": -3.2,
+    "fair": 1.281,
     "fid": "id1000032566887160",
     "group": "goals",
-    "label": "Under 2.5 γκολ",
-    "market": "1010",
+    "label": "Over 1.5 γκολ",
+    "market": "108",
     "match": "🇧🇷 Vasco da Gama – Internacional",
     "model_p": null,
-    "outcome": "1011",
-    "price": 2.18,
-    "prob": 0.4454,
-    "sb": 2.12,
-    "score": -2.9,
+    "outcome": "108",
+    "price": 1.24,
+    "prob": 0.7806,
+    "sb": 1.22,
+    "score": -3.2,
     "spec": {
-     "line": 2.5,
-     "side": "under",
+     "line": 1.5,
+     "side": "over",
      "stat": "goals"
     },
     "start": "2026-11-19T22:30:00.000Z"
@@ -9354,29 +9354,6 @@
      "line": 3.5,
      "side": "over",
      "stat": "cards"
-    },
-    "start": "2026-11-19T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -2.0,
-    "edge": -3.8,
-    "fair": 1.58,
-    "fid": "id1000032566887160",
-    "group": "ht",
-    "label": "Ημίχρονο Under 1.5 γκολ",
-    "market": "10258",
-    "match": "🇧🇷 Vasco da Gama – Internacional",
-    "model_p": null,
-    "outcome": "10259",
-    "price": 1.52,
-    "prob": 0.6329,
-    "sb": 1.53,
-    "score": -3.8,
-    "spec": {
-     "line": 1.5,
-     "side": "under",
-     "stat": "ht"
     },
     "start": "2026-11-19T22:30:00.000Z"
    }
@@ -9752,14 +9729,14 @@
   ]
  },
  "checked": {
-  "id1000004772044406": "2026-11-19T14:55:25Z",
-  "id1000021476860576": "2026-11-19T14:55:25Z",
-  "id1000024276573128": "2026-11-19T14:55:25Z",
-  "id1000024276573130": "2026-11-19T14:55:25Z",
-  "id1000032566887160": "2026-11-19T14:55:25Z",
-  "id1000032566887162": "2026-11-19T14:55:25Z",
-  "id1000032566887174": "2026-11-19T14:55:25Z",
-  "id1000051572398828": "2026-11-19T14:55:25Z"
+  "id1000004772044406": "2026-11-19T15:00:57Z",
+  "id1000021476860576": "2026-11-19T15:00:57Z",
+  "id1000024276573128": "2026-11-19T15:00:57Z",
+  "id1000024276573130": "2026-11-19T15:00:57Z",
+  "id1000032566887160": "2026-11-19T15:00:57Z",
+  "id1000032566887162": "2026-11-19T15:00:57Z",
+  "id1000032566887174": "2026-11-19T15:00:57Z",
+  "id1000051572398828": "2026-11-19T15:00:57Z"
  },
  "diag": {
   "2026-11-17": {
