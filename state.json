@@ -8651,9 +8651,9 @@
   "id1000004772044406": [
    {
     "book": "stoiximan",
-    "drop": 14.4,
-    "edge": 3.5,
-    "fair": 2.078,
+    "drop": 13.1,
+    "edge": 1.6,
+    "fair": 2.117,
     "fid": "id1000004772044406",
     "fxi": {
      "categoryName": "Denmark",
@@ -8672,57 +8672,11 @@
     "model_p": null,
     "outcome": "10807",
     "price": 2.15,
-    "prob": 0.4812,
-    "sb": 2.0,
-    "score": 7.77,
+    "prob": 0.4724,
+    "sb": 2.1,
+    "score": 5.49,
     "spec": {
      "line": 10.5,
-     "side": "over",
-     "stat": "corners"
-    },
-    "start": "2026-11-19T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.4,
-    "edge": 2.4,
-    "fair": 2.783,
-    "fid": "id1000004772044406",
-    "group": "corners",
-    "label": "Κόρνερ Over 11.5",
-    "market": "10811",
-    "match": "🇩🇰 Fredericia – Hillerod",
-    "model_p": null,
-    "outcome": "10811",
-    "price": 2.85,
-    "prob": 0.3593,
-    "sb": 2.47,
-    "score": 2.52,
-    "spec": {
-     "line": 11.5,
-     "side": "over",
-     "stat": "corners"
-    },
-    "start": "2026-11-19T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 11.9,
-    "edge": -3.2,
-    "fair": 1.725,
-    "fid": "id1000004772044406",
-    "group": "corners",
-    "label": "Κόρνερ Over 9.5",
-    "market": "10803",
-    "match": "🇩🇰 Fredericia – Hillerod",
-    "model_p": null,
-    "outcome": "10803",
-    "price": 1.67,
-    "prob": 0.5797,
-    "sb": 1.66,
-    "score": 0.38,
-    "spec": {
-     "line": 9.5,
      "side": "over",
      "stat": "corners"
     },
@@ -8840,6 +8794,132 @@
      "stat": "goals"
     },
     "start": "2026-11-19T18:00:00.000Z"
+   }
+  ],
+  "id1000009872735908": [
+   {
+    "book": "stoiximan",
+    "drop": 0.8,
+    "edge": 0.5,
+    "fair": 1.433,
+    "fid": "id1000009872735908",
+    "fxi": {
+     "categoryName": "Turkiye",
+     "categorySlug": "turkiye",
+     "participant1Name": "Igdir FK",
+     "participant1ShortName": "Igdir",
+     "participant2Name": "Umraniyespor",
+     "participant2ShortName": "Umraniye",
+     "startTime": "2026-11-20T17:00:00.000Z",
+     "tournamentName": "1. Lig"
+    },
+    "group": "ht",
+    "label": "Ημίχρονο Over 0.5 γκολ",
+    "market": "10256",
+    "match": "🇹🇷 Igdir – Umraniye",
+    "model_p": null,
+    "outcome": "10256",
+    "price": 1.44,
+    "prob": 0.6978,
+    "sb": 1.36,
+    "score": 0.73,
+    "spec": {
+     "line": 0.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-11-20T17:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 3.5,
+    "edge": -3.0,
+    "fair": 2.937,
+    "fid": "id1000009872735908",
+    "group": "ht",
+    "label": "Ημίχρονο Over 1.5 γκολ",
+    "market": "10258",
+    "match": "🇹🇷 Igdir – Umraniye",
+    "model_p": null,
+    "outcome": "10258",
+    "price": 2.85,
+    "prob": 0.3405,
+    "sb": 2.65,
+    "score": -1.91,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-11-20T17:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 2.9,
+    "edge": -3.8,
+    "fair": 1.975,
+    "fid": "id1000009872735908",
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇹🇷 Igdir – Umraniye",
+    "model_p": null,
+    "outcome": "1010",
+    "price": 1.9,
+    "prob": 0.5063,
+    "sb": 1.83,
+    "score": -2.91,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-20T17:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.9,
+    "edge": -3.3,
+    "fair": 1.355,
+    "fid": "id1000009872735908",
+    "group": "goals",
+    "label": "Over 1.5 γκολ",
+    "market": "108",
+    "match": "🇹🇷 Igdir – Umraniye",
+    "model_p": null,
+    "outcome": "108",
+    "price": 1.31,
+    "prob": 0.738,
+    "sb": 1.26,
+    "score": -3.06,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-20T17:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.7,
+    "edge": -4.0,
+    "fair": 1.895,
+    "fid": "id1000009872735908",
+    "group": "1x2",
+    "label": "1 (Igdir)",
+    "market": "101",
+    "match": "🇹🇷 Igdir – Umraniye",
+    "model_p": null,
+    "outcome": "101",
+    "price": 1.82,
+    "prob": 0.5277,
+    "sb": 1.88,
+    "score": -3.76,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-11-20T17:00:00.000Z"
    }
   ],
   "id1000015272388104": [
@@ -9060,6 +9140,247 @@
     "start": "2026-11-20T15:30:00.000Z"
    }
   ],
+  "id1000020272043338": [
+   {
+    "book": "stoiximan",
+    "drop": 24.8,
+    "edge": -3.0,
+    "fair": 2.65,
+    "fid": "id1000020272043338",
+    "fxi": {
+     "categoryName": "Poland",
+     "categorySlug": "poland",
+     "participant1Name": "GKS Piast Gliwice",
+     "participant1ShortName": "Gliwice",
+     "participant2Name": "Korona Kielce",
+     "participant2ShortName": "Korona Kielce",
+     "startTime": "2026-11-20T17:00:00.000Z",
+     "tournamentName": "Ekstraklasa"
+    },
+    "group": "1x2",
+    "label": "2 (Korona Kielce)",
+    "market": "101",
+    "match": "🇵🇱 Gliwice – Korona Kielce",
+    "model_p": null,
+    "outcome": "103",
+    "price": 2.57,
+    "prob": 0.3774,
+    "sb": 2.6,
+    "score": 2.98,
+    "spec": {
+     "side": "2",
+     "stat": "1x2"
+    },
+    "start": "2026-11-20T17:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 4.1,
+    "edge": -3.9,
+    "fair": 1.269,
+    "fid": "id1000020272043338",
+    "group": "goals",
+    "label": "Over 1.5 γκολ",
+    "market": "108",
+    "match": "🇵🇱 Gliwice – Korona Kielce",
+    "model_p": null,
+    "outcome": "108",
+    "price": 1.22,
+    "prob": 0.788,
+    "sb": 1.2,
+    "score": -2.62,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-20T17:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -1.4,
+    "edge": -3.3,
+    "fair": 1.23,
+    "fid": "id1000020272043338",
+    "group": "goals",
+    "label": "Under 4.5 γκολ",
+    "market": "1014",
+    "match": "🇵🇱 Gliwice – Korona Kielce",
+    "model_p": null,
+    "outcome": "1015",
+    "price": 1.19,
+    "prob": 0.813,
+    "sb": 1.16,
+    "score": -3.25,
+    "spec": {
+     "line": 4.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-20T17:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -3.1,
+    "edge": -3.5,
+    "fair": 1.523,
+    "fid": "id1000020272043338",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🇵🇱 Gliwice – Korona Kielce",
+    "model_p": null,
+    "outcome": "1013",
+    "price": 1.47,
+    "prob": 0.6566,
+    "sb": 1.45,
+    "score": -3.48,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-20T17:00:00.000Z"
+   }
+  ],
+  "id1000020572300886": [
+   {
+    "book": "stoiximan",
+    "drop": 2.1,
+    "edge": -3.7,
+    "fair": 2.493,
+    "fid": "id1000020572300886",
+    "fxi": {
+     "categoryName": "Czechia",
+     "categorySlug": "czechia",
+     "participant1Name": "FK Pribram",
+     "participant1ShortName": "Pribram",
+     "participant2Name": "FK Usti nad Labem",
+     "participant2ShortName": "Usti nad Labem",
+     "startTime": "2026-11-20T17:00:00.000Z",
+     "tournamentName": "FNL"
+    },
+    "group": "ht",
+    "label": "Ημίχρονο Over 1.5 γκολ",
+    "market": "10258",
+    "match": "🇨🇿 Pribram – Usti nad Labem",
+    "model_p": null,
+    "outcome": "10258",
+    "price": 2.4,
+    "prob": 0.4011,
+    "sb": 2.25,
+    "score": -3.1,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-11-20T17:00:00.000Z"
+   }
+  ],
+  "id1000020572587366": [
+   {
+    "book": "stoiximan",
+    "drop": 5.7,
+    "edge": 0.5,
+    "fair": 2.14,
+    "fid": "id1000020572587366",
+    "fxi": {
+     "categoryName": "Czechia",
+     "categorySlug": "czechia",
+     "participant1Name": "MFK Karvina",
+     "participant1ShortName": "Karvina",
+     "participant2Name": "FC Banik Ostrava B",
+     "participant2ShortName": "FC Banik Ostrava B",
+     "startTime": "2026-11-20T17:00:00.000Z",
+     "tournamentName": "FNL"
+    },
+    "group": "goals",
+    "label": "Over 3.5 γκολ",
+    "market": "1012",
+    "match": "🇨🇿 Karvina – FC Banik Ostrava B",
+    "model_p": null,
+    "outcome": "1012",
+    "price": 2.15,
+    "prob": 0.4673,
+    "sb": 2.0,
+    "score": 2.17,
+    "spec": {
+     "line": 3.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-20T17:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 2.4,
+    "edge": 1.2,
+    "fair": 2.174,
+    "fid": "id1000020572587366",
+    "group": "ht",
+    "label": "Ημίχρονο Over 1.5 γκολ",
+    "market": "10258",
+    "match": "🇨🇿 Karvina – FC Banik Ostrava B",
+    "model_p": null,
+    "outcome": "10258",
+    "price": 2.2,
+    "prob": 0.46,
+    "sb": 1.97,
+    "score": 1.91,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-11-20T17:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 3.9,
+    "edge": -0.8,
+    "fair": 1.482,
+    "fid": "id1000020572587366",
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇨🇿 Karvina – FC Banik Ostrava B",
+    "model_p": null,
+    "outcome": "1010",
+    "price": 1.47,
+    "prob": 0.6748,
+    "sb": 1.38,
+    "score": 0.36,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-20T17:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.0,
+    "edge": -3.3,
+    "fair": 1.655,
+    "fid": "id1000020572587366",
+    "group": "btts",
+    "label": "Goal/Goal: Ναι",
+    "market": "104",
+    "match": "🇨🇿 Karvina – FC Banik Ostrava B",
+    "model_p": null,
+    "outcome": "104",
+    "price": 1.6,
+    "prob": 0.6042,
+    "sb": 1.52,
+    "score": -3.32,
+    "spec": {
+     "side": "yes",
+     "stat": "btts"
+    },
+    "start": "2026-11-20T17:00:00.000Z"
+   }
+  ],
   "id1000021476860576": [
    {
     "book": "stoiximan",
@@ -9094,12 +9415,47 @@
     "start": "2026-11-19T17:00:00.000Z"
    }
   ],
+  "id1000022972230868": [
+   {
+    "book": "stoiximan",
+    "drop": 0.9,
+    "edge": -2.0,
+    "fair": 1.47,
+    "fid": "id1000022972230868",
+    "fxi": {
+     "categoryName": "Poland",
+     "categorySlug": "poland",
+     "participant1Name": "Chrobry Glogow",
+     "participant1ShortName": "Glogow",
+     "participant2Name": "Puszcza Niepolomice",
+     "participant2ShortName": "Niepołomice",
+     "startTime": "2026-11-20T17:00:00.000Z",
+     "tournamentName": "1. Liga"
+    },
+    "group": "ht",
+    "label": "Ημίχρονο Over 0.5 γκολ",
+    "market": "10256",
+    "match": "🇵🇱 Glogow – Niepołomice",
+    "model_p": null,
+    "outcome": "10256",
+    "price": 1.44,
+    "prob": 0.6803,
+    "sb": 1.4,
+    "score": -1.78,
+    "spec": {
+     "line": 0.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-11-20T17:00:00.000Z"
+   }
+  ],
   "id1000024276573128": [
    {
     "book": "stoiximan",
-    "drop": 2.2,
-    "edge": -1.8,
-    "fair": 1.528,
+    "drop": 1.9,
+    "edge": -2.0,
+    "fair": 1.531,
     "fid": "id1000024276573128",
     "fxi": {
      "categoryName": "USA",
@@ -9118,9 +9474,9 @@
     "model_p": null,
     "outcome": "1015",
     "price": 1.5,
-    "prob": 0.6545,
+    "prob": 0.6532,
     "sb": 1.42,
-    "score": -1.17,
+    "score": -1.44,
     "spec": {
      "line": 4.5,
      "side": "under",
@@ -9280,9 +9636,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 3.7,
-    "edge": -3.9,
-    "fair": 1.28,
+    "drop": 3.6,
+    "edge": -4.0,
+    "fair": 1.281,
     "fid": "id1000024276573130",
     "group": "goals",
     "label": "Under 4.5 γκολ",
@@ -9291,9 +9647,9 @@
     "model_p": null,
     "outcome": "1015",
     "price": 1.23,
-    "prob": 0.7812,
+    "prob": 0.7806,
     "sb": 1.21,
-    "score": -2.8,
+    "score": -2.9,
     "spec": {
      "line": 4.5,
      "side": "under",
@@ -9349,28 +9705,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 0.5,
-    "edge": -3.8,
-    "fair": 2.006,
-    "fid": "id1000024276573130",
-    "group": "1x2",
-    "label": "1 (Seattle)",
-    "market": "101",
-    "match": "🇺🇸 Seattle – Salt Lake",
-    "model_p": null,
-    "outcome": "101",
-    "price": 1.93,
-    "prob": 0.4985,
-    "sb": 1.92,
-    "score": -3.65,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
-    },
-    "start": "2026-11-20T03:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": -3.7,
     "edge": -3.8,
     "fair": 1.611,
@@ -9388,6 +9722,29 @@
     "spec": {
      "side": "yes",
      "stat": "btts"
+    },
+    "start": "2026-11-20T03:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -9.3,
+    "edge": -3.8,
+    "fair": 1.664,
+    "fid": "id1000024276573130",
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇺🇸 Seattle – Salt Lake",
+    "model_p": null,
+    "outcome": "1010",
+    "price": 1.6,
+    "prob": 0.601,
+    "sb": 1.6,
+    "score": -3.85,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
     },
     "start": "2026-11-20T03:00:00.000Z"
    }
@@ -9451,28 +9808,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 8.0,
-    "edge": -1.3,
-    "fair": 1.591,
-    "fid": "id1000032566887160",
-    "group": "1x2",
-    "label": "1 (Vasco da Gama)",
-    "market": "101",
-    "match": "🇧🇷 Vasco da Gama – Internacional",
-    "model_p": null,
-    "outcome": "101",
-    "price": 1.57,
-    "prob": 0.6285,
-    "sb": 1.53,
-    "score": 1.07,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
-    },
-    "start": "2026-11-19T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 13.6,
     "edge": -3.9,
     "fair": 2.008,
@@ -9491,6 +9826,28 @@
      "line": 4.5,
      "side": "under",
      "stat": "cards"
+    },
+    "start": "2026-11-19T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 8.0,
+    "edge": -2.6,
+    "fair": 1.591,
+    "fid": "id1000032566887160",
+    "group": "1x2",
+    "label": "1 (Vasco da Gama)",
+    "market": "101",
+    "match": "🇧🇷 Vasco da Gama – Internacional",
+    "model_p": null,
+    "outcome": "101",
+    "price": 1.55,
+    "prob": 0.6285,
+    "sb": 1.53,
+    "score": -0.18,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
     },
     "start": "2026-11-19T22:30:00.000Z"
    },
@@ -9611,23 +9968,24 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.5,
-    "edge": -3.7,
-    "fair": 2.128,
+    "drop": -2.6,
+    "edge": -3.8,
+    "fair": 1.59,
     "fid": "id1000032566887160",
-    "group": "btts",
-    "label": "Goal/Goal: Όχι",
-    "market": "104",
+    "group": "ht",
+    "label": "Ημίχρονο Under 1.5 γκολ",
+    "market": "10258",
     "match": "🇧🇷 Vasco da Gama – Internacional",
     "model_p": null,
-    "outcome": "105",
-    "price": 2.05,
-    "prob": 0.4699,
-    "sb": 1.97,
-    "score": -3.67,
+    "outcome": "10259",
+    "price": 1.53,
+    "prob": 0.6289,
+    "sb": 1.53,
+    "score": -3.77,
     "spec": {
-     "side": "no",
-     "stat": "btts"
+     "line": 1.5,
+     "side": "under",
+     "stat": "ht"
     },
     "start": "2026-11-19T22:30:00.000Z"
    }
@@ -9795,6 +10153,29 @@
    },
    {
     "book": "stoiximan",
+    "drop": 3.8,
+    "edge": 1.1,
+    "fair": 2.423,
+    "fid": "id1000032566887174",
+    "group": "corners",
+    "label": "Κόρνερ Under 9.5",
+    "market": "10803",
+    "match": "🇧🇷 Vitoria – Bragantino",
+    "model_p": null,
+    "outcome": "10804",
+    "price": 2.45,
+    "prob": 0.4127,
+    "sb": 2.2,
+    "score": 2.26,
+    "spec": {
+     "line": 9.5,
+     "side": "under",
+     "stat": "corners"
+    },
+    "start": "2026-11-19T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 7.1,
     "edge": -1.4,
     "fair": 2.354,
@@ -9813,29 +10194,6 @@
      "line": 4.5,
      "side": "under",
      "stat": "cards"
-    },
-    "start": "2026-11-19T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 3.8,
-    "edge": -0.9,
-    "fair": 2.423,
-    "fid": "id1000032566887174",
-    "group": "corners",
-    "label": "Κόρνερ Under 9.5",
-    "market": "10803",
-    "match": "🇧🇷 Vitoria – Bragantino",
-    "model_p": null,
-    "outcome": "10804",
-    "price": 2.4,
-    "prob": 0.4127,
-    "sb": 2.2,
-    "score": 0.2,
-    "spec": {
-     "line": 9.5,
-     "side": "under",
-     "stat": "corners"
     },
     "start": "2026-11-19T22:30:00.000Z"
    },
@@ -9864,29 +10222,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 2.5,
-    "edge": -2.3,
-    "fair": 2.477,
-    "fid": "id1000032566887174",
-    "group": "corners",
-    "label": "Κόρνερ Over 11.5",
-    "market": "10811",
-    "match": "🇧🇷 Vitoria – Bragantino",
-    "model_p": null,
-    "outcome": "10811",
-    "price": 2.42,
-    "prob": 0.4037,
-    "sb": 2.32,
-    "score": -1.54,
-    "spec": {
-     "line": 11.5,
-     "side": "over",
-     "stat": "corners"
-    },
-    "start": "2026-11-19T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 3.2,
     "edge": -3.1,
     "fair": 2.754,
@@ -9904,6 +10239,29 @@
     "spec": {
      "side": "1",
      "stat": "1x2"
+    },
+    "start": "2026-11-19T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 2.5,
+    "edge": -3.1,
+    "fair": 2.477,
+    "fid": "id1000032566887174",
+    "group": "corners",
+    "label": "Κόρνερ Over 11.5",
+    "market": "10811",
+    "match": "🇧🇷 Vitoria – Bragantino",
+    "model_p": null,
+    "outcome": "10811",
+    "price": 2.4,
+    "prob": 0.4037,
+    "sb": 2.32,
+    "score": -2.35,
+    "spec": {
+     "line": 11.5,
+     "side": "over",
+     "stat": "corners"
     },
     "start": "2026-11-19T22:30:00.000Z"
    },
@@ -9933,7 +10291,7 @@
    {
     "book": "stoiximan",
     "drop": 2.0,
-    "edge": -3.9,
+    "edge": -3.4,
     "fair": 1.946,
     "fid": "id1000032566887174",
     "group": "corners",
@@ -9942,10 +10300,10 @@
     "match": "🇧🇷 Vitoria – Bragantino",
     "model_p": null,
     "outcome": "10808",
-    "price": 1.87,
+    "price": 1.88,
     "prob": 0.5139,
     "sb": 1.8,
-    "score": -3.32,
+    "score": -2.8,
     "spec": {
      "line": 10.5,
      "side": "under",
@@ -10002,16 +10360,22 @@
   ]
  },
  "checked": {
-  "id1000004772044406": "2026-11-19T16:55:37Z",
-  "id1000015272388104": "2026-11-19T16:55:37Z",
-  "id1000020572300882": "2026-11-19T16:55:37Z",
+  "id1000004772044406": "2026-11-19T17:00:59Z",
+  "id1000009872735908": "2026-11-19T17:00:59Z",
+  "id1000015272388104": "2026-11-19T17:00:59Z",
+  "id1000020272043338": "2026-11-19T17:00:59Z",
+  "id1000020572300882": "2026-11-19T17:00:59Z",
+  "id1000020572300886": "2026-11-19T17:00:59Z",
+  "id1000020572587366": "2026-11-19T17:00:59Z",
   "id1000021476860576": "2026-11-19T16:55:37Z",
-  "id1000024276573128": "2026-11-19T16:55:37Z",
-  "id1000024276573130": "2026-11-19T16:55:37Z",
-  "id1000032566887160": "2026-11-19T16:55:37Z",
-  "id1000032566887162": "2026-11-19T16:55:37Z",
-  "id1000032566887174": "2026-11-19T16:55:37Z",
-  "id1000051572398828": "2026-11-19T16:55:37Z"
+  "id1000022972230868": "2026-11-19T17:00:59Z",
+  "id1000024276573128": "2026-11-19T17:00:59Z",
+  "id1000024276573130": "2026-11-19T17:00:59Z",
+  "id1000032566887160": "2026-11-19T17:00:59Z",
+  "id1000032566887162": "2026-11-19T17:00:59Z",
+  "id1000032566887174": "2026-11-19T17:00:59Z",
+  "id1000051572398826": "2026-11-19T17:00:59Z",
+  "id1000051572398828": "2026-11-19T17:00:59Z"
  },
  "diag": {
   "2026-11-17": {
@@ -10190,13 +10554,19 @@
     "id1000032566887168|101|101|1x2"
    ],
    "drop_edge_neg": [
+    "id1000020272043338|101|103|1x2",
     "id1000032566887168|101|101|1x2"
    ],
    "fixtures": [
     "id1000004772044406",
+    "id1000009872735908",
     "id1000015272388104",
+    "id1000020272043338",
     "id1000020572300882",
+    "id1000020572300886",
+    "id1000020572587366",
     "id1000021476860576",
+    "id1000022972230868",
     "id1000024276573128",
     "id1000024276573130",
     "id1000032566887158",
@@ -10208,6 +10578,7 @@
     "id1000032566887172",
     "id1000032566887174",
     "id1000032566887176",
+    "id1000051572398826",
     "id1000051572398828"
    ],
    "low_limit": [
@@ -10218,6 +10589,15 @@
     "id1000004772044406|101|103|1x2",
     "id1000004772044406|10258|10258|goals",
     "id1000004772044406|10258|10259|goals",
+    "id1000009872735908|1010|1010|goals",
+    "id1000009872735908|1010|1011|goals",
+    "id1000009872735908|101|101|1x2",
+    "id1000009872735908|101|102|1x2",
+    "id1000009872735908|101|103|1x2",
+    "id1000009872735908|10256|10256|goals",
+    "id1000009872735908|10256|10257|goals",
+    "id1000009872735908|10258|10258|goals",
+    "id1000009872735908|10258|10259|goals",
     "id1000015272388104|1010|1010|goals",
     "id1000015272388104|1010|1011|goals",
     "id1000015272388104|101|101|1x2",
@@ -10227,6 +10607,13 @@
     "id1000015272388104|10256|10257|goals",
     "id1000015272388104|10258|10258|goals",
     "id1000015272388104|10258|10259|goals",
+    "id1000020272043338|1010|1010|goals",
+    "id1000020272043338|1010|1011|goals",
+    "id1000020272043338|101|101|1x2",
+    "id1000020272043338|101|102|1x2",
+    "id1000020272043338|101|103|1x2",
+    "id1000020272043338|10258|10258|goals",
+    "id1000020272043338|10258|10259|goals",
     "id1000020572300882|1010|1010|goals",
     "id1000020572300882|1010|1011|goals",
     "id1000020572300882|101|101|1x2",
@@ -10234,6 +10621,20 @@
     "id1000020572300882|101|103|1x2",
     "id1000020572300882|10258|10258|goals",
     "id1000020572300882|10258|10259|goals",
+    "id1000020572300886|1010|1010|goals",
+    "id1000020572300886|1010|1011|goals",
+    "id1000020572300886|101|101|1x2",
+    "id1000020572300886|101|102|1x2",
+    "id1000020572300886|101|103|1x2",
+    "id1000020572300886|10258|10258|goals",
+    "id1000020572300886|10258|10259|goals",
+    "id1000020572587366|1010|1010|goals",
+    "id1000020572587366|1010|1011|goals",
+    "id1000020572587366|101|101|1x2",
+    "id1000020572587366|101|102|1x2",
+    "id1000020572587366|101|103|1x2",
+    "id1000020572587366|10258|10258|goals",
+    "id1000020572587366|10258|10259|goals",
     "id1000021476860576|1010|1010|goals",
     "id1000021476860576|1010|1011|goals",
     "id1000021476860576|101|101|1x2",
@@ -10241,6 +10642,15 @@
     "id1000021476860576|101|103|1x2",
     "id1000021476860576|10258|10258|goals",
     "id1000021476860576|10258|10259|goals",
+    "id1000022972230868|1010|1010|goals",
+    "id1000022972230868|1010|1011|goals",
+    "id1000022972230868|101|101|1x2",
+    "id1000022972230868|101|102|1x2",
+    "id1000022972230868|101|103|1x2",
+    "id1000022972230868|10256|10256|goals",
+    "id1000022972230868|10256|10257|goals",
+    "id1000022972230868|10258|10258|goals",
+    "id1000022972230868|10258|10259|goals",
     "id1000024276573128|1010|1010|goals",
     "id1000024276573128|1010|1011|goals",
     "id1000024276573128|101|101|1x2",
@@ -10317,6 +10727,11 @@
     "id1000032566887176|101|103|1x2",
     "id1000032566887176|10258|10258|goals",
     "id1000032566887176|10258|10259|goals",
+    "id1000051572398826|101|101|1x2",
+    "id1000051572398826|101|102|1x2",
+    "id1000051572398826|101|103|1x2",
+    "id1000051572398826|10258|10258|goals",
+    "id1000051572398826|10258|10259|goals",
     "id1000051572398828|1010|1010|goals",
     "id1000051572398828|1010|1011|goals",
     "id1000051572398828|101|101|1x2",
@@ -10333,11 +10748,20 @@
     "id1000024276573128|1010|1011|goals",
     "id1000032566887168|101|101|1x2"
    ],
+   "small_market": [
+    "id1000020272043338|101|103|1x2"
+   ],
    "too_early": [
     "id1000004772044406|10256|10256|goals",
     "id1000004772044406|10256|10257|goals",
+    "id1000020272043338|10256|10256|goals",
+    "id1000020272043338|10256|10257|goals",
     "id1000020572300882|10256|10256|goals",
     "id1000020572300882|10256|10257|goals",
+    "id1000020572300886|10256|10256|goals",
+    "id1000020572300886|10256|10257|goals",
+    "id1000020572587366|10256|10256|goals",
+    "id1000020572587366|10256|10257|goals",
     "id1000021476860576|10256|10256|goals",
     "id1000021476860576|10256|10257|goals",
     "id1000024276573128|1010|1010|goals",
@@ -10347,6 +10771,10 @@
     "id1000024276573130|10256|10257|goals",
     "id1000032566887160|10256|10256|goals",
     "id1000032566887160|10256|10257|goals",
+    "id1000051572398826|1010|1010|goals",
+    "id1000051572398826|1010|1011|goals",
+    "id1000051572398826|10256|10256|goals",
+    "id1000051572398826|10256|10257|goals",
     "id1000051572398828|10256|10256|goals",
     "id1000051572398828|10256|10257|goals"
    ]
