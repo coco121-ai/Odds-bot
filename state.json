@@ -8856,6 +8856,52 @@
    },
    {
     "book": "stoiximan",
+    "drop": 7.9,
+    "edge": -1.4,
+    "fair": 2.009,
+    "fid": "id1000024276573128",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🇺🇸 Orlando – Cincinnati",
+    "model_p": null,
+    "outcome": "1013",
+    "price": 1.98,
+    "prob": 0.4978,
+    "sb": 1.92,
+    "score": 0.93,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-20T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 6.3,
+    "edge": -2.0,
+    "fair": 1.47,
+    "fid": "id1000024276573128",
+    "group": "goals",
+    "label": "Under 4.5 γκολ",
+    "market": "1014",
+    "match": "🇺🇸 Orlando – Cincinnati",
+    "model_p": null,
+    "outcome": "1015",
+    "price": 1.44,
+    "prob": 0.6803,
+    "sb": 1.39,
+    "score": -0.16,
+    "spec": {
+     "line": 4.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-20T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 8.7,
     "edge": -2.9,
     "fair": 3.294,
@@ -8872,52 +8918,6 @@
     "score": -0.24,
     "spec": {
      "line": 2.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-20T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 7.9,
-    "edge": -2.9,
-    "fair": 2.009,
-    "fid": "id1000024276573128",
-    "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
-    "match": "🇺🇸 Orlando – Cincinnati",
-    "model_p": null,
-    "outcome": "1013",
-    "price": 1.95,
-    "prob": 0.4978,
-    "sb": 1.92,
-    "score": -0.56,
-    "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-20T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 6.3,
-    "edge": -3.4,
-    "fair": 1.47,
-    "fid": "id1000024276573128",
-    "group": "goals",
-    "label": "Under 4.5 γκολ",
-    "market": "1014",
-    "match": "🇺🇸 Orlando – Cincinnati",
-    "model_p": null,
-    "outcome": "1015",
-    "price": 1.42,
-    "prob": 0.6803,
-    "sb": 1.39,
-    "score": -1.52,
-    "spec": {
-     "line": 4.5,
      "side": "under",
      "stat": "goals"
     },
@@ -9730,13 +9730,13 @@
   ]
  },
  "checked": {
-  "id1000004772044406": "2026-11-19T09:20:29Z",
-  "id1000021476860576": "2026-11-19T09:20:29Z",
-  "id1000024276573128": "2026-11-19T09:20:29Z",
-  "id1000024276573130": "2026-11-19T09:20:29Z",
-  "id1000032566887160": "2026-11-19T09:20:29Z",
-  "id1000032566887162": "2026-11-19T09:20:29Z",
-  "id1000032566887174": "2026-11-19T09:20:29Z"
+  "id1000004772044406": "2026-11-19T09:25:21Z",
+  "id1000021476860576": "2026-11-19T09:25:21Z",
+  "id1000024276573128": "2026-11-19T09:25:21Z",
+  "id1000024276573130": "2026-11-19T09:25:21Z",
+  "id1000032566887160": "2026-11-19T09:25:21Z",
+  "id1000032566887162": "2026-11-19T09:25:21Z",
+  "id1000032566887174": "2026-11-19T09:25:21Z"
  },
  "diag": {
   "2026-11-17": {
