@@ -4959,6 +4959,7 @@
    "pnl": -0.0,
    "price": 1.95,
    "replied": false,
+   "reported": true,
    "result": "LOSE",
    "sent_at": "2026-10-25T20:20:49Z",
    "settled_at": "2026-11-18T22:00:44Z",
@@ -6320,6 +6321,7 @@
    "pnl": -0.0,
    "price": 1.9,
    "replied": false,
+   "reported": true,
    "result": "LOSE",
    "sent_at": "2026-10-26T08:01:18Z",
    "settled_at": "2026-11-18T22:00:44Z",
@@ -9027,32 +9029,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -6.9,
-    "edge": -2.7,
-    "fair": 2.414,
-    "fid": "id1000024276573130",
-    "group": "goals",
-    "label": "Over 3.5 γκολ",
-    "market": "1012",
-    "match": "🇺🇸 Seattle – Salt Lake",
-    "model_p": null,
-    "outcome": "1012",
-    "price": 2.35,
-    "prob": 0.4143,
-    "sb": 2.3,
-    "score": -2.65,
-    "spec": {
-     "line": 3.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-20T03:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -0.5,
-    "edge": -2.7,
-    "fair": 2.035,
+    "drop": 0.0,
+    "edge": -2.2,
+    "fair": 2.025,
     "fid": "id1000024276573130",
     "group": "1x2",
     "label": "1 (Seattle)",
@@ -9061,12 +9040,35 @@
     "model_p": null,
     "outcome": "101",
     "price": 1.98,
-    "prob": 0.4914,
+    "prob": 0.4938,
     "sb": 1.97,
-    "score": -2.7,
+    "score": -2.22,
     "spec": {
      "side": "1",
      "stat": "1x2"
+    },
+    "start": "2026-11-20T03:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -6.5,
+    "edge": -2.2,
+    "fair": 2.404,
+    "fid": "id1000024276573130",
+    "group": "goals",
+    "label": "Over 3.5 γκολ",
+    "market": "1012",
+    "match": "🇺🇸 Seattle – Salt Lake",
+    "model_p": null,
+    "outcome": "1012",
+    "price": 2.35,
+    "prob": 0.416,
+    "sb": 2.3,
+    "score": -2.25,
+    "spec": {
+     "line": 3.5,
+     "side": "over",
+     "stat": "goals"
     },
     "start": "2026-11-20T03:00:00.000Z"
    },
@@ -9096,8 +9098,8 @@
    {
     "book": "stoiximan",
     "drop": -0.9,
-    "edge": -3.3,
-    "fair": 2.327,
+    "edge": -3.1,
+    "fair": 2.323,
     "fid": "id1000024276573130",
     "group": "ht",
     "label": "Ημίχρονο Over 1.5 γκολ",
@@ -9106,9 +9108,9 @@
     "model_p": null,
     "outcome": "10258",
     "price": 2.25,
-    "prob": 0.4297,
+    "prob": 0.4305,
     "sb": 2.2,
-    "score": -3.31,
+    "score": -3.14,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -9199,9 +9201,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 3.1,
-    "edge": -0.8,
-    "fair": 2.892,
+    "drop": 3.5,
+    "edge": -0.6,
+    "fair": 2.886,
     "fid": "id1000032566887160",
     "group": "goals",
     "label": "Over 3.5 γκολ",
@@ -9210,13 +9212,35 @@
     "model_p": null,
     "outcome": "1012",
     "price": 2.87,
-    "prob": 0.3458,
+    "prob": 0.3465,
     "sb": 2.75,
-    "score": 0.18,
+    "score": 0.49,
     "spec": {
      "line": 3.5,
      "side": "over",
      "stat": "goals"
+    },
+    "start": "2026-11-19T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 5.1,
+    "edge": -1.9,
+    "fair": 1.651,
+    "fid": "id1000032566887160",
+    "group": "1x2",
+    "label": "1 (Vasco da Gama)",
+    "market": "101",
+    "match": "🇧🇷 Vasco da Gama – Internacional",
+    "model_p": null,
+    "outcome": "101",
+    "price": 1.62,
+    "prob": 0.6057,
+    "sb": 1.6,
+    "score": -0.36,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
     },
     "start": "2026-11-19T22:30:00.000Z"
    },
@@ -9245,28 +9269,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 4.4,
-    "edge": -2.4,
-    "fair": 1.66,
-    "fid": "id1000032566887160",
-    "group": "1x2",
-    "label": "1 (Vasco da Gama)",
-    "market": "101",
-    "match": "🇧🇷 Vasco da Gama – Internacional",
-    "model_p": null,
-    "outcome": "101",
-    "price": 1.62,
-    "prob": 0.6024,
-    "sb": 1.6,
-    "score": -1.09,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
-    },
-    "start": "2026-11-19T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 0.7,
     "edge": -2.2,
     "fair": 1.278,
@@ -9285,6 +9287,29 @@
      "line": 1.5,
      "side": "over",
      "stat": "goals"
+    },
+    "start": "2026-11-19T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 3.8,
+    "edge": -3.9,
+    "fair": 2.674,
+    "fid": "id1000032566887160",
+    "group": "ht",
+    "label": "Ημίχρονο Over 1.5 γκολ",
+    "market": "10258",
+    "match": "🇧🇷 Vasco da Gama – Internacional",
+    "model_p": null,
+    "outcome": "10258",
+    "price": 2.57,
+    "prob": 0.374,
+    "sb": 2.42,
+    "score": -2.76,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "ht"
     },
     "start": "2026-11-19T22:30:00.000Z"
    }
@@ -9682,13 +9707,13 @@
   ]
  },
  "checked": {
-  "id1000004772044406": "2026-11-19T08:25:27Z",
-  "id1000021476860576": "2026-11-19T08:25:27Z",
-  "id1000024276573128": "2026-11-19T08:25:27Z",
-  "id1000024276573130": "2026-11-19T08:25:27Z",
-  "id1000032566887160": "2026-11-19T08:25:27Z",
-  "id1000032566887162": "2026-11-19T08:25:27Z",
-  "id1000032566887174": "2026-11-19T08:25:27Z"
+  "id1000004772044406": "2026-11-19T08:30:38Z",
+  "id1000021476860576": "2026-11-19T08:30:38Z",
+  "id1000024276573128": "2026-11-19T08:30:38Z",
+  "id1000024276573130": "2026-11-19T08:30:38Z",
+  "id1000032566887160": "2026-11-19T08:30:38Z",
+  "id1000032566887162": "2026-11-19T08:30:38Z",
+  "id1000032566887174": "2026-11-19T08:30:38Z"
  },
  "diag": {
   "2026-11-17": {
@@ -12991,7 +13016,7 @@
   }
  ],
  "fixtures_fetched_at": "2026-11-19T06:45:38Z",
- "last_report": "2026-11-18",
+ "last_report": "2026-11-19",
  "market_catalog": [
   {
    "handicap": 0.0,
