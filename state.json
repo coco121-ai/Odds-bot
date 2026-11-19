@@ -9270,9 +9270,9 @@
   "id1000032566887160": [
    {
     "book": "stoiximan",
-    "drop": 12.2,
-    "edge": -1.7,
-    "fair": 1.526,
+    "drop": 6.3,
+    "edge": 2.2,
+    "fair": 2.201,
     "fid": "id1000032566887160",
     "fxi": {
      "categoryName": "Brazil",
@@ -9284,6 +9284,29 @@
      "startTime": "2026-11-19T22:30:00.000Z",
      "tournamentName": "Brasileiro Serie A"
     },
+    "group": "corners",
+    "label": "Κόρνερ Over 10.5",
+    "market": "10807",
+    "match": "🇧🇷 Vasco da Gama – Internacional",
+    "model_p": null,
+    "outcome": "10807",
+    "price": 2.25,
+    "prob": 0.4543,
+    "sb": 2.07,
+    "score": 4.13,
+    "spec": {
+     "line": 10.5,
+     "side": "over",
+     "stat": "corners"
+    },
+    "start": "2026-11-19T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 12.2,
+    "edge": -1.7,
+    "fair": 1.526,
+    "fid": "id1000032566887160",
     "group": "cards",
     "label": "Κάρτες Under 5.5",
     "market": "10934",
@@ -9325,29 +9348,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 3.6,
-    "edge": -0.8,
-    "fair": 2.268,
-    "fid": "id1000032566887160",
-    "group": "corners",
-    "label": "Κόρνερ Over 10.5",
-    "market": "10807",
-    "match": "🇧🇷 Vasco da Gama – Internacional",
-    "model_p": null,
-    "outcome": "10807",
-    "price": 2.25,
-    "prob": 0.4409,
-    "sb": 2.07,
-    "score": 0.29,
-    "spec": {
-     "line": 10.5,
-     "side": "over",
-     "stat": "corners"
-    },
-    "start": "2026-11-19T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 13.6,
     "edge": -3.9,
     "fair": 2.008,
@@ -9366,6 +9366,29 @@
      "line": 4.5,
      "side": "under",
      "stat": "cards"
+    },
+    "start": "2026-11-19T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 5.0,
+    "edge": -1.9,
+    "fair": 1.783,
+    "fid": "id1000032566887160",
+    "group": "corners",
+    "label": "Κόρνερ Over 9.5",
+    "market": "10803",
+    "match": "🇧🇷 Vasco da Gama – Internacional",
+    "model_p": null,
+    "outcome": "10803",
+    "price": 1.75,
+    "prob": 0.5609,
+    "sb": 1.7,
+    "score": -0.35,
+    "spec": {
+     "line": 9.5,
+     "side": "over",
+     "stat": "corners"
     },
     "start": "2026-11-19T22:30:00.000Z"
    },
@@ -9482,29 +9505,6 @@
      "stat": "btts"
     },
     "start": "2026-11-19T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -2.6,
-    "edge": -3.8,
-    "fair": 1.59,
-    "fid": "id1000032566887160",
-    "group": "ht",
-    "label": "Ημίχρονο Under 1.5 γκολ",
-    "market": "10258",
-    "match": "🇧🇷 Vasco da Gama – Internacional",
-    "model_p": null,
-    "outcome": "10259",
-    "price": 1.53,
-    "prob": 0.6289,
-    "sb": 1.53,
-    "score": -3.77,
-    "spec": {
-     "line": 1.5,
-     "side": "under",
-     "stat": "ht"
-    },
-    "start": "2026-11-19T22:30:00.000Z"
    }
   ],
   "id1000032566887162": [
@@ -9584,6 +9584,28 @@
      "line": 0.5,
      "side": "over",
      "stat": "ht"
+    },
+    "start": "2026-11-20T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 9.1,
+    "edge": -3.8,
+    "fair": 3.066,
+    "fid": "id1000032566887162",
+    "group": "1x2",
+    "label": "2 (Fluminense)",
+    "market": "101",
+    "match": "🇧🇷 Sao Paulo – Fluminense",
+    "model_p": null,
+    "outcome": "103",
+    "price": 2.95,
+    "prob": 0.3262,
+    "sb": 2.92,
+    "score": -1.05,
+    "spec": {
+     "side": "2",
+     "stat": "1x2"
     },
     "start": "2026-11-20T00:30:00.000Z"
    },
@@ -9877,16 +9899,16 @@
   ]
  },
  "checked": {
-  "id1000004772044406": "2026-11-19T16:00:48Z",
-  "id1000015272388104": "2026-11-19T16:00:48Z",
-  "id1000020572300882": "2026-11-19T16:00:48Z",
-  "id1000021476860576": "2026-11-19T16:00:48Z",
-  "id1000024276573128": "2026-11-19T16:00:48Z",
-  "id1000024276573130": "2026-11-19T16:00:48Z",
-  "id1000032566887160": "2026-11-19T16:00:48Z",
-  "id1000032566887162": "2026-11-19T16:00:48Z",
-  "id1000032566887174": "2026-11-19T16:00:48Z",
-  "id1000051572398828": "2026-11-19T16:00:48Z"
+  "id1000004772044406": "2026-11-19T16:05:25Z",
+  "id1000015272388104": "2026-11-19T16:05:25Z",
+  "id1000020572300882": "2026-11-19T16:05:25Z",
+  "id1000021476860576": "2026-11-19T16:05:25Z",
+  "id1000024276573128": "2026-11-19T16:05:25Z",
+  "id1000024276573130": "2026-11-19T16:05:25Z",
+  "id1000032566887160": "2026-11-19T16:05:25Z",
+  "id1000032566887162": "2026-11-19T16:05:25Z",
+  "id1000032566887174": "2026-11-19T16:05:25Z",
+  "id1000051572398828": "2026-11-19T16:05:25Z"
  },
  "diag": {
   "2026-11-17": {
