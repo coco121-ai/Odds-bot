@@ -8856,52 +8856,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 7.9,
-    "edge": -1.4,
-    "fair": 2.009,
-    "fid": "id1000024276573128",
-    "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
-    "match": "🇺🇸 Orlando – Cincinnati",
-    "model_p": null,
-    "outcome": "1013",
-    "price": 1.98,
-    "prob": 0.4978,
-    "sb": 1.92,
-    "score": 0.93,
-    "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-20T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 6.3,
-    "edge": -2.0,
-    "fair": 1.47,
-    "fid": "id1000024276573128",
-    "group": "goals",
-    "label": "Under 4.5 γκολ",
-    "market": "1014",
-    "match": "🇺🇸 Orlando – Cincinnati",
-    "model_p": null,
-    "outcome": "1015",
-    "price": 1.44,
-    "prob": 0.6803,
-    "sb": 1.39,
-    "score": -0.16,
-    "spec": {
-     "line": 4.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-20T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 8.7,
     "edge": -2.9,
     "fair": 3.294,
@@ -8918,6 +8872,52 @@
     "score": -0.24,
     "spec": {
      "line": 2.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-20T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 7.9,
+    "edge": -2.9,
+    "fair": 2.009,
+    "fid": "id1000024276573128",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🇺🇸 Orlando – Cincinnati",
+    "model_p": null,
+    "outcome": "1013",
+    "price": 1.95,
+    "prob": 0.4978,
+    "sb": 1.92,
+    "score": -0.56,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-20T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 6.3,
+    "edge": -3.4,
+    "fair": 1.47,
+    "fid": "id1000024276573128",
+    "group": "goals",
+    "label": "Under 4.5 γκολ",
+    "market": "1014",
+    "match": "🇺🇸 Orlando – Cincinnati",
+    "model_p": null,
+    "outcome": "1015",
+    "price": 1.42,
+    "prob": 0.6803,
+    "sb": 1.39,
+    "score": -1.52,
+    "spec": {
+     "line": 4.5,
      "side": "under",
      "stat": "goals"
     },
@@ -9178,9 +9178,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 5.7,
-    "edge": -1.2,
-    "fair": 1.64,
+    "drop": 5.5,
+    "edge": -1.4,
+    "fair": 1.643,
     "fid": "id1000032566887160",
     "group": "1x2",
     "label": "1 (Vasco da Gama)",
@@ -9189,9 +9189,9 @@
     "model_p": null,
     "outcome": "101",
     "price": 1.62,
-    "prob": 0.6098,
+    "prob": 0.6086,
     "sb": 1.58,
-    "score": 0.49,
+    "score": 0.24,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -9201,8 +9201,8 @@
    {
     "book": "stoiximan",
     "drop": 3.5,
-    "edge": -1.1,
-    "fair": 2.883,
+    "edge": -1.2,
+    "fair": 2.886,
     "fid": "id1000032566887160",
     "group": "goals",
     "label": "Over 3.5 γκολ",
@@ -9211,9 +9211,9 @@
     "model_p": null,
     "outcome": "1012",
     "price": 2.85,
-    "prob": 0.3469,
+    "prob": 0.3465,
     "sb": 2.75,
-    "score": -0.1,
+    "score": -0.2,
     "spec": {
      "line": 3.5,
      "side": "over",
@@ -9269,7 +9269,7 @@
    },
    {
     "book": "stoiximan",
-    "drop": 0.8,
+    "drop": 0.7,
     "edge": -2.1,
     "fair": 1.277,
     "fid": "id1000032566887160",
@@ -9282,7 +9282,7 @@
     "price": 1.25,
     "prob": 0.7831,
     "sb": 1.22,
-    "score": -1.87,
+    "score": -1.9,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -9753,13 +9753,13 @@
   ]
  },
  "checked": {
-  "id1000004772044406": "2026-11-19T10:00:56Z",
-  "id1000021476860576": "2026-11-19T10:00:56Z",
-  "id1000024276573128": "2026-11-19T10:00:56Z",
-  "id1000024276573130": "2026-11-19T10:00:56Z",
-  "id1000032566887160": "2026-11-19T10:00:56Z",
-  "id1000032566887162": "2026-11-19T10:00:56Z",
-  "id1000032566887174": "2026-11-19T10:00:56Z"
+  "id1000004772044406": "2026-11-19T10:05:24Z",
+  "id1000021476860576": "2026-11-19T10:05:24Z",
+  "id1000024276573128": "2026-11-19T10:05:24Z",
+  "id1000024276573130": "2026-11-19T10:05:24Z",
+  "id1000032566887160": "2026-11-19T10:05:24Z",
+  "id1000032566887162": "2026-11-19T10:05:24Z",
+  "id1000032566887174": "2026-11-19T10:05:24Z"
  },
  "diag": {
   "2026-11-17": {
