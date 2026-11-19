@@ -9061,6 +9061,52 @@
    },
    {
     "book": "stoiximan",
+    "drop": 8.2,
+    "edge": 4.1,
+    "fair": 2.162,
+    "fid": "id1000032566887160",
+    "group": "corners",
+    "label": "Κόρνερ Over 10.5",
+    "market": "10807",
+    "match": "🇧🇷 Vasco da Gama – Internacional",
+    "model_p": null,
+    "outcome": "10807",
+    "price": 2.25,
+    "prob": 0.4625,
+    "sb": 2.15,
+    "score": 6.53,
+    "spec": {
+     "line": 10.5,
+     "side": "over",
+     "stat": "corners"
+    },
+    "start": "2026-11-19T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 6.9,
+    "edge": 0.1,
+    "fair": 1.749,
+    "fid": "id1000032566887160",
+    "group": "corners",
+    "label": "Κόρνερ Over 9.5",
+    "market": "10803",
+    "match": "🇧🇷 Vasco da Gama – Internacional",
+    "model_p": null,
+    "outcome": "10803",
+    "price": 1.75,
+    "prob": 0.5718,
+    "sb": 1.75,
+    "score": 2.13,
+    "spec": {
+     "line": 9.5,
+     "side": "over",
+     "stat": "corners"
+    },
+    "start": "2026-11-19T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 2.3,
     "edge": -1.6,
     "fair": 1.697,
@@ -9210,6 +9256,52 @@
    },
    {
     "book": "stoiximan",
+    "drop": 6.5,
+    "edge": -0.0,
+    "fair": 2.021,
+    "fid": "id1000032566887162",
+    "group": "corners",
+    "label": "Κόρνερ Under 9.5",
+    "market": "10803",
+    "match": "🇧🇷 Sao Paulo – Fluminense",
+    "model_p": null,
+    "outcome": "10804",
+    "price": 2.02,
+    "prob": 0.4948,
+    "sb": 1.95,
+    "score": 1.9,
+    "spec": {
+     "line": 9.5,
+     "side": "under",
+     "stat": "corners"
+    },
+    "start": "2026-11-20T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.0,
+    "edge": -0.1,
+    "fair": 2.652,
+    "fid": "id1000032566887162",
+    "group": "corners",
+    "label": "Κόρνερ Under 8.5",
+    "market": "10799",
+    "match": "🇧🇷 Sao Paulo – Fluminense",
+    "model_p": null,
+    "outcome": "10800",
+    "price": 2.65,
+    "prob": 0.3771,
+    "sb": 2.47,
+    "score": -0.08,
+    "spec": {
+     "line": 8.5,
+     "side": "under",
+     "stat": "corners"
+    },
+    "start": "2026-11-20T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 2.2,
     "edge": -1.6,
     "fair": 1.778,
@@ -9228,6 +9320,29 @@
      "line": 2.5,
      "side": "under",
      "stat": "goals"
+    },
+    "start": "2026-11-20T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 7.1,
+    "edge": -3.2,
+    "fair": 1.653,
+    "fid": "id1000032566887162",
+    "group": "corners",
+    "label": "Κόρνερ Under 10.5",
+    "market": "10807",
+    "match": "🇧🇷 Sao Paulo – Fluminense",
+    "model_p": null,
+    "outcome": "10808",
+    "price": 1.6,
+    "prob": 0.605,
+    "sb": 1.63,
+    "score": -1.09,
+    "spec": {
+     "line": 10.5,
+     "side": "under",
+     "stat": "corners"
     },
     "start": "2026-11-20T00:30:00.000Z"
    },
@@ -9297,29 +9412,6 @@
      "line": 1.5,
      "side": "under",
      "stat": "goals"
-    },
-    "start": "2026-11-20T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -0.5,
-    "edge": -3.1,
-    "fair": 2.322,
-    "fid": "id1000032566887162",
-    "group": "corners",
-    "label": "Κόρνερ Over 10.5",
-    "market": "10807",
-    "match": "🇧🇷 Sao Paulo – Fluminense",
-    "model_p": null,
-    "outcome": "10807",
-    "price": 2.25,
-    "prob": 0.4307,
-    "sb": 2.12,
-    "score": -3.1,
-    "spec": {
-     "line": 10.5,
-     "side": "over",
-     "stat": "corners"
     },
     "start": "2026-11-20T00:30:00.000Z"
    },
@@ -9566,18 +9658,18 @@
   ]
  },
  "checked": {
-  "id1000004772044406": "2026-11-19T03:55:25Z",
-  "id1000021476860576": "2026-11-19T03:55:25Z",
-  "id1000024276573128": "2026-11-19T03:55:25Z",
-  "id1000024276573130": "2026-11-19T03:55:25Z",
+  "id1000004772044406": "2026-11-19T04:00:44Z",
+  "id1000021476860576": "2026-11-19T04:00:44Z",
+  "id1000024276573128": "2026-11-19T04:00:44Z",
+  "id1000024276573130": "2026-11-19T04:00:44Z",
   "id1000032566887158": "2026-11-18T23:25:31Z",
-  "id1000032566887160": "2026-11-19T03:55:25Z",
-  "id1000032566887162": "2026-11-19T03:55:25Z",
+  "id1000032566887160": "2026-11-19T04:00:44Z",
+  "id1000032566887162": "2026-11-19T04:00:44Z",
   "id1000032566887164": "2026-11-19T00:25:24Z",
   "id1000032566887168": "2026-11-18T23:25:31Z",
   "id1000032566887170": "2026-11-19T00:25:24Z",
   "id1000032566887172": "2026-11-18T22:25:25Z",
-  "id1000032566887174": "2026-11-19T03:55:25Z",
+  "id1000032566887174": "2026-11-19T04:00:44Z",
   "id1000032566887176": "2026-11-18T22:55:23Z"
  },
  "diag": {
