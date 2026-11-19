@@ -8707,9 +8707,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": 0.0,
-    "edge": -2.7,
-    "fair": 2.178,
+    "drop": 1.0,
+    "edge": -1.8,
+    "fair": 2.159,
     "fid": "id1000004772044406",
     "group": "ht",
     "label": "Ημίχρονο Over 1.5 γκολ",
@@ -8718,9 +8718,9 @@
     "model_p": null,
     "outcome": "10258",
     "price": 2.12,
-    "prob": 0.4591,
+    "prob": 0.4632,
     "sb": 1.97,
-    "score": -2.66,
+    "score": -1.52,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -8855,52 +8855,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 3.7,
-    "edge": -2.2,
-    "fair": 1.503,
-    "fid": "id1000024276573128",
-    "group": "goals",
-    "label": "Under 4.5 γκολ",
-    "market": "1014",
-    "match": "🇺🇸 Orlando – Cincinnati",
-    "model_p": null,
-    "outcome": "1015",
-    "price": 1.47,
-    "prob": 0.6653,
-    "sb": 1.42,
-    "score": -1.08,
-    "spec": {
-     "line": 4.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-20T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 3.3,
-    "edge": -2.8,
-    "fair": 2.109,
-    "fid": "id1000024276573128",
-    "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
-    "match": "🇺🇸 Orlando – Cincinnati",
-    "model_p": null,
-    "outcome": "1013",
-    "price": 2.05,
-    "prob": 0.4742,
-    "sb": 1.97,
-    "score": -1.8,
-    "spec": {
-     "line": 3.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-20T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": -1.8,
     "edge": -2.3,
     "fair": 2.354,
@@ -8919,6 +8873,29 @@
      "line": 3.5,
      "side": "under",
      "stat": "cards"
+    },
+    "start": "2026-11-20T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 3.7,
+    "edge": -3.5,
+    "fair": 1.503,
+    "fid": "id1000024276573128",
+    "group": "goals",
+    "label": "Under 4.5 γκολ",
+    "market": "1014",
+    "match": "🇺🇸 Orlando – Cincinnati",
+    "model_p": null,
+    "outcome": "1015",
+    "price": 1.45,
+    "prob": 0.6653,
+    "sb": 1.42,
+    "score": -2.41,
+    "spec": {
+     "line": 4.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-11-20T00:30:00.000Z"
    },
@@ -9073,74 +9050,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 1.8,
-    "edge": -1.5,
-    "fair": 1.979,
-    "fid": "id1000024276573130",
-    "group": "1x2",
-    "label": "1 (Seattle)",
-    "market": "101",
-    "match": "🇺🇸 Seattle – Salt Lake",
-    "model_p": null,
-    "outcome": "101",
-    "price": 1.95,
-    "prob": 0.5053,
-    "sb": 1.97,
-    "score": -0.93,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
-    },
-    "start": "2026-11-20T03:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -14.3,
-    "edge": -2.7,
-    "fair": 2.569,
-    "fid": "id1000024276573130",
-    "group": "goals",
-    "label": "Over 3.5 γκολ",
-    "market": "1012",
-    "match": "🇺🇸 Seattle – Salt Lake",
-    "model_p": null,
-    "outcome": "1012",
-    "price": 2.5,
-    "prob": 0.3893,
-    "sb": 2.45,
-    "score": -2.69,
-    "spec": {
-     "line": 3.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-20T03:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -9.5,
-    "edge": -2.9,
-    "fair": 1.668,
-    "fid": "id1000024276573130",
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
-    "match": "🇺🇸 Seattle – Salt Lake",
-    "model_p": null,
-    "outcome": "1010",
-    "price": 1.62,
-    "prob": 0.5995,
-    "sb": 1.6,
-    "score": -2.88,
-    "spec": {
-     "line": 2.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-20T03:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 3.6,
     "edge": -4.0,
     "fair": 1.281,
@@ -9158,6 +9067,96 @@
     "spec": {
      "line": 4.5,
      "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-20T03:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -4.6,
+    "edge": -2.9,
+    "fair": 1.236,
+    "fid": "id1000024276573130",
+    "group": "goals",
+    "label": "Over 1.5 γκολ",
+    "market": "108",
+    "match": "🇺🇸 Seattle – Salt Lake",
+    "model_p": null,
+    "outcome": "108",
+    "price": 1.2,
+    "prob": 0.8091,
+    "sb": 1.18,
+    "score": -2.91,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-20T03:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 1.4,
+    "edge": -3.9,
+    "fair": 1.988,
+    "fid": "id1000024276573130",
+    "group": "1x2",
+    "label": "1 (Seattle)",
+    "market": "101",
+    "match": "🇺🇸 Seattle – Salt Lake",
+    "model_p": null,
+    "outcome": "101",
+    "price": 1.91,
+    "prob": 0.503,
+    "sb": 1.97,
+    "score": -3.51,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-11-20T03:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -3.7,
+    "edge": -3.9,
+    "fair": 1.613,
+    "fid": "id1000024276573130",
+    "group": "btts",
+    "label": "Goal/Goal: Ναι",
+    "market": "104",
+    "match": "🇺🇸 Seattle – Salt Lake",
+    "model_p": null,
+    "outcome": "104",
+    "price": 1.55,
+    "prob": 0.62,
+    "sb": 1.53,
+    "score": -3.91,
+    "spec": {
+     "side": "yes",
+     "stat": "btts"
+    },
+    "start": "2026-11-20T03:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -14.3,
+    "edge": -4.0,
+    "fair": 2.572,
+    "fid": "id1000024276573130",
+    "group": "goals",
+    "label": "Over 3.5 γκολ",
+    "market": "1012",
+    "match": "🇺🇸 Seattle – Salt Lake",
+    "model_p": null,
+    "outcome": "1012",
+    "price": 2.47,
+    "prob": 0.3888,
+    "sb": 2.45,
+    "score": -3.97,
+    "spec": {
+     "line": 3.5,
+     "side": "over",
      "stat": "goals"
     },
     "start": "2026-11-20T03:00:00.000Z"
@@ -9199,28 +9198,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 7.6,
-    "edge": 0.3,
-    "fair": 1.596,
-    "fid": "id1000032566887160",
-    "group": "1x2",
-    "label": "1 (Vasco da Gama)",
-    "market": "101",
-    "match": "🇧🇷 Vasco da Gama – Internacional",
-    "model_p": null,
-    "outcome": "101",
-    "price": 1.6,
-    "prob": 0.6266,
-    "sb": 1.53,
-    "score": 2.54,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
-    },
-    "start": "2026-11-19T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 14.4,
     "edge": -3.1,
     "fair": 1.992,
@@ -9239,6 +9216,28 @@
      "line": 4.5,
      "side": "under",
      "stat": "cards"
+    },
+    "start": "2026-11-19T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 7.6,
+    "edge": -1.6,
+    "fair": 1.596,
+    "fid": "id1000032566887160",
+    "group": "1x2",
+    "label": "1 (Vasco da Gama)",
+    "market": "101",
+    "match": "🇧🇷 Vasco da Gama – Internacional",
+    "model_p": null,
+    "outcome": "101",
+    "price": 1.57,
+    "prob": 0.6266,
+    "sb": 1.53,
+    "score": 0.66,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
     },
     "start": "2026-11-19T22:30:00.000Z"
    },
@@ -9313,29 +9312,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 0.0,
-    "edge": -3.2,
-    "fair": 1.281,
-    "fid": "id1000032566887160",
-    "group": "goals",
-    "label": "Over 1.5 γκολ",
-    "market": "108",
-    "match": "🇧🇷 Vasco da Gama – Internacional",
-    "model_p": null,
-    "outcome": "108",
-    "price": 1.24,
-    "prob": 0.7806,
-    "sb": 1.22,
-    "score": -3.2,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-19T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": -3.2,
     "edge": -3.4,
     "fair": 1.449,
@@ -9354,6 +9330,29 @@
      "line": 3.5,
      "side": "over",
      "stat": "cards"
+    },
+    "start": "2026-11-19T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -6.8,
+    "edge": -3.7,
+    "fair": 2.264,
+    "fid": "id1000032566887160",
+    "group": "goals",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
+    "match": "🇧🇷 Vasco da Gama – Internacional",
+    "model_p": null,
+    "outcome": "1011",
+    "price": 2.18,
+    "prob": 0.4417,
+    "sb": 2.12,
+    "score": -3.71,
+    "spec": {
+     "line": 2.5,
+     "side": "under",
+     "stat": "goals"
     },
     "start": "2026-11-19T22:30:00.000Z"
    }
@@ -9440,52 +9439,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 1.9,
-    "edge": -3.0,
-    "fair": 1.773,
-    "fid": "id1000032566887162",
-    "group": "goals",
-    "label": "Under 2.5 γκολ",
-    "market": "1010",
-    "match": "🇧🇷 Sao Paulo – Fluminense",
-    "model_p": null,
-    "outcome": "1011",
-    "price": 1.72,
-    "prob": 0.564,
-    "sb": 1.69,
-    "score": -2.43,
-    "spec": {
-     "line": 2.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-20T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -2.1,
-    "edge": -2.6,
-    "fair": 1.438,
-    "fid": "id1000032566887162",
-    "group": "goals",
-    "label": "Over 1.5 γκολ",
-    "market": "108",
-    "match": "🇧🇷 Sao Paulo – Fluminense",
-    "model_p": null,
-    "outcome": "108",
-    "price": 1.4,
-    "prob": 0.6954,
-    "sb": 1.37,
-    "score": -2.64,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-20T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": 1.0,
     "edge": -3.2,
     "fair": 1.312,
@@ -9503,6 +9456,29 @@
     "spec": {
      "line": 3.5,
      "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-20T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -2.1,
+    "edge": -3.3,
+    "fair": 1.437,
+    "fid": "id1000032566887162",
+    "group": "goals",
+    "label": "Over 1.5 γκολ",
+    "market": "108",
+    "match": "🇧🇷 Sao Paulo – Fluminense",
+    "model_p": null,
+    "outcome": "108",
+    "price": 1.39,
+    "prob": 0.6959,
+    "sb": 1.37,
+    "score": -3.27,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
      "stat": "goals"
     },
     "start": "2026-11-20T00:30:00.000Z"
@@ -9659,46 +9635,23 @@
    },
    {
     "book": "stoiximan",
-    "drop": 0.1,
-    "edge": -3.2,
-    "fair": 1.467,
+    "drop": -0.2,
+    "edge": -3.7,
+    "fair": 1.204,
     "fid": "id1000032566887174",
     "group": "goals",
-    "label": "Under 3.5 γκολ",
-    "market": "1012",
+    "label": "Under 4.5 γκολ",
+    "market": "1014",
     "match": "🇧🇷 Vitoria – Bragantino",
     "model_p": null,
-    "outcome": "1013",
-    "price": 1.42,
-    "prob": 0.6817,
-    "sb": 1.39,
-    "score": -3.16,
+    "outcome": "1015",
+    "price": 1.16,
+    "prob": 0.8306,
+    "sb": 1.14,
+    "score": -3.65,
     "spec": {
-     "line": 3.5,
+     "line": 4.5,
      "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-19T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -4.8,
-    "edge": -3.3,
-    "fair": 1.892,
-    "fid": "id1000032566887174",
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
-    "match": "🇧🇷 Vitoria – Bragantino",
-    "model_p": null,
-    "outcome": "1010",
-    "price": 1.83,
-    "prob": 0.5285,
-    "sb": 1.8,
-    "score": -3.28,
-    "spec": {
-     "line": 2.5,
-     "side": "over",
      "stat": "goals"
     },
     "start": "2026-11-19T22:30:00.000Z"
@@ -9725,18 +9678,41 @@
      "stat": "ht"
     },
     "start": "2026-11-19T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -4.8,
+    "edge": -3.8,
+    "fair": 1.892,
+    "fid": "id1000032566887174",
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇧🇷 Vitoria – Bragantino",
+    "model_p": null,
+    "outcome": "1010",
+    "price": 1.82,
+    "prob": 0.5285,
+    "sb": 1.8,
+    "score": -3.81,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-19T22:30:00.000Z"
    }
   ]
  },
  "checked": {
-  "id1000004772044406": "2026-11-19T15:00:57Z",
-  "id1000021476860576": "2026-11-19T15:00:57Z",
-  "id1000024276573128": "2026-11-19T15:00:57Z",
-  "id1000024276573130": "2026-11-19T15:00:57Z",
-  "id1000032566887160": "2026-11-19T15:00:57Z",
-  "id1000032566887162": "2026-11-19T15:00:57Z",
-  "id1000032566887174": "2026-11-19T15:00:57Z",
-  "id1000051572398828": "2026-11-19T15:00:57Z"
+  "id1000004772044406": "2026-11-19T15:05:26Z",
+  "id1000021476860576": "2026-11-19T15:05:26Z",
+  "id1000024276573128": "2026-11-19T15:05:26Z",
+  "id1000024276573130": "2026-11-19T15:05:26Z",
+  "id1000032566887160": "2026-11-19T15:05:26Z",
+  "id1000032566887162": "2026-11-19T15:05:26Z",
+  "id1000032566887174": "2026-11-19T15:05:26Z",
+  "id1000051572398828": "2026-11-19T15:05:26Z"
  },
  "diag": {
   "2026-11-17": {
