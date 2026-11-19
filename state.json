@@ -8651,9 +8651,9 @@
   "id1000004772044406": [
    {
     "book": "stoiximan",
-    "drop": 1.0,
-    "edge": -1.8,
-    "fair": 2.159,
+    "drop": 0.0,
+    "edge": -2.1,
+    "fair": 2.166,
     "fid": "id1000004772044406",
     "fxi": {
      "categoryName": "Denmark",
@@ -8672,9 +8672,9 @@
     "model_p": null,
     "outcome": "10258",
     "price": 2.12,
-    "prob": 0.4632,
+    "prob": 0.4617,
     "sb": 1.97,
-    "score": -1.52,
+    "score": -2.12,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -8684,7 +8684,7 @@
    },
    {
     "book": "stoiximan",
-    "drop": 2.2,
+    "drop": 1.7,
     "edge": -3.4,
     "fair": 1.356,
     "fid": "id1000004772044406",
@@ -8697,7 +8697,7 @@
     "price": 1.31,
     "prob": 0.7375,
     "sb": 1.28,
-    "score": -2.73,
+    "score": -2.89,
     "spec": {
      "side": "1",
      "stat": "1x2"
@@ -8706,7 +8706,7 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.1,
+    "drop": -0.4,
     "edge": -2.9,
     "fair": 1.174,
     "fid": "id1000004772044406",
@@ -8729,32 +8729,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.1,
-    "edge": -3.5,
-    "fair": 1.471,
-    "fid": "id1000004772044406",
-    "group": "goals",
-    "label": "Over 2.5 γκολ",
-    "market": "1010",
-    "match": "🇩🇰 Fredericia – Hillerod",
-    "model_p": null,
-    "outcome": "1010",
-    "price": 1.42,
-    "prob": 0.6798,
-    "sb": 1.4,
-    "score": -3.47,
-    "spec": {
-     "line": 2.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-19T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -3.2,
-    "edge": -3.5,
-    "fair": 1.813,
+    "drop": -3.5,
+    "edge": -3.4,
+    "fair": 1.812,
     "fid": "id1000004772044406",
     "group": "btts",
     "label": "Goal/Goal: Ναι",
@@ -8763,12 +8740,35 @@
     "model_p": null,
     "outcome": "104",
     "price": 1.75,
-    "prob": 0.5516,
+    "prob": 0.5519,
     "sb": 1.72,
-    "score": -3.47,
+    "score": -3.42,
     "spec": {
      "side": "yes",
      "stat": "btts"
+    },
+    "start": "2026-11-19T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -0.8,
+    "edge": -3.8,
+    "fair": 1.476,
+    "fid": "id1000004772044406",
+    "group": "goals",
+    "label": "Over 2.5 γκολ",
+    "market": "1010",
+    "match": "🇩🇰 Fredericia – Hillerod",
+    "model_p": null,
+    "outcome": "1010",
+    "price": 1.42,
+    "prob": 0.6775,
+    "sb": 1.4,
+    "score": -3.79,
+    "spec": {
+     "line": 2.5,
+     "side": "over",
+     "stat": "goals"
     },
     "start": "2026-11-19T18:00:00.000Z"
    }
@@ -9027,6 +9027,29 @@
    },
    {
     "book": "stoiximan",
+    "drop": 2.2,
+    "edge": -1.8,
+    "fair": 1.528,
+    "fid": "id1000024276573128",
+    "group": "goals",
+    "label": "Under 4.5 γκολ",
+    "market": "1014",
+    "match": "🇺🇸 Orlando – Cincinnati",
+    "model_p": null,
+    "outcome": "1015",
+    "price": 1.5,
+    "prob": 0.6545,
+    "sb": 1.42,
+    "score": -1.17,
+    "spec": {
+     "line": 4.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-20T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": -1.8,
     "edge": -2.3,
     "fair": 2.354,
@@ -9045,29 +9068,6 @@
      "line": 3.5,
      "side": "under",
      "stat": "cards"
-    },
-    "start": "2026-11-20T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 2.2,
-    "edge": -3.7,
-    "fair": 1.526,
-    "fid": "id1000024276573128",
-    "group": "goals",
-    "label": "Under 4.5 γκολ",
-    "market": "1014",
-    "match": "🇺🇸 Orlando – Cincinnati",
-    "model_p": null,
-    "outcome": "1015",
-    "price": 1.47,
-    "prob": 0.6553,
-    "sb": 1.42,
-    "score": -3.01,
-    "spec": {
-     "line": 4.5,
-     "side": "under",
-     "stat": "goals"
     },
     "start": "2026-11-20T00:30:00.000Z"
    },
@@ -9178,7 +9178,7 @@
    {
     "book": "stoiximan",
     "drop": -0.7,
-    "edge": 1.0,
+    "edge": -0.3,
     "fair": 1.555,
     "fid": "id1000024276573130",
     "group": "cards",
@@ -9187,35 +9187,12 @@
     "match": "🇺🇸 Seattle – Salt Lake",
     "model_p": null,
     "outcome": "10931",
-    "price": 1.57,
+    "price": 1.55,
     "prob": 0.6431,
     "sb": 1.53,
-    "score": 0.96,
+    "score": -0.32,
     "spec": {
      "line": 4.5,
-     "side": "under",
-     "stat": "cards"
-    },
-    "start": "2026-11-20T03:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 0.5,
-    "edge": 0.3,
-    "fair": 2.143,
-    "fid": "id1000024276573130",
-    "group": "cards",
-    "label": "Κάρτες Under 3.5",
-    "market": "10926",
-    "match": "🇺🇸 Seattle – Salt Lake",
-    "model_p": null,
-    "outcome": "10927",
-    "price": 2.15,
-    "prob": 0.4666,
-    "sb": 2.1,
-    "score": 0.49,
-    "spec": {
-     "line": 3.5,
      "side": "under",
      "stat": "cards"
     },
@@ -9264,6 +9241,29 @@
      "line": 1.5,
      "side": "over",
      "stat": "goals"
+    },
+    "start": "2026-11-20T03:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.5,
+    "edge": -3.4,
+    "fair": 2.143,
+    "fid": "id1000024276573130",
+    "group": "cards",
+    "label": "Κάρτες Under 3.5",
+    "market": "10926",
+    "match": "🇺🇸 Seattle – Salt Lake",
+    "model_p": null,
+    "outcome": "10927",
+    "price": 2.07,
+    "prob": 0.4666,
+    "sb": 2.1,
+    "score": -3.24,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "cards"
     },
     "start": "2026-11-20T03:00:00.000Z"
    },
@@ -9715,6 +9715,29 @@
    },
    {
     "book": "stoiximan",
+    "drop": 5.1,
+    "edge": 0.5,
+    "fair": 2.389,
+    "fid": "id1000032566887174",
+    "group": "corners",
+    "label": "Κόρνερ Under 9.5",
+    "market": "10803",
+    "match": "🇧🇷 Vitoria – Bragantino",
+    "model_p": null,
+    "outcome": "10804",
+    "price": 2.4,
+    "prob": 0.4186,
+    "sb": 2.2,
+    "score": 1.99,
+    "spec": {
+     "line": 9.5,
+     "side": "under",
+     "stat": "corners"
+    },
+    "start": "2026-11-19T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": 7.1,
     "edge": -1.4,
     "fair": 2.354,
@@ -9738,52 +9761,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": 3.8,
-    "edge": -1.0,
-    "fair": 2.445,
-    "fid": "id1000032566887174",
-    "group": "corners",
-    "label": "Κόρνερ Over 11.5",
-    "market": "10811",
-    "match": "🇧🇷 Vitoria – Bragantino",
-    "model_p": null,
-    "outcome": "10811",
-    "price": 2.42,
-    "prob": 0.409,
-    "sb": 2.32,
-    "score": 0.12,
-    "spec": {
-     "line": 11.5,
-     "side": "over",
-     "stat": "corners"
-    },
-    "start": "2026-11-19T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 3.4,
-    "edge": -1.4,
-    "fair": 2.433,
-    "fid": "id1000032566887174",
-    "group": "corners",
-    "label": "Κόρνερ Under 9.5",
-    "market": "10803",
-    "match": "🇧🇷 Vitoria – Bragantino",
-    "model_p": null,
-    "outcome": "10804",
-    "price": 2.4,
-    "prob": 0.411,
-    "sb": 2.2,
-    "score": -0.34,
-    "spec": {
-     "line": 9.5,
-     "side": "under",
-     "stat": "corners"
-    },
-    "start": "2026-11-19T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": -1.8,
     "edge": -0.5,
     "fair": 1.407,
@@ -9802,6 +9779,29 @@
      "line": 0.5,
      "side": "over",
      "stat": "ht"
+    },
+    "start": "2026-11-19T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 3.5,
+    "edge": -2.8,
+    "fair": 1.923,
+    "fid": "id1000032566887174",
+    "group": "corners",
+    "label": "Κόρνερ Under 10.5",
+    "market": "10807",
+    "match": "🇧🇷 Vitoria – Bragantino",
+    "model_p": null,
+    "outcome": "10808",
+    "price": 1.87,
+    "prob": 0.52,
+    "sb": 1.8,
+    "score": -1.72,
+    "spec": {
+     "line": 10.5,
+     "side": "under",
+     "stat": "corners"
     },
     "start": "2026-11-19T22:30:00.000Z"
    },
@@ -9852,6 +9852,29 @@
    },
    {
     "book": "stoiximan",
+    "drop": 1.3,
+    "edge": -3.6,
+    "fair": 2.511,
+    "fid": "id1000032566887174",
+    "group": "corners",
+    "label": "Κόρνερ Over 11.5",
+    "market": "10811",
+    "match": "🇧🇷 Vitoria – Bragantino",
+    "model_p": null,
+    "outcome": "10811",
+    "price": 2.42,
+    "prob": 0.3982,
+    "sb": 2.32,
+    "score": -3.24,
+    "spec": {
+     "line": 11.5,
+     "side": "over",
+     "stat": "corners"
+    },
+    "start": "2026-11-19T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
     "drop": -4.0,
     "edge": -3.5,
     "fair": 1.886,
@@ -9895,43 +9918,20 @@
      "stat": "ht"
     },
     "start": "2026-11-19T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -0.3,
-    "edge": -3.7,
-    "fair": 1.205,
-    "fid": "id1000032566887174",
-    "group": "goals",
-    "label": "Under 4.5 γκολ",
-    "market": "1014",
-    "match": "🇧🇷 Vitoria – Bragantino",
-    "model_p": null,
-    "outcome": "1015",
-    "price": 1.16,
-    "prob": 0.8299,
-    "sb": 1.14,
-    "score": -3.73,
-    "spec": {
-     "line": 4.5,
-     "side": "under",
-     "stat": "goals"
-    },
-    "start": "2026-11-19T22:30:00.000Z"
    }
   ]
  },
  "checked": {
-  "id1000004772044406": "2026-11-19T16:10:30Z",
-  "id1000015272388104": "2026-11-19T16:10:30Z",
-  "id1000020572300882": "2026-11-19T16:10:30Z",
-  "id1000021476860576": "2026-11-19T16:10:30Z",
-  "id1000024276573128": "2026-11-19T16:10:30Z",
-  "id1000024276573130": "2026-11-19T16:10:30Z",
-  "id1000032566887160": "2026-11-19T16:10:30Z",
-  "id1000032566887162": "2026-11-19T16:10:30Z",
-  "id1000032566887174": "2026-11-19T16:10:30Z",
-  "id1000051572398828": "2026-11-19T16:10:30Z"
+  "id1000004772044406": "2026-11-19T16:15:28Z",
+  "id1000015272388104": "2026-11-19T16:15:28Z",
+  "id1000020572300882": "2026-11-19T16:15:28Z",
+  "id1000021476860576": "2026-11-19T16:15:28Z",
+  "id1000024276573128": "2026-11-19T16:15:28Z",
+  "id1000024276573130": "2026-11-19T16:15:28Z",
+  "id1000032566887160": "2026-11-19T16:15:28Z",
+  "id1000032566887162": "2026-11-19T16:15:28Z",
+  "id1000032566887174": "2026-11-19T16:15:28Z",
+  "id1000051572398828": "2026-11-19T16:15:28Z"
  },
  "diag": {
   "2026-11-17": {
