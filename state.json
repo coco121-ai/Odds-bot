@@ -8926,7 +8926,7 @@
    {
     "book": "stoiximan",
     "drop": -7.6,
-    "edge": -2.3,
+    "edge": -3.8,
     "fair": 2.027,
     "fid": "id1000024276573128",
     "group": "ht",
@@ -8935,58 +8935,14 @@
     "match": "🇺🇸 Orlando – Cincinnati",
     "model_p": null,
     "outcome": "10258",
-    "price": 1.98,
+    "price": 1.95,
     "prob": 0.4933,
     "sb": 1.92,
-    "score": -2.32,
+    "score": -3.8,
     "spec": {
      "line": 1.5,
      "side": "over",
      "stat": "ht"
-    },
-    "start": "2026-11-20T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 3.7,
-    "edge": -3.6,
-    "fair": 2.698,
-    "fid": "id1000024276573128",
-    "group": "1x2",
-    "label": "2 (Cincinnati)",
-    "market": "101",
-    "match": "🇺🇸 Orlando – Cincinnati",
-    "model_p": null,
-    "outcome": "103",
-    "price": 2.6,
-    "prob": 0.3706,
-    "sb": 2.52,
-    "score": -2.53,
-    "spec": {
-     "side": "2",
-     "stat": "1x2"
-    },
-    "start": "2026-11-20T00:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -2.5,
-    "edge": -3.7,
-    "fair": 1.381,
-    "fid": "id1000024276573128",
-    "group": "btts",
-    "label": "Goal/Goal: Ναι",
-    "market": "104",
-    "match": "🇺🇸 Orlando – Cincinnati",
-    "model_p": null,
-    "outcome": "104",
-    "price": 1.33,
-    "prob": 0.7241,
-    "sb": 1.33,
-    "score": -3.69,
-    "spec": {
-     "side": "yes",
-     "stat": "btts"
     },
     "start": "2026-11-20T00:30:00.000Z"
    }
@@ -9097,7 +9053,7 @@
    {
     "book": "stoiximan",
     "drop": -13.4,
-    "edge": -1.5,
+    "edge": -2.3,
     "fair": 2.559,
     "fid": "id1000024276573130",
     "group": "goals",
@@ -9106,10 +9062,10 @@
     "match": "🇺🇸 Seattle – Salt Lake",
     "model_p": null,
     "outcome": "1012",
-    "price": 2.52,
+    "price": 2.5,
     "prob": 0.3908,
     "sb": 2.45,
-    "score": -1.52,
+    "score": -2.31,
     "spec": {
      "line": 3.5,
      "side": "over",
@@ -9142,29 +9098,6 @@
    },
    {
     "book": "stoiximan",
-    "drop": -5.0,
-    "edge": -3.0,
-    "fair": 2.422,
-    "fid": "id1000024276573130",
-    "group": "ht",
-    "label": "Ημίχρονο Over 1.5 γκολ",
-    "market": "10258",
-    "match": "🇺🇸 Seattle – Salt Lake",
-    "model_p": null,
-    "outcome": "10258",
-    "price": 2.35,
-    "prob": 0.4129,
-    "sb": 2.3,
-    "score": -2.97,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "ht"
-    },
-    "start": "2026-11-20T03:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
     "drop": -4.2,
     "edge": -3.1,
     "fair": 1.238,
@@ -9183,6 +9116,28 @@
      "line": 1.5,
      "side": "over",
      "stat": "goals"
+    },
+    "start": "2026-11-20T03:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -3.3,
+    "edge": -3.9,
+    "fair": 1.613,
+    "fid": "id1000024276573130",
+    "group": "btts",
+    "label": "Goal/Goal: Ναι",
+    "market": "104",
+    "match": "🇺🇸 Seattle – Salt Lake",
+    "model_p": null,
+    "outcome": "104",
+    "price": 1.55,
+    "prob": 0.62,
+    "sb": 1.52,
+    "score": -3.91,
+    "spec": {
+     "side": "yes",
+     "stat": "btts"
     },
     "start": "2026-11-20T03:00:00.000Z"
    }
@@ -9775,14 +9730,14 @@
   ]
  },
  "checked": {
-  "id1000004772044406": "2026-11-19T13:35:26Z",
-  "id1000021476860576": "2026-11-19T13:35:26Z",
-  "id1000024276573128": "2026-11-19T13:35:26Z",
-  "id1000024276573130": "2026-11-19T13:35:26Z",
-  "id1000032566887160": "2026-11-19T13:35:26Z",
-  "id1000032566887162": "2026-11-19T13:35:26Z",
-  "id1000032566887174": "2026-11-19T13:35:26Z",
-  "id1000051572398828": "2026-11-19T13:35:26Z"
+  "id1000004772044406": "2026-11-19T13:36:23Z",
+  "id1000021476860576": "2026-11-19T13:36:23Z",
+  "id1000024276573128": "2026-11-19T13:36:23Z",
+  "id1000024276573130": "2026-11-19T13:36:23Z",
+  "id1000032566887160": "2026-11-19T13:36:23Z",
+  "id1000032566887162": "2026-11-19T13:36:23Z",
+  "id1000032566887174": "2026-11-19T13:36:23Z",
+  "id1000051572398828": "2026-11-19T13:36:23Z"
  },
  "diag": {
   "2026-11-17": {
