@@ -8705,54 +8705,9 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.4,
-    "edge": -2.7,
-    "fair": 1.172,
-    "fid": "id1000004772044406",
-    "group": "goals",
-    "label": "Over 1.5 γκολ",
-    "market": "108",
-    "match": "🇩🇰 Fredericia – Hillerod",
-    "model_p": null,
-    "outcome": "108",
-    "price": 1.14,
-    "prob": 0.8532,
-    "sb": 1.11,
-    "score": -2.73,
-    "spec": {
-     "line": 1.5,
-     "side": "over",
-     "stat": "goals"
-    },
-    "start": "2026-11-19T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 1.4,
-    "edge": -3.6,
-    "fair": 1.359,
-    "fid": "id1000004772044406",
-    "group": "1x2",
-    "label": "1 (Fredericia)",
-    "market": "101",
-    "match": "🇩🇰 Fredericia – Hillerod",
-    "model_p": null,
-    "outcome": "101",
-    "price": 1.31,
-    "prob": 0.7358,
-    "sb": 1.29,
-    "score": -3.17,
-    "spec": {
-     "side": "1",
-     "stat": "1x2"
-    },
-    "start": "2026-11-19T18:00:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": -1.0,
-    "edge": -3.2,
-    "fair": 2.19,
+    "drop": 0.5,
+    "edge": -2.2,
+    "fair": 2.168,
     "fid": "id1000004772044406",
     "group": "ht",
     "label": "Ημίχρονο Over 1.5 γκολ",
@@ -8761,9 +8716,9 @@
     "model_p": null,
     "outcome": "10258",
     "price": 2.12,
-    "prob": 0.4566,
+    "prob": 0.4613,
     "sb": 1.97,
-    "score": -3.2,
+    "score": -2.07,
     "spec": {
      "line": 1.5,
      "side": "over",
@@ -8773,9 +8728,32 @@
    },
    {
     "book": "stoiximan",
-    "drop": -0.4,
-    "edge": -3.3,
-    "fair": 1.468,
+    "drop": 0.1,
+    "edge": -2.6,
+    "fair": 1.171,
+    "fid": "id1000004772044406",
+    "group": "goals",
+    "label": "Over 1.5 γκολ",
+    "market": "108",
+    "match": "🇩🇰 Fredericia – Hillerod",
+    "model_p": null,
+    "outcome": "108",
+    "price": 1.14,
+    "prob": 0.854,
+    "sb": 1.11,
+    "score": -2.62,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-19T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.5,
+    "edge": -2.9,
+    "fair": 1.462,
     "fid": "id1000004772044406",
     "group": "goals",
     "label": "Over 2.5 γκολ",
@@ -8784,13 +8762,58 @@
     "model_p": null,
     "outcome": "1010",
     "price": 1.42,
-    "prob": 0.6812,
+    "prob": 0.684,
     "sb": 1.4,
-    "score": -3.27,
+    "score": -2.72,
     "spec": {
      "line": 2.5,
      "side": "over",
      "stat": "goals"
+    },
+    "start": "2026-11-19T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 1.5,
+    "edge": -3.4,
+    "fair": 2.123,
+    "fid": "id1000004772044406",
+    "group": "goals",
+    "label": "Over 3.5 γκολ",
+    "market": "1012",
+    "match": "🇩🇰 Fredericia – Hillerod",
+    "model_p": null,
+    "outcome": "1012",
+    "price": 2.05,
+    "prob": 0.471,
+    "sb": 2.02,
+    "score": -2.99,
+    "spec": {
+     "line": 3.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-19T18:00:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 2.0,
+    "edge": -3.7,
+    "fair": 1.36,
+    "fid": "id1000004772044406",
+    "group": "1x2",
+    "label": "1 (Fredericia)",
+    "market": "101",
+    "match": "🇩🇰 Fredericia – Hillerod",
+    "model_p": null,
+    "outcome": "101",
+    "price": 1.31,
+    "prob": 0.7353,
+    "sb": 1.29,
+    "score": -3.08,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
     },
     "start": "2026-11-19T18:00:00.000Z"
    }
@@ -9591,13 +9614,13 @@
   ]
  },
  "checked": {
-  "id1000004772044406": "2026-11-19T08:00:44Z",
-  "id1000021476860576": "2026-11-19T08:00:44Z",
-  "id1000024276573128": "2026-11-19T08:00:44Z",
-  "id1000024276573130": "2026-11-19T08:00:44Z",
-  "id1000032566887160": "2026-11-19T08:00:44Z",
-  "id1000032566887162": "2026-11-19T08:00:44Z",
-  "id1000032566887174": "2026-11-19T08:00:44Z"
+  "id1000004772044406": "2026-11-19T08:05:22Z",
+  "id1000021476860576": "2026-11-19T08:05:22Z",
+  "id1000024276573128": "2026-11-19T08:05:22Z",
+  "id1000024276573130": "2026-11-19T08:05:22Z",
+  "id1000032566887160": "2026-11-19T08:05:22Z",
+  "id1000032566887162": "2026-11-19T08:05:22Z",
+  "id1000032566887174": "2026-11-19T08:05:22Z"
  },
  "diag": {
   "2026-11-17": {
