@@ -8772,6 +8772,133 @@
     "start": "2026-11-19T18:00:00.000Z"
    }
   ],
+  "id1000024276573128": [
+   {
+    "book": "stoiximan",
+    "drop": 5.2,
+    "edge": -1.7,
+    "fair": 2.542,
+    "fid": "id1000024276573128",
+    "fxi": {
+     "categoryName": "USA",
+     "categorySlug": "usa",
+     "participant1Name": "Orlando City SC",
+     "participant1ShortName": "Orlando",
+     "participant2Name": "FC Cincinnati",
+     "participant2ShortName": "Cincinnati",
+     "startTime": "2026-11-20T00:30:00.000Z",
+     "tournamentName": "MLS"
+    },
+    "group": "corners",
+    "label": "Κόρνερ Under 9.5",
+    "market": "10803",
+    "match": "🇺🇸 Orlando – Cincinnati",
+    "model_p": null,
+    "outcome": "10804",
+    "price": 2.5,
+    "prob": 0.3934,
+    "sb": 2.35,
+    "score": -0.09,
+    "spec": {
+     "line": 9.5,
+     "side": "under",
+     "stat": "corners"
+    },
+    "start": "2026-11-20T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -2.7,
+    "edge": -1.0,
+    "fair": 1.95,
+    "fid": "id1000024276573128",
+    "group": "ht",
+    "label": "Ημίχρονο Over 1.5 γκολ",
+    "market": "10258",
+    "match": "🇺🇸 Orlando – Cincinnati",
+    "model_p": null,
+    "outcome": "10258",
+    "price": 1.93,
+    "prob": 0.5128,
+    "sb": 1.8,
+    "score": -1.03,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-11-20T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 4.8,
+    "edge": -2.7,
+    "fair": 1.983,
+    "fid": "id1000024276573128",
+    "group": "corners",
+    "label": "Κόρνερ Under 10.5",
+    "market": "10807",
+    "match": "🇺🇸 Orlando – Cincinnati",
+    "model_p": null,
+    "outcome": "10808",
+    "price": 1.93,
+    "prob": 0.5043,
+    "sb": 1.9,
+    "score": -1.22,
+    "spec": {
+     "line": 10.5,
+     "side": "under",
+     "stat": "corners"
+    },
+    "start": "2026-11-20T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -4.4,
+    "edge": -2.3,
+    "fair": 2.763,
+    "fid": "id1000024276573128",
+    "group": "goals",
+    "label": "Over 4.5 γκολ",
+    "market": "1014",
+    "match": "🇺🇸 Orlando – Cincinnati",
+    "model_p": null,
+    "outcome": "1014",
+    "price": 2.7,
+    "prob": 0.3619,
+    "sb": 2.62,
+    "score": -2.28,
+    "spec": {
+     "line": 4.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-20T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -2.9,
+    "edge": -3.3,
+    "fair": 1.84,
+    "fid": "id1000024276573128",
+    "group": "goals",
+    "label": "Over 3.5 γκολ",
+    "market": "1012",
+    "match": "🇺🇸 Orlando – Cincinnati",
+    "model_p": null,
+    "outcome": "1012",
+    "price": 1.78,
+    "prob": 0.5435,
+    "sb": 1.72,
+    "score": -3.26,
+    "spec": {
+     "line": 3.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-20T00:30:00.000Z"
+   }
+  ],
   "id1000032566887158": [
    {
     "book": "stoiximan",
@@ -9115,6 +9242,201 @@
      "stat": "goals"
     },
     "start": "2026-11-19T22:30:00.000Z"
+   }
+  ],
+  "id1000032566887162": [
+   {
+    "book": "stoiximan",
+    "drop": 4.9,
+    "edge": 10.6,
+    "fair": 2.008,
+    "fid": "id1000032566887162",
+    "fxi": {
+     "categoryName": "Brazil",
+     "categorySlug": "brazil",
+     "participant1Name": "Sao Paulo FC SP",
+     "participant1ShortName": "Sao Paulo",
+     "participant2Name": "Fluminense FC RJ",
+     "participant2ShortName": "Fluminense",
+     "startTime": "2026-11-20T00:30:00.000Z",
+     "tournamentName": "Brasileiro Serie A"
+    },
+    "group": "cards",
+    "label": "Κάρτες Under 4.5",
+    "market": "10930",
+    "match": "🇧🇷 Sao Paulo – Fluminense",
+    "model_p": null,
+    "outcome": "10931",
+    "price": 2.22,
+    "prob": 0.498,
+    "sb": 1.92,
+    "score": 12.04,
+    "spec": {
+     "line": 4.5,
+     "side": "under",
+     "stat": "cards"
+    },
+    "start": "2026-11-20T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.1,
+    "edge": 5.0,
+    "fair": 1.59,
+    "fid": "id1000032566887162",
+    "group": "cards",
+    "label": "Κάρτες Under 5.5",
+    "market": "10934",
+    "match": "🇧🇷 Sao Paulo – Fluminense",
+    "model_p": null,
+    "outcome": "10935",
+    "price": 1.67,
+    "prob": 0.6289,
+    "sb": 1.46,
+    "score": 5.07,
+    "spec": {
+     "line": 5.5,
+     "side": "under",
+     "stat": "cards"
+    },
+    "start": "2026-11-20T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -0.1,
+    "edge": -0.3,
+    "fair": 1.504,
+    "fid": "id1000032566887162",
+    "group": "ht",
+    "label": "Ημίχρονο Over 0.5 γκολ",
+    "market": "10256",
+    "match": "🇧🇷 Sao Paulo – Fluminense",
+    "model_p": null,
+    "outcome": "10256",
+    "price": 1.5,
+    "prob": 0.6649,
+    "sb": 1.45,
+    "score": -0.27,
+    "spec": {
+     "line": 0.5,
+     "side": "over",
+     "stat": "ht"
+    },
+    "start": "2026-11-20T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -0.2,
+    "edge": -1.9,
+    "fair": 1.417,
+    "fid": "id1000032566887162",
+    "group": "goals",
+    "label": "Over 1.5 γκολ",
+    "market": "108",
+    "match": "🇧🇷 Sao Paulo – Fluminense",
+    "model_p": null,
+    "outcome": "108",
+    "price": 1.39,
+    "prob": 0.7057,
+    "sb": 1.35,
+    "score": -1.91,
+    "spec": {
+     "line": 1.5,
+     "side": "over",
+     "stat": "goals"
+    },
+    "start": "2026-11-20T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -0.5,
+    "edge": -3.1,
+    "fair": 2.322,
+    "fid": "id1000032566887162",
+    "group": "corners",
+    "label": "Κόρνερ Over 10.5",
+    "market": "10807",
+    "match": "🇧🇷 Sao Paulo – Fluminense",
+    "model_p": null,
+    "outcome": "10807",
+    "price": 2.25,
+    "prob": 0.4307,
+    "sb": 2.12,
+    "score": -3.1,
+    "spec": {
+     "line": 10.5,
+     "side": "over",
+     "stat": "corners"
+    },
+    "start": "2026-11-20T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.3,
+    "edge": -3.4,
+    "fair": 1.811,
+    "fid": "id1000032566887162",
+    "group": "goals",
+    "label": "Under 2.5 γκολ",
+    "market": "1010",
+    "match": "🇧🇷 Sao Paulo – Fluminense",
+    "model_p": null,
+    "outcome": "1011",
+    "price": 1.75,
+    "prob": 0.5522,
+    "sb": 1.72,
+    "score": -3.27,
+    "spec": {
+     "line": 2.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-20T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -3.0,
+    "edge": -3.4,
+    "fair": 2.504,
+    "fid": "id1000032566887162",
+    "group": "1x2",
+    "label": "1 (Sao Paulo)",
+    "market": "101",
+    "match": "🇧🇷 Sao Paulo – Fluminense",
+    "model_p": null,
+    "outcome": "101",
+    "price": 2.42,
+    "prob": 0.3994,
+    "sb": 2.4,
+    "score": -3.35,
+    "spec": {
+     "side": "1",
+     "stat": "1x2"
+    },
+    "start": "2026-11-20T00:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": 0.2,
+    "edge": -3.7,
+    "fair": 1.329,
+    "fid": "id1000032566887162",
+    "group": "goals",
+    "label": "Under 3.5 γκολ",
+    "market": "1012",
+    "match": "🇧🇷 Sao Paulo – Fluminense",
+    "model_p": null,
+    "outcome": "1013",
+    "price": 1.28,
+    "prob": 0.7524,
+    "sb": 1.27,
+    "score": -3.64,
+    "spec": {
+     "line": 3.5,
+     "side": "under",
+     "stat": "goals"
+    },
+    "start": "2026-11-20T00:30:00.000Z"
    }
   ],
   "id1000032566887164": [
@@ -9924,9 +10246,9 @@
   "id1000032566887174": [
    {
     "book": "stoiximan",
-    "drop": 13.7,
-    "edge": 12.1,
-    "fair": 2.159,
+    "drop": 4.3,
+    "edge": -1.9,
+    "fair": 1.753,
     "fid": "id1000032566887174",
     "fxi": {
      "categoryName": "Brazil",
@@ -9938,52 +10260,6 @@
      "startTime": "2026-11-19T22:30:00.000Z",
      "tournamentName": "Brasileiro Serie A"
     },
-    "group": "corners",
-    "label": "Κόρνερ Under 9.5",
-    "market": "10803",
-    "match": "🇧🇷 Vitoria – Bragantino",
-    "model_p": null,
-    "outcome": "10804",
-    "price": 2.42,
-    "prob": 0.4632,
-    "sb": 2.2,
-    "score": 16.19,
-    "spec": {
-     "line": 9.5,
-     "side": "under",
-     "stat": "corners"
-    },
-    "start": "2026-11-19T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 11.8,
-    "edge": 5.5,
-    "fair": 1.773,
-    "fid": "id1000032566887174",
-    "group": "corners",
-    "label": "Κόρνερ Under 10.5",
-    "market": "10807",
-    "match": "🇧🇷 Vitoria – Bragantino",
-    "model_p": null,
-    "outcome": "10808",
-    "price": 1.87,
-    "prob": 0.564,
-    "sb": 1.8,
-    "score": 9.01,
-    "spec": {
-     "line": 10.5,
-     "side": "under",
-     "stat": "corners"
-    },
-    "start": "2026-11-19T22:30:00.000Z"
-   },
-   {
-    "book": "stoiximan",
-    "drop": 4.3,
-    "edge": -1.9,
-    "fair": 1.753,
-    "fid": "id1000032566887174",
     "group": "cards",
     "label": "Κάρτες Under 5.5",
     "market": "10934",
@@ -10066,6 +10342,29 @@
     "spec": {
      "side": "1",
      "stat": "1x2"
+    },
+    "start": "2026-11-19T22:30:00.000Z"
+   },
+   {
+    "book": "stoiximan",
+    "drop": -12.2,
+    "edge": -3.2,
+    "fair": 2.294,
+    "fid": "id1000032566887174",
+    "group": "corners",
+    "label": "Κόρνερ Over 10.5",
+    "market": "10807",
+    "match": "🇧🇷 Vitoria – Bragantino",
+    "model_p": null,
+    "outcome": "10807",
+    "price": 2.22,
+    "prob": 0.4359,
+    "sb": 1.88,
+    "score": -3.23,
+    "spec": {
+     "line": 10.5,
+     "side": "over",
+     "stat": "corners"
     },
     "start": "2026-11-19T22:30:00.000Z"
    },
@@ -10313,15 +10612,17 @@
   ]
  },
  "checked": {
-  "id1000004772044406": "2026-11-19T00:25:24Z",
-  "id1000021476860576": "2026-11-19T00:25:24Z",
+  "id1000004772044406": "2026-11-19T00:30:39Z",
+  "id1000021476860576": "2026-11-19T00:30:39Z",
+  "id1000024276573128": "2026-11-19T00:30:39Z",
   "id1000032566887158": "2026-11-18T23:25:31Z",
-  "id1000032566887160": "2026-11-19T00:25:24Z",
+  "id1000032566887160": "2026-11-19T00:30:39Z",
+  "id1000032566887162": "2026-11-19T00:30:39Z",
   "id1000032566887164": "2026-11-19T00:25:24Z",
   "id1000032566887168": "2026-11-18T23:25:31Z",
   "id1000032566887170": "2026-11-19T00:25:24Z",
   "id1000032566887172": "2026-11-18T22:25:25Z",
-  "id1000032566887174": "2026-11-19T00:25:24Z",
+  "id1000032566887174": "2026-11-19T00:30:39Z",
   "id1000032566887176": "2026-11-18T22:55:23Z"
  },
  "diag": {
@@ -10506,8 +10807,10 @@
    "fixtures": [
     "id1000004772044406",
     "id1000021476860576",
+    "id1000024276573128",
     "id1000032566887158",
     "id1000032566887160",
+    "id1000032566887162",
     "id1000032566887164",
     "id1000032566887168",
     "id1000032566887170",
@@ -10530,6 +10833,13 @@
     "id1000021476860576|101|103|1x2",
     "id1000021476860576|10258|10258|goals",
     "id1000021476860576|10258|10259|goals",
+    "id1000024276573128|1010|1010|goals",
+    "id1000024276573128|1010|1011|goals",
+    "id1000024276573128|101|101|1x2",
+    "id1000024276573128|101|102|1x2",
+    "id1000024276573128|101|103|1x2",
+    "id1000024276573128|10258|10258|goals",
+    "id1000024276573128|10258|10259|goals",
     "id1000032566887158|1010|1010|goals",
     "id1000032566887158|1010|1011|goals",
     "id1000032566887158|101|102|1x2",
@@ -10543,6 +10853,15 @@
     "id1000032566887160|101|103|1x2",
     "id1000032566887160|10258|10258|goals",
     "id1000032566887160|10258|10259|goals",
+    "id1000032566887162|1010|1010|goals",
+    "id1000032566887162|1010|1011|goals",
+    "id1000032566887162|101|101|1x2",
+    "id1000032566887162|101|102|1x2",
+    "id1000032566887162|101|103|1x2",
+    "id1000032566887162|10256|10256|goals",
+    "id1000032566887162|10256|10257|goals",
+    "id1000032566887162|10258|10258|goals",
+    "id1000032566887162|10258|10259|goals",
     "id1000032566887164|1010|1010|goals",
     "id1000032566887164|1010|1011|goals",
     "id1000032566887164|101|101|1x2",
@@ -10595,6 +10914,8 @@
     "id1000004772044406|10256|10257|goals",
     "id1000021476860576|10256|10256|goals",
     "id1000021476860576|10256|10257|goals",
+    "id1000024276573128|10256|10256|goals",
+    "id1000024276573128|10256|10257|goals",
     "id1000032566887160|10256|10256|goals",
     "id1000032566887160|10256|10257|goals"
    ]
